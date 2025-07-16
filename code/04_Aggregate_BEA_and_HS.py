@@ -55,7 +55,7 @@ with open(data_paths_file, 'r') as f:
     data_paths = json.load(f)
 
 # Load processed continent data
-continents_to_process = ['Asia', 'Europe', 'North America', 'South America', 'Oceana']
+continents_to_process = ['Asia', 'Europe', 'North America', 'South America', 'Oceana', 'Africa']
 processed_data = {}
 
 print("Loading processed continent data...")

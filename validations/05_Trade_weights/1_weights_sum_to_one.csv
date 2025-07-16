@@ -11,7 +11,7 @@ detail_code,world_weight,weight_sum_diff,level,weight_type,passes_validation,usu
 113000,1.0,0.0,detail,world,True,,,,,
 114000,1.0,0.0,detail,world,True,,,,,
 115000,1.0,0.0,detail,world,True,,,,,
-211000,0.9999999999999999,-1.1102230246251565e-16,detail,world,True,,,,,
+211000,1.0,0.0,detail,world,True,,,,,
 212100,1.0,0.0,detail,world,True,,,,,
 212230,1.0,0.0,detail,world,True,,,,,
 2122A0,1.0,0.0,detail,world,True,,,,,
@@ -35,7 +35,7 @@ detail_code,world_weight,weight_sum_diff,level,weight_type,passes_validation,usu
 31161A,1.0,0.0,detail,world,True,,,,,
 311700,1.0,0.0,detail,world,True,,,,,
 311810,1.0,0.0,detail,world,True,,,,,
-3118A0,1.0,0.0,detail,world,True,,,,,
+3118A0,0.9999999999999999,-1.1102230246251565e-16,detail,world,True,,,,,
 311910,1.0,0.0,detail,world,True,,,,,
 311920,1.0,0.0,detail,world,True,,,,,
 311930,1.0,0.0,detail,world,True,,,,,
@@ -44,7 +44,7 @@ detail_code,world_weight,weight_sum_diff,level,weight_type,passes_validation,usu
 312110,1.0,0.0,detail,world,True,,,,,
 312120,1.0,0.0,detail,world,True,,,,,
 312130,1.0,0.0,detail,world,True,,,,,
-312140,0.9999999999999999,-1.1102230246251565e-16,detail,world,True,,,,,
+312140,1.0,0.0,detail,world,True,,,,,
 312200,1.0,0.0,detail,world,True,,,,,
 313100,1.0,0.0,detail,world,True,,,,,
 313200,1.0,0.0,detail,world,True,,,,,
@@ -70,7 +70,7 @@ detail_code,world_weight,weight_sum_diff,level,weight_type,passes_validation,usu
 323120,1.0,0.0,detail,world,True,,,,,
 324110,1.0,0.0,detail,world,True,,,,,
 324121,1.0,0.0,detail,world,True,,,,,
-324122,1.0,0.0,detail,world,True,,,,,
+324122,0.9999999999999999,-1.1102230246251565e-16,detail,world,True,,,,,
 324190,1.0,0.0,detail,world,True,,,,,
 325110,1.0,0.0,detail,world,True,,,,,
 325120,1.0,0.0,detail,world,True,,,,,
@@ -102,9 +102,9 @@ detail_code,world_weight,weight_sum_diff,level,weight_type,passes_validation,usu
 327200,1.0,0.0,detail,world,True,,,,,
 327310,1.0,0.0,detail,world,True,,,,,
 327320,1.0,0.0,detail,world,True,,,,,
-327330,0.9999999999999999,-1.1102230246251565e-16,detail,world,True,,,,,
+327330,1.0,0.0,detail,world,True,,,,,
 327390,1.0,0.0,detail,world,True,,,,,
-327400,1.0,0.0,detail,world,True,,,,,
+327400,0.9999999999999999,-1.1102230246251565e-16,detail,world,True,,,,,
 327910,1.0,0.0,detail,world,True,,,,,
 327991,1.0,0.0,detail,world,True,,,,,
 327992,1.0,0.0,detail,world,True,,,,,
@@ -122,7 +122,7 @@ detail_code,world_weight,weight_sum_diff,level,weight_type,passes_validation,usu
 331520,1.0,0.0,detail,world,True,,,,,
 332119,1.0,0.0,detail,world,True,,,,,
 33211A,1.0,0.0,detail,world,True,,,,,
-332200,1.0,0.0,detail,world,True,,,,,
+332200,0.9999999999999999,-1.1102230246251565e-16,detail,world,True,,,,,
 332310,1.0,0.0,detail,world,True,,,,,
 332320,1.0,0.0,detail,world,True,,,,,
 332410,1.0,0.0,detail,world,True,,,,,
@@ -178,11 +178,11 @@ detail_code,world_weight,weight_sum_diff,level,weight_type,passes_validation,usu
 334511,1.0,0.0,detail,world,True,,,,,
 334512,1.0,0.0,detail,world,True,,,,,
 334513,1.0,0.0,detail,world,True,,,,,
-334514,1.0000000000000002,2.220446049250313e-16,detail,world,True,,,,,
+334514,1.0,0.0,detail,world,True,,,,,
 334515,1.0,0.0,detail,world,True,,,,,
 334516,1.0,0.0,detail,world,True,,,,,
 334517,1.0,0.0,detail,world,True,,,,,
-33451A,1.0,0.0,detail,world,True,,,,,
+33451A,0.9999999999999999,-1.1102230246251565e-16,detail,world,True,,,,,
 334610,1.0,0.0,detail,world,True,,,,,
 335110,1.0,0.0,detail,world,True,,,,,
 335120,1.0,0.0,detail,world,True,,,,,
@@ -201,15 +201,15 @@ detail_code,world_weight,weight_sum_diff,level,weight_type,passes_validation,usu
 336111,1.0,0.0,detail,world,True,,,,,
 336112,1.0,0.0,detail,world,True,,,,,
 336120,1.0,0.0,detail,world,True,,,,,
-336211,0.9999999999999999,-1.1102230246251565e-16,detail,world,True,,,,,
+336211,1.0,0.0,detail,world,True,,,,,
 336212,1.0,0.0,detail,world,True,,,,,
 336213,1.0,0.0,detail,world,True,,,,,
-336214,1.0,0.0,detail,world,True,,,,,
+336214,0.9999999999999999,-1.1102230246251565e-16,detail,world,True,,,,,
 336310,1.0,0.0,detail,world,True,,,,,
 336320,1.0,0.0,detail,world,True,,,,,
 336350,1.0,0.0,detail,world,True,,,,,
-336360,0.9999999999999999,-1.1102230246251565e-16,detail,world,True,,,,,
-336370,1.0,0.0,detail,world,True,,,,,
+336360,1.0,0.0,detail,world,True,,,,,
+336370,0.9999999999999999,-1.1102230246251565e-16,detail,world,True,,,,,
 336390,1.0,0.0,detail,world,True,,,,,
 3363A0,1.0,0.0,detail,world,True,,,,,
 336411,1.0,0.0,detail,world,True,,,,,
@@ -237,7 +237,7 @@ detail_code,world_weight,weight_sum_diff,level,weight_type,passes_validation,usu
 339115,1.0,0.0,detail,world,True,,,,,
 339116,1.0,0.0,detail,world,True,,,,,
 339910,1.0,0.0,detail,world,True,,,,,
-339920,1.0,0.0,detail,world,True,,,,,
+339920,0.9999999999999999,-1.1102230246251565e-16,detail,world,True,,,,,
 339930,1.0,0.0,detail,world,True,,,,,
 339940,1.0,0.0,detail,world,True,,,,,
 339950,1.0,0.0,detail,world,True,,,,,
@@ -249,7 +249,7 @@ S00300,1.0,0.0,detail,world,True,,,,,
 ,0.9999999999999999,-1.1102230246251565e-16,usummary,world,True,211,,,,
 ,1.0,0.0,usummary,world,True,212,,,,
 ,1.0,0.0,usummary,world,True,311,,,,
-,0.9999999999999999,-1.1102230246251565e-16,usummary,world,True,3121,,,,
+,1.0,0.0,usummary,world,True,3121,,,,
 ,1.0,0.0,usummary,world,True,3122,,,,
 ,1.0,0.0,usummary,world,True,313TT,,,,
 ,1.0,0.0,usummary,world,True,315AL,,,,
@@ -270,7 +270,7 @@ S00300,1.0,0.0,detail,world,True,,,,,
 ,1.0,0.0,usummary,world,True,33312,,,,
 ,1.0,0.0,usummary,world,True,33313,,,,
 ,1.0,0.0,usummary,world,True,3332OM,,,,
-,1.0,0.0,usummary,world,True,3341,,,,
+,0.9999999999999999,-1.1102230246251565e-16,usummary,world,True,3341,,,,
 ,1.0,0.0,usummary,world,True,3342,,,,
 ,1.0,0.0,usummary,world,True,3344,,,,
 ,1.0,0.0,usummary,world,True,3345,,,,
@@ -372,7 +372,7 @@ S00300,1.0,0.0,detail,world,True,,,,,
 112A00,,0.0,detail,regional,True,,,,JPN,1.0
 112A00,,0.0,detail,regional,True,,,,MEX,1.0
 112A00,,0.0,detail,regional,True,,,,RoAsia,1.0
-112A00,,0.0,detail,regional,True,,,,RoWorld,1.0
+112A00,,-1.1102230246251565e-16,detail,regional,True,,,,RoWorld,0.9999999999999999
 113000,,0.0,detail,regional,True,,,,CAN,1.0
 113000,,0.0,detail,regional,True,,,,CHN,1.0
 113000,,0.0,detail,regional,True,,,,Europe,1.0
@@ -462,7 +462,7 @@ S00300,1.0,0.0,detail,world,True,,,,,
 311221,,0.0,detail,regional,True,,,,JPN,1.0
 311221,,0.0,detail,regional,True,,,,MEX,1.0
 311221,,0.0,detail,regional,True,,,,RoAsia,1.0
-311221,,0.0,detail,regional,True,,,,RoWorld,1.0
+311221,,-1.1102230246251565e-16,detail,regional,True,,,,RoWorld,0.9999999999999999
 311224,,0.0,detail,regional,True,,,,CAN,1.0
 311224,,0.0,detail,regional,True,,,,CHN,1.0
 311224,,0.0,detail,regional,True,,,,Europe,1.0
@@ -544,7 +544,7 @@ S00300,1.0,0.0,detail,world,True,,,,,
 31161A,,0.0,detail,regional,True,,,,JPN,1.0
 31161A,,0.0,detail,regional,True,,,,MEX,1.0
 31161A,,0.0,detail,regional,True,,,,RoAsia,1.0
-31161A,,0.0,detail,regional,True,,,,RoWorld,1.0
+31161A,,-1.1102230246251565e-16,detail,regional,True,,,,RoWorld,0.9999999999999999
 311700,,0.0,detail,regional,True,,,,CAN,1.0
 311700,,0.0,detail,regional,True,,,,CHN,1.0
 311700,,0.0,detail,regional,True,,,,Europe,1.0
@@ -670,7 +670,7 @@ S00300,1.0,0.0,detail,world,True,,,,,
 314120,,0.0,detail,regional,True,,,,JPN,1.0
 314120,,0.0,detail,regional,True,,,,MEX,1.0
 314120,,0.0,detail,regional,True,,,,RoAsia,1.0
-314120,,-1.1102230246251565e-16,detail,regional,True,,,,RoWorld,0.9999999999999999
+314120,,0.0,detail,regional,True,,,,RoWorld,1.0
 314900,,0.0,detail,regional,True,,,,CAN,1.0
 314900,,0.0,detail,regional,True,,,,CHN,1.0
 314900,,0.0,detail,regional,True,,,,Europe,1.0
@@ -809,7 +809,7 @@ S00300,1.0,0.0,detail,world,True,,,,,
 324122,,0.0,detail,regional,True,,,,Europe,1.0
 324122,,0.0,detail,regional,True,,,,MEX,1.0
 324122,,0.0,detail,regional,True,,,,RoAsia,1.0
-324122,,0.0,detail,regional,True,,,,RoWorld,1.0
+324122,,-1.1102230246251565e-16,detail,regional,True,,,,RoWorld,0.9999999999999999
 324190,,0.0,detail,regional,True,,,,CAN,1.0
 324190,,0.0,detail,regional,True,,,,CHN,1.0
 324190,,0.0,detail,regional,True,,,,Europe,1.0
@@ -865,7 +865,7 @@ S00300,1.0,0.0,detail,world,True,,,,,
 3252A0,,0.0,detail,regional,True,,,,JPN,1.0
 3252A0,,0.0,detail,regional,True,,,,MEX,1.0
 3252A0,,0.0,detail,regional,True,,,,RoAsia,1.0
-3252A0,,0.0,detail,regional,True,,,,RoWorld,1.0
+3252A0,,-1.1102230246251565e-16,detail,regional,True,,,,RoWorld,0.9999999999999999
 325310,,0.0,detail,regional,True,,,,CAN,1.0
 325310,,0.0,detail,regional,True,,,,CHN,1.0
 325310,,-1.1102230246251565e-16,detail,regional,True,,,,Europe,0.9999999999999999
@@ -928,7 +928,7 @@ S00300,1.0,0.0,detail,world,True,,,,,
 325610,,0.0,detail,regional,True,,,,JPN,1.0
 325610,,0.0,detail,regional,True,,,,MEX,1.0
 325610,,-1.1102230246251565e-16,detail,regional,True,,,,RoAsia,0.9999999999999999
-325610,,-1.1102230246251565e-16,detail,regional,True,,,,RoWorld,0.9999999999999999
+325610,,0.0,detail,regional,True,,,,RoWorld,1.0
 325620,,0.0,detail,regional,True,,,,CAN,1.0
 325620,,0.0,detail,regional,True,,,,CHN,1.0
 325620,,0.0,detail,regional,True,,,,Europe,1.0
@@ -1005,7 +1005,7 @@ S00300,1.0,0.0,detail,world,True,,,,,
 327100,,0.0,detail,regional,True,,,,JPN,1.0
 327100,,0.0,detail,regional,True,,,,MEX,1.0
 327100,,0.0,detail,regional,True,,,,RoAsia,1.0
-327100,,0.0,detail,regional,True,,,,RoWorld,1.0
+327100,,-1.1102230246251565e-16,detail,regional,True,,,,RoWorld,0.9999999999999999
 327200,,0.0,detail,regional,True,,,,CAN,1.0
 327200,,0.0,detail,regional,True,,,,CHN,1.0
 327200,,0.0,detail,regional,True,,,,Europe,1.0
@@ -1042,7 +1042,7 @@ S00300,1.0,0.0,detail,world,True,,,,,
 327400,,0.0,detail,regional,True,,,,JPN,1.0
 327400,,0.0,detail,regional,True,,,,MEX,1.0
 327400,,0.0,detail,regional,True,,,,RoAsia,1.0
-327400,,-1.1102230246251565e-16,detail,regional,True,,,,RoWorld,0.9999999999999999
+327400,,0.0,detail,regional,True,,,,RoWorld,1.0
 327910,,0.0,detail,regional,True,,,,CAN,1.0
 327910,,0.0,detail,regional,True,,,,CHN,1.0
 327910,,0.0,detail,regional,True,,,,Europe,1.0
@@ -1084,7 +1084,7 @@ S00300,1.0,0.0,detail,world,True,,,,,
 331110,,0.0,detail,regional,True,,,,JPN,1.0
 331110,,0.0,detail,regional,True,,,,MEX,1.0
 331110,,0.0,detail,regional,True,,,,RoAsia,1.0
-331110,,0.0,detail,regional,True,,,,RoWorld,1.0
+331110,,-1.1102230246251565e-16,detail,regional,True,,,,RoWorld,0.9999999999999999
 331200,,0.0,detail,regional,True,,,,CAN,1.0
 331200,,0.0,detail,regional,True,,,,CHN,1.0
 331200,,0.0,detail,regional,True,,,,Europe,1.0
@@ -1154,7 +1154,7 @@ S00300,1.0,0.0,detail,world,True,,,,,
 332119,,0.0,detail,regional,True,,,,JPN,1.0
 332119,,0.0,detail,regional,True,,,,MEX,1.0
 332119,,0.0,detail,regional,True,,,,RoAsia,1.0
-332119,,0.0,detail,regional,True,,,,RoWorld,1.0
+332119,,-1.1102230246251565e-16,detail,regional,True,,,,RoWorld,0.9999999999999999
 33211A,,0.0,detail,regional,True,,,,CAN,1.0
 33211A,,0.0,detail,regional,True,,,,CHN,1.0
 33211A,,0.0,detail,regional,True,,,,Europe,1.0
@@ -1238,7 +1238,7 @@ S00300,1.0,0.0,detail,world,True,,,,,
 33291A,,0.0,detail,regional,True,,,,JPN,1.0
 33291A,,0.0,detail,regional,True,,,,MEX,1.0
 33291A,,0.0,detail,regional,True,,,,RoAsia,1.0
-33291A,,-1.1102230246251565e-16,detail,regional,True,,,,RoWorld,0.9999999999999999
+33291A,,0.0,detail,regional,True,,,,RoWorld,1.0
 332991,,0.0,detail,regional,True,,,,CAN,1.0
 332991,,0.0,detail,regional,True,,,,CHN,1.0
 332991,,0.0,detail,regional,True,,,,Europe,1.0
@@ -1441,13 +1441,13 @@ S00300,1.0,0.0,detail,world,True,,,,,
 333994,,0.0,detail,regional,True,,,,JPN,1.0
 333994,,0.0,detail,regional,True,,,,MEX,1.0
 333994,,0.0,detail,regional,True,,,,RoAsia,1.0
-333994,,0.0,detail,regional,True,,,,RoWorld,1.0
+333994,,-1.1102230246251565e-16,detail,regional,True,,,,RoWorld,0.9999999999999999
 33399A,,0.0,detail,regional,True,,,,CAN,1.0
 33399A,,0.0,detail,regional,True,,,,CHN,1.0
 33399A,,0.0,detail,regional,True,,,,Europe,1.0
 33399A,,0.0,detail,regional,True,,,,JPN,1.0
 33399A,,0.0,detail,regional,True,,,,MEX,1.0
-33399A,,0.0,detail,regional,True,,,,RoAsia,1.0
+33399A,,-1.1102230246251565e-16,detail,regional,True,,,,RoAsia,0.9999999999999999
 33399A,,0.0,detail,regional,True,,,,RoWorld,1.0
 33399B,,0.0,detail,regional,True,,,,CAN,1.0
 33399B,,0.0,detail,regional,True,,,,CHN,1.0
@@ -1518,7 +1518,7 @@ S00300,1.0,0.0,detail,world,True,,,,,
 334418,,0.0,detail,regional,True,,,,JPN,1.0
 334418,,0.0,detail,regional,True,,,,MEX,1.0
 334418,,0.0,detail,regional,True,,,,RoAsia,1.0
-334418,,-1.1102230246251565e-16,detail,regional,True,,,,RoWorld,0.9999999999999999
+334418,,0.0,detail,regional,True,,,,RoWorld,1.0
 33441A,,0.0,detail,regional,True,,,,CAN,1.0
 33441A,,0.0,detail,regional,True,,,,CHN,1.0
 33441A,,0.0,detail,regional,True,,,,Europe,1.0
@@ -1532,7 +1532,7 @@ S00300,1.0,0.0,detail,world,True,,,,,
 334510,,0.0,detail,regional,True,,,,JPN,1.0
 334510,,0.0,detail,regional,True,,,,MEX,1.0
 334510,,0.0,detail,regional,True,,,,RoAsia,1.0
-334510,,0.0,detail,regional,True,,,,RoWorld,1.0
+334510,,-1.1102230246251565e-16,detail,regional,True,,,,RoWorld,0.9999999999999999
 334511,,0.0,detail,regional,True,,,,CAN,1.0
 334511,,0.0,detail,regional,True,,,,CHN,1.0
 334511,,0.0,detail,regional,True,,,,Europe,1.0
@@ -1560,7 +1560,7 @@ S00300,1.0,0.0,detail,world,True,,,,,
 334514,,0.0,detail,regional,True,,,,JPN,1.0
 334514,,0.0,detail,regional,True,,,,MEX,1.0
 334514,,0.0,detail,regional,True,,,,RoAsia,1.0
-334514,,0.0,detail,regional,True,,,,RoWorld,1.0
+334514,,2.220446049250313e-16,detail,regional,True,,,,RoWorld,1.0000000000000002
 334515,,0.0,detail,regional,True,,,,CAN,1.0
 334515,,0.0,detail,regional,True,,,,CHN,1.0
 334515,,0.0,detail,regional,True,,,,Europe,1.0
@@ -1637,7 +1637,7 @@ S00300,1.0,0.0,detail,world,True,,,,,
 335312,,0.0,detail,regional,True,,,,JPN,1.0
 335312,,0.0,detail,regional,True,,,,MEX,1.0
 335312,,0.0,detail,regional,True,,,,RoAsia,1.0
-335312,,0.0,detail,regional,True,,,,RoWorld,1.0
+335312,,-1.1102230246251565e-16,detail,regional,True,,,,RoWorld,0.9999999999999999
 335313,,0.0,detail,regional,True,,,,CAN,1.0
 335313,,0.0,detail,regional,True,,,,CHN,1.0
 335313,,0.0,detail,regional,True,,,,Europe,1.0
@@ -1651,7 +1651,7 @@ S00300,1.0,0.0,detail,world,True,,,,,
 335314,,0.0,detail,regional,True,,,,JPN,1.0
 335314,,0.0,detail,regional,True,,,,MEX,1.0
 335314,,0.0,detail,regional,True,,,,RoAsia,1.0
-335314,,0.0,detail,regional,True,,,,RoWorld,1.0
+335314,,-1.1102230246251565e-16,detail,regional,True,,,,RoWorld,0.9999999999999999
 335911,,0.0,detail,regional,True,,,,CAN,1.0
 335911,,0.0,detail,regional,True,,,,CHN,1.0
 335911,,0.0,detail,regional,True,,,,Europe,1.0
@@ -1754,7 +1754,7 @@ S00300,1.0,0.0,detail,world,True,,,,,
 336320,,0.0,detail,regional,True,,,,JPN,1.0
 336320,,0.0,detail,regional,True,,,,MEX,1.0
 336320,,0.0,detail,regional,True,,,,RoAsia,1.0
-336320,,-1.1102230246251565e-16,detail,regional,True,,,,RoWorld,0.9999999999999999
+336320,,0.0,detail,regional,True,,,,RoWorld,1.0
 336350,,0.0,detail,regional,True,,,,CAN,1.0
 336350,,0.0,detail,regional,True,,,,CHN,1.0
 336350,,0.0,detail,regional,True,,,,Europe,1.0
@@ -1803,7 +1803,7 @@ S00300,1.0,0.0,detail,world,True,,,,,
 336412,,0.0,detail,regional,True,,,,JPN,1.0
 336412,,0.0,detail,regional,True,,,,MEX,1.0
 336412,,0.0,detail,regional,True,,,,RoAsia,1.0
-336412,,-1.1102230246251565e-16,detail,regional,True,,,,RoWorld,0.9999999999999999
+336412,,0.0,detail,regional,True,,,,RoWorld,1.0
 336413,,0.0,detail,regional,True,,,,CAN,1.0
 336413,,0.0,detail,regional,True,,,,CHN,1.0
 336413,,0.0,detail,regional,True,,,,Europe,1.0
@@ -1848,12 +1848,13 @@ S00300,1.0,0.0,detail,world,True,,,,,
 336991,,0.0,detail,regional,True,,,,JPN,1.0
 336991,,0.0,detail,regional,True,,,,MEX,1.0
 336991,,-1.1102230246251565e-16,detail,regional,True,,,,RoAsia,0.9999999999999999
-336991,,-1.1102230246251565e-16,detail,regional,True,,,,RoWorld,0.9999999999999999
+336991,,0.0,detail,regional,True,,,,RoWorld,1.0
 336992,,0.0,detail,regional,True,,,,CAN,1.0
 336992,,0.0,detail,regional,True,,,,CHN,1.0
 336992,,0.0,detail,regional,True,,,,Europe,1.0
 336992,,0.0,detail,regional,True,,,,MEX,1.0
 336992,,0.0,detail,regional,True,,,,RoAsia,1.0
+336992,,0.0,detail,regional,True,,,,RoWorld,1.0
 336999,,0.0,detail,regional,True,,,,CAN,1.0
 336999,,0.0,detail,regional,True,,,,CHN,1.0
 336999,,0.0,detail,regional,True,,,,Europe,1.0
@@ -1874,7 +1875,7 @@ S00300,1.0,0.0,detail,world,True,,,,,
 337121,,0.0,detail,regional,True,,,,JPN,1.0
 337121,,0.0,detail,regional,True,,,,MEX,1.0
 337121,,0.0,detail,regional,True,,,,RoAsia,1.0
-337121,,0.0,detail,regional,True,,,,RoWorld,1.0
+337121,,-1.1102230246251565e-16,detail,regional,True,,,,RoWorld,0.9999999999999999
 337122,,0.0,detail,regional,True,,,,CAN,1.0
 337122,,0.0,detail,regional,True,,,,CHN,1.0
 337122,,0.0,detail,regional,True,,,,Europe,1.0
@@ -1888,7 +1889,7 @@ S00300,1.0,0.0,detail,world,True,,,,,
 337127,,0.0,detail,regional,True,,,,JPN,1.0
 337127,,0.0,detail,regional,True,,,,MEX,1.0
 337127,,0.0,detail,regional,True,,,,RoAsia,1.0
-337127,,-1.1102230246251565e-16,detail,regional,True,,,,RoWorld,0.9999999999999999
+337127,,0.0,detail,regional,True,,,,RoWorld,1.0
 33712N,,0.0,detail,regional,True,,,,CAN,1.0
 33712N,,0.0,detail,regional,True,,,,CHN,1.0
 33712N,,0.0,detail,regional,True,,,,Europe,1.0
@@ -1909,7 +1910,7 @@ S00300,1.0,0.0,detail,world,True,,,,,
 33721A,,0.0,detail,regional,True,,,,JPN,1.0
 33721A,,0.0,detail,regional,True,,,,MEX,1.0
 33721A,,0.0,detail,regional,True,,,,RoAsia,1.0
-33721A,,-1.1102230246251565e-16,detail,regional,True,,,,RoWorld,0.9999999999999999
+33721A,,0.0,detail,regional,True,,,,RoWorld,1.0
 337900,,0.0,detail,regional,True,,,,CAN,1.0
 337900,,0.0,detail,regional,True,,,,CHN,1.0
 337900,,0.0,detail,regional,True,,,,Europe,1.0
@@ -1930,7 +1931,7 @@ S00300,1.0,0.0,detail,world,True,,,,,
 339113,,0.0,detail,regional,True,,,,JPN,1.0
 339113,,0.0,detail,regional,True,,,,MEX,1.0
 339113,,0.0,detail,regional,True,,,,RoAsia,1.0
-339113,,0.0,detail,regional,True,,,,RoWorld,1.0
+339113,,-1.1102230246251565e-16,detail,regional,True,,,,RoWorld,0.9999999999999999
 339114,,0.0,detail,regional,True,,,,CAN,1.0
 339114,,0.0,detail,regional,True,,,,CHN,1.0
 339114,,0.0,detail,regional,True,,,,Europe,1.0
@@ -1944,7 +1945,7 @@ S00300,1.0,0.0,detail,world,True,,,,,
 339115,,0.0,detail,regional,True,,,,JPN,1.0
 339115,,0.0,detail,regional,True,,,,MEX,1.0
 339115,,-1.1102230246251565e-16,detail,regional,True,,,,RoAsia,0.9999999999999999
-339115,,-1.1102230246251565e-16,detail,regional,True,,,,RoWorld,0.9999999999999999
+339115,,0.0,detail,regional,True,,,,RoWorld,1.0
 339116,,0.0,detail,regional,True,,,,CAN,1.0
 339116,,0.0,detail,regional,True,,,,CHN,1.0
 339116,,0.0,detail,regional,True,,,,Europe,1.0
@@ -2077,7 +2078,7 @@ S00300,,0.0,detail,regional,True,,,,RoWorld,1.0
 ,,0.0,usummary,regional,True,321,,,JPN,1.0
 ,,0.0,usummary,regional,True,321,,,MEX,1.0
 ,,0.0,usummary,regional,True,321,,,RoAsia,1.0
-,,0.0,usummary,regional,True,321,,,RoWorld,1.0
+,,-1.1102230246251565e-16,usummary,regional,True,321,,,RoWorld,0.9999999999999999
 ,,0.0,usummary,regional,True,322,,,CAN,1.0
 ,,0.0,usummary,regional,True,322,,,CHN,1.0
 ,,0.0,usummary,regional,True,322,,,Europe,1.0
@@ -2196,14 +2197,14 @@ S00300,,0.0,detail,regional,True,,,,RoWorld,1.0
 ,,0.0,usummary,regional,True,3341,,,JPN,1.0
 ,,0.0,usummary,regional,True,3341,,,MEX,1.0
 ,,0.0,usummary,regional,True,3341,,,RoAsia,1.0
-,,-1.1102230246251565e-16,usummary,regional,True,3341,,,RoWorld,0.9999999999999999
+,,0.0,usummary,regional,True,3341,,,RoWorld,1.0
 ,,0.0,usummary,regional,True,3342,,,CAN,1.0
 ,,0.0,usummary,regional,True,3342,,,CHN,1.0
 ,,0.0,usummary,regional,True,3342,,,Europe,1.0
 ,,0.0,usummary,regional,True,3342,,,JPN,1.0
 ,,0.0,usummary,regional,True,3342,,,MEX,1.0
 ,,0.0,usummary,regional,True,3342,,,RoAsia,1.0
-,,-1.1102230246251565e-16,usummary,regional,True,3342,,,RoWorld,0.9999999999999999
+,,0.0,usummary,regional,True,3342,,,RoWorld,1.0
 ,,0.0,usummary,regional,True,3344,,,CAN,1.0
 ,,0.0,usummary,regional,True,3344,,,CHN,1.0
 ,,0.0,usummary,regional,True,3344,,,Europe,1.0
@@ -2259,7 +2260,7 @@ S00300,,0.0,detail,regional,True,,,,RoWorld,1.0
 ,,0.0,usummary,regional,True,3362BP,,,JPN,1.0
 ,,0.0,usummary,regional,True,3362BP,,,MEX,1.0
 ,,0.0,usummary,regional,True,3362BP,,,RoAsia,1.0
-,,-1.1102230246251565e-16,usummary,regional,True,3362BP,,,RoWorld,0.9999999999999999
+,,0.0,usummary,regional,True,3362BP,,,RoWorld,1.0
 ,,0.0,usummary,regional,True,3364,,,CAN,1.0
 ,,0.0,usummary,regional,True,3364,,,CHN,1.0
 ,,0.0,usummary,regional,True,3364,,,Europe,1.0
@@ -2307,7 +2308,7 @@ S00300,,0.0,detail,regional,True,,,,RoWorld,1.0
 ,,0.0,summary,regional,True,,111CA,,Europe,1.0
 ,,0.0,summary,regional,True,,111CA,,JPN,1.0
 ,,0.0,summary,regional,True,,111CA,,MEX,1.0
-,,-1.1102230246251565e-16,summary,regional,True,,111CA,,RoAsia,0.9999999999999999
+,,0.0,summary,regional,True,,111CA,,RoAsia,1.0
 ,,0.0,summary,regional,True,,111CA,,RoWorld,1.0
 ,,0.0,summary,regional,True,,113FF,,CAN,1.0
 ,,0.0,summary,regional,True,,113FF,,CHN,1.0
@@ -2357,7 +2358,7 @@ S00300,,0.0,detail,regional,True,,,,RoWorld,1.0
 ,,0.0,summary,regional,True,,321,,JPN,1.0
 ,,0.0,summary,regional,True,,321,,MEX,1.0
 ,,0.0,summary,regional,True,,321,,RoAsia,1.0
-,,0.0,summary,regional,True,,321,,RoWorld,1.0
+,,-1.1102230246251565e-16,summary,regional,True,,321,,RoWorld,0.9999999999999999
 ,,0.0,summary,regional,True,,322,,CAN,1.0
 ,,0.0,summary,regional,True,,322,,CHN,1.0
 ,,0.0,summary,regional,True,,322,,Europe,1.0
@@ -2419,7 +2420,7 @@ S00300,,0.0,detail,regional,True,,,,RoWorld,1.0
 ,,0.0,summary,regional,True,,333,,Europe,1.0
 ,,0.0,summary,regional,True,,333,,JPN,1.0
 ,,0.0,summary,regional,True,,333,,MEX,1.0
-,,0.0,summary,regional,True,,333,,RoAsia,1.0
+,,-1.1102230246251565e-16,summary,regional,True,,333,,RoAsia,0.9999999999999999
 ,,0.0,summary,regional,True,,333,,RoWorld,1.0
 ,,0.0,summary,regional,True,,334,,CAN,1.0
 ,,0.0,summary,regional,True,,334,,CHN,1.0

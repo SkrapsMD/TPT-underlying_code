@@ -44,7 +44,7 @@ with open(data_paths_file, 'r') as f:
     data_paths = json.load(f)
 
 # Step 2 -- Load the 2024 trade data by continent 
-continents_to_process = ['Asia', 'Europe', 'North America', 'South America', 'Oceana']
+continents_to_process = ['Asia', 'Europe', 'North America', 'South America', 'Oceana', 'Africa']
 #continents_to_process = ['Oceana']
 
 all_continent_data = {}
