@@ -4,7 +4,39 @@ import json
 from main_pipeline_run import get_data_path
 
 """
-Description: Loads 2024 trade data by continent. Skips combined_data files.
+Description: Processes 2024 trade data by continent and maps HS commodity codes to BEA economic categories.
+This script combines raw trade data from multiple continents, applies the HS-to-BEA mapping created in
+02_HS_to_Naics_to_BEA, and produces clean country-level trade data ready for economic analysis.
+
+The core challenge we're solving:
+- Raw trade data is fragmented across continents and multiple files per continent
+- HS commodity codes need to be mapped to BEA economic categories for policy analysis
+- Data quality issues require cleaning and validation
+- We need consistent country-level aggregation across all trade relationships
+
+This script bridges the gap between raw trade data and analytical formats:
+1. RAW DATA: Continent-specific CSV files with HS10 codes and trade values
+2. MAPPING: HS-to-BEA bridge from 02_HS_to_Naics_to_BEA
+3. PROCESSED DATA: Clean country-level trade data with BEA economic categories
+
+The approach:
+1. Load 2024 trade data by continent (Asia, Europe, North America, South America, Oceana)
+2. Skip combined_data files and process individual continent files
+3. Apply HS-to-BEA mapping to add economic sector information
+4. Clean and validate data quality (missing values, duplicate entries)
+5. Aggregate to country level while preserving HS commodity detail
+6. Create processed datasets ready for BEA aggregation
+
+Data transformation:
+- Input: HS10 commodity codes, import values, country names
+- Mapping: HS10 → NAICS → BEA Detail codes
+- Output: Country-HS-BEA linked trade data
+
+Main outputs:
+- Combined data: {continent}_combined.csv files with raw trade data
+- Processed data: {continent}_processed.csv files with BEA mappings applied
+- Validation: Data quality checks and mapping success rates
+
 """
 
 data_paths_file = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data_paths.json')

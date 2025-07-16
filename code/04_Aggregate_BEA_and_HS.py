@@ -5,8 +5,49 @@ from main_pipeline_run import get_data_path
 import country_converter as coco
 
 """
-Description: Aggregates processed continent trade data into different analytical formats.
-Creates multiple aggregation levels for BEA and HS code analysis.
+Description: Aggregates processed continent trade data into multiple BEA levels and creates HS code hierarchies
+with weight calculations for comprehensive trade analysis. This script transforms the country-level trade data
+from 03_Map_country_trade_data into the analytical formats needed for tariff impact assessment.
+
+The core challenge we're solving:
+- Trade data needs to be analyzed at different levels of economic aggregation (BEA hierarchy)
+- HS commodity codes need hierarchical structure for sector-level analysis
+- We need weights showing how HS codes contribute to each BEA economic category
+- All aggregations must preserve total trade values for validation
+
+This script creates two main analytical outputs:
+1. BEA AGGREGATIONS: Country-level trade data aggregated to 4 BEA economic levels
+2. HS WEIGHTS: Compositional weights showing how HS codes contribute to BEA categories
+
+BEA aggregation levels (from most detailed to most aggregate):
+- Detail: Finest BEA industry categories (~400 codes)
+- U.Summary: Intermediate aggregation level (~140 codes) 
+- Summary: Broader economic categories (~70 codes)
+- Sector: Major economic sectors (~20 codes)
+
+HS code hierarchy created:
+- HS10: Original commodity codes (9 or 10 digits)
+- HS8, HS6, HS4, HS2: Progressive aggregation by trimming digits
+- HS_Section: Broad commodity sections (21 categories)
+
+The approach:
+1. Load processed continent data and add ISO3 country codes
+2. Create 4 BEA aggregation levels with validation to ensure no value loss
+3. Generate HS code hierarchy based on commodity code length (9 vs 10 digits)
+4. Calculate weights showing HS code composition within each BEA category
+5. Create final JSON output with HS section weights for U.Summary level
+
+Main outputs:
+- BEA aggregations: country_{level}/ folders with aggregated trade data
+- HS weights: hs_weights/{level}/ folders with compositional weights
+- Final output: bea_hs_section_weights.json for downstream tariff analysis
+- Validation: Country-level totals validation across all aggregation levels
+
+The weights calculation:
+weight = (HS_code_import_value_within_BEA_code) / (total_BEA_code_import_value)
+
+This enables analysis of how trade policies affecting specific HS codes propagate through
+the BEA economic structure, supporting comprehensive tariff impact assessment.
 """
 
 data_paths_file = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data_paths.json')

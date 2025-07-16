@@ -4,6 +4,46 @@ import pandas as pd
 import country_converter as coco
 from main_pipeline_run import get_data_path
 
+"""
+Description: Creates country-specific trade weights for tariff analysis using two different weighting schemes.
+This script takes the BEA-aggregated trade data from 04_Aggregate_BEA_and_HS and calculates import weights
+that can be used to assess the economic impact of trade policies on different countries and regions.
+
+The core challenge we're solving:
+- Trade policies affect countries differently based on their import patterns
+- We need weights that reflect both global trade relationships and regional dependencies
+- Different BEA aggregation levels (detail, U.Summary, summary, sector) require consistent weighting
+
+This script creates two types of weights:
+1. DIRECT weights: Use global import totals as denominators (country's share of world imports)
+2. INDIRECT weights: Use regional import totals as denominators (country's share of regional imports)
+
+Regional definitions:
+- Single-country regions: CAN, MEX, CHN, JPN (weights = 1.0 for indirect)
+- Europe: All European countries combined
+- RoAsia: Asia + Oceania excluding China and Japan
+- RoWorld: All other countries not in above regions
+
+The approach:
+1. Load BEA aggregated data from all 4 levels (detail, usummary, summary, sector)
+2. Apply region assignments using country_converter and custom logic
+3. Calculate denominators for both world and regional weighting schemes
+4. Compute weights and validate they sum to 1.0 within each grouping
+5. Create comprehensive output files and final JSON for downstream analysis
+
+Main outputs:
+- Working files: {level}_trade_weights.csv for each BEA level (verification data)
+- Final output: trade_weights.json with direct/indirect structure matching bea_import_weights.json
+- Validation: 1_weights_sum_to_one.csv showing weight validation across all levels
+
+The weights are structured as:
+- Direct: weight = country_import_value / world_total_for_bea_code
+- Indirect: weight = country_import_value / regional_total_for_bea_code
+
+These weights enable analysis of how trade policies affect different countries based on their
+global vs regional import dependencies across different BEA economic sectors.
+"""
+
 base_path = get_data_path('working', '04_Aggregate_BEA_and_HS')
 aggregated_path = os.path.join(base_path, 'aggregated_data')
 
