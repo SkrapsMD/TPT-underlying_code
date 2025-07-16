@@ -1,0 +1,141 @@
+usummary_code,HS_total_imports,TiVA_total_imports,difference,usummary_name
+111,18894801.0,25000000,-6105199.0,Crop production
+112,24676408.0,20000000,4676408.0,Animal production and aquaculture
+113FF,263976186.0,441000000,-177023814.0,"Forestry, fishing, and related activities"
+211,2950.0,0,2950.0,Oil and gas extraction
+212,11623113.0,28000000,-16376887.0,"Mining, except oil and gas"
+213,0.0,4000000,-4000000.0,Support activities for mining
+2211,0.0,7000000,-7000000.0,"Electric power generation, transmission, and distribution"
+2212NW,0.0,0,0.0,"Natural gas distribution and water, sewage and other systems"
+23EH,0.0,0,0.0,"Education, hospital, and health structures"
+23MR,0.0,0,0.0,Maintenance and repair construction
+23OC,0.0,0,0.0,Office and commercial structures
+23OR,0.0,0,0.0,Other residential construction
+23OT,0.0,0,0.0,Other nonresidential structures
+23PC,0.0,0,0.0,Power and communication structures
+23SF,0.0,0,0.0,Single-family residential structures
+23TH,0.0,0,0.0,Transportation structures and highways and streets
+311,979812768.0,793000000,186812768.0,Food manufacturing
+3121,256876597.0,257000000,-123403.0,Beverage manufacturing
+3122,52492.0,0,52492.0,Tobacco manufacturing
+313TT,502187598.0,518000000,-15812402.0,Textile mills and textile product mills
+315AL,113759721.0,51000000,62759721.0,Apparel and leather and allied products
+321,37753358.0,35000000,2753358.0,Wood products
+322,280174514.0,348000000,-67825486.0,Paper products
+323,222466458.0,151000000,71466458.0,Printing and related support activities
+324,451765067.0,1489000000,-1037234933.0,Petroleum and coal products
+3251,2565310422.0,2500000000,65310422.0,Basic chemical manufacturing
+3252,1542985774.0,1682000000,-139014226.0,"Resin, rubber, and artificial fibers manufacturing"
+3254,7642107445.0,5845000000,1797107445.0,Pharmaceutical and medicine manufacturing
+325X,6017100726.0,3682000000,2335100726.0,Other chemical manufacturing
+326,2938183333.0,3282000000,-343816667.0,Plastics and rubber products
+327,1021391772.0,1063000000,-41608228.0,Nonmetallic mineral products
+3311IS,1789472370.0,2256000000,-466527630.0,Iron and steel mills and manufacturing from purchased steel
+3313NF,1026534589.0,831000000,195534589.0,Nonferrous metal production and processing and foundries
+332,4635405713.0,3967000000,668405713.0,Fabricated metal products
+33311,1260774515.0,1156000000,104774515.0,Agricultural implement manufacturing
+33312,6729697708.0,7494000000,-764302292.0,Construction machinery manufacturing
+33313,93100313.0,123000000,-29899687.0,Mining and oil and gas field machinery manufacturing
+3332OM,19974016151.0,21098000000,-1123983849.0,Other machinery
+3341,1036698209.0,1865000000,-828301791.0,Computer and peripheral equipment manufacturing
+3342,942971773.0,646000000,296971773.0,Communications equipment manufacturing
+3344,5595351584.0,4179000000,1416351584.0,Semiconductor and other electronic component manufacturing
+3345,4631133319.0,4013000000,618133319.0,"Navigational, measuring, electromedical, and control instruments manufacturing"
+334X,1631210555.0,362000000,1269210555.0,Other computer and electronic product manufacturing
+335,9230037298.0,8600000000,630037298.0,"Electrical equipment, appliances, and components"
+336111,39711877012.0,16018000000,23693877012.0,Automobile manufacturing
+336112,14080167.0,25321000000,-25306919833.0,Light truck and utility vehicle manufacturing
+33612,557852585.0,824000000,-266147415.0,Heavy duty truck manufacturing
+3362BP,11656127682.0,11187000000,469127682.0,"Motor vehicle body, trailer, and parts manufacturing"
+3364,3663011048.0,3314000000,349011048.0,Aerospace product and parts manufacturing
+3365AO,1154271188.0,1001000000,153271188.0,All other transportation equipment manufacturing
+337,71477120.0,41000000,30477120.0,Furniture and related products
+3391,1663227602.0,715000000,948227602.0,Medical equipment and supplies manufacturing
+3399,1404632483.0,1243000000,161632483.0,Other miscellaneous manufacturing
+4231,0.0,0,0.0,Motor vehicle and motor vehicle parts and supplies
+4234,0.0,0,0.0,Professional and commercial equipment and supplies
+4236,0.0,0,0.0,Household appliances and electrical and electronic goods
+4238,0.0,0,0.0,"Machinery, equipment, and supplies"
+423X,0.0,0,0.0,Other durable goods merchant wholesalers
+4242,0.0,0,0.0,Drugs and druggists' sundries
+4244,0.0,0,0.0,Grocery and related product wholesalers
+4247,0.0,0,0.0,Petroleum and petroleum products
+424X,0.0,0,0.0,Other nondurable goods merchant wholesalers
+425,0.0,0,0.0,Wholesale electronic markets and agents and brokers
+42ID,0.0,0,0.0,Customs duties
+441,0.0,0,0.0,Motor vehicle and parts dealers
+444,0.0,0,0.0,Building material and garden equipment and supplies dealers
+445,0.0,0,0.0,Food and beverage stores
+446,0.0,0,0.0,Health and personal care stores
+447,0.0,0,0.0,Gasoline stations
+448,0.0,0,0.0,Clothing and clothing accessories stores
+452,0.0,0,0.0,General merchandise stores
+454,0.0,0,0.0,Nonstore retailers
+481,0.0,4540000000,-4540000000.0,Air transportation
+482,0.0,0,0.0,Rail transportation
+483,0.0,0,0.0,Water transportation
+484,0.0,0,0.0,Truck transportation
+485,0.0,0,0.0,Transit and ground passenger transportation
+486,0.0,0,0.0,Pipeline transportation
+48A,0.0,0,0.0,Scenic and sightseeing transportation and support activities
+492,0.0,0,0.0,Couriers and messengers
+493,0.0,0,0.0,Warehousing and storage
+4A0X,0.0,0,0.0,All other retail
+5111,0.0,25000000,-25000000.0,"Newspaper, periodical, book, and directory publishers"
+5112,0.0,-9000000,9000000.0,Software publishers
+512,0.0,941000000,-941000000.0,Motion picture and sound recording industries
+515,0.0,0,0.0,Broadcasting (except internet)
+5171,0.0,3000000,-3000000.0,Wired telecommunications carriers
+5172,0.0,0,0.0,Wireless telecommunications carriers (except satellite)
+5174OT,0.0,0,0.0,"Other telecommunications, including satellite"
+518,0.0,4000000,-4000000.0,"Data processing, hosting, and related services"
+519,0.0,8000000,-8000000.0,Other information services
+521CI,0.0,867000000,-867000000.0,"Federal reserve banks, credit intermediation, and related activities"
+523,0.0,1000000,-1000000.0,"Securities, commodity contracts, and investments"
+524113,0.0,0,0.0,Direct life insurance carriers
+5241XX,0.0,539000000,-539000000.0,Unknown
+5242,0.0,0,0.0,"Agencies, brokerages, and other insurance related activities"
+525,0.0,0,0.0,"Funds, trusts, and other financial vehicles"
+532RL,0.0,0,0.0,Rental and leasing services and lessors of intangible assets
+5411,0.0,617000000,-617000000.0,Legal services
+5412,0.0,120000000,-120000000.0,"Accounting, tax preparation, bookkeeping, and payroll services"
+5413,0.0,89000000,-89000000.0,"Architectural, engineering, and related services"
+5415,0.0,546000000,-546000000.0,Computer systems design and related services
+5416,0.0,1189000000,-1189000000.0,"Management, scientific, and technical consulting services"
+5417,0.0,815000000,-815000000.0,Scientific research and development services
+5418,0.0,183000000,-183000000.0,"Advertising, public relations, and related services"
+541X,0.0,168000000,-168000000.0,"Specialized design services and other professional, scientific, and technical services"
+55,0.0,0,0.0,Management of companies and enterprises
+5613,0.0,39000000,-39000000.0,Employment services
+5617,0.0,0,0.0,Services to buildings and dwellings
+561X,0.0,4000000,-4000000.0,Other administrative and support services
+562,0.0,4000000,-4000000.0,Waste management and remediation services
+61,0.0,47000000,-47000000.0,Educational services
+6211,0.0,0,0.0,Offices of physicians
+6212,0.0,0,0.0,Offices of dentists
+6213,0.0,0,0.0,Offices of other health practitioners
+6214,0.0,0,0.0,Outpatient care centers
+6215OH,0.0,1000000,-1000000.0,Other ambulatory health care services
+622,0.0,127000000,-127000000.0,Hospitals
+623,0.0,1000000,-1000000.0,Nursing and residential care facilities
+624,0.0,0,0.0,Social assistance
+711AS,0.0,15000000,-15000000.0,"Performing arts, spectator sports, museums, and related activities"
+713,0.0,0,0.0,"Amusements, gambling, and recreation industries"
+721,0.0,0,0.0,Accommodation
+722,0.0,0,0.0,Food services and drinking places
+811,0.0,111000000,-111000000.0,Repair and maintenance
+812,0.0,0,0.0,Personal and laundry services
+813,0.0,0,0.0,"Religious, grantmaking, civic, professional, and similar organizations"
+814,0.0,0,0.0,Private households
+GFE,0.0,0,0.0,Federal government enterprises
+GFGD,0.0,0,0.0,Federal general government (defense)
+GFGN,0.0,0,0.0,Federal general government (nondefense)
+GSLE,0.0,0,0.0,State and local government enterprises
+GSLGE,0.0,0,0.0,State and local government (educational services)
+GSLGH,0.0,0,0.0,State and local government (hospitals and health services)
+GSLGO,0.0,0,0.0,State and local government (other services)
+HSO,0.0,0,0.0,Owner-occupied housing
+HST,0.0,0,0.0,Tenant-occupied housing
+ORE,0.0,0,0.0,Other real estate
+Other,4844504136.0,21355000000,-16510495864.0,Unknown
+Used,0.0,555000000,-555000000.0,Unknown
