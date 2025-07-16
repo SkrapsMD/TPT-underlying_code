@@ -1,0 +1,389 @@
+{
+  "base_paths": {
+    "project_root": "/home/sparkysparksmd/Documents/GitHub/FRBAtl_TariffPricePulse/scripts",
+    "underlying_data_root": "/home/sparkysparksmd/Documents/GitHub/FRBAtl_TariffPricePulse/scripts/Underlying_Data_Construction",
+    "raw_data": "/home/sparkysparksmd/Documents/GitHub/FRBAtl_TariffPricePulse/scripts/Underlying_Data_Construction/data/raw",
+    "working_data": "/home/sparkysparksmd/Documents/GitHub/FRBAtl_TariffPricePulse/scripts/Underlying_Data_Construction/data/working",
+    "final_data": "/home/sparkysparksmd/Documents/GitHub/FRBAtl_TariffPricePulse/scripts/Underlying_Data_Construction/data/final",
+    "code": "/home/sparkysparksmd/Documents/GitHub/FRBAtl_TariffPricePulse/scripts/Underlying_Data_Construction/code",
+    "validations": "/home/sparkysparksmd/Documents/GitHub/FRBAtl_TariffPricePulse/scripts/Underlying_Data_Construction/validations"
+  },
+  "raw_data_sources": {
+    "hs10": {
+      "base_path": "data/raw/hs10",
+      "files": {
+        "exports": "hs_sic_naics_exports_89_123_20240801.csv",
+        "imports": "hs_sic_naics_imports_89_123_20240801.csv",
+        "export_codes": "exp-code.txt",
+        "import_codes": "imp-code.txt",
+        "export_structure": "exp-stru.txt",
+        "import_structure": "imp-stru.txt",
+        "info": "INFO",
+        "hs_section_chapter_mapping": "hs_section_to_chapter_mapping.csv"
+      },
+      "2024_trade_data": {
+        "base_path": "data/raw/hs10/2024_trade_data",
+        "regions": {
+          "Africa": [
+            "combined_data.csv",
+            "hs9_Africa1_imp.csv",
+            "hs9_Africa2_imp.csv",
+            "hs9_Africa3_imp.csv",
+            "hs9_Africa4_imp.csv",
+            "hs9_Africa5_imp.csv"
+          ],
+          "Asia": [
+            "combined_data.csv",
+            "hs9_Asia1_imp.csv",
+            "hs9_Asia2_imp.csv",
+            "hs9_Asia3_imp.csv"
+          ],
+          "Europe": [
+            "combined_data.csv",
+            "hs9_Europe1_imp.csv",
+            "hs9_Europe2_imp.csv",
+            "hs9_Europe3_imp.csv",
+            "hs9_Europe4_imp.csv"
+          ],
+          "North America": [
+            "combined_data.csv",
+            "hs9_NorthAmerica_imp.csv"
+          ],
+          "Oceana": [
+            "combined_data.csv",
+            "hs9_Oceana1_imp.csv",
+            "hs9_Oceana2_imp.csv"
+          ],
+          "South America": [
+            "combined_data.csv",
+            "hs9_SouthAmerica1_imp.csv",
+            "hs9_SouthAmerica2_imp.csv",
+            "hs9_SouthAmerica3_imp.csv",
+            "hs9_SouthAmerica4_imp.csv"
+          ]
+        }
+      }
+    },
+    "hs4": {
+      "base_path": "data/raw/hs4",
+      "regions": {
+        "Africa": {
+          "exports": [
+            "EXP-hs4-1992-1996.csv",
+            "EXP-hs4-1997-2000.csv",
+            "EXP-hs4-2001-2003.csv",
+            "EXP-hs4-2004-2006.csv",
+            "EXP-hs4-2007-2009.csv",
+            "EXP-hs4-2010-2012.csv",
+            "EXP-hs4-2013-2016.csv",
+            "EXP-hs4-2017-2020.csv",
+            "EXP-hs4-2021-2024.csv"
+          ],
+          "imports": [
+            "IMP-hs4-1992-1996.csv",
+            "IMP-hs4-1997-2001.csv",
+            "IMP-hs4-2002-2006.csv",
+            "IMP-hs4-2007-2011.csv",
+            "IMP-hs4-2012-2016.csv",
+            "IMP-hs4-2017-2021.csv",
+            "IMP-hs4-2022-2024.csv"
+          ]
+        },
+        "Asia": {
+          "exports": [
+            "EXP-hs4-1992-1995.csv",
+            "EXP-hs4-1996-2002.csv",
+            "EXP-hs4-2003-2010.csv",
+            "EXP-hs4-2011-2017.csv",
+            "EXP-hs4-2018-2024.csv"
+          ],
+          "imports": [
+            "IMP-hs4-1992-1995.csv",
+            "IMP-hs4-1996-2002.csv",
+            "IMP-hs4-2003-2010.csv",
+            "IMP-hs4-2011-2017.csv",
+            "IMP-hs4-2018-2024.csv"
+          ]
+        },
+        "Central America": {
+          "exports": [
+            "EXP-hs4-1992-1996.csv",
+            "EXP-hs4-1997-2001.csv",
+            "EXP-hs4-2002-2006.csv",
+            "EXP-hs4-2007-2011.csv",
+            "EXP-hs4-2012-2016.csv",
+            "EXP-hs4-2017-2021.csv",
+            "EXP-hs4-2022-2024.csv"
+          ],
+          "imports": [
+            "IMP-hs4-1992-1996.csv",
+            "IMP-hs4-1997-2001.csv",
+            "IMP-hs4-2002-2006.csv",
+            "IMP-hs4-2007-2011.csv",
+            "IMP-hs4-2012-2016.csv",
+            "IMP-hs4-2017-2021.csv",
+            "IMP-hs4-2022-2024.csv"
+          ]
+        },
+        "Europe": {
+          "exports": [
+            "EXP-hs4-1992-1994.csv",
+            "EXP-hs4-1995-1997.csv",
+            "EXP-hs4-1998-2000.csv",
+            "EXP-hs4-2001-2003.csv",
+            "EXP-hs4-2004-2006.csv",
+            "EXP-hs4-2007-2009.csv",
+            "EXP-hs4-2010-2012.csv",
+            "EXP-hs4-2013-2015.csv",
+            "EXP-hs4-2016-2018.csv",
+            "EXP-hs4-2018-2021.csv",
+            "EXP-hs4-2022-2024.csv"
+          ],
+          "imports": [
+            "IMP-hs4-1992-1994.csv",
+            "IMP-hs4-1995-1997.csv",
+            "IMP-hs4-1998-2000.csv",
+            "IMP-hs4-2001-2003.csv",
+            "IMP-hs4-2004-2006.csv",
+            "IMP-hs4-2007-2009.csv",
+            "IMP-hs4-2010-2012.csv",
+            "IMP-hs4-2013-2015.csv",
+            "IMP-hs4-2016-2018.csv",
+            "IMP-hs4-2018-2021.csv",
+            "IMP-hs4-2022-2024.csv.csv"
+          ]
+        },
+        "Near East Asia": {
+          "exports": [
+            "EXP-hs4-1992-2001.csv",
+            "EXP-hs4-2002-2012.csv",
+            "EXP-hs4-2013-2024.csv"
+          ],
+          "imports": [
+            "IMP-hs4-1992-2001.csv",
+            "IMP-hs4-2002-2012.csv",
+            "IMP-hs4-2013-2024.csv"
+          ]
+        },
+        "North America": {
+          "exports": [
+            "EXP-hs4-1992-2012.csv",
+            "EXP-hs4-2013-2024.csv"
+          ],
+          "imports": [
+            "IMP-hs4-1992-2012.csv",
+            "IMP-hs4-2013-2024.csv"
+          ]
+        },
+        "Oceana": {
+          "exports": [
+            "EXP-hs4-1992-1994.csv",
+            "EXP-hs4-1995-2000.csv",
+            "EXP-hs4-2001-2006.csv",
+            "EXP-hs4-2007-2012.csv",
+            "EXP-hs4-2013-2018.csv",
+            "EXP-hs4-2019-2024.csv"
+          ],
+          "imports": [
+            "IMP-hs4-1992-1994.csv",
+            "IMP-hs4-1995-2000.csv",
+            "IMP-hs4-2001-2006.csv",
+            "IMP-hs4-2007-2012.csv",
+            "IMP-hs4-2013-2018.csv",
+            "IMP-hs4-2019-2024.csv"
+          ]
+        },
+        "South America": {
+          "exports": [
+            "EXP-hs4-1992-2002.csv",
+            "EXP-hs4-2003-2012.csv",
+            "EXP-hs4-2013-2024.csv"
+          ],
+          "imports": [
+            "IMP-hs4-1992-2002.csv",
+            "IMP-hs4-2003-2012.csv",
+            "IMP-hs4-2013-2024.csv"
+          ]
+        },
+        "South Asia": {
+          "exports": [
+            "EXP-hs4-1992-2024.csv"
+          ],
+          "imports": [
+            "IMP-hs4-1992-2024.csv"
+          ]
+        }
+      }
+    },
+    "hs9_level": {
+      "base_path": "data/raw/hs9_level"
+    },
+    "naics_crosswalks": {
+      "base_path": "data/raw/naics crosswalks",
+      "files": {
+        "naics_codes_2017": "ALL_NAICS_CODES_2017.csv",
+        "naics_codes_2022": "ALL_NAICS_CODES_2022.csv",
+        "naics_2022_to_2017_crosswalk": "NAICS22-17_cw.csv"
+      }
+    },
+    "BEA_codes": {
+      "base_path": "data/raw/BEA_codes",
+      "files": {
+        "402_use": "402_use.xlsx"
+      }
+    }
+  },
+  "working_data_outputs": {
+    "schott_concordances": {
+      "base_path": "data/working/Schott_concordances",
+      "files": {
+        "hs_naics_mapping_2018_exports": "hs_naics_mapping_2018_exports.csv",
+        "hs_naics_mapping_2018_imports": "hs_naics_mapping_2018_imports.csv",
+        "hs_naics_mapping_2019_exports": "hs_naics_mapping_2019_exports.csv",
+        "hs_naics_mapping_2019_imports": "hs_naics_mapping_2019_imports.csv",
+        "hs_naics_mapping_2022_exports": "hs_naics_mapping_2022_exports.csv",
+        "hs_naics_mapping_2022_imports": "hs_naics_mapping_2022_imports.csv",
+        "hs_naics_mapping_2023_exports": "hs_naics_mapping_2023_exports.csv",
+        "hs_naics_mapping_2023_imports": "hs_naics_mapping_2023_imports.csv"
+      }
+    },
+    "01_Schott_Data_Compiler": {
+      "base_path": "data/working/01_Schott_Data_Compiler",
+      "files": {}
+    },
+    "02_HS_to_Naics_to_BEA": {
+      "base_path": "data/working/02_HS_to_Naics_to_BEA",
+      "files": {}
+    },
+    "03_Map_country_trade_data": {
+      "base_path": "data/working/03_Map_country_trade_data",
+      "files": {},
+      "combined_data": {
+        "base_path": "data/working/03_Map_country_trade_data/combined_data",
+        "files": {
+          "Africa_combined": "Africa_combined.csv",
+          "Asia_combined": "Asia_combined.csv",
+          "Europe_combined": "Europe_combined.csv",
+          "North_America_combined": "North_America_combined.csv",
+          "Oceana_combined": "Oceana_combined.csv",
+          "South_America_combined": "South_America_combined.csv"
+        }
+      },
+      "processed_data": {
+        "base_path": "data/working/03_Map_country_trade_data/processed_data",
+        "files": {
+          "Africa_processed": "Africa_processed.csv",
+          "Asia_processed": "Asia_processed.csv",
+          "Europe_processed": "Europe_processed.csv",
+          "North_America_processed": "North_America_processed.csv",
+          "Oceana_processed": "Oceana_processed.csv",
+          "South_America_processed": "South_America_processed.csv"
+        }
+      }
+    },
+    "04_Aggregate_BEA_and_HS": {
+      "base_path": "data/working/04_Aggregate_BEA_and_HS",
+      "files": {},
+      "aggregated_data": {
+        "base_path": "data/working/04_Aggregate_BEA_and_HS/aggregated_data",
+        "country_detail": {
+          "base_path": "data/working/04_Aggregate_BEA_and_HS/aggregated_data/country_detail",
+          "files": {
+            "Africa_aggregated": "Africa_aggregated.csv",
+            "Asia_aggregated": "Asia_aggregated.csv",
+            "Europe_aggregated": "Europe_aggregated.csv",
+            "North_America_aggregated": "North_America_aggregated.csv",
+            "Oceana_aggregated": "Oceana_aggregated.csv",
+            "South_America_aggregated": "South_America_aggregated.csv",
+            "all_continents_detail": "all_continents_detail.csv"
+          }
+        },
+        "country_usummary": {
+          "base_path": "data/working/04_Aggregate_BEA_and_HS/aggregated_data/country_usummary",
+          "files": {
+            "all_continents_usummary": "all_continents_usummary.csv"
+          }
+        },
+        "country_summary": {
+          "base_path": "data/working/04_Aggregate_BEA_and_HS/aggregated_data/country_summary",
+          "files": {
+            "all_continents_summary": "all_continents_summary.csv"
+          }
+        },
+        "country_sector": {
+          "base_path": "data/working/04_Aggregate_BEA_and_HS/aggregated_data/country_sector",
+          "files": {
+            "all_continents_sector": "all_continents_sector.csv"
+          }
+        }
+      },
+      "hs_weights": {
+        "base_path": "data/working/04_Aggregate_BEA_and_HS/hs_weights",
+        "detail": {
+          "base_path": "data/working/04_Aggregate_BEA_and_HS/hs_weights/detail",
+          "files": {
+            "hs2_weights": "hs2_weights.csv",
+            "hs4_weights": "hs4_weights.csv",
+            "hs6_weights": "hs6_weights.csv",
+            "hs8_weights": "hs8_weights.csv",
+            "hs_section_weights": "hs_section_weights.csv"
+          }
+        },
+        "usummary": {
+          "base_path": "data/working/04_Aggregate_BEA_and_HS/hs_weights/usummary",
+          "files": {
+            "hs2_weights": "hs2_weights.csv",
+            "hs4_weights": "hs4_weights.csv",
+            "hs6_weights": "hs6_weights.csv",
+            "hs8_weights": "hs8_weights.csv",
+            "hs_section_weights": "hs_section_weights.csv"
+          }
+        },
+        "summary": {
+          "base_path": "data/working/04_Aggregate_BEA_and_HS/hs_weights/summary",
+          "files": {
+            "hs2_weights": "hs2_weights.csv",
+            "hs4_weights": "hs4_weights.csv",
+            "hs6_weights": "hs6_weights.csv",
+            "hs8_weights": "hs8_weights.csv",
+            "hs_section_weights": "hs_section_weights.csv"
+          }
+        },
+        "sector": {
+          "base_path": "data/working/04_Aggregate_BEA_and_HS/hs_weights/sector",
+          "files": {
+            "hs2_weights": "hs2_weights.csv",
+            "hs4_weights": "hs4_weights.csv",
+            "hs6_weights": "hs6_weights.csv",
+            "hs8_weights": "hs8_weights.csv",
+            "hs_section_weights": "hs_section_weights.csv"
+          }
+        }
+      },
+      "summary_data": {
+        "base_path": "data/working/04_Aggregate_BEA_and_HS/summary_data",
+        "files": {
+          "bea_summary": "bea_summary.csv",
+          "hs_summary": "hs_summary.csv",
+          "country_summary": "country_summary.csv"
+        }
+      }
+    },
+    "05_Trade_weights":{
+      "base_path": "data/working/05_Trade_weights"
+    }
+  },
+  "final_data_outputs": {
+    "base_path": "data/final"
+  },
+  "validation_outputs": {
+    "base_path": "validations",
+    "subdirectories": {
+      "01_Schott_Data_Compiler": "01_Schott_Data_Compiler",
+      "02_HS_to_Naics_to_BEA": "02_HS_to_Naics_to_BEA",
+      "03_Map_country_trade_data": "03_Map_country_trade_data",
+      "04_Aggregate_BEA_and_HS": "04_Aggregate_BEA_and_HS",
+      "05_Trade_weights": "05_Trade_weights"
+    }
+  }
+}
