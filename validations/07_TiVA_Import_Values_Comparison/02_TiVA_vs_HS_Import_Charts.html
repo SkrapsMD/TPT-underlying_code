@@ -16,6 +16,12 @@
             padding: 20px;
             border-radius: 8px;
         }
+        .intro-text {
+            background-color: #222222;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
         h1 {
             text-align: center;
             color: #ffffff;
@@ -33,6 +39,9 @@
 </head>
 <body>
     <h1>TiVA Import Values Comparison - All Regions</h1>
+    <div class="intro-text">
+        <p>This presents a validation of our HS to BEA level imports mapping by comparing imports across our codes, and the BEA's TiVA tables. While our data was created using 2024 import data, the BEA TiVA Tables use 2023 data resulting in some bias. Also, the TiVA tables include values like services (notice the values on the x = 0 line). This is simply a sanity check.</p>
+    </div>
 
     <div class="plot-container">
         <h2>World Total - HS to BEA vs TiVA Imports</h2>

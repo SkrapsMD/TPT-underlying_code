@@ -3,6 +3,9 @@ import pandas as pd
 import json
 import plotly.express as px
 import plotly.graph_objects as go
+import numpy as np
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import r2_score
 from main_pipeline_run import get_data_path
 
 """
@@ -148,6 +151,15 @@ for tiva_file, region_key in region_mapping.items():
     output_path = os.path.join(csv_dir, output_filename)
     merged_comparison.to_csv(output_path, index=False)
     
+    # Calculate correlation statistics
+    valid_data = merged_comparison[(merged_comparison['HS_total_imports'] > 0) | (merged_comparison['TiVA_total_imports'] > 0)]
+    if len(valid_data) > 1:
+        correlation = np.corrcoef(valid_data['HS_total_imports'], valid_data['TiVA_total_imports'])[0, 1]
+        r2 = r2_score(valid_data['TiVA_total_imports'], valid_data['HS_total_imports'])
+        title_text = f'{region_key} - HS to BEA vs TiVA Imports (R² = {r2:.3f}, r = {correlation:.3f})'
+    else:
+        title_text = f'{region_key} - HS to BEA vs TiVA Imports'
+    
     # Create interactive scatter plot with Plotly
     fig = px.scatter(merged_comparison, 
                      x='HS_total_imports', 
@@ -155,7 +167,7 @@ for tiva_file, region_key in region_mapping.items():
                      hover_data=['usummary_code', 'usummary_name'],
                      labels={'HS_total_imports': 'HS to BEA Imports (2024)',
                              'TiVA_total_imports': 'TiVA Imports (2023)'},
-                     title=f'{region_key} - HS to BEA vs TiVA Imports',
+                     title=title_text,
                      template='plotly_dark')
     
     # Add 45-degree line for reference
@@ -193,6 +205,12 @@ master_html_content = """
             padding: 20px;
             border-radius: 8px;
         }
+        .intro-text {
+            background-color: #222222;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
         h1 {
             text-align: center;
             color: #ffffff;
@@ -210,6 +228,9 @@ master_html_content = """
 </head>
 <body>
     <h1>TiVA Import Values Comparison - All Regions</h1>
+    <div class="intro-text">
+        <p>This presents a validation of our HS to BEA level imports mapping by comparing imports across our codes, and the BEA's TiVA tables. While our data was created using 2024 import data, the BEA TiVA Tables use 2023 data resulting in some bias. Also, the TiVA tables include values like services (notice the values on the x = 0 line). This is simply a sanity check.</p>
+    </div>
 """
 
 # Add each region's plot to the master HTML (world first)
