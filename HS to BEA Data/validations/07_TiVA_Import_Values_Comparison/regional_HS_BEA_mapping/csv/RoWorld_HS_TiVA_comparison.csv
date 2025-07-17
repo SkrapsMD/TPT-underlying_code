@@ -1,9 +1,9 @@
 usummary_code,HS_total_imports,TiVA_total_imports,difference,usummary_name
-111,20723929160.0,19701000000,1022929160.0,Crop production
-112,3565029120.0,2829000000,736029120.0,Animal production and aquaculture
-113FF,3338114636.0,4845000000,-1506885364.0,"Forestry, fishing, and related activities"
-211,39396971788.0,51588000000,-12191028212.0,Oil and gas extraction
-212,2480360235.0,2930000000,-449639765.0,"Mining, except oil and gas"
+111,20844656073.0,19701000000,1143656073.0,Crop production
+112,3581581042.0,2829000000,752581042.0,Animal production and aquaculture
+113FF,3333627057.0,4845000000,-1511372943.0,"Forestry, fishing, and related activities"
+211,54963976987.0,51588000000,3375976987.0,Oil and gas extraction
+212,2495660275.0,2930000000,-434339725.0,"Mining, except oil and gas"
 213,0.0,865000000,-865000000.0,Support activities for mining
 2211,0.0,14000000,-14000000.0,"Electric power generation, transmission, and distribution"
 2212NW,0.0,0,0.0,"Natural gas distribution and water, sewage and other systems"
@@ -15,43 +15,43 @@ usummary_code,HS_total_imports,TiVA_total_imports,difference,usummary_name
 23PC,0.0,0,0.0,Power and communication structures
 23SF,0.0,0,0.0,Single-family residential structures
 23TH,0.0,0,0.0,Transportation structures and highways and streets
-311,16040835606.0,14911000000,1129835606.0,Food manufacturing
-3121,864280350.0,1022000000,-157719650.0,Beverage manufacturing
-3122,1513057427.0,1939000000,-425942573.0,Tobacco manufacturing
-313TT,651899941.0,1011000000,-359100059.0,Textile mills and textile product mills
-315AL,13255300306.0,16599000000,-3343699694.0,Apparel and leather and allied products
-321,3138258189.0,3374000000,-235741811.0,Wood products
-322,2654863680.0,2439000000,215863680.0,Paper products
-323,71569135.0,-25000000,96569135.0,Printing and related support activities
-324,7505290268.0,19948000000,-12442709732.0,Petroleum and coal products
-3251,2883311401.0,4848000000,-1964688599.0,Basic chemical manufacturing
-3252,404005161.0,486000000,-81994839.0,"Resin, rubber, and artificial fibers manufacturing"
-3254,912434350.0,34683000000,-33770565650.0,Pharmaceutical and medicine manufacturing
-325X,2677709313.0,5309000000,-2631290687.0,Other chemical manufacturing
-326,2176104715.0,3286000000,-1109895285.0,Plastics and rubber products
-327,1797538112.0,2536000000,-738461888.0,Nonmetallic mineral products
-3311IS,6778562584.0,7909000000,-1130437416.0,Iron and steel mills and manufacturing from purchased steel
-3313NF,23355896293.0,15579000000,7776896293.0,Nonferrous metal production and processing and foundries
-332,2011832089.0,2428000000,-416167911.0,Fabricated metal products
-33311,233202267.0,566000000,-332797733.0,Agricultural implement manufacturing
-33312,1792334771.0,1515000000,277334771.0,Construction machinery manufacturing
-33313,90807203.0,105000000,-14192797.0,Mining and oil and gas field machinery manufacturing
-3332OM,1721975201.0,3970000000,-2248024799.0,Other machinery
-3341,38253803.0,243000000,-204746197.0,Computer and peripheral equipment manufacturing
-3342,234196949.0,949000000,-714803051.0,Communications equipment manufacturing
-3344,1877335727.0,2884000000,-1006664273.0,Semiconductor and other electronic component manufacturing
-3345,2460028673.0,3129000000,-668971327.0,"Navigational, measuring, electromedical, and control instruments manufacturing"
-334X,73841957.0,82000000,-8158043.0,Other computer and electronic product manufacturing
-335,3376211719.0,4259000000,-882788281.0,"Electrical equipment, appliances, and components"
-336111,2130265807.0,551000000,1579265807.0,Automobile manufacturing
-336112,1259364.0,1234000000,-1232740636.0,Light truck and utility vehicle manufacturing
-33612,12619085.0,34000000,-21380915.0,Heavy duty truck manufacturing
-3362BP,3173174819.0,3303000000,-129825181.0,"Motor vehicle body, trailer, and parts manufacturing"
-3364,2370708014.0,3059000000,-688291986.0,Aerospace product and parts manufacturing
-3365AO,241820625.0,225000000,16820625.0,All other transportation equipment manufacturing
-337,445242211.0,516000000,-70757789.0,Furniture and related products
-3391,5867813110.0,9437000000,-3569186890.0,Medical equipment and supplies manufacturing
-3399,4352054196.0,4672000000,-319945804.0,Other miscellaneous manufacturing
+311,16634182527.0,14911000000,1723182527.0,Food manufacturing
+3121,935154839.0,1022000000,-86845161.0,Beverage manufacturing
+3122,1538030855.0,1939000000,-400969145.0,Tobacco manufacturing
+313TT,1069943071.0,1011000000,58943071.0,Textile mills and textile product mills
+315AL,15249611409.0,16599000000,-1349388591.0,Apparel and leather and allied products
+321,3145186146.0,3374000000,-228813854.0,Wood products
+322,2845318009.0,2439000000,406318009.0,Paper products
+323,124107494.0,-25000000,149107494.0,Printing and related support activities
+324,14482611495.0,19948000000,-5465388505.0,Petroleum and coal products
+3251,4058889992.0,4848000000,-789110008.0,Basic chemical manufacturing
+3252,644528836.0,486000000,158528836.0,"Resin, rubber, and artificial fibers manufacturing"
+3254,2926480917.0,34683000000,-31756519083.0,Pharmaceutical and medicine manufacturing
+325X,5538355083.0,5309000000,229355083.0,Other chemical manufacturing
+326,3247945367.0,3286000000,-38054633.0,Plastics and rubber products
+327,2081091982.0,2536000000,-454908018.0,Nonmetallic mineral products
+3311IS,7295132473.0,7909000000,-613867527.0,Iron and steel mills and manufacturing from purchased steel
+3313NF,26184008760.0,15579000000,10605008760.0,Nonferrous metal production and processing and foundries
+332,3004989549.0,2428000000,576989549.0,Fabricated metal products
+33311,291419977.0,566000000,-274580023.0,Agricultural implement manufacturing
+33312,1803005793.0,1515000000,288005793.0,Construction machinery manufacturing
+33313,166875930.0,105000000,61875930.0,Mining and oil and gas field machinery manufacturing
+3332OM,3324616439.0,3970000000,-645383561.0,Other machinery
+3341,373882618.0,243000000,130882618.0,Computer and peripheral equipment manufacturing
+3342,1497877337.0,949000000,548877337.0,Communications equipment manufacturing
+3344,6888964070.0,2884000000,4004964070.0,Semiconductor and other electronic component manufacturing
+3345,3631485211.0,3129000000,502485211.0,"Navigational, measuring, electromedical, and control instruments manufacturing"
+334X,187199158.0,82000000,105199158.0,Other computer and electronic product manufacturing
+335,3966766507.0,4259000000,-292233493.0,"Electrical equipment, appliances, and components"
+336111,2130892372.0,551000000,1579892372.0,Automobile manufacturing
+336112,1267114.0,1234000000,-1232732886.0,Light truck and utility vehicle manufacturing
+33612,15704773.0,34000000,-18295227.0,Heavy duty truck manufacturing
+3362BP,3388140449.0,3303000000,85140449.0,"Motor vehicle body, trailer, and parts manufacturing"
+3364,3055406476.0,3059000000,-3593524.0,Aerospace product and parts manufacturing
+3365AO,299419314.0,225000000,74419314.0,All other transportation equipment manufacturing
+337,509095899.0,516000000,-6904101.0,Furniture and related products
+3391,6835237553.0,9437000000,-2601762447.0,Medical equipment and supplies manufacturing
+3399,10202603039.0,4672000000,5530603039.0,Other miscellaneous manufacturing
 4231,0.0,0,0.0,Motor vehicle and motor vehicle parts and supplies
 4234,0.0,0,0.0,Professional and commercial equipment and supplies
 4236,0.0,0,0.0,Household appliances and electrical and electronic goods
@@ -137,5 +137,5 @@ GSLGO,0.0,0,0.0,State and local government (other services)
 HSO,0.0,0,0.0,Owner-occupied housing
 HST,0.0,0,0.0,Tenant-occupied housing
 ORE,0.0,0,0.0,Other real estate
-Other,9673341106.0,71605000000,-61931658894.0,Unknown
+Other,13051705287.0,71605000000,-58553294713.0,Unknown
 Used,0.0,1270000000,-1270000000.0,Unknown
