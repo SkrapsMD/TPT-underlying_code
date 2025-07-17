@@ -1,0 +1,716 @@
+area,country_or_entity,country_clean,iso3,iso2
+World,Afghanistan,Afghanistan,AFG,AF
+World,Akrotiri,Akrotiri,Akrotiri,Akrotiri
+World,Albania,Albania,ALB,AL
+World,Algeria,Algeria,DZA,DZ
+World,Andorra,Andorra,AND,AD
+World,Angola,Angola,AGO,AO
+World,Anguilla,Anguilla,AIA,AI
+World,Antarctica,Antarctica,ATA,AQ
+World,Antigua and Barbuda,Antigua and Barbuda,ATG,AG
+World,Argentina,Argentina,ARG,AR
+World,Armenia,Armenia,ARM,AM
+World,Aruba,Aruba,ABW,AW
+World,Ashmore and Cartier Islands,Ashmore and Cartier Islands,Ashmore and Cartier Islands,Ashmore and Cartier Islands
+World,Australia,Australia,AUS,AU
+World,Austria,Austria,AUT,AT
+World,Azerbaijan,Azerbaijan,AZE,AZ
+World,"Bahamas, The",Bahamas,BHS,BS
+World,Bahrain,Bahrain,BHR,BH
+World,Bangladesh,Bangladesh,BGD,BD
+World,Barbados,Barbados,BRB,BB
+World,Bassas da India,Bassas da India,Bassas da India,Bassas da India
+World,Belarus,Belarus,BLR,BY
+World,Belgium,Belgium,BEL,BE
+World,Belize,Belize,BLZ,BZ
+World,Benin,Benin,BEN,BJ
+World,Bermuda,Bermuda,BMU,BM
+World,Bhutan,Bhutan,BTN,BT
+World,Bolivia,Bolivia,BOL,BO
+World,Bosnia and Herzegovina,Bosnia and Herzegovina,BIH,BA
+World,Botswana,Botswana,BWA,BW
+World,Bouvet Island,Bouvet Island,BVT,BV
+World,Brazil,Brazil,BRA,BR
+World,British Indian Ocean Territory,British Indian Ocean Territory,IOT,IO
+World,British Virgin Islands,British Virgin Islands,VGB,VG
+World,Brunei,Brunei Darussalam,BRN,BN
+World,Bulgaria,Bulgaria,BGR,BG
+World,Burkina Faso,Burkina Faso,BFA,BF
+World,Burma,Myanmar,MMR,MM
+World,Burundi,Burundi,BDI,BI
+World,Cabo Verde,Cabo Verde,CPV,CV
+World,Cambodia,Cambodia,KHM,KH
+World,Cameroon,Cameroon,CMR,CM
+World,Canada,Canada,CAN,CA
+World,Caribbean Netherlands,"Bonaire, Saint Eustatius and Saba",BES,BQ
+World,Cayman Islands,Cayman Islands,CYM,KY
+World,Central African Republic,Central African Republic,CAF,CF
+World,Chad,Chad,TCD,TD
+World,Chile,Chile,CHL,CL
+World,China,China,CHN,CN
+World,Christmas Island,Christmas Island,CXR,CX
+World,Clipperton Island,Clipperton Island,Clipperton Island,Clipperton Island
+World,Cocos (Keeling) Islands,Cocos (Keeling) Islands,CCK,CC
+World,Colombia,Colombia,COL,CO
+World,Comoros,Comoros,COM,KM
+World,"Congo, Democratic Republic of",DR Congo,COD,CD
+World,"Congo, Republic of",Congo Republic,COG,CG
+World,Cook Islands,Cook Islands,COK,CK
+World,Coral Sea Islands,Coral Sea Islands,Coral Sea Islands,Coral Sea Islands
+World,Costa Rica,Costa Rica,CRI,CR
+World,Cote d'Ivoire,Cote d'Ivoire,CIV,CI
+World,Croatia,Croatia,HRV,HR
+World,Cuba,Cuba,CUB,CU
+World,Curacao,Curacao,CUW,CW
+World,Cyprus,Cyprus,CYP,CY
+World,Czech Republic,Czechia,CZE,CZ
+World,Denmark,Denmark,DNK,DK
+World,Diego Garcia,Diego Garcia,Diego Garcia,Diego Garcia
+World,Djibouti,Djibouti,DJI,DJ
+World,Dhekelia,Dhekelia,Dhekelia,Dhekelia
+World,Dominica,Dominica,DMA,DM
+World,Dominican Republic,Dominican Republic,DOM,DO
+World,Ecuador,Ecuador,ECU,EC
+World,Egypt,Egypt,EGY,EG
+World,El Salvador,El Salvador,SLV,SV
+World,Equatorial Guinea,Equatorial Guinea,GNQ,GQ
+World,Eritrea,Eritrea,ERI,ER
+World,Estonia,Estonia,EST,EE
+World,Eswatini,Eswatini,SWZ,SZ
+World,Ethiopia,Ethiopia,ETH,ET
+World,Europa Island,Europa Island,Europa Island,Europa Island
+World,Falkland Islands,Falkland Islands,FLK,FK
+World,Faroe Islands,Faroe Islands,FRO,FO
+World,Fiji,Fiji,FJI,FJ
+World,Finland,Finland,FIN,FI
+World,France,France,FRA,FR
+World,French Guiana,French Guiana,GUF,GF
+World,French Polynesia,French Polynesia,PYF,PF
+World,French Southern and Antarctic Lands,French Southern Territories,ATF,TF
+World,Gabon,Gabon,GAB,GA
+World,"Gambia , The",Gambia,GMB,GM
+World,Gaza Strip,Palestine,PSE,PS
+World,Georgia,Georgia,GEO,GE
+World,Germany,Germany,DEU,DE
+World,Ghana,Ghana,GHA,GH
+World,Gibraltar,Gibraltar,GIB,GI
+World,Glorioso Islands,Glorioso Islands,Glorioso Islands,Glorioso Islands
+World,Greece,Greece,GRC,GR
+World,Greenland,Greenland,GRL,GL
+World,Grenada,Grenada,GRD,GD
+World,Guadeloupe,Guadeloupe,GLP,GP
+World,Guatemala,Guatemala,GTM,GT
+World,Guernsey,Guernsey,GGY,GG
+World,Guinea,Guinea,GIN,GN
+World,Guinea-Bissau,Guinea-Bissau,GNB,GW
+World,Guyana,Guyana,GUY,GY
+World,Haiti,Haiti,HTI,HT
+World,Heard Island and McDonald Islands,Heard and McDonald Islands,HMD,HM
+World,Honduras,Honduras,HND,HN
+World,Hong Kong,Hong Kong,HKG,HK
+World,Hungary,Hungary,HUN,HU
+World,Iceland,Iceland,ISL,IS
+World,India,India,IND,IN
+World,Indonesia,Indonesia,IDN,ID
+World,Iran,Iran,IRN,IR
+World,Iraq,Iraq,IRQ,IQ
+World,Ireland,Ireland,IRL,IE
+World,Isle of Man,Isle of Man,IMN,IM
+World,Israel,Israel,ISR,IL
+World,Italy,Italy,ITA,IT
+World,Jamaica,Jamaica,JAM,JM
+World,Jan Mayen,Jan Mayen,Jan Mayen,Jan Mayen
+World,Japan,Japan,JPN,JP
+World,Jersey,Jersey,JEY,JE
+World,Jordan,Jordan,JOR,JO
+World,Juan de Nova Island,Juan de Nova Island,Juan de Nova Island,Juan de Nova Island
+World,Kazakhstan,Kazakhstan,KAZ,KZ
+World,Kenya,Kenya,KEN,KE
+World,Kiribati,Kiribati,KIR,KI
+World,Kosovo,Kosovo,XKX,XK
+World,Kuwait,Kuwait,KWT,KW
+World,Kyrgyzstan,Kyrgyz Republic,KGZ,KG
+World,Laos,Laos,LAO,LA
+World,Latvia,Latvia,LVA,LV
+World,Lebanon,Lebanon,LBN,LB
+World,Lesotho,Lesotho,LSO,LS
+World,Liberia,Liberia,LBR,LR
+World,Libya,Libya,LBY,LY
+World,Liechtenstein,Liechtenstein,LIE,LI
+World,Lithuania,Lithuania,LTU,LT
+World,Luxembourg,Luxembourg,LUX,LU
+World,Macau,Macau,MAC,MO
+World,Madagascar,Madagascar,MDG,MG
+World,Malawi,Malawi,MWI,MW
+World,Malaysia,Malaysia,MYS,MY
+World,Maldives,Maldives,MDV,MV
+World,Mali,Mali,MLI,ML
+World,Malta,Malta,MLT,MT
+World,Marshall Islands,Marshall Islands,MHL,MH
+World,Martinique,Martinique,MTQ,MQ
+World,Mauritania,Mauritania,MRT,MR
+World,Mauritius,Mauritius,MUS,MU
+World,Mayotte,Mayotte,MYT,YT
+World,Mexico,Mexico,MEX,MX
+World,"Micronesia, Federated States of","Micronesia, Fed. Sts.",FSM,FM
+World,Moldova,Moldova,MDA,MD
+World,Monaco,Monaco,MCO,MC
+World,Mongolia,Mongolia,MNG,MN
+World,Montenegro,Montenegro,MNE,ME
+World,Montserrat,Montserrat,MSR,MS
+World,Morocco,Morocco,MAR,MA
+World,Mozambique,Mozambique,MOZ,MZ
+World,Namibia,Namibia,NAM,NA
+World,Nauru,Nauru,NRU,NR
+World,Nepal,Nepal,NPL,NP
+World,Netherlands,Netherlands,NLD,NL
+World,New Caledonia,New Caledonia,NCL,NC
+World,New Zealand,New Zealand,NZL,NZ
+World,Nicaragua,Nicaragua,NIC,NI
+World,Niger,Niger,NER,NE
+World,Nigeria,Nigeria,NGA,NG
+World,Niue,Niue,NIU,NU
+World,Norfolk Island,Norfolk Island,NFK,NF
+World,North Korea,North Korea,PRK,KP
+World,North Macedonia,North Macedonia,MKD,MK
+World,Norway,Norway,NOR,NO
+World,Oman,Oman,OMN,OM
+World,Pakistan,Pakistan,PAK,PK
+World,Palau,Palau,PLW,PW
+World,Panama,Panama,PAN,PA
+World,Papua New Guinea,Papua New Guinea,PNG,PG
+World,Paraguay,Paraguay,PRY,PY
+World,Peru,Peru,PER,PE
+World,Philippines,Philippines,PHL,PH
+World,Pitcairn Islands,Pitcairn,PCN,PN
+World,Poland,Poland,POL,PL
+World,Portugal,Portugal,PRT,PT
+World,Qatar,Qatar,QAT,QA
+World,Reunion,Reunion,REU,RE
+World,Romania,Romania,ROU,RO
+World,Russia,Russia,RUS,RU
+World,Rwanda,Rwanda,RWA,RW
+World,Samoa,Samoa,WSM,WS
+World,San Marino,San Marino,SMR,SM
+World,Sao Tome and Principe,Sao Tome and Principe,STP,ST
+World,Saudi Arabia,Saudi Arabia,SAU,SA
+World,Senegal,Senegal,SEN,SN
+World,Serbia,Serbia,SRB,RS
+World,Seychelles,Seychelles,SYC,SC
+World,Sierra Leone,Sierra Leone,SLE,SL
+World,Singapore,Singapore,SGP,SG
+World,Sint Maarten,Sint Maarten,SXM,SX
+World,Slovakia,Slovakia,SVK,SK
+World,Slovenia,Slovenia,SVN,SI
+World,Solomon Islands,Solomon Islands,SLB,SB
+World,Somalia,Somalia,SOM,SO
+World,South Africa,South Africa,ZAF,ZA
+World,South Georgia and the South Sandwich Islands,South Georgia and South Sandwich Is.,SGS,GS
+World,South Korea,South Korea,KOR,KR
+World,South Sudan,South Sudan,SSD,SS
+World,Spain,Spain,ESP,ES
+World,Sri Lanka,Sri Lanka,LKA,LK
+World,St. Barthelemy,St. Barths,BLM,BL
+World,"St. Helena, Ascension, and Tristan da Cunha",St. Helena,SHN,SH
+World,St. Kitts and Nevis,St. Kitts and Nevis,KNA,KN
+World,St. Lucia,St. Lucia,LCA,LC
+World,St. Martin,Saint-Martin,MAF,MF
+World,St. Pierre and Miquelon,St. Pierre and Miquelon,SPM,PM
+World,St. Vincent and the Grenadines,St. Vincent and the Grenadines,VCT,VC
+World,Sudan,Sudan,SDN,SD
+World,Suriname,Suriname,SUR,SR
+World,Svalbard,Svalbard and Jan Mayen Islands,SJM,SJ
+World,Sweden,Sweden,SWE,SE
+World,Switzerland,Switzerland,CHE,CH
+World,Syria,Syria,SYR,SY
+World,Taiwan,Taiwan,TWN,TW
+World,Tajikistan,Tajikistan,TJK,TJ
+World,Tanzania,Tanzania,TZA,TZ
+World,Thailand,Thailand,THA,TH
+World,Timor-Leste,Timor-Leste,TLS,TL
+World,Togo,Togo,TGO,TG
+World,Tokelau,Tokelau,TKL,TK
+World,Tonga,Tonga,TON,TO
+World,Trinidad and Tobago,Trinidad and Tobago,TTO,TT
+World,Tromelin Island,Tromelin Island,Tromelin Island,Tromelin Island
+World,Tunisia,Tunisia,TUN,TN
+World,Turkey,Türkiye,TUR,TR
+World,Turkmenistan,Turkmenistan,TKM,TM
+World,Turks and Caicos Islands,Turks and Caicos Islands,TCA,TC
+World,Tuvalu,Tuvalu,TUV,TV
+World,Uganda,Uganda,UGA,UG
+World,Ukraine,Ukraine,UKR,UA
+World,United Arab Emirates,United Arab Emirates,ARE,AE
+World,United Kingdom,United Kingdom,GBR,GB
+World,United States,United States,USA,US
+World,Uruguay,Uruguay,URY,UY
+World,Uzbekistan,Uzbekistan,UZB,UZ
+World,Vanuatu,Vanuatu,VUT,VU
+World,Vatican City,Vatican,VAT,VA
+World,Venezuela,Venezuela,VEN,VE
+World,Vietnam,Vietnam,VNM,VN
+World,Wallis and Futuna,Wallis and Futuna Islands,WLF,WF
+World,West Bank,Palestine,PSE,PS
+World,Yemen,Yemen,YEM,YE
+World,Zambia,Zambia,ZMB,ZM
+World,Zimbabwe,Zimbabwe,ZWE,ZW
+World,African Development Bank,African Development Bank,African Development Bank,African Development Bank
+World,Asian Development Bank,Asian Development Bank,Asian Development Bank,Asian Development Bank
+World,Caribbean Development Bank,Caribbean Development Bank,Caribbean Development Bank,Caribbean Development Bank
+World,East African Development Bank,East African Development Bank,East African Development Bank,East African Development Bank
+World,European Atomic Energy Community,European Atomic Energy Community,European Atomic Energy Community,European Atomic Energy Community
+World,European Bank for Reconstruction and,European Bank for Reconstruction and,European Bank for Reconstruction and,European Bank for Reconstruction and
+World,Development,Development,Development,Development
+World,European Central Bank,European Central Bank,European Central Bank,European Central Bank
+World,European Coal and Steel Community,European Coal and Steel Community,European Coal and Steel Community,European Coal and Steel Community
+World,European Investment Bank,European Investment Bank,European Investment Bank,European Investment Bank
+World,Inter-American Development Bank,Inter-American Development Bank,Inter-American Development Bank,Inter-American Development Bank
+World,International Bank for Reconstruction and,International Bank for Reconstruction and,International Bank for Reconstruction and,International Bank for Reconstruction and
+World,Development,Development,Development,Development
+World,International Development Association,International Development Association,International Development Association,International Development Association
+World,International Finance Corporation,International Finance Corporation,International Finance Corporation,International Finance Corporation
+World,International Monetary Fund,International Monetary Fund,International Monetary Fund,International Monetary Fund
+World,International Olympic Committee,International Olympic Committee,International Olympic Committee,International Olympic Committee
+World,Islamic Development Bank,Islamic Development Bank,Islamic Development Bank,Islamic Development Bank
+World,Organization of American States,Organization of American States,Organization of American States,Organization of American States
+World,United Nations,United Nations,United Nations,United Nations
+World,Other international organizations,Other international organizations,Other international organizations,Other international organizations
+World,Other regional organizations,Other regional organizations,Other regional organizations,Other regional organizations
+World,Czechoslovakia,Czechia,CZE,CZ
+World,German Democratic Republic,German Democratic Republic,German Democratic Republic,German Democratic Republic
+World,Netherlands Antilles,Netherlands Antilles,Netherlands Antilles,Netherlands Antilles
+World,Serbia and Montenegro,Serbia and Montenegro,Serbia and Montenegro,Serbia and Montenegro
+World,Union of Soviet Socialist Republics,Union of Soviet Socialist Republics,Union of Soviet Socialist Republics,Union of Soviet Socialist Republics
+World,Western Sahara,Western Sahara,ESH,EH
+World,Yemen (Aden),Yemen,YEM,YE
+World,Yugoslavia,Yugoslavia,Yugoslavia,Yugoslavia
+Europe,Akrotiri,Akrotiri,Akrotiri,Akrotiri
+Europe,Albania,Albania,ALB,AL
+Europe,Andorra,Andorra,AND,AD
+Europe,Armenia,Armenia,ARM,AM
+Europe,Austria,Austria,AUT,AT
+Europe,Azerbaijan,Azerbaijan,AZE,AZ
+Europe,Belarus,Belarus,BLR,BY
+Europe,Belgium,Belgium,BEL,BE
+Europe,Bosnia and Herzegovina,Bosnia and Herzegovina,BIH,BA
+Europe,Bouvet Island,Bouvet Island,BVT,BV
+Europe,Bulgaria,Bulgaria,BGR,BG
+Europe,Croatia,Croatia,HRV,HR
+Europe,Cyprus,Cyprus,CYP,CY
+Europe,Czech Republic,Czechia,CZE,CZ
+Europe,Denmark,Denmark,DNK,DK
+Europe,Dhekelia,Dhekelia,Dhekelia,Dhekelia
+Europe,Estonia,Estonia,EST,EE
+Europe,Faroe Islands,Faroe Islands,FRO,FO
+Europe,Finland,Finland,FIN,FI
+Europe,France,France,FRA,FR
+Europe,Georgia,Georgia,GEO,GE
+Europe,Germany,Germany,DEU,DE
+Europe,Gibraltar,Gibraltar,GIB,GI
+Europe,Greece,Greece,GRC,GR
+Europe,Greenland,Greenland,GRL,GL
+Europe,Guernsey,Guernsey,GGY,GG
+Europe,Hungary,Hungary,HUN,HU
+Europe,Iceland,Iceland,ISL,IS
+Europe,Ireland,Ireland,IRL,IE
+Europe,Isle of Man,Isle of Man,IMN,IM
+Europe,Italy,Italy,ITA,IT
+Europe,Jan Mayen,Jan Mayen,Jan Mayen,Jan Mayen
+Europe,Jersey,Jersey,JEY,JE
+Europe,Kazakhstan,Kazakhstan,KAZ,KZ
+Europe,Kosovo,Kosovo,XKX,XK
+Europe,Kyrgyzstan,Kyrgyz Republic,KGZ,KG
+Europe,Latvia,Latvia,LVA,LV
+Europe,Liechtenstein,Liechtenstein,LIE,LI
+Europe,Lithuania,Lithuania,LTU,LT
+Europe,Luxembourg,Luxembourg,LUX,LU
+Europe,Malta,Malta,MLT,MT
+Europe,Moldova,Moldova,MDA,MD
+Europe,Monaco,Monaco,MCO,MC
+Europe,Montenegro,Montenegro,MNE,ME
+Europe,Netherlands,Netherlands,NLD,NL
+Europe,North Macedonia,North Macedonia,MKD,MK
+Europe,Norway,Norway,NOR,NO
+Europe,Poland,Poland,POL,PL
+Europe,Portugal,Portugal,PRT,PT
+Europe,Romania,Romania,ROU,RO
+Europe,Russia,Russia,RUS,RU
+Europe,San Marino,San Marino,SMR,SM
+Europe,Serbia,Serbia,SRB,RS
+Europe,Slovakia,Slovakia,SVK,SK
+Europe,Slovenia,Slovenia,SVN,SI
+Europe,Spain,Spain,ESP,ES
+Europe,Svalbard,Svalbard and Jan Mayen Islands,SJM,SJ
+Europe,Sweden,Sweden,SWE,SE
+Europe,Switzerland,Switzerland,CHE,CH
+Europe,Tajikistan,Tajikistan,TJK,TJ
+Europe,Turkey,Türkiye,TUR,TR
+Europe,Turkmenistan,Turkmenistan,TKM,TM
+Europe,Ukraine,Ukraine,UKR,UA
+Europe,United Kingdom,United Kingdom,GBR,GB
+Europe,Uzbekistan,Uzbekistan,UZB,UZ
+Europe,Vatican City,Vatican,VAT,VA
+Europe,European Atomic Energy Community,European Atomic Energy Community,European Atomic Energy Community,European Atomic Energy Community
+Europe,European Central Bank,European Central Bank,European Central Bank,European Central Bank
+Europe,European Coal and Steel Community,European Coal and Steel Community,European Coal and Steel Community,European Coal and Steel Community
+Europe,European Investment Bank,European Investment Bank,European Investment Bank,European Investment Bank
+Europe,Other regional organizations,Other regional organizations,Other regional organizations,Other regional organizations
+Europe,Czechoslovakia,Czechia,CZE,CZ
+Europe,German Democratic Republic,German Democratic Republic,German Democratic Republic,German Democratic Republic
+Europe,Serbia and Montenegro,Serbia and Montenegro,Serbia and Montenegro,Serbia and Montenegro
+Europe,Union of Soviet Socialist Republics,Union of Soviet Socialist Republics,Union of Soviet Socialist Republics,Union of Soviet Socialist Republics
+Europe,Yugoslavia,Yugoslavia,Yugoslavia,Yugoslavia
+European Union,Austria,Austria,AUT,AT
+European Union,Belgium,Belgium,BEL,BE
+European Union,Bulgaria,Bulgaria,BGR,BG
+European Union,Croatia,Croatia,HRV,HR
+European Union,Cyprus,Cyprus,CYP,CY
+European Union,Czech Republic,Czechia,CZE,CZ
+European Union,Denmark,Denmark,DNK,DK
+European Union,Estonia,Estonia,EST,EE
+European Union,Finland,Finland,FIN,FI
+European Union,France,France,FRA,FR
+European Union,Germany,Germany,DEU,DE
+European Union,Greece,Greece,GRC,GR
+European Union,Hungary,Hungary,HUN,HU
+European Union,Ireland,Ireland,IRL,IE
+European Union,Italy,Italy,ITA,IT
+European Union,Latvia,Latvia,LVA,LV
+European Union,Lithuania,Lithuania,LTU,LT
+European Union,Luxembourg,Luxembourg,LUX,LU
+European Union,Malta,Malta,MLT,MT
+European Union,Netherlands,Netherlands,NLD,NL
+European Union,Poland,Poland,POL,PL
+European Union,Portugal,Portugal,PRT,PT
+European Union,Romania,Romania,ROU,RO
+European Union,Slovakia,Slovakia,SVK,SK
+European Union,Slovenia,Slovenia,SVN,SI
+European Union,Spain,Spain,ESP,ES
+European Union,Sweden,Sweden,SWE,SE
+European Union,European Atomic Energy Community,European Atomic Energy Community,European Atomic Energy Community,European Atomic Energy Community
+European Union,European Central Bank,European Central Bank,European Central Bank,European Central Bank
+European Union,European Coal and Steel Community,European Coal and Steel Community,European Coal and Steel Community,European Coal and Steel Community
+European Union,European Investment Bank,European Investment Bank,European Investment Bank,European Investment Bank
+European Union,Other regional organizations,Other regional organizations,Other regional organizations,Other regional organizations
+European Union,United Kingdom,United Kingdom,GBR,GB
+Euro Area,Austria,Austria,AUT,AT
+Euro Area,Belgium,Belgium,BEL,BE
+Euro Area,Croatia,Croatia,HRV,HR
+Euro Area,Cyprus,Cyprus,CYP,CY
+Euro Area,Estonia,Estonia,EST,EE
+Euro Area,Finland,Finland,FIN,FI
+Euro Area,France,France,FRA,FR
+Euro Area,Germany,Germany,DEU,DE
+Euro Area,Greece,Greece,GRC,GR
+Euro Area,Ireland,Ireland,IRL,IE
+Euro Area,Italy,Italy,ITA,IT
+Euro Area,Latvia,Latvia,LVA,LV
+Euro Area,Lithuania,Lithuania,LTU,LT
+Euro Area,Luxembourg,Luxembourg,LUX,LU
+Euro Area,Malta,Malta,MLT,MT
+Euro Area,Netherlands,Netherlands,NLD,NL
+Euro Area,Portugal,Portugal,PRT,PT
+Euro Area,Slovakia,Slovakia,SVK,SK
+Euro Area,Slovenia,Slovenia,SVN,SI
+Euro Area,Spain,Spain,ESP,ES
+Euro Area,European Central Bank,European Central Bank,European Central Bank,European Central Bank
+Latin America And Other Western Hemisphere,Anguilla,Anguilla,AIA,AI
+Latin America And Other Western Hemisphere,Antigua and Barbuda,Antigua and Barbuda,ATG,AG
+Latin America And Other Western Hemisphere,Argentina,Argentina,ARG,AR
+Latin America And Other Western Hemisphere,Aruba,Aruba,ABW,AW
+Latin America And Other Western Hemisphere,"Bahamas, The",Bahamas,BHS,BS
+Latin America And Other Western Hemisphere,Barbados,Barbados,BRB,BB
+Latin America And Other Western Hemisphere,Belize,Belize,BLZ,BZ
+Latin America And Other Western Hemisphere,Bermuda,Bermuda,BMU,BM
+Latin America And Other Western Hemisphere,Bolivia,Bolivia,BOL,BO
+Latin America And Other Western Hemisphere,Brazil,Brazil,BRA,BR
+Latin America And Other Western Hemisphere,British Virgin Islands,British Virgin Islands,VGB,VG
+Latin America And Other Western Hemisphere,Caribbean Netherlands,"Bonaire, Saint Eustatius and Saba",BES,BQ
+Latin America And Other Western Hemisphere,Cayman Islands,Cayman Islands,CYM,KY
+Latin America And Other Western Hemisphere,Chile,Chile,CHL,CL
+Latin America And Other Western Hemisphere,Colombia,Colombia,COL,CO
+Latin America And Other Western Hemisphere,Costa Rica,Costa Rica,CRI,CR
+Latin America And Other Western Hemisphere,Cuba,Cuba,CUB,CU
+Latin America And Other Western Hemisphere,Curacao,Curacao,CUW,CW
+Latin America And Other Western Hemisphere,Dominica,Dominica,DMA,DM
+Latin America And Other Western Hemisphere,Dominican Republic,Dominican Republic,DOM,DO
+Latin America And Other Western Hemisphere,Ecuador,Ecuador,ECU,EC
+Latin America And Other Western Hemisphere,El Salvador,El Salvador,SLV,SV
+Latin America And Other Western Hemisphere,Falkland Islands,Falkland Islands,FLK,FK
+Latin America And Other Western Hemisphere,French Guiana,French Guiana,GUF,GF
+Latin America And Other Western Hemisphere,Grenada,Grenada,GRD,GD
+Latin America And Other Western Hemisphere,Guadeloupe,Guadeloupe,GLP,GP
+Latin America And Other Western Hemisphere,Guatemala,Guatemala,GTM,GT
+Latin America And Other Western Hemisphere,Guyana,Guyana,GUY,GY
+Latin America And Other Western Hemisphere,Haiti,Haiti,HTI,HT
+Latin America And Other Western Hemisphere,Honduras,Honduras,HND,HN
+Latin America And Other Western Hemisphere,Jamaica,Jamaica,JAM,JM
+Latin America And Other Western Hemisphere,Martinique,Martinique,MTQ,MQ
+Latin America And Other Western Hemisphere,Mexico,Mexico,MEX,MX
+Latin America And Other Western Hemisphere,Montserrat,Montserrat,MSR,MS
+Latin America And Other Western Hemisphere,Nicaragua,Nicaragua,NIC,NI
+Latin America And Other Western Hemisphere,Panama,Panama,PAN,PA
+Latin America And Other Western Hemisphere,Paraguay,Paraguay,PRY,PY
+Latin America And Other Western Hemisphere,Peru,Peru,PER,PE
+Latin America And Other Western Hemisphere,Sint Maarten,Sint Maarten,SXM,SX
+Latin America And Other Western Hemisphere,South Georgia and the South Sandwich Islands,South Georgia and South Sandwich Is.,SGS,GS
+Latin America And Other Western Hemisphere,St. Barthelemy,St. Barths,BLM,BL
+Latin America And Other Western Hemisphere,St. Kitts and Nevis,St. Kitts and Nevis,KNA,KN
+Latin America And Other Western Hemisphere,St. Lucia,St. Lucia,LCA,LC
+Latin America And Other Western Hemisphere,St. Martin,Saint-Martin,MAF,MF
+Latin America And Other Western Hemisphere,St. Pierre and Miquelon,St. Pierre and Miquelon,SPM,PM
+Latin America And Other Western Hemisphere,St. Vincent and the Grenadines,St. Vincent and the Grenadines,VCT,VC
+Latin America And Other Western Hemisphere,Suriname,Suriname,SUR,SR
+Latin America And Other Western Hemisphere,Trinidad and Tobago,Trinidad and Tobago,TTO,TT
+Latin America And Other Western Hemisphere,Turks and Caicos Islands,Turks and Caicos Islands,TCA,TC
+Latin America And Other Western Hemisphere,Uruguay,Uruguay,URY,UY
+Latin America And Other Western Hemisphere,Venezuela,Venezuela,VEN,VE
+Latin America And Other Western Hemisphere,Caribbean Development Bank,Caribbean Development Bank,Caribbean Development Bank,Caribbean Development Bank
+Latin America And Other Western Hemisphere,Inter-American Development Bank,Inter-American Development Bank,Inter-American Development Bank,Inter-American Development Bank
+Latin America And Other Western Hemisphere,Organization of American States,Organization of American States,Organization of American States,Organization of American States
+Latin America And Other Western Hemisphere,Other regional organizations,Other regional organizations,Other regional organizations,Other regional organizations
+Latin America And Other Western Hemisphere,Netherlands Antilles,Netherlands Antilles,Netherlands Antilles,Netherlands Antilles
+South And Central America,Argentina,Argentina,ARG,AR
+South And Central America,Belize,Belize,BLZ,BZ
+South And Central America,Bolivia,Bolivia,BOL,BO
+South And Central America,Brazil,Brazil,BRA,BR
+South And Central America,Chile,Chile,CHL,CL
+South And Central America,Colombia,Colombia,COL,CO
+South And Central America,Costa Rica,Costa Rica,CRI,CR
+South And Central America,Ecuador,Ecuador,ECU,EC
+South And Central America,El Salvador,El Salvador,SLV,SV
+South And Central America,French Guiana,French Guiana,GUF,GF
+South And Central America,Guatemala,Guatemala,GTM,GT
+South And Central America,Guyana,Guyana,GUY,GY
+South And Central America,Honduras,Honduras,HND,HN
+South And Central America,Mexico,Mexico,MEX,MX
+South And Central America,Nicaragua,Nicaragua,NIC,NI
+South And Central America,Panama,Panama,PAN,PA
+South And Central America,Paraguay,Paraguay,PRY,PY
+South And Central America,Peru,Peru,PER,PE
+South And Central America,Suriname,Suriname,SUR,SR
+South And Central America,Uruguay,Uruguay,URY,UY
+South And Central America,Venezuela,Venezuela,VEN,VE
+South And Central America,Regional organizations,Regional organizations,Regional organizations,Regional organizations
+South America,Argentina,Argentina,ARG,AR
+South America,Bolivia,Bolivia,BOL,BO
+South America,Brazil,Brazil,BRA,BR
+South America,Chile,Chile,CHL,CL
+South America,Colombia,Colombia,COL,CO
+South America,Ecuador,Ecuador,ECU,EC
+South America,French Guiana,French Guiana,GUF,GF
+South America,Guyana,Guyana,GUY,GY
+South America,Paraguay,Paraguay,PRY,PY
+South America,Peru,Peru,PER,PE
+South America,Suriname,Suriname,SUR,SR
+South America,Uruguay,Uruguay,URY,UY
+South America,Venezuela,Venezuela,VEN,VE
+South America,Regional organizations,Regional organizations,Regional organizations,Regional organizations
+Central America,Belize,Belize,BLZ,BZ
+Central America,Costa Rica,Costa Rica,CRI,CR
+Central America,El Salvador,El Salvador,SLV,SV
+Central America,Guatemala,Guatemala,GTM,GT
+Central America,Honduras,Honduras,HND,HN
+Central America,Mexico,Mexico,MEX,MX
+Central America,Nicaragua,Nicaragua,NIC,NI
+Central America,Panama,Panama,PAN,PA
+Central America,Regional organizations,Regional organizations,Regional organizations,Regional organizations
+Other Western Hemisphere,Anguilla,Anguilla,AIA,AI
+Other Western Hemisphere,Antigua and Barbuda,Antigua and Barbuda,ATG,AG
+Other Western Hemisphere,Aruba,Aruba,ABW,AW
+Other Western Hemisphere,"Bahamas, The",Bahamas,BHS,BS
+Other Western Hemisphere,Barbados,Barbados,BRB,BB
+Other Western Hemisphere,Bermuda,Bermuda,BMU,BM
+Other Western Hemisphere,British Virgin Islands,British Virgin Islands,VGB,VG
+Other Western Hemisphere,Caribbean Netherlands,"Bonaire, Saint Eustatius and Saba",BES,BQ
+Other Western Hemisphere,Cayman Islands,Cayman Islands,CYM,KY
+Other Western Hemisphere,Cuba,Cuba,CUB,CU
+Other Western Hemisphere,Curacao,Curacao,CUW,CW
+Other Western Hemisphere,Dominica,Dominica,DMA,DM
+Other Western Hemisphere,Dominican Republic,Dominican Republic,DOM,DO
+Other Western Hemisphere,Falkland Islands,Falkland Islands,FLK,FK
+Other Western Hemisphere,Grenada,Grenada,GRD,GD
+Other Western Hemisphere,Guadeloupe,Guadeloupe,GLP,GP
+Other Western Hemisphere,Haiti,Haiti,HTI,HT
+Other Western Hemisphere,Jamaica,Jamaica,JAM,JM
+Other Western Hemisphere,Martinique,Martinique,MTQ,MQ
+Other Western Hemisphere,Montserrat,Montserrat,MSR,MS
+Other Western Hemisphere,Sint Maarten,Sint Maarten,SXM,SX
+Other Western Hemisphere,South Georgia and the South Sandwich Islands,South Georgia and South Sandwich Is.,SGS,GS
+Other Western Hemisphere,St. Barthelemy,St. Barths,BLM,BL
+Other Western Hemisphere,St. Kitts and Nevis,St. Kitts and Nevis,KNA,KN
+Other Western Hemisphere,St. Lucia,St. Lucia,LCA,LC
+Other Western Hemisphere,St. Martin,Saint-Martin,MAF,MF
+Other Western Hemisphere,St. Pierre and Miquelon,St. Pierre and Miquelon,SPM,PM
+Other Western Hemisphere,St. Vincent and the Grenadines,St. Vincent and the Grenadines,VCT,VC
+Other Western Hemisphere,Trinidad and Tobago,Trinidad and Tobago,TTO,TT
+Other Western Hemisphere,Turks and Caicos Islands,Turks and Caicos Islands,TCA,TC
+Other Western Hemisphere,Caribbean Development Bank,Caribbean Development Bank,Caribbean Development Bank,Caribbean Development Bank
+Other Western Hemisphere,Inter-American Development Bank,Inter-American Development Bank,Inter-American Development Bank,Inter-American Development Bank
+Other Western Hemisphere,Organization of American States,Organization of American States,Organization of American States,Organization of American States
+Other Western Hemisphere,Other regional organizations,Other regional organizations,Other regional organizations,Other regional organizations
+Other Western Hemisphere,Netherlands Antilles,Netherlands Antilles,Netherlands Antilles,Netherlands Antilles
+Asia And Pacific,Afghanistan,Afghanistan,AFG,AF
+Asia And Pacific,Ashmore and Cartier Islands,Ashmore and Cartier Islands,Ashmore and Cartier Islands,Ashmore and Cartier Islands
+Asia And Pacific,Australia,Australia,AUS,AU
+Asia And Pacific,Bangladesh,Bangladesh,BGD,BD
+Asia And Pacific,Bhutan,Bhutan,BTN,BT
+Asia And Pacific,Brunei,Brunei Darussalam,BRN,BN
+Asia And Pacific,Burma,Myanmar,MMR,MM
+Asia And Pacific,Cambodia,Cambodia,KHM,KH
+Asia And Pacific,China,China,CHN,CN
+Asia And Pacific,Christmas Island,Christmas Island,CXR,CX
+Asia And Pacific,Clipperton Island,Clipperton Island,Clipperton Island,Clipperton Island
+Asia And Pacific,Cocos (Keeling) Islands,Cocos (Keeling) Islands,CCK,CC
+Asia And Pacific,Cook Islands,Cook Islands,COK,CK
+Asia And Pacific,Coral Sea Islands,Coral Sea Islands,Coral Sea Islands,Coral Sea Islands
+Asia And Pacific,Fiji,Fiji,FJI,FJ
+Asia And Pacific,French Polynesia,French Polynesia,PYF,PF
+Asia And Pacific,Heard Island and McDonald Islands,Heard and McDonald Islands,HMD,HM
+Asia And Pacific,Hong Kong,Hong Kong,HKG,HK
+Asia And Pacific,India,India,IND,IN
+Asia And Pacific,Indonesia,Indonesia,IDN,ID
+Asia And Pacific,Japan,Japan,JPN,JP
+Asia And Pacific,Kiribati,Kiribati,KIR,KI
+Asia And Pacific,Laos,Laos,LAO,LA
+Asia And Pacific,Macau,Macau,MAC,MO
+Asia And Pacific,Malaysia,Malaysia,MYS,MY
+Asia And Pacific,Maldives,Maldives,MDV,MV
+Asia And Pacific,Marshall Islands,Marshall Islands,MHL,MH
+Asia And Pacific,"Micronesia, Federated States of","Micronesia, Fed. Sts.",FSM,FM
+Asia And Pacific,Mongolia,Mongolia,MNG,MN
+Asia And Pacific,Nauru,Nauru,NRU,NR
+Asia And Pacific,Nepal,Nepal,NPL,NP
+Asia And Pacific,New Caledonia,New Caledonia,NCL,NC
+Asia And Pacific,New Zealand,New Zealand,NZL,NZ
+Asia And Pacific,Niue,Niue,NIU,NU
+Asia And Pacific,Norfolk Island,Norfolk Island,NFK,NF
+Asia And Pacific,North Korea,North Korea,PRK,KP
+Asia And Pacific,Pakistan,Pakistan,PAK,PK
+Asia And Pacific,Palau,Palau,PLW,PW
+Asia And Pacific,Papua New Guinea,Papua New Guinea,PNG,PG
+Asia And Pacific,Philippines,Philippines,PHL,PH
+Asia And Pacific,Pitcairn Islands,Pitcairn,PCN,PN
+Asia And Pacific,Samoa,Samoa,WSM,WS
+Asia And Pacific,Singapore,Singapore,SGP,SG
+Asia And Pacific,Solomon Islands,Solomon Islands,SLB,SB
+Asia And Pacific,South Korea,South Korea,KOR,KR
+Asia And Pacific,Sri Lanka,Sri Lanka,LKA,LK
+Asia And Pacific,Taiwan,Taiwan,TWN,TW
+Asia And Pacific,Thailand,Thailand,THA,TH
+Asia And Pacific,Timor-Leste,Timor-Leste,TLS,TL
+Asia And Pacific,Tokelau,Tokelau,TKL,TK
+Asia And Pacific,Tonga,Tonga,TON,TO
+Asia And Pacific,Tuvalu,Tuvalu,TUV,TV
+Asia And Pacific,Vanuatu,Vanuatu,VUT,VU
+Asia And Pacific,Vietnam,Vietnam,VNM,VN
+Asia And Pacific,Wallis and Futuna,Wallis and Futuna Islands,WLF,WF
+Asia And Pacific,Asian Development Bank,Asian Development Bank,Asian Development Bank,Asian Development Bank
+Asia And Pacific,Other regional organizations,Other regional organizations,Other regional organizations,Other regional organizations
+Middle East,Bahrain,Bahrain,BHR,BH
+Middle East,Gaza Strip,Palestine,PSE,PS
+Middle East,Iran,Iran,IRN,IR
+Middle East,Iraq,Iraq,IRQ,IQ
+Middle East,Israel,Israel,ISR,IL
+Middle East,Jordan,Jordan,JOR,JO
+Middle East,Kuwait,Kuwait,KWT,KW
+Middle East,Lebanon,Lebanon,LBN,LB
+Middle East,Oman,Oman,OMN,OM
+Middle East,Qatar,Qatar,QAT,QA
+Middle East,Saudi Arabia,Saudi Arabia,SAU,SA
+Middle East,Syria,Syria,SYR,SY
+Middle East,United Arab Emirates,United Arab Emirates,ARE,AE
+Middle East,West Bank,Palestine,PSE,PS
+Middle East,Yemen,Yemen,YEM,YE
+Middle East,Regional organizations,Regional organizations,Regional organizations,Regional organizations
+Africa,Algeria,Algeria,DZA,DZ
+Africa,Angola,Angola,AGO,AO
+Africa,Bassas da India,Bassas da India,Bassas da India,Bassas da India
+Africa,Benin,Benin,BEN,BJ
+Africa,Botswana,Botswana,BWA,BW
+Africa,British Indian Ocean Territory,British Indian Ocean Territory,IOT,IO
+Africa,Burkina Faso,Burkina Faso,BFA,BF
+Africa,Burundi,Burundi,BDI,BI
+Africa,Cabo Verde,Cabo Verde,CPV,CV
+Africa,Cameroon,Cameroon,CMR,CM
+Africa,Central African Republic,Central African Republic,CAF,CF
+Africa,Chad,Chad,TCD,TD
+Africa,Comoros,Comoros,COM,KM
+Africa,"Congo, Democratic Republic of",DR Congo,COD,CD
+Africa,"Congo, Republic of",Congo Republic,COG,CG
+Africa,Cote d'Ivoire,Cote d'Ivoire,CIV,CI
+Africa,Diego Garcia,Diego Garcia,Diego Garcia,Diego Garcia
+Africa,Djibouti,Djibouti,DJI,DJ
+Africa,Egypt,Egypt,EGY,EG
+Africa,Equatorial Guinea,Equatorial Guinea,GNQ,GQ
+Africa,Eritrea,Eritrea,ERI,ER
+Africa,Eswatini,Eswatini,SWZ,SZ
+Africa,Ethiopia,Ethiopia,ETH,ET
+Africa,Europa Island,Europa Island,Europa Island,Europa Island
+Africa,French Southern and Antarctic Lands,French Southern Territories,ATF,TF
+Africa,Gabon,Gabon,GAB,GA
+Africa,"Gambia, The",Gambia,GMB,GM
+Africa,Ghana,Ghana,GHA,GH
+Africa,Glorioso Islands,Glorioso Islands,Glorioso Islands,Glorioso Islands
+Africa,Guinea,Guinea,GIN,GN
+Africa,Guinea-Bissau,Guinea-Bissau,GNB,GW
+Africa,Juan de Nova Island,Juan de Nova Island,Juan de Nova Island,Juan de Nova Island
+Africa,Kenya,Kenya,KEN,KE
+Africa,Lesotho,Lesotho,LSO,LS
+Africa,Liberia,Liberia,LBR,LR
+Africa,Libya,Libya,LBY,LY
+Africa,Madagascar,Madagascar,MDG,MG
+Africa,Malawi,Malawi,MWI,MW
+Africa,Mali,Mali,MLI,ML
+Africa,Mauritania,Mauritania,MRT,MR
+Africa,Mauritius,Mauritius,MUS,MU
+Africa,Mayotte,Mayotte,MYT,YT
+Africa,Morocco,Morocco,MAR,MA
+Africa,Mozambique,Mozambique,MOZ,MZ
+Africa,Namibia,Namibia,NAM,NA
+Africa,Niger,Niger,NER,NE
+Africa,Nigeria,Nigeria,NGA,NG
+Africa,Reunion,Reunion,REU,RE
+Africa,Rwanda,Rwanda,RWA,RW
+Africa,Sao Tome and Principe,Sao Tome and Principe,STP,ST
+Africa,Senegal,Senegal,SEN,SN
+Africa,Seychelles,Seychelles,SYC,SC
+Africa,Sierra Leone,Sierra Leone,SLE,SL
+Africa,Somalia,Somalia,SOM,SO
+Africa,South Africa,South Africa,ZAF,ZA
+Africa,South Sudan,South Sudan,SSD,SS
+Africa,"St. Helena, Ascension, and Tristan da Cunha",St. Helena,SHN,SH
+Africa,Sudan,Sudan,SDN,SD
+Africa,Tanzania,Tanzania,TZA,TZ
+Africa,Togo,Togo,TGO,TG
+Africa,Tromelin Island,Tromelin Island,Tromelin Island,Tromelin Island
+Africa,Tunisia,Tunisia,TUN,TN
+Africa,Uganda,Uganda,UGA,UG
+Africa,Zambia,Zambia,ZMB,ZM
+Africa,Zimbabwe,Zimbabwe,ZWE,ZW
+Africa,African Development Bank,African Development Bank,African Development Bank,African Development Bank
+Africa,East African Development Bank,East African Development Bank,East African Development Bank,East African Development Bank
+Africa,Other regional organizations,Other regional organizations,Other regional organizations,Other regional organizations
+Africa,Western Sahara,Western Sahara,ESH,EH
+International Organizations And Unallocated,Antarctica,Antarctica,ATA,AQ
+International Organizations And Unallocated,European Bank for Reconstruction and Development,European Bank for Reconstruction and Development,European Bank for Reconstruction and Development,European Bank for Reconstruction and Development
+International Organizations And Unallocated,International Bank for Reconstruction and Development,International Bank for Reconstruction and Development,International Bank for Reconstruction and Development,International Bank for Reconstruction and Development
+International Organizations And Unallocated,International Development Association,International Development Association,International Development Association,International Development Association
+International Organizations And Unallocated,International Finance Corporation,International Finance Corporation,International Finance Corporation,International Finance Corporation
+International Organizations And Unallocated,International Monetary Fund,International Monetary Fund,International Monetary Fund,International Monetary Fund
+International Organizations And Unallocated,International Olympic Committee,International Olympic Committee,International Olympic Committee,International Olympic Committee
+International Organizations And Unallocated,Islamic Development Bank,Islamic Development Bank,Islamic Development Bank,Islamic Development Bank
+International Organizations And Unallocated,United Nations,United Nations,United Nations,United Nations
+International Organizations And Unallocated,Other international organizations,Other international organizations,Other international organizations,Other international organizations
+International Organizations And Unallocated,"United Kingdom Islands, Caribbean",United Kingdom,GBR,GB
+International Organizations And Unallocated,British Virgin Islands,British Virgin Islands,VGB,VG
+International Organizations And Unallocated,Cayman Islands,Cayman Islands,CYM,KY
+International Organizations And Unallocated,Montserrat,Montserrat,MSR,MS
+International Organizations And Unallocated,Turks and Caicos Islands,Turks and Caicos Islands,TCA,TC
+International Organizations And Unallocated,CAFTA-DR,CAFTA-DR,CAFTA-DR,CAFTA-DR
+International Organizations And Unallocated,Costa Rica,Costa Rica,CRI,CR
+International Organizations And Unallocated,El Salvador,El Salvador,SLV,SV
+International Organizations And Unallocated,Guatemala,Guatemala,GTM,GT
+International Organizations And Unallocated,Honduras,Honduras,HND,HN
+International Organizations And Unallocated,Nicaragua,Nicaragua,NIC,NI
+International Organizations And Unallocated,Dominican Republic,Dominican Republic,DOM,DO

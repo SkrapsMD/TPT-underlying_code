@@ -50,6 +50,9 @@ continents_to_process = ['Asia', 'Europe', 'North America', 'South America', 'Oc
 all_continent_data = {}
 base_path = data_paths['raw_data_sources']['hs10']['2024_trade_data']['base_path']
 
+# Collect all HS-10 codes and descriptions from raw data
+all_hs10_descriptions = []
+
 for continent in continents_to_process:
     continent_files = data_paths['raw_data_sources']['hs10']['2024_trade_data']['regions'][continent]
     continent_folder = os.path.join(data_paths['base_paths']['underlying_data_root'], base_path, continent)
@@ -66,6 +69,20 @@ for continent in continents_to_process:
         # Add hs2_code column if it doesn't exist
         if 'hs_code' in continent_data.columns and 'hs2_code' not in continent_data.columns:
             continent_data['hs2_code'] = continent_data['hs_code'].str[:2]
+        
+        # Still need to collect HS-10 descriptions from raw files even if combined file exists
+        for filename in continent_files:
+            if filename == 'combined_data.csv':
+                continue
+            file_path = os.path.join(continent_folder, filename)
+            if os.path.exists(file_path):
+                df = pd.read_csv(file_path, skiprows=2)
+                # Extract HS code and description from commodity
+                df['hs_code'] = df['Commodity'].str[:10]
+                df['hs10_description'] = df['Commodity'].str[10:].str.strip()
+                # Collect HS-10 codes and descriptions for the master dataset
+                hs10_data = df[['hs_code', 'hs10_description']].drop_duplicates()
+                all_hs10_descriptions.append(hs10_data)
     else:
         # Create combined file from individual files
         continent_data_list = []
@@ -84,14 +101,54 @@ for continent in continents_to_process:
             df['hs_code'] = df['Commodity'].str[:10]
             # Extract HS-2 code (first 2 characters)
             df['hs2_code'] = df['hs_code'].str[:2]
+            # Extract description (everything after first 10 characters)
+            df['hs10_description'] = df['Commodity'].str[10:].str.strip()
+            
+            # Collect HS-10 codes and descriptions for the master dataset
+            hs10_data = df[['hs_code', 'hs10_description']].drop_duplicates()
+            all_hs10_descriptions.append(hs10_data)
 
-            df = df.drop(columns=['Commodity'])
+            df = df.drop(columns=['Commodity', 'hs10_description'])
             df['impVal'] = df['impVal'].astype(str).str.replace(',', '').astype(float)
             
             continent_data_list.append(df)
         continent_data = pd.concat(continent_data_list, ignore_index=True)
         continent_data.to_csv(combined_file_path, index=False)
     all_continent_data[continent] = continent_data
+
+# Create the complete HS-10 descriptions dataset
+if all_hs10_descriptions:
+    # Combine all HS-10 descriptions from all continents
+    complete_hs10_descriptions = pd.concat(all_hs10_descriptions, ignore_index=True)
+    
+    # Remove duplicates and keep unique HS-10 codes
+    complete_hs10_descriptions = complete_hs10_descriptions.drop_duplicates(subset=['hs_code'])
+    
+    # Filter out any invalid HS codes (empty, NaN, or non-10 digit codes)
+    complete_hs10_descriptions = complete_hs10_descriptions[
+        complete_hs10_descriptions['hs_code'].notna() & 
+        (complete_hs10_descriptions['hs_code'].str.len() == 10) &
+        complete_hs10_descriptions['hs_code'].str.isdigit()
+    ]
+    
+    # Convert hs_code to integer and rename columns
+    complete_hs10_descriptions['hs10'] = complete_hs10_descriptions['hs_code'].astype(int)
+    complete_hs10_descriptions = complete_hs10_descriptions.rename(columns={'hs10_description': 'description'})
+    complete_hs10_descriptions = complete_hs10_descriptions[['hs10', 'description']]
+    
+    # Sort by HS-10 code
+    complete_hs10_descriptions = complete_hs10_descriptions.sort_values('hs10')
+    
+    # Save to the specified location
+    hs10_output_dir = os.path.join(data_paths['base_paths']['working_data'], '03_Map_country_trade_data')
+    os.makedirs(hs10_output_dir, exist_ok=True)
+    hs10_output_path = os.path.join(hs10_output_dir, '01_hs10_descriptions_full.csv')
+    complete_hs10_descriptions.to_csv(hs10_output_path, index=False)
+    
+    print(f"Created HS-10 descriptions dataset with {len(complete_hs10_descriptions)} unique codes")
+    print(f"Saved to: {hs10_output_path}")
+else:
+    print("No HS-10 descriptions collected (all continents used existing combined files)")
 
 # Quick Validation: Do the sums make sense for each country? 
 # Answer - yes!
@@ -216,6 +273,8 @@ if failed_merge_data:
                 modal_count = naics_options.most_common(1)[0][1]
                 total_matches = len(hs8_lookup[hs8])
                 mapping_strength = modal_count / total_matches
+                
+                # Add primary match
                 hierarchical_matches.append({
                     'hs_code': hs_code,
                     'matched_bea_detail': most_common_naics,
@@ -223,8 +282,24 @@ if failed_merge_data:
                     'mapping_strength': mapping_strength,
                     'modal_count': modal_count,
                     'total_matches': total_matches,
-                    'impVal': row['impVal']
+                    'impVal': row['impVal'],
+                    'match_type': 'primary'
                 })
+                
+                # Add alternative matches when mapping_strength < 1.0
+                if mapping_strength < 1.0:
+                    for bea_code, count in naics_options.most_common()[1:]:  # Skip the first (primary) match
+                        hierarchical_matches.append({
+                            'hs_code': hs_code,
+                            'matched_bea_detail': bea_code,
+                            'match_level': 'hs8',
+                            'mapping_strength': mapping_strength,
+                            'modal_count': count,
+                            'total_matches': total_matches,
+                            'impVal': 0,  # Zero for alternative matches
+                            'match_type': 'alternative'
+                        })
+                
                 match_found = True
         # Try HS-6 if HS-8 didn't work
         if not match_found and len(hs_code) >= 6:
@@ -236,6 +311,8 @@ if failed_merge_data:
                 modal_count = naics_options.most_common(1)[0][1]
                 total_matches = len(hs6_lookup[hs6])
                 mapping_strength = modal_count / total_matches
+                
+                # Add primary match
                 hierarchical_matches.append({
                     'hs_code': hs_code,
                     'matched_bea_detail': most_common_naics,
@@ -243,8 +320,24 @@ if failed_merge_data:
                     'mapping_strength': mapping_strength,
                     'modal_count': modal_count,
                     'total_matches': total_matches,
-                    'impVal': row['impVal']
+                    'impVal': row['impVal'],
+                    'match_type': 'primary'
                 })
+                
+                # Add alternative matches when mapping_strength < 1.0
+                if mapping_strength < 1.0:
+                    for bea_code, count in naics_options.most_common()[1:]:  # Skip the first (primary) match
+                        hierarchical_matches.append({
+                            'hs_code': hs_code,
+                            'matched_bea_detail': bea_code,
+                            'match_level': 'hs6',
+                            'mapping_strength': mapping_strength,
+                            'modal_count': count,
+                            'total_matches': total_matches,
+                            'impVal': 0,  # Zero for alternative matches
+                            'match_type': 'alternative'
+                        })
+                
                 match_found = True
         # Try HS-4 if HS-6 didn't work
         if not match_found and len(hs_code) >= 4:
@@ -256,6 +349,8 @@ if failed_merge_data:
                 modal_count = naics_options.most_common(1)[0][1]
                 total_matches = len(hs4_lookup[hs4])
                 mapping_strength = modal_count / total_matches
+                
+                # Add primary match
                 hierarchical_matches.append({
                     'hs_code': hs_code,
                     'matched_bea_detail': most_common_naics,
@@ -263,27 +358,70 @@ if failed_merge_data:
                     'mapping_strength': mapping_strength,
                     'modal_count': modal_count,
                     'total_matches': total_matches,
-                    'impVal': row['impVal']
+                    'impVal': row['impVal'],
+                    'match_type': 'primary'
                 })
+                
+                # Add alternative matches when mapping_strength < 1.0
+                if mapping_strength < 1.0:
+                    for bea_code, count in naics_options.most_common()[1:]:  # Skip the first (primary) match
+                        hierarchical_matches.append({
+                            'hs_code': hs_code,
+                            'matched_bea_detail': bea_code,
+                            'match_level': 'hs4',
+                            'mapping_strength': mapping_strength,
+                            'modal_count': count,
+                            'total_matches': total_matches,
+                            'impVal': 0,  # Zero for alternative matches
+                            'match_type': 'alternative'
+                        })
                 
     # Save the Hierarchical Matches and then apply them to the continent data
     if hierarchical_matches:
         hierarchical_df = pd.DataFrame(hierarchical_matches)
-        hierarchical_df = hierarchical_df.sort_values('impVal', ascending=False)
+        # Sort by hs_code, then by match_type (primary first), then by modal_count (descending)
+        hierarchical_df = hierarchical_df.sort_values(['hs_code', 'match_type', 'modal_count'], ascending=[True, True, False])
+        # Custom sort to ensure primary matches come first, then alternatives ordered by frequency
+        hierarchical_df['sort_key'] = hierarchical_df.apply(lambda x: (x['hs_code'], 0 if x['match_type'] == 'primary' else 1, -x['modal_count']), axis=1)
+        hierarchical_df = hierarchical_df.sort_values('sort_key').drop(columns=['sort_key'])
+        
+        # Merge in HS-10 descriptions if available
+        if all_hs10_descriptions:
+            # Create descriptions lookup from the data we collected
+            temp_descriptions = pd.concat(all_hs10_descriptions, ignore_index=True)
+            temp_descriptions = temp_descriptions.drop_duplicates(subset=['hs_code'])
+            temp_descriptions = temp_descriptions.rename(columns={'hs10_description': 'hs10_description'})
+            
+            # Merge descriptions into hierarchical matches
+            hierarchical_df = hierarchical_df.merge(
+                temp_descriptions[['hs_code', 'hs10_description']], 
+                on='hs_code', 
+                how='left'
+            )
+            
+            # Reorder columns to put description after hs_code
+            cols = list(hierarchical_df.columns)
+            if 'hs10_description' in cols:
+                cols.remove('hs10_description')
+                hs_code_idx = cols.index('hs_code')
+                cols.insert(hs_code_idx + 1, 'hs10_description')
+                hierarchical_df = hierarchical_df[cols]
         
         # Save hierarchical matches
         hierarchical_path = os.path.join(validation_dir, '3_Hierarchical_Matches.csv')
         hierarchical_df.to_csv(hierarchical_path, index=False)
         
-        print(f"Found hierarchical matches for {len(hierarchical_df)} HS codes")
-        print(f"Total import value of hierarchical matches: ${hierarchical_df['impVal'].sum():,.0f}")
+        # Count only primary matches for summary statistics
+        primary_matches = hierarchical_df[hierarchical_df['match_type'] == 'primary']
+        print(f"Found hierarchical matches for {len(primary_matches)} HS codes")
+        print(f"Total import value of hierarchical matches: ${primary_matches['impVal'].sum():,.0f}")
         
         # Calculate remaining unmapped value
-        remaining_unmapped_value = failed_hs_sums['impVal'].sum() - hierarchical_df['impVal'].sum()
+        remaining_unmapped_value = failed_hs_sums['impVal'].sum() - primary_matches['impVal'].sum()
         print(f"Remaining unmapped import value: ${remaining_unmapped_value:,.0f}")
         
-        # Show match level distribution
-        level_counts = hierarchical_df['match_level'].value_counts()
+        # Show match level distribution (primary matches only)
+        level_counts = primary_matches['match_level'].value_counts()
         print("Match level distribution:")
         for level, count in level_counts.items():
             print(f"  {level}: {count} codes")
@@ -292,7 +430,11 @@ if failed_merge_data:
         
 ####### This is a parameter you might want to adjust, or think about an alternative (i.e. maybe a naics5 with wildcard if applicable, I don't know)
         mapping_threshold = 0.5 ## Silly parameter value
-        high_confidence_matches = hierarchical_df[hierarchical_df['mapping_strength'] >= mapping_threshold]
+        # Only use primary matches for applying to continent data
+        high_confidence_matches = hierarchical_df[
+            (hierarchical_df['mapping_strength'] >= mapping_threshold) & 
+            (hierarchical_df['match_type'] == 'primary')
+        ]
         
         print(f"\nApplying {len(high_confidence_matches)} high-confidence matches (strength >= {mapping_threshold}) to continent data...")
         

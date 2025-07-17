@@ -72,7 +72,45 @@ if all(abs(t - totals[0]) < 1 for t in totals):
 else:
     print("Warning: Aggregation levels have different total impVal")
 
-def assign_region(row):
+
+"""
+We assign regions in two ways. The first is based on just a pure continental mapping using country_converter - when the BEA says Asia and Pacific we 
+interpret that as Asia and Oceania. The BEA descriptions are not super easy to find, but they are burried somewher, so I went and scrounged them up.
+With these descriptions we create a second version of the region mapping using the BEAs specific countries and regions. One thing to note about this
+is that many of them do not have ISO codes nor appropraite mappings within the regex, so I will want to, depending on the quality of this mapping, 
+go back and fix some of these by hands and comparing them to the US Census Bureau data... Ideally there will be nice concordances. 
+
+To get the BEA maps, which come in the form of an obnoxious .pdf, I wrote some pdf reading code in the new folder "Map BEA Regions", that reads them in
+and extracts them to be a .csv file. We run that here (just by calling the .py file) and then use the extracted csvs to create the RoAsia and Europe regions. 
+-- CAN, MEX, CHN, and JPN are single countries so these are easy, and rest of world is just the set of all countries not yet assigned a region.
+
+The two csvs from Map BEA REgions are:
+- 'Map BEA Regions/data/final/BEA_TiVA_Europe.csv'
+- 'Map BEA Regions/data/final/BEA_TiVA_Asia_and_Pacific.csv
+
+Each of these has a column 'iso3' which determines whether a country is in that mapping. WE construct a few very simple validation rules to see the difference between this
+mapping and what we achieved with the country converter including, but not limited to: a.) how may countries are in the mapping, b.) How many countries in the country_converter 
+mapping are not in the bea mapping, c.) how many countries in the bea mapping are not in the country_converter mapping, and d.) what are the relative sums of impVal between 
+the two mappings (i.e. total imports from EUROPE under the country_converter mapping vs. total imports from EUROPE under the bea mapping, same for the new version.).
+"""
+
+# Load BEA region mapping files
+bea_europe_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), 'Map BEA Regions', 'data', 'final', 'BEA_TiVA_Europe.csv')
+bea_asia_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), 'Map BEA Regions', 'data', 'final', 'BEA_TiVA_Asia_and_Pacific.csv')
+
+bea_europe_df = pd.read_csv(bea_europe_path)
+bea_asia_df = pd.read_csv(bea_asia_path)
+
+# Create sets of ISO3 codes for BEA regions
+bea_europe_iso3 = set(bea_europe_df['iso3'].dropna().unique())
+bea_asia_iso3 = set(bea_asia_df['iso3'].dropna().unique())
+
+print(f"Loaded BEA region mappings:")
+print(f"  Europe: {len(bea_europe_iso3)} countries")
+print(f"  Asia and Pacific: {len(bea_asia_iso3)} countries")
+
+def assign_region_country_converter(row):
+    """Original country converter mapping"""
     iso3 = row['iso3']
     continent = row['continent']
     
@@ -85,9 +123,188 @@ def assign_region(row):
     else:
         return 'RoWorld'
 
+def assign_region_bea(row):
+    """BEA-specific region mapping"""
+    iso3 = row['iso3']
+    
+    if iso3 in ['CAN', 'MEX', 'CHN', 'JPN']:
+        return iso3
+    elif iso3 in bea_europe_iso3:
+        return 'Europe'
+    elif iso3 in bea_asia_iso3:
+        return 'RoAsia'
+    else:
+        return 'RoWorld'
+
+# Apply both mappings to all dataframes
 for df in [detail_df, usummary_df, summary_df, sector_df]:
     df['continent'] = coco.convert(df['iso3'], to='Continent_7', not_found=None)
-    df['region'] = df.apply(assign_region, axis=1)
+    df['alt_region'] = df.apply(assign_region_country_converter, axis=1)  # Country converter mapping
+    df['region'] = df.apply(assign_region_bea, axis=1)  # BEA mapping (new primary)
+
+# Create validation comparison between the two mappings
+print("\n" + "="*60)
+print("VALIDATION: Comparing Country Converter vs BEA Region Mappings")
+print("="*60)
+
+# Use detail_df for comprehensive validation
+validation_data = []
+
+# Compare mapping coverage
+cc_region_counts = detail_df['alt_region'].value_counts()
+bea_region_counts = detail_df['region'].value_counts()
+
+print(f"\nRegion distribution comparison:")
+print(f"{'Region':<10} {'CountryConverter':<18} {'BEA Mapping':<12} {'Difference':<10}")
+print("-" * 55)
+
+for region in ['CAN', 'MEX', 'CHN', 'JPN', 'Europe', 'RoAsia', 'RoWorld']:
+    cc_count = cc_region_counts.get(region, 0)
+    bea_count = bea_region_counts.get(region, 0)
+    diff = bea_count - cc_count
+    print(f"{region:<10} {cc_count:<18} {bea_count:<12} {diff:<10}")
+
+# Compare import values by region
+print(f"\nImport value comparison by region:")
+print(f"{'Region':<10} {'CountryConverter ($)':<20} {'BEA Mapping ($)':<18} {'Difference ($)':<15} {'% Change':<10}")
+print("-" * 80)
+
+cc_region_values = detail_df.groupby('alt_region')['impVal'].sum()
+bea_region_values = detail_df.groupby('region')['impVal'].sum()
+
+for region in ['CAN', 'MEX', 'CHN', 'JPN', 'Europe', 'RoAsia', 'RoWorld']:
+    cc_val = cc_region_values.get(region, 0)
+    bea_val = bea_region_values.get(region, 0)
+    diff = bea_val - cc_val
+    pct_change = (diff / cc_val * 100) if cc_val > 0 else 0
+    print(f"{region:<10} {cc_val:<20,.0f} {bea_val:<18,.0f} {diff:<15,.0f} {pct_change:<10.1f}%")
+
+# Find countries that switched regions
+region_switches = detail_df[detail_df['alt_region'] != detail_df['region']][['iso3', 'Country', 'alt_region', 'region', 'impVal']].drop_duplicates()
+region_switches = region_switches.groupby(['iso3', 'Country', 'alt_region', 'region'])['impVal'].sum().reset_index()
+region_switches = region_switches.sort_values('impVal', ascending=False)
+
+print(f"\nCountries that switched regions (top 10 by import value):")
+print(f"{'ISO3':<5} {'Country':<25} {'CC Region':<10} {'BEA Region':<10} {'Import Value ($)':<15}")
+print("-" * 75)
+
+for i, (_, row) in enumerate(region_switches.head(10).iterrows()):
+    print(f"{row['iso3']:<5} {row['Country'][:24]:<25} {row['alt_region']:<10} {row['region']:<10} {row['impVal']:<15,.0f}")
+
+# Check for unmapped countries in BEA system
+unmapped_countries = detail_df[detail_df['region'] == 'RoWorld'][['iso3', 'Country']].drop_duplicates()
+cc_unmapped = detail_df[detail_df['alt_region'] == 'RoWorld'][['iso3', 'Country']].drop_duplicates()
+
+print(f"\nUnmapped countries comparison:")
+print(f"  Countries in RoWorld (Country Converter): {len(cc_unmapped)}")
+print(f"  Countries in RoWorld (BEA mapping): {len(unmapped_countries)}")
+
+# Countries only in BEA Europe but not in Country Converter Europe
+bea_only_europe = detail_df[(detail_df['region'] == 'Europe') & (detail_df['alt_region'] != 'Europe')][['iso3', 'Country']].drop_duplicates()
+cc_only_europe = detail_df[(detail_df['alt_region'] == 'Europe') & (detail_df['region'] != 'Europe')][['iso3', 'Country']].drop_duplicates()
+
+print(f"\nEurope mapping differences:")
+print(f"  Countries in BEA Europe but not CC Europe: {len(bea_only_europe)}")
+if len(bea_only_europe) > 0:
+    print(f"    {list(bea_only_europe['iso3'])}")
+print(f"  Countries in CC Europe but not BEA Europe: {len(cc_only_europe)}")
+if len(cc_only_europe) > 0:
+    print(f"    {list(cc_only_europe['iso3'])}")
+
+# Countries only in BEA RoAsia but not in Country Converter RoAsia
+bea_only_asia = detail_df[(detail_df['region'] == 'RoAsia') & (detail_df['alt_region'] != 'RoAsia')][['iso3', 'Country']].drop_duplicates()
+cc_only_asia = detail_df[(detail_df['alt_region'] == 'RoAsia') & (detail_df['region'] != 'RoAsia')][['iso3', 'Country']].drop_duplicates()
+
+print(f"\nRoAsia mapping differences:")
+print(f"  Countries in BEA RoAsia but not CC RoAsia: {len(bea_only_asia)}")
+if len(bea_only_asia) > 0:
+    print(f"    {list(bea_only_asia['iso3'])}")
+print(f"  Countries in CC RoAsia but not BEA RoAsia: {len(cc_only_asia)}")
+if len(cc_only_asia) > 0:
+    print(f"    {list(cc_only_asia['iso3'])}")
+
+# Save detailed validation report
+validation_report = {
+    'mapping_comparison': {
+        'region_counts': {
+            'country_converter': cc_region_counts.to_dict(),
+            'bea_mapping': bea_region_counts.to_dict()
+        },
+        'import_values': {
+            'country_converter': cc_region_values.to_dict(),
+            'bea_mapping': bea_region_values.to_dict()
+        },
+        'countries_switched': len(region_switches),
+        'total_switch_value': region_switches['impVal'].sum()
+    },
+    'regional_differences': {
+        'europe': {
+            'bea_only': list(bea_only_europe['iso3']) if len(bea_only_europe) > 0 else [],
+            'cc_only': list(cc_only_europe['iso3']) if len(cc_only_europe) > 0 else []
+        },
+        'roasia': {
+            'bea_only': list(bea_only_asia['iso3']) if len(bea_only_asia) > 0 else [],
+            'cc_only': list(cc_only_asia['iso3']) if len(cc_only_asia) > 0 else []
+        }
+    }
+}
+
+# Save validation files
+validation_dir = os.path.join(get_data_path('validation'), '05_Trade_weights')
+os.makedirs(validation_dir, exist_ok=True)
+
+# Save detailed region switches
+region_switches_path = os.path.join(validation_dir, '2_region_mapping_comparison.csv')
+region_switches.to_csv(region_switches_path, index=False)
+
+# Save summary validation as text
+validation_text_path = os.path.join(validation_dir, '2_region_mapping_validation.txt')
+with open(validation_text_path, 'w') as f:
+    f.write("VALIDATION: Country Converter vs BEA Region Mappings\n")
+    f.write("="*60 + "\n\n")
+    
+    f.write("Region distribution comparison:\n")
+    f.write(f"{'Region':<10} {'CountryConverter':<18} {'BEA Mapping':<12} {'Difference':<10}\n")
+    f.write("-" * 55 + "\n")
+    for region in ['CAN', 'MEX', 'CHN', 'JPN', 'Europe', 'RoAsia', 'RoWorld']:
+        cc_count = cc_region_counts.get(region, 0)
+        bea_count = bea_region_counts.get(region, 0)
+        diff = bea_count - cc_count
+        f.write(f"{region:<10} {cc_count:<18} {bea_count:<12} {diff:<10}\n")
+    
+    f.write(f"\nImport value comparison by region:\n")
+    f.write(f"{'Region':<10} {'CountryConverter ($)':<20} {'BEA Mapping ($)':<18} {'Difference ($)':<15} {'% Change':<10}\n")
+    f.write("-" * 80 + "\n")
+    for region in ['CAN', 'MEX', 'CHN', 'JPN', 'Europe', 'RoAsia', 'RoWorld']:
+        cc_val = cc_region_values.get(region, 0)
+        bea_val = bea_region_values.get(region, 0)
+        diff = bea_val - cc_val
+        pct_change = (diff / cc_val * 100) if cc_val > 0 else 0
+        f.write(f"{region:<10} {cc_val:<20,.0f} {bea_val:<18,.0f} {diff:<15,.0f} {pct_change:<10.1f}%\n")
+    
+    f.write(f"\nCountries that switched regions: {len(region_switches)}\n")
+    f.write(f"Total import value affected: ${region_switches['impVal'].sum():,.0f}\n")
+    
+    f.write(f"\nEurope mapping differences:\n")
+    f.write(f"  Countries in BEA Europe but not CC Europe: {len(bea_only_europe)}\n")
+    if len(bea_only_europe) > 0:
+        f.write(f"    {list(bea_only_europe['iso3'])}\n")
+    f.write(f"  Countries in CC Europe but not BEA Europe: {len(cc_only_europe)}\n")
+    if len(cc_only_europe) > 0:
+        f.write(f"    {list(cc_only_europe['iso3'])}\n")
+    
+    f.write(f"\nRoAsia mapping differences:\n")
+    f.write(f"  Countries in BEA RoAsia but not CC RoAsia: {len(bea_only_asia)}\n")
+    if len(bea_only_asia) > 0:
+        f.write(f"    {list(bea_only_asia['iso3'])}\n")
+    f.write(f"  Countries in CC RoAsia but not BEA RoAsia: {len(cc_only_asia)}\n")
+    if len(cc_only_asia) > 0:
+        f.write(f"    {list(cc_only_asia['iso3'])}\n")
+
+print(f"\nValidation files saved:")
+print(f"  {region_switches_path}")
+print(f"  {validation_text_path}")
+print("="*60)
 
 print("\nCalculating denominators for trade weights...")
 
@@ -232,8 +449,8 @@ for level, df in [('detail', detail_df), ('usummary', usummary_df), ('summary', 
         bea_col = 'summary_code'
     elif level == 'sector':
         bea_col = 'sector_code'
-    # Create output dataframe with all necessary information
-    output_df = df[['Country', 'iso3', bea_col, 'impVal', 'continent', 'region', 'world_weight', 'regional_weight']].copy()
+    # Create output dataframe with all necessary information including both region mappings
+    output_df = df[['Country', 'iso3', bea_col, 'impVal', 'continent', 'region', 'alt_region', 'world_weight', 'regional_weight']].copy()
     # Add denominators for verification
     output_df['world_denominator'] = output_df[bea_col].map(denominators[level]['world'])
     def get_regional_denominator(row):

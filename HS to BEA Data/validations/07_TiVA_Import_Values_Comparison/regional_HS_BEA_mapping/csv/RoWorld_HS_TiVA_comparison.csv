@@ -93,7 +93,7 @@ usummary_code,HS_total_imports,TiVA_total_imports,difference,usummary_name
 521CI,0.0,1601000000,-1601000000.0,"Federal reserve banks, credit intermediation, and related activities"
 523,0.0,4000000,-4000000.0,"Securities, commodity contracts, and investments"
 524113,0.0,0,0.0,Direct life insurance carriers
-5241XX,0.0,40019000000,-40019000000.0,Unknown
+5241X,0.0,40019000000,-40019000000.0,"Insurance carriers, except direct life"
 5242,0.0,0,0.0,"Agencies, brokerages, and other insurance related activities"
 525,0.0,0,0.0,"Funds, trusts, and other financial vehicles"
 532RL,0.0,0,0.0,Rental and leasing services and lessors of intangible assets

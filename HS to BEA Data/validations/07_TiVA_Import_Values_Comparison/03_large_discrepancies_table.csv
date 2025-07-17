@@ -1,391 +1,391 @@
-region,usummary_code,usummary_name,HS_total_imports,TiVA_total_imports,difference,pct_difference
-RoWorld,323,Printing and related support activities,71569135.0,-25000000,96569135.0,134.93125912448153
-RoWorld,5241XX,Unknown,0.0,40019000000,-40019000000.0,100.0
-RoWorld,521CI,"Federal reserve banks, credit intermediation, and related activities",0.0,1601000000,-1601000000.0,100.0
-RoWorld,519,Other information services,0.0,169000000,-169000000.0,100.0
-RoWorld,518,"Data processing, hosting, and related services",0.0,70000000,-70000000.0,100.0
-RoWorld,5171,Wired telecommunications carriers,0.0,9000000,-9000000.0,100.0
-RoWorld,512,Motion picture and sound recording industries,0.0,1405000000,-1405000000.0,100.0
-RoWorld,5112,Software publishers,0.0,106000000,-106000000.0,100.0
-RoWorld,5111,"Newspaper, periodical, book, and directory publishers",0.0,152000000,-152000000.0,100.0
-JPN,5111,"Newspaper, periodical, book, and directory publishers",0.0,25000000,-25000000.0,100.0
-JPN,481,Air transportation,0.0,4540000000,-4540000000.0,100.0
-JPN,Used,Unknown,0.0,555000000,-555000000.0,100.0
-JPN,811,Repair and maintenance,0.0,111000000,-111000000.0,100.0
-JPN,711AS,"Performing arts, spectator sports, museums, and related activities",0.0,15000000,-15000000.0,100.0
-JPN,623,Nursing and residential care facilities,0.0,1000000,-1000000.0,100.0
-JPN,622,Hospitals,0.0,127000000,-127000000.0,100.0
-RoWorld,523,"Securities, commodity contracts, and investments",0.0,4000000,-4000000.0,100.0
-MEX,5412,"Accounting, tax preparation, bookkeeping, and payroll services",0.0,216000000,-216000000.0,100.0
-MEX,5411,Legal services,0.0,88000000,-88000000.0,100.0
-MEX,5241XX,Unknown,0.0,104000000,-104000000.0,100.0
-MEX,523,"Securities, commodity contracts, and investments",0.0,5000000,-5000000.0,100.0
-MEX,521CI,"Federal reserve banks, credit intermediation, and related activities",0.0,36000000,-36000000.0,100.0
-MEX,519,Other information services,0.0,17000000,-17000000.0,100.0
-MEX,518,"Data processing, hosting, and related services",0.0,11000000,-11000000.0,100.0
-RoWorld,5411,Legal services,0.0,395000000,-395000000.0,100.0
-MEX,512,Motion picture and sound recording industries,0.0,962000000,-962000000.0,100.0
-MEX,5111,"Newspaper, periodical, book, and directory publishers",0.0,128000000,-128000000.0,100.0
-MEX,481,Air transportation,0.0,5603000000,-5603000000.0,100.0
-MEX,2211,"Electric power generation, transmission, and distribution",0.0,26000000,-26000000.0,100.0
-MEX,213,Support activities for mining,0.0,7000000,-7000000.0,100.0
-RoWorld,5413,"Architectural, engineering, and related services",0.0,1371000000,-1371000000.0,100.0
-RoWorld,5412,"Accounting, tax preparation, bookkeeping, and payroll services",0.0,784000000,-784000000.0,100.0
-MEX,5413,"Architectural, engineering, and related services",0.0,2342000000,-2342000000.0,100.0
-MEX,5171,Wired telecommunications carriers,0.0,16000000,-16000000.0,100.0
-JPN,523,"Securities, commodity contracts, and investments",0.0,1000000,-1000000.0,100.0
-JPN,521CI,"Federal reserve banks, credit intermediation, and related activities",0.0,867000000,-867000000.0,100.0
-JPN,519,Other information services,0.0,8000000,-8000000.0,100.0
-JPN,518,"Data processing, hosting, and related services",0.0,4000000,-4000000.0,100.0
-JPN,5171,Wired telecommunications carriers,0.0,3000000,-3000000.0,100.0
-JPN,512,Motion picture and sound recording industries,0.0,941000000,-941000000.0,100.0
-JPN,3122,Tobacco manufacturing,52492.0,0,52492.0,100.0
-JPN,6215OH,Other ambulatory health care services,0.0,1000000,-1000000.0,100.0
-JPN,213,Support activities for mining,0.0,4000000,-4000000.0,100.0
-JPN,211,Oil and gas extraction,2950.0,0,2950.0,100.0
-Europe,Used,Unknown,0.0,7972000000,-7972000000.0,100.0
-RoWorld,623,Nursing and residential care facilities,0.0,11000000,-11000000.0,100.0
-RoWorld,622,Hospitals,0.0,815000000,-815000000.0,100.0
-RoWorld,6215OH,Other ambulatory health care services,0.0,16000000,-16000000.0,100.0
-RoWorld,6214,Outpatient care centers,0.0,5000000,-5000000.0,100.0
-RoWorld,6213,Offices of other health practitioners,0.0,5000000,-5000000.0,100.0
-JPN,2211,"Electric power generation, transmission, and distribution",0.0,7000000,-7000000.0,100.0
-JPN,61,Educational services,0.0,47000000,-47000000.0,100.0
-JPN,562,Waste management and remediation services,0.0,4000000,-4000000.0,100.0
-JPN,561X,Other administrative and support services,0.0,4000000,-4000000.0,100.0
-JPN,5613,Employment services,0.0,39000000,-39000000.0,100.0
-JPN,541X,"Specialized design services and other professional, scientific, and technical services",0.0,168000000,-168000000.0,100.0
-JPN,5418,"Advertising, public relations, and related services",0.0,183000000,-183000000.0,100.0
-JPN,5417,Scientific research and development services,0.0,815000000,-815000000.0,100.0
-JPN,5416,"Management, scientific, and technical consulting services",0.0,1189000000,-1189000000.0,100.0
-JPN,5241XX,Unknown,0.0,539000000,-539000000.0,100.0
-RoWorld,5418,"Advertising, public relations, and related services",0.0,1207000000,-1207000000.0,100.0
-RoWorld,5417,Scientific research and development services,0.0,4424000000,-4424000000.0,100.0
-RoWorld,5416,"Management, scientific, and technical consulting services",0.0,4457000000,-4457000000.0,100.0
-RoWorld,5415,Computer systems design and related services,0.0,1821000000,-1821000000.0,100.0
-JPN,5415,Computer systems design and related services,0.0,546000000,-546000000.0,100.0
-JPN,5413,"Architectural, engineering, and related services",0.0,89000000,-89000000.0,100.0
-JPN,5412,"Accounting, tax preparation, bookkeeping, and payroll services",0.0,120000000,-120000000.0,100.0
-JPN,5411,Legal services,0.0,617000000,-617000000.0,100.0
-RoWorld,541X,"Specialized design services and other professional, scientific, and technical services",0.0,433000000,-433000000.0,100.0
-RoAsia,5417,Scientific research and development services,0.0,7335000000,-7335000000.0,100.0
-RoAsia,5416,"Management, scientific, and technical consulting services",0.0,10618000000,-10618000000.0,100.0
-RoAsia,5415,Computer systems design and related services,0.0,14776000000,-14776000000.0,100.0
-RoAsia,5413,"Architectural, engineering, and related services",0.0,3491000000,-3491000000.0,100.0
-RoAsia,5412,"Accounting, tax preparation, bookkeeping, and payroll services",0.0,2548000000,-2548000000.0,100.0
-RoAsia,5411,Legal services,0.0,647000000,-647000000.0,100.0
-RoAsia,5241XX,Unknown,0.0,1267000000,-1267000000.0,100.0
-MEX,5415,Computer systems design and related services,0.0,525000000,-525000000.0,100.0
-RoAsia,521CI,"Federal reserve banks, credit intermediation, and related activities",0.0,982000000,-982000000.0,100.0
-RoAsia,519,Other information services,0.0,744000000,-744000000.0,100.0
-RoAsia,518,"Data processing, hosting, and related services",0.0,329000000,-329000000.0,100.0
-RoAsia,5174OT,"Other telecommunications, including satellite",0.0,1000000,-1000000.0,100.0
-RoAsia,5171,Wired telecommunications carriers,0.0,22000000,-22000000.0,100.0
-CAN,213,Support activities for mining,0.0,190000000,-190000000.0,100.0
-RoAsia,811,Repair and maintenance,0.0,894000000,-894000000.0,100.0
-RoAsia,711AS,"Performing arts, spectator sports, museums, and related activities",0.0,103000000,-103000000.0,100.0
-RoAsia,523,"Securities, commodity contracts, and investments",0.0,5000000,-5000000.0,100.0
-world,713,"Amusements, gambling, and recreation industries",0.0,2000000,-2000000.0,100.0
-world,711AS,"Performing arts, spectator sports, museums, and related activities",0.0,2146000000,-2146000000.0,100.0
-world,623,Nursing and residential care facilities,0.0,127000000,-127000000.0,100.0
-world,622,Hospitals,0.0,10011000000,-10011000000.0,100.0
-world,6215OH,Other ambulatory health care services,0.0,188000000,-188000000.0,100.0
-world,6214,Outpatient care centers,0.0,63000000,-63000000.0,100.0
-world,6213,Offices of other health practitioners,0.0,63000000,-63000000.0,100.0
-RoAsia,5418,"Advertising, public relations, and related services",0.0,1933000000,-1933000000.0,100.0
-world,6211,Offices of physicians,0.0,63000000,-63000000.0,100.0
-world,61,Educational services,0.0,2506000000,-2506000000.0,100.0
-world,562,Waste management and remediation services,0.0,517000000,-517000000.0,100.0
-world,561X,Other administrative and support services,0.0,782000000,-782000000.0,100.0
-world,5613,Employment services,0.0,3566000000,-3566000000.0,100.0
-world,541X,"Specialized design services and other professional, scientific, and technical services",0.0,4881000000,-4881000000.0,100.0
-world,GFE,Federal government enterprises,0.0,229000000,-229000000.0,100.0
-world,5418,"Advertising, public relations, and related services",0.0,10786000000,-10786000000.0,100.0
-world,6212,Offices of dentists,0.0,63000000,-63000000.0,100.0
-MEX,711AS,"Performing arts, spectator sports, museums, and related activities",0.0,7000000,-7000000.0,100.0
-MEX,622,Hospitals,0.0,1069000000,-1069000000.0,100.0
-MEX,6215OH,Other ambulatory health care services,0.0,1000000,-1000000.0,100.0
-MEX,61,Educational services,0.0,101000000,-101000000.0,100.0
-MEX,562,Waste management and remediation services,0.0,49000000,-49000000.0,100.0
-MEX,561X,Other administrative and support services,0.0,59000000,-59000000.0,100.0
-MEX,5613,Employment services,0.0,377000000,-377000000.0,100.0
-RoAsia,623,Nursing and residential care facilities,0.0,87000000,-87000000.0,100.0
-RoWorld,213,Support activities for mining,0.0,865000000,-865000000.0,100.0
-RoAsia,Used,Unknown,0.0,2690000000,-2690000000.0,100.0
-RoWorld,481,Air transportation,0.0,15116000000,-15116000000.0,100.0
-MEX,541X,"Specialized design services and other professional, scientific, and technical services",0.0,152000000,-152000000.0,100.0
-MEX,5418,"Advertising, public relations, and related services",0.0,381000000,-381000000.0,100.0
-MEX,5417,Scientific research and development services,0.0,730000000,-730000000.0,100.0
-MEX,5416,"Management, scientific, and technical consulting services",0.0,1422000000,-1422000000.0,100.0
-CAN,5416,"Management, scientific, and technical consulting services",0.0,4064000000,-4064000000.0,100.0
-RoWorld,2211,"Electric power generation, transmission, and distribution",0.0,14000000,-14000000.0,100.0
-RoAsia,622,Hospitals,0.0,2786000000,-2786000000.0,100.0
-RoAsia,6215OH,Other ambulatory health care services,0.0,129000000,-129000000.0,100.0
-RoAsia,6214,Outpatient care centers,0.0,43000000,-43000000.0,100.0
-RoAsia,6213,Offices of other health practitioners,0.0,43000000,-43000000.0,100.0
-RoAsia,6212,Offices of dentists,0.0,43000000,-43000000.0,100.0
-RoAsia,6211,Offices of physicians,0.0,43000000,-43000000.0,100.0
-RoAsia,61,Educational services,0.0,410000000,-410000000.0,100.0
-RoAsia,562,Waste management and remediation services,0.0,134000000,-134000000.0,100.0
-MEX,811,Repair and maintenance,0.0,539000000,-539000000.0,100.0
-RoAsia,5613,Employment services,0.0,986000000,-986000000.0,100.0
-RoAsia,5112,Software publishers,0.0,757000000,-757000000.0,100.0
-RoAsia,5111,"Newspaper, periodical, book, and directory publishers",0.0,826000000,-826000000.0,100.0
-RoAsia,481,Air transportation,0.0,10030000000,-10030000000.0,100.0
-MEX,5112,Software publishers,0.0,17000000,-17000000.0,100.0
-RoAsia,2211,"Electric power generation, transmission, and distribution",0.0,37000000,-37000000.0,100.0
-RoAsia,213,Support activities for mining,0.0,249000000,-249000000.0,100.0
-MEX,Used,Unknown,0.0,1682000000,-1682000000.0,100.0
-RoAsia,561X,Other administrative and support services,0.0,233000000,-233000000.0,100.0
-CAN,622,Hospitals,0.0,817000000,-817000000.0,100.0
-CAN,6215OH,Other ambulatory health care services,0.0,5000000,-5000000.0,100.0
-CAN,6214,Outpatient care centers,0.0,2000000,-2000000.0,100.0
-CAN,6213,Offices of other health practitioners,0.0,2000000,-2000000.0,100.0
-CAN,6212,Offices of dentists,0.0,2000000,-2000000.0,100.0
-CAN,6211,Offices of physicians,0.0,2000000,-2000000.0,100.0
-CAN,61,Educational services,0.0,694000000,-694000000.0,100.0
-RoWorld,6212,Offices of dentists,0.0,5000000,-5000000.0,100.0
-CAN,561X,Other administrative and support services,0.0,53000000,-53000000.0,100.0
-CAN,5613,Employment services,0.0,289000000,-289000000.0,100.0
-CAN,541X,"Specialized design services and other professional, scientific, and technical services",0.0,400000000,-400000000.0,100.0
-CAN,5418,"Advertising, public relations, and related services",0.0,1013000000,-1013000000.0,100.0
-CAN,5417,Scientific research and development services,0.0,2401000000,-2401000000.0,100.0
-CHN,5111,"Newspaper, periodical, book, and directory publishers",0.0,986000000,-986000000.0,100.0
-CAN,5415,Computer systems design and related services,0.0,10942000000,-10942000000.0,100.0
-CAN,5413,"Architectural, engineering, and related services",0.0,1492000000,-1492000000.0,100.0
-CAN,562,Waste management and remediation services,0.0,34000000,-34000000.0,100.0
-CHN,2211,"Electric power generation, transmission, and distribution",0.0,24000000,-24000000.0,100.0
-CHN,213,Support activities for mining,0.0,32000000,-32000000.0,100.0
-CHN,211,Oil and gas extraction,3368270.0,0,3368270.0,100.0
-CAN,Used,Unknown,0.0,5119000000,-5119000000.0,100.0
-CAN,GFE,Federal government enterprises,0.0,220000000,-220000000.0,100.0
-CHN,541X,"Specialized design services and other professional, scientific, and technical services",0.0,142000000,-142000000.0,100.0
-CHN,5418,"Advertising, public relations, and related services",0.0,479000000,-479000000.0,100.0
-CAN,623,Nursing and residential care facilities,0.0,3000000,-3000000.0,100.0
-CHN,5416,"Management, scientific, and technical consulting services",0.0,1448000000,-1448000000.0,100.0
-CHN,5415,Computer systems design and related services,0.0,513000000,-513000000.0,100.0
-CHN,5413,"Architectural, engineering, and related services",0.0,809000000,-809000000.0,100.0
-CHN,5412,"Accounting, tax preparation, bookkeeping, and payroll services",0.0,187000000,-187000000.0,100.0
-CHN,5411,Legal services,0.0,253000000,-253000000.0,100.0
-CHN,5241XX,Unknown,0.0,205000000,-205000000.0,100.0
-CHN,523,"Securities, commodity contracts, and investments",0.0,4000000,-4000000.0,100.0
-CAN,711AS,"Performing arts, spectator sports, museums, and related activities",0.0,684000000,-684000000.0,100.0
-CHN,5417,Scientific research and development services,0.0,3418000000,-3418000000.0,100.0
-world,5411,Legal services,0.0,5581000000,-5581000000.0,100.0
-world,5241XX,Unknown,0.0,64704000000,-64704000000.0,100.0
-world,523,"Securities, commodity contracts, and investments",0.0,42000000,-42000000.0,100.0
-world,521CI,"Federal reserve banks, credit intermediation, and related activities",0.0,11591000000,-11591000000.0,100.0
-world,519,Other information services,0.0,1713000000,-1713000000.0,100.0
-world,518,"Data processing, hosting, and related services",0.0,815000000,-815000000.0,100.0
-world,5174OT,"Other telecommunications, including satellite",0.0,9000000,-9000000.0,100.0
-CAN,5412,"Accounting, tax preparation, bookkeeping, and payroll services",0.0,679000000,-679000000.0,100.0
-world,512,Motion picture and sound recording industries,0.0,14869000000,-14869000000.0,100.0
-world,5112,Software publishers,0.0,2244000000,-2244000000.0,100.0
-RoAsia,541X,"Specialized design services and other professional, scientific, and technical services",0.0,1065000000,-1065000000.0,100.0
-world,Used,Unknown,0.0,19610000000,-19610000000.0,100.0
-CAN,3341,Computer and peripheral equipment manufacturing,636406860.0,0,636406860.0,100.0
-world,5417,Scientific research and development services,0.0,33558000000,-33558000000.0,100.0
-RoAsia,512,Motion picture and sound recording industries,0.0,2386000000,-2386000000.0,100.0
-world,811,Repair and maintenance,0.0,4505000000,-4505000000.0,100.0
-world,5171,Wired telecommunications carriers,0.0,106000000,-106000000.0,100.0
-CAN,5411,Legal services,0.0,306000000,-306000000.0,100.0
-CAN,5241XX,Unknown,0.0,447000000,-447000000.0,100.0
-CAN,523,"Securities, commodity contracts, and investments",0.0,4000000,-4000000.0,100.0
-CAN,521CI,"Federal reserve banks, credit intermediation, and related activities",0.0,2064000000,-2064000000.0,100.0
-CAN,519,Other information services,0.0,128000000,-128000000.0,100.0
-CAN,518,"Data processing, hosting, and related services",0.0,54000000,-54000000.0,100.0
-CAN,5171,Wired telecommunications carriers,0.0,13000000,-13000000.0,100.0
-CAN,512,Motion picture and sound recording industries,0.0,1017000000,-1017000000.0,100.0
-world,5412,"Accounting, tax preparation, bookkeeping, and payroll services",0.0,8550000000,-8550000000.0,100.0
-CAN,5111,"Newspaper, periodical, book, and directory publishers",0.0,286000000,-286000000.0,100.0
-CAN,492,Couriers and messengers,0.0,24000000,-24000000.0,100.0
-CAN,481,Air transportation,0.0,688000000,-688000000.0,100.0
-CAN,811,Repair and maintenance,0.0,1261000000,-1261000000.0,100.0
-CAN,2211,"Electric power generation, transmission, and distribution",0.0,3288000000,-3288000000.0,100.0
-world,5416,"Management, scientific, and technical consulting services",0.0,47838000000,-47838000000.0,100.0
-world,5415,Computer systems design and related services,0.0,47174000000,-47174000000.0,100.0
-world,5413,"Architectural, engineering, and related services",0.0,14635000000,-14635000000.0,100.0
-CAN,5112,Software publishers,0.0,471000000,-471000000.0,100.0
-Europe,562,Waste management and remediation services,0.0,189000000,-189000000.0,100.0
-Europe,561X,Other administrative and support services,0.0,290000000,-290000000.0,100.0
-Europe,5613,Employment services,0.0,1354000000,-1354000000.0,100.0
-RoWorld,711AS,"Performing arts, spectator sports, museums, and related activities",0.0,671000000,-671000000.0,100.0
-Europe,541X,"Specialized design services and other professional, scientific, and technical services",0.0,2477000000,-2477000000.0,100.0
-Europe,5418,"Advertising, public relations, and related services",0.0,5566000000,-5566000000.0,100.0
-Europe,5417,Scientific research and development services,0.0,14433000000,-14433000000.0,100.0
-CHN,481,Air transportation,0.0,109000000,-109000000.0,100.0
-Europe,5415,Computer systems design and related services,0.0,18044000000,-18044000000.0,100.0
-Europe,5413,"Architectural, engineering, and related services",0.0,5013000000,-5013000000.0,100.0
-Europe,5412,"Accounting, tax preparation, bookkeeping, and payroll services",0.0,3996000000,-3996000000.0,100.0
-Europe,5411,Legal services,0.0,3244000000,-3244000000.0,100.0
-Europe,5241XX,Unknown,0.0,22073000000,-22073000000.0,100.0
-Europe,523,"Securities, commodity contracts, and investments",0.0,6000000,-6000000.0,100.0
-Europe,521CI,"Federal reserve banks, credit intermediation, and related activities",0.0,5668000000,-5668000000.0,100.0
-Europe,519,Other information services,0.0,617000000,-617000000.0,100.0
-Europe,5416,"Management, scientific, and technical consulting services",0.0,24621000000,-24621000000.0,100.0
-RoWorld,6211,Offices of physicians,0.0,5000000,-5000000.0,100.0
-RoWorld,61,Educational services,0.0,431000000,-431000000.0,100.0
-RoWorld,562,Waste management and remediation services,0.0,34000000,-34000000.0,100.0
-RoWorld,561X,Other administrative and support services,0.0,57000000,-57000000.0,100.0
-RoWorld,5613,Employment services,0.0,288000000,-288000000.0,100.0
-Europe,512,Motion picture and sound recording industries,0.0,7490000000,-7490000000.0,100.0
-Europe,GFE,Federal government enterprises,0.0,1000000,-1000000.0,100.0
-Europe,811,Repair and maintenance,0.0,1087000000,-1087000000.0,100.0
-Europe,61,Educational services,0.0,696000000,-696000000.0,100.0
-Europe,711AS,"Performing arts, spectator sports, museums, and related activities",0.0,635000000,-635000000.0,100.0
-Europe,623,Nursing and residential care facilities,0.0,21000000,-21000000.0,100.0
-Europe,622,Hospitals,0.0,3794000000,-3794000000.0,100.0
-Europe,6215OH,Other ambulatory health care services,0.0,32000000,-32000000.0,100.0
-Europe,6214,Outpatient care centers,0.0,11000000,-11000000.0,100.0
-Europe,6213,Offices of other health practitioners,0.0,11000000,-11000000.0,100.0
-Europe,6212,Offices of dentists,0.0,11000000,-11000000.0,100.0
-Europe,6211,Offices of physicians,0.0,11000000,-11000000.0,100.0
-Europe,713,"Amusements, gambling, and recreation industries",0.0,2000000,-2000000.0,100.0
-CHN,521CI,"Federal reserve banks, credit intermediation, and related activities",0.0,338000000,-338000000.0,100.0
-CHN,519,Other information services,0.0,13000000,-13000000.0,100.0
-CHN,518,"Data processing, hosting, and related services",0.0,10000000,-10000000.0,100.0
-CHN,5171,Wired telecommunications carriers,0.0,15000000,-15000000.0,100.0
-CHN,512,Motion picture and sound recording industries,0.0,660000000,-660000000.0,100.0
-CHN,5112,Software publishers,0.0,16000000,-16000000.0,100.0
-Europe,213,Support activities for mining,0.0,173000000,-173000000.0,100.0
-Europe,518,"Data processing, hosting, and related services",0.0,279000000,-279000000.0,100.0
-CHN,811,Repair and maintenance,0.0,133000000,-133000000.0,100.0
-CHN,711AS,"Performing arts, spectator sports, museums, and related activities",0.0,5000000,-5000000.0,100.0
-CHN,623,Nursing and residential care facilities,0.0,2000000,-2000000.0,100.0
-CHN,622,Hospitals,0.0,603000000,-603000000.0,100.0
-CHN,6215OH,Other ambulatory health care services,0.0,3000000,-3000000.0,100.0
-CHN,6214,Outpatient care centers,0.0,1000000,-1000000.0,100.0
-CHN,6213,Offices of other health practitioners,0.0,1000000,-1000000.0,100.0
-CHN,6212,Offices of dentists,0.0,1000000,-1000000.0,100.0
-CHN,Used,Unknown,0.0,318000000,-318000000.0,100.0
-Europe,5174OT,"Other telecommunications, including satellite",0.0,1000000,-1000000.0,100.0
-Europe,5171,Wired telecommunications carriers,0.0,23000000,-23000000.0,100.0
-CHN,6211,Offices of physicians,0.0,1000000,-1000000.0,100.0
-CHN,61,Educational services,0.0,125000000,-125000000.0,100.0
-CHN,562,Waste management and remediation services,0.0,24000000,-24000000.0,100.0
-CHN,561X,Other administrative and support services,0.0,30000000,-30000000.0,100.0
-CHN,5613,Employment services,0.0,212000000,-212000000.0,100.0
-Europe,5112,Software publishers,0.0,843000000,-843000000.0,100.0
-RoWorld,811,Repair and maintenance,0.0,462000000,-462000000.0,100.0
-Europe,481,Air transportation,0.0,28693000000,-28693000000.0,100.0
-Europe,2211,"Electric power generation, transmission, and distribution",0.0,39000000,-39000000.0,100.0
-world,5111,"Newspaper, periodical, book, and directory publishers",0.0,3429000000,-3429000000.0,100.0
-world,492,Couriers and messengers,0.0,27000000,-27000000.0,100.0
-world,481,Air transportation,0.0,64797000000,-64797000000.0,100.0
-world,2211,"Electric power generation, transmission, and distribution",0.0,3475000000,-3475000000.0,100.0
-world,213,Support activities for mining,0.0,1522000000,-1522000000.0,100.0
-RoWorld,Used,Unknown,0.0,1270000000,-1270000000.0,100.0
-Europe,5111,"Newspaper, periodical, book, and directory publishers",0.0,999000000,-999000000.0,100.0
-RoAsia,211,Oil and gas extraction,16741860068.0,4000000,16737860068.0,99.97610779218226
-JPN,336112,Light truck and utility vehicle manufacturing,14080167.0,25321000000,-25306919833.0,99.94439332174875
-CHN,336112,Light truck and utility vehicle manufacturing,934239.0,1075000000,-1074065761.0,99.91309404651163
-RoWorld,336112,Light truck and utility vehicle manufacturing,1259364.0,1234000000,-1232740636.0,99.89794457050243
-RoAsia,336112,Light truck and utility vehicle manufacturing,16826018.0,13975000000,-13958173982.0,99.87959915563506
-Europe,336112,Light truck and utility vehicle manufacturing,227704214.0,31877000000,-31649295786.0,99.28567865859397
-RoWorld,3254,Pharmaceutical and medicine manufacturing,912434350.0,34683000000,-33770565650.0,97.36921733990715
-RoAsia,33612,Heavy duty truck manufacturing,185786499.0,6000000,179786499.0,96.77048653573046
-RoWorld,Other,Unknown,9673341106.0,71605000000,-61931658894.0,86.49069044619789
-CAN,3344,Semiconductor and other electronic component manufacturing,1304657790.0,197000000,1107657790.0,84.90025495497942
-CAN,336112,Light truck and utility vehicle manufacturing,3990823020.0,25848000000,-21857176980.0,84.56041852367689
-RoWorld,3341,Computer and peripheral equipment manufacturing,38253803.0,243000000,-204746197.0,84.25769423868313
-RoAsia,112,Animal production and aquaculture,3346363035.0,543000000,2803363035.0,83.77342821682227
-CAN,334X,Other computer and electronic product manufacturing,512456662.0,85000000,427456662.0,83.4132315368358
-CAN,3391,Medical equipment and supplies manufacturing,796453405.0,154000000,642453405.0,80.66428004033708
-JPN,334X,Other computer and electronic product manufacturing,1631210555.0,362000000,1269210555.0,77.80789249490849
-JPN,Other,Unknown,4844504136.0,21355000000,-16510495864.0,77.31442689768204
-world,336112,Light truck and utility vehicle manufacturing,33485402707.0,146062000000,-112576597293.0,77.07452814078952
-RoWorld,3342,Communications equipment manufacturing,234196949.0,949000000,-714803051.0,75.32171243414119
-RoWorld,336111,Automobile manufacturing,2130265807.0,551000000,1579265807.0,74.13468318416285
-CAN,3342,Communications equipment manufacturing,1533191611.0,399000000,1134191611.0,73.9758555201226
-CAN,3399,Other miscellaneous manufacturing,2289885549.0,619000000,1670885549.0,72.96808129688756
-MEX,3344,Semiconductor and other electronic component manufacturing,8292900625.0,2393000000,5899900625.0,71.14399281735032
-JPN,324,Petroleum and coal products,451765067.0,1489000000,-1037234933.0,69.65983431833446
-Europe,323,Printing and related support activities,1239200989.0,393000000,846200989.0,68.28601627270005
-RoAsia,334X,Other computer and electronic product manufacturing,29555808129.0,9831000000,19724808129.0,66.73750229703963
-CAN,3122,Tobacco manufacturing,56872595.0,19000000,37872595.0,66.5919939120063
-CAN,315AL,Apparel and leather and allied products,871121019.0,319000000,552121019.0,63.380518545380205
-RoWorld,33612,Heavy duty truck manufacturing,12619085.0,34000000,-21380915.0,62.88504411764706
-RoWorld,324,Petroleum and coal products,7505290268.0,19948000000,-12442709732.0,62.37572554642069
-CHN,336111,Automobile manufacturing,2609008402.0,985000000,1624008402.0,62.2461928737016
-JPN,336111,Automobile manufacturing,39711877012.0,16018000000,23693877012.0,59.66446009298494
-CHN,112,Animal production and aquaculture,15789620.0,39000000,-23210380.0,59.513794871794865
-Europe,Other,Unknown,57357567551.0,141572000000,-84214432449.0,59.485231860113586
-RoWorld,33311,Agricultural implement manufacturing,233202267.0,566000000,-332797733.0,58.798186042402826
-Europe,33612,Heavy duty truck manufacturing,500024355.0,1206000000,-705975645.0,58.53861069651741
-JPN,212,"Mining, except oil and gas",11623113.0,28000000,-16376887.0,58.48888214285714
-MEX,33312,Construction machinery manufacturing,5165487551.0,2216000000,2949487551.0,57.099886929918185
-Europe,336111,Automobile manufacturing,53703184299.0,23055000000,30648184299.0,57.06958479102829
-JPN,3391,Medical equipment and supplies manufacturing,1663227602.0,715000000,948227602.0,57.011295439047196
-world,Other,Unknown,147437063260.0,340030000000,-192592936740.0,56.63998374849278
-RoWorld,3332OM,Other machinery,1721975201.0,3970000000,-2248024799.0,56.625309798488665
-CAN,3345,"Navigational, measuring, electromedical, and control instruments manufacturing",3563050126.0,1554000000,2009050126.0,56.38568234950506
-MEX,Other,Unknown,13990369767.0,31849000000,-17858630233.0,56.07281306477441
-CAN,3365AO,All other transportation equipment manufacturing,1443552191.0,3280000000,-1836447809.0,55.98926246951219
-CHN,323,Printing and related support activities,2674333107.0,1193000000,1481333107.0,55.39074781382497
-CAN,33312,Construction machinery manufacturing,2970958524.0,1327000000,1643958524.0,55.334280526630465
-JPN,315AL,Apparel and leather and allied products,113759721.0,51000000,62759721.0,55.168666421043696
-world,336111,Automobile manufacturing,211750607331.0,95079000000,116671607331.0,55.09859395521055
-world,323,Printing and related support activities,6790792233.0,3051000000,3739792233.0,55.071516027635184
-CAN,335,"Electrical equipment, appliances, and components",8190969498.0,3683000000,4507969498.0,55.03584769911202
-RoAsia,336111,Automobile manufacturing,37906674196.0,17177000000,20729674196.0,54.686080052328734
-CAN,323,Printing and related support activities,832631970.0,380000000,452631970.0,54.361589070378834
-Europe,3364,Aerospace product and parts manufacturing,32883432621.0,15167000000,17716432621.0,53.87646972623516
-RoAsia,3344,Semiconductor and other electronic component manufacturing,91733862042.0,42904000000,48829862042.0,53.22992072397806
-CAN,336111,Automobile manufacturing,27444882278.0,13146000000,14298882278.0,52.10035930619414
-RoAsia,3364,Aerospace product and parts manufacturing,5104563969.0,2447000000,2657563969.0,52.06250690831533
-Europe,3313NF,Nonferrous metal production and processing and foundries,23622510632.0,11370000000,12252510632.0,51.86794419473033
-MEX,3341,Computer and peripheral equipment manufacturing,49106273867.0,23884000000,25222273867.0,51.36263023195834
-MEX,336111,Automobile manufacturing,48244715337.0,24147000000,24097715337.0,49.94892221598186
-RoWorld,325X,Other chemical manufacturing,2677709313.0,5309000000,-2631290687.0,49.562830796760224
-RoAsia,3399,Other miscellaneous manufacturing,33423256733.0,17152000000,16271256733.0,48.68243948512293
-MEX,323,Printing and related support activities,674956489.0,347000000,327956489.0,48.589278619410386
-world,3344,Semiconductor and other electronic component manufacturing,131460319288.0,68267000000,63193319288.0,48.07026152854357
-RoAsia,3313NF,Nonferrous metal production and processing and foundries,13311908938.0,6920000000,6391908938.0,48.01647132481309
-RoAsia,325X,Other chemical manufacturing,12940172304.0,6771000000,6169172304.0,47.674576188549025
-Europe,3342,Communications equipment manufacturing,4125534645.0,2178000000,1947534645.0,47.20684256912839
-MEX,3313NF,Nonferrous metal production and processing and foundries,7189329354.0,3851000000,3338329354.0,46.4345029921688
-CHN,3311IS,Iron and steel mills and manufacturing from purchased steel,1153613460.0,2079000000,-925386540.0,44.511137085137086
-JPN,3341,Computer and peripheral equipment manufacturing,1036698209.0,1865000000,-828301791.0,44.412964664879354
-RoAsia,323,Printing and related support activities,1075634085.0,599000000,476634085.0,44.31191718882728
-MEX,3252,"Resin, rubber, and artificial fibers manufacturing",1502684867.0,847000000,655684867.0,43.63422307626127
-RoAsia,Other,Unknown,25350025147.0,44939000000,-19588974853.0,43.590144090878745
-CHN,33311,Agricultural implement manufacturing,1789335814.0,3126000000,-1336664186.0,42.75957088931542
-JPN,337,Furniture and related products,71477120.0,41000000,30477120.0,42.638987133225285
-world,3313NF,Nonferrous metal production and processing and foundries,95117797635.0,55666000000,39451797635.0,41.476777864843164
-Europe,3399,Other miscellaneous manufacturing,11849235003.0,6956000000,4893235003.0,41.29578830836865
-RoWorld,3251,Basic chemical manufacturing,2883311401.0,4848000000,-1964688599.0,40.525754929867986
-JPN,113FF,"Forestry, fishing, and related activities",263976186.0,441000000,-177023814.0,40.14145442176871
-MEX,211,Oil and gas extraction,12110468180.0,20032000000,-7921531820.0,39.544388079073485
-CHN,Other,Unknown,11303103196.0,6840000000,4463103196.0,39.48564494730461
-world,334X,Other computer and electronic product manufacturing,58479431280.0,35740000000,22739431280.0,38.884494568908195
-JPN,325X,Other chemical manufacturing,6017100726.0,3682000000,2335100726.0,38.80773868235225
-world,3364,Aerospace product and parts manufacturing,62628765796.0,38341000000,24287765796.0,38.78052758553837
-MEX,3365AO,All other transportation equipment manufacturing,2464419730.0,1510000000,954419730.0,38.7279698495191
-Europe,3365AO,All other transportation equipment manufacturing,3604600855.0,5813000000,-2208399145.0,37.99069576810597
-RoWorld,3391,Medical equipment and supplies manufacturing,5867813110.0,9437000000,-3569186890.0,37.82120260676062
-MEX,336112,Light truck and utility vehicle manufacturing,29233775685.0,46732000000,-17498224315.0,37.443773677565694
-Europe,313TT,Textile mills and textile product mills,2974955570.0,4752000000,-1777044430.0,37.39571611952862
-RoAsia,3122,Tobacco manufacturing,142816767.0,90000000,52816767.0,36.98218921311949
-CHN,3254,Pharmaceutical and medicine manufacturing,9734595715.0,6182000000,3552595715.0,36.49453782169731
-CAN,3313NF,Nonferrous metal production and processing and foundries,24507375125.0,15587000000,8920375125.0,36.39873743924667
-RoAsia,111,Crop production,3374201007.0,2147000000,1227201007.0,36.37012153259665
-Europe,3344,Semiconductor and other electronic component manufacturing,10271824609.0,6612000000,3659824609.0,35.62974202064668
-RoWorld,313TT,Textile mills and textile product mills,651899941.0,1011000000,-359100059.0,35.51929366963403
-RoWorld,3344,Semiconductor and other electronic component manufacturing,1877335727.0,2884000000,-1006664273.0,34.90514122746186
-MEX,3342,Communications equipment manufacturing,11723091544.0,7703000000,4020091544.0,34.29207670102623
-RoWorld,326,Plastics and rubber products,2176104715.0,3286000000,-1109895285.0,33.77648463177115
-RoWorld,3313NF,Nonferrous metal production and processing and foundries,23355896293.0,15579000000,7776896293.0,33.29735752993053
-MEX,3399,Other miscellaneous manufacturing,4349901722.0,2916000000,1433901722.0,32.964002720979174
-RoAsia,3391,Medical equipment and supplies manufacturing,10605694499.0,7123000000,3482694499.0,32.83796737053268
-JPN,33612,Heavy duty truck manufacturing,557852585.0,824000000,-266147415.0,32.29944356796117
-CHN,33312,Construction machinery manufacturing,2163895824.0,3190000000,-1026104176.0,32.166275109717866
-JPN,323,Printing and related support activities,222466458.0,151000000,71466458.0,32.124599205872194
-Europe,3341,Computer and peripheral equipment manufacturing,3903267007.0,2650000000,1253267007.0,32.10815464974415
-CHN,322,Paper products,3285555504.0,4832000000,-1546444496.0,32.0042321192053
-CAN,33612,Heavy duty truck manufacturing,4122198761.0,2815000000,1307198761.0,31.711201637518517
-RoAsia,3345,"Navigational, measuring, electromedical, and control instruments manufacturing",14378558177.0,9845000000,4533558177.0,31.5299915415156
-JPN,3342,Communications equipment manufacturing,942971773.0,646000000,296971773.0,31.49317736788713
-MEX,3345,"Navigational, measuring, electromedical, and control instruments manufacturing",12922790939.0,8876000000,4046790939.0,31.315146690078322
-RoAsia,335,"Electrical equipment, appliances, and components",54098154480.0,37175000000,16923154480.0,31.28231386572801
-RoWorld,113FF,"Forestry, fishing, and related activities",3338114636.0,4845000000,-1506885364.0,31.101865098039216
-CAN,33313,Mining and oil and gas field machinery manufacturing,583961221.0,407000000,176961221.0,30.303591169455412
+region,usummary_code,usummary_name,HS_total_imports,TiVA_total_imports,difference,pct_difference,has_hierarchical_match,hs_codes,hs_descriptions,primary_bea_mappings,alternative_bea_mappings,mapping_sources
+RoWorld,323,Printing and related support activities,71569135.0,-25000000,96569135.0,134.93125912448153,,,,,,
+RoWorld,5241X,"Insurance carriers, except direct life",0.0,40019000000,-40019000000.0,100.0,,,,,,
+RoWorld,521CI,"Federal reserve banks, credit intermediation, and related activities",0.0,1601000000,-1601000000.0,100.0,,,,,,
+RoWorld,519,Other information services,0.0,169000000,-169000000.0,100.0,,,,,,
+RoWorld,518,"Data processing, hosting, and related services",0.0,70000000,-70000000.0,100.0,,,,,,
+RoWorld,5171,Wired telecommunications carriers,0.0,9000000,-9000000.0,100.0,,,,,,
+RoWorld,512,Motion picture and sound recording industries,0.0,1405000000,-1405000000.0,100.0,,,,,,
+RoWorld,5112,Software publishers,0.0,106000000,-106000000.0,100.0,,,,,,
+RoWorld,5111,"Newspaper, periodical, book, and directory publishers",0.0,152000000,-152000000.0,100.0,,,,,,
+JPN,5111,"Newspaper, periodical, book, and directory publishers",0.0,25000000,-25000000.0,100.0,,,,,,
+JPN,481,Air transportation,0.0,4540000000,-4540000000.0,100.0,,,,,,
+JPN,Used,Unknown,0.0,555000000,-555000000.0,100.0,,,,,,
+JPN,811,Repair and maintenance,0.0,111000000,-111000000.0,100.0,,,,,,
+JPN,711AS,"Performing arts, spectator sports, museums, and related activities",0.0,15000000,-15000000.0,100.0,,,,,,
+JPN,623,Nursing and residential care facilities,0.0,1000000,-1000000.0,100.0,,,,,,
+JPN,622,Hospitals,0.0,127000000,-127000000.0,100.0,,,,,,
+RoWorld,523,"Securities, commodity contracts, and investments",0.0,4000000,-4000000.0,100.0,,,,,,
+MEX,5412,"Accounting, tax preparation, bookkeeping, and payroll services",0.0,216000000,-216000000.0,100.0,,,,,,
+MEX,5411,Legal services,0.0,88000000,-88000000.0,100.0,,,,,,
+MEX,5241X,"Insurance carriers, except direct life",0.0,104000000,-104000000.0,100.0,,,,,,
+MEX,523,"Securities, commodity contracts, and investments",0.0,5000000,-5000000.0,100.0,,,,,,
+MEX,521CI,"Federal reserve banks, credit intermediation, and related activities",0.0,36000000,-36000000.0,100.0,,,,,,
+MEX,519,Other information services,0.0,17000000,-17000000.0,100.0,,,,,,
+MEX,518,"Data processing, hosting, and related services",0.0,11000000,-11000000.0,100.0,,,,,,
+RoWorld,5411,Legal services,0.0,395000000,-395000000.0,100.0,,,,,,
+MEX,512,Motion picture and sound recording industries,0.0,962000000,-962000000.0,100.0,,,,,,
+MEX,5111,"Newspaper, periodical, book, and directory publishers",0.0,128000000,-128000000.0,100.0,,,,,,
+MEX,481,Air transportation,0.0,5603000000,-5603000000.0,100.0,,,,,,
+MEX,2211,"Electric power generation, transmission, and distribution",0.0,26000000,-26000000.0,100.0,,,,,,
+MEX,213,Support activities for mining,0.0,7000000,-7000000.0,100.0,,,,,,
+RoWorld,5413,"Architectural, engineering, and related services",0.0,1371000000,-1371000000.0,100.0,,,,,,
+RoWorld,5412,"Accounting, tax preparation, bookkeeping, and payroll services",0.0,784000000,-784000000.0,100.0,,,,,,
+MEX,5413,"Architectural, engineering, and related services",0.0,2342000000,-2342000000.0,100.0,,,,,,
+MEX,5171,Wired telecommunications carriers,0.0,16000000,-16000000.0,100.0,,,,,,
+JPN,523,"Securities, commodity contracts, and investments",0.0,1000000,-1000000.0,100.0,,,,,,
+JPN,521CI,"Federal reserve banks, credit intermediation, and related activities",0.0,867000000,-867000000.0,100.0,,,,,,
+JPN,519,Other information services,0.0,8000000,-8000000.0,100.0,,,,,,
+JPN,518,"Data processing, hosting, and related services",0.0,4000000,-4000000.0,100.0,,,,,,
+JPN,5171,Wired telecommunications carriers,0.0,3000000,-3000000.0,100.0,,,,,,
+JPN,512,Motion picture and sound recording industries,0.0,941000000,-941000000.0,100.0,,,,,,
+JPN,3122,Tobacco manufacturing,52492.0,0,52492.0,100.0,,,,,,
+JPN,6215OH,Other ambulatory health care services,0.0,1000000,-1000000.0,100.0,,,,,,
+JPN,213,Support activities for mining,0.0,4000000,-4000000.0,100.0,,,,,,
+JPN,211,Oil and gas extraction,2950.0,0,2950.0,100.0,,,,,,
+Europe,Used,Unknown,0.0,7972000000,-7972000000.0,100.0,,,,,,
+RoWorld,623,Nursing and residential care facilities,0.0,11000000,-11000000.0,100.0,,,,,,
+RoWorld,622,Hospitals,0.0,815000000,-815000000.0,100.0,,,,,,
+RoWorld,6215OH,Other ambulatory health care services,0.0,16000000,-16000000.0,100.0,,,,,,
+RoWorld,6214,Outpatient care centers,0.0,5000000,-5000000.0,100.0,,,,,,
+RoWorld,6213,Offices of other health practitioners,0.0,5000000,-5000000.0,100.0,,,,,,
+JPN,2211,"Electric power generation, transmission, and distribution",0.0,7000000,-7000000.0,100.0,,,,,,
+JPN,61,Educational services,0.0,47000000,-47000000.0,100.0,,,,,,
+JPN,562,Waste management and remediation services,0.0,4000000,-4000000.0,100.0,,,,,,
+JPN,561X,Other administrative and support services,0.0,4000000,-4000000.0,100.0,,,,,,
+JPN,5613,Employment services,0.0,39000000,-39000000.0,100.0,,,,,,
+JPN,541X,"Specialized design services and other professional, scientific, and technical services",0.0,168000000,-168000000.0,100.0,,,,,,
+JPN,5418,"Advertising, public relations, and related services",0.0,183000000,-183000000.0,100.0,,,,,,
+JPN,5417,Scientific research and development services,0.0,815000000,-815000000.0,100.0,,,,,,
+JPN,5416,"Management, scientific, and technical consulting services",0.0,1189000000,-1189000000.0,100.0,,,,,,
+JPN,5241X,"Insurance carriers, except direct life",0.0,539000000,-539000000.0,100.0,,,,,,
+RoWorld,5418,"Advertising, public relations, and related services",0.0,1207000000,-1207000000.0,100.0,,,,,,
+RoWorld,5417,Scientific research and development services,0.0,4424000000,-4424000000.0,100.0,,,,,,
+RoWorld,5416,"Management, scientific, and technical consulting services",0.0,4457000000,-4457000000.0,100.0,,,,,,
+RoWorld,5415,Computer systems design and related services,0.0,1821000000,-1821000000.0,100.0,,,,,,
+JPN,5415,Computer systems design and related services,0.0,546000000,-546000000.0,100.0,,,,,,
+JPN,5413,"Architectural, engineering, and related services",0.0,89000000,-89000000.0,100.0,,,,,,
+JPN,5412,"Accounting, tax preparation, bookkeeping, and payroll services",0.0,120000000,-120000000.0,100.0,,,,,,
+JPN,5411,Legal services,0.0,617000000,-617000000.0,100.0,,,,,,
+RoWorld,541X,"Specialized design services and other professional, scientific, and technical services",0.0,433000000,-433000000.0,100.0,,,,,,
+RoAsia,5417,Scientific research and development services,0.0,7335000000,-7335000000.0,100.0,,,,,,
+RoAsia,5416,"Management, scientific, and technical consulting services",0.0,10618000000,-10618000000.0,100.0,,,,,,
+RoAsia,5415,Computer systems design and related services,0.0,14776000000,-14776000000.0,100.0,,,,,,
+RoAsia,5413,"Architectural, engineering, and related services",0.0,3491000000,-3491000000.0,100.0,,,,,,
+RoAsia,5412,"Accounting, tax preparation, bookkeeping, and payroll services",0.0,2548000000,-2548000000.0,100.0,,,,,,
+RoAsia,5411,Legal services,0.0,647000000,-647000000.0,100.0,,,,,,
+RoAsia,5241X,"Insurance carriers, except direct life",0.0,1267000000,-1267000000.0,100.0,,,,,,
+MEX,5415,Computer systems design and related services,0.0,525000000,-525000000.0,100.0,,,,,,
+RoAsia,521CI,"Federal reserve banks, credit intermediation, and related activities",0.0,982000000,-982000000.0,100.0,,,,,,
+RoAsia,519,Other information services,0.0,744000000,-744000000.0,100.0,,,,,,
+RoAsia,518,"Data processing, hosting, and related services",0.0,329000000,-329000000.0,100.0,,,,,,
+RoAsia,5174OT,"Other telecommunications, including satellite",0.0,1000000,-1000000.0,100.0,,,,,,
+RoAsia,5171,Wired telecommunications carriers,0.0,22000000,-22000000.0,100.0,,,,,,
+CAN,213,Support activities for mining,0.0,190000000,-190000000.0,100.0,,,,,,
+RoAsia,811,Repair and maintenance,0.0,894000000,-894000000.0,100.0,,,,,,
+RoAsia,711AS,"Performing arts, spectator sports, museums, and related activities",0.0,103000000,-103000000.0,100.0,,,,,,
+RoAsia,523,"Securities, commodity contracts, and investments",0.0,5000000,-5000000.0,100.0,,,,,,
+world,713,"Amusements, gambling, and recreation industries",0.0,2000000,-2000000.0,100.0,,,,,,
+world,711AS,"Performing arts, spectator sports, museums, and related activities",0.0,2146000000,-2146000000.0,100.0,,,,,,
+world,623,Nursing and residential care facilities,0.0,127000000,-127000000.0,100.0,,,,,,
+world,622,Hospitals,0.0,10011000000,-10011000000.0,100.0,,,,,,
+world,6215OH,Other ambulatory health care services,0.0,188000000,-188000000.0,100.0,,,,,,
+world,6214,Outpatient care centers,0.0,63000000,-63000000.0,100.0,,,,,,
+world,6213,Offices of other health practitioners,0.0,63000000,-63000000.0,100.0,,,,,,
+RoAsia,5418,"Advertising, public relations, and related services",0.0,1933000000,-1933000000.0,100.0,,,,,,
+world,6211,Offices of physicians,0.0,63000000,-63000000.0,100.0,,,,,,
+world,61,Educational services,0.0,2506000000,-2506000000.0,100.0,,,,,,
+world,562,Waste management and remediation services,0.0,517000000,-517000000.0,100.0,,,,,,
+world,561X,Other administrative and support services,0.0,782000000,-782000000.0,100.0,,,,,,
+world,5613,Employment services,0.0,3566000000,-3566000000.0,100.0,,,,,,
+world,541X,"Specialized design services and other professional, scientific, and technical services",0.0,4881000000,-4881000000.0,100.0,,,,,,
+world,GFE,Federal government enterprises,0.0,229000000,-229000000.0,100.0,,,,,,
+world,5418,"Advertising, public relations, and related services",0.0,10786000000,-10786000000.0,100.0,,,,,,
+world,6212,Offices of dentists,0.0,63000000,-63000000.0,100.0,,,,,,
+MEX,711AS,"Performing arts, spectator sports, museums, and related activities",0.0,7000000,-7000000.0,100.0,,,,,,
+MEX,622,Hospitals,0.0,1069000000,-1069000000.0,100.0,,,,,,
+MEX,6215OH,Other ambulatory health care services,0.0,1000000,-1000000.0,100.0,,,,,,
+MEX,61,Educational services,0.0,101000000,-101000000.0,100.0,,,,,,
+MEX,562,Waste management and remediation services,0.0,49000000,-49000000.0,100.0,,,,,,
+MEX,561X,Other administrative and support services,0.0,59000000,-59000000.0,100.0,,,,,,
+MEX,5613,Employment services,0.0,377000000,-377000000.0,100.0,,,,,,
+RoAsia,623,Nursing and residential care facilities,0.0,87000000,-87000000.0,100.0,,,,,,
+RoWorld,213,Support activities for mining,0.0,865000000,-865000000.0,100.0,,,,,,
+RoAsia,Used,Unknown,0.0,2690000000,-2690000000.0,100.0,,,,,,
+RoWorld,481,Air transportation,0.0,15116000000,-15116000000.0,100.0,,,,,,
+MEX,541X,"Specialized design services and other professional, scientific, and technical services",0.0,152000000,-152000000.0,100.0,,,,,,
+MEX,5418,"Advertising, public relations, and related services",0.0,381000000,-381000000.0,100.0,,,,,,
+MEX,5417,Scientific research and development services,0.0,730000000,-730000000.0,100.0,,,,,,
+MEX,5416,"Management, scientific, and technical consulting services",0.0,1422000000,-1422000000.0,100.0,,,,,,
+CAN,5416,"Management, scientific, and technical consulting services",0.0,4064000000,-4064000000.0,100.0,,,,,,
+RoWorld,2211,"Electric power generation, transmission, and distribution",0.0,14000000,-14000000.0,100.0,,,,,,
+RoAsia,622,Hospitals,0.0,2786000000,-2786000000.0,100.0,,,,,,
+RoAsia,6215OH,Other ambulatory health care services,0.0,129000000,-129000000.0,100.0,,,,,,
+RoAsia,6214,Outpatient care centers,0.0,43000000,-43000000.0,100.0,,,,,,
+RoAsia,6213,Offices of other health practitioners,0.0,43000000,-43000000.0,100.0,,,,,,
+RoAsia,6212,Offices of dentists,0.0,43000000,-43000000.0,100.0,,,,,,
+RoAsia,6211,Offices of physicians,0.0,43000000,-43000000.0,100.0,,,,,,
+RoAsia,61,Educational services,0.0,410000000,-410000000.0,100.0,,,,,,
+RoAsia,562,Waste management and remediation services,0.0,134000000,-134000000.0,100.0,,,,,,
+MEX,811,Repair and maintenance,0.0,539000000,-539000000.0,100.0,,,,,,
+RoAsia,5613,Employment services,0.0,986000000,-986000000.0,100.0,,,,,,
+RoAsia,5112,Software publishers,0.0,757000000,-757000000.0,100.0,,,,,,
+RoAsia,5111,"Newspaper, periodical, book, and directory publishers",0.0,826000000,-826000000.0,100.0,,,,,,
+RoAsia,481,Air transportation,0.0,10030000000,-10030000000.0,100.0,,,,,,
+MEX,5112,Software publishers,0.0,17000000,-17000000.0,100.0,,,,,,
+RoAsia,2211,"Electric power generation, transmission, and distribution",0.0,37000000,-37000000.0,100.0,,,,,,
+RoAsia,213,Support activities for mining,0.0,249000000,-249000000.0,100.0,,,,,,
+MEX,Used,Unknown,0.0,1682000000,-1682000000.0,100.0,,,,,,
+RoAsia,561X,Other administrative and support services,0.0,233000000,-233000000.0,100.0,,,,,,
+CAN,622,Hospitals,0.0,817000000,-817000000.0,100.0,,,,,,
+CAN,6215OH,Other ambulatory health care services,0.0,5000000,-5000000.0,100.0,,,,,,
+CAN,6214,Outpatient care centers,0.0,2000000,-2000000.0,100.0,,,,,,
+CAN,6213,Offices of other health practitioners,0.0,2000000,-2000000.0,100.0,,,,,,
+CAN,6212,Offices of dentists,0.0,2000000,-2000000.0,100.0,,,,,,
+CAN,6211,Offices of physicians,0.0,2000000,-2000000.0,100.0,,,,,,
+CAN,61,Educational services,0.0,694000000,-694000000.0,100.0,,,,,,
+RoWorld,6212,Offices of dentists,0.0,5000000,-5000000.0,100.0,,,,,,
+CAN,561X,Other administrative and support services,0.0,53000000,-53000000.0,100.0,,,,,,
+CAN,5613,Employment services,0.0,289000000,-289000000.0,100.0,,,,,,
+CAN,541X,"Specialized design services and other professional, scientific, and technical services",0.0,400000000,-400000000.0,100.0,,,,,,
+CAN,5418,"Advertising, public relations, and related services",0.0,1013000000,-1013000000.0,100.0,,,,,,
+CAN,5417,Scientific research and development services,0.0,2401000000,-2401000000.0,100.0,,,,,,
+CHN,5111,"Newspaper, periodical, book, and directory publishers",0.0,986000000,-986000000.0,100.0,,,,,,
+CAN,5415,Computer systems design and related services,0.0,10942000000,-10942000000.0,100.0,,,,,,
+CAN,5413,"Architectural, engineering, and related services",0.0,1492000000,-1492000000.0,100.0,,,,,,
+CAN,562,Waste management and remediation services,0.0,34000000,-34000000.0,100.0,,,,,,
+CHN,2211,"Electric power generation, transmission, and distribution",0.0,24000000,-24000000.0,100.0,,,,,,
+CHN,213,Support activities for mining,0.0,32000000,-32000000.0,100.0,,,,,,
+CHN,211,Oil and gas extraction,3368270.0,0,3368270.0,100.0,,,,,,
+CAN,Used,Unknown,0.0,5119000000,-5119000000.0,100.0,,,,,,
+CAN,GFE,Federal government enterprises,0.0,220000000,-220000000.0,100.0,,,,,,
+CHN,541X,"Specialized design services and other professional, scientific, and technical services",0.0,142000000,-142000000.0,100.0,,,,,,
+CHN,5418,"Advertising, public relations, and related services",0.0,479000000,-479000000.0,100.0,,,,,,
+CAN,623,Nursing and residential care facilities,0.0,3000000,-3000000.0,100.0,,,,,,
+CHN,5416,"Management, scientific, and technical consulting services",0.0,1448000000,-1448000000.0,100.0,,,,,,
+CHN,5415,Computer systems design and related services,0.0,513000000,-513000000.0,100.0,,,,,,
+CHN,5413,"Architectural, engineering, and related services",0.0,809000000,-809000000.0,100.0,,,,,,
+CHN,5412,"Accounting, tax preparation, bookkeeping, and payroll services",0.0,187000000,-187000000.0,100.0,,,,,,
+CHN,5411,Legal services,0.0,253000000,-253000000.0,100.0,,,,,,
+CHN,5241X,"Insurance carriers, except direct life",0.0,205000000,-205000000.0,100.0,,,,,,
+CHN,523,"Securities, commodity contracts, and investments",0.0,4000000,-4000000.0,100.0,,,,,,
+CAN,711AS,"Performing arts, spectator sports, museums, and related activities",0.0,684000000,-684000000.0,100.0,,,,,,
+CHN,5417,Scientific research and development services,0.0,3418000000,-3418000000.0,100.0,,,,,,
+world,5411,Legal services,0.0,5581000000,-5581000000.0,100.0,,,,,,
+world,5241X,"Insurance carriers, except direct life",0.0,64704000000,-64704000000.0,100.0,,,,,,
+world,523,"Securities, commodity contracts, and investments",0.0,42000000,-42000000.0,100.0,,,,,,
+world,521CI,"Federal reserve banks, credit intermediation, and related activities",0.0,11591000000,-11591000000.0,100.0,,,,,,
+world,519,Other information services,0.0,1713000000,-1713000000.0,100.0,,,,,,
+world,518,"Data processing, hosting, and related services",0.0,815000000,-815000000.0,100.0,,,,,,
+world,5174OT,"Other telecommunications, including satellite",0.0,9000000,-9000000.0,100.0,,,,,,
+CAN,5412,"Accounting, tax preparation, bookkeeping, and payroll services",0.0,679000000,-679000000.0,100.0,,,,,,
+world,512,Motion picture and sound recording industries,0.0,14869000000,-14869000000.0,100.0,,,,,,
+world,5112,Software publishers,0.0,2244000000,-2244000000.0,100.0,,,,,,
+RoAsia,541X,"Specialized design services and other professional, scientific, and technical services",0.0,1065000000,-1065000000.0,100.0,,,,,,
+world,Used,Unknown,0.0,19610000000,-19610000000.0,100.0,,,,,,
+CAN,3341,Computer and peripheral equipment manufacturing,636406860.0,0,636406860.0,100.0,,,,,,
+world,5417,Scientific research and development services,0.0,33558000000,-33558000000.0,100.0,,,,,,
+RoAsia,512,Motion picture and sound recording industries,0.0,2386000000,-2386000000.0,100.0,,,,,,
+world,811,Repair and maintenance,0.0,4505000000,-4505000000.0,100.0,,,,,,
+world,5171,Wired telecommunications carriers,0.0,106000000,-106000000.0,100.0,,,,,,
+CAN,5411,Legal services,0.0,306000000,-306000000.0,100.0,,,,,,
+CAN,5241X,"Insurance carriers, except direct life",0.0,447000000,-447000000.0,100.0,,,,,,
+CAN,523,"Securities, commodity contracts, and investments",0.0,4000000,-4000000.0,100.0,,,,,,
+CAN,521CI,"Federal reserve banks, credit intermediation, and related activities",0.0,2064000000,-2064000000.0,100.0,,,,,,
+CAN,519,Other information services,0.0,128000000,-128000000.0,100.0,,,,,,
+CAN,518,"Data processing, hosting, and related services",0.0,54000000,-54000000.0,100.0,,,,,,
+CAN,5171,Wired telecommunications carriers,0.0,13000000,-13000000.0,100.0,,,,,,
+CAN,512,Motion picture and sound recording industries,0.0,1017000000,-1017000000.0,100.0,,,,,,
+world,5412,"Accounting, tax preparation, bookkeeping, and payroll services",0.0,8550000000,-8550000000.0,100.0,,,,,,
+CAN,5111,"Newspaper, periodical, book, and directory publishers",0.0,286000000,-286000000.0,100.0,,,,,,
+CAN,492,Couriers and messengers,0.0,24000000,-24000000.0,100.0,,,,,,
+CAN,481,Air transportation,0.0,688000000,-688000000.0,100.0,,,,,,
+CAN,811,Repair and maintenance,0.0,1261000000,-1261000000.0,100.0,,,,,,
+CAN,2211,"Electric power generation, transmission, and distribution",0.0,3288000000,-3288000000.0,100.0,,,,,,
+world,5416,"Management, scientific, and technical consulting services",0.0,47838000000,-47838000000.0,100.0,,,,,,
+world,5415,Computer systems design and related services,0.0,47174000000,-47174000000.0,100.0,,,,,,
+world,5413,"Architectural, engineering, and related services",0.0,14635000000,-14635000000.0,100.0,,,,,,
+CAN,5112,Software publishers,0.0,471000000,-471000000.0,100.0,,,,,,
+Europe,562,Waste management and remediation services,0.0,189000000,-189000000.0,100.0,,,,,,
+Europe,561X,Other administrative and support services,0.0,290000000,-290000000.0,100.0,,,,,,
+Europe,5613,Employment services,0.0,1354000000,-1354000000.0,100.0,,,,,,
+RoWorld,711AS,"Performing arts, spectator sports, museums, and related activities",0.0,671000000,-671000000.0,100.0,,,,,,
+Europe,541X,"Specialized design services and other professional, scientific, and technical services",0.0,2477000000,-2477000000.0,100.0,,,,,,
+Europe,5418,"Advertising, public relations, and related services",0.0,5566000000,-5566000000.0,100.0,,,,,,
+Europe,5417,Scientific research and development services,0.0,14433000000,-14433000000.0,100.0,,,,,,
+CHN,481,Air transportation,0.0,109000000,-109000000.0,100.0,,,,,,
+Europe,5415,Computer systems design and related services,0.0,18044000000,-18044000000.0,100.0,,,,,,
+Europe,5413,"Architectural, engineering, and related services",0.0,5013000000,-5013000000.0,100.0,,,,,,
+Europe,5412,"Accounting, tax preparation, bookkeeping, and payroll services",0.0,3996000000,-3996000000.0,100.0,,,,,,
+Europe,5411,Legal services,0.0,3244000000,-3244000000.0,100.0,,,,,,
+Europe,5241X,"Insurance carriers, except direct life",0.0,22073000000,-22073000000.0,100.0,,,,,,
+Europe,523,"Securities, commodity contracts, and investments",0.0,6000000,-6000000.0,100.0,,,,,,
+Europe,521CI,"Federal reserve banks, credit intermediation, and related activities",0.0,5668000000,-5668000000.0,100.0,,,,,,
+Europe,519,Other information services,0.0,617000000,-617000000.0,100.0,,,,,,
+Europe,5416,"Management, scientific, and technical consulting services",0.0,24621000000,-24621000000.0,100.0,,,,,,
+RoWorld,6211,Offices of physicians,0.0,5000000,-5000000.0,100.0,,,,,,
+RoWorld,61,Educational services,0.0,431000000,-431000000.0,100.0,,,,,,
+RoWorld,562,Waste management and remediation services,0.0,34000000,-34000000.0,100.0,,,,,,
+RoWorld,561X,Other administrative and support services,0.0,57000000,-57000000.0,100.0,,,,,,
+RoWorld,5613,Employment services,0.0,288000000,-288000000.0,100.0,,,,,,
+Europe,512,Motion picture and sound recording industries,0.0,7490000000,-7490000000.0,100.0,,,,,,
+Europe,GFE,Federal government enterprises,0.0,1000000,-1000000.0,100.0,,,,,,
+Europe,811,Repair and maintenance,0.0,1087000000,-1087000000.0,100.0,,,,,,
+Europe,61,Educational services,0.0,696000000,-696000000.0,100.0,,,,,,
+Europe,711AS,"Performing arts, spectator sports, museums, and related activities",0.0,635000000,-635000000.0,100.0,,,,,,
+Europe,623,Nursing and residential care facilities,0.0,21000000,-21000000.0,100.0,,,,,,
+Europe,622,Hospitals,0.0,3794000000,-3794000000.0,100.0,,,,,,
+Europe,6215OH,Other ambulatory health care services,0.0,32000000,-32000000.0,100.0,,,,,,
+Europe,6214,Outpatient care centers,0.0,11000000,-11000000.0,100.0,,,,,,
+Europe,6213,Offices of other health practitioners,0.0,11000000,-11000000.0,100.0,,,,,,
+Europe,6212,Offices of dentists,0.0,11000000,-11000000.0,100.0,,,,,,
+Europe,6211,Offices of physicians,0.0,11000000,-11000000.0,100.0,,,,,,
+Europe,713,"Amusements, gambling, and recreation industries",0.0,2000000,-2000000.0,100.0,,,,,,
+CHN,521CI,"Federal reserve banks, credit intermediation, and related activities",0.0,338000000,-338000000.0,100.0,,,,,,
+CHN,519,Other information services,0.0,13000000,-13000000.0,100.0,,,,,,
+CHN,518,"Data processing, hosting, and related services",0.0,10000000,-10000000.0,100.0,,,,,,
+CHN,5171,Wired telecommunications carriers,0.0,15000000,-15000000.0,100.0,,,,,,
+CHN,512,Motion picture and sound recording industries,0.0,660000000,-660000000.0,100.0,,,,,,
+CHN,5112,Software publishers,0.0,16000000,-16000000.0,100.0,,,,,,
+Europe,213,Support activities for mining,0.0,173000000,-173000000.0,100.0,,,,,,
+Europe,518,"Data processing, hosting, and related services",0.0,279000000,-279000000.0,100.0,,,,,,
+CHN,811,Repair and maintenance,0.0,133000000,-133000000.0,100.0,,,,,,
+CHN,711AS,"Performing arts, spectator sports, museums, and related activities",0.0,5000000,-5000000.0,100.0,,,,,,
+CHN,623,Nursing and residential care facilities,0.0,2000000,-2000000.0,100.0,,,,,,
+CHN,622,Hospitals,0.0,603000000,-603000000.0,100.0,,,,,,
+CHN,6215OH,Other ambulatory health care services,0.0,3000000,-3000000.0,100.0,,,,,,
+CHN,6214,Outpatient care centers,0.0,1000000,-1000000.0,100.0,,,,,,
+CHN,6213,Offices of other health practitioners,0.0,1000000,-1000000.0,100.0,,,,,,
+CHN,6212,Offices of dentists,0.0,1000000,-1000000.0,100.0,,,,,,
+CHN,Used,Unknown,0.0,318000000,-318000000.0,100.0,,,,,,
+Europe,5174OT,"Other telecommunications, including satellite",0.0,1000000,-1000000.0,100.0,,,,,,
+Europe,5171,Wired telecommunications carriers,0.0,23000000,-23000000.0,100.0,,,,,,
+CHN,6211,Offices of physicians,0.0,1000000,-1000000.0,100.0,,,,,,
+CHN,61,Educational services,0.0,125000000,-125000000.0,100.0,,,,,,
+CHN,562,Waste management and remediation services,0.0,24000000,-24000000.0,100.0,,,,,,
+CHN,561X,Other administrative and support services,0.0,30000000,-30000000.0,100.0,,,,,,
+CHN,5613,Employment services,0.0,212000000,-212000000.0,100.0,,,,,,
+Europe,5112,Software publishers,0.0,843000000,-843000000.0,100.0,,,,,,
+RoWorld,811,Repair and maintenance,0.0,462000000,-462000000.0,100.0,,,,,,
+Europe,481,Air transportation,0.0,28693000000,-28693000000.0,100.0,,,,,,
+Europe,2211,"Electric power generation, transmission, and distribution",0.0,39000000,-39000000.0,100.0,,,,,,
+world,5111,"Newspaper, periodical, book, and directory publishers",0.0,3429000000,-3429000000.0,100.0,,,,,,
+world,492,Couriers and messengers,0.0,27000000,-27000000.0,100.0,,,,,,
+world,481,Air transportation,0.0,64797000000,-64797000000.0,100.0,,,,,,
+world,2211,"Electric power generation, transmission, and distribution",0.0,3475000000,-3475000000.0,100.0,,,,,,
+world,213,Support activities for mining,0.0,1522000000,-1522000000.0,100.0,,,,,,
+RoWorld,Used,Unknown,0.0,1270000000,-1270000000.0,100.0,,,,,,
+Europe,5111,"Newspaper, periodical, book, and directory publishers",0.0,999000000,-999000000.0,100.0,,,,,,
+RoAsia,211,Oil and gas extraction,16741860068.0,4000000,16737860068.0,99.97610779218226,,,,,,
+JPN,336112,Light truck and utility vehicle manufacturing,14080167.0,25321000000,-25306919833.0,99.94439332174875,,,,,,
+CHN,336112,Light truck and utility vehicle manufacturing,934239.0,1075000000,-1074065761.0,99.91309404651163,,,,,,
+RoWorld,336112,Light truck and utility vehicle manufacturing,1259364.0,1234000000,-1232740636.0,99.89794457050243,,,,,,
+RoAsia,336112,Light truck and utility vehicle manufacturing,16826018.0,13975000000,-13958173982.0,99.87959915563506,,,,,,
+Europe,336112,Light truck and utility vehicle manufacturing,227704214.0,31877000000,-31649295786.0,99.28567865859397,,,,,,
+RoWorld,3254,Pharmaceutical and medicine manufacturing,912434350.0,34683000000,-33770565650.0,97.36921733990715,,,,,,
+RoAsia,33612,Heavy duty truck manufacturing,185786499.0,6000000,179786499.0,96.77048653573046,,,,,,
+RoWorld,Other,Unknown,9673341106.0,71605000000,-61931658894.0,86.49069044619789,,,,,,
+CAN,3344,Semiconductor and other electronic component manufacturing,1304657790.0,197000000,1107657790.0,84.90025495497942,,,,,,
+CAN,336112,Light truck and utility vehicle manufacturing,3990823020.0,25848000000,-21857176980.0,84.56041852367689,,,,,,
+RoWorld,3341,Computer and peripheral equipment manufacturing,38253803.0,243000000,-204746197.0,84.25769423868313,,,,,,
+RoAsia,112,Animal production and aquaculture,3346363035.0,543000000,2803363035.0,83.77342821682227,,,,,,
+CAN,334X,Other computer and electronic product manufacturing,512456662.0,85000000,427456662.0,83.4132315368358,,,,,,
+CAN,3391,Medical equipment and supplies manufacturing,796453405.0,154000000,642453405.0,80.66428004033708,,,,,,
+JPN,334X,Other computer and electronic product manufacturing,1631210555.0,362000000,1269210555.0,77.80789249490849,,,,,,
+JPN,Other,Unknown,4844504136.0,21355000000,-16510495864.0,77.31442689768204,,,,,,
+world,336112,Light truck and utility vehicle manufacturing,33485402707.0,146062000000,-112576597293.0,77.07452814078952,,,,,,
+RoWorld,3342,Communications equipment manufacturing,234196949.0,949000000,-714803051.0,75.32171243414119,,,,,,
+RoWorld,336111,Automobile manufacturing,2130265807.0,551000000,1579265807.0,74.13468318416285,✓,N/A,N/A,N/A,N/A,N/A
+CAN,3342,Communications equipment manufacturing,1533191611.0,399000000,1134191611.0,73.9758555201226,,,,,,
+CAN,3399,Other miscellaneous manufacturing,2289885549.0,619000000,1670885549.0,72.96808129688756,,,,,,
+MEX,3344,Semiconductor and other electronic component manufacturing,8292900625.0,2393000000,5899900625.0,71.14399281735032,,,,,,
+JPN,324,Petroleum and coal products,451765067.0,1489000000,-1037234933.0,69.65983431833446,,,,,,
+Europe,323,Printing and related support activities,1239200989.0,393000000,846200989.0,68.28601627270005,,,,,,
+RoAsia,334X,Other computer and electronic product manufacturing,29555808129.0,9831000000,19724808129.0,66.73750229703963,,,,,,
+CAN,3122,Tobacco manufacturing,56872595.0,19000000,37872595.0,66.5919939120063,,,,,,
+CAN,315AL,Apparel and leather and allied products,871121019.0,319000000,552121019.0,63.380518545380205,,,,,,
+RoWorld,33612,Heavy duty truck manufacturing,12619085.0,34000000,-21380915.0,62.88504411764706,,,,,,
+RoWorld,324,Petroleum and coal products,7505290268.0,19948000000,-12442709732.0,62.37572554642069,,,,,,
+CHN,336111,Automobile manufacturing,2609008402.0,985000000,1624008402.0,62.2461928737016,✓,N/A,N/A,N/A,N/A,N/A
+JPN,336111,Automobile manufacturing,39711877012.0,16018000000,23693877012.0,59.66446009298494,✓,N/A,N/A,N/A,N/A,N/A
+CHN,112,Animal production and aquaculture,15789620.0,39000000,-23210380.0,59.513794871794865,,,,,,
+Europe,Other,Unknown,57357567551.0,141572000000,-84214432449.0,59.485231860113586,,,,,,
+RoWorld,33311,Agricultural implement manufacturing,233202267.0,566000000,-332797733.0,58.798186042402826,,,,,,
+Europe,33612,Heavy duty truck manufacturing,500024355.0,1206000000,-705975645.0,58.53861069651741,,,,,,
+JPN,212,"Mining, except oil and gas",11623113.0,28000000,-16376887.0,58.48888214285714,,,,,,
+MEX,33312,Construction machinery manufacturing,5165487551.0,2216000000,2949487551.0,57.099886929918185,,,,,,
+Europe,336111,Automobile manufacturing,53703184299.0,23055000000,30648184299.0,57.06958479102829,✓,N/A,N/A,N/A,N/A,N/A
+JPN,3391,Medical equipment and supplies manufacturing,1663227602.0,715000000,948227602.0,57.011295439047196,,,,,,
+world,Other,Unknown,147437063260.0,340030000000,-192592936740.0,56.63998374849278,,,,,,
+RoWorld,3332OM,Other machinery,1721975201.0,3970000000,-2248024799.0,56.625309798488665,,,,,,
+CAN,3345,"Navigational, measuring, electromedical, and control instruments manufacturing",3563050126.0,1554000000,2009050126.0,56.38568234950506,,,,,,
+MEX,Other,Unknown,13990369767.0,31849000000,-17858630233.0,56.07281306477441,,,,,,
+CAN,3365AO,All other transportation equipment manufacturing,1443552191.0,3280000000,-1836447809.0,55.98926246951219,,,,,,
+CHN,323,Printing and related support activities,2674333107.0,1193000000,1481333107.0,55.39074781382497,,,,,,
+CAN,33312,Construction machinery manufacturing,2970958524.0,1327000000,1643958524.0,55.334280526630465,,,,,,
+JPN,315AL,Apparel and leather and allied products,113759721.0,51000000,62759721.0,55.168666421043696,,,,,,
+world,336111,Automobile manufacturing,211750607331.0,95079000000,116671607331.0,55.09859395521055,✓,N/A,N/A,N/A,N/A,N/A
+world,323,Printing and related support activities,6790792233.0,3051000000,3739792233.0,55.071516027635184,,,,,,
+CAN,335,"Electrical equipment, appliances, and components",8190969498.0,3683000000,4507969498.0,55.03584769911202,✓,N/A,N/A,N/A,N/A,N/A
+RoAsia,336111,Automobile manufacturing,37906674196.0,17177000000,20729674196.0,54.686080052328734,✓,N/A,N/A,N/A,N/A,N/A
+CAN,323,Printing and related support activities,832631970.0,380000000,452631970.0,54.361589070378834,,,,,,
+Europe,3364,Aerospace product and parts manufacturing,32883432621.0,15167000000,17716432621.0,53.87646972623516,,,,,,
+RoAsia,3344,Semiconductor and other electronic component manufacturing,91733862042.0,42904000000,48829862042.0,53.22992072397806,,,,,,
+CAN,336111,Automobile manufacturing,27444882278.0,13146000000,14298882278.0,52.10035930619414,✓,N/A,N/A,N/A,N/A,N/A
+RoAsia,3364,Aerospace product and parts manufacturing,5104563969.0,2447000000,2657563969.0,52.06250690831533,,,,,,
+Europe,3313NF,Nonferrous metal production and processing and foundries,23622510632.0,11370000000,12252510632.0,51.86794419473033,,,,,,
+MEX,3341,Computer and peripheral equipment manufacturing,49106273867.0,23884000000,25222273867.0,51.36263023195834,,,,,,
+MEX,336111,Automobile manufacturing,48244715337.0,24147000000,24097715337.0,49.94892221598186,✓,N/A,N/A,N/A,N/A,N/A
+RoWorld,325X,Other chemical manufacturing,2677709313.0,5309000000,-2631290687.0,49.562830796760224,,,,,,
+RoAsia,3399,Other miscellaneous manufacturing,33423256733.0,17152000000,16271256733.0,48.68243948512293,,,,,,
+MEX,323,Printing and related support activities,674956489.0,347000000,327956489.0,48.589278619410386,,,,,,
+world,3344,Semiconductor and other electronic component manufacturing,131460319288.0,68267000000,63193319288.0,48.07026152854357,,,,,,
+RoAsia,3313NF,Nonferrous metal production and processing and foundries,13311908938.0,6920000000,6391908938.0,48.01647132481309,,,,,,
+RoAsia,325X,Other chemical manufacturing,12940172304.0,6771000000,6169172304.0,47.674576188549025,,,,,,
+Europe,3342,Communications equipment manufacturing,4125534645.0,2178000000,1947534645.0,47.20684256912839,,,,,,
+MEX,3313NF,Nonferrous metal production and processing and foundries,7189329354.0,3851000000,3338329354.0,46.4345029921688,,,,,,
+CHN,3311IS,Iron and steel mills and manufacturing from purchased steel,1153613460.0,2079000000,-925386540.0,44.511137085137086,,,,,,
+JPN,3341,Computer and peripheral equipment manufacturing,1036698209.0,1865000000,-828301791.0,44.412964664879354,,,,,,
+RoAsia,323,Printing and related support activities,1075634085.0,599000000,476634085.0,44.31191718882728,,,,,,
+MEX,3252,"Resin, rubber, and artificial fibers manufacturing",1502684867.0,847000000,655684867.0,43.63422307626127,,,,,,
+RoAsia,Other,Unknown,25350025147.0,44939000000,-19588974853.0,43.590144090878745,,,,,,
+CHN,33311,Agricultural implement manufacturing,1789335814.0,3126000000,-1336664186.0,42.75957088931542,,,,,,
+JPN,337,Furniture and related products,71477120.0,41000000,30477120.0,42.638987133225285,,,,,,
+world,3313NF,Nonferrous metal production and processing and foundries,95117797635.0,55666000000,39451797635.0,41.476777864843164,,,,,,
+Europe,3399,Other miscellaneous manufacturing,11849235003.0,6956000000,4893235003.0,41.29578830836865,,,,,,
+RoWorld,3251,Basic chemical manufacturing,2883311401.0,4848000000,-1964688599.0,40.525754929867986,,,,,,
+JPN,113FF,"Forestry, fishing, and related activities",263976186.0,441000000,-177023814.0,40.14145442176871,,,,,,
+MEX,211,Oil and gas extraction,12110468180.0,20032000000,-7921531820.0,39.544388079073485,,,,,,
+CHN,Other,Unknown,11303103196.0,6840000000,4463103196.0,39.48564494730461,,,,,,
+world,334X,Other computer and electronic product manufacturing,58479431280.0,35740000000,22739431280.0,38.884494568908195,,,,,,
+JPN,325X,Other chemical manufacturing,6017100726.0,3682000000,2335100726.0,38.80773868235225,,,,,,
+world,3364,Aerospace product and parts manufacturing,62628765796.0,38341000000,24287765796.0,38.78052758553837,,,,,,
+MEX,3365AO,All other transportation equipment manufacturing,2464419730.0,1510000000,954419730.0,38.7279698495191,,,,,,
+Europe,3365AO,All other transportation equipment manufacturing,3604600855.0,5813000000,-2208399145.0,37.99069576810597,,,,,,
+RoWorld,3391,Medical equipment and supplies manufacturing,5867813110.0,9437000000,-3569186890.0,37.82120260676062,,,,,,
+MEX,336112,Light truck and utility vehicle manufacturing,29233775685.0,46732000000,-17498224315.0,37.443773677565694,,,,,,
+Europe,313TT,Textile mills and textile product mills,2974955570.0,4752000000,-1777044430.0,37.39571611952862,,,,,,
+RoAsia,3122,Tobacco manufacturing,142816767.0,90000000,52816767.0,36.98218921311949,,,,,,
+CHN,3254,Pharmaceutical and medicine manufacturing,9734595715.0,6182000000,3552595715.0,36.49453782169731,,,,,,
+CAN,3313NF,Nonferrous metal production and processing and foundries,24507375125.0,15587000000,8920375125.0,36.39873743924667,,,,,,
+RoAsia,111,Crop production,3374201007.0,2147000000,1227201007.0,36.37012153259665,,,,,,
+Europe,3344,Semiconductor and other electronic component manufacturing,10271824609.0,6612000000,3659824609.0,35.62974202064668,,,,,,
+RoWorld,313TT,Textile mills and textile product mills,651899941.0,1011000000,-359100059.0,35.51929366963403,,,,,,
+RoWorld,3344,Semiconductor and other electronic component manufacturing,1877335727.0,2884000000,-1006664273.0,34.90514122746186,,,,,,
+MEX,3342,Communications equipment manufacturing,11723091544.0,7703000000,4020091544.0,34.29207670102623,,,,,,
+RoWorld,326,Plastics and rubber products,2176104715.0,3286000000,-1109895285.0,33.77648463177115,,,,,,
+RoWorld,3313NF,Nonferrous metal production and processing and foundries,23355896293.0,15579000000,7776896293.0,33.29735752993053,,,,,,
+MEX,3399,Other miscellaneous manufacturing,4349901722.0,2916000000,1433901722.0,32.964002720979174,,,,,,
+RoAsia,3391,Medical equipment and supplies manufacturing,10605694499.0,7123000000,3482694499.0,32.83796737053268,,,,,,
+JPN,33612,Heavy duty truck manufacturing,557852585.0,824000000,-266147415.0,32.29944356796117,,,,,,
+CHN,33312,Construction machinery manufacturing,2163895824.0,3190000000,-1026104176.0,32.166275109717866,,,,,,
+JPN,323,Printing and related support activities,222466458.0,151000000,71466458.0,32.124599205872194,,,,,,
+Europe,3341,Computer and peripheral equipment manufacturing,3903267007.0,2650000000,1253267007.0,32.10815464974415,,,,,,
+CHN,322,Paper products,3285555504.0,4832000000,-1546444496.0,32.0042321192053,,,,,,
+CAN,33612,Heavy duty truck manufacturing,4122198761.0,2815000000,1307198761.0,31.711201637518517,,,,,,
+RoAsia,3345,"Navigational, measuring, electromedical, and control instruments manufacturing",14378558177.0,9845000000,4533558177.0,31.5299915415156,,,,,,
+JPN,3342,Communications equipment manufacturing,942971773.0,646000000,296971773.0,31.49317736788713,,,,,,
+MEX,3345,"Navigational, measuring, electromedical, and control instruments manufacturing",12922790939.0,8876000000,4046790939.0,31.315146690078322,,,,,,
+RoAsia,335,"Electrical equipment, appliances, and components",54098154480.0,37175000000,16923154480.0,31.28231386572801,✓,N/A,N/A,N/A,N/A,N/A
+RoWorld,113FF,"Forestry, fishing, and related activities",3338114636.0,4845000000,-1506885364.0,31.101865098039216,,,,,,
+CAN,33313,Mining and oil and gas field machinery manufacturing,583961221.0,407000000,176961221.0,30.303591169455412,,,,,,

@@ -265,7 +265,170 @@ for region_key, comparison_df in all_comparisons.items():
 discrepancies_df = pd.DataFrame(discrepancies_list)
 discrepancies_df = discrepancies_df.sort_values('pct_difference', ascending=False)
 
-# Save discrepancies table
+# Cross-reference with hierarchical matches to identify mapping uncertainty
+# Source 1: Hierarchical matches from 03_Map_country_trade_data (2024 unmapped HS codes)
+hierarchical_matches_path = os.path.join(data_paths['base_paths']['validations'], '03_Map_country_trade_data', '3_Hierarchical_Matches.csv')
+hierarchical_matches_2024 = pd.DataFrame()
+if os.path.exists(hierarchical_matches_path):
+    hierarchical_matches_2024 = pd.read_csv(hierarchical_matches_path)
+    print(f"Found {len(hierarchical_matches_2024)} hierarchical matches from 2024 trade data")
+
+# Source 2: Hierarchical matches from 01_Schott_Data_Compiler (2023 HS codes)
+schott_hierarchical_path = os.path.join(data_paths['base_paths']['validations'], '01_Schott_Data_Compiler', '4_mapping_validation_issues.csv')
+schott_hierarchical_matches = pd.DataFrame()
+if os.path.exists(schott_hierarchical_path):
+    schott_data = pd.read_csv(schott_hierarchical_path)
+    print(f"Found {len(schott_data)} hierarchical matches from Schott data")
+    
+    # Load BEA mappings to convert NAICS to BEA codes
+    bea_naics_path = os.path.join(data_paths['base_paths']['working_data'], '02_HS_to_Naics_to_BEA', '01_BEA_naics_mapping.csv')
+    bea_hierarchy_path = os.path.join(data_paths['base_paths']['working_data'], '02_HS_to_Naics_to_BEA', '02_BEA_hierarchy.csv')
+    
+    if os.path.exists(bea_naics_path) and os.path.exists(bea_hierarchy_path):
+        bea_naics_mapping = pd.read_csv(bea_naics_path)
+        bea_hierarchy = pd.read_csv(bea_hierarchy_path)
+        
+        # Create NAICS to BEA detail code lookup
+        naics_to_bea = dict(zip(bea_naics_mapping['naics'], bea_naics_mapping['Code']))
+        
+        # Create BEA detail to U.Summary lookup
+        bea_detail_to_usummary = dict(zip(bea_hierarchy['Detail'], bea_hierarchy['U.Summary']))
+        
+        # Convert Schott hierarchical matches to BEA codes
+        schott_bea_matches = []
+        for _, row in schott_data.iterrows():
+            if 'naics_mds' in row and pd.notna(row['naics_mds']):
+                naics_code = str(row['naics_mds'])
+                if naics_code in naics_to_bea:
+                    bea_detail = naics_to_bea[naics_code]
+                    bea_usummary = bea_detail_to_usummary.get(bea_detail, bea_detail)
+                    
+                    schott_bea_matches.append({
+                        'hs_code': row.get('hs_code', ''),
+                        'matched_bea_detail': bea_detail,
+                        'matched_bea_usummary': bea_usummary,
+                        'source': 'schott_hierarchical'
+                    })
+        
+        schott_hierarchical_matches = pd.DataFrame(schott_bea_matches)
+        print(f"Converted {len(schott_hierarchical_matches)} Schott matches to BEA codes")
+    else:
+        print("BEA mapping files not found - skipping Schott hierarchical analysis")
+
+# Combine both sources of hierarchical matches
+all_hierarchical_bea_codes = set()
+if not hierarchical_matches_2024.empty:
+    all_hierarchical_bea_codes.update(hierarchical_matches_2024['matched_bea_detail'].unique())
+if not schott_hierarchical_matches.empty:
+    all_hierarchical_bea_codes.update(schott_hierarchical_matches['matched_bea_detail'].unique())
+
+print(f"Total unique BEA codes from hierarchical matching: {len(all_hierarchical_bea_codes)}")
+
+if len(all_hierarchical_bea_codes) > 0 or not hierarchical_matches_2024.empty:
+    
+    # Add mapping uncertainty analysis to discrepancies
+    discrepancies_enhanced = []
+    
+    for _, row in discrepancies_df.iterrows():
+        bea_code = row['usummary_code']
+        
+        # Check if this BEA code appears in 2024 hierarchical matches
+        matching_entries_2024 = hierarchical_matches_2024[hierarchical_matches_2024['matched_bea_detail'] == bea_code] if not hierarchical_matches_2024.empty else pd.DataFrame()
+        
+        # Check if this BEA code appears in Schott hierarchical matches
+        # Try matching both the detail code and the usummary code
+        matching_entries_schott = pd.DataFrame()
+        if not schott_hierarchical_matches.empty:
+            matching_entries_schott = schott_hierarchical_matches[
+                (schott_hierarchical_matches['matched_bea_usummary'] == bea_code) |
+                (schott_hierarchical_matches['matched_bea_detail'] == bea_code)
+            ]
+            
+        print(f"Debug: For BEA code {bea_code}, found {len(matching_entries_2024)} 2024 matches and {len(matching_entries_schott)} Schott matches")
+        
+        if len(matching_entries_2024) > 0 or len(matching_entries_schott) > 0:
+            hs_codes = []
+            hs_descriptions = []
+            primary_mappings = []
+            alternative_mappings = []
+            sources = []
+            
+            # Process 2024 hierarchical matches
+            if len(matching_entries_2024) > 0:
+                hs_groups_2024 = matching_entries_2024.groupby('hs_code')
+                
+                for hs_code, group in hs_groups_2024:
+                    hs_codes.append(str(hs_code))
+                    sources.append('2024')
+                    
+                    # Get description
+                    desc = group['hs10_description'].iloc[0] if 'hs10_description' in group.columns else ''
+                    hs_descriptions.append(desc)
+                    
+                    # Get primary mapping
+                    primary_match = group[group['match_type'] == 'primary']
+                    if len(primary_match) > 0:
+                        primary_mappings.append(primary_match['matched_bea_detail'].iloc[0])
+                    else:
+                        primary_mappings.append(bea_code)
+                    
+                    # Get alternative mappings
+                    alternatives = group[group['match_type'] == 'alternative']['matched_bea_detail'].tolist()
+                    alternative_mappings.append('; '.join(alternatives) if alternatives else '')
+            
+            # Process Schott hierarchical matches
+            if len(matching_entries_schott) > 0:
+                for _, schott_row in matching_entries_schott.iterrows():
+                    hs_code = str(schott_row['hs_code'])
+                    if hs_code and hs_code != 'nan':  # Only add non-empty HS codes
+                        hs_codes.append(hs_code)
+                        sources.append('Schott')
+                        hs_descriptions.append('(No description from Schott data)')
+                        primary_mappings.append(schott_row['matched_bea_detail'])
+                        alternative_mappings.append('(No alternatives from Schott data)')
+            
+            # Debug: Print what we have before filtering
+            print(f"Debug for BEA code {bea_code}:")
+            print(f"  hs_codes: {hs_codes}")
+            print(f"  hs_descriptions: {hs_descriptions}")
+            print(f"  primary_mappings: {primary_mappings}")
+            print(f"  alternative_mappings: {alternative_mappings}")
+            print(f"  sources: {sources}")
+            
+            # Create enhanced row with simpler logic
+            enhanced_row = row.to_dict()
+            enhanced_row.update({
+                'has_hierarchical_match': '✓',
+                'hs_codes': '; '.join(hs_codes) if hs_codes else 'N/A',
+                'hs_descriptions': '; '.join(hs_descriptions) if hs_descriptions else 'N/A',
+                'primary_bea_mappings': '; '.join(primary_mappings) if primary_mappings else 'N/A',
+                'alternative_bea_mappings': '; '.join(alternative_mappings) if alternative_mappings else 'N/A',
+                'mapping_sources': '; '.join(sources) if sources else 'N/A'
+            })
+            discrepancies_enhanced.append(enhanced_row)
+        else:
+            # No hierarchical match found
+            enhanced_row = row.to_dict()
+            enhanced_row.update({
+                'has_hierarchical_match': '',
+                'hs_codes': '',
+                'hs_descriptions': '',
+                'primary_bea_mappings': '',
+                'alternative_bea_mappings': '',
+                'mapping_sources': ''
+            })
+            discrepancies_enhanced.append(enhanced_row)
+    
+    discrepancies_df = pd.DataFrame(discrepancies_enhanced)
+    print(f"Enhanced discrepancies table with hierarchical mapping analysis")
+    
+    # Count how many discrepancies have hierarchical matches
+    hierarchical_matches_count = (discrepancies_df['has_hierarchical_match'] == '✓').sum()
+    print(f"Found {hierarchical_matches_count} out of {len(discrepancies_df)} discrepancies with hierarchical mapping uncertainty")
+else:
+    print("Hierarchical matches file not found - skipping mapping uncertainty analysis")
+
+# Save enhanced discrepancies table
 discrepancies_path = os.path.join(validation_dir, '03_large_discrepancies_table.csv')
 discrepancies_df.to_csv(discrepancies_path, index=False)
 
@@ -274,7 +437,8 @@ discrepancies_html_table = ""
 if len(discrepancies_df) > 0:
     discrepancies_html_table = f"""
     <h2>BEA Codes with >30% Difference from TiVA</h2>
-    <table border="1" style="border-collapse: collapse; width: 100%; color: #ffffff;">
+    <p>The ✓ symbol indicates BEA codes that originated from uncertain hierarchical HS-to-BEA mappings from either 2024 trade data or Schott 2023 data.</p>
+    <table border="1" style="border-collapse: collapse; width: 100%; color: #ffffff; font-size: 11px;">
         <tr style="background-color: #333333;">
             <th>Region</th>
             <th>BEA Code</th>
@@ -283,10 +447,30 @@ if len(discrepancies_df) > 0:
             <th>TiVA Total Imports</th>
             <th>Difference</th>
             <th>% Difference</th>
+            <th>Hierarchical?</th>
+            <th>HS Codes</th>
+            <th>HS Descriptions</th>
+            <th>Alternative BEA Codes</th>
+            <th>Data Source</th>
         </tr>
     """
     
     for _, row in discrepancies_df.iterrows():
+        # Handle new columns safely
+        hierarchical_match = row.get('has_hierarchical_match', '')
+        hs_codes = row.get('hs_codes', '')
+        hs_descriptions = row.get('hs_descriptions', '')
+        alternative_mappings = row.get('alternative_bea_mappings', '')
+        mapping_sources = row.get('mapping_sources', '')
+        
+        # Truncate long descriptions for display
+        if len(hs_descriptions) > 80:
+            hs_descriptions = hs_descriptions[:80] + '...'
+        if len(alternative_mappings) > 60:
+            alternative_mappings = alternative_mappings[:60] + '...'
+        if len(hs_codes) > 60:
+            hs_codes = hs_codes[:60] + '...'
+        
         discrepancies_html_table += f"""
         <tr>
             <td>{row['region']}</td>
@@ -296,6 +480,11 @@ if len(discrepancies_df) > 0:
             <td>${row['TiVA_total_imports']:,.0f}</td>
             <td>${row['difference']:,.0f}</td>
             <td>{row['pct_difference']:.1f}%</td>
+            <td>{hierarchical_match}</td>
+            <td>{hs_codes}</td>
+            <td>{hs_descriptions}</td>
+            <td>{alternative_mappings}</td>
+            <td>{mapping_sources}</td>
         </tr>
         """
     

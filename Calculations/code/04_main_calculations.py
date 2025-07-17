@@ -225,7 +225,7 @@ B_dD = np.dot(B_d, D)
 Imp_Comm_TRT = linalg.inv(I-np.dot(B_d, D))
 
 
-pd.DataFrame(Imp_Comm_TRT).to_csv('TRT.csv')
+pd.DataFrame(Imp_Comm_TRT).to_csv(os.path.join(validations_dir,'04_main_calculations','LeontieffInverse.csv'))
 
 ### Now we can try and test our approximation of the boston fed paper. Their complete methodology is as follows: 
 """
