@@ -111,10 +111,17 @@ region_mapping = {
 regional_comparison_dir = os.path.join(validation_dir, 'regional_HS_BEA_mapping')
 csv_dir = os.path.join(regional_comparison_dir, 'csv')
 html_dir = os.path.join(regional_comparison_dir, 'html')
+html_log_dir = os.path.join(regional_comparison_dir, 'html_log')
 png_dir = os.path.join(regional_comparison_dir, 'png')
+png_log_dir = os.path.join(regional_comparison_dir, 'png_log')
 os.makedirs(csv_dir, exist_ok=True)
 os.makedirs(html_dir, exist_ok=True)
+os.makedirs(html_log_dir, exist_ok=True)
 os.makedirs(png_dir, exist_ok=True)
+os.makedirs(png_log_dir, exist_ok=True)
+
+# Store all comparison data for the discrepancies table
+all_comparisons = {}
 
 for tiva_file, region_key in region_mapping.items():
     tiva_path = os.path.join(tiva_dir, tiva_file)
@@ -151,6 +158,9 @@ for tiva_file, region_key in region_mapping.items():
     output_path = os.path.join(csv_dir, output_filename)
     merged_comparison.to_csv(output_path, index=False)
     
+    # Store for discrepancies table
+    all_comparisons[region_key] = merged_comparison.copy()
+    
     # Calculate correlation statistics
     valid_data = merged_comparison[(merged_comparison['HS_total_imports'] > 0) | (merged_comparison['TiVA_total_imports'] > 0)]
     if len(valid_data) > 1:
@@ -160,7 +170,7 @@ for tiva_file, region_key in region_mapping.items():
     else:
         title_text = f'{region_key} - HS to BEA vs TiVA Imports'
     
-    # Create interactive scatter plot with Plotly
+    # Create interactive scatter plot with Plotly (regular scale)
     fig = px.scatter(merged_comparison, 
                      x='HS_total_imports', 
                      y='TiVA_total_imports',
@@ -185,45 +195,198 @@ for tiva_file, region_key in region_mapping.items():
     png_filename = f'{region_key}_HS_TiVA_scatter.png'
     png_path = os.path.join(png_dir, png_filename)
     fig.write_image(png_path, width=1200, height=800)
+    
+    # Create logged version plots
+    # Filter out zero values for log scale
+    log_data = merged_comparison[
+        (merged_comparison['HS_total_imports'] > 0) & 
+        (merged_comparison['TiVA_total_imports'] > 0)
+    ].copy()
+    
+    if len(log_data) > 0:
+        # Create logged scatter plot
+        fig_log = px.scatter(log_data, 
+                             x='HS_total_imports', 
+                             y='TiVA_total_imports',
+                             hover_data=['usummary_code', 'usummary_name'],
+                             labels={'HS_total_imports': 'HS to BEA Imports (2024)',
+                                     'TiVA_total_imports': 'TiVA Imports (2023)'},
+                             title=title_text + ' (Log Scale)',
+                             template='plotly_dark',
+                             log_x=True,
+                             log_y=True)
+        
+        # Add 45-degree line for reference on log scale
+        min_val = min(log_data['HS_total_imports'].min(), log_data['TiVA_total_imports'].min())
+        max_val_log = max(log_data['HS_total_imports'].max(), log_data['TiVA_total_imports'].max())
+        fig_log.add_shape(type='line', x0=min_val, y0=min_val, x1=max_val_log, y1=max_val_log,
+                          line=dict(color='red', dash='dash', width=2),
+                          name='Perfect correlation')
+        
+        # Save logged HTML plot
+        html_log_filename = f'{region_key}_HS_TiVA_scatter_log.html'
+        html_log_path = os.path.join(html_log_dir, html_log_filename)
+        fig_log.write_html(html_log_path)
+        
+        # Save logged PNG plot
+        png_log_filename = f'{region_key}_HS_TiVA_scatter_log.png'
+        png_log_path = os.path.join(png_log_dir, png_log_filename)
+        fig_log.write_image(png_log_path, width=1200, height=800)
 
-# Create a master HTML file that displays all individual plots
-master_html_content = """
+# Create discrepancies table (BEA codes with >30% difference)
+discrepancies_list = []
+for region_key, comparison_df in all_comparisons.items():
+    # Calculate percentage difference
+    valid_comparison = comparison_df[
+        (comparison_df['HS_total_imports'] > 0) | (comparison_df['TiVA_total_imports'] > 0)
+    ].copy()
+    
+    # Calculate percentage difference (use max of the two values as denominator to avoid division by zero)
+    valid_comparison['max_value'] = np.maximum(valid_comparison['HS_total_imports'], valid_comparison['TiVA_total_imports'])
+    valid_comparison['pct_difference'] = np.abs(valid_comparison['difference']) / valid_comparison['max_value'] * 100
+    
+    # Filter for >30% difference and non-zero values
+    large_discrepancies = valid_comparison[
+        (valid_comparison['pct_difference'] > 30) & 
+        (valid_comparison['max_value'] > 0)
+    ].copy()
+    
+    for _, row in large_discrepancies.iterrows():
+        discrepancies_list.append({
+            'region': region_key,
+            'usummary_code': row['usummary_code'],
+            'usummary_name': row['usummary_name'],
+            'HS_total_imports': row['HS_total_imports'],
+            'TiVA_total_imports': row['TiVA_total_imports'],
+            'difference': row['difference'],
+            'pct_difference': row['pct_difference']
+        })
+
+discrepancies_df = pd.DataFrame(discrepancies_list)
+discrepancies_df = discrepancies_df.sort_values('pct_difference', ascending=False)
+
+# Save discrepancies table
+discrepancies_path = os.path.join(validation_dir, '03_large_discrepancies_table.csv')
+discrepancies_df.to_csv(discrepancies_path, index=False)
+
+# Create discrepancies HTML table
+discrepancies_html_table = ""
+if len(discrepancies_df) > 0:
+    discrepancies_html_table = f"""
+    <h2>BEA Codes with >30% Difference from TiVA</h2>
+    <table border="1" style="border-collapse: collapse; width: 100%; color: #ffffff;">
+        <tr style="background-color: #333333;">
+            <th>Region</th>
+            <th>BEA Code</th>
+            <th>BEA Name</th>
+            <th>HS Total Imports</th>
+            <th>TiVA Total Imports</th>
+            <th>Difference</th>
+            <th>% Difference</th>
+        </tr>
+    """
+    
+    for _, row in discrepancies_df.iterrows():
+        discrepancies_html_table += f"""
+        <tr>
+            <td>{row['region']}</td>
+            <td>{row['usummary_code']}</td>
+            <td>{row['usummary_name']}</td>
+            <td>${row['HS_total_imports']:,.0f}</td>
+            <td>${row['TiVA_total_imports']:,.0f}</td>
+            <td>${row['difference']:,.0f}</td>
+            <td>{row['pct_difference']:.1f}%</td>
+        </tr>
+        """
+    
+    discrepancies_html_table += "</table>"
+else:
+    discrepancies_html_table = "<h2>No BEA codes with >30% difference found</h2>"
+
+# Create a master HTML file with tabs
+master_html_content = f"""
 <!DOCTYPE html>
 <html>
 <head>
     <title>TiVA Import Values Comparison - All Regions</title>
     <style>
-        body {
+        body {{
             font-family: Arial, sans-serif;
             margin: 20px;
             background-color: #111111;
             color: #ffffff;
-        }
-        .plot-container {
+        }}
+        .plot-container {{
             margin-bottom: 40px;
             border: 1px solid #333333;
             padding: 20px;
             border-radius: 8px;
-        }
-        .intro-text {
+        }}
+        .intro-text {{
             background-color: #222222;
             padding: 20px;
             border-radius: 8px;
             margin-bottom: 30px;
-        }
-        h1 {
+        }}
+        h1 {{
             text-align: center;
             color: #ffffff;
-        }
-        h2 {
+        }}
+        h2 {{
             color: #ffffff;
             margin-bottom: 10px;
-        }
-        iframe {
+        }}
+        iframe {{
             width: 100%;
             height: 600px;
             border: none;
-        }
+        }}
+        .tabs {{
+            overflow: hidden;
+            border: 1px solid #333333;
+            background-color: #222222;
+            margin-bottom: 20px;
+        }}
+        .tabs button {{
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            color: #ffffff;
+            font-size: 16px;
+        }}
+        .tabs button:hover {{
+            background-color: #333333;
+        }}
+        .tabs button.active {{
+            background-color: #444444;
+        }}
+        .tabcontent {{
+            display: none;
+            padding: 12px;
+            border: 1px solid #333333;
+            border-top: none;
+            background-color: #111111;
+        }}
+        .tabcontent.active {{
+            display: block;
+        }}
+        table {{
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }}
+        th, td {{
+            border: 1px solid #333333;
+            padding: 8px;
+            text-align: left;
+        }}
+        th {{
+            background-color: #333333;
+        }}
     </style>
 </head>
 <body>
@@ -231,9 +394,18 @@ master_html_content = """
     <div class="intro-text">
         <p>This presents a validation of our HS to BEA level imports mapping by comparing imports across our codes, and the BEA's TiVA tables. While our data was created using 2024 import data, the BEA TiVA Tables use 2023 data resulting in some bias. Also, the TiVA tables include values like services (notice the values on the x = 0 line). This is simply a sanity check.</p>
     </div>
+    
+    <div class="tabs">
+        <button class="tablinks active" onclick="openTab(event, 'regular-plots')">Regular Scale</button>
+        <button class="tablinks" onclick="openTab(event, 'log-plots')">Log Scale</button>
+        <button class="tablinks" onclick="openTab(event, 'discrepancies')">Large Discrepancies</button>
+    </div>
+    
+    <div id="regular-plots" class="tabcontent active">
+        <h2>Regular Scale Plots</h2>
 """
 
-# Add each region's plot to the master HTML (world first)
+# Add each region's regular plot
 for region_key in ['world', 'CAN', 'CHN', 'Europe', 'JPN', 'MEX', 'RoAsia', 'RoWorld']:
     html_filename = f'{region_key}_HS_TiVA_scatter.html'
     
@@ -246,17 +418,66 @@ for region_key in ['world', 'CAN', 'CHN', 'Europe', 'JPN', 'MEX', 'RoAsia', 'RoW
         description = ""
     
     master_html_content += f"""
-    <div class="plot-container">
-        <h2>{title}</h2>
-        {description}
-        <iframe src="regional_HS_BEA_mapping/html/{html_filename}"></iframe>
-    </div>
-"""
+        <div class="plot-container">
+            <h3>{title}</h3>
+            {description}
+            <iframe src="regional_HS_BEA_mapping/html/{html_filename}"></iframe>
+        </div>
+    """
 
 master_html_content += """
+    </div>
+    
+    <div id="log-plots" class="tabcontent">
+        <h2>Log Scale Plots</h2>
+"""
+
+# Add each region's log plot
+for region_key in ['world', 'CAN', 'CHN', 'Europe', 'JPN', 'MEX', 'RoAsia', 'RoWorld']:
+    html_log_filename = f'{region_key}_HS_TiVA_scatter_log.html'
+    
+    # Special handling for world total
+    if region_key == 'world':
+        title = "World Total - HS to BEA vs TiVA Imports (Log Scale)"
+        description = "<p>This is the comparison of the world total from our HS mapping to the world total imports from the TiVA tables on a log scale.</p>"
+    else:
+        title = f"{region_key} - HS to BEA vs TiVA Imports (Log Scale)"
+        description = ""
+    
+    master_html_content += f"""
+        <div class="plot-container">
+            <h3>{title}</h3>
+            {description}
+            <iframe src="regional_HS_BEA_mapping/html_log/{html_log_filename}"></iframe>
+        </div>
+    """
+
+master_html_content += f"""
+    </div>
+    
+    <div id="discrepancies" class="tabcontent">
+        {discrepancies_html_table}
+    </div>
+    
+    <script>
+        function openTab(evt, tabName) {{
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {{
+                tabcontent[i].classList.remove("active");
+            }}
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {{
+                tablinks[i].classList.remove("active");
+            }}
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }}
+    </script>
 </body>
 </html>
 """
+
 # Save the master HTML file
 master_html_path = os.path.join(validation_dir, '02_TiVA_vs_HS_Import_Charts.html')
 with open(master_html_path, 'w') as f:
