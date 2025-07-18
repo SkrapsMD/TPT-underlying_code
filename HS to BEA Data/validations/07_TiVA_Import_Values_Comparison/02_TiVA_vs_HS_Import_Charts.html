@@ -90,12 +90,44 @@
     </div>
     
     <div class="tabs">
-        <button class="tablinks active" onclick="openTab(event, 'regular-plots')">Regular Scale</button>
+        <button class="tablinks active" onclick="openTab(event, 'regional-aggregates')">Regional Aggregates</button>
+        <button class="tablinks" onclick="openTab(event, 'regular-plots')">Regular Scale</button>
         <button class="tablinks" onclick="openTab(event, 'log-plots')">Log Scale</button>
         <button class="tablinks" onclick="openTab(event, 'discrepancies')">Large Discrepancies</button>
     </div>
     
-    <div id="regular-plots" class="tabcontent active">
+    <div id="regional-aggregates" class="tabcontent active">
+        <h2>Regional Aggregates</h2>
+        <p>This tab shows the sum of all BEA-level imports for each region, with one point per region. Both regular and log scale plots are shown.</p>
+        
+        <div class="intro-text">
+            <h3>Understanding the Regional Comparison Plot</h3>
+            <p><strong>Y-axis (TiVA Import Values):</strong> These represent the TiVA table import values, which are the sums of imported commodities across all industries and final uses for 2023 as described by the BEA. These values are <strong>inclusive of both goods and services trades</strong>.</p>
+            
+            <p><strong>X-axis (Our Import Values):</strong> These are the import values for each region that we compute via our concordance from HS-to-BEA codes. These values are denominated in 2024 dollars and are <strong>non-inclusive of services imports</strong>, which will lead to some deviation from the 45-degree line.</p>
+            
+            <p><strong>Three Types of Data Points:</strong></p>
+            <ul>
+                <li><strong>Blue dots (HS to BEA Mapped):</strong> These represent our actual estimates from our crosswalk methodology.</li>
+                <li><strong>Blue X markers (USATradeOnline 2024):</strong> These are hard-coded values extracted from USA Trade Online for 2024, providing a contemporary comparison point for regions like Europe, Mexico, Canada, China, and Japan.</li>
+                <li><strong>Pink circles (USATradeOnline 2023):</strong> These are hard-coded values extracted from USA Trade Online for 2023, acting as baseline comparisons for what we should be seeing in the absence of our crosswalk.</li>
+            </ul>
+            
+            <p><strong>Interpreting Deviations:</strong> The deviations between these data points, assuming the construction is correct (noting that for Europe we might not be including all the correct countries, though we put low probability on this), should be solely attributable to services trade and not a reflection on the quality of our crosswalk.</p>
+        </div>
+        
+        <div class="plot-container">
+            <h3>Regional Aggregates - Regular Scale</h3>
+            <iframe src="regional_HS_BEA_mapping/html/regional_aggregate_scatter.html"></iframe>
+        </div>
+        
+        <div class="plot-container">
+            <h3>Regional Aggregates - Log Scale</h3>
+            <iframe src="regional_HS_BEA_mapping/html_log/regional_aggregate_scatter_log.html"></iframe>
+        </div>
+    </div>
+    
+    <div id="regular-plots" class="tabcontent">
         <h2>Regular Scale Plots</h2>
 
         <div class="plot-container">

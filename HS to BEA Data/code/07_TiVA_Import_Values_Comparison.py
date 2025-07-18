@@ -54,6 +54,15 @@ The scatter plots show correlation between our constructed values (x-axis) and T
 indicate good agreement between our methodology and established benchmarks.
 """
 
+# Manual USATradeOnline data for comparison
+usa_trade_online_data = {
+    'CHN': {'2023': 427246582836, '2024': 438741998078},
+    'JPN': {'2023': 147206391795, '2024': 148370517793},
+    'Europe': {'2023': 725524830151, '2024': 770782051188},
+    'CAN': {'2023': 418010321977, '2024': 411886683368},
+    'MEX': {'2023': 472907368135, '2024': 505523174525}
+}
+
 # Load data paths configuration
 data_paths_file = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data_paths.json')
 with open(data_paths_file, 'r') as f:
@@ -232,6 +241,240 @@ for tiva_file, region_key in region_mapping.items():
         png_log_filename = f'{region_key}_HS_TiVA_scatter_log.png'
         png_log_path = os.path.join(png_log_dir, png_log_filename)
         fig_log.write_image(png_log_path, width=1200, height=800)
+
+# Create regional aggregate data for the new tab
+regional_aggregate_data = []
+for region_key, comparison_df in all_comparisons.items():
+    if region_key != 'world':  # Skip world total for regional aggregates
+        hs_total = comparison_df['HS_total_imports'].sum()
+        tiva_total = comparison_df['TiVA_total_imports'].sum()
+        regional_aggregate_data.append({
+            'region': region_key,
+            'HS_total_imports': hs_total,
+            'TiVA_total_imports': tiva_total,
+            'difference': hs_total - tiva_total
+        })
+
+# Add world total to regional aggregate data
+if 'world' in all_comparisons:
+    world_comparison = all_comparisons['world']
+    world_hs_total = world_comparison['HS_total_imports'].sum()
+    world_tiva_total = world_comparison['TiVA_total_imports'].sum()
+    regional_aggregate_data.append({
+        'region': 'World Total',
+        'HS_total_imports': world_hs_total,
+        'TiVA_total_imports': world_tiva_total,
+        'difference': world_hs_total - world_tiva_total
+    })
+
+regional_aggregate_df = pd.DataFrame(regional_aggregate_data)
+
+# Create regional aggregate scatter plots with USATradeOnline data
+if len(regional_aggregate_df) > 0:
+    # Calculate correlation statistics for regional aggregates
+    valid_regional_data = regional_aggregate_df[
+        (regional_aggregate_df['HS_total_imports'] > 0) | 
+        (regional_aggregate_df['TiVA_total_imports'] > 0)
+    ]
+    
+    if len(valid_regional_data) > 1:
+        correlation_regional = np.corrcoef(valid_regional_data['HS_total_imports'], valid_regional_data['TiVA_total_imports'])[0, 1]
+        r2_regional = r2_score(valid_regional_data['TiVA_total_imports'], valid_regional_data['HS_total_imports'])
+        title_regional = f'Regional Aggregates - HS to BEA vs TiVA Imports (R² = {r2_regional:.3f}, r = {correlation_regional:.3f})'
+    else:
+        title_regional = 'Regional Aggregates - HS to BEA vs TiVA Imports'
+    
+    # Create regular scale regional aggregate plot with multiple data sources
+    fig_regional = go.Figure()
+    
+    # Add HS to BEA mapped data (original dots)
+    fig_regional.add_trace(go.Scatter(
+        x=regional_aggregate_df['HS_total_imports'],
+        y=regional_aggregate_df['TiVA_total_imports'],
+        mode='markers+text',
+        text=regional_aggregate_df['region'],
+        textposition='top center',
+        marker=dict(size=10, color='#636EFA'),
+        name='HS to BEA Mapped (2024)',
+        hovertemplate='<b>%{text}</b><br>HS to BEA: $%{x:,.0f}<br>TiVA: $%{y:,.0f}<extra></extra>'
+    ))
+    
+    # Add USATradeOnline 2024 data (X markers, same color)
+    for _, row in regional_aggregate_df.iterrows():
+        region = row['region']
+        tiva_value = row['TiVA_total_imports']
+        
+        # Map region names to USATradeOnline data keys
+        region_mapping = {'CAN': 'CAN', 'CHN': 'CHN', 'Europe': 'Europe', 'JPN': 'JPN', 'MEX': 'MEX'}
+        
+        if region in region_mapping and region_mapping[region] in usa_trade_online_data:
+            usa_2024_value = usa_trade_online_data[region_mapping[region]]['2024']
+            fig_regional.add_trace(go.Scatter(
+                x=[usa_2024_value],
+                y=[tiva_value],
+                mode='markers+text',
+                text=[region],
+                textposition='bottom center',
+                marker=dict(size=12, color='#636EFA', symbol='x'),
+                name='USATradeOnline 2024' if region == 'CAN' else '',
+                showlegend=region == 'CAN',
+                hovertemplate=f'<b>{region}</b><br>USATradeOnline 2024: $%{{x:,.0f}}<br>TiVA: $%{{y:,.0f}}<extra></extra>'
+            ))
+    
+    # Add USATradeOnline 2023 data (circles, different color)
+    for _, row in regional_aggregate_df.iterrows():
+        region = row['region']
+        tiva_value = row['TiVA_total_imports']
+        
+        # Map region names to USATradeOnline data keys
+        region_mapping = {'CAN': 'CAN', 'CHN': 'CHN', 'Europe': 'Europe', 'JPN': 'JPN', 'MEX': 'MEX'}
+        
+        if region in region_mapping and region_mapping[region] in usa_trade_online_data:
+            usa_2023_value = usa_trade_online_data[region_mapping[region]]['2023']
+            fig_regional.add_trace(go.Scatter(
+                x=[usa_2023_value],
+                y=[tiva_value],
+                mode='markers+text',
+                text=[region],
+                textposition='middle right',
+                marker=dict(size=10, color='#FF6692'),
+                name='USATradeOnline 2023' if region == 'CAN' else '',
+                showlegend=region == 'CAN',
+                hovertemplate=f'<b>{region}</b><br>USATradeOnline 2023: $%{{x:,.0f}}<br>TiVA: $%{{y:,.0f}}<extra></extra>'
+            ))
+    
+    # Add 45-degree line for reference
+    max_val_regional = max(
+        regional_aggregate_df['HS_total_imports'].max(), 
+        regional_aggregate_df['TiVA_total_imports'].max(),
+        max([usa_trade_online_data[region]['2024'] for region in usa_trade_online_data.keys()]) if usa_trade_online_data else 0
+    )
+    fig_regional.add_shape(type='line', x0=0, y0=0, x1=max_val_regional, y1=max_val_regional,
+                          line=dict(color='red', dash='dash', width=2),
+                          name='Perfect correlation')
+    
+    # Update layout
+    fig_regional.update_layout(
+        title=title_regional,
+        xaxis_title='Import Values (USD)',
+        yaxis_title='TiVA Imports (2023, USD)',
+        template='plotly_dark',
+        legend=dict(
+            x=0.02,
+            y=0.98,
+            bgcolor='rgba(0,0,0,0.5)',
+            bordercolor='rgba(255,255,255,0.2)',
+            borderwidth=1
+        )
+    )
+    
+    # Save regional aggregate HTML plot
+    regional_aggregate_path = os.path.join(html_dir, 'regional_aggregate_scatter.html')
+    fig_regional.write_html(regional_aggregate_path)
+    
+    # Create log scale regional aggregate plot
+    log_regional_data = regional_aggregate_df[
+        (regional_aggregate_df['HS_total_imports'] > 0) & 
+        (regional_aggregate_df['TiVA_total_imports'] > 0)
+    ].copy()
+    
+    if len(log_regional_data) > 0:
+        # Create log scale plot with multiple data sources
+        fig_regional_log = go.Figure()
+        
+        # Add HS to BEA mapped data (original dots)
+        fig_regional_log.add_trace(go.Scatter(
+            x=log_regional_data['HS_total_imports'],
+            y=log_regional_data['TiVA_total_imports'],
+            mode='markers+text',
+            text=log_regional_data['region'],
+            textposition='top center',
+            marker=dict(size=10, color='#636EFA'),
+            name='HS to BEA Mapped (2024)',
+            hovertemplate='<b>%{text}</b><br>HS to BEA: $%{x:,.0f}<br>TiVA: $%{y:,.0f}<extra></extra>'
+        ))
+        
+        # Add USATradeOnline 2024 data (X markers, same color)
+        for _, row in log_regional_data.iterrows():
+            region = row['region']
+            tiva_value = row['TiVA_total_imports']
+            
+            # Map region names to USATradeOnline data keys
+            region_mapping = {'CAN': 'CAN', 'CHN': 'CHN', 'Europe': 'Europe', 'JPN': 'JPN', 'MEX': 'MEX'}
+            
+            if region in region_mapping and region_mapping[region] in usa_trade_online_data:
+                usa_2024_value = usa_trade_online_data[region_mapping[region]]['2024']
+                if usa_2024_value > 0:  # Only add if positive for log scale
+                    fig_regional_log.add_trace(go.Scatter(
+                        x=[usa_2024_value],
+                        y=[tiva_value],
+                        mode='markers+text',
+                        text=[region],
+                        textposition='bottom center',
+                        marker=dict(size=12, color='#636EFA', symbol='x'),
+                        name='USATradeOnline 2024' if region == 'CAN' else '',
+                        showlegend=region == 'CAN',
+                        hovertemplate=f'<b>{region}</b><br>USATradeOnline 2024: $%{{x:,.0f}}<br>TiVA: $%{{y:,.0f}}<extra></extra>'
+                    ))
+        
+        # Add USATradeOnline 2023 data (circles, different color)
+        for _, row in log_regional_data.iterrows():
+            region = row['region']
+            tiva_value = row['TiVA_total_imports']
+            
+            # Map region names to USATradeOnline data keys
+            region_mapping = {'CAN': 'CAN', 'CHN': 'CHN', 'Europe': 'Europe', 'JPN': 'JPN', 'MEX': 'MEX'}
+            
+            if region in region_mapping and region_mapping[region] in usa_trade_online_data:
+                usa_2023_value = usa_trade_online_data[region_mapping[region]]['2023']
+                if usa_2023_value > 0:  # Only add if positive for log scale
+                    fig_regional_log.add_trace(go.Scatter(
+                        x=[usa_2023_value],
+                        y=[tiva_value],
+                        mode='markers+text',
+                        text=[region],
+                        textposition='middle right',
+                        marker=dict(size=10, color='#FF6692'),
+                        name='USATradeOnline 2023' if region == 'CAN' else '',
+                        showlegend=region == 'CAN',
+                        hovertemplate=f'<b>{region}</b><br>USATradeOnline 2023: $%{{x:,.0f}}<br>TiVA: $%{{y:,.0f}}<extra></extra>'
+                    ))
+        
+        # Add 45-degree line for reference on log scale
+        min_val_regional = min(
+            log_regional_data['HS_total_imports'].min(), 
+            log_regional_data['TiVA_total_imports'].min(),
+            min([usa_trade_online_data[region]['2023'] for region in usa_trade_online_data.keys()]) if usa_trade_online_data else 1
+        )
+        max_val_regional_log = max(
+            log_regional_data['HS_total_imports'].max(), 
+            log_regional_data['TiVA_total_imports'].max(),
+            max([usa_trade_online_data[region]['2024'] for region in usa_trade_online_data.keys()]) if usa_trade_online_data else 1
+        )
+        fig_regional_log.add_shape(type='line', x0=min_val_regional, y0=min_val_regional, x1=max_val_regional_log, y1=max_val_regional_log,
+                                  line=dict(color='red', dash='dash', width=2),
+                                  name='Perfect correlation')
+        
+        # Update layout for log scale
+        fig_regional_log.update_layout(
+            title=title_regional + ' (Log Scale)',
+            xaxis_title='Import Values (USD)',
+            yaxis_title='TiVA Imports (2023, USD)',
+            template='plotly_dark',
+            xaxis_type='log',
+            yaxis_type='log',
+            legend=dict(
+                x=0.02,
+                y=0.98,
+                bgcolor='rgba(0,0,0,0.5)',
+                bordercolor='rgba(255,255,255,0.2)',
+                borderwidth=1
+            )
+        )
+        
+        # Save regional aggregate log HTML plot
+        regional_aggregate_log_path = os.path.join(html_log_dir, 'regional_aggregate_scatter_log.html')
+        fig_regional_log.write_html(regional_aggregate_log_path)
 
 # Create discrepancies table (BEA codes with >30% difference)
 discrepancies_list = []
@@ -585,12 +828,44 @@ master_html_content = f"""
     </div>
     
     <div class="tabs">
-        <button class="tablinks active" onclick="openTab(event, 'regular-plots')">Regular Scale</button>
+        <button class="tablinks active" onclick="openTab(event, 'regional-aggregates')">Regional Aggregates</button>
+        <button class="tablinks" onclick="openTab(event, 'regular-plots')">Regular Scale</button>
         <button class="tablinks" onclick="openTab(event, 'log-plots')">Log Scale</button>
         <button class="tablinks" onclick="openTab(event, 'discrepancies')">Large Discrepancies</button>
     </div>
     
-    <div id="regular-plots" class="tabcontent active">
+    <div id="regional-aggregates" class="tabcontent active">
+        <h2>Regional Aggregates</h2>
+        <p>This tab shows the sum of all BEA-level imports for each region, with one point per region. Both regular and log scale plots are shown.</p>
+        
+        <div class="intro-text">
+            <h3>Understanding the Regional Comparison Plot</h3>
+            <p><strong>Y-axis (TiVA Import Values):</strong> These represent the TiVA table import values, which are the sums of imported commodities across all industries and final uses for 2023 as described by the BEA. These values are <strong>inclusive of both goods and services trades</strong>.</p>
+            
+            <p><strong>X-axis (Our Import Values):</strong> These are the import values for each region that we compute via our concordance from HS-to-BEA codes. These values are denominated in 2024 dollars and are <strong>non-inclusive of services imports</strong>, which will lead to some deviation from the 45-degree line.</p>
+            
+            <p><strong>Three Types of Data Points:</strong></p>
+            <ul>
+                <li><strong>Blue dots (HS to BEA Mapped):</strong> These represent our actual estimates from our crosswalk methodology.</li>
+                <li><strong>Blue X markers (USATradeOnline 2024):</strong> These are hard-coded values extracted from USA Trade Online for 2024, providing a contemporary comparison point for regions like Europe, Mexico, Canada, China, and Japan.</li>
+                <li><strong>Pink circles (USATradeOnline 2023):</strong> These are hard-coded values extracted from USA Trade Online for 2023, acting as baseline comparisons for what we should be seeing in the absence of our crosswalk.</li>
+            </ul>
+            
+            <p><strong>Interpreting Deviations:</strong> The deviations between these data points, assuming the construction is correct (noting that for Europe we might not be including all the correct countries, though we put low probability on this), should be solely attributable to services trade and not a reflection on the quality of our crosswalk.</p>
+        </div>
+        
+        <div class="plot-container">
+            <h3>Regional Aggregates - Regular Scale</h3>
+            <iframe src="regional_HS_BEA_mapping/html/regional_aggregate_scatter.html"></iframe>
+        </div>
+        
+        <div class="plot-container">
+            <h3>Regional Aggregates - Log Scale</h3>
+            <iframe src="regional_HS_BEA_mapping/html_log/regional_aggregate_scatter_log.html"></iframe>
+        </div>
+    </div>
+    
+    <div id="regular-plots" class="tabcontent">
         <h2>Regular Scale Plots</h2>
 """
 
