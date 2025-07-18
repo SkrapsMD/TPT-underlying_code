@@ -244,8 +244,11 @@ for tiva_file, region_key in region_mapping.items():
 
 # Create regional aggregate data for the new tab
 regional_aggregate_data = []
+regional_aggregate_goods_only_data = []
+
 for region_key, comparison_df in all_comparisons.items():
     if region_key != 'world':  # Skip world total for regional aggregates
+        # Full aggregates (all BEA codes)
         hs_total = comparison_df['HS_total_imports'].sum()
         tiva_total = comparison_df['TiVA_total_imports'].sum()
         regional_aggregate_data.append({
@@ -254,10 +257,24 @@ for region_key, comparison_df in all_comparisons.items():
             'TiVA_total_imports': tiva_total,
             'difference': hs_total - tiva_total
         })
+        
+        # Goods-only aggregates (only BEA codes with non-zero HS imports)
+        goods_only_df = comparison_df[comparison_df['HS_total_imports'] > 0]
+        hs_goods_total = goods_only_df['HS_total_imports'].sum()
+        tiva_goods_total = goods_only_df['TiVA_total_imports'].sum()
+        regional_aggregate_goods_only_data.append({
+            'region': region_key,
+            'HS_total_imports': hs_goods_total,
+            'TiVA_total_imports': tiva_goods_total,
+            'difference': hs_goods_total - tiva_goods_total,
+            'bea_codes_count': len(goods_only_df)
+        })
 
 # Add world total to regional aggregate data
 if 'world' in all_comparisons:
     world_comparison = all_comparisons['world']
+    
+    # Full world aggregates
     world_hs_total = world_comparison['HS_total_imports'].sum()
     world_tiva_total = world_comparison['TiVA_total_imports'].sum()
     regional_aggregate_data.append({
@@ -266,8 +283,21 @@ if 'world' in all_comparisons:
         'TiVA_total_imports': world_tiva_total,
         'difference': world_hs_total - world_tiva_total
     })
+    
+    # Goods-only world aggregates
+    world_goods_only_df = world_comparison[world_comparison['HS_total_imports'] > 0]
+    world_hs_goods_total = world_goods_only_df['HS_total_imports'].sum()
+    world_tiva_goods_total = world_goods_only_df['TiVA_total_imports'].sum()
+    regional_aggregate_goods_only_data.append({
+        'region': 'World Total',
+        'HS_total_imports': world_hs_goods_total,
+        'TiVA_total_imports': world_tiva_goods_total,
+        'difference': world_hs_goods_total - world_tiva_goods_total,
+        'bea_codes_count': len(world_goods_only_df)
+    })
 
 regional_aggregate_df = pd.DataFrame(regional_aggregate_data)
+regional_aggregate_goods_only_df = pd.DataFrame(regional_aggregate_goods_only_data)
 
 # Create regional aggregate scatter plots with USATradeOnline data
 if len(regional_aggregate_df) > 0:
@@ -475,6 +505,122 @@ if len(regional_aggregate_df) > 0:
         # Save regional aggregate log HTML plot
         regional_aggregate_log_path = os.path.join(html_log_dir, 'regional_aggregate_scatter_log.html')
         fig_regional_log.write_html(regional_aggregate_log_path)
+
+# Create goods-only regional aggregate scatter plots
+if len(regional_aggregate_goods_only_df) > 0:
+    # Calculate correlation statistics for goods-only regional aggregates
+    valid_goods_only_data = regional_aggregate_goods_only_df[
+        (regional_aggregate_goods_only_df['HS_total_imports'] > 0) | 
+        (regional_aggregate_goods_only_df['TiVA_total_imports'] > 0)
+    ]
+    
+    if len(valid_goods_only_data) > 1:
+        correlation_goods_only = np.corrcoef(valid_goods_only_data['HS_total_imports'], valid_goods_only_data['TiVA_total_imports'])[0, 1]
+        r2_goods_only = r2_score(valid_goods_only_data['TiVA_total_imports'], valid_goods_only_data['HS_total_imports'])
+        title_goods_only = f'Goods-Only Regional Aggregates - HS to BEA vs TiVA Imports (R² = {r2_goods_only:.3f}, r = {correlation_goods_only:.3f})'
+    else:
+        title_goods_only = 'Goods-Only Regional Aggregates - HS to BEA vs TiVA Imports'
+    
+    # Create regular scale goods-only regional aggregate plot
+    fig_goods_only = go.Figure()
+    
+    # Add HS to BEA mapped data (original dots)
+    fig_goods_only.add_trace(go.Scatter(
+        x=regional_aggregate_goods_only_df['HS_total_imports'],
+        y=regional_aggregate_goods_only_df['TiVA_total_imports'],
+        mode='markers+text',
+        text=regional_aggregate_goods_only_df['region'],
+        textposition='top center',
+        marker=dict(size=10, color='#636EFA'),
+        name='HS to BEA Mapped (2024) - Goods Only',
+        hovertemplate='<b>%{text}</b><br>HS to BEA: $%{x:,.0f}<br>TiVA: $%{y:,.0f}<br>BEA Codes: %{customdata}<extra></extra>',
+        customdata=regional_aggregate_goods_only_df['bea_codes_count']
+    ))
+    
+    # Add 45-degree line for reference
+    max_val_goods_only = max(
+        regional_aggregate_goods_only_df['HS_total_imports'].max(), 
+        regional_aggregate_goods_only_df['TiVA_total_imports'].max()
+    )
+    fig_goods_only.add_shape(type='line', x0=0, y0=0, x1=max_val_goods_only, y1=max_val_goods_only,
+                             line=dict(color='red', dash='dash', width=2),
+                             name='Perfect correlation')
+    
+    # Update layout
+    fig_goods_only.update_layout(
+        title=title_goods_only,
+        xaxis_title='HS to BEA Import Values (USD) - Goods Only',
+        yaxis_title='TiVA Imports (2023, USD) - Goods Only',
+        template='plotly_dark',
+        legend=dict(
+            x=0.02,
+            y=0.98,
+            bgcolor='rgba(0,0,0,0.5)',
+            bordercolor='rgba(255,255,255,0.2)',
+            borderwidth=1
+        )
+    )
+    
+    # Save goods-only regional aggregate HTML plot
+    goods_only_aggregate_path = os.path.join(html_dir, 'regional_aggregate_goods_only_scatter.html')
+    fig_goods_only.write_html(goods_only_aggregate_path)
+    
+    # Create log scale goods-only regional aggregate plot
+    log_goods_only_data = regional_aggregate_goods_only_df[
+        (regional_aggregate_goods_only_df['HS_total_imports'] > 0) & 
+        (regional_aggregate_goods_only_df['TiVA_total_imports'] > 0)
+    ].copy()
+    
+    if len(log_goods_only_data) > 0:
+        # Create log scale plot
+        fig_goods_only_log = go.Figure()
+        
+        # Add HS to BEA mapped data (original dots)
+        fig_goods_only_log.add_trace(go.Scatter(
+            x=log_goods_only_data['HS_total_imports'],
+            y=log_goods_only_data['TiVA_total_imports'],
+            mode='markers+text',
+            text=log_goods_only_data['region'],
+            textposition='top center',
+            marker=dict(size=10, color='#636EFA'),
+            name='HS to BEA Mapped (2024) - Goods Only',
+            hovertemplate='<b>%{text}</b><br>HS to BEA: $%{x:,.0f}<br>TiVA: $%{y:,.0f}<br>BEA Codes: %{customdata}<extra></extra>',
+            customdata=log_goods_only_data['bea_codes_count']
+        ))
+        
+        # Add 45-degree line for reference on log scale
+        min_val_goods_only = min(
+            log_goods_only_data['HS_total_imports'].min(), 
+            log_goods_only_data['TiVA_total_imports'].min()
+        )
+        max_val_goods_only_log = max(
+            log_goods_only_data['HS_total_imports'].max(), 
+            log_goods_only_data['TiVA_total_imports'].max()
+        )
+        fig_goods_only_log.add_shape(type='line', x0=min_val_goods_only, y0=min_val_goods_only, x1=max_val_goods_only_log, y1=max_val_goods_only_log,
+                                     line=dict(color='red', dash='dash', width=2),
+                                     name='Perfect correlation')
+        
+        # Update layout for log scale
+        fig_goods_only_log.update_layout(
+            title=title_goods_only + ' (Log Scale)',
+            xaxis_title='HS to BEA Import Values (USD) - Goods Only',
+            yaxis_title='TiVA Imports (2023, USD) - Goods Only',
+            template='plotly_dark',
+            xaxis_type='log',
+            yaxis_type='log',
+            legend=dict(
+                x=0.02,
+                y=0.98,
+                bgcolor='rgba(0,0,0,0.5)',
+                bordercolor='rgba(255,255,255,0.2)',
+                borderwidth=1
+            )
+        )
+        
+        # Save goods-only regional aggregate log HTML plot
+        goods_only_aggregate_log_path = os.path.join(html_log_dir, 'regional_aggregate_goods_only_scatter_log.html')
+        fig_goods_only_log.write_html(goods_only_aggregate_log_path)
 
 # Create discrepancies table (BEA codes with >30% difference)
 discrepancies_list = []
@@ -851,7 +997,9 @@ master_html_content = f"""
                 <li><strong>Pink circles (USATradeOnline 2023):</strong> These are hard-coded values extracted from USA Trade Online for 2023, acting as baseline comparisons for what we should be seeing in the absence of our crosswalk.</li>
             </ul>
             
-            <p><strong>Interpreting Deviations:</strong> The deviations between these data points, assuming the construction is correct (noting that for Europe we might not be including all the correct countries, though we put low probability on this), should be solely attributable to services trade and not a reflection on the quality of our crosswalk.</p>
+            <p><strong>Goods Only:</strong> Assuming the data construction is correct (i.e. that the correct countries are included where they should be), then the deviations here should be the 
+            result of the inclusion of services imports. I identified the ~30 services exports (they are, functionally, the 'commodities' with non-zero import value from the TiVA
+            Tables, but with 0 values from the HS to BEA crosswalk. When we remove these, we can similarly create a scatter plot of the goods-only TiVA tables vs the hs-to-bea crosswalk which itself should be goods-only. These are the final two scatters.<p>
         </div>
         
         <div class="plot-container">
@@ -862,6 +1010,17 @@ master_html_content = f"""
         <div class="plot-container">
             <h3>Regional Aggregates - Log Scale</h3>
             <iframe src="regional_HS_BEA_mapping/html_log/regional_aggregate_scatter_log.html"></iframe>
+        </div>
+        
+        <div class="plot-container">
+            <h3>Goods-Only Regional Aggregates - Regular Scale</h3>
+            <p>This plot shows only the BEA codes that have non-zero values in our HS-to-BEA mapping, providing a more direct goods-to-goods comparison by excluding services-only BEA categories from the TiVA totals.</p>
+            <iframe src="regional_HS_BEA_mapping/html/regional_aggregate_goods_only_scatter.html"></iframe>
+        </div>
+        
+        <div class="plot-container">
+            <h3>Goods-Only Regional Aggregates - Log Scale</h3>
+            <iframe src="regional_HS_BEA_mapping/html_log/regional_aggregate_goods_only_scatter_log.html"></iframe>
         </div>
     </div>
     
