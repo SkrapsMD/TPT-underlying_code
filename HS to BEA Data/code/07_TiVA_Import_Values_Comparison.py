@@ -641,6 +641,9 @@ for region_key, comparison_df in all_comparisons.items():
     ].copy()
     
     for _, row in large_discrepancies.iterrows():
+        # Check if this is likely a services category (TiVA > 0, HS = 0)
+        likely_services = (row['TiVA_total_imports'] > 0) and (row['HS_total_imports'] == 0)
+        
         discrepancies_list.append({
             'region': region_key,
             'usummary_code': row['usummary_code'],
@@ -648,7 +651,8 @@ for region_key, comparison_df in all_comparisons.items():
             'HS_total_imports': row['HS_total_imports'],
             'TiVA_total_imports': row['TiVA_total_imports'],
             'difference': row['difference'],
-            'pct_difference': row['pct_difference']
+            'pct_difference': row['pct_difference'],
+            'likely_services': '✓' if likely_services else ''
         })
 
 discrepancies_df = pd.DataFrame(discrepancies_list)
@@ -826,7 +830,8 @@ discrepancies_html_table = ""
 if len(discrepancies_df) > 0:
     discrepancies_html_table = f"""
     <h2>BEA Codes with >30% Difference from TiVA</h2>
-    <p>The ✓ symbol indicates BEA codes that originated from uncertain hierarchical HS-to-BEA mappings from either 2024 trade data or Schott 2023 data.</p>
+    <p>The ✓ symbol in "Hierarchical?" indicates BEA codes that originated from uncertain hierarchical HS-to-BEA mappings from either 2024 trade data or Schott 2023 data.</p>
+    <p>The ✓ symbol in "Likely Services" indicates BEA codes where TiVA has non-zero imports but our HS-to-BEA mapping has zero imports, suggesting these are services categories.</p>
     <table border="1" style="border-collapse: collapse; width: 100%; color: #ffffff; font-size: 11px;">
         <tr style="background-color: #333333;">
             <th>Region</th>
@@ -836,6 +841,7 @@ if len(discrepancies_df) > 0:
             <th>TiVA Total Imports</th>
             <th>Difference</th>
             <th>% Difference</th>
+            <th>Likely Services</th>
             <th>Hierarchical?</th>
             <th>HS Codes</th>
             <th>HS Descriptions</th>
@@ -851,6 +857,7 @@ if len(discrepancies_df) > 0:
         hs_descriptions = row.get('hs_descriptions', '')
         alternative_mappings = row.get('alternative_bea_mappings', '')
         mapping_sources = row.get('mapping_sources', '')
+        likely_services = row.get('likely_services', '')
         
         # Truncate long descriptions for display
         if len(hs_descriptions) > 80:
@@ -869,6 +876,7 @@ if len(discrepancies_df) > 0:
             <td>${row['TiVA_total_imports']:,.0f}</td>
             <td>${row['difference']:,.0f}</td>
             <td>{row['pct_difference']:.1f}%</td>
+            <td>{likely_services}</td>
             <td>{hierarchical_match}</td>
             <td>{hs_codes}</td>
             <td>{hs_descriptions}</td>
