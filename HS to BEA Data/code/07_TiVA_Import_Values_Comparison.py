@@ -132,6 +132,7 @@ os.makedirs(png_log_dir, exist_ok=True)
 # Store all comparison data for the discrepancies table
 all_comparisons = {}
 
+# First pass: collect all comparison data
 for tiva_file, region_key in region_mapping.items():
     tiva_path = os.path.join(tiva_dir, tiva_file)
     tiva_df = pd.read_csv(tiva_path)
@@ -169,6 +170,43 @@ for tiva_file, region_key in region_mapping.items():
     
     # Store for discrepancies table
     all_comparisons[region_key] = merged_comparison.copy()
+
+# Identify refined services codes: BEA codes that have HS=0 but TiVA>0 across ALL regions consistently
+print("Identifying refined services codes...")
+all_bea_codes = set()
+for comparison_df in all_comparisons.values():
+    all_bea_codes.update(comparison_df['usummary_code'].unique())
+
+refined_services_codes = set()
+for bea_code in all_bea_codes:
+    is_refined_service = True
+    for region_key, comparison_df in all_comparisons.items():
+        if region_key == 'world':  # Skip world for this analysis
+            continue
+        
+        # Find this BEA code in this region
+        code_data = comparison_df[comparison_df['usummary_code'] == bea_code]
+        if len(code_data) > 0:
+            hs_value = code_data['HS_total_imports'].iloc[0]
+            tiva_value = code_data['TiVA_total_imports'].iloc[0]
+            
+            # If this code doesn't have HS=0 and TiVA>0 in this region, it's not a refined service
+            if not (hs_value == 0 and tiva_value > 0):
+                is_refined_service = False
+                break
+        else:
+            # If the code doesn't exist in this region, it's not consistently a service
+            is_refined_service = False
+            break
+    
+    if is_refined_service:
+        refined_services_codes.add(bea_code)
+
+print(f"Found {len(refined_services_codes)} refined services codes: {sorted(refined_services_codes)}")
+
+# Second pass: create plots with refined services knowledge
+for tiva_file, region_key in region_mapping.items():
+    merged_comparison = all_comparisons[region_key]
     
     # Calculate correlation statistics
     valid_data = merged_comparison[(merged_comparison['HS_total_imports'] > 0) | (merged_comparison['TiVA_total_imports'] > 0)]
@@ -179,7 +217,7 @@ for tiva_file, region_key in region_mapping.items():
     else:
         title_text = f'{region_key} - HS to BEA vs TiVA Imports'
     
-    # Create interactive scatter plot with Plotly (regular scale)
+    # Create interactive scatter plot with Plotly (regular scale) - all data
     fig = px.scatter(merged_comparison, 
                      x='HS_total_imports', 
                      y='TiVA_total_imports',
@@ -205,6 +243,39 @@ for tiva_file, region_key in region_mapping.items():
     png_path = os.path.join(png_dir, png_filename)
     fig.write_image(png_path, width=1200, height=800)
     
+    # Create refined goods-only scatter plot (regular scale) - exclude refined services codes
+    refined_goods_data = merged_comparison[~merged_comparison['usummary_code'].isin(refined_services_codes)]
+    
+    if len(refined_goods_data) > 0:
+        # Recalculate correlation for refined goods-only data
+        valid_refined_data = refined_goods_data[(refined_goods_data['HS_total_imports'] > 0) | (refined_goods_data['TiVA_total_imports'] > 0)]
+        if len(valid_refined_data) > 1:
+            correlation_refined = np.corrcoef(valid_refined_data['HS_total_imports'], valid_refined_data['TiVA_total_imports'])[0, 1]
+            r2_refined = r2_score(valid_refined_data['TiVA_total_imports'], valid_refined_data['HS_total_imports'])
+            title_refined = f'{region_key} - HS to BEA vs TiVA Imports - Refined Goods Only (R² = {r2_refined:.3f}, r = {correlation_refined:.3f})'
+        else:
+            title_refined = f'{region_key} - HS to BEA vs TiVA Imports - Refined Goods Only'
+        
+        fig_refined = px.scatter(refined_goods_data, 
+                                 x='HS_total_imports', 
+                                 y='TiVA_total_imports',
+                                 hover_data=['usummary_code', 'usummary_name'],
+                                 labels={'HS_total_imports': 'HS to BEA Imports (2024)',
+                                         'TiVA_total_imports': 'TiVA Imports (2023)'},
+                                 title=title_refined,
+                                 template='plotly_dark')
+        
+        # Add 45-degree line for reference
+        max_val_refined = max(refined_goods_data['HS_total_imports'].max(), refined_goods_data['TiVA_total_imports'].max())
+        fig_refined.add_shape(type='line', x0=0, y0=0, x1=max_val_refined, y1=max_val_refined,
+                              line=dict(color='red', dash='dash', width=2),
+                              name='Perfect correlation')
+        
+        # Save refined goods-only HTML plot
+        html_refined_filename = f'{region_key}_HS_TiVA_scatter_refined_goods.html'
+        html_refined_path = os.path.join(html_dir, html_refined_filename)
+        fig_refined.write_html(html_refined_path)
+    
     # Create logged version plots
     # Filter out zero values for log scale
     log_data = merged_comparison[
@@ -213,7 +284,7 @@ for tiva_file, region_key in region_mapping.items():
     ].copy()
     
     if len(log_data) > 0:
-        # Create logged scatter plot
+        # Create logged scatter plot (all data)
         fig_log = px.scatter(log_data, 
                              x='HS_total_imports', 
                              y='TiVA_total_imports',
@@ -241,10 +312,47 @@ for tiva_file, region_key in region_mapping.items():
         png_log_filename = f'{region_key}_HS_TiVA_scatter_log.png'
         png_log_path = os.path.join(png_log_dir, png_log_filename)
         fig_log.write_image(png_log_path, width=1200, height=800)
+        
+        # Create refined goods-only logged scatter plot - exclude refined services codes
+        refined_log_data = log_data[~log_data['usummary_code'].isin(refined_services_codes)]
+        
+        if len(refined_log_data) > 0:
+            # Recalculate correlation for refined goods-only log data
+            valid_refined_log_data = refined_log_data[(refined_log_data['HS_total_imports'] > 0) & (refined_log_data['TiVA_total_imports'] > 0)]
+            if len(valid_refined_log_data) > 1:
+                correlation_refined_log = np.corrcoef(valid_refined_log_data['HS_total_imports'], valid_refined_log_data['TiVA_total_imports'])[0, 1]
+                r2_refined_log = r2_score(valid_refined_log_data['TiVA_total_imports'], valid_refined_log_data['HS_total_imports'])
+                title_refined_log = f'{region_key} - HS to BEA vs TiVA Imports - Refined Goods Only (Log Scale) (R² = {r2_refined_log:.3f}, r = {correlation_refined_log:.3f})'
+            else:
+                title_refined_log = f'{region_key} - HS to BEA vs TiVA Imports - Refined Goods Only (Log Scale)'
+            
+            fig_refined_log = px.scatter(refined_log_data, 
+                                         x='HS_total_imports', 
+                                         y='TiVA_total_imports',
+                                         hover_data=['usummary_code', 'usummary_name'],
+                                         labels={'HS_total_imports': 'HS to BEA Imports (2024)',
+                                                 'TiVA_total_imports': 'TiVA Imports (2023)'},
+                                         title=title_refined_log,
+                                         template='plotly_dark',
+                                         log_x=True,
+                                         log_y=True)
+            
+            # Add 45-degree line for reference on log scale
+            min_val_refined = min(refined_log_data['HS_total_imports'].min(), refined_log_data['TiVA_total_imports'].min())
+            max_val_refined_log = max(refined_log_data['HS_total_imports'].max(), refined_log_data['TiVA_total_imports'].max())
+            fig_refined_log.add_shape(type='line', x0=min_val_refined, y0=min_val_refined, x1=max_val_refined_log, y1=max_val_refined_log,
+                                      line=dict(color='red', dash='dash', width=2),
+                                      name='Perfect correlation')
+            
+            # Save refined goods-only logged HTML plot
+            html_refined_log_filename = f'{region_key}_HS_TiVA_scatter_refined_goods_log.html'
+            html_refined_log_path = os.path.join(html_log_dir, html_refined_log_filename)
+            fig_refined_log.write_html(html_refined_log_path)
 
 # Create regional aggregate data for the new tab
 regional_aggregate_data = []
 regional_aggregate_goods_only_data = []
+regional_aggregate_refined_goods_only_data = []
 
 for region_key, comparison_df in all_comparisons.items():
     if region_key != 'world':  # Skip world total for regional aggregates
@@ -268,6 +376,18 @@ for region_key, comparison_df in all_comparisons.items():
             'TiVA_total_imports': tiva_goods_total,
             'difference': hs_goods_total - tiva_goods_total,
             'bea_codes_count': len(goods_only_df)
+        })
+        
+        # Refined goods-only aggregates (exclude refined services codes)
+        refined_goods_only_df = comparison_df[~comparison_df['usummary_code'].isin(refined_services_codes)]
+        hs_refined_goods_total = refined_goods_only_df['HS_total_imports'].sum()
+        tiva_refined_goods_total = refined_goods_only_df['TiVA_total_imports'].sum()
+        regional_aggregate_refined_goods_only_data.append({
+            'region': region_key,
+            'HS_total_imports': hs_refined_goods_total,
+            'TiVA_total_imports': tiva_refined_goods_total,
+            'difference': hs_refined_goods_total - tiva_refined_goods_total,
+            'bea_codes_count': len(refined_goods_only_df)
         })
 
 # Add world total to regional aggregate data
@@ -537,10 +657,55 @@ if len(regional_aggregate_goods_only_df) > 0:
         customdata=regional_aggregate_goods_only_df['bea_codes_count']
     ))
     
+    # Add USATradeOnline 2024 data (X markers, same color)
+    for _, row in regional_aggregate_goods_only_df.iterrows():
+        region = row['region']
+        tiva_value = row['TiVA_total_imports']
+        
+        # Map region names to USATradeOnline data keys
+        region_mapping = {'CAN': 'CAN', 'CHN': 'CHN', 'Europe': 'Europe', 'JPN': 'JPN', 'MEX': 'MEX'}
+        
+        if region in region_mapping and region_mapping[region] in usa_trade_online_data:
+            usa_2024_value = usa_trade_online_data[region_mapping[region]]['2024']
+            fig_goods_only.add_trace(go.Scatter(
+                x=[usa_2024_value],
+                y=[tiva_value],
+                mode='markers+text',
+                text=[region],
+                textposition='bottom center',
+                marker=dict(size=12, color='#636EFA', symbol='x'),
+                name='USATradeOnline 2024' if region == 'CAN' else '',
+                showlegend=region == 'CAN',
+                hovertemplate=f'<b>{region}</b><br>USATradeOnline 2024: $%{{x:,.0f}}<br>TiVA: $%{{y:,.0f}}<extra></extra>'
+            ))
+    
+    # Add USATradeOnline 2023 data (circles, different color)
+    for _, row in regional_aggregate_goods_only_df.iterrows():
+        region = row['region']
+        tiva_value = row['TiVA_total_imports']
+        
+        # Map region names to USATradeOnline data keys
+        region_mapping = {'CAN': 'CAN', 'CHN': 'CHN', 'Europe': 'Europe', 'JPN': 'JPN', 'MEX': 'MEX'}
+        
+        if region in region_mapping and region_mapping[region] in usa_trade_online_data:
+            usa_2023_value = usa_trade_online_data[region_mapping[region]]['2023']
+            fig_goods_only.add_trace(go.Scatter(
+                x=[usa_2023_value],
+                y=[tiva_value],
+                mode='markers+text',
+                text=[region],
+                textposition='middle right',
+                marker=dict(size=10, color='#FF6692'),
+                name='USATradeOnline 2023' if region == 'CAN' else '',
+                showlegend=region == 'CAN',
+                hovertemplate=f'<b>{region}</b><br>USATradeOnline 2023: $%{{x:,.0f}}<br>TiVA: $%{{y:,.0f}}<extra></extra>'
+            ))
+    
     # Add 45-degree line for reference
     max_val_goods_only = max(
         regional_aggregate_goods_only_df['HS_total_imports'].max(), 
-        regional_aggregate_goods_only_df['TiVA_total_imports'].max()
+        regional_aggregate_goods_only_df['TiVA_total_imports'].max(),
+        max([usa_trade_online_data[region]['2024'] for region in usa_trade_online_data.keys()]) if usa_trade_online_data else 0
     )
     fig_goods_only.add_shape(type='line', x0=0, y0=0, x1=max_val_goods_only, y1=max_val_goods_only,
                              line=dict(color='red', dash='dash', width=2),
@@ -588,14 +753,62 @@ if len(regional_aggregate_goods_only_df) > 0:
             customdata=log_goods_only_data['bea_codes_count']
         ))
         
+        # Add USATradeOnline 2024 data (X markers, same color)
+        for _, row in log_goods_only_data.iterrows():
+            region = row['region']
+            tiva_value = row['TiVA_total_imports']
+            
+            # Map region names to USATradeOnline data keys
+            region_mapping = {'CAN': 'CAN', 'CHN': 'CHN', 'Europe': 'Europe', 'JPN': 'JPN', 'MEX': 'MEX'}
+            
+            if region in region_mapping and region_mapping[region] in usa_trade_online_data:
+                usa_2024_value = usa_trade_online_data[region_mapping[region]]['2024']
+                if usa_2024_value > 0:  # Only add if positive for log scale
+                    fig_goods_only_log.add_trace(go.Scatter(
+                        x=[usa_2024_value],
+                        y=[tiva_value],
+                        mode='markers+text',
+                        text=[region],
+                        textposition='bottom center',
+                        marker=dict(size=12, color='#636EFA', symbol='x'),
+                        name='USATradeOnline 2024' if region == 'CAN' else '',
+                        showlegend=region == 'CAN',
+                        hovertemplate=f'<b>{region}</b><br>USATradeOnline 2024: $%{{x:,.0f}}<br>TiVA: $%{{y:,.0f}}<extra></extra>'
+                    ))
+        
+        # Add USATradeOnline 2023 data (circles, different color)
+        for _, row in log_goods_only_data.iterrows():
+            region = row['region']
+            tiva_value = row['TiVA_total_imports']
+            
+            # Map region names to USATradeOnline data keys
+            region_mapping = {'CAN': 'CAN', 'CHN': 'CHN', 'Europe': 'Europe', 'JPN': 'JPN', 'MEX': 'MEX'}
+            
+            if region in region_mapping and region_mapping[region] in usa_trade_online_data:
+                usa_2023_value = usa_trade_online_data[region_mapping[region]]['2023']
+                if usa_2023_value > 0:  # Only add if positive for log scale
+                    fig_goods_only_log.add_trace(go.Scatter(
+                        x=[usa_2023_value],
+                        y=[tiva_value],
+                        mode='markers+text',
+                        text=[region],
+                        textposition='middle right',
+                        marker=dict(size=10, color='#FF6692'),
+                        name='USATradeOnline 2023' if region == 'CAN' else '',
+                        showlegend=region == 'CAN',
+                        hovertemplate=f'<b>{region}</b><br>USATradeOnline 2023: $%{{x:,.0f}}<br>TiVA: $%{{y:,.0f}}<extra></extra>'
+                    ))
+        
         # Add 45-degree line for reference on log scale
         min_val_goods_only = min(
             log_goods_only_data['HS_total_imports'].min(), 
-            log_goods_only_data['TiVA_total_imports'].min()
+            log_goods_only_data['TiVA_total_imports'].min(),
+            min([usa_trade_online_data[region]['2023'] for region in usa_trade_online_data.keys()]) if usa_trade_online_data else 1
         )
         max_val_goods_only_log = max(
             log_goods_only_data['HS_total_imports'].max(), 
-            log_goods_only_data['TiVA_total_imports'].max()
+            log_goods_only_data['TiVA_total_imports'].max(),
+            max([usa_trade_online_data[region]['2024'] for region in usa_trade_online_data.keys()]) if usa_trade_online_data else 1
         )
         fig_goods_only_log.add_shape(type='line', x0=min_val_goods_only, y0=min_val_goods_only, x1=max_val_goods_only_log, y1=max_val_goods_only_log,
                                      line=dict(color='red', dash='dash', width=2),
@@ -622,7 +835,7 @@ if len(regional_aggregate_goods_only_df) > 0:
         goods_only_aggregate_log_path = os.path.join(html_log_dir, 'regional_aggregate_goods_only_scatter_log.html')
         fig_goods_only_log.write_html(goods_only_aggregate_log_path)
 
-# Create discrepancies table (BEA codes with >30% difference)
+# Create discrepancies table (BEA codes with >5% difference)
 discrepancies_list = []
 for region_key, comparison_df in all_comparisons.items():
     # Calculate percentage difference
@@ -634,9 +847,9 @@ for region_key, comparison_df in all_comparisons.items():
     valid_comparison['max_value'] = np.maximum(valid_comparison['HS_total_imports'], valid_comparison['TiVA_total_imports'])
     valid_comparison['pct_difference'] = np.abs(valid_comparison['difference']) / valid_comparison['max_value'] * 100
     
-    # Filter for >30% difference and non-zero values
+    # Filter for >5 difference and non-zero values
     large_discrepancies = valid_comparison[
-        (valid_comparison['pct_difference'] > 30) & 
+        (valid_comparison['pct_difference'] > 5) & 
         (valid_comparison['max_value'] > 0)
     ].copy()
     
@@ -984,7 +1197,9 @@ master_html_content = f"""
     <div class="tabs">
         <button class="tablinks active" onclick="openTab(event, 'regional-aggregates')">Regional Aggregates</button>
         <button class="tablinks" onclick="openTab(event, 'regular-plots')">Regular Scale</button>
+        <button class="tablinks" onclick="openTab(event, 'refined-regular-plots')">Refined Goods - Regular Scale</button>
         <button class="tablinks" onclick="openTab(event, 'log-plots')">Log Scale</button>
+        <button class="tablinks" onclick="openTab(event, 'refined-log-plots')">Refined Goods - Log Scale</button>
         <button class="tablinks" onclick="openTab(event, 'discrepancies')">Large Discrepancies</button>
     </div>
     
@@ -1059,6 +1274,34 @@ for region_key in ['world', 'CAN', 'CHN', 'Europe', 'JPN', 'MEX', 'RoAsia', 'RoW
 master_html_content += """
     </div>
     
+    <div id="refined-regular-plots" class="tabcontent">
+        <h2>Refined Goods - Regular Scale Plots</h2>
+        <p>These plots exclude BEA codes that consistently have HS=0 but TiVA>0 across all regions, providing a more refined goods-only comparison.</p>
+"""
+
+# Add each region's refined regular plot
+for region_key in ['world', 'CAN', 'CHN', 'Europe', 'JPN', 'MEX', 'RoAsia', 'RoWorld']:
+    html_refined_filename = f'{region_key}_HS_TiVA_scatter_refined_goods.html'
+    
+    # Special handling for world total
+    if region_key == 'world':
+        title = "World Total - HS to BEA vs TiVA Imports - Refined Goods Only"
+        description = "<p>This is the refined goods-only comparison of the world total from our HS mapping to the world total imports from the TiVA tables.</p>"
+    else:
+        title = f"{region_key} - HS to BEA vs TiVA Imports - Refined Goods Only"
+        description = ""
+    
+    master_html_content += f"""
+        <div class="plot-container">
+            <h3>{title}</h3>
+            {description}
+            <iframe src="regional_HS_BEA_mapping/html/{html_refined_filename}"></iframe>
+        </div>
+    """
+
+master_html_content += """
+    </div>
+    
     <div id="log-plots" class="tabcontent">
         <h2>Log Scale Plots</h2>
 """
@@ -1080,6 +1323,34 @@ for region_key in ['world', 'CAN', 'CHN', 'Europe', 'JPN', 'MEX', 'RoAsia', 'RoW
             <h3>{title}</h3>
             {description}
             <iframe src="regional_HS_BEA_mapping/html_log/{html_log_filename}"></iframe>
+        </div>
+    """
+
+master_html_content += """
+    </div>
+    
+    <div id="refined-log-plots" class="tabcontent">
+        <h2>Refined Goods - Log Scale Plots</h2>
+        <p>These plots exclude BEA codes that consistently have HS=0 but TiVA>0 across all regions, providing a more refined goods-only comparison on log scale.</p>
+"""
+
+# Add each region's refined log plot
+for region_key in ['world', 'CAN', 'CHN', 'Europe', 'JPN', 'MEX', 'RoAsia', 'RoWorld']:
+    html_refined_log_filename = f'{region_key}_HS_TiVA_scatter_refined_goods_log.html'
+    
+    # Special handling for world total
+    if region_key == 'world':
+        title = "World Total - HS to BEA vs TiVA Imports - Refined Goods Only (Log Scale)"
+        description = "<p>This is the refined goods-only comparison of the world total from our HS mapping to the world total imports from the TiVA tables on log scale.</p>"
+    else:
+        title = f"{region_key} - HS to BEA vs TiVA Imports - Refined Goods Only (Log Scale)"
+        description = ""
+    
+    master_html_content += f"""
+        <div class="plot-container">
+            <h3>{title}</h3>
+            {description}
+            <iframe src="regional_HS_BEA_mapping/html_log/{html_refined_log_filename}"></iframe>
         </div>
     """
 
