@@ -324,6 +324,55 @@ print(f"Failed BEA matches: {failed_matches}")
 print(f"Match rate: {successful_matches/total_commodities*100:.1f}%")
 
 complete_output_path = os.path.join(get_data_path('working', '02_HS_to_Naics_to_BEA'), '03_complete_hs_to_bea_mapping.csv')
+
+# ===============================================================================
+# !!!!! MANUAL HS TO BEA MAPPING OVERRIDES !!!!!
+# ===============================================================================
+# Simple manual corrections applied directly to the final mapping before save
+# ===============================================================================
+
+print(f"\n{'='*60}")
+print("APPLYING MANUAL HS-TO-BEA MAPPING OVERRIDES")
+print(f"{'='*60}")
+
+# Manual override mappings: HS code -> BEA Detail code
+# Add new overrides by adding entries to this dictionary
+manual_overrides = {
+    '8703230140': '336112',  # Light truck manufacturing
+    # Add more mappings here as needed:
+    # '1234567890': '123456',  # Example description
+    # '0987654321': '654321',  # Another example
+}
+
+# Apply all manual overrides
+overrides_applied = 0
+overrides_failed = 0
+
+for hs_code, bea_code in manual_overrides.items():
+    override_mask = complete_mapping['commodity'].astype(str) == hs_code
+    if override_mask.any():
+        old_naics_mds = complete_mapping.loc[override_mask, 'naicsMDS'].iloc[0]
+        old_bea_detail = complete_mapping.loc[override_mask, 'matched_bea_detail'].iloc[0]
+        old_bea_naics = complete_mapping.loc[override_mask, 'matched_bea_naics'].iloc[0]
+        
+        # Update all BEA-related fields
+        complete_mapping.loc[override_mask, 'naicsMDS'] = bea_code
+        complete_mapping.loc[override_mask, 'matched_bea_detail'] = bea_code
+        complete_mapping.loc[override_mask, 'matched_bea_naics'] = bea_code
+        
+        print(f"✓ OVERRIDE APPLIED: HS {hs_code} → BEA {bea_code}")
+        print(f"  naicsMDS: {old_naics_mds} → {bea_code}")
+        print(f"  matched_bea_detail: {old_bea_detail} → {bea_code}")
+        print(f"  matched_bea_naics: {old_bea_naics} → {bea_code}")
+        overrides_applied += 1
+    else:
+        print(f"⚠ WARNING: HS code {hs_code} not found - override skipped")
+        overrides_failed += 1
+
+print(f"\nOverride Summary: {overrides_applied} applied, {overrides_failed} failed")
+
+print(f"{'='*60}\n")
+
 # Ensure matched_bea_detail is set to 'S00300' when matched_bea_naics is 'S00300'
 complete_mapping.loc[complete_mapping['matched_bea_naics'] == 'S00300', 'matched_bea_detail'] = 'S00300'
 complete_mapping.to_csv(complete_output_path, index=False)
