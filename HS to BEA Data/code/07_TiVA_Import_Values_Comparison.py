@@ -847,9 +847,8 @@ for region_key, comparison_df in all_comparisons.items():
     valid_comparison['max_value'] = np.maximum(valid_comparison['HS_total_imports'], valid_comparison['TiVA_total_imports'])
     valid_comparison['pct_difference'] = np.abs(valid_comparison['difference']) / valid_comparison['max_value'] * 100
     
-    # Filter for >5 difference and non-zero values
+    # Filter for all non-zero values (remove percentage threshold to show entire set)
     large_discrepancies = valid_comparison[
-        (valid_comparison['pct_difference'] > 5) & 
         (valid_comparison['max_value'] > 0)
     ].copy()
     
@@ -1042,7 +1041,7 @@ discrepancies_df.to_csv(discrepancies_path, index=False)
 discrepancies_html_table = ""
 if len(discrepancies_df) > 0:
     discrepancies_html_table = f"""
-    <h2>BEA Codes with >30% Difference from TiVA</h2>
+    <h2>All BEA Codes - Complete TiVA Comparison Table</h2>
     <p>The ✓ symbol in "Hierarchical?" indicates BEA codes that originated from uncertain hierarchical HS-to-BEA mappings from either 2024 trade data or Schott 2023 data.</p>
     <p>The ✓ symbol in "Likely Services" indicates BEA codes where TiVA has non-zero imports but our HS-to-BEA mapping has zero imports, suggesting these are services categories.</p>
     <table border="1" style="border-collapse: collapse; width: 100%; color: #ffffff; font-size: 11px;">
@@ -1100,7 +1099,7 @@ if len(discrepancies_df) > 0:
     
     discrepancies_html_table += "</table>"
 else:
-    discrepancies_html_table = "<h2>No BEA codes with >30% difference found</h2>"
+    discrepancies_html_table = "<h2>No BEA codes found</h2>"
 
 # Create a master HTML file with tabs
 master_html_content = f"""
@@ -1200,7 +1199,7 @@ master_html_content = f"""
         <button class="tablinks" onclick="openTab(event, 'refined-regular-plots')">Refined Goods - Regular Scale</button>
         <button class="tablinks" onclick="openTab(event, 'log-plots')">Log Scale</button>
         <button class="tablinks" onclick="openTab(event, 'refined-log-plots')">Refined Goods - Log Scale</button>
-        <button class="tablinks" onclick="openTab(event, 'discrepancies')">Large Discrepancies</button>
+        <button class="tablinks" onclick="openTab(event, 'discrepancies')">Complete Data Table</button>
     </div>
     
     <div id="regional-aggregates" class="tabcontent active">
