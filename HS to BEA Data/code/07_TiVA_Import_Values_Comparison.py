@@ -217,13 +217,22 @@ for tiva_file, region_key in region_mapping.items():
     else:
         title_text = f'{region_key} - HS to BEA vs TiVA Imports'
     
-    # Create interactive scatter plot with Plotly (regular scale) - all data
+    # Add color coding for U.Summary codes that map to Summary code 334 (Computer and electronic products)
+    codes_334 = ['3341', '3342', '3344', '3345', '334X']
+    merged_comparison['color_category'] = merged_comparison['usummary_code'].apply(
+        lambda x: 'Computer/Electronics (334)' if x in codes_334 else 'Other Industries'
+    )
+    
+    # Create interactive scatter plot with Plotly (regular scale) - all data with color coding
     fig = px.scatter(merged_comparison, 
                      x='HS_total_imports', 
                      y='TiVA_total_imports',
+                     color='color_category',
+                     color_discrete_map={'Computer/Electronics (334)': '#FF6B6B', 'Other Industries': '#4ECDC4'},
                      hover_data=['usummary_code', 'usummary_name'],
                      labels={'HS_total_imports': 'HS to BEA Imports (2024)',
-                             'TiVA_total_imports': 'TiVA Imports (2023)'},
+                             'TiVA_total_imports': 'TiVA Imports (2023)',
+                             'color_category': 'Industry Type'},
                      title=title_text,
                      template='plotly_dark')
     
@@ -232,6 +241,21 @@ for tiva_file, region_key in region_mapping.items():
     fig.add_shape(type='line', x0=0, y0=0, x1=max_val, y1=max_val,
                   line=dict(color='red', dash='dash', width=2),
                   name='Perfect correlation')
+    
+    # Update layout for better legend positioning
+    fig.update_layout(
+        legend=dict(
+            x=1.02,
+            y=1,
+            xanchor='left',
+            yanchor='top',
+            bgcolor='rgba(0,0,0,0.8)',
+            bordercolor='rgba(255,255,255,0.3)',
+            borderwidth=1,
+            font=dict(size=12)
+        ),
+        margin=dict(r=200)
+    )
     
     # Save interactive HTML plot
     html_filename = f'{region_key}_HS_TiVA_scatter.html'
@@ -259,9 +283,12 @@ for tiva_file, region_key in region_mapping.items():
         fig_refined = px.scatter(refined_goods_data, 
                                  x='HS_total_imports', 
                                  y='TiVA_total_imports',
+                                 color='color_category',
+                                 color_discrete_map={'Computer/Electronics (334)': '#FF6B6B', 'Other Industries': '#4ECDC4'},
                                  hover_data=['usummary_code', 'usummary_name'],
                                  labels={'HS_total_imports': 'HS to BEA Imports (2024)',
-                                         'TiVA_total_imports': 'TiVA Imports (2023)'},
+                                         'TiVA_total_imports': 'TiVA Imports (2023)',
+                                         'color_category': 'Industry Type'},
                                  title=title_refined,
                                  template='plotly_dark')
         
@@ -270,6 +297,21 @@ for tiva_file, region_key in region_mapping.items():
         fig_refined.add_shape(type='line', x0=0, y0=0, x1=max_val_refined, y1=max_val_refined,
                               line=dict(color='red', dash='dash', width=2),
                               name='Perfect correlation')
+        
+        # Update layout for better legend positioning
+        fig_refined.update_layout(
+            legend=dict(
+                x=1.02,
+                y=1,
+                xanchor='left',
+                yanchor='top',
+                bgcolor='rgba(0,0,0,0.8)',
+                bordercolor='rgba(255,255,255,0.3)',
+                borderwidth=1,
+                font=dict(size=12)
+            ),
+            margin=dict(r=200)
+        )
         
         # Save refined goods-only HTML plot
         html_refined_filename = f'{region_key}_HS_TiVA_scatter_refined_goods.html'
@@ -288,9 +330,12 @@ for tiva_file, region_key in region_mapping.items():
         fig_log = px.scatter(log_data, 
                              x='HS_total_imports', 
                              y='TiVA_total_imports',
+                             color='color_category',
+                             color_discrete_map={'Computer/Electronics (334)': '#FF6B6B', 'Other Industries': '#4ECDC4'},
                              hover_data=['usummary_code', 'usummary_name'],
                              labels={'HS_total_imports': 'HS to BEA Imports (2024)',
-                                     'TiVA_total_imports': 'TiVA Imports (2023)'},
+                                     'TiVA_total_imports': 'TiVA Imports (2023)',
+                                     'color_category': 'Industry Type'},
                              title=title_text + ' (Log Scale)',
                              template='plotly_dark',
                              log_x=True,
@@ -302,6 +347,21 @@ for tiva_file, region_key in region_mapping.items():
         fig_log.add_shape(type='line', x0=min_val, y0=min_val, x1=max_val_log, y1=max_val_log,
                           line=dict(color='red', dash='dash', width=2),
                           name='Perfect correlation')
+        
+        # Update layout for better legend positioning
+        fig_log.update_layout(
+            legend=dict(
+                x=1.02,
+                y=1,
+                xanchor='left',
+                yanchor='top',
+                bgcolor='rgba(0,0,0,0.8)',
+                bordercolor='rgba(255,255,255,0.3)',
+                borderwidth=1,
+                font=dict(size=12)
+            ),
+            margin=dict(r=200)
+        )
         
         # Save logged HTML plot
         html_log_filename = f'{region_key}_HS_TiVA_scatter_log.html'
@@ -329,9 +389,12 @@ for tiva_file, region_key in region_mapping.items():
             fig_refined_log = px.scatter(refined_log_data, 
                                          x='HS_total_imports', 
                                          y='TiVA_total_imports',
+                                         color='color_category',
+                                         color_discrete_map={'Computer/Electronics (334)': '#FF6B6B', 'Other Industries': '#4ECDC4'},
                                          hover_data=['usummary_code', 'usummary_name'],
                                          labels={'HS_total_imports': 'HS to BEA Imports (2024)',
-                                                 'TiVA_total_imports': 'TiVA Imports (2023)'},
+                                                 'TiVA_total_imports': 'TiVA Imports (2023)',
+                                                 'color_category': 'Industry Type'},
                                          title=title_refined_log,
                                          template='plotly_dark',
                                          log_x=True,
@@ -344,10 +407,79 @@ for tiva_file, region_key in region_mapping.items():
                                       line=dict(color='red', dash='dash', width=2),
                                       name='Perfect correlation')
             
+            # Update layout for better legend positioning
+            fig_refined_log.update_layout(
+                legend=dict(
+                    x=1.02,
+                    y=1,
+                    xanchor='left',
+                    yanchor='top',
+                    bgcolor='rgba(0,0,0,0.8)',
+                    bordercolor='rgba(255,255,255,0.3)',
+                    borderwidth=1,
+                    font=dict(size=12)
+                ),
+                margin=dict(r=200)
+            )
+            
             # Save refined goods-only logged HTML plot
             html_refined_log_filename = f'{region_key}_HS_TiVA_scatter_refined_goods_log.html'
             html_refined_log_path = os.path.join(html_log_dir, html_refined_log_filename)
             fig_refined_log.write_html(html_refined_log_path)
+
+# Create BEA Summary level aggregation mapping
+bea_hierarchy_summary = bea_hierarchy[['U.Summary', 'Summary']].drop_duplicates()
+usummary_to_summary = dict(zip(bea_hierarchy_summary['U.Summary'], bea_hierarchy_summary['Summary']))
+
+# Create Summary level aggregated data for all regions
+summary_level_data = {}
+for region_key, comparison_df in all_comparisons.items():
+    if region_key != 'world':  # Skip world total for now, will handle separately
+        # Map U.Summary codes to Summary codes
+        comparison_df['summary_code'] = comparison_df['usummary_code'].map(usummary_to_summary)
+        comparison_df['summary_code'] = comparison_df['summary_code'].fillna(comparison_df['usummary_code'])  # Keep unmapped codes as is
+        
+        # Aggregate to Summary level by summing impVal within each summary_code
+        summary_aggregated = comparison_df.groupby('summary_code').agg({
+            'HS_total_imports': 'sum',
+            'TiVA_total_imports': 'sum'
+        }).reset_index()
+        
+        summary_aggregated['region'] = region_key
+        summary_aggregated['difference'] = summary_aggregated['HS_total_imports'] - summary_aggregated['TiVA_total_imports']
+        
+        # Store for this region
+        summary_level_data[region_key] = summary_aggregated
+
+# Handle world total separately 
+if 'world' in all_comparisons:
+    world_comparison = all_comparisons['world']
+    world_comparison['summary_code'] = world_comparison['usummary_code'].map(usummary_to_summary)
+    world_comparison['summary_code'] = world_comparison['summary_code'].fillna(world_comparison['usummary_code'])
+    
+    world_summary_aggregated = world_comparison.groupby('summary_code').agg({
+        'HS_total_imports': 'sum',
+        'TiVA_total_imports': 'sum'
+    }).reset_index()
+    
+    world_summary_aggregated['region'] = 'World Total'
+    world_summary_aggregated['difference'] = world_summary_aggregated['HS_total_imports'] - world_summary_aggregated['TiVA_total_imports']
+    summary_level_data['world'] = world_summary_aggregated
+
+# Combine all Summary level data for visualization
+all_summary_level_data = []
+for region_data in summary_level_data.values():
+    all_summary_level_data.extend(region_data.to_dict('records'))
+
+summary_level_df = pd.DataFrame(all_summary_level_data)
+
+# Add summary code names for better visualization
+summary_names = bea_hierarchy[['Summary', 'summary title']].drop_duplicates()
+summary_names = summary_names.rename(columns={'Summary': 'summary_code', 'summary title': 'summary_name'})
+summary_level_df = summary_level_df.merge(summary_names, on='summary_code', how='left')
+summary_level_df['summary_name'] = summary_level_df['summary_name'].fillna('Unknown')
+
+print(f"Created Summary level aggregation with {len(summary_level_df)} BEA Summary x Region combinations")
 
 # Create regional aggregate data for the new tab
 regional_aggregate_data = []
@@ -510,12 +642,16 @@ if len(regional_aggregate_df) > 0:
         yaxis_title='TiVA Imports (2023, USD)',
         template='plotly_dark',
         legend=dict(
-            x=0.02,
-            y=0.98,
-            bgcolor='rgba(0,0,0,0.5)',
-            bordercolor='rgba(255,255,255,0.2)',
-            borderwidth=1
-        )
+            x=1.02,
+            y=1,
+            xanchor='left',
+            yanchor='top',
+            bgcolor='rgba(0,0,0,0.8)',
+            bordercolor='rgba(255,255,255,0.3)',
+            borderwidth=1,
+            font=dict(size=12)
+        ),
+        margin=dict(r=200)
     )
     
     # Save regional aggregate HTML plot
@@ -614,12 +750,16 @@ if len(regional_aggregate_df) > 0:
             xaxis_type='log',
             yaxis_type='log',
             legend=dict(
-                x=0.02,
-                y=0.98,
-                bgcolor='rgba(0,0,0,0.5)',
-                bordercolor='rgba(255,255,255,0.2)',
-                borderwidth=1
-            )
+                x=1.02,
+                y=1,
+                xanchor='left',
+                yanchor='top',
+                bgcolor='rgba(0,0,0,0.8)',
+                bordercolor='rgba(255,255,255,0.3)',
+                borderwidth=1,
+                font=dict(size=12)
+            ),
+            margin=dict(r=200)
         )
         
         # Save regional aggregate log HTML plot
@@ -718,12 +858,16 @@ if len(regional_aggregate_goods_only_df) > 0:
         yaxis_title='TiVA Imports (2023, USD) - Goods Only',
         template='plotly_dark',
         legend=dict(
-            x=0.02,
-            y=0.98,
-            bgcolor='rgba(0,0,0,0.5)',
-            bordercolor='rgba(255,255,255,0.2)',
-            borderwidth=1
-        )
+            x=1.02,
+            y=1,
+            xanchor='left',
+            yanchor='top',
+            bgcolor='rgba(0,0,0,0.8)',
+            bordercolor='rgba(255,255,255,0.3)',
+            borderwidth=1,
+            font=dict(size=12)
+        ),
+        margin=dict(r=200)
     )
     
     # Save goods-only regional aggregate HTML plot
@@ -823,17 +967,222 @@ if len(regional_aggregate_goods_only_df) > 0:
             xaxis_type='log',
             yaxis_type='log',
             legend=dict(
-                x=0.02,
-                y=0.98,
-                bgcolor='rgba(0,0,0,0.5)',
-                bordercolor='rgba(255,255,255,0.2)',
-                borderwidth=1
-            )
+                x=1.02,
+                y=1,
+                xanchor='left',
+                yanchor='top',
+                bgcolor='rgba(0,0,0,0.8)',
+                bordercolor='rgba(255,255,255,0.3)',
+                borderwidth=1,
+                font=dict(size=12)
+            ),
+            margin=dict(r=200)
         )
         
         # Save goods-only regional aggregate log HTML plot
         goods_only_aggregate_log_path = os.path.join(html_log_dir, 'regional_aggregate_goods_only_scatter_log.html')
         fig_goods_only_log.write_html(goods_only_aggregate_log_path)
+
+# Create Summary level scatter plots
+if len(summary_level_df) > 0:
+    print("Creating Summary level scatter plots...")
+    
+    # Calculate correlation statistics for Summary level data
+    valid_summary_data = summary_level_df[
+        (summary_level_df['HS_total_imports'] > 0) | 
+        (summary_level_df['TiVA_total_imports'] > 0)
+    ]
+    
+    if len(valid_summary_data) > 1:
+        correlation_summary = np.corrcoef(valid_summary_data['HS_total_imports'], valid_summary_data['TiVA_total_imports'])[0, 1]
+        r2_summary = r2_score(valid_summary_data['TiVA_total_imports'], valid_summary_data['HS_total_imports'])
+        title_summary = f'BEA Summary Level - HS to BEA vs TiVA Imports (R² = {r2_summary:.3f}, r = {correlation_summary:.3f})'
+    else:
+        title_summary = 'BEA Summary Level - HS to BEA vs TiVA Imports'
+    
+    # Create regular scale Summary level plot
+    fig_summary = px.scatter(summary_level_df, 
+                             x='HS_total_imports', 
+                             y='TiVA_total_imports',
+                             color='region',
+                             hover_data=['summary_code', 'summary_name'],
+                             labels={'HS_total_imports': 'HS to BEA Imports (2024)',
+                                     'TiVA_total_imports': 'TiVA Imports (2023)',
+                                     'region': 'Region'},
+                             title=title_summary,
+                             template='plotly_dark')
+    
+    # Add 45-degree line for reference
+    max_val_summary = max(summary_level_df['HS_total_imports'].max(), summary_level_df['TiVA_total_imports'].max())
+    fig_summary.add_shape(type='line', x0=0, y0=0, x1=max_val_summary, y1=max_val_summary,
+                          line=dict(color='red', dash='dash', width=2),
+                          name='Perfect correlation')
+    
+    # Update layout
+    fig_summary.update_layout(
+        xaxis_title='HS to BEA Import Values (USD) - Summary Level',
+        yaxis_title='TiVA Imports (2023, USD) - Summary Level',
+        legend=dict(
+            x=1.02,
+            y=1,
+            xanchor='left',
+            yanchor='top',
+            bgcolor='rgba(0,0,0,0.8)',
+            bordercolor='rgba(255,255,255,0.3)',
+            borderwidth=1,
+            font=dict(size=12)
+        ),
+        margin=dict(r=200)
+    )
+    
+    # Save Summary level HTML plot
+    summary_level_path = os.path.join(html_dir, 'summary_level_scatter.html')
+    fig_summary.write_html(summary_level_path)
+    
+    # Create log scale Summary level plot
+    log_summary_data = summary_level_df[
+        (summary_level_df['HS_total_imports'] > 0) & 
+        (summary_level_df['TiVA_total_imports'] > 0)
+    ].copy()
+    
+    if len(log_summary_data) > 0:
+        # Create log scale plot
+        fig_summary_log = px.scatter(log_summary_data, 
+                                     x='HS_total_imports', 
+                                     y='TiVA_total_imports',
+                                     color='region',
+                                     hover_data=['summary_code', 'summary_name'],
+                                     labels={'HS_total_imports': 'HS to BEA Imports (2024)',
+                                             'TiVA_total_imports': 'TiVA Imports (2023)',
+                                             'region': 'Region'},
+                                     title=title_summary + ' (Log Scale)',
+                                     template='plotly_dark',
+                                     log_x=True,
+                                     log_y=True)
+        
+        # Add 45-degree line for reference on log scale
+        min_val_summary = min(log_summary_data['HS_total_imports'].min(), log_summary_data['TiVA_total_imports'].min())
+        max_val_summary_log = max(log_summary_data['HS_total_imports'].max(), log_summary_data['TiVA_total_imports'].max())
+        fig_summary_log.add_shape(type='line', x0=min_val_summary, y0=min_val_summary, x1=max_val_summary_log, y1=max_val_summary_log,
+                                  line=dict(color='red', dash='dash', width=2),
+                                  name='Perfect correlation')
+        
+        # Update layout for log scale
+        fig_summary_log.update_layout(
+            xaxis_title='HS to BEA Import Values (USD) - Summary Level',
+            yaxis_title='TiVA Imports (2023, USD) - Summary Level',
+            legend=dict(
+                x=1.02,
+                y=1,
+                xanchor='left',
+                yanchor='top',
+                bgcolor='rgba(0,0,0,0.8)',
+                bordercolor='rgba(255,255,255,0.3)',
+                borderwidth=1,
+                font=dict(size=12)
+            ),
+            margin=dict(r=200)
+        )
+        
+        # Save Summary level log HTML plot
+        summary_level_log_path = os.path.join(html_log_dir, 'summary_level_scatter_log.html')
+        fig_summary_log.write_html(summary_level_log_path)
+    
+    # Save Summary level comparison data
+    summary_comparison_path = os.path.join(csv_dir, 'summary_level_comparison.csv')
+    summary_level_df.to_csv(summary_comparison_path, index=False)
+    print(f"Saved Summary level comparison data to: {summary_comparison_path}")
+    
+    # Create individual region plots for Summary level
+    print("Creating individual Summary level plots by region...")
+    
+    regions_to_plot = ['CAN', 'CHN', 'Europe', 'JPN', 'MEX', 'RoAsia', 'RoWorld', 'World Total']
+    
+    for region in regions_to_plot:
+        region_data = summary_level_df[summary_level_df['region'] == region].copy()
+        
+        if len(region_data) > 0:
+            # Calculate correlation statistics for this region
+            valid_region_data = region_data[
+                (region_data['HS_total_imports'] > 0) | 
+                (region_data['TiVA_total_imports'] > 0)
+            ]
+            
+            if len(valid_region_data) > 1:
+                correlation_region = np.corrcoef(valid_region_data['HS_total_imports'], valid_region_data['TiVA_total_imports'])[0, 1]
+                r2_region = r2_score(valid_region_data['TiVA_total_imports'], valid_region_data['HS_total_imports'])
+                title_region = f'{region} - BEA Summary Level (R² = {r2_region:.3f}, r = {correlation_region:.3f})'
+            else:
+                title_region = f'{region} - BEA Summary Level'
+            
+            # Create regular scale region plot
+            fig_region = px.scatter(region_data, 
+                                   x='HS_total_imports', 
+                                   y='TiVA_total_imports',
+                                   hover_data=['summary_code', 'summary_name'],
+                                   labels={'HS_total_imports': 'HS to BEA Imports (2024)',
+                                           'TiVA_total_imports': 'TiVA Imports (2023)'},
+                                   title=title_region,
+                                   template='plotly_dark')
+            
+            # Add 45-degree line for reference
+            max_val_region = max(region_data['HS_total_imports'].max(), region_data['TiVA_total_imports'].max())
+            if max_val_region > 0:
+                fig_region.add_shape(type='line', x0=0, y0=0, x1=max_val_region, y1=max_val_region,
+                                    line=dict(color='red', dash='dash', width=2),
+                                    name='Perfect correlation')
+            
+            # Update layout
+            fig_region.update_layout(
+                xaxis_title='HS to BEA Import Values (USD) - Summary Level',
+                yaxis_title='TiVA Imports (2023, USD) - Summary Level'
+            )
+            
+            # Save region-specific HTML plot
+            region_filename = f'summary_level_{region.replace(" ", "_")}_scatter.html'
+            region_path = os.path.join(html_dir, region_filename)
+            fig_region.write_html(region_path)
+            
+            # Create log scale version if there's positive data
+            log_region_data = region_data[
+                (region_data['HS_total_imports'] > 0) & 
+                (region_data['TiVA_total_imports'] > 0)
+            ].copy()
+            
+            if len(log_region_data) > 0:
+                # Create log scale plot
+                fig_region_log = px.scatter(log_region_data, 
+                                           x='HS_total_imports', 
+                                           y='TiVA_total_imports',
+                                           hover_data=['summary_code', 'summary_name'],
+                                           labels={'HS_total_imports': 'HS to BEA Imports (2024)',
+                                                   'TiVA_total_imports': 'TiVA Imports (2023)'},
+                                           title=title_region + ' (Log Scale)',
+                                           template='plotly_dark',
+                                           log_x=True,
+                                           log_y=True)
+                
+                # Add 45-degree line for reference on log scale
+                min_val_region = min(log_region_data['HS_total_imports'].min(), log_region_data['TiVA_total_imports'].min())
+                max_val_region_log = max(log_region_data['HS_total_imports'].max(), log_region_data['TiVA_total_imports'].max())
+                fig_region_log.add_shape(type='line', x0=min_val_region, y0=min_val_region, x1=max_val_region_log, y1=max_val_region_log,
+                                        line=dict(color='red', dash='dash', width=2),
+                                        name='Perfect correlation')
+                
+                # Update layout for log scale
+                fig_region_log.update_layout(
+                    xaxis_title='HS to BEA Import Values (USD) - Summary Level',
+                    yaxis_title='TiVA Imports (2023, USD) - Summary Level'
+                )
+                
+                # Save region-specific log HTML plot
+                region_log_filename = f'summary_level_{region.replace(" ", "_")}_scatter_log.html'
+                region_log_path = os.path.join(html_log_dir, region_log_filename)
+                fig_region_log.write_html(region_log_path)
+            
+            print(f"Created Summary level plots for {region}")
+    
+    print("Summary level scatter plots created successfully.")
 
 # Create discrepancies table (BEA codes with >5% difference)
 discrepancies_list = []
@@ -1101,6 +1450,203 @@ if len(discrepancies_df) > 0:
 else:
     discrepancies_html_table = "<h2>No BEA codes found</h2>"
 
+# ========================================================================================
+# BEA 3341 NAICS CODE BREAKDOWN BAR CHARTS
+# ========================================================================================
+
+print("\nCreating BEA 3341 NAICS-level breakdown bar charts...")
+
+# Load semiconductor data to get NAICS-level breakdown
+semiconductor_data_path = os.path.join(os.path.dirname(__file__), '08_individual_code_validations', 'csvs', '02_semiconductors.csv')
+naics_bar_chart_html_content = ""
+
+if os.path.exists(semiconductor_data_path):
+    print(f"Loading semiconductor data from: {semiconductor_data_path}")
+    semiconductor_df = pd.read_csv(semiconductor_data_path)
+    
+    # Filter for BEA 3341 (Computer Equipment)
+    bea_3341_data = semiconductor_df[semiconductor_df['bea_code'] == '3341'].copy()
+    
+    if not bea_3341_data.empty:
+        print(f"Found {len(bea_3341_data)} records for BEA 3341")
+        
+        # Aggregate by region and NAICS code
+        naics_aggregated = bea_3341_data.groupby(['bea_region', 'naics_code'])['impVal'].sum().reset_index()
+        
+        # Get region order for consistent display
+        region_order = ['CAN', 'CHN', 'Europe', 'JPN', 'MEX', 'RoAsia', 'RoWorld']
+        naics_aggregated['region_order'] = naics_aggregated['bea_region'].map({r: i for i, r in enumerate(region_order)})
+        naics_aggregated = naics_aggregated.sort_values('region_order')
+        
+        # Create bar charts for each region
+        naics_charts_dir = os.path.join(validation_dir, 'regional_HS_BEA_mapping', 'naics_charts')
+        os.makedirs(naics_charts_dir, exist_ok=True)
+        
+        # Define NAICS code descriptions
+        naics_descriptions = {
+            '334111': 'Electronic computer manufacturing',
+            '334112': 'Computer storage device manufacturing', 
+            '334118': 'Computer terminal and other computer peripheral equipment manufacturing'
+        }
+        
+        region_names = {
+            'CAN': 'Canada',
+            'CHN': 'China', 
+            'Europe': 'Europe',
+            'JPN': 'Japan',
+            'MEX': 'Mexico',
+            'RoAsia': 'Rest of Asia',
+            'RoWorld': 'Rest of World'
+        }
+        
+        for region in region_order:
+            region_data = naics_aggregated[naics_aggregated['bea_region'] == region]
+            
+            if not region_data.empty:
+                # Create bar chart
+                fig_naics = go.Figure()
+                
+                # Add bars for each NAICS code
+                colors = ['#1f77b4', '#ff7f0e', '#2ca02c']  # Different colors for each NAICS
+                
+                for i, (_, row) in enumerate(region_data.iterrows()):
+                    naics_code = row['naics_code']
+                    import_value = row['impVal']
+                    
+                    fig_naics.add_trace(go.Bar(
+                        x=[naics_descriptions.get(naics_code, f'NAICS {naics_code}')],
+                        y=[import_value],
+                        name=f'NAICS {naics_code}',
+                        marker_color=colors[i % len(colors)],
+                        text=f'${import_value:,.0f}',
+                        textposition='auto',
+                        hovertemplate=f'<b>NAICS {naics_code}</b><br>%{{y:$,.0f}}<extra></extra>'
+                    ))
+                
+                # Update layout
+                fig_naics.update_layout(
+                    title=f'BEA 3341 (Computer Equipment) - NAICS Breakdown<br>{region_names.get(region, region)}',
+                    xaxis_title='NAICS Code',
+                    yaxis_title='Import Value (USD)',
+                    template='plotly_dark',
+                    showlegend=False,
+                    margin=dict(l=50, r=50, t=100, b=100),
+                    height=500
+                )
+                
+                # Format y-axis with appropriate scale
+                max_value = region_data['impVal'].max()
+                if max_value >= 1e9:
+                    fig_naics.update_yaxes(tickformat='$.1s')
+                else:
+                    fig_naics.update_yaxes(tickformat='$,.0f')
+                
+                # Save the chart
+                chart_filename = f'bea_3341_naics_breakdown_{region.lower()}.html'
+                chart_path = os.path.join(naics_charts_dir, chart_filename)
+                fig_naics.write_html(chart_path)
+                
+                print(f"Created NAICS breakdown chart for {region}: {chart_filename}")
+        
+        # Create world total aggregation for NAICS codes
+        world_naics_totals = bea_3341_data.groupby('naics_code')['impVal'].sum().reset_index()
+        world_naics_totals = world_naics_totals.sort_values('impVal', ascending=False)
+        
+        # Create world total bar chart
+        fig_world_naics = go.Figure()
+        
+        colors = ['#1f77b4', '#ff7f0e', '#2ca02c']
+        for i, (_, row) in enumerate(world_naics_totals.iterrows()):
+            naics_code = row['naics_code']
+            import_value = row['impVal']
+            
+            fig_world_naics.add_trace(go.Bar(
+                x=[naics_descriptions.get(naics_code, f'NAICS {naics_code}')],
+                y=[import_value],
+                name=f'NAICS {naics_code}',
+                marker_color=colors[i % len(colors)],
+                text=f'${import_value:,.0f}',
+                textposition='auto',
+                hovertemplate=f'<b>NAICS {naics_code}</b><br>%{{y:$,.0f}}<extra></extra>'
+            ))
+        
+        # Update layout for world total chart
+        fig_world_naics.update_layout(
+            title='BEA 3341 (Computer Equipment) - World Total NAICS Breakdown',
+            xaxis_title='NAICS Code',
+            yaxis_title='Import Value (USD)',
+            template='plotly_dark',
+            showlegend=False,
+            margin=dict(l=50, r=50, t=100, b=100),
+            height=500
+        )
+        
+        # Format y-axis with appropriate scale
+        max_world_value = world_naics_totals['impVal'].max()
+        if max_world_value >= 1e9:
+            fig_world_naics.update_yaxes(tickformat='$.1s')
+        else:
+            fig_world_naics.update_yaxes(tickformat='$,.0f')
+        
+        # Save the world total chart
+        world_chart_filename = 'bea_3341_naics_breakdown_world_total.html'
+        world_chart_path = os.path.join(naics_charts_dir, world_chart_filename)
+        fig_world_naics.write_html(world_chart_path)
+        
+        print(f"Created world total NAICS breakdown chart: {world_chart_filename}")
+        
+        # Create aggregated tab content for HTML with world total at top
+        naics_bar_chart_html_content = f"""
+        <div id="naics-breakdown" class="tabcontent">
+            <h2>BEA 3341 (Computer Equipment) - NAICS Code Breakdown by Region</h2>
+            <div class="intro-text">
+                <p>This tab shows the breakdown of BEA code 3341 (Computer Equipment) by its constituent NAICS codes for each region. BEA 3341 consists of three NAICS codes:</p>
+                <ul>
+                    <li><strong>NAICS 334111:</strong> Electronic computer manufacturing</li>
+                    <li><strong>NAICS 334112:</strong> Computer storage device manufacturing</li>
+                    <li><strong>NAICS 334118:</strong> Computer terminal and other computer peripheral equipment manufacturing</li>
+                </ul>
+                <p>These bar charts help identify which specific NAICS codes are driving the import values within BEA 3341 for each region, particularly for diagnosing Mexico's persistent underestimation in the TiVA tables.</p>
+            </div>
+            
+            <div class="plot-container">
+                <h3>World Total - NAICS Breakdown</h3>
+                <iframe src="regional_HS_BEA_mapping/naics_charts/{world_chart_filename}" class="plot-iframe"></iframe>
+            </div>
+        """
+        
+        # Add charts for each region
+        for region in region_order:
+            region_data = naics_aggregated[naics_aggregated['bea_region'] == region]
+            if not region_data.empty:
+                chart_filename = f'bea_3341_naics_breakdown_{region.lower()}.html'
+                naics_bar_chart_html_content += f"""
+                <div class="plot-container">
+                    <h3>{region_names.get(region, region)} - NAICS Breakdown</h3>
+                    <iframe src="regional_HS_BEA_mapping/naics_charts/{chart_filename}" class="plot-iframe"></iframe>
+                </div>
+                """
+        
+        naics_bar_chart_html_content += "</div>"
+        
+        print(f"Created NAICS breakdown charts for {len([r for r in region_order if not naics_aggregated[naics_aggregated['bea_region'] == r].empty])} regions")
+    else:
+        print("No BEA 3341 data found in semiconductor dataset")
+        naics_bar_chart_html_content = """
+        <div id="naics-breakdown" class="tabcontent">
+            <h2>BEA 3341 NAICS Breakdown - No Data Available</h2>
+            <p>No data available for BEA 3341 NAICS breakdown charts.</p>
+        </div>
+        """
+else:
+    print(f"Semiconductor data file not found: {semiconductor_data_path}")
+    naics_bar_chart_html_content = """
+    <div id="naics-breakdown" class="tabcontent">
+        <h2>BEA 3341 NAICS Breakdown - Data File Not Found</h2>
+        <p>Semiconductor data file not found. Please run 08_individual_code_validations/00_search_mapping.py first.</p>
+    </div>
+    """
+
 # Create a master HTML file with tabs
 master_html_content = f"""
 <!DOCTYPE html>
@@ -1136,7 +1682,7 @@ master_html_content = f"""
         }}
         iframe {{
             width: 100%;
-            height: 600px;
+            height: 750px;
             border: none;
         }}
         .tabs {{
@@ -1185,6 +1731,29 @@ master_html_content = f"""
         th {{
             background-color: #333333;
         }}
+        .scale-toggle {{
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #222222;
+            border-radius: 5px;
+            text-align: center;
+        }}
+        .scale-toggle label {{
+            margin-right: 15px;
+            color: #ffffff;
+            font-size: 14px;
+        }}
+        .scale-toggle input[type="radio"] {{
+            margin-right: 5px;
+        }}
+        .plot-iframe {{
+            width: 100%;
+            height: 750px;
+            border: none;
+        }}
+        .plot-iframe.hidden {{
+            display: none;
+        }}
     </style>
 </head>
 <body>
@@ -1195,10 +1764,10 @@ master_html_content = f"""
     
     <div class="tabs">
         <button class="tablinks active" onclick="openTab(event, 'regional-aggregates')">Regional Aggregates</button>
-        <button class="tablinks" onclick="openTab(event, 'regular-plots')">Regular Scale</button>
-        <button class="tablinks" onclick="openTab(event, 'refined-regular-plots')">Refined Goods - Regular Scale</button>
-        <button class="tablinks" onclick="openTab(event, 'log-plots')">Log Scale</button>
-        <button class="tablinks" onclick="openTab(event, 'refined-log-plots')">Refined Goods - Log Scale</button>
+        <button class="tablinks" onclick="openTab(event, 'summary-level')">BEA Summary Level</button>
+        <button class="tablinks" onclick="openTab(event, 'regular-plots')">U.Summary Level (Goods & Services)</button>
+        <button class="tablinks" onclick="openTab(event, 'refined-regular-plots')">U.Summary Level (Goods Only)</button>
+        <button class="tablinks" onclick="openTab(event, 'naics-breakdown')">BEA 3341 NAICS Breakdown</button>
         <button class="tablinks" onclick="openTab(event, 'discrepancies')">Complete Data Table</button>
     </div>
     
@@ -1246,27 +1815,92 @@ master_html_content = f"""
         </div>
     </div>
     
+    <div id="summary-level" class="tabcontent">
+        <h2>BEA Summary Level Aggregation</h2>
+        <p>This tab shows the comparison aggregated to the BEA Summary level, where multiple underlying summary (U.Summary) codes are combined into broader economic categories. Each point represents a BEA Summary category for a specific region.</p>
+        
+        <div class="intro-text">
+            <h3>Understanding BEA Summary Level Aggregation</h3>
+            <p><strong>Aggregation Method:</strong> The underlying summary (U.Summary) level data from both TiVA and HS-to-BEA mappings is summed up to the broader BEA Summary level using the concordance in <code>02_BEA_hierarchy.csv</code>. This provides a higher-level view of trade patterns across major economic sectors.</p>
+            
+            <p><strong>Regional Separation:</strong> Each region maintains its separate data points, allowing for cross-regional comparison at the summary sector level while preserving the regional dimension of the analysis.</p>
+            
+            <p><strong>Color Coding:</strong> Points are colored by region, making it easy to identify patterns within and across regions at this aggregated level.</p>
+        </div>
+        
+        <div class="plot-container">
+            <h3>BEA Summary Level - All Regions Combined</h3>
+            <div class="scale-toggle">
+                <label><input type="radio" name="combined_scale" value="regular" checked onchange="toggleScale('combined', this.value)"> Regular Scale</label>
+                <label><input type="radio" name="combined_scale" value="log" onchange="toggleScale('combined', this.value)"> Log Scale</label>
+            </div>
+            <iframe id="combined_regular" class="plot-iframe" src="regional_HS_BEA_mapping/html/summary_level_scatter.html"></iframe>
+            <iframe id="combined_log" class="plot-iframe hidden" src="regional_HS_BEA_mapping/html_log/summary_level_scatter_log.html"></iframe>
+        </div>
+        
+        <div class="intro-text">
+            <h3>Individual Region Analysis</h3>
+            <p>The plots below show the BEA Summary level comparison for each region individually, providing a detailed view of how well our HS-to-BEA mapping performs for each specific region.</p>
+        </div>"""
+
+# Add individual region plots to the summary level tab
+regions_for_html = [
+    ('CAN', 'Canada'), 
+    ('CHN', 'China'), 
+    ('Europe', 'Europe'), 
+    ('JPN', 'Japan'), 
+    ('MEX', 'Mexico'), 
+    ('RoAsia', 'Rest of Asia'), 
+    ('RoWorld', 'Rest of World'), 
+    ('World_Total', 'World Total')
+]
+
+for region_code, region_name in regions_for_html:
+    master_html_content += f"""
+        <div class="plot-container">
+            <h3>{region_name} - BEA Summary Level</h3>
+            <div class="scale-toggle">
+                <label><input type="radio" name="{region_code.lower()}_scale" value="regular" checked onchange="toggleScale('{region_code.lower()}', this.value)"> Regular Scale</label>
+                <label><input type="radio" name="{region_code.lower()}_scale" value="log" onchange="toggleScale('{region_code.lower()}', this.value)"> Log Scale</label>
+            </div>
+            <iframe id="{region_code.lower()}_regular" class="plot-iframe" src="regional_HS_BEA_mapping/html/summary_level_{region_code}_scatter.html"></iframe>
+            <iframe id="{region_code.lower()}_log" class="plot-iframe hidden" src="regional_HS_BEA_mapping/html_log/summary_level_{region_code}_scatter_log.html"></iframe>
+        </div>
+    """
+
+master_html_content += """
+    </div>
+    
     <div id="regular-plots" class="tabcontent">
-        <h2>Regular Scale Plots</h2>
+        <h2>U.Summary Level Plots</h2>
+        <p>These plots show comparisons at the underlying summary (U.Summary) level, which is the most detailed BEA level available in the TiVA tables.</p>
 """
 
-# Add each region's regular plot
+# Add each region's regular plot with toggle switches
 for region_key in ['world', 'CAN', 'CHN', 'Europe', 'JPN', 'MEX', 'RoAsia', 'RoWorld']:
     html_filename = f'{region_key}_HS_TiVA_scatter.html'
+    html_log_filename = f'{region_key}_HS_TiVA_scatter_log.html'
     
     # Special handling for world total
     if region_key == 'world':
         title = "World Total - HS to BEA vs TiVA Imports"
         description = "<p>This is the comparison of the world total from our HS mapping to the world total imports from the TiVA tables.</p>"
+        region_id = "world_usummary"
     else:
         title = f"{region_key} - HS to BEA vs TiVA Imports"
         description = ""
+        region_id = f"{region_key.lower()}_usummary"
     
     master_html_content += f"""
         <div class="plot-container">
             <h3>{title}</h3>
             {description}
-            <iframe src="regional_HS_BEA_mapping/html/{html_filename}"></iframe>
+            <div class="scale-toggle">
+                <label><input type="radio" name="{region_id}_scale" value="regular" checked onchange="toggleScale('{region_id}', this.value)"> Regular Scale</label>
+                <label><input type="radio" name="{region_id}_scale" value="log" onchange="toggleScale('{region_id}', this.value)"> Log Scale</label>
+            </div>
+            <iframe id="{region_id}_regular" class="plot-iframe" src="regional_HS_BEA_mapping/html/{html_filename}"></iframe>
+            <iframe id="{region_id}_log" class="plot-iframe hidden" src="regional_HS_BEA_mapping/html_log/{html_log_filename}"></iframe>
         </div>
     """
 
@@ -1274,87 +1908,42 @@ master_html_content += """
     </div>
     
     <div id="refined-regular-plots" class="tabcontent">
-        <h2>Refined Goods - Regular Scale Plots</h2>
-        <p>These plots exclude BEA codes that consistently have HS=0 but TiVA>0 across all regions, providing a more refined goods-only comparison.</p>
+        <h2>Refined Goods Plots</h2>
+        <p>These plots exclude BEA codes that consistently have HS=0 but TiVA>0 across all regions, providing a more refined goods-only comparison by removing services categories.</p>
 """
 
-# Add each region's refined regular plot
+# Add each region's refined plot with toggle switches
 for region_key in ['world', 'CAN', 'CHN', 'Europe', 'JPN', 'MEX', 'RoAsia', 'RoWorld']:
     html_refined_filename = f'{region_key}_HS_TiVA_scatter_refined_goods.html'
+    html_refined_log_filename = f'{region_key}_HS_TiVA_scatter_refined_goods_log.html'
     
     # Special handling for world total
     if region_key == 'world':
         title = "World Total - HS to BEA vs TiVA Imports - Refined Goods Only"
         description = "<p>This is the refined goods-only comparison of the world total from our HS mapping to the world total imports from the TiVA tables.</p>"
+        region_id = "world_goods"
     else:
         title = f"{region_key} - HS to BEA vs TiVA Imports - Refined Goods Only"
         description = ""
+        region_id = f"{region_key.lower()}_goods"
     
     master_html_content += f"""
         <div class="plot-container">
             <h3>{title}</h3>
             {description}
-            <iframe src="regional_HS_BEA_mapping/html/{html_refined_filename}"></iframe>
-        </div>
-    """
-
-master_html_content += """
-    </div>
-    
-    <div id="log-plots" class="tabcontent">
-        <h2>Log Scale Plots</h2>
-"""
-
-# Add each region's log plot
-for region_key in ['world', 'CAN', 'CHN', 'Europe', 'JPN', 'MEX', 'RoAsia', 'RoWorld']:
-    html_log_filename = f'{region_key}_HS_TiVA_scatter_log.html'
-    
-    # Special handling for world total
-    if region_key == 'world':
-        title = "World Total - HS to BEA vs TiVA Imports (Log Scale)"
-        description = "<p>This is the comparison of the world total from our HS mapping to the world total imports from the TiVA tables on a log scale.</p>"
-    else:
-        title = f"{region_key} - HS to BEA vs TiVA Imports (Log Scale)"
-        description = ""
-    
-    master_html_content += f"""
-        <div class="plot-container">
-            <h3>{title}</h3>
-            {description}
-            <iframe src="regional_HS_BEA_mapping/html_log/{html_log_filename}"></iframe>
-        </div>
-    """
-
-master_html_content += """
-    </div>
-    
-    <div id="refined-log-plots" class="tabcontent">
-        <h2>Refined Goods - Log Scale Plots</h2>
-        <p>These plots exclude BEA codes that consistently have HS=0 but TiVA>0 across all regions, providing a more refined goods-only comparison on log scale.</p>
-"""
-
-# Add each region's refined log plot
-for region_key in ['world', 'CAN', 'CHN', 'Europe', 'JPN', 'MEX', 'RoAsia', 'RoWorld']:
-    html_refined_log_filename = f'{region_key}_HS_TiVA_scatter_refined_goods_log.html'
-    
-    # Special handling for world total
-    if region_key == 'world':
-        title = "World Total - HS to BEA vs TiVA Imports - Refined Goods Only (Log Scale)"
-        description = "<p>This is the refined goods-only comparison of the world total from our HS mapping to the world total imports from the TiVA tables on log scale.</p>"
-    else:
-        title = f"{region_key} - HS to BEA vs TiVA Imports - Refined Goods Only (Log Scale)"
-        description = ""
-    
-    master_html_content += f"""
-        <div class="plot-container">
-            <h3>{title}</h3>
-            {description}
-            <iframe src="regional_HS_BEA_mapping/html_log/{html_refined_log_filename}"></iframe>
+            <div class="scale-toggle">
+                <label><input type="radio" name="{region_id}_scale" value="regular" checked onchange="toggleScale('{region_id}', this.value)"> Regular Scale</label>
+                <label><input type="radio" name="{region_id}_scale" value="log" onchange="toggleScale('{region_id}', this.value)"> Log Scale</label>
+            </div>
+            <iframe id="{region_id}_regular" class="plot-iframe" src="regional_HS_BEA_mapping/html/{html_refined_filename}"></iframe>
+            <iframe id="{region_id}_log" class="plot-iframe hidden" src="regional_HS_BEA_mapping/html_log/{html_refined_log_filename}"></iframe>
         </div>
     """
 
 master_html_content += f"""
     </div>
+    
+    {naics_bar_chart_html_content}
     
     <div id="discrepancies" class="tabcontent">
         {discrepancies_html_table}
@@ -1373,6 +1962,22 @@ master_html_content += f"""
             }}
             document.getElementById(tabName).classList.add("active");
             evt.currentTarget.classList.add("active");
+        }}
+        
+        function toggleScale(regionId, scaleType) {{
+            // Hide both iframes for this region
+            var regularIframe = document.getElementById(regionId + '_regular');
+            var logIframe = document.getElementById(regionId + '_log');
+            
+            if (regularIframe && logIframe) {{
+                if (scaleType === 'regular') {{
+                    regularIframe.classList.remove('hidden');
+                    logIframe.classList.add('hidden');
+                }} else if (scaleType === 'log') {{
+                    regularIframe.classList.add('hidden');
+                    logIframe.classList.remove('hidden');
+                }}
+            }}
         }}
     </script>
 </body>

@@ -149,7 +149,7 @@ def load_regional_trade_data(project_root):
     
     return combined_df
 
-def extract_hs_data_for_naics_codes(naics_codes, project_root=None):
+def extract_hs_data_for_naics_codes(naics_codes, bea_code=None, additional_hs_codes=None, project_root=None):
     """
     Extract HS-level trade data for specified NAICS codes
     
@@ -157,6 +157,10 @@ def extract_hs_data_for_naics_codes(naics_codes, project_root=None):
     -----------
     naics_codes : set or list
         Set of NAICS codes to extract data for (e.g., {334413, 334418, 334412})
+    bea_code : str, optional
+        BEA code associated with these NAICS codes (e.g., '3344', '334X', '3341')
+    additional_hs_codes : set or list, optional
+        Additional HS codes to include that map to this BEA code
     project_root : Path, optional
         Root path to project. If None, will be inferred from script location
         
@@ -200,7 +204,14 @@ def extract_hs_data_for_naics_codes(naics_codes, project_root=None):
     
     # Get the set of HS codes we're interested in
     target_hs_codes = set(relevant_hs_codes['commodity'].astype(str))
-    print(f"Target HS codes: {len(target_hs_codes)} unique codes")
+    
+    # Add any additional HS codes specified
+    if additional_hs_codes:
+        additional_hs_set = {str(code) for code in additional_hs_codes}
+        target_hs_codes.update(additional_hs_set)
+        print(f"Added {len(additional_hs_set)} additional HS codes")
+    
+    print(f"Total target HS codes: {len(target_hs_codes)} unique codes")
     
     # Load regional trade data
     print("\nLoading regional trade data...")
@@ -242,7 +253,7 @@ def extract_hs_data_for_naics_codes(naics_codes, project_root=None):
     print(f"Total import value: ${aggregated['total_impVal'].sum():,.0f}")
     
     # Create the detailed CSV data with individual HS codes (not aggregated)
-    # This will have naics_code, hs_code, impVal, bea_region for each row
+    # This will have naics_code, hs_code, impVal, bea_region, bea_code, regional_sum for each row
     csv_data = []
     for _, row in filtered_trade.iterrows():
         hs_code = row['hs_code']
@@ -254,23 +265,22 @@ def extract_hs_data_for_naics_codes(naics_codes, project_root=None):
                 'naics_code': naics_code,
                 'hs_code': hs_code,
                 'impVal': row['impVal'],
-                'bea_region': row['bea_region']
+                'bea_region': row['bea_region'],
+                'bea_code': bea_code if bea_code else 'Unknown'
             })
     
     csv_df = pd.DataFrame(csv_data)
     
-    # Save to CSV
-    if project_root is None:
-        script_dir = Path(__file__).parent.absolute()
-        project_root = script_dir.parent.parent
+    # Calculate regional sums by BEA code and region
+    if not csv_df.empty:
+        regional_sums = csv_df.groupby(['bea_code', 'bea_region'])['impVal'].sum().reset_index()
+        regional_sums = regional_sums.rename(columns={'impVal': 'regional_sum'})
+        
+        # Merge back to add regional_sum column
+        csv_df = csv_df.merge(regional_sums, on=['bea_code', 'bea_region'], how='left')
     
-    csv_dir = project_root / "code" / "08_individual_code_validations" / "csvs"
-    csv_dir.mkdir(exist_ok=True)
-    csv_path = csv_dir / "02_semiconductors.csv"
-    
-    csv_df.to_csv(csv_path, index=False)
-    print(f"Saved detailed data to: {csv_path}")
-    print(f"CSV contains {len(csv_df)} individual HS x Region x NAICS records")
+    # CSV generation is now handled separately in extract_semiconductor_data()
+    # No longer generating individual CSV files here
     
     return aggregated
 
@@ -284,21 +294,31 @@ def extract_semiconductor_data():
     bea_334X = {3343, 33461}  # Other Computer Manufacturing  
     bea_3341 = {334111, 334112, 334118}  # Computer Equipment
     
+    # Additional HS codes from 3_Hierarchical_Matches.csv that map to 334413
+    additional_3344_hs_codes = {
+        '8542310015', '8542310020', '8542310025', '8542310030',  # Controllers
+        '8542310035', '8542310040', '8542310045', '8542310050',  # Processors
+        '8542310055', '8542310060', '8542310065',               # Programmable Logic
+        '8542310070', '8542310075',                             # System on Chips
+        '8542390010', '8542390020', '8542390030', '8542390040',  # Electronic ICs
+        '8542390050', '8542390060'                              # Electronic ICs
+    }
+    
     print("="*60)
     print("SEMICONDUCTOR DATA EXTRACTION BY BEA CATEGORY")
     print("="*60)
     
     # Extract data for each BEA category separately to get totals
     print("\n1. Extracting BEA 3344 (Semiconductors)...")
-    data_3344 = extract_hs_data_for_naics_codes(bea_3344)
+    data_3344 = extract_hs_data_for_naics_codes(bea_3344, bea_code='3344', additional_hs_codes=additional_3344_hs_codes)
     total_3344 = data_3344['total_impVal'].sum() if not data_3344.empty else 0
     
     print("\n2. Extracting BEA 334X (Other Computer Manufacturing)...")
-    data_334X = extract_hs_data_for_naics_codes(bea_334X)
+    data_334X = extract_hs_data_for_naics_codes(bea_334X, bea_code='334X')
     total_334X = data_334X['total_impVal'].sum() if not data_334X.empty else 0
     
     print("\n3. Extracting BEA 3341 (Computer Equipment)...")
-    data_3341 = extract_hs_data_for_naics_codes(bea_3341)
+    data_3341 = extract_hs_data_for_naics_codes(bea_3341, bea_code='3341')
     total_3341 = data_3341['total_impVal'].sum() if not data_3341.empty else 0
     
     print("\n" + "="*60)
@@ -311,10 +331,112 @@ def extract_semiconductor_data():
     print(f"TOTAL ALL CATEGORIES:                ${total_3344 + total_334X + total_3341:>15,.0f}")
     print("="*60)
     
-    # Now extract all combined for the CSV
-    print("\n4. Extracting combined data for CSV...")
+    # Now create combined CSV with all BEA codes
+    print("\n4. Creating combined CSV with all BEA codes...")
+    
+    # Get paths for CSV generation
+    script_dir = Path(__file__).parent.absolute()
+    project_root = script_dir.parent.parent
+    csv_dir = project_root / "code" / "08_individual_code_validations" / "csvs"
+    csv_dir.mkdir(exist_ok=True)
+    csv_path = csv_dir / "02_semiconductors.csv"
+    
+    # Load mapping and trade data once
+    mapping_df = load_hs_naics_mapping(project_root)
+    trade_df = load_regional_trade_data(project_root)
+    
+    # Process each BEA category and collect CSV data
+    all_csv_data = []
+    
+    for bea_code, naics_set in [('3344', bea_3344), ('334X', bea_334X), ('3341', bea_3341)]:
+        print(f"Processing BEA {bea_code}...")
+        
+        # Filter mapping to relevant NAICS codes
+        naics_codes_str = {str(code) for code in naics_set}
+        relevant_hs_codes = mapping_df[
+            mapping_df['matched_bea_naics'].astype(str).isin(naics_codes_str) |
+            mapping_df['naics'].astype(str).isin(naics_codes_str) |
+            mapping_df['naicsMDS'].astype(str).isin(naics_codes_str)
+        ]
+        
+        target_hs_codes = set(relevant_hs_codes['commodity'].astype(str)) if not relevant_hs_codes.empty else set()
+        
+        # Add additional HS codes for BEA 3344
+        if bea_code == '3344':
+            target_hs_codes.update(additional_3344_hs_codes)
+            print(f"Added {len(additional_3344_hs_codes)} additional HS codes for semiconductors")
+        
+        if len(target_hs_codes) == 0:
+            continue
+        trade_df['hs_code'] = trade_df['hs_code'].astype(str)
+        filtered_trade = trade_df[trade_df['hs_code'].isin(target_hs_codes)]
+        
+        # Create CSV data for this BEA code - collect all data first
+        for _, row in filtered_trade.iterrows():
+            hs_code = row['hs_code']
+            hs_naics_info = relevant_hs_codes[relevant_hs_codes['commodity'].astype(str) == hs_code]
+            
+            if not hs_naics_info.empty:
+                naics_code = hs_naics_info['matched_bea_naics'].iloc[0]
+            elif bea_code == '3344' and hs_code in additional_3344_hs_codes:
+                # Assign 334413 to additional HS codes for semiconductors
+                naics_code = '334413'
+            else:
+                continue
+                
+            all_csv_data.append({
+                'naics_code': naics_code,
+                'hs_code': hs_code,
+                'impVal': row['impVal'],
+                'bea_region': row['bea_region'],
+                'bea_code': bea_code
+            })
+    
+    # Convert to DataFrame and calculate regional sums
+    csv_df = pd.DataFrame(all_csv_data)
+    
+    if not csv_df.empty:
+        # Calculate regional sums by BEA code and region
+        regional_sums = csv_df.groupby(['bea_code', 'bea_region'])['impVal'].sum().reset_index()
+        regional_sums = regional_sums.rename(columns={'impVal': 'regional_sum'})
+        
+        # Merge back to add regional_sum column
+        csv_df = csv_df.merge(regional_sums, on=['bea_code', 'bea_region'], how='left')
+        
+        # Save to CSV
+        csv_df.to_csv(csv_path, index=False)
+        print(f"Saved combined data to: {csv_path}")
+        print(f"CSV contains {len(csv_df)} records across all BEA codes")
+        
+        # Print regional sums by BEA code
+        print("\n" + "="*80)
+        print("REGIONAL SUMS BY BEA CODE")
+        print("="*80)
+        
+        # Get unique combinations and sort
+        regional_summary = csv_df.groupby(['bea_code', 'bea_region'])['impVal'].sum().reset_index()
+        
+        # Print for each BEA code
+        for bea_code in ['3344', '334X', '3341']:
+            bea_data = regional_summary[regional_summary['bea_code'] == bea_code]
+            if not bea_data.empty:
+                bea_total = bea_data['impVal'].sum()
+                print(f"\nBEA {bea_code}:")
+                print("-" * 40)
+                for _, row in bea_data.iterrows():
+                    print(f"  {row['bea_region']:<12} ${row['impVal']:>15,.0f}")
+                print("-" * 40)
+                print(f"  {'TOTAL':<12} ${bea_total:>15,.0f}")
+        
+        # Grand total
+        grand_total = regional_summary['impVal'].sum()
+        print("\n" + "="*40)
+        print(f"GRAND TOTAL:     ${grand_total:>15,.0f}")
+        print("="*40)
+    
+    # Return aggregated data for compatibility
     all_semiconductor_naics = bea_3344 | bea_334X | bea_3341
-    combined_data = extract_hs_data_for_naics_codes(all_semiconductor_naics)
+    combined_data = extract_hs_data_for_naics_codes(all_semiconductor_naics, bea_code='Combined')
     
     return combined_data
 

@@ -338,7 +338,7 @@ print(f"{'='*60}")
 # Manual override mappings: HS code -> BEA Detail code
 # Add new overrides by adding entries to this dictionary
 manual_overrides = {
-    '8703230140': '336112',  # Light truck manufacturing
+    #'8703230140': '336112',  # Light truck manufacturing
     # Add more mappings here as needed:
     # '1234567890': '123456',  # Example description
     # '0987654321': '654321',  # Another example

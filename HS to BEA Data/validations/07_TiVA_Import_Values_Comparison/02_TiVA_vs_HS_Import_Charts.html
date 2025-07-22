@@ -32,7 +32,7 @@
         }
         iframe {
             width: 100%;
-            height: 600px;
+            height: 750px;
             border: none;
         }
         .tabs {
@@ -81,6 +81,29 @@
         th {
             background-color: #333333;
         }
+        .scale-toggle {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #222222;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .scale-toggle label {
+            margin-right: 15px;
+            color: #ffffff;
+            font-size: 14px;
+        }
+        .scale-toggle input[type="radio"] {
+            margin-right: 5px;
+        }
+        .plot-iframe {
+            width: 100%;
+            height: 750px;
+            border: none;
+        }
+        .plot-iframe.hidden {
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -91,10 +114,10 @@
     
     <div class="tabs">
         <button class="tablinks active" onclick="openTab(event, 'regional-aggregates')">Regional Aggregates</button>
-        <button class="tablinks" onclick="openTab(event, 'regular-plots')">Regular Scale</button>
-        <button class="tablinks" onclick="openTab(event, 'refined-regular-plots')">Refined Goods - Regular Scale</button>
-        <button class="tablinks" onclick="openTab(event, 'log-plots')">Log Scale</button>
-        <button class="tablinks" onclick="openTab(event, 'refined-log-plots')">Refined Goods - Log Scale</button>
+        <button class="tablinks" onclick="openTab(event, 'summary-level')">BEA Summary Level</button>
+        <button class="tablinks" onclick="openTab(event, 'regular-plots')">U.Summary Level (Goods & Services)</button>
+        <button class="tablinks" onclick="openTab(event, 'refined-regular-plots')">U.Summary Level (Goods Only)</button>
+        <button class="tablinks" onclick="openTab(event, 'naics-breakdown')">BEA 3341 NAICS Breakdown</button>
         <button class="tablinks" onclick="openTab(event, 'discrepancies')">Complete Data Table</button>
     </div>
     
@@ -142,219 +165,356 @@
         </div>
     </div>
     
+    <div id="summary-level" class="tabcontent">
+        <h2>BEA Summary Level Aggregation</h2>
+        <p>This tab shows the comparison aggregated to the BEA Summary level, where multiple underlying summary (U.Summary) codes are combined into broader economic categories. Each point represents a BEA Summary category for a specific region.</p>
+        
+        <div class="intro-text">
+            <h3>Understanding BEA Summary Level Aggregation</h3>
+            <p><strong>Aggregation Method:</strong> The underlying summary (U.Summary) level data from both TiVA and HS-to-BEA mappings is summed up to the broader BEA Summary level using the concordance in <code>02_BEA_hierarchy.csv</code>. This provides a higher-level view of trade patterns across major economic sectors.</p>
+            
+            <p><strong>Regional Separation:</strong> Each region maintains its separate data points, allowing for cross-regional comparison at the summary sector level while preserving the regional dimension of the analysis.</p>
+            
+            <p><strong>Color Coding:</strong> Points are colored by region, making it easy to identify patterns within and across regions at this aggregated level.</p>
+        </div>
+        
+        <div class="plot-container">
+            <h3>BEA Summary Level - All Regions Combined</h3>
+            <div class="scale-toggle">
+                <label><input type="radio" name="combined_scale" value="regular" checked onchange="toggleScale('combined', this.value)"> Regular Scale</label>
+                <label><input type="radio" name="combined_scale" value="log" onchange="toggleScale('combined', this.value)"> Log Scale</label>
+            </div>
+            <iframe id="combined_regular" class="plot-iframe" src="regional_HS_BEA_mapping/html/summary_level_scatter.html"></iframe>
+            <iframe id="combined_log" class="plot-iframe hidden" src="regional_HS_BEA_mapping/html_log/summary_level_scatter_log.html"></iframe>
+        </div>
+        
+        <div class="intro-text">
+            <h3>Individual Region Analysis</h3>
+            <p>The plots below show the BEA Summary level comparison for each region individually, providing a detailed view of how well our HS-to-BEA mapping performs for each specific region.</p>
+        </div>
+        <div class="plot-container">
+            <h3>Canada - BEA Summary Level</h3>
+            <div class="scale-toggle">
+                <label><input type="radio" name="can_scale" value="regular" checked onchange="toggleScale('can', this.value)"> Regular Scale</label>
+                <label><input type="radio" name="can_scale" value="log" onchange="toggleScale('can', this.value)"> Log Scale</label>
+            </div>
+            <iframe id="can_regular" class="plot-iframe" src="regional_HS_BEA_mapping/html/summary_level_CAN_scatter.html"></iframe>
+            <iframe id="can_log" class="plot-iframe hidden" src="regional_HS_BEA_mapping/html_log/summary_level_CAN_scatter_log.html"></iframe>
+        </div>
+    
+        <div class="plot-container">
+            <h3>China - BEA Summary Level</h3>
+            <div class="scale-toggle">
+                <label><input type="radio" name="chn_scale" value="regular" checked onchange="toggleScale('chn', this.value)"> Regular Scale</label>
+                <label><input type="radio" name="chn_scale" value="log" onchange="toggleScale('chn', this.value)"> Log Scale</label>
+            </div>
+            <iframe id="chn_regular" class="plot-iframe" src="regional_HS_BEA_mapping/html/summary_level_CHN_scatter.html"></iframe>
+            <iframe id="chn_log" class="plot-iframe hidden" src="regional_HS_BEA_mapping/html_log/summary_level_CHN_scatter_log.html"></iframe>
+        </div>
+    
+        <div class="plot-container">
+            <h3>Europe - BEA Summary Level</h3>
+            <div class="scale-toggle">
+                <label><input type="radio" name="europe_scale" value="regular" checked onchange="toggleScale('europe', this.value)"> Regular Scale</label>
+                <label><input type="radio" name="europe_scale" value="log" onchange="toggleScale('europe', this.value)"> Log Scale</label>
+            </div>
+            <iframe id="europe_regular" class="plot-iframe" src="regional_HS_BEA_mapping/html/summary_level_Europe_scatter.html"></iframe>
+            <iframe id="europe_log" class="plot-iframe hidden" src="regional_HS_BEA_mapping/html_log/summary_level_Europe_scatter_log.html"></iframe>
+        </div>
+    
+        <div class="plot-container">
+            <h3>Japan - BEA Summary Level</h3>
+            <div class="scale-toggle">
+                <label><input type="radio" name="jpn_scale" value="regular" checked onchange="toggleScale('jpn', this.value)"> Regular Scale</label>
+                <label><input type="radio" name="jpn_scale" value="log" onchange="toggleScale('jpn', this.value)"> Log Scale</label>
+            </div>
+            <iframe id="jpn_regular" class="plot-iframe" src="regional_HS_BEA_mapping/html/summary_level_JPN_scatter.html"></iframe>
+            <iframe id="jpn_log" class="plot-iframe hidden" src="regional_HS_BEA_mapping/html_log/summary_level_JPN_scatter_log.html"></iframe>
+        </div>
+    
+        <div class="plot-container">
+            <h3>Mexico - BEA Summary Level</h3>
+            <div class="scale-toggle">
+                <label><input type="radio" name="mex_scale" value="regular" checked onchange="toggleScale('mex', this.value)"> Regular Scale</label>
+                <label><input type="radio" name="mex_scale" value="log" onchange="toggleScale('mex', this.value)"> Log Scale</label>
+            </div>
+            <iframe id="mex_regular" class="plot-iframe" src="regional_HS_BEA_mapping/html/summary_level_MEX_scatter.html"></iframe>
+            <iframe id="mex_log" class="plot-iframe hidden" src="regional_HS_BEA_mapping/html_log/summary_level_MEX_scatter_log.html"></iframe>
+        </div>
+    
+        <div class="plot-container">
+            <h3>Rest of Asia - BEA Summary Level</h3>
+            <div class="scale-toggle">
+                <label><input type="radio" name="roasia_scale" value="regular" checked onchange="toggleScale('roasia', this.value)"> Regular Scale</label>
+                <label><input type="radio" name="roasia_scale" value="log" onchange="toggleScale('roasia', this.value)"> Log Scale</label>
+            </div>
+            <iframe id="roasia_regular" class="plot-iframe" src="regional_HS_BEA_mapping/html/summary_level_RoAsia_scatter.html"></iframe>
+            <iframe id="roasia_log" class="plot-iframe hidden" src="regional_HS_BEA_mapping/html_log/summary_level_RoAsia_scatter_log.html"></iframe>
+        </div>
+    
+        <div class="plot-container">
+            <h3>Rest of World - BEA Summary Level</h3>
+            <div class="scale-toggle">
+                <label><input type="radio" name="roworld_scale" value="regular" checked onchange="toggleScale('roworld', this.value)"> Regular Scale</label>
+                <label><input type="radio" name="roworld_scale" value="log" onchange="toggleScale('roworld', this.value)"> Log Scale</label>
+            </div>
+            <iframe id="roworld_regular" class="plot-iframe" src="regional_HS_BEA_mapping/html/summary_level_RoWorld_scatter.html"></iframe>
+            <iframe id="roworld_log" class="plot-iframe hidden" src="regional_HS_BEA_mapping/html_log/summary_level_RoWorld_scatter_log.html"></iframe>
+        </div>
+    
+        <div class="plot-container">
+            <h3>World Total - BEA Summary Level</h3>
+            <div class="scale-toggle">
+                <label><input type="radio" name="world_total_scale" value="regular" checked onchange="toggleScale('world_total', this.value)"> Regular Scale</label>
+                <label><input type="radio" name="world_total_scale" value="log" onchange="toggleScale('world_total', this.value)"> Log Scale</label>
+            </div>
+            <iframe id="world_total_regular" class="plot-iframe" src="regional_HS_BEA_mapping/html/summary_level_World_Total_scatter.html"></iframe>
+            <iframe id="world_total_log" class="plot-iframe hidden" src="regional_HS_BEA_mapping/html_log/summary_level_World_Total_scatter_log.html"></iframe>
+        </div>
+    
+    </div>
+    
     <div id="regular-plots" class="tabcontent">
-        <h2>Regular Scale Plots</h2>
+        <h2>U.Summary Level Plots</h2>
+        <p>These plots show comparisons at the underlying summary (U.Summary) level, which is the most detailed BEA level available in the TiVA tables.</p>
 
         <div class="plot-container">
             <h3>World Total - HS to BEA vs TiVA Imports</h3>
             <p>This is the comparison of the world total from our HS mapping to the world total imports from the TiVA tables.</p>
-            <iframe src="regional_HS_BEA_mapping/html/world_HS_TiVA_scatter.html"></iframe>
+            <div class="scale-toggle">
+                <label><input type="radio" name="world_usummary_scale" value="regular" checked onchange="toggleScale('world_usummary', this.value)"> Regular Scale</label>
+                <label><input type="radio" name="world_usummary_scale" value="log" onchange="toggleScale('world_usummary', this.value)"> Log Scale</label>
+            </div>
+            <iframe id="world_usummary_regular" class="plot-iframe" src="regional_HS_BEA_mapping/html/world_HS_TiVA_scatter.html"></iframe>
+            <iframe id="world_usummary_log" class="plot-iframe hidden" src="regional_HS_BEA_mapping/html_log/world_HS_TiVA_scatter_log.html"></iframe>
         </div>
     
         <div class="plot-container">
             <h3>CAN - HS to BEA vs TiVA Imports</h3>
             
-            <iframe src="regional_HS_BEA_mapping/html/CAN_HS_TiVA_scatter.html"></iframe>
+            <div class="scale-toggle">
+                <label><input type="radio" name="can_usummary_scale" value="regular" checked onchange="toggleScale('can_usummary', this.value)"> Regular Scale</label>
+                <label><input type="radio" name="can_usummary_scale" value="log" onchange="toggleScale('can_usummary', this.value)"> Log Scale</label>
+            </div>
+            <iframe id="can_usummary_regular" class="plot-iframe" src="regional_HS_BEA_mapping/html/CAN_HS_TiVA_scatter.html"></iframe>
+            <iframe id="can_usummary_log" class="plot-iframe hidden" src="regional_HS_BEA_mapping/html_log/CAN_HS_TiVA_scatter_log.html"></iframe>
         </div>
     
         <div class="plot-container">
             <h3>CHN - HS to BEA vs TiVA Imports</h3>
             
-            <iframe src="regional_HS_BEA_mapping/html/CHN_HS_TiVA_scatter.html"></iframe>
+            <div class="scale-toggle">
+                <label><input type="radio" name="chn_usummary_scale" value="regular" checked onchange="toggleScale('chn_usummary', this.value)"> Regular Scale</label>
+                <label><input type="radio" name="chn_usummary_scale" value="log" onchange="toggleScale('chn_usummary', this.value)"> Log Scale</label>
+            </div>
+            <iframe id="chn_usummary_regular" class="plot-iframe" src="regional_HS_BEA_mapping/html/CHN_HS_TiVA_scatter.html"></iframe>
+            <iframe id="chn_usummary_log" class="plot-iframe hidden" src="regional_HS_BEA_mapping/html_log/CHN_HS_TiVA_scatter_log.html"></iframe>
         </div>
     
         <div class="plot-container">
             <h3>Europe - HS to BEA vs TiVA Imports</h3>
             
-            <iframe src="regional_HS_BEA_mapping/html/Europe_HS_TiVA_scatter.html"></iframe>
+            <div class="scale-toggle">
+                <label><input type="radio" name="europe_usummary_scale" value="regular" checked onchange="toggleScale('europe_usummary', this.value)"> Regular Scale</label>
+                <label><input type="radio" name="europe_usummary_scale" value="log" onchange="toggleScale('europe_usummary', this.value)"> Log Scale</label>
+            </div>
+            <iframe id="europe_usummary_regular" class="plot-iframe" src="regional_HS_BEA_mapping/html/Europe_HS_TiVA_scatter.html"></iframe>
+            <iframe id="europe_usummary_log" class="plot-iframe hidden" src="regional_HS_BEA_mapping/html_log/Europe_HS_TiVA_scatter_log.html"></iframe>
         </div>
     
         <div class="plot-container">
             <h3>JPN - HS to BEA vs TiVA Imports</h3>
             
-            <iframe src="regional_HS_BEA_mapping/html/JPN_HS_TiVA_scatter.html"></iframe>
+            <div class="scale-toggle">
+                <label><input type="radio" name="jpn_usummary_scale" value="regular" checked onchange="toggleScale('jpn_usummary', this.value)"> Regular Scale</label>
+                <label><input type="radio" name="jpn_usummary_scale" value="log" onchange="toggleScale('jpn_usummary', this.value)"> Log Scale</label>
+            </div>
+            <iframe id="jpn_usummary_regular" class="plot-iframe" src="regional_HS_BEA_mapping/html/JPN_HS_TiVA_scatter.html"></iframe>
+            <iframe id="jpn_usummary_log" class="plot-iframe hidden" src="regional_HS_BEA_mapping/html_log/JPN_HS_TiVA_scatter_log.html"></iframe>
         </div>
     
         <div class="plot-container">
             <h3>MEX - HS to BEA vs TiVA Imports</h3>
             
-            <iframe src="regional_HS_BEA_mapping/html/MEX_HS_TiVA_scatter.html"></iframe>
+            <div class="scale-toggle">
+                <label><input type="radio" name="mex_usummary_scale" value="regular" checked onchange="toggleScale('mex_usummary', this.value)"> Regular Scale</label>
+                <label><input type="radio" name="mex_usummary_scale" value="log" onchange="toggleScale('mex_usummary', this.value)"> Log Scale</label>
+            </div>
+            <iframe id="mex_usummary_regular" class="plot-iframe" src="regional_HS_BEA_mapping/html/MEX_HS_TiVA_scatter.html"></iframe>
+            <iframe id="mex_usummary_log" class="plot-iframe hidden" src="regional_HS_BEA_mapping/html_log/MEX_HS_TiVA_scatter_log.html"></iframe>
         </div>
     
         <div class="plot-container">
             <h3>RoAsia - HS to BEA vs TiVA Imports</h3>
             
-            <iframe src="regional_HS_BEA_mapping/html/RoAsia_HS_TiVA_scatter.html"></iframe>
+            <div class="scale-toggle">
+                <label><input type="radio" name="roasia_usummary_scale" value="regular" checked onchange="toggleScale('roasia_usummary', this.value)"> Regular Scale</label>
+                <label><input type="radio" name="roasia_usummary_scale" value="log" onchange="toggleScale('roasia_usummary', this.value)"> Log Scale</label>
+            </div>
+            <iframe id="roasia_usummary_regular" class="plot-iframe" src="regional_HS_BEA_mapping/html/RoAsia_HS_TiVA_scatter.html"></iframe>
+            <iframe id="roasia_usummary_log" class="plot-iframe hidden" src="regional_HS_BEA_mapping/html_log/RoAsia_HS_TiVA_scatter_log.html"></iframe>
         </div>
     
         <div class="plot-container">
             <h3>RoWorld - HS to BEA vs TiVA Imports</h3>
             
-            <iframe src="regional_HS_BEA_mapping/html/RoWorld_HS_TiVA_scatter.html"></iframe>
+            <div class="scale-toggle">
+                <label><input type="radio" name="roworld_usummary_scale" value="regular" checked onchange="toggleScale('roworld_usummary', this.value)"> Regular Scale</label>
+                <label><input type="radio" name="roworld_usummary_scale" value="log" onchange="toggleScale('roworld_usummary', this.value)"> Log Scale</label>
+            </div>
+            <iframe id="roworld_usummary_regular" class="plot-iframe" src="regional_HS_BEA_mapping/html/RoWorld_HS_TiVA_scatter.html"></iframe>
+            <iframe id="roworld_usummary_log" class="plot-iframe hidden" src="regional_HS_BEA_mapping/html_log/RoWorld_HS_TiVA_scatter_log.html"></iframe>
         </div>
     
     </div>
     
     <div id="refined-regular-plots" class="tabcontent">
-        <h2>Refined Goods - Regular Scale Plots</h2>
-        <p>These plots exclude BEA codes that consistently have HS=0 but TiVA>0 across all regions, providing a more refined goods-only comparison.</p>
+        <h2>Refined Goods Plots</h2>
+        <p>These plots exclude BEA codes that consistently have HS=0 but TiVA>0 across all regions, providing a more refined goods-only comparison by removing services categories.</p>
 
         <div class="plot-container">
             <h3>World Total - HS to BEA vs TiVA Imports - Refined Goods Only</h3>
             <p>This is the refined goods-only comparison of the world total from our HS mapping to the world total imports from the TiVA tables.</p>
-            <iframe src="regional_HS_BEA_mapping/html/world_HS_TiVA_scatter_refined_goods.html"></iframe>
+            <div class="scale-toggle">
+                <label><input type="radio" name="world_goods_scale" value="regular" checked onchange="toggleScale('world_goods', this.value)"> Regular Scale</label>
+                <label><input type="radio" name="world_goods_scale" value="log" onchange="toggleScale('world_goods', this.value)"> Log Scale</label>
+            </div>
+            <iframe id="world_goods_regular" class="plot-iframe" src="regional_HS_BEA_mapping/html/world_HS_TiVA_scatter_refined_goods.html"></iframe>
+            <iframe id="world_goods_log" class="plot-iframe hidden" src="regional_HS_BEA_mapping/html_log/world_HS_TiVA_scatter_refined_goods_log.html"></iframe>
         </div>
     
         <div class="plot-container">
             <h3>CAN - HS to BEA vs TiVA Imports - Refined Goods Only</h3>
             
-            <iframe src="regional_HS_BEA_mapping/html/CAN_HS_TiVA_scatter_refined_goods.html"></iframe>
+            <div class="scale-toggle">
+                <label><input type="radio" name="can_goods_scale" value="regular" checked onchange="toggleScale('can_goods', this.value)"> Regular Scale</label>
+                <label><input type="radio" name="can_goods_scale" value="log" onchange="toggleScale('can_goods', this.value)"> Log Scale</label>
+            </div>
+            <iframe id="can_goods_regular" class="plot-iframe" src="regional_HS_BEA_mapping/html/CAN_HS_TiVA_scatter_refined_goods.html"></iframe>
+            <iframe id="can_goods_log" class="plot-iframe hidden" src="regional_HS_BEA_mapping/html_log/CAN_HS_TiVA_scatter_refined_goods_log.html"></iframe>
         </div>
     
         <div class="plot-container">
             <h3>CHN - HS to BEA vs TiVA Imports - Refined Goods Only</h3>
             
-            <iframe src="regional_HS_BEA_mapping/html/CHN_HS_TiVA_scatter_refined_goods.html"></iframe>
+            <div class="scale-toggle">
+                <label><input type="radio" name="chn_goods_scale" value="regular" checked onchange="toggleScale('chn_goods', this.value)"> Regular Scale</label>
+                <label><input type="radio" name="chn_goods_scale" value="log" onchange="toggleScale('chn_goods', this.value)"> Log Scale</label>
+            </div>
+            <iframe id="chn_goods_regular" class="plot-iframe" src="regional_HS_BEA_mapping/html/CHN_HS_TiVA_scatter_refined_goods.html"></iframe>
+            <iframe id="chn_goods_log" class="plot-iframe hidden" src="regional_HS_BEA_mapping/html_log/CHN_HS_TiVA_scatter_refined_goods_log.html"></iframe>
         </div>
     
         <div class="plot-container">
             <h3>Europe - HS to BEA vs TiVA Imports - Refined Goods Only</h3>
             
-            <iframe src="regional_HS_BEA_mapping/html/Europe_HS_TiVA_scatter_refined_goods.html"></iframe>
+            <div class="scale-toggle">
+                <label><input type="radio" name="europe_goods_scale" value="regular" checked onchange="toggleScale('europe_goods', this.value)"> Regular Scale</label>
+                <label><input type="radio" name="europe_goods_scale" value="log" onchange="toggleScale('europe_goods', this.value)"> Log Scale</label>
+            </div>
+            <iframe id="europe_goods_regular" class="plot-iframe" src="regional_HS_BEA_mapping/html/Europe_HS_TiVA_scatter_refined_goods.html"></iframe>
+            <iframe id="europe_goods_log" class="plot-iframe hidden" src="regional_HS_BEA_mapping/html_log/Europe_HS_TiVA_scatter_refined_goods_log.html"></iframe>
         </div>
     
         <div class="plot-container">
             <h3>JPN - HS to BEA vs TiVA Imports - Refined Goods Only</h3>
             
-            <iframe src="regional_HS_BEA_mapping/html/JPN_HS_TiVA_scatter_refined_goods.html"></iframe>
+            <div class="scale-toggle">
+                <label><input type="radio" name="jpn_goods_scale" value="regular" checked onchange="toggleScale('jpn_goods', this.value)"> Regular Scale</label>
+                <label><input type="radio" name="jpn_goods_scale" value="log" onchange="toggleScale('jpn_goods', this.value)"> Log Scale</label>
+            </div>
+            <iframe id="jpn_goods_regular" class="plot-iframe" src="regional_HS_BEA_mapping/html/JPN_HS_TiVA_scatter_refined_goods.html"></iframe>
+            <iframe id="jpn_goods_log" class="plot-iframe hidden" src="regional_HS_BEA_mapping/html_log/JPN_HS_TiVA_scatter_refined_goods_log.html"></iframe>
         </div>
     
         <div class="plot-container">
             <h3>MEX - HS to BEA vs TiVA Imports - Refined Goods Only</h3>
             
-            <iframe src="regional_HS_BEA_mapping/html/MEX_HS_TiVA_scatter_refined_goods.html"></iframe>
+            <div class="scale-toggle">
+                <label><input type="radio" name="mex_goods_scale" value="regular" checked onchange="toggleScale('mex_goods', this.value)"> Regular Scale</label>
+                <label><input type="radio" name="mex_goods_scale" value="log" onchange="toggleScale('mex_goods', this.value)"> Log Scale</label>
+            </div>
+            <iframe id="mex_goods_regular" class="plot-iframe" src="regional_HS_BEA_mapping/html/MEX_HS_TiVA_scatter_refined_goods.html"></iframe>
+            <iframe id="mex_goods_log" class="plot-iframe hidden" src="regional_HS_BEA_mapping/html_log/MEX_HS_TiVA_scatter_refined_goods_log.html"></iframe>
         </div>
     
         <div class="plot-container">
             <h3>RoAsia - HS to BEA vs TiVA Imports - Refined Goods Only</h3>
             
-            <iframe src="regional_HS_BEA_mapping/html/RoAsia_HS_TiVA_scatter_refined_goods.html"></iframe>
+            <div class="scale-toggle">
+                <label><input type="radio" name="roasia_goods_scale" value="regular" checked onchange="toggleScale('roasia_goods', this.value)"> Regular Scale</label>
+                <label><input type="radio" name="roasia_goods_scale" value="log" onchange="toggleScale('roasia_goods', this.value)"> Log Scale</label>
+            </div>
+            <iframe id="roasia_goods_regular" class="plot-iframe" src="regional_HS_BEA_mapping/html/RoAsia_HS_TiVA_scatter_refined_goods.html"></iframe>
+            <iframe id="roasia_goods_log" class="plot-iframe hidden" src="regional_HS_BEA_mapping/html_log/RoAsia_HS_TiVA_scatter_refined_goods_log.html"></iframe>
         </div>
     
         <div class="plot-container">
             <h3>RoWorld - HS to BEA vs TiVA Imports - Refined Goods Only</h3>
             
-            <iframe src="regional_HS_BEA_mapping/html/RoWorld_HS_TiVA_scatter_refined_goods.html"></iframe>
+            <div class="scale-toggle">
+                <label><input type="radio" name="roworld_goods_scale" value="regular" checked onchange="toggleScale('roworld_goods', this.value)"> Regular Scale</label>
+                <label><input type="radio" name="roworld_goods_scale" value="log" onchange="toggleScale('roworld_goods', this.value)"> Log Scale</label>
+            </div>
+            <iframe id="roworld_goods_regular" class="plot-iframe" src="regional_HS_BEA_mapping/html/RoWorld_HS_TiVA_scatter_refined_goods.html"></iframe>
+            <iframe id="roworld_goods_log" class="plot-iframe hidden" src="regional_HS_BEA_mapping/html_log/RoWorld_HS_TiVA_scatter_refined_goods_log.html"></iframe>
         </div>
     
     </div>
     
-    <div id="log-plots" class="tabcontent">
-        <h2>Log Scale Plots</h2>
-
-        <div class="plot-container">
-            <h3>World Total - HS to BEA vs TiVA Imports (Log Scale)</h3>
-            <p>This is the comparison of the world total from our HS mapping to the world total imports from the TiVA tables on a log scale.</p>
-            <iframe src="regional_HS_BEA_mapping/html_log/world_HS_TiVA_scatter_log.html"></iframe>
-        </div>
     
-        <div class="plot-container">
-            <h3>CAN - HS to BEA vs TiVA Imports (Log Scale)</h3>
+        <div id="naics-breakdown" class="tabcontent">
+            <h2>BEA 3341 (Computer Equipment) - NAICS Code Breakdown by Region</h2>
+            <div class="intro-text">
+                <p>This tab shows the breakdown of BEA code 3341 (Computer Equipment) by its constituent NAICS codes for each region. BEA 3341 consists of three NAICS codes:</p>
+                <ul>
+                    <li><strong>NAICS 334111:</strong> Electronic computer manufacturing</li>
+                    <li><strong>NAICS 334112:</strong> Computer storage device manufacturing</li>
+                    <li><strong>NAICS 334118:</strong> Computer terminal and other computer peripheral equipment manufacturing</li>
+                </ul>
+                <p>These bar charts help identify which specific NAICS codes are driving the import values within BEA 3341 for each region, particularly for diagnosing Mexico's persistent underestimation in the TiVA tables.</p>
+            </div>
             
-            <iframe src="regional_HS_BEA_mapping/html_log/CAN_HS_TiVA_scatter_log.html"></iframe>
-        </div>
-    
-        <div class="plot-container">
-            <h3>CHN - HS to BEA vs TiVA Imports (Log Scale)</h3>
-            
-            <iframe src="regional_HS_BEA_mapping/html_log/CHN_HS_TiVA_scatter_log.html"></iframe>
-        </div>
-    
-        <div class="plot-container">
-            <h3>Europe - HS to BEA vs TiVA Imports (Log Scale)</h3>
-            
-            <iframe src="regional_HS_BEA_mapping/html_log/Europe_HS_TiVA_scatter_log.html"></iframe>
-        </div>
-    
-        <div class="plot-container">
-            <h3>JPN - HS to BEA vs TiVA Imports (Log Scale)</h3>
-            
-            <iframe src="regional_HS_BEA_mapping/html_log/JPN_HS_TiVA_scatter_log.html"></iframe>
-        </div>
-    
-        <div class="plot-container">
-            <h3>MEX - HS to BEA vs TiVA Imports (Log Scale)</h3>
-            
-            <iframe src="regional_HS_BEA_mapping/html_log/MEX_HS_TiVA_scatter_log.html"></iframe>
-        </div>
-    
-        <div class="plot-container">
-            <h3>RoAsia - HS to BEA vs TiVA Imports (Log Scale)</h3>
-            
-            <iframe src="regional_HS_BEA_mapping/html_log/RoAsia_HS_TiVA_scatter_log.html"></iframe>
-        </div>
-    
-        <div class="plot-container">
-            <h3>RoWorld - HS to BEA vs TiVA Imports (Log Scale)</h3>
-            
-            <iframe src="regional_HS_BEA_mapping/html_log/RoWorld_HS_TiVA_scatter_log.html"></iframe>
-        </div>
-    
-    </div>
-    
-    <div id="refined-log-plots" class="tabcontent">
-        <h2>Refined Goods - Log Scale Plots</h2>
-        <p>These plots exclude BEA codes that consistently have HS=0 but TiVA>0 across all regions, providing a more refined goods-only comparison on log scale.</p>
-
-        <div class="plot-container">
-            <h3>World Total - HS to BEA vs TiVA Imports - Refined Goods Only (Log Scale)</h3>
-            <p>This is the refined goods-only comparison of the world total from our HS mapping to the world total imports from the TiVA tables on log scale.</p>
-            <iframe src="regional_HS_BEA_mapping/html_log/world_HS_TiVA_scatter_refined_goods_log.html"></iframe>
-        </div>
-    
-        <div class="plot-container">
-            <h3>CAN - HS to BEA vs TiVA Imports - Refined Goods Only (Log Scale)</h3>
-            
-            <iframe src="regional_HS_BEA_mapping/html_log/CAN_HS_TiVA_scatter_refined_goods_log.html"></iframe>
-        </div>
-    
-        <div class="plot-container">
-            <h3>CHN - HS to BEA vs TiVA Imports - Refined Goods Only (Log Scale)</h3>
-            
-            <iframe src="regional_HS_BEA_mapping/html_log/CHN_HS_TiVA_scatter_refined_goods_log.html"></iframe>
-        </div>
-    
-        <div class="plot-container">
-            <h3>Europe - HS to BEA vs TiVA Imports - Refined Goods Only (Log Scale)</h3>
-            
-            <iframe src="regional_HS_BEA_mapping/html_log/Europe_HS_TiVA_scatter_refined_goods_log.html"></iframe>
-        </div>
-    
-        <div class="plot-container">
-            <h3>JPN - HS to BEA vs TiVA Imports - Refined Goods Only (Log Scale)</h3>
-            
-            <iframe src="regional_HS_BEA_mapping/html_log/JPN_HS_TiVA_scatter_refined_goods_log.html"></iframe>
-        </div>
-    
-        <div class="plot-container">
-            <h3>MEX - HS to BEA vs TiVA Imports - Refined Goods Only (Log Scale)</h3>
-            
-            <iframe src="regional_HS_BEA_mapping/html_log/MEX_HS_TiVA_scatter_refined_goods_log.html"></iframe>
-        </div>
-    
-        <div class="plot-container">
-            <h3>RoAsia - HS to BEA vs TiVA Imports - Refined Goods Only (Log Scale)</h3>
-            
-            <iframe src="regional_HS_BEA_mapping/html_log/RoAsia_HS_TiVA_scatter_refined_goods_log.html"></iframe>
-        </div>
-    
-        <div class="plot-container">
-            <h3>RoWorld - HS to BEA vs TiVA Imports - Refined Goods Only (Log Scale)</h3>
-            
-            <iframe src="regional_HS_BEA_mapping/html_log/RoWorld_HS_TiVA_scatter_refined_goods_log.html"></iframe>
-        </div>
-    
-    </div>
+            <div class="plot-container">
+                <h3>World Total - NAICS Breakdown</h3>
+                <iframe src="regional_HS_BEA_mapping/naics_charts/bea_3341_naics_breakdown_world_total.html" class="plot-iframe"></iframe>
+            </div>
+        
+                <div class="plot-container">
+                    <h3>Canada - NAICS Breakdown</h3>
+                    <iframe src="regional_HS_BEA_mapping/naics_charts/bea_3341_naics_breakdown_can.html" class="plot-iframe"></iframe>
+                </div>
+                
+                <div class="plot-container">
+                    <h3>China - NAICS Breakdown</h3>
+                    <iframe src="regional_HS_BEA_mapping/naics_charts/bea_3341_naics_breakdown_chn.html" class="plot-iframe"></iframe>
+                </div>
+                
+                <div class="plot-container">
+                    <h3>Europe - NAICS Breakdown</h3>
+                    <iframe src="regional_HS_BEA_mapping/naics_charts/bea_3341_naics_breakdown_europe.html" class="plot-iframe"></iframe>
+                </div>
+                
+                <div class="plot-container">
+                    <h3>Japan - NAICS Breakdown</h3>
+                    <iframe src="regional_HS_BEA_mapping/naics_charts/bea_3341_naics_breakdown_jpn.html" class="plot-iframe"></iframe>
+                </div>
+                
+                <div class="plot-container">
+                    <h3>Mexico - NAICS Breakdown</h3>
+                    <iframe src="regional_HS_BEA_mapping/naics_charts/bea_3341_naics_breakdown_mex.html" class="plot-iframe"></iframe>
+                </div>
+                
+                <div class="plot-container">
+                    <h3>Rest of Asia - NAICS Breakdown</h3>
+                    <iframe src="regional_HS_BEA_mapping/naics_charts/bea_3341_naics_breakdown_roasia.html" class="plot-iframe"></iframe>
+                </div>
+                
+                <div class="plot-container">
+                    <h3>Rest of World - NAICS Breakdown</h3>
+                    <iframe src="regional_HS_BEA_mapping/naics_charts/bea_3341_naics_breakdown_roworld.html" class="plot-iframe"></iframe>
+                </div>
+                </div>
     
     <div id="discrepancies" class="tabcontent">
         
@@ -10249,6 +10409,22 @@
             }
             document.getElementById(tabName).classList.add("active");
             evt.currentTarget.classList.add("active");
+        }
+        
+        function toggleScale(regionId, scaleType) {
+            // Hide both iframes for this region
+            var regularIframe = document.getElementById(regionId + '_regular');
+            var logIframe = document.getElementById(regionId + '_log');
+            
+            if (regularIframe && logIframe) {
+                if (scaleType === 'regular') {
+                    regularIframe.classList.remove('hidden');
+                    logIframe.classList.add('hidden');
+                } else if (scaleType === 'log') {
+                    regularIframe.classList.add('hidden');
+                    logIframe.classList.remove('hidden');
+                }
+            }
         }
     </script>
 </body>
