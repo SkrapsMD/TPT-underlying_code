@@ -1,0 +1,644 @@
+
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[table]{xcolor}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{float}
+
+% Define colors
+\definecolor{darkblue}{RGB}{0,51,102}
+\definecolor{lightblue}{RGB}{173,216,230}
+\definecolor{darkgreen}{RGB}{0,100,0}
+\definecolor{darkred}{RGB}{139,0,0}
+\definecolor{orange}{RGB}{255,140,0}
+\definecolor{lightgray}{RGB}{245,245,245}
+
+% Custom commands for highlighting
+\newcommand{\highlight}[1]{\colorbox{yellow}{#1}}
+\newcommand{\increase}[1]{\textcolor{darkgreen}{\textbf{+#1}}}
+\newcommand{\decrease}[1]{\textcolor{darkred}{\textbf{-#1}}}
+\newcommand{\neutral}[1]{\textcolor{black}{#1}}
+
+% Title formatting
+\titleformat{\section}{\Large\bfseries\color{darkblue}}{\thesection}{1em}{}
+\titleformat{\subsection}{\large\bfseries\color{darkblue}}{\thesubsection}{1em}{}
+
+% Header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textcolor{darkblue}{\textbf{Census Mapping Analysis}}}
+\fancyhead[R]{\textcolor{darkblue}{\today}}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+
+\title{\textcolor{darkblue}{\textbf{Year-over-Year Analysis of Census HS-to-NAICS Mappings}}}
+\author{Alternative Census Mapping Analysis}
+\date{\today}
+\maketitle
+
+\section{Executive Summary}
+
+This report analyzes changes in the Census Bureau's HS-to-NAICS mapping data across multiple years, focusing on:
+\begin{itemize}
+    \item Changes in HS code coverage
+    \item Mapping consistency between years
+    \item NAICS code evolution and restructuring
+    \item Distribution patterns of additions and deletions
+\end{itemize}
+
+
+\section{Analysis: 2021 to 2022}
+
+\subsection{HS Code Changes}
+
+The following table summarizes the overall scope of HS code changes between 2021 and 2022, showing the total number of HS codes in each year and breaking down how many were added, deleted, or remained common across both years.
+
+\begin{table}[H]
+\centering
+\rowcolors{2}{lightgray}{white}
+\begin{tabular}{lrrr}
+\toprule
+\textbf{Metric} & \textbf{2021} & \textbf{2022} & \textbf{Change} \\
+\midrule
+Total HS Codes & 19,266 & 19,758 & \increase{492} \\
+Added HS Codes & --- & 1,514 & \textcolor{darkgreen}{1,514} \\
+Deleted HS Codes & 1,022 & --- & \textcolor{darkred}{1,022} \\
+Common HS Codes & \multicolumn{3}{c}{18,244} \\
+\bottomrule
+\end{tabular}
+\caption{HS Code Changes from 2021 to 2022}
+\end{table}
+
+\subsection{Mapping Consistency}
+
+Mapping consistency measures whether HS codes that exist in both years maintain the same NAICS code assignment. High consistency (>95\%) suggests stable classification rules, while lower consistency indicates systematic reclassification efforts. Inconsistent mappings can reflect legitimate product reclassification, methodological updates, or data quality improvements.
+
+
+\textbf{Consistency Rate:} \textcolor{darkgreen}{\textbf{100.0\%}}
+
+\begin{itemize}
+    \item \textcolor{darkgreen}{Consistent mappings: 18,241}
+    \item \textcolor{darkred}{Inconsistent mappings: 3}
+\end{itemize}
+
+\subsection{NAICS Code Changes}
+
+This table shows changes in the NAICS classification system itself between 2021 and 2022. It tracks how many NAICS codes were added (new industry categories), deleted (discontinued categories), and the net change in the total number of industry classifications used in the mapping system.
+
+\begin{table}[H]
+\centering
+\rowcolors{2}{lightgray}{white}
+\begin{tabular}{lrrr}
+\toprule
+\textbf{Metric} & \textbf{2021} & \textbf{2022} & \textbf{Change} \\
+\midrule
+Total NAICS Codes & 403 & 404 & \increase{1} \\
+Added NAICS Codes & --- & 1 & \textcolor{darkgreen}{1} \\
+Deleted NAICS Codes & 0 & --- & \textcolor{darkred}{0} \\
+\bottomrule
+\end{tabular}
+\caption{NAICS Code Changes from 2021 to 2022}
+\end{table}
+
+\subsection{Distribution Patterns}
+
+The distribution of HS code changes across NAICS codes reveals whether mapping updates are concentrated in specific industries or spread broadly across the economy. The concentration index (Herfindahl) measures this dispersion: values near 0 indicate widespread changes across many sectors, while higher values suggest changes concentrated in a few industries.
+
+\textbf{Change Distribution:}
+\begin{itemize}
+    \item Deleted HS codes spread across \textbf{142} NAICS codes
+    \item Added HS codes spread across \textbf{147} NAICS codes
+    \item NAICS codes with both additions and deletions: \textbf{135}
+    \item Concentration Index - Deleted: \textbf{0.025}, Added: \textbf{0.021}
+\end{itemize}
+
+\textbf{NAICS-Level Impact Analysis:}
+
+The table below shows all NAICS codes that experienced net changes in HS code assignments. Positive values indicate sectors that gained HS codes (expanding their trade coverage), while negative values show sectors that lost HS codes. This analysis reveals which industries are most affected by the mapping changes and helps identify sectors experiencing structural shifts in trade classification.
+
+
+This table shows every NAICS industry that experienced a net change in HS code assignments. Each row represents an industry sector, with "Add" showing new HS codes assigned to that sector, "Del" showing codes removed, and "Net" showing the overall impact. Industries with positive net changes expanded their trade product coverage, while negative values indicate reduced coverage.
+
+\begin{table}[H]
+\centering
+\begin{minipage}{0.48\textwidth}
+\centering
+\rowcolors{2}{lightgray}{white}
+\begin{tabular}{lrrr}
+\toprule
+\textbf{NAICS} & \textbf{Add} & \textbf{Del} & \textbf{Net} \\
+\midrule
+333517 & 60 & 19 & \textcolor{darkgreen}{\textbf{+41}} \\
+111219 & 48 & 9 & \textcolor{darkgreen}{\textbf{+39}} \\
+111419 & 32 & 0 & \textcolor{darkgreen}{\textbf{+32}} \\
+325199 & 84 & 58 & \textcolor{darkgreen}{\textbf{+26}} \\
+321211 & 50 & 24 & \textcolor{darkgreen}{\textbf{+26}} \\
+336120 & 38 & 16 & \textcolor{darkgreen}{\textbf{+22}} \\
+313210 & 38 & 16 & \textcolor{darkgreen}{\textbf{+22}} \\
+930000 & 34 & 16 & \textcolor{darkgreen}{\textbf{+18}} \\
+314994 & 23 & 8 & \textcolor{darkgreen}{\textbf{+15}} \\
+336612 & 33 & 20 & \textcolor{darkgreen}{\textbf{+13}} \\
+910000 & 22 & 11 & \textcolor{darkgreen}{\textbf{+11}} \\
+336411 & 44 & 33 & \textcolor{darkgreen}{\textbf{+11}} \\
+325411 & 17 & 6 & \textcolor{darkgreen}{\textbf{+11}} \\
+335129 & 22 & 13 & \textcolor{darkgreen}{\textbf{+9}} \\
+325180 & 14 & 6 & \textcolor{darkgreen}{\textbf{+8}} \\
+313230 & 8 & 0 & \textcolor{darkgreen}{\textbf{+8}} \\
+321999 & 24 & 16 & \textcolor{darkgreen}{\textbf{+8}} \\
+311224 & 20 & 12 & \textcolor{darkgreen}{\textbf{+8}} \\
+313220 & 11 & 3 & \textcolor{darkgreen}{\textbf{+8}} \\
+333318 & 10 & 2 & \textcolor{darkgreen}{\textbf{+8}} \\
+312111 & 8 & 1 & \textcolor{darkgreen}{\textbf{+7}} \\
+335121 & 12 & 6 & \textcolor{darkgreen}{\textbf{+6}} \\
+335122 & 12 & 6 & \textcolor{darkgreen}{\textbf{+6}} \\
+327999 & 5 & 11 & \textcolor{darkred}{\textbf{-6}} \\
+335312 & 19 & 13 & \textcolor{darkgreen}{\textbf{+6}} \\
+331110 & 0 & 6 & \textcolor{darkred}{\textbf{-6}} \\
+311411 & 6 & 0 & \textcolor{darkgreen}{\textbf{+6}} \\
+331491 & 10 & 5 & \textcolor{darkgreen}{\textbf{+5}} \\
+314110 & 11 & 6 & \textcolor{darkgreen}{\textbf{+5}} \\
+321213 & 12 & 7 & \textcolor{darkgreen}{\textbf{+5}} \\
+111422 & 7 & 2 & \textcolor{darkgreen}{\textbf{+5}} \\
+333994 & 8 & 3 & \textcolor{darkgreen}{\textbf{+5}} \\
+111411 & 7 & 2 & \textcolor{darkgreen}{\textbf{+5}} \\
+333999 & 16 & 11 & \textcolor{darkgreen}{\textbf{+5}} \\
+334310 & 11 & 7 & \textcolor{darkgreen}{\textbf{+4}} \\
+321911 & 8 & 4 & \textcolor{darkgreen}{\textbf{+4}} \\
+314120 & 7 & 11 & \textcolor{darkred}{\textbf{-4}} \\
+111211 & 4 & 0 & \textcolor{darkgreen}{\textbf{+4}} \\
+\bottomrule
+\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\textwidth}
+\centering
+\rowcolors{2}{lightgray}{white}
+\begin{tabular}{lrrr}
+\toprule
+\textbf{NAICS} & \textbf{Add} & \textbf{Del} & \textbf{Net} \\
+\midrule
+115114 & 4 & 0 & \textcolor{darkgreen}{\textbf{+4}} \\
+321918 & 8 & 4 & \textcolor{darkgreen}{\textbf{+4}} \\
+337211 & 5 & 1 & \textcolor{darkgreen}{\textbf{+4}} \\
+325412 & 8 & 4 & \textcolor{darkgreen}{\textbf{+4}} \\
+312130 & 4 & 0 & \textcolor{darkgreen}{\textbf{+4}} \\
+339910 & 8 & 4 & \textcolor{darkgreen}{\textbf{+4}} \\
+111334 & 0 & 3 & \textcolor{darkred}{\textbf{-3}} \\
+327211 & 3 & 0 & \textcolor{darkgreen}{\textbf{+3}} \\
+311911 & 9 & 6 & \textcolor{darkgreen}{\textbf{+3}} \\
+334419 & 5 & 2 & \textcolor{darkgreen}{\textbf{+3}} \\
+335991 & 4 & 1 & \textcolor{darkgreen}{\textbf{+3}} \\
+326299 & 5 & 2 & \textcolor{darkgreen}{\textbf{+3}} \\
+327212 & 9 & 6 & \textcolor{darkgreen}{\textbf{+3}} \\
+339950 & 6 & 3 & \textcolor{darkgreen}{\textbf{+3}} \\
+311511 & 1 & 4 & \textcolor{darkred}{\textbf{-3}} \\
+311514 & 5 & 2 & \textcolor{darkgreen}{\textbf{+3}} \\
+311710 & 4 & 2 & \textcolor{darkgreen}{\textbf{+2}} \\
+333249 & 8 & 6 & \textcolor{darkgreen}{\textbf{+2}} \\
+311611 & 2 & 0 & \textcolor{darkgreen}{\textbf{+2}} \\
+332993 & 2 & 0 & \textcolor{darkgreen}{\textbf{+2}} \\
+111333 & 0 & 2 & \textcolor{darkred}{\textbf{-2}} \\
+325613 & 17 & 15 & \textcolor{darkgreen}{\textbf{+2}} \\
+114111 & 0 & 2 & \textcolor{darkred}{\textbf{-2}} \\
+311421 & 4 & 2 & \textcolor{darkgreen}{\textbf{+2}} \\
+315220 & 73 & 71 & \textcolor{darkgreen}{\textbf{+2}} \\
+111140 & 13 & 11 & \textcolor{darkgreen}{\textbf{+2}} \\
+312120 & 2 & 0 & \textcolor{darkgreen}{\textbf{+2}} \\
+327215 & 6 & 4 & \textcolor{darkgreen}{\textbf{+2}} \\
+325414 & 9 & 11 & \textcolor{darkred}{\textbf{-2}} \\
+335911 & 2 & 4 & \textcolor{darkred}{\textbf{-2}} \\
+334220 & 12 & 10 & \textcolor{darkgreen}{\textbf{+2}} \\
+312140 & 2 & 0 & \textcolor{darkgreen}{\textbf{+2}} \\
+111335 & 4 & 6 & \textcolor{darkred}{\textbf{-2}} \\
+333120 & 7 & 5 & \textcolor{darkgreen}{\textbf{+2}} \\
+312230 & 9 & 7 & \textcolor{darkgreen}{\textbf{+2}} \\
+325211 & 5 & 3 & \textcolor{darkgreen}{\textbf{+2}} \\
+337215 & 26 & 24 & \textcolor{darkgreen}{\textbf{+2}} \\
+\bottomrule
+\end{tabular}
+\end{minipage}
+\caption{All NAICS Codes with Net HS Code Changes (2021 to 2022) (showing 75 NAICS codes with |net change| $\geq 2$ )}
+\end{table}
+
+
+\subsection{New NAICS Code Analysis}
+
+This analysis examines newly introduced NAICS codes to understand the nature of classification system changes. New codes fall into three categories:
+
+\begin{itemize}
+    \item \textcolor{darkblue}{\textbf{Consolidation}}: Multiple existing NAICS codes merged into a single new code, typically reflecting industry convergence or administrative simplification.
+    \item \textcolor{orange}{\textbf{Replacement}}: One-to-one substitution where a new NAICS code directly replaces an existing code, often due to definitional updates or code restructuring.
+    \item \textcolor{darkgreen}{\textbf{Truly New}}: Codes created for entirely new HS codes, representing emerging products or trade categories.
+\end{itemize}
+
+The Source NAICS Code(s) column shows which existing codes contributed to each new classification, providing insight into the structural evolution of the mapping system.
+
+The following table lists every new NAICS code introduced in 2022, showing how many HS codes it covers, whether it represents a consolidation of multiple old codes, a direct replacement, or covers entirely new trade products, and which specific old NAICS codes contributed to its creation.
+
+\begin{table}[H]
+\centering
+\rowcolors{2}{lightgray}{white}
+\begin{tabular}{llrl}
+\toprule
+\textbf{New NAICS Code} & \textbf{Category} & \textbf{HS Codes} & \textbf{Source NAICS Code(s)} \\
+\midrule
+115114 & \textcolor{darkgreen}{\textbf{truly\_new}} & 4 & N/A (new HS codes) \\
+\bottomrule
+\end{tabular}
+\caption{New NAICS Code Classification Analysis}
+\end{table}
+
+\textbf{Key Observations:} This period shows 0 consolidations, 0 replacements, and 1 truly new codes. Limited new code introduction suggests a stable classification period.
+
+\newpage
+
+
+\section{Analysis: 2022 to 2023}
+
+\subsection{HS Code Changes}
+
+The following table summarizes the overall scope of HS code changes between 2022 and 2023, showing the total number of HS codes in each year and breaking down how many were added, deleted, or remained common across both years.
+
+\begin{table}[H]
+\centering
+\rowcolors{2}{lightgray}{white}
+\begin{tabular}{lrrr}
+\toprule
+\textbf{Metric} & \textbf{2022} & \textbf{2023} & \textbf{Change} \\
+\midrule
+Total HS Codes & 19,758 & 19,879 & \increase{121} \\
+Added HS Codes & --- & 261 & \textcolor{darkgreen}{261} \\
+Deleted HS Codes & 140 & --- & \textcolor{darkred}{140} \\
+Common HS Codes & \multicolumn{3}{c}{19,618} \\
+\bottomrule
+\end{tabular}
+\caption{HS Code Changes from 2022 to 2023}
+\end{table}
+
+\subsection{Mapping Consistency}
+
+Mapping consistency measures whether HS codes that exist in both years maintain the same NAICS code assignment. High consistency (>95\%) suggests stable classification rules, while lower consistency indicates systematic reclassification efforts. Inconsistent mappings can reflect legitimate product reclassification, methodological updates, or data quality improvements.
+
+
+\textbf{Consistency Rate:} \textcolor{darkred}{\textbf{84.7\%}}
+
+\begin{itemize}
+    \item \textcolor{darkgreen}{Consistent mappings: 16,626}
+    \item \textcolor{darkred}{Inconsistent mappings: 2,992}
+\end{itemize}
+
+\subsection{NAICS Code Changes}
+
+This table shows changes in the NAICS classification system itself between 2022 and 2023. It tracks how many NAICS codes were added (new industry categories), deleted (discontinued categories), and the net change in the total number of industry classifications used in the mapping system.
+
+\begin{table}[H]
+\centering
+\rowcolors{2}{lightgray}{white}
+\begin{tabular}{lrrr}
+\toprule
+\textbf{Metric} & \textbf{2022} & \textbf{2023} & \textbf{Change} \\
+\midrule
+Total NAICS Codes & 404 & 382 & \decrease{22} \\
+Added NAICS Codes & --- & 21 & \textcolor{darkgreen}{21} \\
+Deleted NAICS Codes & 43 & --- & \textcolor{darkred}{43} \\
+\bottomrule
+\end{tabular}
+\caption{NAICS Code Changes from 2022 to 2023}
+\end{table}
+
+\subsection{Distribution Patterns}
+
+The distribution of HS code changes across NAICS codes reveals whether mapping updates are concentrated in specific industries or spread broadly across the economy. The concentration index (Herfindahl) measures this dispersion: values near 0 indicate widespread changes across many sectors, while higher values suggest changes concentrated in a few industries.
+
+\textbf{Change Distribution:}
+\begin{itemize}
+    \item Deleted HS codes spread across \textbf{42} NAICS codes
+    \item Added HS codes spread across \textbf{29} NAICS codes
+    \item NAICS codes with both additions and deletions: \textbf{19}
+    \item Concentration Index - Deleted: \textbf{0.096}, Added: \textbf{0.091}
+\end{itemize}
+
+\textbf{NAICS-Level Impact Analysis:}
+
+The table below shows all NAICS codes that experienced net changes in HS code assignments. Positive values indicate sectors that gained HS codes (expanding their trade coverage), while negative values show sectors that lost HS codes. This analysis reveals which industries are most affected by the mapping changes and helps identify sectors experiencing structural shifts in trade classification.
+
+
+This table shows every NAICS industry that experienced a net change in HS code assignments. Each row represents an industry sector, with "Add" showing new HS codes assigned to that sector, "Del" showing codes removed, and "Net" showing the overall impact. Industries with positive net changes expanded their trade product coverage, while negative values indicate reduced coverage.
+
+\begin{table}[H]
+\centering
+\begin{minipage}{0.48\textwidth}
+\centering
+\rowcolors{2}{lightgray}{white}
+\begin{tabular}{lrrr}
+\toprule
+\textbf{NAICS} & \textbf{Add} & \textbf{Del} & \textbf{Net} \\
+\midrule
+315250 & 26 & 0 & \textcolor{darkgreen}{\textbf{+26}} \\
+111422 & 26 & 1 & \textcolor{darkgreen}{\textbf{+25}} \\
+111219 & 60 & 38 & \textcolor{darkgreen}{\textbf{+22}} \\
+111332 & 15 & 3 & \textcolor{darkgreen}{\textbf{+12}} \\
+111339 & 13 & 2 & \textcolor{darkgreen}{\textbf{+11}} \\
+335910 & 10 & 0 & \textcolor{darkgreen}{\textbf{+10}} \\
+321211 & 10 & 2 & \textcolor{darkgreen}{\textbf{+8}} \\
+314120 & 11 & 3 & \textcolor{darkgreen}{\textbf{+8}} \\
+311421 & 7 & 0 & \textcolor{darkgreen}{\textbf{+7}} \\
+336110 & 6 & 0 & \textcolor{darkgreen}{\textbf{+6}} \\
+311611 & 0 & 6 & \textcolor{darkred}{\textbf{-6}} \\
+313210 & 0 & 6 & \textcolor{darkred}{\textbf{-6}} \\
+326122 & 6 & 0 & \textcolor{darkgreen}{\textbf{+6}} \\
+111419 & 6 & 11 & \textcolor{darkred}{\textbf{-5}} \\
+111120 & 8 & 4 & \textcolor{darkgreen}{\textbf{+4}} \\
+327991 & 5 & 1 & \textcolor{darkgreen}{\textbf{+4}} \\
+\bottomrule
+\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\textwidth}
+\centering
+\rowcolors{2}{lightgray}{white}
+\begin{tabular}{lrrr}
+\toprule
+\textbf{NAICS} & \textbf{Add} & \textbf{Del} & \textbf{Net} \\
+\midrule
+313230 & 0 & 4 & \textcolor{darkred}{\textbf{-4}} \\
+312111 & 0 & 3 & \textcolor{darkred}{\textbf{-3}} \\
+311221 & 6 & 3 & \textcolor{darkgreen}{\textbf{+3}} \\
+327211 & 0 & 3 & \textcolor{darkred}{\textbf{-3}} \\
+336111 & 0 & 3 & \textcolor{darkred}{\textbf{-3}} \\
+325199 & 6 & 3 & \textcolor{darkgreen}{\textbf{+3}} \\
+111998 & 4 & 1 & \textcolor{darkgreen}{\textbf{+3}} \\
+111130 & 7 & 4 & \textcolor{darkgreen}{\textbf{+3}} \\
+311224 & 6 & 4 & \textcolor{darkgreen}{\textbf{+2}} \\
+324110 & 2 & 0 & \textcolor{darkgreen}{\textbf{+2}} \\
+315220 & 0 & 2 & \textcolor{darkred}{\textbf{-2}} \\
+314994 & 0 & 2 & \textcolor{darkred}{\textbf{-2}} \\
+111320 & 2 & 0 & \textcolor{darkgreen}{\textbf{+2}} \\
+311411 & 0 & 2 & \textcolor{darkred}{\textbf{-2}} \\
+311211 & 2 & 0 & \textcolor{darkgreen}{\textbf{+2}} \\
+\bottomrule
+\end{tabular}
+\end{minipage}
+\caption{All NAICS Codes with Net HS Code Changes (2022 to 2023) (showing 31 NAICS codes with |net change| $\geq 2$ )}
+\end{table}
+
+
+\subsection{New NAICS Code Analysis}
+
+This analysis examines newly introduced NAICS codes to understand the nature of classification system changes. New codes fall into three categories:
+
+\begin{itemize}
+    \item \textcolor{darkblue}{\textbf{Consolidation}}: Multiple existing NAICS codes merged into a single new code, typically reflecting industry convergence or administrative simplification.
+    \item \textcolor{orange}{\textbf{Replacement}}: One-to-one substitution where a new NAICS code directly replaces an existing code, often due to definitional updates or code restructuring.
+    \item \textcolor{darkgreen}{\textbf{Truly New}}: Codes created for entirely new HS codes, representing emerging products or trade categories.
+\end{itemize}
+
+The Source NAICS Code(s) column shows which existing codes contributed to each new classification, providing insight into the structural evolution of the mapping system.
+
+The following table lists every new NAICS code introduced in 2023, showing how many HS codes it covers, whether it represents a consolidation of multiple old codes, a direct replacement, or covers entirely new trade products, and which specific old NAICS codes contributed to its creation.
+
+\begin{table}[H]
+\centering
+\rowcolors{2}{lightgray}{white}
+\begin{tabular}{llrl}
+\toprule
+\textbf{New NAICS Code} & \textbf{Category} & \textbf{HS Codes} & \textbf{Source NAICS Code(s)} \\
+\midrule
+333248 & \textcolor{darkblue}{\textbf{consolidation}} & 173 & 333244, 333249 \\
+212390 & \textcolor{darkblue}{\textbf{consolidation}} & 37 & 212391, 212392, 212393, +1 more \\
+316990 & \textcolor{darkblue}{\textbf{consolidation}} & 102 & 316992, 316998 \\
+212114 & \textcolor{darkblue}{\textbf{consolidation}} & 3 & 212111, 212113 \\
+336110 & \textcolor{darkblue}{\textbf{consolidation}} & 54 & 336111, 336112 \\
+335131 & \textcolor{orange}{\textbf{replacement}} & 12 & 335121 \\
+337126 & \textcolor{darkblue}{\textbf{consolidation}} & 46 & 337124, 337125 \\
+333310 & \textcolor{darkblue}{\textbf{consolidation}} & 178 & 333314, 333316, 333318 \\
+335910 & \textcolor{darkblue}{\textbf{consolidation}} & 92 & 335911, 335912 \\
+322120 & \textcolor{darkblue}{\textbf{consolidation}} & 132 & 322121, 322122 \\
+212323 & \textcolor{darkblue}{\textbf{consolidation}} & 13 & 212324, 212325 \\
+315250 & \textcolor{darkblue}{\textbf{consolidation}} & 1907 & 315220, 315240, 315280 \\
+212115 & \textcolor{orange}{\textbf{replacement}} & 4 & 212112 \\
+335132 & \textcolor{orange}{\textbf{replacement}} & 12 & 335122 \\
+315120 & \textcolor{darkblue}{\textbf{consolidation}} & 53 & 315110, 315190 \\
+334610 & \textcolor{darkblue}{\textbf{consolidation}} & 26 & 334613, 334614 \\
+335139 & \textcolor{darkblue}{\textbf{consolidation}} & 65 & 335110, 335129 \\
+212220 & \textcolor{darkblue}{\textbf{consolidation}} & 10 & 212221, 212222 \\
+333998 & \textcolor{darkblue}{\textbf{consolidation}} & 71 & 333997, 333999 \\
+212290 & \textcolor{darkblue}{\textbf{consolidation}} & 27 & 212291, 212299 \\
+321215 & \textcolor{darkblue}{\textbf{consolidation}} & 17 & 321213, 321214 \\
+\bottomrule
+\end{tabular}
+\caption{New NAICS Code Classification Analysis}
+\end{table}
+
+\textbf{Key Observations:} This period shows 18 consolidations, 3 replacements, and 0 truly new codes. Consolidations dominate, suggesting administrative simplification efforts.
+
+\newpage
+
+
+\section{Analysis: 2023 to 2024}
+
+\subsection{HS Code Changes}
+
+The following table summarizes the overall scope of HS code changes between 2023 and 2024, showing the total number of HS codes in each year and breaking down how many were added, deleted, or remained common across both years.
+
+\begin{table}[H]
+\centering
+\rowcolors{2}{lightgray}{white}
+\begin{tabular}{lrrr}
+\toprule
+\textbf{Metric} & \textbf{2023} & \textbf{2024} & \textbf{Change} \\
+\midrule
+Total HS Codes & 19,879 & 19,978 & \increase{99} \\
+Added HS Codes & --- & 205 & \textcolor{darkgreen}{205} \\
+Deleted HS Codes & 106 & --- & \textcolor{darkred}{106} \\
+Common HS Codes & \multicolumn{3}{c}{19,773} \\
+\bottomrule
+\end{tabular}
+\caption{HS Code Changes from 2023 to 2024}
+\end{table}
+
+\subsection{Mapping Consistency}
+
+Mapping consistency measures whether HS codes that exist in both years maintain the same NAICS code assignment. High consistency (>95\%) suggests stable classification rules, while lower consistency indicates systematic reclassification efforts. Inconsistent mappings can reflect legitimate product reclassification, methodological updates, or data quality improvements.
+
+
+\textbf{Consistency Rate:} \textcolor{darkgreen}{\textbf{95.1\%}}
+
+\begin{itemize}
+    \item \textcolor{darkgreen}{Consistent mappings: 18,810}
+    \item \textcolor{darkred}{Inconsistent mappings: 963}
+\end{itemize}
+
+\subsection{NAICS Code Changes}
+
+This table shows changes in the NAICS classification system itself between 2023 and 2024. It tracks how many NAICS codes were added (new industry categories), deleted (discontinued categories), and the net change in the total number of industry classifications used in the mapping system.
+
+\begin{table}[H]
+\centering
+\rowcolors{2}{lightgray}{white}
+\begin{tabular}{lrrr}
+\toprule
+\textbf{Metric} & \textbf{2023} & \textbf{2024} & \textbf{Change} \\
+\midrule
+Total NAICS Codes & 382 & 388 & \increase{6} \\
+Added NAICS Codes & --- & 9 & \textcolor{darkgreen}{9} \\
+Deleted NAICS Codes & 3 & --- & \textcolor{darkred}{3} \\
+\bottomrule
+\end{tabular}
+\caption{NAICS Code Changes from 2023 to 2024}
+\end{table}
+
+\subsection{Distribution Patterns}
+
+The distribution of HS code changes across NAICS codes reveals whether mapping updates are concentrated in specific industries or spread broadly across the economy. The concentration index (Herfindahl) measures this dispersion: values near 0 indicate widespread changes across many sectors, while higher values suggest changes concentrated in a few industries.
+
+\textbf{Change Distribution:}
+\begin{itemize}
+    \item Deleted HS codes spread across \textbf{22} NAICS codes
+    \item Added HS codes spread across \textbf{21} NAICS codes
+    \item NAICS codes with both additions and deletions: \textbf{13}
+    \item Concentration Index - Deleted: \textbf{0.107}, Added: \textbf{0.133}
+\end{itemize}
+
+\textbf{NAICS-Level Impact Analysis:}
+
+The table below shows all NAICS codes that experienced net changes in HS code assignments. Positive values indicate sectors that gained HS codes (expanding their trade coverage), while negative values show sectors that lost HS codes. This analysis reveals which industries are most affected by the mapping changes and helps identify sectors experiencing structural shifts in trade classification.
+
+
+This table shows every NAICS industry that experienced a net change in HS code assignments. Each row represents an industry sector, with "Add" showing new HS codes assigned to that sector, "Del" showing codes removed, and "Net" showing the overall impact. Industries with positive net changes expanded their trade product coverage, while negative values indicate reduced coverage.
+
+\begin{table}[H]
+\centering
+\begin{minipage}{0.48\textwidth}
+\centering
+\rowcolors{2}{lightgray}{white}
+\begin{tabular}{lrrr}
+\toprule
+\textbf{NAICS} & \textbf{Add} & \textbf{Del} & \textbf{Net} \\
+\midrule
+325199 & 37 & 13 & \textcolor{darkgreen}{\textbf{+24}} \\
+325412 & 40 & 16 & \textcolor{darkgreen}{\textbf{+24}} \\
+334413 & 19 & 0 & \textcolor{darkgreen}{\textbf{+19}} \\
+111219 & 41 & 22 & \textcolor{darkgreen}{\textbf{+19}} \\
+111419 & 18 & 5 & \textcolor{darkgreen}{\textbf{+13}} \\
+315250 & 0 & 12 & \textcolor{darkred}{\textbf{-12}} \\
+331110 & 8 & 0 & \textcolor{darkgreen}{\textbf{+8}} \\
+335910 & 0 & 5 & \textcolor{darkred}{\textbf{-5}} \\
+337127 & 4 & 0 & \textcolor{darkgreen}{\textbf{+4}} \\
+111422 & 0 & 4 & \textcolor{darkred}{\textbf{-4}} \\
+111333 & 8 & 4 & \textcolor{darkgreen}{\textbf{+4}} \\
+337121 & 2 & 0 & \textcolor{darkgreen}{\textbf{+2}} \\
+322120 & 2 & 4 & \textcolor{darkred}{\textbf{-2}} \\
+337122 & 2 & 0 & \textcolor{darkgreen}{\textbf{+2}} \\
+\bottomrule
+\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\textwidth}
+\centering
+\rowcolors{2}{lightgray}{white}
+\begin{tabular}{lrrr}
+\toprule
+\textbf{NAICS} & \textbf{Add} & \textbf{Del} & \textbf{Net} \\
+\midrule
+335999 & 0 & 2 & \textcolor{darkred}{\textbf{-2}} \\
+332119 & 2 & 0 & \textcolor{darkgreen}{\textbf{+2}} \\
+311411 & 2 & 0 & \textcolor{darkgreen}{\textbf{+2}} \\
+324110 & 0 & 1 & \textcolor{darkred}{\textbf{-1}} \\
+113210 & 0 & 1 & \textcolor{darkred}{\textbf{-1}} \\
+325414 & 2 & 1 & \textcolor{darkgreen}{\textbf{+1}} \\
+326199 & 1 & 0 & \textcolor{darkgreen}{\textbf{+1}} \\
+327991 & 0 & 1 & \textcolor{darkred}{\textbf{-1}} \\
+111339 & 6 & 5 & \textcolor{darkgreen}{\textbf{+1}} \\
+111310 & 2 & 1 & \textcolor{darkgreen}{\textbf{+1}} \\
+111320 & 0 & 1 & \textcolor{darkred}{\textbf{-1}} \\
+325180 & 2 & 1 & \textcolor{darkgreen}{\textbf{+1}} \\
+910000 & 4 & 3 & \textcolor{darkgreen}{\textbf{+1}} \\
+311211 & 0 & 1 & \textcolor{darkred}{\textbf{-1}} \\
+\bottomrule
+\end{tabular}
+\end{minipage}
+\caption{All NAICS Codes with Net HS Code Changes (2023 to 2024)}
+\end{table}
+
+
+\subsection{New NAICS Code Analysis}
+
+This analysis examines newly introduced NAICS codes to understand the nature of classification system changes. New codes fall into three categories:
+
+\begin{itemize}
+    \item \textcolor{darkblue}{\textbf{Consolidation}}: Multiple existing NAICS codes merged into a single new code, typically reflecting industry convergence or administrative simplification.
+    \item \textcolor{orange}{\textbf{Replacement}}: One-to-one substitution where a new NAICS code directly replaces an existing code, often due to definitional updates or code restructuring.
+    \item \textcolor{darkgreen}{\textbf{Truly New}}: Codes created for entirely new HS codes, representing emerging products or trade categories.
+\end{itemize}
+
+The Source NAICS Code(s) column shows which existing codes contributed to each new classification, providing insight into the structural evolution of the mapping system.
+
+The following table lists every new NAICS code introduced in 2024, showing how many HS codes it covers, whether it represents a consolidation of multiple old codes, a direct replacement, or covers entirely new trade products, and which specific old NAICS codes contributed to its creation.
+
+\begin{table}[H]
+\centering
+\rowcolors{2}{lightgray}{white}
+\begin{tabular}{llrl}
+\toprule
+\textbf{New NAICS Code} & \textbf{Category} & \textbf{HS Codes} & \textbf{Source NAICS Code(s)} \\
+\midrule
+326150 & \textcolor{orange}{\textbf{replacement}} & 5 & 326113 \\
+327332 & \textcolor{orange}{\textbf{replacement}} & 1 & 327999 \\
+332721 & \textcolor{darkblue}{\textbf{consolidation}} & 4 & 333111, 336350 \\
+1121XX & \textcolor{orange}{\textbf{replacement}} & 34 & 11211X \\
+115210 & \textcolor{darkblue}{\textbf{consolidation}} & 5 & 11211X, 311613 \\
+326140 & \textcolor{orange}{\textbf{replacement}} & 1 & 326113 \\
+331512 & \textcolor{darkblue}{\textbf{consolidation}} & 2 & 331511, 331513 \\
+321912 & \textcolor{orange}{\textbf{replacement}} & 6 & 113310 \\
+332996 & \textcolor{orange}{\textbf{replacement}} & 37 & 332919 \\
+\bottomrule
+\end{tabular}
+\caption{New NAICS Code Classification Analysis}
+\end{table}
+
+\textbf{Key Observations:} This period shows 3 consolidations, 6 replacements, and 0 truly new codes. Replacements are more common, indicating systematic code updates.
+
+\newpage
+
+
+\section{Summary and Insights}
+
+\subsection{Key Findings}
+
+\begin{enumerate}
+    \item \textbf{Most Stable Period:} 2021-2022 showed high mapping consistency (100.0\%) with broad, balanced changes across many sectors.
+    
+    \item \textbf{Major Restructuring:} 2022-2023 experienced significant changes with 84.7\% consistency and extensive NAICS consolidation.
+    
+    \item \textbf{Focused Updates:} 2023-2024 showed targeted changes with 95.1\% consistency, primarily in chemicals and electronics.
+    
+    \item \textbf{Distribution Pattern:} Changes became increasingly concentrated over time, indicating more targeted updates rather than broad restructuring.
+\end{enumerate}
+
+\subsection{Concentration Trends}
+
+The concentration index (Herfindahl) shows how changes became more focused:
+\begin{itemize}
+    \item \textbf{2021-2022:} Low concentration (0.025 deleted, 0.021 added) - widespread changes
+    \item \textbf{2022-2023:} Medium concentration (0.096 deleted, 0.091 added) - consolidation period  
+    \item \textbf{2023-2024:} High concentration (0.107 deleted, 0.133 added) - targeted updates
+\end{itemize}
+
+\subsection{Methodology Notes}
+
+\begin{itemize}
+    \item Data source: Census Bureau HTS import mapping files (imp-code\_*.txt)
+    \item Analysis covers years: 2021, 2022, 2023, 2024
+    \item Concentration measured using Herfindahl index
+    \item Categories: truly\_new (all new HS codes), replacement (1-to-1 substitution), consolidation (many-to-1 merger)
+\end{itemize}
+
+\end{document}

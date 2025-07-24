@@ -371,6 +371,9 @@
     },
     "05_Trade_weights":{
       "base_path": "data/working/05_Trade_weights"
+    },
+    "Alternative_Census_Mappings": {
+      "base_path": "data/working/Alternative_Census_Mappings"
     }
   },
   "final_data_outputs": {
@@ -383,7 +386,8 @@
       "02_HS_to_Naics_to_BEA": "02_HS_to_Naics_to_BEA",
       "03_Map_country_trade_data": "03_Map_country_trade_data",
       "04_Aggregate_BEA_and_HS": "04_Aggregate_BEA_and_HS",
-      "05_Trade_weights": "05_Trade_weights"
+      "05_Trade_weights": "05_Trade_weights",
+      "Alternative_Census_Mappings": "Alternative_Census_Mappings"
     }
   }
 }
