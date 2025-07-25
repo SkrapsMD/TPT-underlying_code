@@ -460,3 +460,50 @@ else:
 
 # We use this path in the calculations... NAMED for what it is.
 normalized_final.to_csv(os.path.join(calculations_dir, f'TiVA','138',f'{year_to}','C.csv'))
+
+
+### CREATE THE NIPA MAPPING HIERARCHY NEEDED TO MAKE THINGS LOOK CLEAN
+def create_NIPA_hierarchy(): 
+    """
+    Description: The results from the creat_country_results function are a 
+    dictionary at the lowest level of NIPA line item. WE want each country to have at least some better codes to map to
+    
+    We have a dataset of the PCE Categories and the appropriate NIPA lines given by the sheet "PCE Categories" in the pcebridge_2017_details.xlsx. Let's recreate that here and 
+    create a true mapping from the lowest level to the highest level of the NIPA hierarchy from scratch. 
+    
+    Then, we can create an aggregate mapping from the lowest to the highest level of the NIPA hierarchy that gives us a really good idea of how the tariffs are affecting the economy 
+    of each country. 
+    """
+    # load in the PCE Data
+    data = pd.read_excel(os.path.join(raw_data_dir, 'PCE_Data' ,'pcebridge_2017_detail.xlsx'), sheet_name = "PCE Categories", header = 3)
+    data = data[data['NIPA Line']!= 1]
+    data['leading_spaces'] = data['Description'].apply(lambda x: len(x) - len(x.lstrip(' ')))
+    data['Description'] = data['Description'].str.strip()
+    path_stack = [] 
+    records = [] 
+    for idx, row in data.iterrows():
+        indent = row['leading_spaces']
+        desc = row['Description']
+        while path_stack and indent <= path_stack[-1][0]:
+            path_stack.pop()
+        path_stack.append((indent, desc))
+        levels = [entry[1] for entry in path_stack]
+        records.append(levels + [None]*(10-len(levels)))
+    max_depth = max(len(r) for r in records)
+    col_names = [f'Level_{i}' for i in range(max_depth)]
+    hier_df = pd.DataFrame(records, columns=col_names)
+    output = pd.concat([data.reset_index(drop=True), hier_df], axis=1)    
+    
+    NIPA_lines = pd.read_excel(os.path.join(raw_data_dir, 'PCE_Data' ,'pcebridge_2017_detail.xlsx'), sheet_name = "2017", header = 4)
+    NIPA_lines = NIPA_lines[['NIPA Line']].drop_duplicates().reset_index(drop=True)
+    
+    output_subset = output[output['NIPA Line'].isin(NIPA_lines['NIPA Line'])]
+    output_subset['Index'] = range(0, len(output_subset))
+
+    output_subset.to_csv(os.path.join(working_data_dir, 'PCE Mappings','Clean_212_PCE_categories_mapped.csv'), index=False)
+    output['Indented_Description'] = output['leading_spaces'].apply(lambda n: ' ' * n) + output['Description']
+    output = output[['NIPA Line', 'Indented_Description', 'Description']]
+    output.to_csv(os.path.join(working_data_dir, 'PCE Mappings','Unclean_FullPCE_categories_mapped.csv'), index=False)
+    print(output_subset.head())
+    print(f"Length of the PCE categories data is: {len(output_subset)}")
+create_NIPA_hierarchy()
