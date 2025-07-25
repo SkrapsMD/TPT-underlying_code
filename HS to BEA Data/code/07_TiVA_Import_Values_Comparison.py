@@ -1,4 +1,5 @@
 import os
+import sys
 import pandas as pd
 import json
 import plotly.express as px
@@ -7,6 +8,10 @@ import numpy as np
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score
 from main_pipeline_run import get_data_path
+
+# Add path to shared validation styles
+sys.path.append(os.path.join(os.path.dirname(os.path.dirname(__file__)), '..'))
+from shared_validation_styles import get_shared_css, get_shared_javascript
 
 """
 DESCRIPTION: This code validates our constructed trade weights and import values by comparing them
@@ -234,7 +239,7 @@ for tiva_file, region_key in region_mapping.items():
                              'TiVA_total_imports': 'TiVA Imports (2023)',
                              'color_category': 'Industry Type'},
                      title=title_text,
-                     template='plotly_dark')
+                     template='plotly_white')
     
     # Add 45-degree line for reference
     max_val = max(merged_comparison['HS_total_imports'].max(), merged_comparison['TiVA_total_imports'].max())
@@ -249,8 +254,8 @@ for tiva_file, region_key in region_mapping.items():
             y=1,
             xanchor='left',
             yanchor='top',
-            bgcolor='rgba(0,0,0,0.8)',
-            bordercolor='rgba(255,255,255,0.3)',
+            bgcolor='rgba(255,255,255,0.9)',
+            bordercolor='rgba(0,0,0,0.2)',
             borderwidth=1,
             font=dict(size=12)
         ),
@@ -290,7 +295,7 @@ for tiva_file, region_key in region_mapping.items():
                                          'TiVA_total_imports': 'TiVA Imports (2023)',
                                          'color_category': 'Industry Type'},
                                  title=title_refined,
-                                 template='plotly_dark')
+                                 template='plotly_white')
         
         # Add 45-degree line for reference
         max_val_refined = max(refined_goods_data['HS_total_imports'].max(), refined_goods_data['TiVA_total_imports'].max())
@@ -305,8 +310,8 @@ for tiva_file, region_key in region_mapping.items():
                 y=1,
                 xanchor='left',
                 yanchor='top',
-                bgcolor='rgba(0,0,0,0.8)',
-                bordercolor='rgba(255,255,255,0.3)',
+                bgcolor='rgba(255,255,255,0.9)',
+                bordercolor='rgba(0,0,0,0.2)',
                 borderwidth=1,
                 font=dict(size=12)
             ),
@@ -337,7 +342,7 @@ for tiva_file, region_key in region_mapping.items():
                                      'TiVA_total_imports': 'TiVA Imports (2023)',
                                      'color_category': 'Industry Type'},
                              title=title_text + ' (Log Scale)',
-                             template='plotly_dark',
+                             template='plotly_white',
                              log_x=True,
                              log_y=True)
         
@@ -355,8 +360,8 @@ for tiva_file, region_key in region_mapping.items():
                 y=1,
                 xanchor='left',
                 yanchor='top',
-                bgcolor='rgba(0,0,0,0.8)',
-                bordercolor='rgba(255,255,255,0.3)',
+                bgcolor='rgba(255,255,255,0.9)',
+                bordercolor='rgba(0,0,0,0.2)',
                 borderwidth=1,
                 font=dict(size=12)
             ),
@@ -396,7 +401,7 @@ for tiva_file, region_key in region_mapping.items():
                                                  'TiVA_total_imports': 'TiVA Imports (2023)',
                                                  'color_category': 'Industry Type'},
                                          title=title_refined_log,
-                                         template='plotly_dark',
+                                         template='plotly_white',
                                          log_x=True,
                                          log_y=True)
             
@@ -414,8 +419,8 @@ for tiva_file, region_key in region_mapping.items():
                     y=1,
                     xanchor='left',
                     yanchor='top',
-                    bgcolor='rgba(0,0,0,0.8)',
-                    bordercolor='rgba(255,255,255,0.3)',
+                    bgcolor='rgba(255,255,255,0.9)',
+                    bordercolor='rgba(0,0,0,0.2)',
                     borderwidth=1,
                     font=dict(size=12)
                 ),
@@ -640,14 +645,14 @@ if len(regional_aggregate_df) > 0:
         title=title_regional,
         xaxis_title='Import Values (USD)',
         yaxis_title='TiVA Imports (2023, USD)',
-        template='plotly_dark',
+        template='plotly_white',
         legend=dict(
             x=1.02,
             y=1,
             xanchor='left',
             yanchor='top',
-            bgcolor='rgba(0,0,0,0.8)',
-            bordercolor='rgba(255,255,255,0.3)',
+            bgcolor='rgba(255,255,255,0.9)',
+            bordercolor='rgba(0,0,0,0.2)',
             borderwidth=1,
             font=dict(size=12)
         ),
@@ -746,7 +751,7 @@ if len(regional_aggregate_df) > 0:
             title=title_regional + ' (Log Scale)',
             xaxis_title='Import Values (USD)',
             yaxis_title='TiVA Imports (2023, USD)',
-            template='plotly_dark',
+            template='plotly_white',
             xaxis_type='log',
             yaxis_type='log',
             legend=dict(
@@ -754,8 +759,8 @@ if len(regional_aggregate_df) > 0:
                 y=1,
                 xanchor='left',
                 yanchor='top',
-                bgcolor='rgba(0,0,0,0.8)',
-                bordercolor='rgba(255,255,255,0.3)',
+                bgcolor='rgba(255,255,255,0.9)',
+                bordercolor='rgba(0,0,0,0.2)',
                 borderwidth=1,
                 font=dict(size=12)
             ),
@@ -856,14 +861,14 @@ if len(regional_aggregate_goods_only_df) > 0:
         title=title_goods_only,
         xaxis_title='HS to BEA Import Values (USD) - Goods Only',
         yaxis_title='TiVA Imports (2023, USD) - Goods Only',
-        template='plotly_dark',
+        template='plotly_white',
         legend=dict(
             x=1.02,
             y=1,
             xanchor='left',
             yanchor='top',
-            bgcolor='rgba(0,0,0,0.8)',
-            bordercolor='rgba(255,255,255,0.3)',
+            bgcolor='rgba(255,255,255,0.9)',
+            bordercolor='rgba(0,0,0,0.2)',
             borderwidth=1,
             font=dict(size=12)
         ),
@@ -963,7 +968,7 @@ if len(regional_aggregate_goods_only_df) > 0:
             title=title_goods_only + ' (Log Scale)',
             xaxis_title='HS to BEA Import Values (USD) - Goods Only',
             yaxis_title='TiVA Imports (2023, USD) - Goods Only',
-            template='plotly_dark',
+            template='plotly_white',
             xaxis_type='log',
             yaxis_type='log',
             legend=dict(
@@ -971,8 +976,8 @@ if len(regional_aggregate_goods_only_df) > 0:
                 y=1,
                 xanchor='left',
                 yanchor='top',
-                bgcolor='rgba(0,0,0,0.8)',
-                bordercolor='rgba(255,255,255,0.3)',
+                bgcolor='rgba(255,255,255,0.9)',
+                bordercolor='rgba(0,0,0,0.2)',
                 borderwidth=1,
                 font=dict(size=12)
             ),
@@ -1010,7 +1015,7 @@ if len(summary_level_df) > 0:
                                      'TiVA_total_imports': 'TiVA Imports (2023)',
                                      'region': 'Region'},
                              title=title_summary,
-                             template='plotly_dark')
+                             template='plotly_white')
     
     # Add 45-degree line for reference
     max_val_summary = max(summary_level_df['HS_total_imports'].max(), summary_level_df['TiVA_total_imports'].max())
@@ -1027,8 +1032,8 @@ if len(summary_level_df) > 0:
             y=1,
             xanchor='left',
             yanchor='top',
-            bgcolor='rgba(0,0,0,0.8)',
-            bordercolor='rgba(255,255,255,0.3)',
+            bgcolor='rgba(255,255,255,0.9)',
+            bordercolor='rgba(0,0,0,0.2)',
             borderwidth=1,
             font=dict(size=12)
         ),
@@ -1056,7 +1061,7 @@ if len(summary_level_df) > 0:
                                              'TiVA_total_imports': 'TiVA Imports (2023)',
                                              'region': 'Region'},
                                      title=title_summary + ' (Log Scale)',
-                                     template='plotly_dark',
+                                     template='plotly_white',
                                      log_x=True,
                                      log_y=True)
         
@@ -1076,8 +1081,8 @@ if len(summary_level_df) > 0:
                 y=1,
                 xanchor='left',
                 yanchor='top',
-                bgcolor='rgba(0,0,0,0.8)',
-                bordercolor='rgba(255,255,255,0.3)',
+                bgcolor='rgba(255,255,255,0.9)',
+                bordercolor='rgba(0,0,0,0.2)',
                 borderwidth=1,
                 font=dict(size=12)
             ),
@@ -1123,7 +1128,7 @@ if len(summary_level_df) > 0:
                                    labels={'HS_total_imports': 'HS to BEA Imports (2024)',
                                            'TiVA_total_imports': 'TiVA Imports (2023)'},
                                    title=title_region,
-                                   template='plotly_dark')
+                                   template='plotly_white')
             
             # Add 45-degree line for reference
             max_val_region = max(region_data['HS_total_imports'].max(), region_data['TiVA_total_imports'].max())
@@ -1158,7 +1163,7 @@ if len(summary_level_df) > 0:
                                            labels={'HS_total_imports': 'HS to BEA Imports (2024)',
                                                    'TiVA_total_imports': 'TiVA Imports (2023)'},
                                            title=title_region + ' (Log Scale)',
-                                           template='plotly_dark',
+                                           template='plotly_white',
                                            log_x=True,
                                            log_y=True)
                 
@@ -1393,8 +1398,8 @@ if len(discrepancies_df) > 0:
     <h2>All BEA Codes - Complete TiVA Comparison Table</h2>
     <p>The ✓ symbol in "Hierarchical?" indicates BEA codes that originated from uncertain hierarchical HS-to-BEA mappings from either 2024 trade data or Schott 2023 data.</p>
     <p>The ✓ symbol in "Likely Services" indicates BEA codes where TiVA has non-zero imports but our HS-to-BEA mapping has zero imports, suggesting these are services categories.</p>
-    <table border="1" style="border-collapse: collapse; width: 100%; color: #ffffff; font-size: 11px;">
-        <tr style="background-color: #333333;">
+    <table border="1" style="border-collapse: collapse; width: 100%; font-size: 11px;">
+        <tr>
             <th>Region</th>
             <th>BEA Code</th>
             <th>BEA Name</th>
@@ -1528,7 +1533,7 @@ if os.path.exists(semiconductor_data_path):
                     title=f'BEA 3341 (Computer Equipment) - NAICS Breakdown<br>{region_names.get(region, region)}',
                     xaxis_title='NAICS Code',
                     yaxis_title='Import Value (USD)',
-                    template='plotly_dark',
+                    template='plotly_white',
                     showlegend=False,
                     margin=dict(l=50, r=50, t=100, b=100),
                     height=500
@@ -1575,7 +1580,7 @@ if os.path.exists(semiconductor_data_path):
             title='BEA 3341 (Computer Equipment) - World Total NAICS Breakdown',
             xaxis_title='NAICS Code',
             yaxis_title='Import Value (USD)',
-            template='plotly_dark',
+            template='plotly_white',
             showlegend=False,
             margin=dict(l=50, r=50, t=100, b=100),
             height=500
@@ -1654,110 +1659,16 @@ master_html_content = f"""
 <head>
     <title>TiVA Import Values Comparison - All Regions</title>
     <style>
-        body {{
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #111111;
-            color: #ffffff;
-        }}
-        .plot-container {{
-            margin-bottom: 40px;
-            border: 1px solid #333333;
-            padding: 20px;
-            border-radius: 8px;
-        }}
-        .intro-text {{
-            background-color: #222222;
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 30px;
-        }}
-        h1 {{
-            text-align: center;
-            color: #ffffff;
-        }}
-        h2 {{
-            color: #ffffff;
-            margin-bottom: 10px;
-        }}
-        iframe {{
-            width: 100%;
-            height: 750px;
-            border: none;
-        }}
-        .tabs {{
-            overflow: hidden;
-            border: 1px solid #333333;
-            background-color: #222222;
-            margin-bottom: 20px;
-        }}
-        .tabs button {{
-            background-color: inherit;
-            float: left;
-            border: none;
-            outline: none;
-            cursor: pointer;
-            padding: 14px 16px;
-            transition: 0.3s;
-            color: #ffffff;
-            font-size: 16px;
-        }}
-        .tabs button:hover {{
-            background-color: #333333;
-        }}
-        .tabs button.active {{
-            background-color: #444444;
-        }}
-        .tabcontent {{
-            display: none;
-            padding: 12px;
-            border: 1px solid #333333;
-            border-top: none;
-            background-color: #111111;
-        }}
-        .tabcontent.active {{
-            display: block;
-        }}
-        table {{
-            border-collapse: collapse;
-            width: 100%;
-            margin-top: 20px;
-        }}
-        th, td {{
-            border: 1px solid #333333;
-            padding: 8px;
-            text-align: left;
-        }}
-        th {{
-            background-color: #333333;
-        }}
-        .scale-toggle {{
-            margin-bottom: 10px;
-            padding: 10px;
-            background-color: #222222;
-            border-radius: 5px;
-            text-align: center;
-        }}
-        .scale-toggle label {{
-            margin-right: 15px;
-            color: #ffffff;
-            font-size: 14px;
-        }}
-        .scale-toggle input[type="radio"] {{
-            margin-right: 5px;
-        }}
-        .plot-iframe {{
-            width: 100%;
-            height: 750px;
-            border: none;
-        }}
-        .plot-iframe.hidden {{
-            display: none;
-        }}
+        {get_shared_css()}
     </style>
 </head>
 <body>
-    <h1>TiVA Import Values Comparison - All Regions</h1>
+    <div class="header">
+        <h1>TiVA Import Values Comparison</h1>
+        <p>Validation of HS-to-BEA Import Mapping Against TiVA Benchmark Data</p>
+    </div>
+    
+    <a href="../../../validation_index.html" class="back-button">Back to Validation Dashboard</a>
     <div class="intro-text">
         <p>This presents a validation of our HS to BEA level imports mapping by comparing imports across our codes, and the BEA's TiVA tables. While our data was created using 2024 import data, the BEA TiVA Tables use 2023 data resulting in some bias. Also, the TiVA tables include values like services (notice the values on the x = 0 line). This is simply a sanity check.</p>
     </div>
@@ -1949,36 +1860,13 @@ master_html_content += f"""
         {discrepancies_html_table}
     </div>
     
+    
+    <div class="footer">
+        <p>Generated for FRBAtl TariffPricePulse Project | TiVA Import Values Validation</p>
+    </div>
+    
     <script>
-        function openTab(evt, tabName) {{
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {{
-                tabcontent[i].classList.remove("active");
-            }}
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {{
-                tablinks[i].classList.remove("active");
-            }}
-            document.getElementById(tabName).classList.add("active");
-            evt.currentTarget.classList.add("active");
-        }}
-        
-        function toggleScale(regionId, scaleType) {{
-            // Hide both iframes for this region
-            var regularIframe = document.getElementById(regionId + '_regular');
-            var logIframe = document.getElementById(regionId + '_log');
-            
-            if (regularIframe && logIframe) {{
-                if (scaleType === 'regular') {{
-                    regularIframe.classList.remove('hidden');
-                    logIframe.classList.add('hidden');
-                }} else if (scaleType === 'log') {{
-                    regularIframe.classList.add('hidden');
-                    logIframe.classList.remove('hidden');
-                }}
-            }}
-        }}
+        {get_shared_javascript()}
     </script>
 </body>
 </html>

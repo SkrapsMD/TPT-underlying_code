@@ -512,7 +512,7 @@ plt.tight_layout()
 plt.savefig(os.path.join(figures_dir, 'von_neumann_layer_contributions_line.png'), dpi=300)
 plt.close()
 
-pd.DataFrame(approximation).to_csv('approx.csv')
+pd.DataFrame(approximation).to_csv(os.path.join(validations_dir,'approx.csv'))
 
 print(f"Final Approximation Error: {np.max(np.abs(approximation+I - Imp_Comm_TRT))}")
 

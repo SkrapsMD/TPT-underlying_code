@@ -3,11 +3,16 @@
 # Generates HTML visualization with regional comparison and country-level difference tabs
 
 import os
+import sys
 import pandas as pd
 import json
 import plotly.graph_objects as go
 import plotly.express as px
 import country_converter as coco
+
+# Add path to shared validation styles
+sys.path.append(os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), '..'))
+from shared_validation_styles import get_shared_css, get_shared_javascript
 
 # Load data paths configuration
 script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -233,7 +238,7 @@ def create_html_visualization():
             'impVal_census': 'Census Mapping Import Value ($)',
             'region': 'Region'
         },
-        template='plotly_dark'
+        template='plotly_white'
     )
     
     # Add 45-degree line
@@ -246,7 +251,7 @@ def create_html_visualization():
         height=600,
         legend=dict(
             x=1.02, y=1, xanchor='left', yanchor='top',
-            bgcolor='rgba(0,0,0,0.8)', bordercolor='rgba(255,255,255,0.3)', borderwidth=1
+            bgcolor='rgba(255,255,255,0.9)', bordercolor='rgba(0,0,0,0.2)', borderwidth=1
         ),
         margin=dict(r=200)
     )
@@ -270,7 +275,7 @@ def create_html_visualization():
             'impVal_alternative': 'Alternative Mapping Import Value ($)',
             'impVal_pct_difference': '% Difference'
         },
-        template='plotly_dark'
+        template='plotly_white'
     )
     
     # Add 45-degree line
@@ -314,7 +319,7 @@ def create_html_visualization():
                 'Census_total_imports': 'Census Mapping Import Value ($)',
                 'TiVA_total_imports': 'TiVA Import Value ($)'
             },
-            template='plotly_dark'
+            template='plotly_white'
         )
         
         # Add 45-degree line
@@ -331,58 +336,26 @@ def create_html_visualization():
         
         tiva_figures[region_key] = fig_tiva
     
-    # Create HTML with tabs
+    # Create HTML with tabs using shared styling
     html_content = f"""
     <!DOCTYPE html>
     <html>
     <head>
-        <title>Mapping Comparison: Schott vs Census</title>
+        <title>Regional Mapping Comparison: Schott vs Census</title>
         <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
         <style>
-            body {{
-                font-family: Arial, sans-serif;
-                margin: 20px;
-            }}
-            .tab {{
-                overflow: hidden;
-                border: 1px solid #ccc;
-                background-color: #f1f1f1;
-                margin-bottom: 10px;
-            }}
-            .tab button {{
-                background-color: inherit;
-                float: left;
-                border: none;
-                outline: none;
-                cursor: pointer;
-                padding: 14px 16px;
-                transition: 0.3s;
-                font-size: 16px;
-            }}
-            .tab button:hover {{
-                background-color: #ddd;
-            }}
-            .tab button.active {{
-                background-color: #ccc;
-            }}
-            .tabcontent {{
-                display: none;
-                padding: 12px;
-                border: 1px solid #ccc;
-                border-top: none;
-            }}
-            .summary {{
-                background-color: #f9f9f9;
-                padding: 15px;
-                margin: 10px 0;
-                border-left: 4px solid #2196F3;
-            }}
+            {get_shared_css()}
         </style>
     </head>
     <body>
-        <h1>Import Value Comparison: Schott vs Census Mapping</h1>
+        <div class="header">
+            <h1>Regional Mapping Comparison</h1>
+            <p>Schott vs Census Mapping - Import Value Analysis</p>
+        </div>
         
-        <div class="tab">
+        <a href="../../../validation_index.html" class="back-button">Back to Validation Dashboard</a>
+        
+        <div class="tabs">
             <button class="tablinks" onclick="openTab(event, 'Regional')" id="defaultOpen">Regional Comparison</button>
             <button class="tablinks" onclick="openTab(event, 'Country')">Country-Level Differences</button>
             <button class="tablinks" onclick="openTab(event, 'TiVA')">Census vs TiVA Benchmark</button>
@@ -418,23 +391,13 @@ def create_html_visualization():
             {"".join([f'<div id="tiva-plot-{region}"></div>' for region in region_order if region in tiva_figures])}
         </div>
         
+        
+        <div class="footer">
+            <p>Generated for FRBAtl TariffPricePulse Project | Regional Mapping Validation</p>
+        </div>
+        
         <script>
-            function openTab(evt, tabName) {{
-                var i, tabcontent, tablinks;
-                tabcontent = document.getElementsByClassName("tabcontent");
-                for (i = 0; i < tabcontent.length; i++) {{
-                    tabcontent[i].style.display = "none";
-                }}
-                tablinks = document.getElementsByClassName("tablinks");
-                for (i = 0; i < tablinks.length; i++) {{
-                    tablinks[i].className = tablinks[i].className.replace(" active", "");
-                }}
-                document.getElementById(tabName).style.display = "block";
-                evt.currentTarget.className += " active";
-            }}
-            
-            // Get the element with id="defaultOpen" and click on it
-            document.getElementById("defaultOpen").click();
+            {get_shared_javascript()}
             
             // Plot the figures
             var regionalData = {fig.to_json()};

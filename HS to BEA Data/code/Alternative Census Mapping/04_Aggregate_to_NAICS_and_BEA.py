@@ -11,14 +11,14 @@ import glob
 # These are based on the unmapped analysis and provide direct BEA code assignments
 MANUAL_BEA_MAPPINGS = {
     # Automotive HS codes (currently mapping to NAICS 336110) -> BEA 336111
-    '8703220110': '336112',  # Passenger cars
-    '8703800060': '336112',  # Passenger cars  
-    '8703800020': '336112',  # Passenger cars
+    '8703220110': '336111',  # Passenger cars
+    '8703800060': '336111',  # Passenger cars  
+    '8703800020': '336111',  # Passenger cars
     
     # Additional automotive HS codes from comparison analysis that should map to automotive not noncomparable
-    '8703800080': '336112',  # Passenger cars - $715M (consolidated_naics in original)
-    '8703220190': '336112',  # Passenger cars - $40.8M (consolidated_naics in original)
-    '8703800045': '336112',  # Passenger cars - $374K (consolidated_naics in original)
+    '8703800080': '336111',  # Passenger cars - $715M (consolidated_naics in original)
+    '8703220190': '336111',  # Passenger cars - $40.8M (consolidated_naics in original)
+    '8703800045': '336111',  # Passenger cars - $374K (consolidated_naics in original)
     
     # Battery HS codes (currently mapping to NAICS 335910) -> BEA 335911
     '8506100090': '335911',  # Primary batteries
