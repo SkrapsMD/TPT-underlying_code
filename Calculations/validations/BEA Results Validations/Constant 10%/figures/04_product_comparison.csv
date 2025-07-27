@@ -1,0 +1,43 @@
+BEA_Code,BEA_Description,total_effect_rank,direct_effect_rank,indirect_effect_rank,import_rank
+315AL,Apparel and leather and allied products,1,1,51,10
+3254,Pharmaceutical and medicine manufacturing,2,2,6,1
+311,Food manufacturing,3,4,3,12
+336112,Light truck and utility vehicle manufacturing,4,5,5,28
+3399,Other miscellaneous manufacturing,5,3,37,14
+324,Petroleum and coal products,6,18,1,20
+335,"Electrical equipment, appliances, and components",8,6,40,3
+3341,Computer and peripheral equipment manufacturing,9,7,76,6
+3121,Beverage manufacturing,11,11,9,30
+111,Crop production,12,8,30,24
+337,Furniture and related products,13,9,31,25
+326,Plastics and rubber products,14,12,32,16
+334X,Other computer and electronic product manufacturing,15,10,73,21
+325X,Other chemical manufacturing,16,14,21,23
+336111,Automobile manufacturing,17,13,64,2
+3362BP,"Motor vehicle body, trailer, and parts manufacturing",18,19,19,7
+313TT,Textile mills and textile product mills,20,15,43,27
+332,Fabricated metal products,21,17,44,13
+3342,Communications equipment manufacturing,22,16,80,11
+3365AO,All other transportation equipment manufacturing,25,22,41,37
+3391,Medical equipment and supplies manufacturing,26,20,57,22
+3345,"Navigational, measuring, electromedical, and control instruments manufacturing",29,21,85,17
+3332OM,Other machinery,34,23,59,4
+327,Nonmetallic mineral products,39,24,66,31
+322,Paper products,46,26,39,32
+3122,Tobacco manufacturing,47,27,38,43
+113FF,"Forestry, fishing, and related activities",49,25,86,36
+112,Animal production and aquaculture,54,29,60,39
+321,Wood products,59,28,81,33
+3251,Basic chemical manufacturing,70,30,87,18
+323,Printing and related support activities,73,32,72,40
+3311IS,Iron and steel mills and manufacturing from purchased steel,75,31,84,26
+3364,Aerospace product and parts manufacturing,78,33,83,19
+33311,Agricultural implement manufacturing,82,36,78,38
+3344,Semiconductor and other electronic component manufacturing,88,34,92,9
+212,"Mining, except oil and gas",89,35,93,41
+3313NF,Nonferrous metal production and processing and foundries,91,37,89,15
+211,Oil and gas extraction,95,37,95,5
+33312,Construction machinery manufacturing,95,37,95,29
+33313,Mining and oil and gas field machinery manufacturing,95,37,95,42
+3252,"Resin, rubber, and artificial fibers manufacturing",95,37,95,34
+33612,Heavy duty truck manufacturing,95,37,95,35
