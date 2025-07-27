@@ -13,7 +13,7 @@ CORNFLOWERBLUE   = '\033[38;2;100;149;237m'
 INDIANRED = '\033[38;2;205;92;92m'
 RESET     = '\033[0m'
 script_dir = os.path.dirname(os.path.abspath(__file__))
-project_dir = os.path.dirname(script_dir)  # Go up one level to Calculations/
+project_dir = os.path.dirname(os.path.dirname(script_dir))  # Go up two levels to Calculations/
 data_paths_file = os.path.join(project_dir, "data_paths.json")
 with open(data_paths_file, 'r') as f:
     data_paths = json.load(f)

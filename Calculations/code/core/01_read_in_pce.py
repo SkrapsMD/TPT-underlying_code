@@ -40,7 +40,7 @@ import numpy as np
 import pandas as pd
 # Load data paths and set up standard directory variables
 script_dir = os.path.dirname(os.path.abspath(__file__))
-project_dir = os.path.dirname(script_dir)  # Go up one level to Calculations/
+project_dir = os.path.dirname(os.path.dirname(script_dir))  # Go up two levels to Calculations/
 data_paths_file = os.path.join(project_dir, "data_paths.json")
 with open(data_paths_file, 'r') as f:
     data_paths = json.load(f)
@@ -57,7 +57,7 @@ hs_to_bea_data_dir = os.path.join(project_root, data_paths['base_paths']['hs_to_
 # Part 1: Create the 2017 Detail and Underlying Summary pivot tables
 year = 2017
 year_to = 2023
-data = pd.read_excel(os.path.join(raw_data_dir, 'pcebridge_2017_detail.xlsx'), sheet_name = f'{year}', header = 4)
+data = pd.read_excel(os.path.join(raw_data_dir, 'PCE_Data', 'pcebridge_2017_detail.xlsx'), sheet_name = f'{year}', header = 4)
 data = data.rename(columns = {
     'Commodity Code': 'Detail', 
     'Commodity Description':'Detail Description', 
@@ -158,7 +158,7 @@ validation_df.to_csv(os.path.join(validations_dir, f"01_read_in_pce/00_detail_vs
 # Part 2: Calculate the Summary Level Growth rates from 2017 to 2023 --- We use the Purchaser Price growth rate (note, purchaser prices sum to PCE)
 def calculate_summary_growthRates(year_from=year, year_to=year_to, type ='purchPrice', use_detail_to_summary=True):
     # Load data for the specified years
-    pce_data = pd.ExcelFile(os.path.join(raw_data_dir, 'pcebridge_97_23.xlsx'))
+    pce_data = pd.ExcelFile(os.path.join(raw_data_dir, 'PCE_Data', 'pcebridge_97_23.xlsx'))
     pce_from = pce_data.parse(sheet_name=str(year_from), header=4)
     pce_to = pce_data.parse(sheet_name=str(year_to), header=4)
     
@@ -180,10 +180,11 @@ def calculate_summary_growthRates(year_from=year, year_to=year_to, type ='purchP
     total_prodPrice_to = pce_to['prodPrice'].sum()
     total_prodPrice_from = pce_from['prodPrice'].sum()
     
+    
     if use_detail_to_summary:
         # Use Detail->Summary mapping for the FROM year (maintains consistency with our constructed data)
         # Load the FROM year detail data
-        detail_from = pd.read_excel(os.path.join(raw_data_dir, 'pcebridge_2017_detail.xlsx'), sheet_name=str(year_from), header=4)
+        detail_from = pd.read_excel(os.path.join(raw_data_dir, 'PCE_Data', 'pcebridge_2017_detail.xlsx'), sheet_name=str(year_from), header=4)
         detail_from = detail_from.rename(columns={
             'Commodity Code': 'Detail',
             'Unnamed: 4': 'prodPrice',
@@ -282,7 +283,7 @@ for price_type in ['purchPrice', 'prodPrice']:
     
     # Get totals by Summary code from PCE bridge data
     # We need to recreate the PCE bridge data here since it's not available in outer scope
-    pce_data = pd.ExcelFile(os.path.join(raw_data_dir, 'pcebridge_97_23.xlsx'))
+    pce_data = pd.ExcelFile(os.path.join(raw_data_dir, 'PCE_Data', 'pcebridge_97_23.xlsx'))
     pce_2017 = pce_data.parse(sheet_name=str(year), header=4)
     pce_2017 = pce_2017.rename(columns={
         'Commodity Code': 'Summary',
@@ -435,9 +436,38 @@ else:
 dist_df.to_csv(os.path.join(validations_dir, f"01_read_in_pce/08_nipa_distribution_changes_{year}.csv"), index=False)
 print("---")
 
+# Create the usummary_final_BEA where we have a 140 x 140 diagonal matrix for testing to see how these work with BEA level output rather than TiVA level output. 
+usummary_final_BEA = usummary_final.copy()
+usummary_final_BEA = usummary_final_BEA.sum(axis=1).to_frame('total')
+# Convert to diagonal matrix keeping row order
+usummary_final_BEA = pd.DataFrame(np.diag(usummary_final_BEA['total']), 
+                                  index=usummary_final_BEA.index, 
+                                  columns=usummary_final_BEA.index)
+normalized_final_BEA = usummary_final_BEA/total_purchPrice_to
+normalized_final_BEA = normalized_final_BEA.replace([np.inf, -np.inf, np.nan], 0)
+# Check the rows for BEA matrix:
+pivot_rows_BEA = normalized_final_BEA.index.tolist()
+expected_rows_BEA = sum_order_tiva
+missing_rows_BEA = [row for row in expected_rows_BEA if row not in pivot_rows_BEA]
+if missing_rows_BEA:
+    print(f"Warning: The following expected rows are missing from BEA matrix: {missing_rows_BEA}")
+else:
+    print("All expected rows are present in BEA matrix")
+
+# Check for row order match for BEA matrix
+if pivot_rows_BEA == expected_rows_BEA:
+    print("Row order matches expected TiVA ordering for BEA matrix")
+else:
+    print("Row order doesn't match expected TiVA ordering for BEA matrix - reordering...")
+    normalized_final_BEA = normalized_final_BEA.reindex(expected_rows_BEA).fillna(0)
+
+# Save BEA matrix
+normalized_final_BEA.to_csv(os.path.join(calculations_dir, f'TiVA','138',f'{year_to}','C_BEA.csv'))
+
 
 # Final Step, normalize the producer prices denominated usummary with purchaser prices to 
 # create the share of total expenditures on each BEA code contributes to each NIPA line
+
 
 normalized_final = usummary_final/total_purchPrice_to
 normalized_final = normalized_final.replace([np.inf, -np.inf, np.nan], 0)
@@ -457,9 +487,12 @@ else:
     print("Row order doesn't match expected TiVA ordering - reordering...")
     normalized_final = normalized_final.reindex(expected_rows).fillna(0)
 
-
 # We use this path in the calculations... NAMED for what it is.
 normalized_final.to_csv(os.path.join(calculations_dir, f'TiVA','138',f'{year_to}','C.csv'))
+
+
+
+
 
 
 ### CREATE THE NIPA MAPPING HIERARCHY NEEDED TO MAKE THINGS LOOK CLEAN

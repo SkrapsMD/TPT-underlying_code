@@ -7,7 +7,7 @@ import pandas as pd
 from tqdm import tqdm
 # Load data paths and set up standard directory variables
 script_dir = os.path.dirname(os.path.abspath(__file__))
-project_dir = os.path.dirname(script_dir)  # Go up one level to Calculations/
+project_dir = os.path.dirname(os.path.dirname(script_dir))  # Go up two levels to Calculations/
 data_paths_file = os.path.join(project_dir, "data_paths.json")
 with open(data_paths_file, 'r') as f:
     data_paths = json.load(f)

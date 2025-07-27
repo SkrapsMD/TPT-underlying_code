@@ -302,9 +302,9 @@ def run_all_countries(constant_rate, aggregate = True):
         
         # Determine output directory
         if constant_rate is None:
-            output_dir = os.path.join(validations_dir, 'Results Validations', 'TWT Data', 'All Countries')
+            output_dir = os.path.join(validations_dir, 'NIPA Results Validations', 'TWT Data', 'All Countries')
         else:
-            output_dir = os.path.join(validations_dir, 'Results Validations', 'Constant 10%', 'All Countries')
+            output_dir = os.path.join(validations_dir, 'NIPA Results Validations', 'Constant 10%', 'All Countries')
         
         # Create directory if it doesn't exist
         os.makedirs(output_dir, exist_ok=True)
@@ -330,6 +330,7 @@ def run_all_countries(constant_rate, aggregate = True):
         pass 
     
 run_all_countries(constant_rate = 0.1, aggregate= True )
+run_all_countries(constant_rate = None, aggregate= True )
 
 
 
@@ -348,9 +349,9 @@ def read_level_effects(level, constant_rate=None):
     """
     # Determine which directory to read from
     if constant_rate is None:
-        data_dir = os.path.join(validations_dir, 'Results Validations', 'TWT Data', 'All Countries')
+        data_dir = os.path.join(validations_dir, 'NIPA Results Validations', 'TWT Data', 'All Countries')
     else:
-        data_dir = os.path.join(validations_dir, 'Results Validations', 'Constant 10%', 'All Countries')
+        data_dir = os.path.join(validations_dir, 'NIPA Results Validations', 'Constant 10%', 'All Countries')
     
     # Read the aggregated files
     direct_df = pd.read_csv(os.path.join(data_dir, 'aggregated_direct_effects.csv'))

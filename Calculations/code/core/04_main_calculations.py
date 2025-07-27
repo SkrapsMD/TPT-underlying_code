@@ -73,7 +73,7 @@ M - Input matrix from the Import Use Table [n x m] -- includes Other and Used (0
 * - can be switched out for the Make table. 
 """
 script_dir = os.path.dirname(os.path.abspath(__file__))
-project_dir = os.path.dirname(script_dir)  # Go up one level to Calculations/
+project_dir = os.path.dirname(os.path.dirname(script_dir))  # Go up two levels to Calculations/
 data_paths_file = os.path.join(project_dir, "data_paths.json")
 with open(data_paths_file, 'r') as f:
     data_paths = json.load(f)
@@ -138,6 +138,9 @@ for name, shape in data.items():
     else:
         linalg_objs[name] = read_data_as_linalg(year, name, type='TiVA', agg='138', shape=shape)
         globals()[name] = linalg_objs[name]
+
+# Read in C_BEA matrix
+C_BEA = read_data_as_linalg(year, 'C_BEA', type='TiVA', agg='138', shape='square')
 
 num =140# Number of Industries/commodities should be the number of categories + 2 
 
@@ -592,4 +595,58 @@ with open(os.path.join(final_data_dir, 'direct_matrix_2023.json'), 'w') as f:
 with open(os.path.join(final_data_dir, 'indirect_matrix_2023.json'), 'w') as f:
     import json
     json.dump(indirect_matrix_json, f)
+
+# Create BEA versions using C_BEA matrix multiplication
+direct_BEA = np.dot(w_m_star_mat, C_BEA)
+direct_BEA_CAN = np.dot(w_m_star_can_mat, C_BEA).tolist()
+direct_BEA_CHN = np.dot(w_m_star_chn_mat, C_BEA).tolist()
+direct_BEA_EUR = np.dot(w_m_star_eur_mat, C_BEA).tolist()
+direct_BEA_JAP = np.dot(w_m_star_jap_mat, C_BEA).tolist()
+direct_BEA_MEX = np.dot(w_m_star_mex_mat, C_BEA).tolist()
+direct_BEA_RoAsia = np.dot(w_m_star_RoAsia_mat, C_BEA).tolist()
+direct_BEA_RoW = np.dot(w_m_star_RoW_mat, C_BEA).tolist()
+
+indirect_BEA = np.dot(np.dot(B_mD, Imp_Comm_TRT @ w_d_star_mat), C_BEA)
+indirect_BEA_CAN = np.dot(np.dot(B_CAN_mD, Imp_Comm_TRT @ w_d_star_mat), C_BEA).tolist()
+indirect_BEA_CHN = np.dot(np.dot(B_CHN_mD, Imp_Comm_TRT @ w_d_star_mat), C_BEA).tolist()
+indirect_BEA_EUR = np.dot(np.dot(B_EUR_mD, Imp_Comm_TRT @ w_d_star_mat), C_BEA).tolist()
+indirect_BEA_JAP = np.dot(np.dot(B_JAP_mD, Imp_Comm_TRT @ w_d_star_mat), C_BEA).tolist()
+indirect_BEA_MEX = np.dot(np.dot(B_MEX_mD, Imp_Comm_TRT @ w_d_star_mat), C_BEA).tolist()
+indirect_BEA_RoAsia = np.dot(np.dot(B_RoAsia_mD, Imp_Comm_TRT @ w_d_star_mat), C_BEA).tolist()
+indirect_BEA_RoW = np.dot(np.dot(B_RoW_mD, Imp_Comm_TRT @ w_d_star_mat), C_BEA).tolist()
+
+direct_BEA_list = direct_BEA.tolist()
+indirect_BEA_list = indirect_BEA.tolist()
+
+direct_BEA_matrix_json = {
+    'rows': N,
+    'columns': direct_BEA.shape[1],
+    'data': direct_BEA_list,
+    'data_CAN': direct_BEA_CAN,
+    'data_CHN': direct_BEA_CHN,
+    'data_EUR': direct_BEA_EUR,
+    'data_JAP': direct_BEA_JAP,
+    'data_MEX': direct_BEA_MEX,
+    'data_RoAsia': direct_BEA_RoAsia,
+    'data_RoW': direct_BEA_RoW
+}
+
+indirect_BEA_matrix_json = {
+    'rows': N,
+    'columns': indirect_BEA.shape[1],
+    'data': indirect_BEA_list,
+    'data_CAN': indirect_BEA_CAN,
+    'data_CHN': indirect_BEA_CHN,
+    'data_EUR': indirect_BEA_EUR,
+    'data_JAP': indirect_BEA_JAP,
+    'data_MEX': indirect_BEA_MEX,
+    'data_RoAsia': indirect_BEA_RoAsia,
+    'data_RoW': indirect_BEA_RoW
+}
+
+with open(os.path.join(final_data_dir, 'direct_BEA_matrix_2023.json'), 'w') as f:
+    json.dump(direct_BEA_matrix_json, f)
+
+with open(os.path.join(final_data_dir, 'indirect_BEA_matrix_2023.json'), 'w') as f:
+    json.dump(indirect_BEA_matrix_json, f)
 
