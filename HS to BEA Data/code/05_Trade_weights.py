@@ -523,7 +523,7 @@ final_json = create_trade_weights_json(usummary_df, usummary_order)
 final_output_dir = get_data_path('final')
 os.makedirs(final_output_dir, exist_ok=True)
 
-final_json_path = os.path.join(final_output_dir, 'trade_weights.json')
+final_json_path = os.path.join(final_output_dir, 'bea_section_weights.json')
 
 with open(final_json_path, 'w') as f:
     json.dump(final_json, f, indent=2)

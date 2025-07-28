@@ -502,7 +502,7 @@ if os.path.exists(hs_section_weights_path):
     final_json = create_bea_json_simple(section_weights_df)
     final_output_dir = data_paths['base_paths']['final_data']
     os.makedirs(final_output_dir, exist_ok=True)
-    final_output_path = os.path.join(final_output_dir, 'bea_hs_section_weights.json')
+    final_output_path = os.path.join(final_output_dir, 'bea_section_weights.json')
     # Write the final data to a json.
     import json
     with open(final_output_path, 'w') as f:
