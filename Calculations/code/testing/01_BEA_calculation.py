@@ -285,9 +285,9 @@ def run_all_countries(constant_rate, aggregate = True):
         aggregated_indirect_df.to_csv(os.path.join(output_dir, 'BEA_indirect_effects.csv'), index=False)
         aggregated_total_df.to_csv(os.path.join(output_dir, 'BEA_total_effects.csv'), index=False)
         
-        print(f"\nSum of all direct effects across all countries: {direct_effect_sum*100 :.2f}%")
-        print(f"Sum of all indirect effects across all countries: {indirect_effect_sum*100 :.2f}%")
-        print(f"Sum of all total_effects across all countries: {total_effect_sum*100 :.2f}%")
+        print(f"\nSum of all direct effects across all countries: {direct_effect_sum*100 :.5f}%")
+        print(f"Sum of all indirect effects across all countries: {indirect_effect_sum*100 :.5f}%")
+        print(f"Sum of all total_effects across all countries: {total_effect_sum*100 :.5f}%")
         print(f"BEA Results saved to: {output_dir}")
     else: 
         pass 

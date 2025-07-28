@@ -302,9 +302,9 @@ def run_all_countries(constant_rate, aggregate = True):
         
         # Determine output directory
         if constant_rate is None:
-            output_dir = os.path.join(validations_dir, 'NIPA Results Validations', 'TWT Data', 'All Countries')
+            output_dir = os.path.join(validations_dir, 'NIPA Results Validations', 'TWT Data')
         else:
-            output_dir = os.path.join(validations_dir, 'NIPA Results Validations', 'Constant 10%', 'All Countries')
+            output_dir = os.path.join(validations_dir, 'NIPA Results Validations', 'Constant 10%')
         
         # Create directory if it doesn't exist
         os.makedirs(output_dir, exist_ok=True)
@@ -322,9 +322,9 @@ def run_all_countries(constant_rate, aggregate = True):
         aggregate_levels(aggregated_indirect_df, 'indirect', output_dir)
         aggregate_levels(aggregated_total_df, 'total', output_dir)
         
-        print(f"\nSum of all direct effects across all countries: {direct_effect_sum*100 :.2f}%")
-        print(f"Sum of all indirect effects across all countries: {indirect_effect_sum*100 :.2f}%")
-        print(f"Sum of all total_effects across all countries: {total_effect_sum*100 :.2f}%")
+        print(f"\nSum of all direct effects across all countries: {direct_effect_sum*100 :.5f}%")
+        print(f"Sum of all indirect effects across all countries: {indirect_effect_sum*100 :.5f}%")
+        print(f"Sum of all total_effects across all countries: {total_effect_sum*100 :.5f}%")
         print(f"Results saved to: {output_dir}")
     else: 
         pass 
