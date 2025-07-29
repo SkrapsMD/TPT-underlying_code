@@ -158,6 +158,8 @@ all_continents_detail['usummary_code'] = all_continents_detail['detail_code'].ma
 all_continents_detail = all_continents_detail[all_continents_detail['usummary_code'].notna()]
 # Trim usummary_code
 all_continents_detail['usummary_code'] = all_continents_detail['usummary_code'].astype(str).str.strip()
+# Rename specific usummary codes
+all_continents_detail['usummary_code'] = all_continents_detail['usummary_code'].replace({'S004': 'Used', 'S003': 'Other', 'S009': 'Other'})
 
 usummary_aggregated = all_continents_detail.groupby(['Country', 'usummary_code', 'iso3'])['impVal'].sum().reset_index()
 usummary_output_path = os.path.join(usummary_dir, 'all_continents_usummary.csv')
@@ -409,6 +411,8 @@ for bea_level_name, (bea_column, bea_data) in bea_levels.items():
             if bea_level_name == 'usummary':
                 df_with_hs['usummary_code'] = df_with_hs['detail_code'].map(detail_to_usummary)
                 df_with_hs['usummary_code'] = df_with_hs['usummary_code'].astype(str).str.strip()
+                # Rename specific usummary codes
+                df_with_hs['usummary_code'] = df_with_hs['usummary_code'].replace({'S004': 'Used', 'S003': 'Other', 'S009': 'Other'})
             elif bea_level_name == 'summary':
                 df_with_hs['summary_code'] = df_with_hs['detail_code'].map(detail_to_summary)
                 df_with_hs['summary_code'] = df_with_hs['summary_code'].astype(str).str.strip()
@@ -475,13 +479,25 @@ print("="*80)
 def create_bea_json_simple(df):
     """
     Create final JSON structure for BEA-HS section weights.
+    Ensures all 140 BEA codes are included for each country, with 0s for missing codes.
     
     Structure: {country_iso3: {usummary_code: {hs_section: weight}}}
     """
+    # Load the complete list of BEA codes from q.csv
+    bea_codes_path = os.path.join(data_paths['base_paths']['raw_data'], 'BEA_codes', 'q.csv')
+    bea_codes_df = pd.read_csv(bea_codes_path)
+    all_bea_codes = bea_codes_df['U.Summary Code'].tolist()
+    
     result = {}
     for country_iso3 in df['iso3'].unique():
         country_data = df[df['iso3'] == country_iso3]
         result[country_iso3] = {}
+        
+        # Initialize all BEA codes with empty section weights for this country
+        for bea_code in all_bea_codes:
+            result[country_iso3][bea_code] = {}
+        
+        # Fill in the actual data where it exists
         for usummary in country_data['usummary_code'].unique():
             usummary_data = country_data[country_data['usummary_code'] == usummary]
             # Just the section weights
@@ -491,6 +507,18 @@ def create_bea_json_simple(df):
                 weight = row['weight']
                 section_weights[section] = weight
             result[country_iso3][usummary] = section_weights
+            
+        # For missing BEA codes, set all HS sections to 0
+        existing_codes = set(country_data['usummary_code'].unique())
+        missing_codes = set(all_bea_codes) - existing_codes
+        
+        # Get all HS sections that appear in the data
+        all_hs_sections = set(str(section) for section in df['HS_Section'].unique())
+        
+        for missing_code in missing_codes:
+            section_weights_zero = {section: 0.0 for section in all_hs_sections}
+            result[country_iso3][missing_code] = section_weights_zero
+            
     return result
 # Load the HS section weights from usummary level
 hs_section_weights_path = os.path.join(weights_dirs['usummary'], 'hs_section_weights.csv')
