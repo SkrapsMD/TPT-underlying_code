@@ -2,12 +2,17 @@ import os
 import sys
 import pandas as pd
 import json
+import copy
 import plotly.express as px
 import plotly.graph_objects as go
 import numpy as np
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score
 from main_pipeline_run import get_data_path
+from colorama import Fore, Style, init
+
+# Initialize colorama
+init()
 
 # Add path to shared validation styles
 sys.path.append(os.path.join(os.path.dirname(os.path.dirname(__file__)), '..'))
@@ -76,6 +81,10 @@ with open(data_paths_file, 'r') as f:
 # Read the trade weights data
 trade_weights_path = os.path.join(data_paths['base_paths']['working_data'], '05_Trade_weights', 'usummary_trade_weights.csv')
 df = pd.read_csv(trade_weights_path)
+
+# Print unique codes with non-zero import values from HS-to-BEA data
+hs_nonzero_codes = df[df['regional_denominator'] > 0]['usummary_code'].nunique()
+print(f"{Fore.GREEN}HS-to-BEA Data: {hs_nonzero_codes} unique codes with non-zero import values{Style.RESET_ALL}")
 
 # Get unique regions (excluding 'region' header)
 regions = df['region'].unique()
@@ -176,6 +185,14 @@ for tiva_file, region_key in region_mapping.items():
     # Store for discrepancies table
     all_comparisons[region_key] = merged_comparison.copy()
 
+# Print unique codes with non-zero import values from TiVA data
+all_tiva_codes = set()
+for comparison_df in all_comparisons.values():
+    nonzero_tiva_codes = comparison_df[comparison_df['TiVA_total_imports'] > 0]['usummary_code']
+    all_tiva_codes.update(nonzero_tiva_codes)
+tiva_nonzero_codes = len(all_tiva_codes)
+print(f"{Fore.GREEN}TiVA Data: {tiva_nonzero_codes} unique codes with non-zero import values across all regions{Style.RESET_ALL}")
+
 # Identify refined services codes: BEA codes that have HS=0 but TiVA>0 across ALL regions consistently
 print("Identifying refined services codes...")
 all_bea_codes = set()
@@ -222,34 +239,84 @@ for tiva_file, region_key in region_mapping.items():
     else:
         title_text = f'{region_key} - HS to BEA vs TiVA Imports'
     
-    # Add color coding for U.Summary codes that map to Summary code 334 (Computer and electronic products)
-    codes_334 = ['3341', '3342', '3344', '3345', '334X']
-    merged_comparison['color_category'] = merged_comparison['usummary_code'].apply(
-        lambda x: 'Computer/Electronics (334)' if x in codes_334 else 'Other Industries'
-    )
+    # Add color coding for specific industry categories
+    codes_334 = ['3341', '3342', '3344', '3345', '334X']  # Computer and electronic products
+    codes_other_used = ['Other', 'Used']  # Other/Used categories
+    codes_automobiles = ['336111', '336112', '33612', '3362BP']  # Automobiles
+    codes_chemicals = ['3251', '3252', '3254', '325X']  # Chemical products
+    
+    def categorize_industry(code):
+        if code in codes_334:
+            return 'Computer/Electronics (334)'
+        elif code in codes_other_used:
+            return 'Other/Used'
+        elif code in codes_automobiles:
+            return 'Automobiles (3361MV)'
+        elif code in codes_chemicals:
+            return 'Chemicals (325)'
+        else:
+            return 'All Other Industries'
+    
+    merged_comparison['color_category'] = merged_comparison['usummary_code'].apply(categorize_industry)
     
     # Create interactive scatter plot with Plotly (regular scale) - all data with color coding
     fig = px.scatter(merged_comparison, 
                      x='HS_total_imports', 
                      y='TiVA_total_imports',
                      color='color_category',
-                     color_discrete_map={'Computer/Electronics (334)': '#FF6B6B', 'Other Industries': '#4ECDC4'},
+                     color_discrete_map={
+                         'Automobiles (3361MV)': '#3581b4',
+                         'Computer/Electronics (334)': '#CA590c', 
+                         'Chemicals (325)': '#74Ac1C', 
+                         'Other/Used': '#F3bb00', 
+                         'All Other Industries': 'rgba(128,128,128,0.6)'
+                     },
+                     category_orders={'color_category': ['Automobiles (3361MV)', 'Computer/Electronics (334)', 'Chemicals (325)', 'Other/Used', 'All Other Industries']},
                      hover_data=['usummary_code', 'usummary_name'],
                      labels={'HS_total_imports': 'HS to BEA Imports (2024)',
                              'TiVA_total_imports': 'TiVA Imports (2023)',
-                             'color_category': 'Industry Type'},
+                             'color_category': ''},
                      title=title_text,
                      template='plotly_white')
+    
+    # Increase marker size for better visibility
+    fig.update_traces(marker=dict(size=14))
     
     # Add 45-degree line for reference
     max_val = max(merged_comparison['HS_total_imports'].max(), merged_comparison['TiVA_total_imports'].max())
     fig.add_shape(type='line', x0=0, y0=0, x1=max_val, y1=max_val,
-                  line=dict(color='red', dash='dash', width=2),
+                  line=dict(color='rgba(0,0,0,0.5)', dash='dash', width=2),
                   name='Perfect correlation')
+    
+    # Add text annotations for specific points
+    label_mapping = {
+        '336111': 'Auto Manuf.',
+        '336112': 'Light Trucks Manuf.', 
+        '3341': 'Computer Manuf.',
+        '3344': 'Semiconductor Manuf.'
+    }
+    
+    for code, label in label_mapping.items():
+        point_data = merged_comparison[merged_comparison['usummary_code'] == code]
+        if not point_data.empty:
+            fig.add_annotation(
+                x=point_data['HS_total_imports'].iloc[0],
+                y=point_data['TiVA_total_imports'].iloc[0],
+                text=label,
+                showarrow=True,
+                arrowhead=2,
+                arrowsize=1,
+                arrowwidth=1,
+                arrowcolor='black',
+                ax=20,
+                ay=-30,
+                font=dict(size=18)
+            )
     
     # Update layout for better legend positioning
     fig.update_layout(
         legend=dict(
+            title="",
             x=1.02,
             y=1,
             xanchor='left',
@@ -257,9 +324,10 @@ for tiva_file, region_key in region_mapping.items():
             bgcolor='rgba(255,255,255,0.9)',
             bordercolor='rgba(0,0,0,0.2)',
             borderwidth=1,
-            font=dict(size=12)
+            font=dict(size=20)
         ),
-        margin=dict(r=200)
+        margin=dict(r=200),
+        font=dict(size=18)
     )
     
     # Save interactive HTML plot
@@ -289,19 +357,47 @@ for tiva_file, region_key in region_mapping.items():
                                  x='HS_total_imports', 
                                  y='TiVA_total_imports',
                                  color='color_category',
-                                 color_discrete_map={'Computer/Electronics (334)': '#FF6B6B', 'Other Industries': '#4ECDC4'},
+                                 color_discrete_map={
+                         'Automobiles (3361MV)': '#3581b4',
+                         'Computer/Electronics (334)': '#CA590c', 
+                         'Chemicals (325)': '#74Ac1C', 
+                         'Other/Used': '#F3bb00', 
+                         'All Other Industries': '#5381b4'
+                     },
+                     category_orders={'color_category': ['Automobiles (3361MV)', 'Computer/Electronics (334)', 'Chemicals (325)', 'Other/Used', 'All Other Industries']},
                                  hover_data=['usummary_code', 'usummary_name'],
                                  labels={'HS_total_imports': 'HS to BEA Imports (2024)',
                                          'TiVA_total_imports': 'TiVA Imports (2023)',
-                                         'color_category': 'Industry Type'},
+                                         'color_category': ''},
                                  title=title_refined,
                                  template='plotly_white')
         
         # Add 45-degree line for reference
         max_val_refined = max(refined_goods_data['HS_total_imports'].max(), refined_goods_data['TiVA_total_imports'].max())
         fig_refined.add_shape(type='line', x0=0, y0=0, x1=max_val_refined, y1=max_val_refined,
-                              line=dict(color='red', dash='dash', width=2),
+                              line=dict(color='rgba(0,0,0,0.5)', dash='dash', width=2),
                               name='Perfect correlation')
+        
+        # Add text annotations for specific points (refined goods)
+        for code, label in label_mapping.items():
+            point_data = refined_goods_data[refined_goods_data['usummary_code'] == code]
+            if not point_data.empty:
+                fig_refined.add_annotation(
+                    x=point_data['HS_total_imports'].iloc[0],
+                    y=point_data['TiVA_total_imports'].iloc[0],
+                    text=label,
+                    showarrow=True,
+                    arrowhead=2,
+                    arrowsize=1,
+                    arrowwidth=1,
+                    arrowcolor='black',
+                    ax=20,
+                    ay=-30,
+                    bgcolor='rgba(255,255,255,0.8)',
+                    bordercolor='black',
+                    borderwidth=1,
+                    font=dict(size=18)
+                )
         
         # Update layout for better legend positioning
         fig_refined.update_layout(
@@ -313,7 +409,7 @@ for tiva_file, region_key in region_mapping.items():
                 bgcolor='rgba(255,255,255,0.9)',
                 bordercolor='rgba(0,0,0,0.2)',
                 borderwidth=1,
-                font=dict(size=12)
+                font=dict(size=20)
             ),
             margin=dict(r=200)
         )
@@ -331,17 +427,26 @@ for tiva_file, region_key in region_mapping.items():
     ].copy()
     
     if len(log_data) > 0:
-        # Create logged scatter plot (all data)
+        # Store title for filename (will remove from plot for LaTeX)
+        log_title_text = title_text + ' (Log Scale)'
+        
+        # Create logged scatter plot (all data) - no title for LaTeX
         fig_log = px.scatter(log_data, 
                              x='HS_total_imports', 
                              y='TiVA_total_imports',
                              color='color_category',
-                             color_discrete_map={'Computer/Electronics (334)': '#FF6B6B', 'Other Industries': '#4ECDC4'},
+                             color_discrete_map={
+                         'Automobiles (3361MV)': '#3581b4',
+                         'Computer/Electronics (334)': '#CA590c', 
+                         'Chemicals (325)': '#74Ac1C', 
+                         'Other/Used': '#F3bb00', 
+                         'All Other Industries': 'rgba(128,128,128,0.6)'
+                     },
+                     category_orders={'color_category': ['Automobiles (3361MV)', 'Computer/Electronics (334)', 'Chemicals (325)', 'Other/Used', 'All Other Industries']},
                              hover_data=['usummary_code', 'usummary_name'],
                              labels={'HS_total_imports': 'HS to BEA Imports (2024)',
                                      'TiVA_total_imports': 'TiVA Imports (2023)',
-                                     'color_category': 'Industry Type'},
-                             title=title_text + ' (Log Scale)',
+                                     'color_category': ''},
                              template='plotly_white',
                              log_x=True,
                              log_y=True)
@@ -350,10 +455,12 @@ for tiva_file, region_key in region_mapping.items():
         min_val = min(log_data['HS_total_imports'].min(), log_data['TiVA_total_imports'].min())
         max_val_log = max(log_data['HS_total_imports'].max(), log_data['TiVA_total_imports'].max())
         fig_log.add_shape(type='line', x0=min_val, y0=min_val, x1=max_val_log, y1=max_val_log,
-                          line=dict(color='red', dash='dash', width=2),
+                          line=dict(color='rgba(0,0,0,0.5)', dash='dash', width=2),
                           name='Perfect correlation')
         
-        # Update layout for better legend positioning
+        # Don't add annotations to the original fig_log here - we'll add them after layout updates
+        
+        # Update layout for LaTeX compatibility (black text, light gray gridlines)
         fig_log.update_layout(
             legend=dict(
                 x=1.02,
@@ -363,20 +470,173 @@ for tiva_file, region_key in region_mapping.items():
                 bgcolor='rgba(255,255,255,0.9)',
                 bordercolor='rgba(0,0,0,0.2)',
                 borderwidth=1,
-                font=dict(size=12)
+                font=dict(size=20, color='black')
             ),
-            margin=dict(r=200)
+            margin=dict(r=200, t=20),
+            font=dict(color='black', size=22),
+            xaxis=dict(
+                title_font=dict(color='black', size=30),
+                tickfont=dict(color='black', size=18),
+                gridcolor='lightgray'
+            ),
+            yaxis=dict(
+                title_font=dict(color='black', size=30),
+                tickfont=dict(color='black', size=24),
+                gridcolor='lightgray'
+            ),
+            plot_bgcolor='white',
+            paper_bgcolor='white'
         )
+        
+        # Update marker size for all log plots - update each trace individually
+        for trace in fig_log.data:
+            if hasattr(trace, 'marker') and trace.mode and 'markers' in trace.mode:
+                trace.marker.size = 24
         
         # Save logged HTML plot
         html_log_filename = f'{region_key}_HS_TiVA_scatter_log.html'
         html_log_path = os.path.join(html_log_dir, html_log_filename)
         fig_log.write_html(html_log_path)
         
-        # Save logged PNG plot
-        png_log_filename = f'{region_key}_HS_TiVA_scatter_log.png'
-        png_log_path = os.path.join(png_log_dir, png_log_filename)
-        fig_log.write_image(png_log_path, width=1200, height=800)
+        # Save logged PNG plots - create two versions for LaTeX minifigure environment
+        # Sanitize title for filename (remove special characters, replace spaces)
+        safe_title = log_title_text.replace('(', '').replace(')', '').replace('²', '2').replace(' = ', '_').replace(', ', '_').replace(' ', '_').replace('.', '')
+        
+        # Version 1: Legend in top-left of plot area (for World plot)
+        fig_log_with_legend = copy.deepcopy(fig_log)
+        
+        # Update layout first
+        fig_log_with_legend.update_layout(
+            legend=dict(
+                x=0.02,
+                y=0.98,
+                xanchor='left',
+                yanchor='top',
+                bgcolor='rgba(255,255,255,0.9)',
+                bordercolor='rgba(0,0,0,0.2)',
+                borderwidth=1,
+                font=dict(size=20, color='black')
+            ),
+            margin=dict(l=50, r=50, t=20, b=50),
+            font=dict(color='black', size=22),
+            xaxis=dict(
+                title_font=dict(color='black', size=40),
+                tickfont=dict(color='black', size=24),
+                gridcolor='lightgray'
+            ),
+            yaxis=dict(
+                title_font=dict(color='black', size=40),
+                tickfont=dict(color='black', size=24),
+                gridcolor='lightgray'
+            ),
+            plot_bgcolor='white',
+            paper_bgcolor='white'
+        )
+        
+        # Add text labels using scatter trace instead of annotations (works better with log scale)
+        label_mapping_for_log = {
+            '336111': 'Auto Manuf.',
+            '336112': 'Light Trucks Manuf.', 
+            '3341': 'Computer Manuf.',
+            '3344': 'Semiconductor Manuf.'
+        }
+        
+        # Collect annotation data
+        annotation_x = []
+        annotation_y = []
+        annotation_text = []
+        
+        for code, label in label_mapping_for_log.items():
+            point_data = log_data[log_data['usummary_code'] == code]
+            if not point_data.empty:
+                x_coord = point_data['HS_total_imports'].iloc[0]
+                y_coord = point_data['TiVA_total_imports'].iloc[0]
+                
+                # Offset the text position slightly
+                annotation_x.append(x_coord * 1.5)  # Move right
+                annotation_y.append(y_coord * 1.2)  # Move up
+                annotation_text.append(label)
+        
+        # Add as a scatter trace
+        if annotation_x:
+            fig_log_with_legend.add_trace(go.Scatter(
+                x=annotation_x,
+                y=annotation_y,
+                text=annotation_text,
+                mode='text',
+                textfont=dict(size=24, color='black'),
+                showlegend=False,
+                hoverinfo='skip'
+            ))
+        
+        # Update marker size after all annotations are added - update each trace individually
+        for trace in fig_log_with_legend.data:
+            if hasattr(trace, 'marker') and trace.mode and 'markers' in trace.mode:
+                trace.marker.size = 24
+        
+        png_log_with_legend_filename = f'{safe_title}_with_legend.png'
+        png_log_with_legend_path = os.path.join(png_log_dir, png_log_with_legend_filename)
+        fig_log_with_legend.write_image(png_log_with_legend_path, width=1600, height=1000)
+        
+        # Version 2: No legend (for other plots in minifigure)
+        fig_log_no_legend = copy.deepcopy(fig_log)
+        
+        # Update layout first
+        fig_log_no_legend.update_layout(
+            showlegend=False,
+            margin=dict(l=50, r=50, t=20, b=50),
+            font=dict(color='black', size=22),
+            xaxis=dict(
+                title_font=dict(color='black', size=40),
+                tickfont=dict(color='black', size=24),
+                gridcolor='lightgray'
+            ),
+            yaxis=dict(
+                title_font=dict(color='black', size=40),
+                tickfont=dict(color='black', size=24),
+                gridcolor='lightgray'
+            ),
+            plot_bgcolor='white',
+            paper_bgcolor='white'
+        )
+        
+        # Add text labels using scatter trace instead of annotations (works better with log scale)
+        # Collect annotation data
+        annotation_x = []
+        annotation_y = []
+        annotation_text = []
+        
+        for code, label in label_mapping_for_log.items():
+            point_data = log_data[log_data['usummary_code'] == code]
+            if not point_data.empty:
+                x_coord = point_data['HS_total_imports'].iloc[0]
+                y_coord = point_data['TiVA_total_imports'].iloc[0]
+                
+                # Offset the text position slightly
+                annotation_x.append(x_coord * 1.5)  # Move right
+                annotation_y.append(y_coord * 1.2)  # Move up
+                annotation_text.append(label)
+        
+        # Add as a scatter trace
+        if annotation_x:
+            fig_log_no_legend.add_trace(go.Scatter(
+                x=annotation_x,
+                y=annotation_y,
+                text=annotation_text,
+                mode='text',
+                textfont=dict(size=24, color='black'),
+                showlegend=False,
+                hoverinfo='skip'
+            ))
+        
+        # Update marker size after all annotations are added - update each trace individually
+        for trace in fig_log_no_legend.data:
+            if hasattr(trace, 'marker') and trace.mode and 'markers' in trace.mode:
+                trace.marker.size = 24
+        
+        png_log_no_legend_filename = f'{safe_title}_no_legend.png'
+        png_log_no_legend_path = os.path.join(png_log_dir, png_log_no_legend_filename)
+        fig_log_no_legend.write_image(png_log_no_legend_path, width=1600, height=1000)
         
         # Create refined goods-only logged scatter plot - exclude refined services codes
         refined_log_data = log_data[~log_data['usummary_code'].isin(refined_services_codes)]
@@ -395,21 +655,31 @@ for tiva_file, region_key in region_mapping.items():
                                          x='HS_total_imports', 
                                          y='TiVA_total_imports',
                                          color='color_category',
-                                         color_discrete_map={'Computer/Electronics (334)': '#FF6B6B', 'Other Industries': '#4ECDC4'},
+                                         color_discrete_map={
+                         'Automobiles (3361MV)': '#3581b4',
+                         'Computer/Electronics (334)': '#CA590c', 
+                         'Chemicals (325)': '#74Ac1C', 
+                         'Other/Used': '#F3bb00', 
+                         'All Other Industries': 'rgba(128,128,128,0.6)'
+                     },
+                     category_orders={'color_category': ['Automobiles (3361MV)', 'Computer/Electronics (334)', 'Chemicals (325)', 'Other/Used', 'All Other Industries']},
                                          hover_data=['usummary_code', 'usummary_name'],
                                          labels={'HS_total_imports': 'HS to BEA Imports (2024)',
                                                  'TiVA_total_imports': 'TiVA Imports (2023)',
-                                                 'color_category': 'Industry Type'},
+                                                 'color_category': ''},
                                          title=title_refined_log,
                                          template='plotly_white',
                                          log_x=True,
                                          log_y=True)
             
+            # Increase marker size for better visibility
+            fig_refined_log.update_traces(marker=dict(size=18))
+            
             # Add 45-degree line for reference on log scale
             min_val_refined = min(refined_log_data['HS_total_imports'].min(), refined_log_data['TiVA_total_imports'].min())
             max_val_refined_log = max(refined_log_data['HS_total_imports'].max(), refined_log_data['TiVA_total_imports'].max())
             fig_refined_log.add_shape(type='line', x0=min_val_refined, y0=min_val_refined, x1=max_val_refined_log, y1=max_val_refined_log,
-                                      line=dict(color='red', dash='dash', width=2),
+                                      line=dict(color='rgba(0,0,0,0.5)', dash='dash', width=2),
                                       name='Perfect correlation')
             
             # Update layout for better legend positioning
@@ -422,7 +692,7 @@ for tiva_file, region_key in region_mapping.items():
                     bgcolor='rgba(255,255,255,0.9)',
                     bordercolor='rgba(0,0,0,0.2)',
                     borderwidth=1,
-                    font=dict(size=12)
+                    font=dict(size=20)
                 ),
                 margin=dict(r=200)
             )
@@ -581,7 +851,7 @@ if len(regional_aggregate_df) > 0:
         mode='markers+text',
         text=regional_aggregate_df['region'],
         textposition='top center',
-        marker=dict(size=10, color='#636EFA'),
+        marker=dict(size=20, color='#636EFA'),
         name='HS to BEA Mapped (2024)',
         hovertemplate='<b>%{text}</b><br>HS to BEA: $%{x:,.0f}<br>TiVA: $%{y:,.0f}<extra></extra>'
     ))
@@ -602,7 +872,7 @@ if len(regional_aggregate_df) > 0:
                 mode='markers+text',
                 text=[region],
                 textposition='bottom center',
-                marker=dict(size=12, color='#636EFA', symbol='x'),
+                marker=dict(size=24, color='#636EFA', symbol='x'),
                 name='USATradeOnline 2024' if region == 'CAN' else '',
                 showlegend=region == 'CAN',
                 hovertemplate=f'<b>{region}</b><br>USATradeOnline 2024: $%{{x:,.0f}}<br>TiVA: $%{{y:,.0f}}<extra></extra>'
@@ -624,7 +894,7 @@ if len(regional_aggregate_df) > 0:
                 mode='markers+text',
                 text=[region],
                 textposition='middle right',
-                marker=dict(size=10, color='#FF6692'),
+                marker=dict(size=20, color='#FF6692'),
                 name='USATradeOnline 2023' if region == 'CAN' else '',
                 showlegend=region == 'CAN',
                 hovertemplate=f'<b>{region}</b><br>USATradeOnline 2023: $%{{x:,.0f}}<br>TiVA: $%{{y:,.0f}}<extra></extra>'
@@ -637,7 +907,7 @@ if len(regional_aggregate_df) > 0:
         max([usa_trade_online_data[region]['2024'] for region in usa_trade_online_data.keys()]) if usa_trade_online_data else 0
     )
     fig_regional.add_shape(type='line', x0=0, y0=0, x1=max_val_regional, y1=max_val_regional,
-                          line=dict(color='red', dash='dash', width=2),
+                          line=dict(color='rgba(0,0,0,0.5)', dash='dash', width=2),
                           name='Perfect correlation')
     
     # Update layout
@@ -647,6 +917,7 @@ if len(regional_aggregate_df) > 0:
         yaxis_title='TiVA Imports (2023, USD)',
         template='plotly_white',
         legend=dict(
+            title="",
             x=1.02,
             y=1,
             xanchor='left',
@@ -654,7 +925,7 @@ if len(regional_aggregate_df) > 0:
             bgcolor='rgba(255,255,255,0.9)',
             bordercolor='rgba(0,0,0,0.2)',
             borderwidth=1,
-            font=dict(size=12)
+            font=dict(size=20)
         ),
         margin=dict(r=200)
     )
@@ -680,7 +951,7 @@ if len(regional_aggregate_df) > 0:
             mode='markers+text',
             text=log_regional_data['region'],
             textposition='top center',
-            marker=dict(size=10, color='#636EFA'),
+            marker=dict(size=20, color='#636EFA'),
             name='HS to BEA Mapped (2024)',
             hovertemplate='<b>%{text}</b><br>HS to BEA: $%{x:,.0f}<br>TiVA: $%{y:,.0f}<extra></extra>'
         ))
@@ -702,7 +973,7 @@ if len(regional_aggregate_df) > 0:
                         mode='markers+text',
                         text=[region],
                         textposition='bottom center',
-                        marker=dict(size=12, color='#636EFA', symbol='x'),
+                        marker=dict(size=24, color='#636EFA', symbol='x'),
                         name='USATradeOnline 2024' if region == 'CAN' else '',
                         showlegend=region == 'CAN',
                         hovertemplate=f'<b>{region}</b><br>USATradeOnline 2024: $%{{x:,.0f}}<br>TiVA: $%{{y:,.0f}}<extra></extra>'
@@ -725,7 +996,7 @@ if len(regional_aggregate_df) > 0:
                         mode='markers+text',
                         text=[region],
                         textposition='middle right',
-                        marker=dict(size=10, color='#FF6692'),
+                        marker=dict(size=20, color='#FF6692'),
                         name='USATradeOnline 2023' if region == 'CAN' else '',
                         showlegend=region == 'CAN',
                         hovertemplate=f'<b>{region}</b><br>USATradeOnline 2023: $%{{x:,.0f}}<br>TiVA: $%{{y:,.0f}}<extra></extra>'
@@ -743,7 +1014,7 @@ if len(regional_aggregate_df) > 0:
             max([usa_trade_online_data[region]['2024'] for region in usa_trade_online_data.keys()]) if usa_trade_online_data else 1
         )
         fig_regional_log.add_shape(type='line', x0=min_val_regional, y0=min_val_regional, x1=max_val_regional_log, y1=max_val_regional_log,
-                                  line=dict(color='red', dash='dash', width=2),
+                                  line=dict(color='rgba(0,0,0,0.5)', dash='dash', width=2),
                                   name='Perfect correlation')
         
         # Update layout for log scale
@@ -762,7 +1033,7 @@ if len(regional_aggregate_df) > 0:
                 bgcolor='rgba(255,255,255,0.9)',
                 bordercolor='rgba(0,0,0,0.2)',
                 borderwidth=1,
-                font=dict(size=12)
+                font=dict(size=20)
             ),
             margin=dict(r=200)
         )
@@ -796,7 +1067,7 @@ if len(regional_aggregate_goods_only_df) > 0:
         mode='markers+text',
         text=regional_aggregate_goods_only_df['region'],
         textposition='top center',
-        marker=dict(size=10, color='#636EFA'),
+        marker=dict(size=20, color='#636EFA'),
         name='HS to BEA Mapped (2024) - Goods Only',
         hovertemplate='<b>%{text}</b><br>HS to BEA: $%{x:,.0f}<br>TiVA: $%{y:,.0f}<br>BEA Codes: %{customdata}<extra></extra>',
         customdata=regional_aggregate_goods_only_df['bea_codes_count']
@@ -818,7 +1089,7 @@ if len(regional_aggregate_goods_only_df) > 0:
                 mode='markers+text',
                 text=[region],
                 textposition='bottom center',
-                marker=dict(size=12, color='#636EFA', symbol='x'),
+                marker=dict(size=24, color='#636EFA', symbol='x'),
                 name='USATradeOnline 2024' if region == 'CAN' else '',
                 showlegend=region == 'CAN',
                 hovertemplate=f'<b>{region}</b><br>USATradeOnline 2024: $%{{x:,.0f}}<br>TiVA: $%{{y:,.0f}}<extra></extra>'
@@ -840,7 +1111,7 @@ if len(regional_aggregate_goods_only_df) > 0:
                 mode='markers+text',
                 text=[region],
                 textposition='middle right',
-                marker=dict(size=10, color='#FF6692'),
+                marker=dict(size=20, color='#FF6692'),
                 name='USATradeOnline 2023' if region == 'CAN' else '',
                 showlegend=region == 'CAN',
                 hovertemplate=f'<b>{region}</b><br>USATradeOnline 2023: $%{{x:,.0f}}<br>TiVA: $%{{y:,.0f}}<extra></extra>'
@@ -853,7 +1124,7 @@ if len(regional_aggregate_goods_only_df) > 0:
         max([usa_trade_online_data[region]['2024'] for region in usa_trade_online_data.keys()]) if usa_trade_online_data else 0
     )
     fig_goods_only.add_shape(type='line', x0=0, y0=0, x1=max_val_goods_only, y1=max_val_goods_only,
-                             line=dict(color='red', dash='dash', width=2),
+                             line=dict(color='rgba(0,0,0,0.5)', dash='dash', width=2),
                              name='Perfect correlation')
     
     # Update layout
@@ -863,6 +1134,7 @@ if len(regional_aggregate_goods_only_df) > 0:
         yaxis_title='TiVA Imports (2023, USD) - Goods Only',
         template='plotly_white',
         legend=dict(
+            title="",
             x=1.02,
             y=1,
             xanchor='left',
@@ -870,7 +1142,7 @@ if len(regional_aggregate_goods_only_df) > 0:
             bgcolor='rgba(255,255,255,0.9)',
             bordercolor='rgba(0,0,0,0.2)',
             borderwidth=1,
-            font=dict(size=12)
+            font=dict(size=20)
         ),
         margin=dict(r=200)
     )
@@ -896,7 +1168,7 @@ if len(regional_aggregate_goods_only_df) > 0:
             mode='markers+text',
             text=log_goods_only_data['region'],
             textposition='top center',
-            marker=dict(size=10, color='#636EFA'),
+            marker=dict(size=20, color='#636EFA'),
             name='HS to BEA Mapped (2024) - Goods Only',
             hovertemplate='<b>%{text}</b><br>HS to BEA: $%{x:,.0f}<br>TiVA: $%{y:,.0f}<br>BEA Codes: %{customdata}<extra></extra>',
             customdata=log_goods_only_data['bea_codes_count']
@@ -919,7 +1191,7 @@ if len(regional_aggregate_goods_only_df) > 0:
                         mode='markers+text',
                         text=[region],
                         textposition='bottom center',
-                        marker=dict(size=12, color='#636EFA', symbol='x'),
+                        marker=dict(size=24, color='#636EFA', symbol='x'),
                         name='USATradeOnline 2024' if region == 'CAN' else '',
                         showlegend=region == 'CAN',
                         hovertemplate=f'<b>{region}</b><br>USATradeOnline 2024: $%{{x:,.0f}}<br>TiVA: $%{{y:,.0f}}<extra></extra>'
@@ -942,7 +1214,7 @@ if len(regional_aggregate_goods_only_df) > 0:
                         mode='markers+text',
                         text=[region],
                         textposition='middle right',
-                        marker=dict(size=10, color='#FF6692'),
+                        marker=dict(size=20, color='#FF6692'),
                         name='USATradeOnline 2023' if region == 'CAN' else '',
                         showlegend=region == 'CAN',
                         hovertemplate=f'<b>{region}</b><br>USATradeOnline 2023: $%{{x:,.0f}}<br>TiVA: $%{{y:,.0f}}<extra></extra>'
@@ -960,7 +1232,7 @@ if len(regional_aggregate_goods_only_df) > 0:
             max([usa_trade_online_data[region]['2024'] for region in usa_trade_online_data.keys()]) if usa_trade_online_data else 1
         )
         fig_goods_only_log.add_shape(type='line', x0=min_val_goods_only, y0=min_val_goods_only, x1=max_val_goods_only_log, y1=max_val_goods_only_log,
-                                     line=dict(color='red', dash='dash', width=2),
+                                     line=dict(color='rgba(0,0,0,0.5)', dash='dash', width=2),
                                      name='Perfect correlation')
         
         # Update layout for log scale
@@ -979,7 +1251,7 @@ if len(regional_aggregate_goods_only_df) > 0:
                 bgcolor='rgba(255,255,255,0.9)',
                 bordercolor='rgba(0,0,0,0.2)',
                 borderwidth=1,
-                font=dict(size=12)
+                font=dict(size=20)
             ),
             margin=dict(r=200)
         )
@@ -1017,10 +1289,13 @@ if len(summary_level_df) > 0:
                              title=title_summary,
                              template='plotly_white')
     
+    # Increase marker size for better visibility
+    fig.update_traces(marker=dict(size=14))
+    
     # Add 45-degree line for reference
     max_val_summary = max(summary_level_df['HS_total_imports'].max(), summary_level_df['TiVA_total_imports'].max())
     fig_summary.add_shape(type='line', x0=0, y0=0, x1=max_val_summary, y1=max_val_summary,
-                          line=dict(color='red', dash='dash', width=2),
+                          line=dict(color='rgba(0,0,0,0.5)', dash='dash', width=2),
                           name='Perfect correlation')
     
     # Update layout
@@ -1028,6 +1303,7 @@ if len(summary_level_df) > 0:
         xaxis_title='HS to BEA Import Values (USD) - Summary Level',
         yaxis_title='TiVA Imports (2023, USD) - Summary Level',
         legend=dict(
+            title="",
             x=1.02,
             y=1,
             xanchor='left',
@@ -1035,7 +1311,7 @@ if len(summary_level_df) > 0:
             bgcolor='rgba(255,255,255,0.9)',
             bordercolor='rgba(0,0,0,0.2)',
             borderwidth=1,
-            font=dict(size=12)
+            font=dict(size=20)
         ),
         margin=dict(r=200)
     )
@@ -1069,7 +1345,7 @@ if len(summary_level_df) > 0:
         min_val_summary = min(log_summary_data['HS_total_imports'].min(), log_summary_data['TiVA_total_imports'].min())
         max_val_summary_log = max(log_summary_data['HS_total_imports'].max(), log_summary_data['TiVA_total_imports'].max())
         fig_summary_log.add_shape(type='line', x0=min_val_summary, y0=min_val_summary, x1=max_val_summary_log, y1=max_val_summary_log,
-                                  line=dict(color='red', dash='dash', width=2),
+                                  line=dict(color='rgba(0,0,0,0.5)', dash='dash', width=2),
                                   name='Perfect correlation')
         
         # Update layout for log scale
@@ -1084,7 +1360,7 @@ if len(summary_level_df) > 0:
                 bgcolor='rgba(255,255,255,0.9)',
                 bordercolor='rgba(0,0,0,0.2)',
                 borderwidth=1,
-                font=dict(size=12)
+                font=dict(size=20)
             ),
             margin=dict(r=200)
         )
@@ -1134,7 +1410,7 @@ if len(summary_level_df) > 0:
             max_val_region = max(region_data['HS_total_imports'].max(), region_data['TiVA_total_imports'].max())
             if max_val_region > 0:
                 fig_region.add_shape(type='line', x0=0, y0=0, x1=max_val_region, y1=max_val_region,
-                                    line=dict(color='red', dash='dash', width=2),
+                                    line=dict(color='rgba(0,0,0,0.5)', dash='dash', width=2),
                                     name='Perfect correlation')
             
             # Update layout
@@ -1171,7 +1447,7 @@ if len(summary_level_df) > 0:
                 min_val_region = min(log_region_data['HS_total_imports'].min(), log_region_data['TiVA_total_imports'].min())
                 max_val_region_log = max(log_region_data['HS_total_imports'].max(), log_region_data['TiVA_total_imports'].max())
                 fig_region_log.add_shape(type='line', x0=min_val_region, y0=min_val_region, x1=max_val_region_log, y1=max_val_region_log,
-                                        line=dict(color='red', dash='dash', width=2),
+                                        line=dict(color='rgba(0,0,0,0.5)', dash='dash', width=2),
                                         name='Perfect correlation')
                 
                 # Update layout for log scale
@@ -1303,7 +1579,7 @@ if len(all_hierarchical_bea_codes) > 0 or not hierarchical_matches_2024.empty:
                 (schott_hierarchical_matches['matched_bea_detail'] == bea_code)
             ]
             
-        print(f"Debug: For BEA code {bea_code}, found {len(matching_entries_2024)} 2024 matches and {len(matching_entries_schott)} Schott matches")
+        #print(f"Debug: For BEA code {bea_code}, found {len(matching_entries_2024)} 2024 matches and {len(matching_entries_schott)} Schott matches")
         
         if len(matching_entries_2024) > 0 or len(matching_entries_schott) > 0:
             hs_codes = []
@@ -1347,12 +1623,12 @@ if len(all_hierarchical_bea_codes) > 0 or not hierarchical_matches_2024.empty:
                         alternative_mappings.append('(No alternatives from Schott data)')
             
             # Debug: Print what we have before filtering
-            print(f"Debug for BEA code {bea_code}:")
-            print(f"  hs_codes: {hs_codes}")
-            print(f"  hs_descriptions: {hs_descriptions}")
-            print(f"  primary_mappings: {primary_mappings}")
-            print(f"  alternative_mappings: {alternative_mappings}")
-            print(f"  sources: {sources}")
+            # print(f"Debug for BEA code {bea_code}:")
+            # print(f"  hs_codes: {hs_codes}")
+            # print(f"  hs_descriptions: {hs_descriptions}")
+            # print(f"  primary_mappings: {primary_mappings}")
+            # print(f"  alternative_mappings: {alternative_mappings}")
+            # print(f"  sources: {sources}")
             
             # Create enhanced row with simpler logic
             enhanced_row = row.to_dict()
@@ -1871,6 +2147,146 @@ master_html_content += f"""
 </body>
 </html>
 """
+
+# Create comprehensive correlation table for the 8 log plots
+print(f"{Fore.GREEN}Creating comprehensive r and r² correlation table...{Style.RESET_ALL}")
+
+# Initialize correlation results storage
+correlation_results = []
+
+# Define the highlighted categories for exclusion analysis
+highlighted_categories = ['Automobiles (3361MV)', 'Computer/Electronics (334)', 'Chemicals (325)', 'Other/Used']
+
+# Define the industry categorization function (same as used in main plotting)
+def categorize_industry(code):
+    codes_334 = ['3341', '3342', '3344', '3345', '334X']  # Computer and electronic products
+    codes_other_used = ['Other', 'Used']  # Other/Used categories
+    codes_automobiles = ['336111', '336112', '33612', '3362BP']  # Automobiles
+    codes_chemicals = ['3251', '3252', '3254', '325X']  # Chemical products
+    
+    if code in codes_334:
+        return 'Computer/Electronics (334)'
+    elif code in codes_other_used:
+        return 'Other/Used'
+    elif code in codes_automobiles:
+        return 'Automobiles (3361MV)'
+    elif code in codes_chemicals:
+        return 'Chemicals (325)'
+    else:
+        return 'All Other Industries'
+
+# Process each region's log data for the table - use exact same pattern as working scatter plots
+for tiva_file, region_key in region_mapping.items():
+    print(f"Processing correlation for region: {region_key}")
+    
+    # Get the comparison data for this region (already populated in all_comparisons)
+    comparison_data = all_comparisons[region_key].copy()
+    
+    # Apply the same color categorization as in the main plotting
+    comparison_data['color_category'] = comparison_data['usummary_code'].apply(categorize_industry)
+    
+    # Create log data (same filtering as in the main code) 
+    log_data = comparison_data[(comparison_data['HS_total_imports'] > 0) & (comparison_data['TiVA_total_imports'] > 0)].copy()
+    
+    print(f"  {region_key}: {len(log_data)} log data points available")
+    
+    if len(log_data) > 1:
+        # 1. All data (log scale)
+        correlation_all = np.corrcoef(log_data['HS_total_imports'], log_data['TiVA_total_imports'])[0, 1]
+        r2_all = r2_score(log_data['TiVA_total_imports'], log_data['HS_total_imports'])
+        
+        # 2. Excluding automobiles only
+        log_data_no_auto = log_data[log_data['color_category'] != 'Automobiles (3361MV)']
+        auto_points_excluded = len(log_data) - len(log_data_no_auto)
+        print(f"  {region_key}: Total={len(log_data)}, Auto points excluded={auto_points_excluded}")
+        
+        if len(log_data_no_auto) > 1:
+            correlation_no_auto = np.corrcoef(log_data_no_auto['HS_total_imports'], log_data_no_auto['TiVA_total_imports'])[0, 1]
+            r2_no_auto = r2_score(log_data_no_auto['TiVA_total_imports'], log_data_no_auto['HS_total_imports'])
+        else:
+            correlation_no_auto, r2_no_auto = None, None
+        
+        # 3. Excluding all highlighted categories
+        log_data_no_highlighted = log_data[~log_data['color_category'].isin(highlighted_categories)]
+        if len(log_data_no_highlighted) > 1:
+            correlation_no_highlighted = np.corrcoef(log_data_no_highlighted['HS_total_imports'], log_data_no_highlighted['TiVA_total_imports'])[0, 1]
+            r2_no_highlighted = r2_score(log_data_no_highlighted['TiVA_total_imports'], log_data_no_highlighted['HS_total_imports'])
+        else:
+            correlation_no_highlighted, r2_no_highlighted = None, None
+        
+        # Store results - rename 'world' to 'World_Total' to match expected output
+        display_region_name = 'World_Total' if region_key == 'world' else region_key
+        correlation_results.append({
+            'Region': display_region_name,
+            'All_Data_r': correlation_all,
+            'All_Data_r2': r2_all,
+            'No_Auto_r': correlation_no_auto,
+            'No_Auto_r2': r2_no_auto,
+            'No_Highlighted_r': correlation_no_highlighted,
+            'No_Highlighted_r2': r2_no_highlighted,
+            'Total_Points': len(log_data),
+            'Points_No_Auto': len(log_data_no_auto) if len(log_data_no_auto) > 1 else 0,
+            'Points_No_Highlighted': len(log_data_no_highlighted) if len(log_data_no_highlighted) > 1 else 0
+        })
+    else:
+        # Not enough data points for correlation analysis
+        display_region_name = 'World_Total' if region_key == 'world' else region_key
+        print(f"  {region_key}: Insufficient data points ({len(log_data)}) for correlation analysis")
+        correlation_results.append({
+            'Region': display_region_name,
+            'All_Data_r': None,
+            'All_Data_r2': None,
+            'No_Auto_r': None,
+            'No_Auto_r2': None,
+            'No_Highlighted_r': None,
+            'No_Highlighted_r2': None,
+            'Total_Points': len(log_data),
+            'Points_No_Auto': 0,
+            'Points_No_Highlighted': 0
+        })# Convert to DataFrame and save
+correlation_df = pd.DataFrame(correlation_results)
+correlation_table_path = os.path.join(validation_dir, '03_Log_Scale_Correlation_Analysis.csv')
+correlation_df.to_csv(correlation_table_path, index=False)
+
+# Print the table in a formatted way
+print(f"\n{Fore.GREEN}=== LOG SCALE CORRELATION ANALYSIS RESULTS ==={Style.RESET_ALL}")
+print(f"{Fore.CYAN}Table saved to: {correlation_table_path}{Style.RESET_ALL}\n")
+
+# Format and display the table
+pd.set_option('display.max_columns', None)
+pd.set_option('display.width', None)
+pd.set_option('display.max_colwidth', None)
+
+print("CORRELATION COEFFICIENTS (r):")
+print("=" * 80)
+print(f"{'Region':<12} {'All Data':<10} {'No Auto':<10} {'No Highlighted':<15} {'Points (All/NoAuto/NoHighlight)':<30}")
+print("-" * 80)
+
+for _, row in correlation_df.iterrows():
+    all_r = f"{row['All_Data_r']:.3f}" if pd.notna(row['All_Data_r']) else "N/A"
+    no_auto_r = f"{row['No_Auto_r']:.3f}" if pd.notna(row['No_Auto_r']) else "N/A"
+    no_high_r = f"{row['No_Highlighted_r']:.3f}" if pd.notna(row['No_Highlighted_r']) else "N/A"
+    points = f"{row['Total_Points']}/{row['Points_No_Auto']}/{row['Points_No_Highlighted']}"
+    print(f"{row['Region']:<12} {all_r:<10} {no_auto_r:<10} {no_high_r:<15} {points:<30}")
+
+print("\nR-SQUARED VALUES (r²):")
+print("=" * 80)
+print(f"{'Region':<12} {'All Data':<10} {'No Auto':<10} {'No Highlighted':<15} {'Points (All/NoAuto/NoHighlight)':<30}")
+print("-" * 80)
+
+for _, row in correlation_df.iterrows():
+    all_r2 = f"{row['All_Data_r2']:.3f}" if pd.notna(row['All_Data_r2']) else "N/A"
+    no_auto_r2 = f"{row['No_Auto_r2']:.3f}" if pd.notna(row['No_Auto_r2']) else "N/A"
+    no_high_r2 = f"{row['No_Highlighted_r2']:.3f}" if pd.notna(row['No_Highlighted_r2']) else "N/A"
+    points = f"{row['Total_Points']}/{row['Points_No_Auto']}/{row['Points_No_Highlighted']}"
+    print(f"{row['Region']:<12} {all_r2:<10} {no_auto_r2:<10} {no_high_r2:<15} {points:<30}")
+
+print(f"\n{Fore.YELLOW}Notes:{Style.RESET_ALL}")
+print("- 'All Data': Includes all data points with HS > 0 and TiVA > 0 (log scale)")
+print("- 'No Auto': Excludes Automobiles (3361MV) category")
+print("- 'No Highlighted': Excludes all highlighted categories (Automobiles, Chemicals, Computer/Electronics, Other/Used)")
+print("- Points column shows: Total points / Points without Auto / Points without any highlighted categories")
+print("- N/A indicates insufficient data points (≤1) for correlation calculation")
 
 # Save the master HTML file
 master_html_path = os.path.join(validation_dir, '02_TiVA_vs_HS_Import_Charts.html')

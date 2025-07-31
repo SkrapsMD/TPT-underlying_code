@@ -1,9 +1,10 @@
 import re
 import fitz  # This is from PyMuPdf
+import json
 import pandas as pd 
 import country_converter as coco
 
-doc = fitz.open('data/raw/geographic_area_definitions.pdf')
+doc = fitz.open('Map BEA Regions/data/raw/geographic_area_definitions.pdf')
 
 area_headers = {
         "WORLD", "EUROPE13", "EUROPEAN UNION", "EURO AREA",
@@ -46,7 +47,7 @@ df = df[~df['country_or_entity'].isin(unwanted_values)]
 df['country_clean'] = coco.convert(df['country_or_entity'], to='name_short', not_found=None)
 df['iso3'] = coco.convert(df['country_or_entity'], to='iso3', not_found=None)
 df['iso2'] = coco.convert(df['country_or_entity'], to='iso2', not_found=None)
-df.to_csv('data/working/BEA_region_definitions.csv', index=False)
+df.to_csv('Map BEA Regions/data/working/BEA_region_definitions.csv', index=False)
 # Drop rows with specific unwanted values in 'country_or_entity'
 
 
@@ -57,5 +58,25 @@ asia_and_pacific = df[(df['area'] == 'Asia And Pacific') & (df['iso3'].str.len()
 europe = europe.drop(columns=['area', 'country_or_entity','iso2'])
 asia_and_pacific = asia_and_pacific.drop(columns=['area','country_clean', 'country_or_entity', 'iso2'])
 
-europe.to_csv('data/final/BEA_TiVA_Europe.csv', index=False)
-asia_and_pacific.to_csv('data/final/BEA_TiVA_Asia_and_Pacific.csv', index=False)
+europe.to_csv('Map BEA Regions/data/final/BEA_TiVA_Europe.csv', index=False)
+asia_and_pacific.to_csv('Map BEA Regions/data/final/BEA_TiVA_Asia_and_Pacific.csv', index=False)
+
+rest_of_asia = df[(df['area'] == 'Asia And Pacific') & ~(df['country_clean'].isin(['China', 'Japan']))]
+print(rest_of_asia)
+
+# Create a json style output for the mappings. We want to create the mapping for europe, asia/pacific (excl. China and Japan), Canada, China, Japan, Mexico, and Rest of World.
+
+iso_to_region: dict[str, str] = {}
+
+def add_region(df, region_name: str) -> None:
+    """Populate iso_to_region with ISO-3 to Region mappings."""
+    df = df[df['iso3'].str.len() == 3]
+    codes = df['iso3'].astype(str).str.strip().str.upper()
+
+    iso_to_region.update({code: region_name for code in codes})
+    
+add_region(europe, 'data_EUR')
+add_region(rest_of_asia, 'data_RoAsia')
+with open('Map BEA Regions/data/final/BEA_EUR_RoAsia_mappings.json','w') as f:
+    json.dump(iso_to_region, f, indent = 2, sort_keys = True)
+
