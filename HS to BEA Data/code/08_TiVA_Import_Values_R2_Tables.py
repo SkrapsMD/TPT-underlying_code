@@ -168,9 +168,7 @@ table_configs = [
 footnote = r"""
 \vspace{0.01cm}\\
 \raggedright
-{\scriptsize Note: Results from logged import values of the 43 goods BEA underlying summary codes. Total import values for each region is given as the sum of all
-commodities as intermediate inputs and final uses from the Import Use table.
-The BEA–TiVA tables provide trade in both goods and services.}
+{\scriptsize Note: $R^2$ coefficients from logged import values, and exclude service related BEA underlying summary codes. Removing commodities relating to automobiles (336111, 336112, 33612, and 3362BP) improves the coefficient.}
 """
 for config in table_configs:
     # Select subset of columns
