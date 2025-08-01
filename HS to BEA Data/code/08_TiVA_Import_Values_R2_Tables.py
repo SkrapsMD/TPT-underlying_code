@@ -137,12 +137,26 @@ for tiva_filename, region_name in REGION_MAPPING.items():
     
     regional_r2_results[region_name] = {'r2_scores': r2_scores}
 
+region_names = {
+    'CAN': 'Canada',
+    'CHN': 'China',
+    'Europe': 'Europe',
+    'JPN': 'Japan',
+    'MEX': 'Mexico',
+    'RoAsia': 'Rest of Asia',
+    'RoWorld': 'Rest of World',
+    'world': 'World Total'
+}
 # Create DataFrame with R² scores for all regions
 r2_results_df = (
     pd.DataFrame({k: v["r2_scores"] for k, v in regional_r2_results.items()})
         .T # rows: region_name
         .rename_axis("Country/Region")
 )
+r2_results_df.index = r2_results_df.index.map(region_names)
+
+
+
 # Create progressive LaTeX tables (1 column, then 2, then 3, etc.)
 table_configs = [
     {"cols": 1, "suffix": "all_goods", "title": "All Goods"},
