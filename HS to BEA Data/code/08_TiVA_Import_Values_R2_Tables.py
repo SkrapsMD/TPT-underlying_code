@@ -181,7 +181,7 @@ for config in table_configs:
         index=True,
         header=True,
         float_format="%.3f",
-        caption=f"BEA--TiVA Import Values vs. HS‐to‐BEA Import Values: {config['title']}",
+        caption=f"$R^2$ of BEA--TiVA Import Values vs. HS‐to‐BEA Import Values: {config['title']}",
         label=f"correlation_coefficent_regions",
         column_format="l" + "c" * len(subset_df.columns),
         escape=False,
