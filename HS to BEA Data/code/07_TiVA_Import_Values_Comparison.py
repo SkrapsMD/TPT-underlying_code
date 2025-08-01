@@ -258,7 +258,20 @@ for tiva_file, region_key in region_mapping.items():
             return 'All Other Industries'
     
     merged_comparison['color_category'] = merged_comparison['usummary_code'].apply(categorize_industry)
+    # Create R^2 for each region here.
     
+    merged_comparison.to_csv(f'test_{region_key}')
+    def safe_r2(x, y):
+        """Calculate R², handling NaN or <2 non-NA paris"""
+        mask = x.notna() & y.notna()
+        return r2_score(y[mask], x[mask]) if mask.sum()>1 else float('nan')
+
+    
+    # Code to drop Automobiles
+    merged_comparison = merged_comparison[merged_comparison['color_category'] != 'Automobiles (3361MV)']
+    # Code to drop Automobiles, Computers   /Electronics, Chemicals, and Other/Used categories
+    #merged_comparison = merged_comparison[~merged_comparison['color_category'].isin(['Automobiles (3361MV)', 'Computer/Electronics (334)', 'Chemicals (325)', 'Other/Used'])]
+
     # Create interactive scatter plot with Plotly (regular scale) - all data with color coding
     fig = px.scatter(merged_comparison, 
                      x='HS_total_imports', 

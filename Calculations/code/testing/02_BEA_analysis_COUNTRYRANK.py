@@ -86,7 +86,7 @@ def create_top20_stacked_bar_chart(direct_df, indirect_df, scenario_name, output
         y=top20['country_name'],
         x=top20['Direct'],
         orientation='h',
-        marker_color='#1f77b4'
+        marker_color='#3581b4'
     ))
     
     fig.add_trace(go.Bar(
@@ -94,25 +94,40 @@ def create_top20_stacked_bar_chart(direct_df, indirect_df, scenario_name, output
         y=top20['country_name'],
         x=top20['Indirect'],
         orientation='h',
-        marker_color='#ff7f0e'
+        marker_color='#ca590c'
     ))
     
     fig.update_layout(
         barmode='stack',
         template='plotly_white',
-        title=f'Top 20 Countries by Total Effect - {scenario_name} Scenario ({result_type} Results)',
+        #title=f'Top 25 Products by Total Effect - {scenario_name} Scenario ({result_type} Results)',
         xaxis_title='Price Effect (%)',
         yaxis_title='Country',
-        height=600,
-        width=1000,
+        height=800,  # Taller for 25 products
+        width=1200,  # Wider for longer product names
         legend=dict(
             orientation="h",
             yanchor="bottom",
             y=1.02,
             xanchor="right",
-            x=1
-        )
+            x=1,
+            font=dict(size=20, color='black')
+        ),
+        font=dict(color='black', size=22),
+            xaxis=dict(
+                title_font=dict(color='black', size=20),
+                tickfont=dict(color='black', size=14),
+                gridcolor='lightgray'
+            ),
+            yaxis=dict(
+                title_font=dict(color='black', size=20),
+                tickfont=dict(color='black', size=14),
+                gridcolor='lightgray'
+            ),
+            plot_bgcolor='white',
+            paper_bgcolor='white'
     )
+    
     
     # Ensure output directory exists
     os.makedirs(os.path.dirname(output_path), exist_ok=True)

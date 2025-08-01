@@ -89,7 +89,7 @@ def create_top25_product_stacked_bar_chart(direct_df, indirect_df, scenario_name
         y=top25['Product_Label'],
         x=top25['Direct'],
         orientation='h',
-        marker_color='#1f77b4'
+        marker_color='#3581b4'
     ))
     
     fig.add_trace(go.Bar(
@@ -97,13 +97,13 @@ def create_top25_product_stacked_bar_chart(direct_df, indirect_df, scenario_name
         y=top25['Product_Label'],
         x=top25['Indirect'],
         orientation='h',
-        marker_color='#ff7f0e'
+        marker_color='#ca590c'
     ))
     
     fig.update_layout(
         barmode='stack',
         template='plotly_white',
-        title=f'Top 25 Products by Total Effect - {scenario_name} Scenario ({result_type} Results)',
+        #title=f'Top 25 Products by Total Effect - {scenario_name} Scenario ({result_type} Results)',
         xaxis_title='Price Effect (%)',
         yaxis_title='Product',
         height=800,  # Taller for 25 products
@@ -113,10 +113,25 @@ def create_top25_product_stacked_bar_chart(direct_df, indirect_df, scenario_name
             yanchor="bottom",
             y=1.02,
             xanchor="right",
-            x=1
+            x=1,
+            font=dict(size=20, color='black')
         ),
-        margin=dict(l=400)  # More left margin for product names
+        #margin=dict(l=400),  # More left margin for product names
+        font=dict(color='black', size=22),
+            xaxis=dict(
+                title_font=dict(color='black', size=20),
+                tickfont=dict(color='black', size=14),
+                gridcolor='lightgray'
+            ),
+            yaxis=dict(
+                title_font=dict(color='black', size=20),
+                tickfont=dict(color='black', size=14),
+                gridcolor='lightgray'
+            ),
+            plot_bgcolor='white',
+            paper_bgcolor='white'
     )
+    
     
     # Ensure output directory exists
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
@@ -127,7 +142,7 @@ def create_top25_product_stacked_bar_chart(direct_df, indirect_df, scenario_name
     
     # Save as PNG
     png_path = output_path.replace('.html', '.png')
-    fig.write_image(png_path, width=1200, height=800, scale=2)
+    fig.write_image(png_path, width=1000, height=600, scale=2)
     print(f"Saved {scenario_name} top 25 product chart to: {png_path}")
     
     # Save complete product effects data as CSV
