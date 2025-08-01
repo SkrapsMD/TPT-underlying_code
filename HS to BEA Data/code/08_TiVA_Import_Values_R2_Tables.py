@@ -185,12 +185,12 @@ for config in table_configs:
         label=f"correlation_coefficent_regions",
         column_format="l" + "c" * len(subset_df.columns),
         escape=False,
+        position = "htbp",
         na_rep="."
     )
-    
     # Add footnote
     full_table = latex_table.replace(r"\end{tabular}", r"\end{tabular}" + footnote)
-    
+    full_table = full_table.replace(r"\begin{table}[htbp]", r"\begin{table}[htbp]"+"\n"+"\centering")
     # Save table
     table_path = os.path.join(validation_dir, f'R2_table_{config["suffix"]}.tex')
     Path(table_path).write_text(full_table)
