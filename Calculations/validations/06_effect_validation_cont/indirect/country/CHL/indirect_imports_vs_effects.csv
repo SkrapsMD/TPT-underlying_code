@@ -1,0 +1,141 @@
+iso3,usummary_code,usummary_desc,impVal,impVal_share,indirect,indirect_share,impVal_share_no_oil
+CHL,111,Crop production,2051199154.0,0.12454547195661313,1.7015912082452397e-07,0.005902581430047832,0.12484362582314187
+CHL,112,Animal production and aquaculture,1935902577.0,0.11754485157831172,4.4288775624209375e-08,0.0015363155574164016,0.11782624640895503
+CHL,113FF,"Forestry, fishing, and related activities",995972379.0,0.06047382076792031,3.348903633973468e-09,0.00011616877370503301,0.0606185912136255
+CHL,211,Oil and gas extraction,39332718.0,0.002388218577944271,0.0,0.0,0.0
+CHL,212,"Mining, except oil and gas",182410054.0,0.01107564139774469,1.4506894348330758e-10,5.032238340983596e-06,0.011102155772415604
+CHL,213,Support activities for mining,,,0.0,0.0,
+CHL,2211,"Electric power generation, transmission, and distribution",,,1.935619755634949e-07,0.006714393662756829,
+CHL,2212NW,"Natural gas distribution and water, sewage and other systems",,,1.3218292415514385e-07,0.004585240389741864,
+CHL,23EH,"Education, hospital, and health structures",,,0.0,0.0,
+CHL,23MR,Maintenance and repair construction,,,0.0,0.0,
+CHL,23OC,Office and commercial structures,,,0.0,0.0,
+CHL,23OR,Other residential construction,,,0.0,0.0,
+CHL,23OT,Other nonresidential structures,,,0.0,0.0,
+CHL,23PC,Power and communication structures,,,0.0,0.0,
+CHL,23SF,Single-family residential structures,,,0.0,0.0,
+CHL,23TH,Transportation structures and highways and streets,,,0.0,0.0,
+CHL,311,Food manufacturing,1185152989.0,0.07196055929915605,6.283623051759231e-06,0.21797007741349964,0.07213282825968549
+CHL,3121,Beverage manufacturing,167347611.0,0.01016107439014998,9.705579854233338e-07,0.03366729631526604,0.010185399350101673
+CHL,3122,Tobacco manufacturing,4668.0,2.834333574873686e-07,1.2654319834427186e-07,0.0043896062052179345,2.8411187875442456e-07
+CHL,313TT,Textile mills and textile product mills,14163098.0,0.0008599602439080196,4.302467759848214e-08,0.0014924657684878828,0.0008620189335396387
+CHL,315AL,Apparel and leather and allied products,9516541.0,0.0005778288704576265,4.568681177792857e-08,0.0015848114722959118,0.0005792121556884127
+CHL,321,Wood products,1046160531.0,0.06352116361870146,2.0817000154816828e-08,0.000722112561158788,0.06367322920761277
+CHL,322,Paper products,91892830.0,0.005579582976845757,1.3274193696221658e-07,0.004604631760584624,0.005592940140394377
+CHL,323,Printing and related support activities,386123.0,2.344475970289101e-05,7.998810782272661e-09,0.0002774675360164671,2.3500884952933736e-05
+CHL,324,Petroleum and coal products,85380751.0,0.005184180145827551,4.4234670082157e-07,0.015344387119894064,0.005196590740375689
+CHL,3251,Basic chemical manufacturing,616354431.0,0.03742403722805199,4.287996284453394e-09,0.00014874458164854893,0.03751362797129913
+CHL,3252,"Resin, rubber, and artificial fibers manufacturing",1187957.0,7.213081428033889e-05,0.0,0.0,7.230349082036631e-05
+CHL,3254,Pharmaceutical and medicine manufacturing,13746039.0,0.0008346371006688755,1.9208795207531441e-07,0.006663261853738135,0.0008366351683208209
+CHL,325X,Other chemical manufacturing,99864012.0,0.006063580165663854,2.614835690972461e-07,0.009070498552984939,0.006078095987419538
+CHL,326,Plastics and rubber products,380902891.0,0.02312780318611294,1.5285963672297199e-07,0.005302486571115582,0.023183169662596786
+CHL,327,Nonmetallic mineral products,26947908.0,0.001636233085197241,2.483923994148881e-08,0.0008616384223466407,0.001640150122189672
+CHL,3311IS,Iron and steel mills and manufacturing from purchased steel,179094834.0,0.010874346638659584,2.218104552678568e-08,0.0007694293834561305,0.010900379126596358
+CHL,3313NF,Nonferrous metal production and processing and foundries,6638349772.0,0.4030697866438449,1.601232426596663e-08,0.0005554450881399782,0.4040347098440287
+CHL,332,Fabricated metal products,30802522.0,0.0018702789694812632,2.462717775457352e-07,0.00854282282279413,0.001874756297299592
+CHL,33311,Agricultural implement manufacturing,5259327.0,0.000319337769865889,7.504439468472047e-09,0.00026031848798279105,0.00032010224399183195
+CHL,33312,Construction machinery manufacturing,20542219.0,0.001247290081707544,0.0,0.0,0.0012502760141120046
+CHL,33313,Mining and oil and gas field machinery manufacturing,9073754.0,0.0005509435649602487,0.0,0.0,0.0005522624884951746
+CHL,3332OM,Other machinery,66998845.0,0.004068060751098072,6.180639639562696e-08,0.0021439772717162754,0.004077799427447833
+CHL,3341,Computer and peripheral equipment manufacturing,1993513.0,0.00012104286263597186,3.6920369660932855e-09,0.00012807158810832045,0.00012133263148058467
+CHL,3342,Communications equipment manufacturing,4116666.0,0.00024995725493446783,4.702737597174857e-09,0.00016313137654312237,0.00025055563656051027
+CHL,3344,Semiconductor and other electronic component manufacturing,775022.0,4.7058073604664826e-05,1.026115670556557e-09,3.559451455061405e-05,4.7170727612684585e-05
+CHL,3345,"Navigational, measuring, electromedical, and control instruments manufacturing",4335751.0,0.0002632597393228826,3.703901397737826e-09,0.00012848314861453247,0.0002638899662427967
+CHL,334X,Other computer and electronic product manufacturing,605377.0,3.6757505496064854e-05,4.8133014518548756e-09,0.00016696668171105273,3.684550060512367e-05
+CHL,335,"Electrical equipment, appliances, and components",21643165.0,0.0013141377297778715,3.656285904372288e-07,0.012683143388093425,0.0013172836911615265
+CHL,336111,Automobile manufacturing,,,1.299040587245168e-08,0.00045061897416942125,
+CHL,336112,Light truck and utility vehicle manufacturing,,,1.2424917628023091e-06,0.043100297947985845,
+CHL,33612,Heavy duty truck manufacturing,30000.0,1.8215511406643227e-06,0.0,0.0,1.8259118171878187e-06
+CHL,3362BP,"Motor vehicle body, trailer, and parts manufacturing",48250904.0,0.002929716307309491,4.783096338961315e-07,0.016591890867605985,0.002936729860119833
+CHL,3364,Aerospace product and parts manufacturing,17086132.0,0.001037442107804706,2.542276435528826e-09,8.818800664746925e-05,0.001039925677627698
+CHL,3365AO,All other transportation equipment manufacturing,1869753.0,0.00011352835699701798,1.9304476027563058e-07,0.006696452189277819,0.00011380013659741251
+CHL,337,Furniture and related products,1112452.0,6.754627365114357e-05,3.775081272635313e-07,0.013095227871891464,6.770797509514077e-05
+CHL,3391,Medical equipment and supplies manufacturing,564196.0,3.425706224527494e-05,7.699966319277285e-08,0.002671010404139881,3.433907145366995e-05
+CHL,3399,Other miscellaneous manufacturing,1517665.0,9.215014706321065e-05,3.436238806040153e-07,0.011919830842719734,9.237074860107835e-05
+CHL,4231,Motor vehicle and motor vehicle parts and supplies,,,0.0,0.0,
+CHL,4234,Professional and commercial equipment and supplies,,,0.0,0.0,
+CHL,4236,Household appliances and electrical and electronic goods,,,0.0,0.0,
+CHL,4238,"Machinery, equipment, and supplies",,,0.0,0.0,
+CHL,423X,Other durable goods merchant wholesalers,,,0.0,0.0,
+CHL,4242,Drugs and druggists' sundries,,,0.0,0.0,
+CHL,4244,Grocery and related product wholesalers,,,0.0,0.0,
+CHL,4247,Petroleum and petroleum products,,,0.0,0.0,
+CHL,424X,Other nondurable goods merchant wholesalers,,,0.0,0.0,
+CHL,425,Wholesale electronic markets and agents and brokers,,,0.0,0.0,
+CHL,42ID,Customs duties,,,0.0,0.0,
+CHL,441,Motor vehicle and parts dealers,,,0.0,0.0,
+CHL,444,Building material and garden equipment and supplies dealers,,,0.0,0.0,
+CHL,445,Food and beverage stores,,,0.0,0.0,
+CHL,446,Health and personal care stores,,,0.0,0.0,
+CHL,447,Gasoline stations,,,0.0,0.0,
+CHL,448,Clothing and clothing accessories stores,,,0.0,0.0,
+CHL,452,General merchandise stores,,,0.0,0.0,
+CHL,454,Nonstore retailers,,,5.748136712864314e-09,0.00019939480678040231,
+CHL,481,Air transportation,,,1.2682514120194026e-07,0.00439938640781856,
+CHL,482,Rail transportation,,,4.928851002069637e-09,0.00017097493366982598,
+CHL,483,Water transportation,,,3.2225726566858925e-08,0.0011178652915085237,
+CHL,484,Truck transportation,,,9.000174994857151e-09,0.00031220345717823076,
+CHL,485,Transit and ground passenger transportation,,,4.722611774038184e-08,0.0016382078388562935,
+CHL,486,Pipeline transportation,,,0.0,0.0,
+CHL,48A,Scenic and sightseeing transportation and support activities,,,1.093548289609221e-08,0.00037933657601371863,
+CHL,492,Couriers and messengers,,,4.951031624513033e-09,0.00017174434837711225,
+CHL,493,Warehousing and storage,,,1.208477142722012e-10,4.192037844756047e-06,
+CHL,4A0X,All other retail,,,0.0,0.0,
+CHL,5111,"Newspaper, periodical, book, and directory publishers",,,2.9849092188097345e-08,0.0010354231756694438,
+CHL,5112,Software publishers,,,1.535225180180483e-08,0.0005325480994239561,
+CHL,512,Motion picture and sound recording industries,,,5.610689624564986e-09,0.00019462695991401895,
+CHL,515,Broadcasting (except internet),,,6.5668634441807485e-09,0.0002277952896762663,
+CHL,5171,Wired telecommunications carriers,,,1.1379858257774163e-07,0.003947513345357705,
+CHL,5172,Wireless telecommunications carriers (except satellite),,,1.0405372581900295e-07,0.0036094779214328005,
+CHL,5174OT,"Other telecommunications, including satellite",,,7.991115575746438e-09,0.0002772006000866035,
+CHL,518,"Data processing, hosting, and related services",,,4.892737148187362e-08,0.0016972219469080408,
+CHL,519,Other information services,,,3.755696067458649e-08,0.001302798331189433,
+CHL,521CI,"Federal reserve banks, credit intermediation, and related activities",,,1.1545516619470413e-07,0.004004977909392964,
+CHL,523,"Securities, commodity contracts, and investments",,,9.065835237734433e-08,0.003144811189833805,
+CHL,524113,Direct life insurance carriers,,,1.8491006088165885e-08,0.0006414270867764087,
+CHL,5241X,"Insurance carriers, except direct life",,,6.419029679933378e-08,0.0022266714357776557,
+CHL,5242,"Agencies, brokerages, and other insurance related activities",,,0.0,0.0,
+CHL,525,"Funds, trusts, and other financial vehicles",,,7.568145204573962e-08,0.002625283506870681,
+CHL,532RL,Rental and leasing services and lessors of intangible assets,,,6.07250511213095e-08,0.002106466919613326,
+CHL,5411,Legal services,,,2.1823096485511937e-08,0.0007570126328659305,
+CHL,5412,"Accounting, tax preparation, bookkeeping, and payroll services",,,7.532529684726589e-09,0.0002612928982173213,
+CHL,5413,"Architectural, engineering, and related services",,,0.0,0.0,
+CHL,5415,Computer systems design and related services,,,0.0,0.0,
+CHL,5416,"Management, scientific, and technical consulting services",,,0.0,0.0,
+CHL,5417,Scientific research and development services,,,7.364292506498864e-09,0.00025545698628242903,
+CHL,5418,"Advertising, public relations, and related services",,,7.53285422920068e-10,2.613041562102911e-05,
+CHL,541X,"Specialized design services and other professional, scientific, and technical services",,,5.3427746872567535e-08,0.0018533336621110597,
+CHL,55,Management of companies and enterprises,,,0.0,0.0,
+CHL,5613,Employment services,,,5.073455053154707e-10,1.7599104554504322e-05,
+CHL,5617,Services to buildings and dwellings,,,4.285342069927092e-08,0.001486525106664094,
+CHL,561X,Other administrative and support services,,,4.0985292806394655e-08,0.0014217223681684175,
+CHL,562,Waste management and remediation services,,,4.7930721641318325e-08,0.0016626495607049618,
+CHL,61,Educational services,,,3.9521835169954425e-07,0.013709570737389647,
+CHL,6211,Offices of physicians,,,4.1851735714318426e-07,0.014517780583584342,
+CHL,6212,Offices of dentists,,,7.698770768913936e-08,0.002670595684474006,
+CHL,6213,Offices of other health practitioners,,,1.071306836936257e-07,0.003716213277867306,
+CHL,6214,Outpatient care centers,,,2.1562143450618155e-07,0.007479605378009408,
+CHL,6215OH,Other ambulatory health care services,,,2.342077451785578e-07,0.008124338447246426,
+CHL,622,Hospitals,,,1.773748900453964e-06,0.06152886351701458,
+CHL,623,Nursing and residential care facilities,,,2.385370953709388e-07,0.0082745175380051,
+CHL,624,Social assistance,,,5.861596503394001e-07,0.020333056790441683,
+CHL,711AS,"Performing arts, spectator sports, museums, and related activities",,,3.661377402178256e-08,0.0012700805080428815,
+CHL,713,"Amusements, gambling, and recreation industries",,,4.457667967780776e-07,0.015463025455494548,
+CHL,721,Accommodation,,,3.168931097370644e-07,0.010992577863475447,
+CHL,722,Food services and drinking places,,,7.584302334425317e-06,0.2630888188780258,
+CHL,811,Repair and maintenance,,,5.43021221559841e-07,0.01883664515290007,
+CHL,812,Personal and laundry services,,,1.851888915895383e-07,0.006423943114250091,
+CHL,813,"Religious, grantmaking, civic, professional, and similar organizations",,,2.02649654172421e-07,0.007029632497674217,
+CHL,814,Private households,,,0.0,0.0,
+CHL,GFE,Federal government enterprises,,,5.268251707573693e-09,0.0001827482684869429,
+CHL,GFGD,Federal general government (defense),,,0.0,0.0,
+CHL,GFGN,Federal general government (nondefense),,,0.0,0.0,
+CHL,GSLE,State and local government enterprises,,,1.751675859062553e-07,0.006076318064565102,
+CHL,GSLGE,State and local government (educational services),,,0.0,0.0,
+CHL,GSLGH,State and local government (hospitals and health services),,,0.0,0.0,
+CHL,GSLGO,State and local government (other services),,,0.0,0.0,
+CHL,HSO,Owner-occupied housing,,,2.880880872209595e-07,0.009993372001504597,
+CHL,HST,Tenant-occupied housing,,,4.220517037047881e-08,0.0014640382112557858,
+CHL,ORE,Other real estate,,,7.976175519460601e-09,0.0002766823504719526,
+CHL,Other,,471632825.0,0.028636777011782896,0.0,0.0,0.028705331618039148
+CHL,Used,,,,9.711601478588712e-07,0.03368818448624772,

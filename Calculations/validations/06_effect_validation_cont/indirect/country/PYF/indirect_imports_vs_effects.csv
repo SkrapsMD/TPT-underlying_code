@@ -1,0 +1,141 @@
+iso3,usummary_code,usummary_desc,impVal,impVal_share,indirect,indirect_share,impVal_share_no_oil
+PYF,111,Crop production,179751.0,0.004446720911000026,4.71662072702154e-10,0.0056949598859998805,0.004446720911000026
+PYF,112,Animal production and aquaculture,857934.0,0.02122376542026412,1.6595203552745228e-10,0.0020037442907258627,0.02122376542026412
+PYF,113FF,"Forestry, fishing, and related activities",17266972.0,0.4271542604049598,7.780799972889213e-12,9.394722682011117e-05,0.4271542604049598
+PYF,211,Oil and gas extraction,,,0.0,0.0,0.0
+PYF,212,"Mining, except oil and gas",,,1.277504734963286e-13,1.5424895578544995e-06,
+PYF,213,Support activities for mining,,,0.0,0.0,
+PYF,2211,"Electric power generation, transmission, and distribution",,,1.4475091057579948e-10,0.001747756872772122,
+PYF,2212NW,"Natural gas distribution and water, sewage and other systems",,,1.0725034100989152e-10,0.0012949660894121555,
+PYF,23EH,"Education, hospital, and health structures",,,0.0,0.0,
+PYF,23MR,Maintenance and repair construction,,,0.0,0.0,
+PYF,23OC,Office and commercial structures,,,0.0,0.0,
+PYF,23OR,Other residential construction,,,0.0,0.0,
+PYF,23OT,Other nonresidential structures,,,0.0,0.0,
+PYF,23PC,Power and communication structures,,,0.0,0.0,
+PYF,23SF,Single-family residential structures,,,0.0,0.0,
+PYF,23TH,Transportation structures and highways and streets,,,0.0,0.0,
+PYF,311,Food manufacturing,934211.0,0.02311072310577546,2.6233998703943176e-08,0.3167555309512317,0.02311072310577546
+PYF,3121,Beverage manufacturing,18793.0,0.0004649054863696084,1.6734296893040495e-09,0.020205387509811285,0.0004649054863696084
+PYF,3122,Tobacco manufacturing,,,1.5328412779167474e-10,0.0018507889640838626,
+PYF,313TT,Textile mills and textile product mills,16442.0,0.0004067459163991434,4.2191964250644284e-10,0.005094357969942044,0.0004067459163991434
+PYF,315AL,Apparel and leather and allied products,26844.0,0.000664072946102579,1.904890933263833e-10,0.002300010554164887,0.000664072946102579
+PYF,321,Wood products,,,1.5073813413460452e-11,0.00018200480319924644,
+PYF,322,Paper products,2191.0,5.420145376660523e-05,8.568689281349711e-11,0.001034603894549287,5.420145376660523e-05
+PYF,323,Printing and related support activities,4127.0,0.00010209465983330888,1.8814975111456177e-11,0.00022717647807033375,0.00010209465983330888
+PYF,324,Petroleum and coal products,,,2.429031287624205e-10,0.0029328700664032234,
+PYF,3251,Basic chemical manufacturing,30742.0,0.0007605025521191136,5.1600678893573386e-12,6.230388521716707e-05,0.0007605025521191136
+PYF,3252,"Resin, rubber, and artificial fibers manufacturing",1183026.0,0.02926596487617157,0.0,0.0,0.02926596487617157
+PYF,3254,Pharmaceutical and medicine manufacturing,,,6.130968748602032e-11,0.000740267727815716,
+PYF,325X,Other chemical manufacturing,207296.0,0.005128135353720765,6.182981294748353e-10,0.007465478461677181,0.005128135353720765
+PYF,326,Plastics and rubber products,41821.0,0.0010345773610101311,1.6333600969614387e-09,0.01972157773530004,0.0010345773610101311
+PYF,327,Nonmetallic mineral products,43989.0,0.0010882098355724315,2.0623197373759407e-11,0.00024900938311990235,0.0010882098355724315
+PYF,3311IS,Iron and steel mills and manufacturing from purchased steel,,,1.5866390360443457e-12,1.9157456549490334e-05,
+PYF,3313NF,Nonferrous metal production and processing and foundries,,,1.327904580860646e-13,1.6033435287921398e-06,
+PYF,332,Fabricated metal products,37552.0,0.0009289698730458966,3.086524260178212e-11,0.00037267426969860116,0.0009289698730458966
+PYF,33311,Agricultural implement manufacturing,,,5.09715546092917e-12,6.154426561456334e-05,
+PYF,33312,Construction machinery manufacturing,55777.0,0.0013798240468918027,0.0,0.0,0.0013798240468918027
+PYF,33313,Mining and oil and gas field machinery manufacturing,,,0.0,0.0,
+PYF,3332OM,Other machinery,73885.0,0.0018277838482636363,1.7609242620889745e-11,0.00021261817761661318,0.0018277838482636363
+PYF,3341,Computer and peripheral equipment manufacturing,160970.0,0.003982112283345707,3.8364583134296244e-12,4.632230883887368e-05,0.003982112283345707
+PYF,3342,Communications equipment manufacturing,50133.0,0.001240201497800648,1.9618933210265637e-12,2.3688365909617775e-05,0.001240201497800648
+PYF,3344,Semiconductor and other electronic component manufacturing,27940.0,0.0006911860420990187,9.686755305590805e-14,1.169601841733674e-06,0.0006911860420990187
+PYF,3345,"Navigational, measuring, electromedical, and control instruments manufacturing",67921.0,0.001680245066764762,2.4121256986286893e-12,2.91245785674068e-05,0.001680245066764762
+PYF,334X,Other computer and electronic product manufacturing,,,5.1578571026461745e-12,6.227719165335252e-05,
+PYF,335,"Electrical equipment, appliances, and components",225557.0,0.00557988010371254,5.132321977283337e-11,0.0006196887448510488,0.00557988010371254
+PYF,336111,Automobile manufacturing,,,1.7409649872945636e-11,0.00021020824737446716,
+PYF,336112,Light truck and utility vehicle manufacturing,,,8.858414657202814e-10,0.010695860245303336,
+PYF,33612,Heavy duty truck manufacturing,,,0.0,0.0,
+PYF,3362BP,"Motor vehicle body, trailer, and parts manufacturing",645189.0,0.015960831471575655,2.1806055159140915e-10,0.0026329148895045578,0.015960831471575655
+PYF,3364,Aerospace product and parts manufacturing,245918.0,0.006083575128879974,3.680220767878224e-12,4.443585960731934e-05,0.006083575128879974
+PYF,3365AO,All other transportation equipment manufacturing,9110.0,0.00022536524135726774,6.464340531380128e-11,0.0007805198286295208,0.00022536524135726774
+PYF,337,Furniture and related products,28181.0,0.0006971479546310826,3.689482166555615e-10,0.004454768393454121,0.0006971479546310826
+PYF,3391,Medical equipment and supplies manufacturing,,,7.737032823893339e-11,0.0009341877186839517,
+PYF,3399,Other miscellaneous manufacturing,6676961.0,0.16517617204149987,9.597459383309479e-10,0.01158820039998756,0.16517617204149987
+PYF,4231,Motor vehicle and motor vehicle parts and supplies,,,0.0,0.0,
+PYF,4234,Professional and commercial equipment and supplies,,,0.0,0.0,
+PYF,4236,Household appliances and electrical and electronic goods,,,0.0,0.0,
+PYF,4238,"Machinery, equipment, and supplies",,,0.0,0.0,
+PYF,423X,Other durable goods merchant wholesalers,,,0.0,0.0,
+PYF,4242,Drugs and druggists' sundries,,,0.0,0.0,
+PYF,4244,Grocery and related product wholesalers,,,0.0,0.0,
+PYF,4247,Petroleum and petroleum products,,,0.0,0.0,
+PYF,424X,Other nondurable goods merchant wholesalers,,,0.0,0.0,
+PYF,425,Wholesale electronic markets and agents and brokers,,,0.0,0.0,
+PYF,42ID,Customs duties,,,0.0,0.0,
+PYF,441,Motor vehicle and parts dealers,,,0.0,0.0,
+PYF,444,Building material and garden equipment and supplies dealers,,,0.0,0.0,
+PYF,445,Food and beverage stores,,,0.0,0.0,
+PYF,446,Health and personal care stores,,,0.0,0.0,
+PYF,447,Gasoline stations,,,0.0,0.0,
+PYF,448,Clothing and clothing accessories stores,,,0.0,0.0,
+PYF,452,General merchandise stores,,,0.0,0.0,
+PYF,454,Nonstore retailers,,,1.3943442131655931e-11,0.00016835643187847643,
+PYF,481,Air transportation,,,1.8531077197984803e-10,0.00223748627237054,
+PYF,482,Rail transportation,,,1.0146810488484722e-12,1.2251499971517519e-05,
+PYF,483,Water transportation,,,2.5049074200449216e-11,0.000302448471075341,
+PYF,484,Truck transportation,,,1.1702617667438064e-11,0.00014130018509955316,
+PYF,485,Transit and ground passenger transportation,,,5.3942579314442615e-11,0.0006513155140568391,
+PYF,486,Pipeline transportation,,,0.0,0.0,
+PYF,48A,Scenic and sightseeing transportation and support activities,,,1.2231477225723167e-11,0.00014768576101093918,
+PYF,492,Couriers and messengers,,,1.171850449203545e-11,0.00014149200639287807,
+PYF,493,Warehousing and storage,,,1.5520079347083814e-13,1.8739312407040163e-06,
+PYF,4A0X,All other retail,,,0.0,0.0,
+PYF,5111,"Newspaper, periodical, book, and directory publishers",,,4.967121753523987e-11,0.0005997420774822309,
+PYF,5112,Software publishers,,,2.325977860946876e-11,0.00028084409115042617,
+PYF,512,Motion picture and sound recording industries,,,1.0997954305161939e-11,0.0001327919123052077,
+PYF,515,Broadcasting (except internet),,,1.6135331123907075e-11,0.00019482182014665203,
+PYF,5171,Wired telecommunications carriers,,,1.750362083448987e-10,0.0021134287508234565,
+PYF,5172,Wireless telecommunications carriers (except satellite),,,1.2452606931501075e-10,0.001503557335970186,
+PYF,5174OT,"Other telecommunications, including satellite",,,1.1227267990557611e-11,0.00013556070020489497,
+PYF,518,"Data processing, hosting, and related services",,,5.894035952802278e-11,0.0007116598993331941,
+PYF,519,Other information services,,,3.759388629442688e-11,0.00045391751170291634,
+PYF,521CI,"Federal reserve banks, credit intermediation, and related activities",,,2.760563713474053e-10,0.0033331701913012013,
+PYF,523,"Securities, commodity contracts, and investments",,,1.955293151376597e-10,0.0023608673893717462,
+PYF,524113,Direct life insurance carriers,,,3.742969614577181e-11,0.0004519350408527374,
+PYF,5241X,"Insurance carriers, except direct life",,,1.5990724878976794e-10,0.0019307581000124212,
+PYF,5242,"Agencies, brokerages, and other insurance related activities",,,0.0,0.0,
+PYF,525,"Funds, trusts, and other financial vehicles",,,1.7788898546402717e-10,0.002147873859297112,
+PYF,532RL,Rental and leasing services and lessors of intangible assets,,,1.1540242092109863e-10,0.0013933962383868579,
+PYF,5411,Legal services,,,4.9577669334972046e-11,0.0005986125542944101,
+PYF,5412,"Accounting, tax preparation, bookkeeping, and payroll services",,,1.9209488351825356e-11,0.0002319399246318237,
+PYF,5413,"Architectural, engineering, and related services",,,0.0,0.0,
+PYF,5415,Computer systems design and related services,,,0.0,0.0,
+PYF,5416,"Management, scientific, and technical consulting services",,,0.0,0.0,
+PYF,5417,Scientific research and development services,,,7.544723059199919e-12,9.109677809573348e-05,
+PYF,5418,"Advertising, public relations, and related services",,,1.3002382939261797e-12,1.5699385968705e-05,
+PYF,541X,"Specialized design services and other professional, scientific, and technical services",,,1.1854392388155642e-10,0.0014313274912413877,
+PYF,55,Management of companies and enterprises,,,0.0,0.0,
+PYF,5613,Employment services,,,1.2335093612516581e-12,1.4893684987407398e-05,
+PYF,5617,Services to buildings and dwellings,,,6.07812483053612e-11,0.0007338872276436261,
+PYF,561X,Other administrative and support services,,,7.947744703232188e-11,0.0009596295714380561,
+PYF,562,Waste management and remediation services,,,5.6108181367752736e-11,0.0006774635075810676,
+PYF,61,Educational services,,,9.118268804327559e-10,0.011009614314102639,
+PYF,6211,Offices of physicians,,,1.067252934186689e-09,0.012886265400964277,
+PYF,6212,Offices of dentists,,,1.4219135875492796e-10,0.00171685223619091,
+PYF,6213,Offices of other health practitioners,,,6.339357630246744e-11,0.0007654290963110885,
+PYF,6214,Outpatient care centers,,,6.367195907297613e-10,0.007687903559983851,
+PYF,6215OH,Other ambulatory health care services,,,4.956608235215486e-10,0.005984726503119559,
+PYF,622,Hospitals,,,4.555687152402662e-09,0.055006448658172336,
+PYF,623,Nursing and residential care facilities,,,7.12979386180657e-10,0.008608682442032434,
+PYF,624,Social assistance,,,1.5187555603253282e-09,0.01833781534126841,
+PYF,711AS,"Performing arts, spectator sports, museums, and related activities",,,9.242199644629976e-11,0.0011159251354053105,
+PYF,713,"Amusements, gambling, and recreation industries",,,2.024086427177165e-09,0.02443930024420242,
+PYF,721,Accommodation,,,1.653191194881507e-09,0.019961023121491697,
+PYF,722,Food services and drinking places,,,2.9242278719261482e-08,0.3530782183255702,
+PYF,811,Repair and maintenance,,,3.4310682548049845e-10,0.004142753299051252,
+PYF,812,Personal and laundry services,,,4.5524152783237885e-10,0.005496694327347079,
+PYF,813,"Religious, grantmaking, civic, professional, and similar organizations",,,7.658539346406308e-10,0.009247102297894067,
+PYF,814,Private households,,,0.0,0.0,
+PYF,GFE,Federal government enterprises,,,1.2229252771090615e-11,0.00014765890241739564,
+PYF,GFGD,Federal general government (defense),,,0.0,0.0,
+PYF,GFGN,Federal general government (nondefense),,,0.0,0.0,
+PYF,GSLE,State and local government enterprises,,,1.4794379889902695e-10,0.0017863085647008056,
+PYF,GSLGE,State and local government (educational services),,,0.0,0.0,
+PYF,GSLGH,State and local government (hospitals and health services),,,0.0,0.0,
+PYF,GSLGO,State and local government (other services),,,0.0,0.0,
+PYF,HSO,Owner-occupied housing,,,3.2940625844615005e-10,0.003977329398780736,
+PYF,HST,Tenant-occupied housing,,,7.561208833220499e-11,0.0009129583124664509,
+PYF,ORE,Other real estate,,,1.2106367932318022e-11,0.00014617516168878843,
+PYF,Other,,11304037.0,0.2796418251170675,0.0,0.0,0.2796418251170675
+PYF,Used,,,,3.969179098927647e-10,0.004792481112429049,

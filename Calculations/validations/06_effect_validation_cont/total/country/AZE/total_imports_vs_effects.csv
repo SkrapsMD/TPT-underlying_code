@@ -1,0 +1,141 @@
+iso3,usummary_code,usummary_desc,impVal,impVal_share,total,total_share,impVal_share_no_oil
+AZE,111,Crop production,98105.0,0.0006217973995514363,8.986651033116886e-10,0.006770242148704474,0.0006217973995514363
+AZE,112,Animal production and aquaculture,3000.0,1.9014241869979196e-05,1.4177582041246215e-10,0.0010680915854932175,1.9014241869979196e-05
+AZE,113FF,"Forestry, fishing, and related activities",,,1.4703903395357817e-11,0.00011077428749695562,
+AZE,211,Oil and gas extraction,,,0.0,0.0,0.0
+AZE,212,"Mining, except oil and gas",5015.0,3.178547432598189e-05,1.567599167180227e-12,1.1809767526086561e-05,3.178547432598189e-05
+AZE,213,Support activities for mining,,,0.0,0.0,
+AZE,2211,"Electric power generation, transmission, and distribution",,,9.62738076005064e-10,0.007252946482858449,
+AZE,2212NW,"Natural gas distribution and water, sewage and other systems",,,1.016743932228846e-09,0.0076598085305063695,
+AZE,23EH,"Education, hospital, and health structures",,,0.0,0.0,
+AZE,23MR,Maintenance and repair construction,,,0.0,0.0,
+AZE,23OC,Office and commercial structures,,,0.0,0.0,
+AZE,23OR,Other residential construction,,,0.0,0.0,
+AZE,23OT,Other nonresidential structures,,,0.0,0.0,
+AZE,23PC,Power and communication structures,,,0.0,0.0,
+AZE,23SF,Single-family residential structures,,,0.0,0.0,
+AZE,23TH,Transportation structures and highways and streets,,,0.0,0.0,
+AZE,311,Food manufacturing,3460684.0,0.021934094203855694,1.630122751466916e-08,0.12280799286489752,0.021934094203855694
+AZE,3121,Beverage manufacturing,118269.0,0.0007495984572401898,4.359715763840026e-09,0.0328446395792491,0.0007495984572401898
+AZE,3122,Tobacco manufacturing,,,8.662482234866305e-10,0.006526024224460702,
+AZE,313TT,Textile mills and textile product mills,63046.0,0.0003995906309782361,3.2932173929626043e-10,0.0024809997758363047,0.0003995906309782361
+AZE,315AL,Apparel and leather and allied products,28915.0,0.0001832656012234828,5.256441798940667e-10,0.003960027343696367,0.0001832656012234828
+AZE,321,Wood products,926509.0,0.005872288740237518,2.33137124341026e-10,0.0017563770750914842,0.005872288740237518
+AZE,322,Paper products,,,5.293138864458018e-10,0.003987673684784252,
+AZE,323,Printing and related support activities,471530.0,0.0029885951563170966,6.46423095155233e-11,0.00048699352724260154,0.0029885951563170966
+AZE,324,Petroleum and coal products,,,2.360642120465614e-09,0.017784287743106284,
+AZE,3251,Basic chemical manufacturing,,,5.166608676889255e-12,3.892350075821948e-05,
+AZE,3252,"Resin, rubber, and artificial fibers manufacturing",,,0.0,0.0,
+AZE,3254,Pharmaceutical and medicine manufacturing,,,1.3440841143524755e-10,0.0010125879917735198,
+AZE,325X,Other chemical manufacturing,2030893.0,0.012871963571349218,6.4956242583609895e-09,0.04893585939193865,0.012871963571349218
+AZE,326,Plastics and rubber products,109987.0,0.0006971064735178006,6.378972473096378e-10,0.004805704387945271,0.0006971064735178006
+AZE,327,Nonmetallic mineral products,210860.0,0.0013364476802346043,3.6261632781326386e-10,0.0027318300636386427,0.0013364476802346043
+AZE,3311IS,Iron and steel mills and manufacturing from purchased steel,4161884.0,0.026378356336932165,4.402409913166751e-10,0.0033166283012614536,0.026378356336932165
+AZE,3313NF,Nonferrous metal production and processing and foundries,77775777.0,0.49294914516785493,7.636955574305165e-11,0.0005753426757799856,0.49294914516785493
+AZE,332,Fabricated metal products,11600235.0,0.0735232246795327,1.1792505566224156e-08,0.08884079055598117,0.0735232246795327
+AZE,33311,Agricultural implement manufacturing,956149.0,0.006060149449912912,9.660873441441871e-11,0.0007278178748180917,0.006060149449912912
+AZE,33312,Construction machinery manufacturing,3210.0,2.034523880087774e-05,0.0,0.0,2.034523880087774e-05
+AZE,33313,Mining and oil and gas field machinery manufacturing,,,0.0,0.0,
+AZE,3332OM,Other machinery,461321.0,0.002923889691233557,6.433563230616763e-10,0.004846831237773112,0.002923889691233557
+AZE,3341,Computer and peripheral equipment manufacturing,,,3.4924323839051444e-11,0.00026310816832523956,
+AZE,3342,Communications equipment manufacturing,152724.0,0.0009679770251169008,6.159922453881947e-11,0.000464067943401138,0.0009679770251169008
+AZE,3344,Semiconductor and other electronic component manufacturing,,,1.1382585203061592e-11,8.575258772038839e-05,
+AZE,3345,"Navigational, measuring, electromedical, and control instruments manufacturing",10050.0,6.36977102644303e-05,5.4230191055670325e-11,0.00040855211119737294,6.36977102644303e-05
+AZE,334X,Other computer and electronic product manufacturing,33676.0,0.00021344120307113977,1.3116447976092344e-10,0.0009881492961258383,0.00021344120307113977
+AZE,335,"Electrical equipment, appliances, and components",3048168.0,0.019319534537443582,6.194467439194634e-09,0.04666704469892762,0.019319534537443582
+AZE,336111,Automobile manufacturing,,,1.1545140507561848e-10,0.0008697722498511304,
+AZE,336112,Light truck and utility vehicle manufacturing,,,1.1534721859443877e-08,0.08689873437680871,
+AZE,33612,Heavy duty truck manufacturing,,,0.0,0.0,
+AZE,3362BP,"Motor vehicle body, trailer, and parts manufacturing",6701.0,4.24714782569102e-05,4.138437316722738e-09,0.03117760180983686,4.24714782569102e-05
+AZE,3364,Aerospace product and parts manufacturing,580586.0,0.00367980087677458,4.1375760588887945e-11,0.00031171113381537176,0.00367980087677458
+AZE,3365AO,All other transportation equipment manufacturing,7470.0,4.7345462256248194e-05,1.5800020683658946e-09,0.011903206832969606,4.7345462256248194e-05
+AZE,337,Furniture and related products,533932.0,0.0033841040633739105,3.369820160283393e-09,0.025387097372125095,0.0033841040633739105
+AZE,3391,Medical equipment and supplies manufacturing,,,7.832706389900345e-10,0.005900898871438401,
+AZE,3399,Other miscellaneous manufacturing,2279141.0,0.01444537940992875,9.254451589325949e-09,0.06971994125765973,0.01444537940992875
+AZE,4231,Motor vehicle and motor vehicle parts and supplies,,,0.0,0.0,
+AZE,4234,Professional and commercial equipment and supplies,,,0.0,0.0,
+AZE,4236,Household appliances and electrical and electronic goods,,,0.0,0.0,
+AZE,4238,"Machinery, equipment, and supplies",,,0.0,0.0,
+AZE,423X,Other durable goods merchant wholesalers,,,0.0,0.0,
+AZE,4242,Drugs and druggists' sundries,,,0.0,0.0,
+AZE,4244,Grocery and related product wholesalers,,,0.0,0.0,
+AZE,4247,Petroleum and petroleum products,,,0.0,0.0,
+AZE,424X,Other nondurable goods merchant wholesalers,,,0.0,0.0,
+AZE,425,Wholesale electronic markets and agents and brokers,,,0.0,0.0,
+AZE,42ID,Customs duties,,,0.0,0.0,
+AZE,441,Motor vehicle and parts dealers,,,0.0,0.0,
+AZE,444,Building material and garden equipment and supplies dealers,,,0.0,0.0,
+AZE,445,Food and beverage stores,,,0.0,0.0,
+AZE,446,Health and personal care stores,,,0.0,0.0,
+AZE,447,Gasoline stations,,,0.0,0.0,
+AZE,448,Clothing and clothing accessories stores,,,0.0,0.0,
+AZE,452,General merchandise stores,,,0.0,0.0,
+AZE,454,Nonstore retailers,,,3.549199953494064e-11,0.00026738484704453235,
+AZE,481,Air transportation,,,4.165172031018229e-10,0.003137901220052622,
+AZE,482,Rail transportation,,,1.4282196719977235e-11,0.00010759729052941965,
+AZE,483,Water transportation,,,1.835163902029745e-10,0.0013825510697496725,
+AZE,484,Truck transportation,,,6.004189885040259e-11,0.00045233557282601915,
+AZE,485,Transit and ground passenger transportation,,,3.5668284001831925e-10,0.002687129152242259,
+AZE,486,Pipeline transportation,,,0.0,0.0,
+AZE,48A,Scenic and sightseeing transportation and support activities,,,6.840834005348008e-11,0.0005153655410077116,
+AZE,492,Couriers and messengers,,,2.64453153458798e-11,0.00019923015585079294,
+AZE,493,Warehousing and storage,,,9.32405513278698e-13,7.02443110611633e-06,
+AZE,4A0X,All other retail,,,0.0,0.0,
+AZE,5111,"Newspaper, periodical, book, and directory publishers",,,1.7707724374739934e-10,0.0013340406952235394,
+AZE,5112,Software publishers,,,1.0190567367862853e-10,0.0007677232426058548,
+AZE,512,Motion picture and sound recording industries,,,2.850806353041043e-11,0.00021477021037122451,
+AZE,515,Broadcasting (except internet),,,1.3913802924803028e-10,0.001048219349601219,
+AZE,5171,Wired telecommunications carriers,,,1.0147290528818584e-09,0.007644629103788606,
+AZE,5172,Wireless telecommunications carriers (except satellite),,,9.72294464549497e-10,0.007324941116092223,
+AZE,5174OT,"Other telecommunications, including satellite",,,5.971029757131279e-11,0.0004498373997602298,
+AZE,518,"Data processing, hosting, and related services",,,2.4166115225411274e-10,0.0018205942488097539,
+AZE,519,Other information services,,,2.0961387269678823e-10,0.0015791607692957933,
+AZE,521CI,"Federal reserve banks, credit intermediation, and related activities",,,4.4354781091826116e-10,0.0033415407735075857,
+AZE,523,"Securities, commodity contracts, and investments",,,4.2846725646240496e-10,0.003227928922967687,
+AZE,524113,Direct life insurance carriers,,,1.0936111865097324e-10,0.0008238900700514827,
+AZE,5241X,"Insurance carriers, except direct life",,,2.94690027017806e-10,0.0022200960450856986,
+AZE,5242,"Agencies, brokerages, and other insurance related activities",,,0.0,0.0,
+AZE,525,"Funds, trusts, and other financial vehicles",,,3.444208248930502e-10,0.002594751233790523,
+AZE,532RL,Rental and leasing services and lessors of intangible assets,,,3.4613020456721523e-10,0.0026076291282091705,
+AZE,5411,Legal services,,,9.826831017876073e-11,0.0007403205632470869,
+AZE,5412,"Accounting, tax preparation, bookkeeping, and payroll services",,,3.5030760127818094e-11,0.0002639100237057413,
+AZE,5413,"Architectural, engineering, and related services",,,0.0,0.0,
+AZE,5415,Computer systems design and related services,,,0.0,0.0,
+AZE,5416,"Management, scientific, and technical consulting services",,,0.0,0.0,
+AZE,5417,Scientific research and development services,,,2.5211639426275798e-11,0.0001899360543240222,
+AZE,5418,"Advertising, public relations, and related services",,,5.881422042233619e-12,4.4308665439342304e-05,
+AZE,541X,"Specialized design services and other professional, scientific, and technical services",,,2.9275197974710905e-10,0.002205495445518739,
+AZE,55,Management of companies and enterprises,,,0.0,0.0,
+AZE,5613,Employment services,,,2.1885124436514124e-12,1.6487520361446644e-05,
+AZE,5617,Services to buildings and dwellings,,,2.7142213381715957e-10,0.0020448035243479327,
+AZE,561X,Other administrative and support services,,,2.5656466732649085e-10,0.0019328723438810284,
+AZE,562,Waste management and remediation services,,,4.2920452999949154e-10,0.0032334832950663846,
+AZE,61,Educational services,,,1.662753214769859e-09,0.012526626277179872,
+AZE,6211,Offices of physicians,,,1.2638216557041083e-09,0.009521209414232451,
+AZE,6212,Offices of dentists,,,5.253728464543534e-10,0.003957983208363716,
+AZE,6213,Offices of other health practitioners,,,1.1055462714931867e-10,0.0008328815636685802,
+AZE,6214,Outpatient care centers,,,4.791293029994556e-10,0.0036095998274467776,
+AZE,6215OH,Other ambulatory health care services,,,5.161726095033492e-10,0.003888671702048161,
+AZE,622,Hospitals,,,5.205025066950322e-09,0.039212916984836095,
+AZE,623,Nursing and residential care facilities,,,6.507875418093444e-10,0.004902815552949369,
+AZE,624,Social assistance,,,2.6109094817990452e-09,0.019669718291038644,
+AZE,711AS,"Performing arts, spectator sports, museums, and related activities",,,1.8249622776184967e-10,0.0013748655073171528,
+AZE,713,"Amusements, gambling, and recreation industries",,,1.7651529921691667e-09,0.01329807193186476,
+AZE,721,Accommodation,,,7.874682460729763e-10,0.005932522238465681,
+AZE,722,Food services and drinking places,,,5.4762554910725235e-09,0.041256276232498154,
+AZE,811,Repair and maintenance,,,4.632039193781181e-09,0.03489623316697509,
+AZE,812,Personal and laundry services,,,1.5923062031844244e-09,0.011995902067094949,
+AZE,813,"Religious, grantmaking, civic, professional, and similar organizations",,,9.217248178414043e-10,0.006943966321002758,
+AZE,814,Private households,,,0.0,0.0,
+AZE,GFE,Federal government enterprises,,,3.2188066111236666e-11,0.00024249411829669986,
+AZE,GFGD,Federal general government (defense),,,0.0,0.0,
+AZE,GFGN,Federal general government (nondefense),,,0.0,0.0,
+AZE,GSLE,State and local government enterprises,,,1.2915628914641063e-09,0.009730202600801471,
+AZE,GSLGE,State and local government (educational services),,,0.0,0.0,
+AZE,GSLGH,State and local government (hospitals and health services),,,0.0,0.0,
+AZE,GSLGO,State and local government (other services),,,0.0,0.0,
+AZE,HSO,Owner-occupied housing,,,1.621816452563971e-09,0.012218222410270544,
+AZE,HST,Tenant-occupied housing,,,2.5925110676125857e-10,0.0019531110795615193,
+AZE,ORE,Other real estate,,,3.428554500235444e-11,0.0002582958223378751,
+AZE,Other,,48638635.0,0.30827559003854516,0.0,0.0,0.30827559003854516
+AZE,Used,,,,7.0301611358641765e-09,0.05296288134346733,

@@ -1,0 +1,141 @@
+iso3,usummary_code,usummary_desc,impVal,impVal_share,indirect,indirect_share,impVal_share_no_oil
+NER,111,Crop production,782232.0,0.09416887151494927,6.645781836867763e-11,0.012328245292316619,0.09416887151494927
+NER,112,Animal production and aquaculture,,,1.2530241739304931e-11,0.0023244201739698028,
+NER,113FF,"Forestry, fishing, and related activities",,,7.923645900804787e-13,0.00014698744658253848,
+NER,211,Oil and gas extraction,,,0.0,0.0,0.0
+NER,212,"Mining, except oil and gas",67851.0,0.008168231549157823,4.9939589246526566e-14,9.264034257237795e-06,0.008168231549157823
+NER,213,Support activities for mining,,,0.0,0.0,
+NER,2211,"Electric power generation, transmission, and distribution",,,5.0649965599146505e-11,0.00939581249100972,
+NER,2212NW,"Natural gas distribution and water, sewage and other systems",,,5.013014331049575e-11,0.009299382953594747,
+NER,23EH,"Education, hospital, and health structures",,,0.0,0.0,
+NER,23MR,Maintenance and repair construction,,,0.0,0.0,
+NER,23OC,Office and commercial structures,,,0.0,0.0,
+NER,23OR,Other residential construction,,,0.0,0.0,
+NER,23OT,Other nonresidential structures,,,0.0,0.0,
+NER,23PC,Power and communication structures,,,0.0,0.0,
+NER,23SF,Single-family residential structures,,,0.0,0.0,
+NER,23TH,Transportation structures and highways and streets,,,0.0,0.0,
+NER,311,Food manufacturing,,,1.1314041333373287e-09,0.20988091428378053,
+NER,3121,Beverage manufacturing,,,2.0563192264201319e-10,0.038145711738503715,
+NER,3122,Tobacco manufacturing,,,3.317353993436801e-11,0.006153851383693674,
+NER,313TT,Textile mills and textile product mills,199281.0,0.0239904106254546,5.169181092193333e-11,0.00958907981472347,0.0239904106254546
+NER,315AL,Apparel and leather and allied products,14628.0,0.0017609893900028097,3.949208555033369e-11,0.007325972018352219,0.0017609893900028097
+NER,321,Wood products,8139.0,0.0009798121852087004,1.8214504915413896e-12,0.00033788783620553476,0.0009798121852087004
+NER,322,Paper products,1500.0,0.0001805772549223554,2.0178461743497508e-11,0.0037432018098371715,0.0001805772549223554
+NER,323,Printing and related support activities,16507.0,0.0019871924980022137,3.334396843320703e-12,0.0006185466690817253,0.0019871924980022137
+NER,324,Petroleum and coal products,,,1.6127220087929222e-10,0.029916769765778804,
+NER,3251,Basic chemical manufacturing,135555.0,0.016318766527333255,1.1501148155997034e-12,0.00021335183593272037,0.016318766527333255
+NER,3252,"Resin, rubber, and artificial fibers manufacturing",82036.0,0.009875890456540231,0.0,0.0,0.009875890456540231
+NER,3254,Pharmaceutical and medicine manufacturing,20846.0,0.0025095423040742805,2.5395683159645275e-10,0.047110215027103816,0.0025095423040742805
+NER,325X,Other chemical manufacturing,10197.0,0.001227564178962172,8.656306956126338e-11,0.016057866192461287,0.001227564178962172
+NER,326,Plastics and rubber products,30513.0,0.0036733025196305532,5.649880537245647e-11,0.01048080043028892,0.0036733025196305532
+NER,327,Nonmetallic mineral products,21079.0,0.002537591971005553,6.43706851356596e-12,0.001194107202834262,0.002537591971005553
+NER,3311IS,Iron and steel mills and manufacturing from purchased steel,,,1.1328370006085688e-12,0.00021014671806164734,
+NER,3313NF,Nonferrous metal production and processing and foundries,,,7.952145431444883e-14,1.4751612659803023e-05,
+NER,332,Fabricated metal products,631893.0,0.07607033556310128,2.04095517592766e-11,0.0037860701204296947,0.07607033556310128
+NER,33311,Agricultural implement manufacturing,148624.0,0.017892075957053433,4.896335060294401e-12,0.0009082937288403251,0.017892075957053433
+NER,33312,Construction machinery manufacturing,,,0.0,0.0,
+NER,33313,Mining and oil and gas field machinery manufacturing,,,0.0,0.0,
+NER,3332OM,Other machinery,1065031.0,0.1282135829248074,3.160750660471749e-11,0.005863344660816141,0.1282135829248074
+NER,3341,Computer and peripheral equipment manufacturing,159235.0,0.019169479458374175,3.020104924592899e-12,0.0005602440048869075,0.019169479458374175
+NER,3342,Communications equipment manufacturing,14528.0,0.0017489509063413195,1.148283017024441e-12,0.00021301202847716003,0.0017489509063413195
+NER,3344,Semiconductor and other electronic component manufacturing,155172.0,0.018680355867207822,7.276414704704691e-14,1.3498099626228217e-05,0.018680355867207822
+NER,3345,"Navigational, measuring, electromedical, and control instruments manufacturing",133453.0,0.01606571760076873,8.83555179565344e-13,0.00016390374000167706,0.01606571760076873
+NER,334X,Other computer and electronic product manufacturing,6500.0,0.0007825014379968734,8.539573495635415e-13,0.00015841320002700816,0.0007825014379968734
+NER,335,"Electrical equipment, appliances, and components",353389.0,0.04254267702650417,2.723077063441428e-11,0.00505143906496477,0.04254267702650417
+NER,336111,Automobile manufacturing,,,4.823142741095004e-12,0.000894716201218248,
+NER,336112,Light truck and utility vehicle manufacturing,,,2.5977831981836077e-10,0.04819012912190413,
+NER,33612,Heavy duty truck manufacturing,,,0.0,0.0,
+NER,3362BP,"Motor vehicle body, trailer, and parts manufacturing",50768.0,0.006111697385265426,1.0069461758680747e-10,0.018679336392590076,0.006111697385265426
+NER,3364,Aerospace product and parts manufacturing,288174.0,0.03469177990666323,2.498700285439308e-13,4.6352093383486564e-05,0.03469177990666323
+NER,3365AO,All other transportation equipment manufacturing,,,2.9085100650351927e-11,0.005395426211256036,
+NER,337,Furniture and related products,5334.0,0.0006421327185038958,4.624837845781054e-11,0.008579296883276926,0.0006421327185038958
+NER,3391,Medical equipment and supplies manufacturing,20463.0,0.0024634349116507723,1.0282993484930262e-11,0.0019075448026031317,0.0024634349116507723
+NER,3399,Other miscellaneous manufacturing,156935.0,0.018892594334159896,2.9523066510260414e-11,0.005476670987012277,0.018892594334159896
+NER,4231,Motor vehicle and motor vehicle parts and supplies,,,0.0,0.0,
+NER,4234,Professional and commercial equipment and supplies,,,0.0,0.0,
+NER,4236,Household appliances and electrical and electronic goods,,,0.0,0.0,
+NER,4238,"Machinery, equipment, and supplies",,,0.0,0.0,
+NER,423X,Other durable goods merchant wholesalers,,,0.0,0.0,
+NER,4242,Drugs and druggists' sundries,,,0.0,0.0,
+NER,4244,Grocery and related product wholesalers,,,0.0,0.0,
+NER,4247,Petroleum and petroleum products,,,0.0,0.0,
+NER,424X,Other nondurable goods merchant wholesalers,,,0.0,0.0,
+NER,425,Wholesale electronic markets and agents and brokers,,,0.0,0.0,
+NER,42ID,Customs duties,,,0.0,0.0,
+NER,441,Motor vehicle and parts dealers,,,0.0,0.0,
+NER,444,Building material and garden equipment and supplies dealers,,,0.0,0.0,
+NER,445,Food and beverage stores,,,0.0,0.0,
+NER,446,Health and personal care stores,,,0.0,0.0,
+NER,447,Gasoline stations,,,0.0,0.0,
+NER,448,Clothing and clothing accessories stores,,,0.0,0.0,
+NER,452,General merchandise stores,,,0.0,0.0,
+NER,454,Nonstore retailers,,,1.7210563680291521e-12,0.0003192642429106136,
+NER,481,Air transportation,,,2.359804418858017e-11,0.004377550818202276,
+NER,482,Rail transportation,,,2.856931311868621e-13,5.2997451406885674e-05,
+NER,483,Water transportation,,,5.7565129029906704e-12,0.0010678608602942424,
+NER,484,Truck transportation,,,2.495939947061569e-12,0.000463008877775159,
+NER,485,Transit and ground passenger transportation,,,1.7690878624594822e-11,0.0032817431639224222,
+NER,486,Pipeline transportation,,,0.0,0.0,
+NER,48A,Scenic and sightseeing transportation and support activities,,,4.660582182639256e-12,0.0008645604349187785,
+NER,492,Couriers and messengers,,,1.6565409070662217e-12,0.00030729631426923724,
+NER,493,Warehousing and storage,,,3.799152419363685e-14,7.0476106616958135e-06,
+NER,4A0X,All other retail,,,0.0,0.0,
+NER,5111,"Newspaper, periodical, book, and directory publishers",,,9.7827284652151e-12,0.0018147432327411742,
+NER,5112,Software publishers,,,4.946533687109871e-12,0.0009176058158138309,
+NER,512,Motion picture and sound recording industries,,,1.6914781410421006e-12,0.0003137773393895667,
+NER,515,Broadcasting (except internet),,,4.211071330376714e-12,0.000781174007493367,
+NER,5171,Wired telecommunications carriers,,,5.6242245823756125e-11,0.010433207398707331,
+NER,5172,Wireless telecommunications carriers (except satellite),,,6.435585872194438e-11,0.011938321657211376,
+NER,5174OT,"Other telecommunications, including satellite",,,3.39039396653662e-12,0.0006289344050564481,
+NER,518,"Data processing, hosting, and related services",,,1.0431933266919174e-11,0.0019351738492859052,
+NER,519,Other information services,,,7.230259789962881e-12,0.0013412480037088771,
+NER,521CI,"Federal reserve banks, credit intermediation, and related activities",,,2.4834018652667358e-11,0.0046068300323314,
+NER,523,"Securities, commodity contracts, and investments",,,2.5976946795452444e-11,0.004818848705854203,
+NER,524113,Direct life insurance carriers,,,6.526611429687716e-12,0.0012107178449112313,
+NER,5241X,"Insurance carriers, except direct life",,,1.9820619596153744e-11,0.003676820368545947,
+NER,5242,"Agencies, brokerages, and other insurance related activities",,,0.0,0.0,
+NER,525,"Funds, trusts, and other financial vehicles",,,2.4273721412024696e-11,0.0045028921964408,
+NER,532RL,Rental and leasing services and lessors of intangible assets,,,1.5171089880636897e-11,0.00281431021949443,
+NER,5411,Legal services,,,6.5113188336700975e-12,0.001207880994718292,
+NER,5412,"Accounting, tax preparation, bookkeeping, and payroll services",,,2.871963673301073e-12,0.0005327630894932552,
+NER,5413,"Architectural, engineering, and related services",,,0.0,0.0,
+NER,5415,Computer systems design and related services,,,0.0,0.0,
+NER,5416,"Management, scientific, and technical consulting services",,,0.0,0.0,
+NER,5417,Scientific research and development services,,,4.07202315171832e-12,0.0007553799008550655,
+NER,5418,"Advertising, public relations, and related services",,,2.2468686879460862e-13,4.1680495996661055e-05,
+NER,541X,"Specialized design services and other professional, scientific, and technical services",,,3.546041797390244e-11,0.006578078271019251,
+NER,55,Management of companies and enterprises,,,0.0,0.0,
+NER,5613,Employment services,,,1.2656675288282998e-13,2.347874206064759e-05,
+NER,5617,Services to buildings and dwellings,,,1.6395860105805248e-11,0.003041510993357295,
+NER,561X,Other administrative and support services,,,1.7794922900935993e-11,0.0033010438781420764,
+NER,562,Waste management and remediation services,,,2.8731411610413604e-11,0.005329815191385141,
+NER,61,Educational services,,,9.47568538352762e-11,0.01757785262719454,
+NER,6211,Offices of physicians,,,1.9059057247993407e-10,0.03535546886148001,
+NER,6212,Offices of dentists,,,2.327982113130668e-11,0.004318518908879361,
+NER,6213,Offices of other health practitioners,,,8.997239451517178e-11,0.016690312386825206,
+NER,6214,Outpatient care centers,,,5.6283391036567107e-11,0.010440840033792106,
+NER,6215OH,Other ambulatory health care services,,,7.622477337982048e-11,0.014140062473380456,
+NER,622,Hospitals,,,4.490061132688852e-10,0.08329279591184179,
+NER,623,Nursing and residential care facilities,,,7.496311715274348e-11,0.013906019168562692,
+NER,624,Social assistance,,,1.514452822564084e-10,0.028093829046020768,
+NER,711AS,"Performing arts, spectator sports, museums, and related activities",,,9.452624421926206e-12,0.001753507343307147,
+NER,713,"Amusements, gambling, and recreation industries",,,8.657016052909359e-11,0.01605918160113579,
+NER,721,Accommodation,,,4.2936579335972426e-11,0.00796494220033503,
+NER,722,Food services and drinking places,,,3.1098119719269693e-10,0.05768850940940295,
+NER,811,Repair and maintenance,,,1.3460558397565778e-10,0.024969983934193533,
+NER,812,Personal and laundry services,,,5.109606577885731e-11,0.009478566222254882,
+NER,813,"Religious, grantmaking, civic, professional, and similar organizations",,,4.8838595720220175e-11,0.009059794656980993,
+NER,814,Private households,,,0.0,0.0,
+NER,GFE,Federal government enterprises,,,9.633889790825202e-13,0.00017871329420048366,
+NER,GFGD,Federal general government (defense),,,0.0,0.0,
+NER,GFGN,Federal general government (nondefense),,,0.0,0.0,
+NER,GSLE,State and local government enterprises,,,6.763166279810319e-11,0.012545999085868745,
+NER,GSLGE,State and local government (educational services),,,0.0,0.0,
+NER,GSLGH,State and local government (hospitals and health services),,,0.0,0.0,
+NER,GSLGO,State and local government (other services),,,0.0,0.0,
+NER,HSO,Owner-occupied housing,,,7.747405299513667e-11,0.014371809857124966,
+NER,HST,Tenant-occupied housing,,,1.3469169403563767e-11,0.0024985957764927474,
+NER,ORE,Other real estate,,,1.756104771427818e-12,0.00032576589049413497,
+NER,Other,,3726831.0,0.4486539410263578,0.0,0.0,0.4486539410263578
+NER,Used,,,,8.418318867629654e-11,0.015616386829512548,

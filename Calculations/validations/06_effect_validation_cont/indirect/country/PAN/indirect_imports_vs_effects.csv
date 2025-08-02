@@ -1,0 +1,141 @@
+iso3,usummary_code,usummary_desc,impVal,impVal_share,indirect,indirect_share,impVal_share_no_oil
+PAN,111,Crop production,28002291.0,0.05038010006943393,4.389104759672643e-09,0.006413419053875312,0.05038010006943393
+PAN,112,Animal production and aquaculture,3443665.0,0.006195642610299536,1.3793755965793481e-09,0.0020155622200761563,0.006195642610299536
+PAN,113FF,"Forestry, fishing, and related activities",83830515.0,0.1508230071093891,1.096978151272961e-10,0.00016029192653819568,0.1508230071093891
+PAN,211,Oil and gas extraction,,,0.0,0.0,0.0
+PAN,212,"Mining, except oil and gas",1767754.0,0.0031804406081681713,1.9383328127482534e-12,2.8323180408568227e-06,0.0031804406081681713
+PAN,213,Support activities for mining,,,0.0,0.0,
+PAN,2211,"Electric power generation, transmission, and distribution",,,1.9713211485362126e-09,0.0028805210418974985,
+PAN,2212NW,"Natural gas distribution and water, sewage and other systems",,,1.4070279220690607e-09,0.002055968170922705,
+PAN,23EH,"Education, hospital, and health structures",,,0.0,0.0,
+PAN,23MR,Maintenance and repair construction,,,0.0,0.0,
+PAN,23OC,Office and commercial structures,,,0.0,0.0,
+PAN,23OR,Other residential construction,,,0.0,0.0,
+PAN,23OT,Other nonresidential structures,,,0.0,0.0,
+PAN,23PC,Power and communication structures,,,0.0,0.0,
+PAN,23SF,Single-family residential structures,,,0.0,0.0,
+PAN,23TH,Transportation structures and highways and streets,,,0.0,0.0,
+PAN,311,Food manufacturing,49999760.0,0.0899566721968456,2.1292941547782435e-07,0.31113533285951095,0.0899566721968456
+PAN,3121,Beverage manufacturing,7724244.0,0.013897012415188622,1.8186221901534438e-08,0.026573952650427203,0.013897012415188622
+PAN,3122,Tobacco manufacturing,60160.0,0.00010823638752190474,1.2743761406915795e-09,0.0018621355994075306,0.00010823638752190474
+PAN,313TT,Textile mills and textile product mills,6639673.0,0.011945715090537363,1.3433970112247415e-09,0.001962989826050655,0.011945715090537363
+PAN,315AL,Apparel and leather and allied products,4667052.0,0.008396689641902934,1.908278889799104e-09,0.0027884028434214006,0.008396689641902934
+PAN,321,Wood products,1545710.0,0.0027809519041968643,1.1082454666652168e-10,0.00016193832185522396,0.0027809519041968643
+PAN,322,Paper products,1388385.0,0.0024979018764893566,1.416774345799935e-09,0.0020702097766909376,0.0024979018764893566
+PAN,323,Printing and related support activities,106883.0,0.00019229770291728297,1.4631465855461834e-10,0.00021379695186529057,0.00019229770291728297
+PAN,324,Petroleum and coal products,526414.0,0.0009470935788057839,3.295694352961546e-09,0.004815713024951655,0.0009470935788057839
+PAN,3251,Basic chemical manufacturing,282933.0,0.0005090366660693994,3.339427355164595e-11,4.879616277430213e-05,0.0005090366660693994
+PAN,3252,"Resin, rubber, and artificial fibers manufacturing",293110.0,0.0005273465350157163,0.0,0.0,0.0005273465350157163
+PAN,3254,Pharmaceutical and medicine manufacturing,1353610.0,0.002435336710663655,1.6497910298728854e-08,0.02410696897261686,0.002435336710663655
+PAN,325X,Other chemical manufacturing,7332050.0,0.01319139968633613,3.551437856544395e-09,0.005189408880619817,0.01319139968633613
+PAN,326,Plastics and rubber products,7331898.0,0.013191126216739998,3.6095613403829402e-09,0.005274339698893461,0.013191126216739998
+PAN,327,Nonmetallic mineral products,614193.0,0.0011050204714302067,2.0855421884421e-10,0.00030474223654695763,0.0011050204714302067
+PAN,3311IS,Iron and steel mills and manufacturing from purchased steel,107406.0,0.00019323865422502825,1.0592134220621121e-10,0.00015477369338708346,0.00019323865422502825
+PAN,3313NF,Nonferrous metal production and processing and foundries,29721221.0,0.05347269936469702,7.280559541394043e-11,0.00010638451766900371,0.05347269936469702
+PAN,332,Fabricated metal products,1490383.0,0.0026814107703467243,1.2970794554731266e-09,0.0018953099890789593,0.0026814107703467243
+PAN,33311,Agricultural implement manufacturing,94962.0,0.00017085013018376192,6.462182504309278e-11,9.44262820599614e-05,0.00017085013018376192
+PAN,33312,Construction machinery manufacturing,510385.0,0.0009182551304083668,0.0,0.0,0.0009182551304083668
+PAN,33313,Mining and oil and gas field machinery manufacturing,1384226.0,0.00249041924457939,0.0,0.0,0.00249041924457939
+PAN,3332OM,Other machinery,5916492.0,0.010644609722111854,5.648754382814696e-10,0.0008254036067279349,0.010644609722111854
+PAN,3341,Computer and peripheral equipment manufacturing,2226163.0,0.004005183529835871,6.707398612668409e-11,9.800941289820756e-05,0.004005183529835871
+PAN,3342,Communications equipment manufacturing,41115181.0,0.07397205225647033,1.9357358860803812e-10,0.00028285233765949265,0.07397205225647033
+PAN,3344,Semiconductor and other electronic component manufacturing,1365591.0,0.0024568922319219647,5.972483114740261e-12,8.727072855258216e-06,0.0024568922319219647
+PAN,3345,"Navigational, measuring, electromedical, and control instruments manufacturing",1328094.0,0.0023894298013549956,7.297006408048017e-11,0.00010662484150211043,0.0023894298013549956
+PAN,334X,Other computer and electronic product manufacturing,1174029.0,0.002112244976827698,5.830208004224289e-11,8.519178545452906e-05,0.002112244976827698
+PAN,335,"Electrical equipment, appliances, and components",10704821.0,0.019259493918028985,2.192836659260403e-09,0.0032042024928987736,0.019259493918028985
+PAN,336111,Automobile manufacturing,,,1.2563525373054874e-10,0.00018357992671244806,
+PAN,336112,Light truck and utility vehicle manufacturing,,,9.689148534820076e-09,0.014157914479507169,
+PAN,33612,Heavy duty truck manufacturing,,,0.0,0.0,
+PAN,3362BP,"Motor vehicle body, trailer, and parts manufacturing",1632838.0,0.0029377075553273253,3.225215197155997e-09,0.004712727932206211,0.0029377075553273253
+PAN,3364,Aerospace product and parts manufacturing,8412.0,1.5134383175436546e-05,1.0118937894982967e-10,0.00014785928487499802,1.5134383175436546e-05
+PAN,3365AO,All other transportation equipment manufacturing,372285.0,0.0006697936091853774,1.4450261922995515e-09,0.0021114917557206007,0.0006697936091853774
+PAN,337,Furniture and related products,286702.0,0.0005158176325682368,2.880831735422668e-09,0.004209510174541023,0.0005158176325682368
+PAN,3391,Medical equipment and supplies manufacturing,149291.0,0.0002685957202382427,5.561694215769136e-10,0.0008126822577345423,0.0002685957202382427
+PAN,3399,Other miscellaneous manufacturing,4878242.0,0.008776650457739886,3.3908570436354597e-09,0.004954766031659027,0.008776650457739886
+PAN,4231,Motor vehicle and motor vehicle parts and supplies,,,0.0,0.0,
+PAN,4234,Professional and commercial equipment and supplies,,,0.0,0.0,
+PAN,4236,Household appliances and electrical and electronic goods,,,0.0,0.0,
+PAN,4238,"Machinery, equipment, and supplies",,,0.0,0.0,
+PAN,423X,Other durable goods merchant wholesalers,,,0.0,0.0,
+PAN,4242,Drugs and druggists' sundries,,,0.0,0.0,
+PAN,4244,Grocery and related product wholesalers,,,0.0,0.0,
+PAN,4247,Petroleum and petroleum products,,,0.0,0.0,
+PAN,424X,Other nondurable goods merchant wholesalers,,,0.0,0.0,
+PAN,425,Wholesale electronic markets and agents and brokers,,,0.0,0.0,
+PAN,42ID,Customs duties,,,0.0,0.0,
+PAN,441,Motor vehicle and parts dealers,,,0.0,0.0,
+PAN,444,Building material and garden equipment and supplies dealers,,,0.0,0.0,
+PAN,445,Food and beverage stores,,,0.0,0.0,
+PAN,446,Health and personal care stores,,,0.0,0.0,
+PAN,447,Gasoline stations,,,0.0,0.0,
+PAN,448,Clothing and clothing accessories stores,,,0.0,0.0,
+PAN,452,General merchandise stores,,,0.0,0.0,
+PAN,454,Nonstore retailers,,,9.760557916801588e-11,0.00014262258831283325,
+PAN,481,Air transportation,,,1.958624720583362e-09,0.002861968850184708,
+PAN,482,Rail transportation,,,1.9920436951951105e-11,2.9108011064810807e-05,
+PAN,483,Water transportation,,,3.515403546891947e-10,0.000513675506149897,
+PAN,484,Truck transportation,,,1.0625399694956124e-10,0.0001552597729833067,
+PAN,485,Transit and ground passenger transportation,,,6.02880071082059e-10,0.0008809364885990466,
+PAN,486,Pipeline transportation,,,0.0,0.0,
+PAN,48A,Scenic and sightseeing transportation and support activities,,,1.3860237703960708e-10,0.00020252766212956034,
+PAN,492,Couriers and messengers,,,6.984360171134072e-11,0.00010205641253370308,
+PAN,493,Warehousing and storage,,,1.4296730614552522e-12,2.0890575539220514e-06,
+PAN,4A0X,All other retail,,,0.0,0.0,
+PAN,5111,"Newspaper, periodical, book, and directory publishers",,,5.953109829264536e-10,0.0008698764349307803,
+PAN,5112,Software publishers,,,2.467160143899496e-10,0.00036050476674033457,
+PAN,512,Motion picture and sound recording industries,,,1.356554131819484e-10,0.00019822151880633746,
+PAN,515,Broadcasting (except internet),,,1.1511095926143396e-10,0.0001682016857333356,
+PAN,5171,Wired telecommunications carriers,,,4.393719827392219e-09,0.006420162653052895,
+PAN,5172,Wireless telecommunications carriers (except satellite),,,4.1617933228417255e-09,0.0060812685174994364,
+PAN,5174OT,"Other telecommunications, including satellite",,,3.787451246937223e-10,0.0005534274828870269,
+PAN,518,"Data processing, hosting, and related services",,,6.784334137209114e-10,0.000991336051561432,
+PAN,519,Other information services,,,4.415147985579685e-10,0.0006451473766715901,
+PAN,521CI,"Federal reserve banks, credit intermediation, and related activities",,,2.457010864053889e-09,0.0035902174028484887,
+PAN,523,"Securities, commodity contracts, and investments",,,1.900316123941223e-09,0.0027767675425865467,
+PAN,524113,Direct life insurance carriers,,,3.4236326769839867e-10,0.0005002658229027302,
+PAN,5241X,"Insurance carriers, except direct life",,,1.264325180585839e-09,0.001847449000982228,
+PAN,5242,"Agencies, brokerages, and other insurance related activities",,,0.0,0.0,
+PAN,525,"Funds, trusts, and other financial vehicles",,,1.7885549418549261e-09,0.002613460596427133,
+PAN,532RL,Rental and leasing services and lessors of intangible assets,,,9.830011244500198e-10,0.0014363744970167496,
+PAN,5411,Legal services,,,5.336577955251813e-10,0.0007797879662196904,
+PAN,5412,"Accounting, tax preparation, bookkeeping, and payroll services",,,2.0287820968046038e-10,0.00029644837542629535,
+PAN,5413,"Architectural, engineering, and related services",,,0.0,0.0,
+PAN,5415,Computer systems design and related services,,,0.0,0.0,
+PAN,5416,"Management, scientific, and technical consulting services",,,0.0,0.0,
+PAN,5417,Scientific research and development services,,,2.4840891661869557e-10,0.00036297845830266526,
+PAN,5418,"Advertising, public relations, and related services",,,1.1296986188328043e-11,1.650730853755997e-05,
+PAN,541X,"Specialized design services and other professional, scientific, and technical services",,,1.6992221557451347e-09,0.0024829263248744454,
+PAN,55,Management of companies and enterprises,,,0.0,0.0,
+PAN,5613,Employment services,,,1.1985596119088058e-11,1.7513514653030638e-05,
+PAN,5617,Services to buildings and dwellings,,,7.296479568428838e-10,0.001066171432505603,
+PAN,561X,Other administrative and support services,,,8.796522999022638e-10,0.0012853598011178914,
+PAN,562,Waste management and remediation services,,,7.398611450773525e-10,0.0010810950808599526,
+PAN,61,Educational services,,,8.781446379293609e-09,0.012831567851150244,
+PAN,6211,Offices of physicians,,,1.0180896012027445e-08,0.014876462523516962,
+PAN,6212,Offices of dentists,,,1.1498812179544996e-09,0.0016802219397180147,
+PAN,6213,Offices of other health practitioners,,,5.405867509550512e-09,0.00789912649318094,
+PAN,6214,Outpatient care centers,,,5.946114022698461e-09,0.008688541982427812,
+PAN,6215OH,Other ambulatory health care services,,,4.140211402181041e-09,0.006049732724037358,
+PAN,622,Hospitals,,,4.218052614046303e-08,0.06163475352361101,
+PAN,623,Nursing and residential care facilities,,,7.068887561605336e-09,0.010329153816024016,
+PAN,624,Social assistance,,,1.4182638276415824e-08,0.020723862276408885,
+PAN,711AS,"Performing arts, spectator sports, museums, and related activities",,,7.735637775358463e-10,0.0011303418218265961,
+PAN,713,"Amusements, gambling, and recreation industries",,,1.4774730163417876e-08,0.021589034924971315,
+PAN,721,Accommodation,,,1.184569832483458e-08,0.01730909410980184,
+PAN,722,Food services and drinking places,,,2.045208752291177e-07,0.2988486604743308,
+PAN,811,Repair and maintenance,,,4.67256503380326e-09,0.006827615028377778,
+PAN,812,Personal and laundry services,,,2.623062983027066e-09,0.003832854998000894,
+PAN,813,"Religious, grantmaking, civic, professional, and similar organizations",,,5.313392672042196e-09,0.007764001013759917,
+PAN,814,Private households,,,0.0,0.0,
+PAN,GFE,Federal government enterprises,,,9.499985687338047e-11,0.0001388150717625177,
+PAN,GFGD,Federal general government (defense),,,0.0,0.0,
+PAN,GFGN,Federal general government (nondefense),,,0.0,0.0,
+PAN,GSLE,State and local government enterprises,,,1.8816378491363278e-09,0.002749474595599296,
+PAN,GSLGE,State and local government (educational services),,,0.0,0.0,
+PAN,GSLGH,State and local government (hospitals and health services),,,0.0,0.0,
+PAN,GSLGO,State and local government (other services),,,0.0,0.0,
+PAN,HSO,Owner-occupied housing,,,3.5896988319383403e-09,0.005245316333744651,
+PAN,HST,Tenant-occupied housing,,,6.656091729252045e-10,0.0009725970979993379,
+PAN,ORE,Other real estate,,,1.1188318877734864e-10,0.0001634852239814149,
+PAN,Other,,244443448.0,0.43978849343282195,0.0,0.0,0.43978849343282195
+PAN,Used,,,,6.291901838355906e-09,0.00919381180098206,

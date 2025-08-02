@@ -1,0 +1,141 @@
+iso3,usummary_code,usummary_desc,impVal,impVal_share,direct,direct_share,impVal_share_no_oil
+AGO,111,Crop production,69550.0,3.720765178959448e-05,1.9740388602917352e-10,0.0006964320819618726,0.0003875537073933735
+AGO,112,Animal production and aquaculture,0.0,0.0,0.0,0.0,0.0
+AGO,113FF,"Forestry, fishing, and related activities",55849.0,2.9877931629001614e-05,1.0329231813997392e-10,0.00036441067914062743,0.0003112075773430987
+AGO,211,Oil and gas extraction,1689780168.0,0.9039935599123863,0.0,0.0,0.0
+AGO,212,"Mining, except oil and gas",0.0,0.0,0.0,0.0,0.0
+AGO,213,Support activities for mining,0.0,0.0,0.0,0.0,0.0
+AGO,2211,"Electric power generation, transmission, and distribution",0.0,0.0,0.0,0.0,0.0
+AGO,2212NW,"Natural gas distribution and water, sewage and other systems",0.0,0.0,0.0,0.0,0.0
+AGO,23EH,"Education, hospital, and health structures",0.0,0.0,0.0,0.0,0.0
+AGO,23MR,Maintenance and repair construction,0.0,0.0,0.0,0.0,0.0
+AGO,23OC,Office and commercial structures,0.0,0.0,0.0,0.0,0.0
+AGO,23OR,Other residential construction,0.0,0.0,0.0,0.0,0.0
+AGO,23OT,Other nonresidential structures,0.0,0.0,0.0,0.0,0.0
+AGO,23PC,Power and communication structures,0.0,0.0,0.0,0.0,0.0
+AGO,23SF,Single-family residential structures,0.0,0.0,0.0,0.0,0.0
+AGO,23TH,Transportation structures and highways and streets,0.0,0.0,0.0,0.0,0.0
+AGO,311,Food manufacturing,4500.0,2.4073965931441432e-06,1.2032996429427384e-11,4.2451873284538186e-05,2.507536568325206e-05
+AGO,3121,Beverage manufacturing,0.0,0.0,0.0,0.0,0.0
+AGO,3122,Tobacco manufacturing,0.0,0.0,0.0,0.0,0.0
+AGO,313TT,Textile mills and textile product mills,0.0,0.0,0.0,0.0,0.0
+AGO,315AL,Apparel and leather and allied products,900.0,4.814793186288287e-07,5.695966024908484e-12,2.00951134109126e-05,5.015073136650412e-06
+AGO,321,Wood products,203279.0,0.00010874959379061074,1.3087558525349646e-11,4.617232119868248e-05,0.0011327322801612878
+AGO,322,Paper products,0.0,0.0,0.0,0.0,0.0
+AGO,323,Printing and related support activities,3619.0,1.93608183790859e-06,-2.095556904108047e-12,-7.393031043886657e-06,2.0166166312819822e-05
+AGO,324,Petroleum and coal products,59121164.0,0.03162846417695915,3.6589380185305146e-08,0.12908569700791334,0.3294410682043371
+AGO,3251,Basic chemical manufacturing,0.0,0.0,0.0,0.0,0.0
+AGO,3252,"Resin, rubber, and artificial fibers manufacturing",0.0,0.0,0.0,0.0,0.0
+AGO,3254,Pharmaceutical and medicine manufacturing,0.0,0.0,0.0,0.0,0.0
+AGO,325X,Other chemical manufacturing,0.0,0.0,0.0,0.0,0.0
+AGO,326,Plastics and rubber products,0.0,0.0,0.0,0.0,0.0
+AGO,327,Nonmetallic mineral products,38522.0,2.0608384791355266e-05,6.394506975231133e-11,0.00022559534644732342,0.00021465627485560797
+AGO,3311IS,Iron and steel mills and manufacturing from purchased steel,15015253.0,0.008032815314977196,9.284327570042556e-11,0.0003275469246975807,0.08366954662256612
+AGO,3313NF,Nonferrous metal production and processing and foundries,4151880.0,0.0022211603926985124,0.0,0.0,0.02313553539399568
+AGO,332,Fabricated metal products,32576.0,1.7427411426280805e-05,3.060035362459809e-11,0.00010795667913244072,0.00018152335833280424
+AGO,33311,Agricultural implement manufacturing,0.0,0.0,0.0,0.0,0.0
+AGO,33312,Construction machinery manufacturing,34130.0,1.8258765716446582e-05,0.0,0.0,0.00019018271794875394
+AGO,33313,Mining and oil and gas field machinery manufacturing,0.0,0.0,0.0,0.0,0.0
+AGO,3332OM,Other machinery,0.0,0.0,0.0,0.0,0.0
+AGO,3341,Computer and peripheral equipment manufacturing,0.0,0.0,0.0,0.0,0.0
+AGO,3342,Communications equipment manufacturing,0.0,0.0,0.0,0.0,0.0
+AGO,3344,Semiconductor and other electronic component manufacturing,0.0,0.0,0.0,0.0,0.0
+AGO,3345,"Navigational, measuring, electromedical, and control instruments manufacturing",0.0,0.0,0.0,0.0,0.0
+AGO,334X,Other computer and electronic product manufacturing,0.0,0.0,0.0,0.0,0.0
+AGO,335,"Electrical equipment, appliances, and components",0.0,0.0,0.0,0.0,0.0
+AGO,336111,Automobile manufacturing,0.0,0.0,0.0,0.0,0.0
+AGO,336112,Light truck and utility vehicle manufacturing,0.0,0.0,0.0,0.0,0.0
+AGO,33612,Heavy duty truck manufacturing,0.0,0.0,0.0,0.0,0.0
+AGO,3362BP,"Motor vehicle body, trailer, and parts manufacturing",48419.0,2.5903052365210285e-05,3.241574416929354e-11,0.00011436129578942641,0.000269805362448307
+AGO,3364,Aerospace product and parts manufacturing,0.0,0.0,0.0,0.0,0.0
+AGO,3365AO,All other transportation equipment manufacturing,0.0,0.0,0.0,0.0,0.0
+AGO,337,Furniture and related products,0.0,0.0,0.0,0.0,0.0
+AGO,3391,Medical equipment and supplies manufacturing,0.0,0.0,0.0,0.0,0.0
+AGO,3399,Other miscellaneous manufacturing,100679357.0,0.05386114245372066,2.463117031820898e-07,0.8689766737080673,0.5610159318954852
+AGO,4231,Motor vehicle and motor vehicle parts and supplies,0.0,0.0,0.0,0.0,0.0
+AGO,4234,Professional and commercial equipment and supplies,0.0,0.0,0.0,0.0,0.0
+AGO,4236,Household appliances and electrical and electronic goods,0.0,0.0,0.0,0.0,0.0
+AGO,4238,"Machinery, equipment, and supplies",0.0,0.0,0.0,0.0,0.0
+AGO,423X,Other durable goods merchant wholesalers,0.0,0.0,0.0,0.0,0.0
+AGO,4242,Drugs and druggists' sundries,0.0,0.0,0.0,0.0,0.0
+AGO,4244,Grocery and related product wholesalers,0.0,0.0,0.0,0.0,0.0
+AGO,4247,Petroleum and petroleum products,0.0,0.0,0.0,0.0,0.0
+AGO,424X,Other nondurable goods merchant wholesalers,0.0,0.0,0.0,0.0,0.0
+AGO,425,Wholesale electronic markets and agents and brokers,0.0,0.0,0.0,0.0,0.0
+AGO,42ID,Customs duties,0.0,0.0,0.0,0.0,0.0
+AGO,441,Motor vehicle and parts dealers,0.0,0.0,0.0,0.0,0.0
+AGO,444,Building material and garden equipment and supplies dealers,0.0,0.0,0.0,0.0,0.0
+AGO,445,Food and beverage stores,0.0,0.0,0.0,0.0,0.0
+AGO,446,Health and personal care stores,0.0,0.0,0.0,0.0,0.0
+AGO,447,Gasoline stations,0.0,0.0,0.0,0.0,0.0
+AGO,448,Clothing and clothing accessories stores,0.0,0.0,0.0,0.0,0.0
+AGO,452,General merchandise stores,0.0,0.0,0.0,0.0,0.0
+AGO,454,Nonstore retailers,0.0,0.0,0.0,0.0,0.0
+AGO,481,Air transportation,0.0,0.0,0.0,0.0,0.0
+AGO,482,Rail transportation,0.0,0.0,0.0,0.0,0.0
+AGO,483,Water transportation,0.0,0.0,0.0,0.0,0.0
+AGO,484,Truck transportation,0.0,0.0,0.0,0.0,0.0
+AGO,485,Transit and ground passenger transportation,0.0,0.0,0.0,0.0,0.0
+AGO,486,Pipeline transportation,0.0,0.0,0.0,0.0,0.0
+AGO,48A,Scenic and sightseeing transportation and support activities,0.0,0.0,0.0,0.0,0.0
+AGO,492,Couriers and messengers,0.0,0.0,0.0,0.0,0.0
+AGO,493,Warehousing and storage,0.0,0.0,0.0,0.0,0.0
+AGO,4A0X,All other retail,0.0,0.0,0.0,0.0,0.0
+AGO,5111,"Newspaper, periodical, book, and directory publishers",0.0,0.0,0.0,0.0,0.0
+AGO,5112,Software publishers,0.0,0.0,0.0,0.0,0.0
+AGO,512,Motion picture and sound recording industries,0.0,0.0,0.0,0.0,0.0
+AGO,515,Broadcasting (except internet),0.0,0.0,0.0,0.0,0.0
+AGO,5171,Wired telecommunications carriers,0.0,0.0,0.0,0.0,0.0
+AGO,5172,Wireless telecommunications carriers (except satellite),0.0,0.0,0.0,0.0,0.0
+AGO,5174OT,"Other telecommunications, including satellite",0.0,0.0,0.0,0.0,0.0
+AGO,518,"Data processing, hosting, and related services",0.0,0.0,0.0,0.0,0.0
+AGO,519,Other information services,0.0,0.0,0.0,0.0,0.0
+AGO,521CI,"Federal reserve banks, credit intermediation, and related activities",0.0,0.0,0.0,0.0,0.0
+AGO,523,"Securities, commodity contracts, and investments",0.0,0.0,0.0,0.0,0.0
+AGO,524113,Direct life insurance carriers,0.0,0.0,0.0,0.0,0.0
+AGO,5241X,"Insurance carriers, except direct life",0.0,0.0,0.0,0.0,0.0
+AGO,5242,"Agencies, brokerages, and other insurance related activities",0.0,0.0,0.0,0.0,0.0
+AGO,525,"Funds, trusts, and other financial vehicles",0.0,0.0,0.0,0.0,0.0
+AGO,532RL,Rental and leasing services and lessors of intangible assets,0.0,0.0,0.0,0.0,0.0
+AGO,5411,Legal services,0.0,0.0,0.0,0.0,0.0
+AGO,5412,"Accounting, tax preparation, bookkeeping, and payroll services",0.0,0.0,0.0,0.0,0.0
+AGO,5413,"Architectural, engineering, and related services",0.0,0.0,0.0,0.0,0.0
+AGO,5415,Computer systems design and related services,0.0,0.0,0.0,0.0,0.0
+AGO,5416,"Management, scientific, and technical consulting services",0.0,0.0,0.0,0.0,0.0
+AGO,5417,Scientific research and development services,0.0,0.0,0.0,0.0,0.0
+AGO,5418,"Advertising, public relations, and related services",0.0,0.0,0.0,0.0,0.0
+AGO,541X,"Specialized design services and other professional, scientific, and technical services",0.0,0.0,0.0,0.0,0.0
+AGO,55,Management of companies and enterprises,0.0,0.0,0.0,0.0,0.0
+AGO,5613,Employment services,0.0,0.0,0.0,0.0,0.0
+AGO,5617,Services to buildings and dwellings,0.0,0.0,0.0,0.0,0.0
+AGO,561X,Other administrative and support services,0.0,0.0,0.0,0.0,0.0
+AGO,562,Waste management and remediation services,0.0,0.0,0.0,0.0,0.0
+AGO,61,Educational services,0.0,0.0,0.0,0.0,0.0
+AGO,6211,Offices of physicians,0.0,0.0,0.0,0.0,0.0
+AGO,6212,Offices of dentists,0.0,0.0,0.0,0.0,0.0
+AGO,6213,Offices of other health practitioners,0.0,0.0,0.0,0.0,0.0
+AGO,6214,Outpatient care centers,0.0,0.0,0.0,0.0,0.0
+AGO,6215OH,Other ambulatory health care services,0.0,0.0,0.0,0.0,0.0
+AGO,622,Hospitals,0.0,0.0,0.0,0.0,0.0
+AGO,623,Nursing and residential care facilities,0.0,0.0,0.0,0.0,0.0
+AGO,624,Social assistance,0.0,0.0,0.0,0.0,0.0
+AGO,711AS,"Performing arts, spectator sports, museums, and related activities",0.0,0.0,0.0,0.0,0.0
+AGO,713,"Amusements, gambling, and recreation industries",0.0,0.0,0.0,0.0,0.0
+AGO,721,Accommodation,0.0,0.0,0.0,0.0,0.0
+AGO,722,Food services and drinking places,0.0,0.0,0.0,0.0,0.0
+AGO,811,Repair and maintenance,0.0,0.0,0.0,0.0,0.0
+AGO,812,Personal and laundry services,0.0,0.0,0.0,0.0,0.0
+AGO,813,"Religious, grantmaking, civic, professional, and similar organizations",0.0,0.0,0.0,0.0,0.0
+AGO,814,Private households,0.0,0.0,0.0,0.0,0.0
+AGO,GFE,Federal government enterprises,0.0,0.0,0.0,0.0,0.0
+AGO,GFGD,Federal general government (defense),0.0,0.0,0.0,0.0,0.0
+AGO,GFGN,Federal general government (nondefense),0.0,0.0,0.0,0.0,0.0
+AGO,GSLE,State and local government enterprises,0.0,0.0,0.0,0.0,0.0
+AGO,GSLGE,State and local government (educational services),0.0,0.0,0.0,0.0,0.0
+AGO,GSLGH,State and local government (hospitals and health services),0.0,0.0,0.0,0.0,0.0
+AGO,GSLGO,State and local government (other services),0.0,0.0,0.0,0.0,0.0
+AGO,HSO,Owner-occupied housing,0.0,0.0,0.0,0.0,0.0
+AGO,HST,Tenant-occupied housing,0.0,0.0,0.0,0.0,0.0
+AGO,ORE,Other real estate,0.0,0.0,0.0,0.0,0.0
+AGO,Other,Unknown,0.0,0.0,0.0,0.0,0.0
+AGO,Used,Unknown,0.0,0.0,0.0,0.0,0.0

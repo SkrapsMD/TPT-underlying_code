@@ -1,0 +1,141 @@
+iso3,usummary_code,usummary_desc,impVal,impVal_share,indirect,indirect_share,impVal_share_no_oil
+ALB,111,Crop production,17935550.0,0.13981519188951136,3.115600717749426e-09,0.015024634414690296,0.13981519188951136
+ALB,112,Animal production and aquaculture,24790.0,0.00019324852635915746,4.836778949977352e-10,0.0023324823060309717,0.00019324852635915746
+ALB,113FF,"Forestry, fishing, and related activities",1320785.0,0.010296077244343678,4.015900340736709e-11,0.00019366228195307508,0.010296077244343678
+ALB,211,Oil and gas extraction,,,0.0,0.0,0.0
+ALB,212,"Mining, except oil and gas",36615.0,0.0002854293986543183,3.5805654757336997e-12,1.7266874719948343e-05,0.0002854293986543183
+ALB,213,Support activities for mining,,,0.0,0.0,
+ALB,2211,"Electric power generation, transmission, and distribution",,,1.918817169761268e-09,0.009253280216573763,
+ALB,2212NW,"Natural gas distribution and water, sewage and other systems",,,1.9089829424151267e-09,0.00920585576010058,
+ALB,23EH,"Education, hospital, and health structures",,,0.0,0.0,
+ALB,23MR,Maintenance and repair construction,,,0.0,0.0,
+ALB,23OC,Office and commercial structures,,,0.0,0.0,
+ALB,23OR,Other residential construction,,,0.0,0.0,
+ALB,23OT,Other nonresidential structures,,,0.0,0.0,
+ALB,23PC,Power and communication structures,,,0.0,0.0,
+ALB,23SF,Single-family residential structures,,,0.0,0.0,
+ALB,23TH,Transportation structures and highways and streets,,,0.0,0.0,
+ALB,311,Food manufacturing,6121004.0,0.04771581294225528,2.998129391907845e-08,0.1445814214405889,0.04771581294225528
+ALB,3121,Beverage manufacturing,741448.0,0.005779900499069971,5.2439580437113374e-09,0.02528839849210549,0.005779900499069971
+ALB,3122,Tobacco manufacturing,,,7.684772318301167e-09,0.0370589510988465,
+ALB,313TT,Textile mills and textile product mills,130579.0,0.001017918488239307,3.1394585037168555e-10,0.00151396859070277,0.001017918488239307
+ALB,315AL,Apparel and leather and allied products,13873209.0,0.10814752703197258,8.551654297238005e-10,0.004123939204559839,0.10814752703197258
+ALB,321,Wood products,154854.0,0.0012071523719572798,5.822077414409812e-11,0.00028076314203933224,0.0012071523719572798
+ALB,322,Paper products,2713926.0,0.021156200086639886,1.4602152739304564e-09,0.007041724099165016,0.021156200086639886
+ALB,323,Printing and related support activities,35015.0,0.0002729567224875312,1.5845277596167378e-10,0.0007641207094523605,0.0002729567224875312
+ALB,324,Petroleum and coal products,,,8.384539765642351e-09,0.040433500992774186,
+ALB,3251,Basic chemical manufacturing,,,1.9955082654962216e-11,9.62311440929151e-05,
+ALB,3252,"Resin, rubber, and artificial fibers manufacturing",,,0.0,0.0,
+ALB,3254,Pharmaceutical and medicine manufacturing,267288.0,0.002083622917042617,3.0189767314279516e-10,0.0014558676096636351,0.002083622917042617
+ALB,325X,Other chemical manufacturing,4446363.0,0.03466127863686496,1.7336451156664664e-09,0.008360308790311752,0.03466127863686496
+ALB,326,Plastics and rubber products,992072.0,0.0077336204938355,1.0636331994142322e-09,0.005129251601941464,0.0077336204938355
+ALB,327,Nonmetallic mineral products,109794.0,0.0008558906294101386,4.16360000077969e-10,0.002007849321138532,0.0008558906294101386
+ALB,3311IS,Iron and steel mills and manufacturing from purchased steel,64719108.0,0.5045127974295748,5.813552021495088e-10,0.002803520145445426,0.5045127974295748
+ALB,3313NF,Nonferrous metal production and processing and foundries,115360.0,0.0008992799516253492,1.404494561315596e-11,6.773017222961364e-05,0.0008992799516253492
+ALB,332,Fabricated metal products,6367644.0,0.04963847597336551,6.692353007483638e-09,0.03227312047357847,0.04963847597336551
+ALB,33311,Agricultural implement manufacturing,41504.0,0.0003235412197664571,3.3060666574132846e-10,0.0015943135009325892,0.0003235412197664571
+ALB,33312,Construction machinery manufacturing,50139.0,0.00039085469395408614,0.0,0.0,0.00039085469395408614
+ALB,33313,Mining and oil and gas field machinery manufacturing,20410.0,0.0001591045753525778,0.0,0.0,0.0001591045753525778
+ALB,3332OM,Other machinery,136486.0,0.001063966049562564,1.173253753729121e-09,0.005657884408942046,0.001063966049562564
+ALB,3341,Computer and peripheral equipment manufacturing,3936.0,3.068278337029624e-05,3.744299015928401e-11,0.00018056461321605506,3.068278337029624e-05
+ALB,3342,Communications equipment manufacturing,85947.0,0.0006699931865667813,4.9124519358524976e-11,0.00023689747532616096,0.0006699931865667813
+ALB,3344,Semiconductor and other electronic component manufacturing,89391.0,0.0006968406220157904,2.312678528218382e-12,1.115263236628249e-05,0.0006968406220157904
+ALB,3345,"Navigational, measuring, electromedical, and control instruments manufacturing",30419.0,0.0002371289601984353,3.2994316305245715e-11,0.00015911138337619331,0.0002371289601984353
+ALB,334X,Other computer and electronic product manufacturing,,,6.027342977825453e-11,0.0002906618432133171,
+ALB,335,"Electrical equipment, appliances, and components",1352420.0,0.010542685438428873,2.440434749660814e-09,0.01176872239041155,0.010542685438428873
+ALB,336111,Automobile manufacturing,,,2.063582625572472e-10,0.000995139536241007,
+ALB,336112,Light truck and utility vehicle manufacturing,,,1.6129223469562114e-08,0.07778136801755076,
+ALB,33612,Heavy duty truck manufacturing,,,0.0,0.0,
+ALB,3362BP,"Motor vehicle body, trailer, and parts manufacturing",1055527.0,0.008228279035187672,7.307431569198926e-09,0.03523926773161391,0.008228279035187672
+ALB,3364,Aerospace product and parts manufacturing,,,5.549138394275717e-11,0.0002676009644481651,
+ALB,3365AO,All other transportation equipment manufacturing,483718.0,0.0037707862312786984,2.6617684053667212e-09,0.012836079077583695,0.0037707862312786984
+ALB,337,Furniture and related products,2686013.0,0.02093860645548768,3.1238752814105707e-09,0.01506453756827526,0.02093860645548768
+ALB,3391,Medical equipment and supplies manufacturing,28287.0,0.0002205091192061915,5.079609982663754e-10,0.002449584843267848,0.0002205091192061915
+ALB,3399,Other miscellaneous manufacturing,239310.0,0.0018655225834211364,2.991593422021237e-09,0.014426623163615641,0.0018655225834211364
+ALB,4231,Motor vehicle and motor vehicle parts and supplies,,,0.0,0.0,
+ALB,4234,Professional and commercial equipment and supplies,,,0.0,0.0,
+ALB,4236,Household appliances and electrical and electronic goods,,,0.0,0.0,
+ALB,4238,"Machinery, equipment, and supplies",,,0.0,0.0,
+ALB,423X,Other durable goods merchant wholesalers,,,0.0,0.0,
+ALB,4242,Drugs and druggists' sundries,,,0.0,0.0,
+ALB,4244,Grocery and related product wholesalers,,,0.0,0.0,
+ALB,4247,Petroleum and petroleum products,,,0.0,0.0,
+ALB,424X,Other nondurable goods merchant wholesalers,,,0.0,0.0,
+ALB,425,Wholesale electronic markets and agents and brokers,,,0.0,0.0,
+ALB,42ID,Customs duties,,,0.0,0.0,
+ALB,441,Motor vehicle and parts dealers,,,0.0,0.0,
+ALB,444,Building material and garden equipment and supplies dealers,,,0.0,0.0,
+ALB,445,Food and beverage stores,,,0.0,0.0,
+ALB,446,Health and personal care stores,,,0.0,0.0,
+ALB,447,Gasoline stations,,,0.0,0.0,
+ALB,448,Clothing and clothing accessories stores,,,0.0,0.0,
+ALB,452,General merchandise stores,,,0.0,0.0,
+ALB,454,Nonstore retailers,,,7.449598701394849e-11,0.00035924852753744624,
+ALB,481,Air transportation,,,1.1562011673542732e-09,0.00557565022705622,
+ALB,482,Rail transportation,,,2.2556467826880188e-11,0.00010877603181142127,
+ALB,483,Water transportation,,,4.0277320430359996e-10,0.0019423285250320225,
+ALB,484,Truck transportation,,,1.2353854541299864e-10,0.0005957507553450882,
+ALB,485,Transit and ground passenger transportation,,,6.884708261127738e-10,0.0033200732072613945,
+ALB,486,Pipeline transportation,,,0.0,0.0,
+ALB,48A,Scenic and sightseeing transportation and support activities,,,1.3480958374567938e-10,0.0006501040713710309,
+ALB,492,Couriers and messengers,,,5.534151695332526e-11,0.00026687824772961483,
+ALB,493,Warehousing and storage,,,1.872392439511892e-12,9.02940217089744e-06,
+ALB,4A0X,All other retail,,,0.0,0.0,
+ALB,5111,"Newspaper, periodical, book, and directory publishers",,,4.622160385768205e-10,0.002228984914742095,
+ALB,5112,Software publishers,,,1.900654977243256e-10,0.0009165695083729952,
+ALB,512,Motion picture and sound recording industries,,,6.127261702010219e-11,0.0002954803114255815,
+ALB,515,Broadcasting (except internet),,,1.5611470953407256e-10,0.0007528456467937075,
+ALB,5171,Wired telecommunications carriers,,,1.5302174410617375e-09,0.007379301685211822,
+ALB,5172,Wireless telecommunications carriers (except satellite),,,1.3817671887637723e-09,0.006663417022315539,
+ALB,5174OT,"Other telecommunications, including satellite",,,9.850208637651124e-11,0.0004750152445594453,
+ALB,518,"Data processing, hosting, and related services",,,4.0683964525628303e-10,0.001961938479650059,
+ALB,519,Other information services,,,6.002833894432067e-10,0.002894799202033276,
+ALB,521CI,"Federal reserve banks, credit intermediation, and related activities",,,1.0153974069769788e-09,0.004896639912342122,
+ALB,523,"Securities, commodity contracts, and investments",,,1.0237248438178359e-09,0.004936798040895797,
+ALB,524113,Direct life insurance carriers,,,2.579420201944186e-10,0.0012438964118634823,
+ALB,5241X,"Insurance carriers, except direct life",,,7.163435136319383e-10,0.003454486111246361,
+ALB,5242,"Agencies, brokerages, and other insurance related activities",,,0.0,0.0,
+ALB,525,"Funds, trusts, and other financial vehicles",,,7.816908996391156e-10,0.0037696165383001566,
+ALB,532RL,Rental and leasing services and lessors of intangible assets,,,8.051809136504864e-10,0.0038828944916996988,
+ALB,5411,Legal services,,,2.492808042972482e-10,0.0012021286713117692,
+ALB,5412,"Accounting, tax preparation, bookkeeping, and payroll services",,,7.139760103298421e-11,0.00034430690925677735,
+ALB,5413,"Architectural, engineering, and related services",,,0.0,0.0,
+ALB,5415,Computer systems design and related services,,,0.0,0.0,
+ALB,5416,"Management, scientific, and technical consulting services",,,0.0,0.0,
+ALB,5417,Scientific research and development services,,,5.191912769399759e-11,0.00025037416004173403,
+ALB,5418,"Advertising, public relations, and related services",,,1.2014015075674092e-11,5.793623789346499e-05,
+ALB,541X,"Specialized design services and other professional, scientific, and technical services",,,4.85895997558731e-10,0.002343178856421204,
+ALB,55,Management of companies and enterprises,,,0.0,0.0,
+ALB,5613,Employment services,,,5.060533965361838e-12,2.440385648248512e-05,
+ALB,5617,Services to buildings and dwellings,,,7.324631028815708e-10,0.0035322210193207337,
+ALB,561X,Other administrative and support services,,,5.360034642938862e-10,0.0025848164850342135,
+ALB,562,Waste management and remediation services,,,9.713398104901275e-10,0.004684177103281324,
+ALB,61,Educational services,,,4.8021405131926505e-09,0.023157783090642987,
+ALB,6211,Offices of physicians,,,2.5748155615818035e-09,0.012416758757831754,
+ALB,6212,Offices of dentists,,,6.700848829732214e-10,0.0032314090621842284,
+ALB,6213,Offices of other health practitioners,,,3.5597361625556286e-10,0.0017166427697380036,
+ALB,6214,Outpatient care centers,,,1.376176717832843e-09,0.006636457604356539,
+ALB,6215OH,Other ambulatory health care services,,,1.3198770739467262e-09,0.0063649588971418395,
+ALB,622,Hospitals,,,1.0805470059233928e-08,0.05210816533517329,
+ALB,623,Nursing and residential care facilities,,,1.799043735077937e-09,0.008675686284701532,
+ALB,624,Social assistance,,,6.437732229917597e-09,0.031045240381139223,
+ALB,711AS,"Performing arts, spectator sports, museums, and related activities",,,5.878420761534615e-10,0.0028348023665106304,
+ALB,713,"Amusements, gambling, and recreation industries",,,4.7003280486504675e-09,0.02266680391931005,
+ALB,721,Accommodation,,,1.8373181536279927e-09,0.008860260367918725,
+ALB,722,Food services and drinking places,,,1.4223627104096512e-08,0.06859184364429764,
+ALB,811,Repair and maintenance,,,7.164235215224737e-09,0.03454871940309353,
+ALB,812,Personal and laundry services,,,3.252689066532314e-09,0.015685727574427495,
+ALB,813,"Religious, grantmaking, civic, professional, and similar organizations",,,2.149991035938453e-09,0.010368090213167841,
+ALB,814,Private households,,,0.0,0.0,
+ALB,GFE,Federal government enterprises,,,5.835309684994309e-11,0.00028140125342143496,
+ALB,GFGD,Federal general government (defense),,,0.0,0.0,
+ALB,GFGN,Federal general government (nondefense),,,0.0,0.0,
+ALB,GSLE,State and local government enterprises,,,2.193652351099723e-09,0.010578642000059365,
+ALB,GSLGE,State and local government (educational services),,,0.0,0.0,
+ALB,GSLGH,State and local government (hospitals and health services),,,0.0,0.0,
+ALB,GSLGO,State and local government (other services),,,0.0,0.0,
+ALB,HSO,Owner-occupied housing,,,3.484801195067944e-09,0.01680506223582871,
+ALB,HST,Tenant-occupied housing,,,4.92294568619409e-10,0.002374035246463555,
+ALB,ORE,Other real estate,,,1.2421533860007248e-10,0.0005990145144501005,
+ALB,Other,,1871498.0,0.014589117812993565,0.0,0.0,0.014589117812993565
+ALB,Used,,,,1.2147731687229151e-08,0.05858107122924531,

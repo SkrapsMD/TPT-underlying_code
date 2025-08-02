@@ -1,0 +1,141 @@
+iso3,usummary_code,usummary_desc,impVal,impVal_share,indirect,indirect_share,impVal_share_no_oil
+ECU,111,Crop production,1721556269.0,0.20195851907297901,9.591983285260657e-08,0.0052886585470460845,0.345861988835481
+ECU,112,Animal production and aquaculture,1205910718.0,0.14146731485168368,2.6591195422284675e-08,0.0014661384279342701,0.2422683979581866
+ECU,113FF,"Forestry, fishing, and related activities",210249086.0,0.024664656514347953,2.01013946349308e-09,0.0001108315239737036,0.04223920434331275
+ECU,211,Oil and gas extraction,3546724671.0,0.41607194316734747,0.0,0.0,0.0
+ECU,212,"Mining, except oil and gas",61985.0,7.271559477989159e-06,7.777281465424959e-11,4.288100267867083e-06,1.2452834545117789e-05
+ECU,213,Support activities for mining,,,0.0,0.0,
+ECU,2211,"Electric power generation, transmission, and distribution",,,2.1807345980495721e-07,0.012023749758338502,
+ECU,2212NW,"Natural gas distribution and water, sewage and other systems",,,1.2436079579096017e-07,0.006856786193403396,
+ECU,23EH,"Education, hospital, and health structures",,,0.0,0.0,
+ECU,23MR,Maintenance and repair construction,,,0.0,0.0,
+ECU,23OC,Office and commercial structures,,,0.0,0.0,
+ECU,23OR,Other residential construction,,,0.0,0.0,
+ECU,23OT,Other nonresidential structures,,,0.0,0.0,
+ECU,23PC,Power and communication structures,,,0.0,0.0,
+ECU,23SF,Single-family residential structures,,,0.0,0.0,
+ECU,23TH,Transportation structures and highways and streets,,,0.0,0.0,
+ECU,311,Food manufacturing,568489624.0,0.06669042693451147,3.520534306410338e-06,0.19410901057736815,0.11421000610289946
+ECU,3121,Beverage manufacturing,2634277.0,0.00030903124767280547,4.400229619655756e-07,0.024261209902979277,0.0005292282911512343
+ECU,3122,Tobacco manufacturing,,,3.852459677421496e-08,0.0021241012618791206,
+ECU,313TT,Textile mills and textile product mills,2043389.0,0.0002397132314296812,1.0394975126299437e-08,0.000573139802406787,0.0004105184339487569
+ECU,315AL,Apparel and leather and allied products,9011607.0,0.0010571660287612076,1.1911284713239416e-08,0.0006567434057331258,0.0018104388312757164
+ECU,321,Wood products,112601031.0,0.013209407021043819,2.912217033720729e-09,0.00016056868583066755,0.022621634405947874
+ECU,322,Paper products,6410424.0,0.000752017091153169,1.966109787153412e-08,0.0010840389334537178,0.0012878591503759321
+ECU,323,Printing and related support activities,6496037.0,0.0007620604890976569,2.0951276487141482e-09,0.00011551745261640686,0.0013050588684353202
+ECU,324,Petroleum and coal products,62520536.0,0.007334384062591957,5.5299106228093535e-06,0.3048984574927445,0.012560424142616445
+ECU,3251,Basic chemical manufacturing,590969.0,6.932751848266153e-05,3.2488980104444804e-09,0.00017913200764039174,0.00011872613016526118
+ECU,3252,"Resin, rubber, and artificial fibers manufacturing",2609402.0,0.00030611312164207256,0.0,0.0,0.0005242308843704033
+ECU,3254,Pharmaceutical and medicine manufacturing,132549.0,1.5549535165733404e-05,1.50416445465839e-08,0.0008293396644587495,2.662919683989381e-05
+ECU,325X,Other chemical manufacturing,3688376.0,0.000432689287104747,5.9949900378483e-08,0.0033054118590721627,0.0007409975972926252
+ECU,326,Plastics and rubber products,42341223.0,0.004967116583291161,3.0595233312552406e-08,0.0016869060062473028,0.008506384519753744
+ECU,327,Nonmetallic mineral products,11773843.0,0.0013812083513593018,5.408633585296311e-09,0.0002982116981237059,0.002365374184709095
+ECU,3311IS,Iron and steel mills and manufacturing from purchased steel,,,1.7881136560926344e-09,9.858985664534707e-05,
+ECU,3313NF,Nonferrous metal production and processing and foundries,476167956.0,0.055860024418270954,1.1833698183199952e-09,6.52465576497754e-05,0.09566251144236392
+ECU,332,Fabricated metal products,7544561.0,0.0008850645163639165,2.094899088004549e-08,0.0011550485063916824,0.0015157081527554796
+ECU,33311,Agricultural implement manufacturing,4456564.0,0.0005228066498905425,8.194983738152592e-10,4.518405578988311e-05,0.0008953271619218894
+ECU,33312,Construction machinery manufacturing,33407.0,3.919028595324414e-06,0.0,0.0,6.711492194059046e-06
+ECU,33313,Mining and oil and gas field machinery manufacturing,82806.0,9.714104285462133e-06,0.0,0.0,1.663578958365772e-05
+ECU,3332OM,Other machinery,8107448.0,0.0009510976905171292,6.180938362084125e-09,0.00034079367660733915,0.001628792587354136
+ECU,3341,Computer and peripheral equipment manufacturing,111728.0,1.310699035826043e-05,4.938134834176096e-10,2.722701679157661e-05,2.244624180135388e-05
+ECU,3342,Communications equipment manufacturing,933257.0,0.00010948187115834039,5.161070428256876e-10,2.8456199745729427e-05,0.0001874920546756956
+ECU,3344,Semiconductor and other electronic component manufacturing,388425.0,4.5566757929143164e-05,8.437830579900831e-11,4.652302186920115e-06,7.803488357162825e-05
+ECU,3345,"Navigational, measuring, electromedical, and control instruments manufacturing",730095.0,8.56486120365007e-05,4.15726957488532e-10,2.2921619664805765e-05,0.00014667665140304545
+ECU,334X,Other computer and electronic product manufacturing,27957.0,3.2796803795457435e-06,6.540353659191449e-10,3.6061048327240734e-05,5.61658296971619e-06
+ECU,335,"Electrical equipment, appliances, and components",69362734.0,0.008137053252189093,3.332477208390216e-08,0.0018374025002807603,0.013935027024264196
+ECU,336111,Automobile manufacturing,,,1.4880752302879603e-09,8.204686717295641e-05,
+ECU,336112,Light truck and utility vehicle manufacturing,,,1.166436430647386e-07,0.006431291438975427,
+ECU,33612,Heavy duty truck manufacturing,,,0.0,0.0,
+ECU,3362BP,"Motor vehicle body, trailer, and parts manufacturing",1413542.0,0.00016582487259233285,4.442809016253264e-08,0.002449597666919071,0.00028398168344881647
+ECU,3364,Aerospace product and parts manufacturing,750174.0,8.800411163734838e-05,3.0305272445122816e-10,1.6709186554123944e-05,0.00015071053806645467
+ECU,3365AO,All other transportation equipment manufacturing,,,1.848079064169833e-08,0.0010189612354055638,
+ECU,337,Furniture and related products,7836446.0,0.0009193060125038354,4.369995097263431e-08,0.0024094508126599272,0.0015743480754981062
+ECU,3391,Medical equipment and supplies manufacturing,183938.0,2.1578060938329756e-05,9.504641074529304e-09,0.0005240501339556776,3.695328677195895e-05
+ECU,3399,Other miscellaneous manufacturing,10152123.0,0.0011909617846634143,4.081131764553178e-08,0.002250182443644543,0.002039569379699683
+ECU,4231,Motor vehicle and motor vehicle parts and supplies,,,0.0,0.0,
+ECU,4234,Professional and commercial equipment and supplies,,,0.0,0.0,
+ECU,4236,Household appliances and electrical and electronic goods,,,0.0,0.0,
+ECU,4238,"Machinery, equipment, and supplies",,,0.0,0.0,
+ECU,423X,Other durable goods merchant wholesalers,,,0.0,0.0,
+ECU,4242,Drugs and druggists' sundries,,,0.0,0.0,
+ECU,4244,Grocery and related product wholesalers,,,0.0,0.0,
+ECU,4247,Petroleum and petroleum products,,,0.0,0.0,
+ECU,424X,Other nondurable goods merchant wholesalers,,,0.0,0.0,
+ECU,425,Wholesale electronic markets and agents and brokers,,,0.0,0.0,
+ECU,42ID,Customs duties,,,0.0,0.0,
+ECU,441,Motor vehicle and parts dealers,,,0.0,0.0,
+ECU,444,Building material and garden equipment and supplies dealers,,,0.0,0.0,
+ECU,445,Food and beverage stores,,,0.0,0.0,
+ECU,446,Health and personal care stores,,,0.0,0.0,
+ECU,447,Gasoline stations,,,0.0,0.0,
+ECU,448,Clothing and clothing accessories stores,,,0.0,0.0,
+ECU,452,General merchandise stores,,,0.0,0.0,
+ECU,454,Nonstore retailers,,,2.790214531062847e-09,0.00015384192704414945,
+ECU,481,Air transportation,,,4.794378879915574e-07,0.026434400568655394,
+ECU,482,Rail transportation,,,1.8416908026530666e-09,0.00010154389884555166,
+ECU,483,Water transportation,,,4.882645462008545e-08,0.002692106927930864,
+ECU,484,Truck transportation,,,1.5711870103705242e-08,0.0008662933789899793,
+ECU,485,Transit and ground passenger transportation,,,5.5682707092956055e-08,0.0030701348827655212,
+ECU,486,Pipeline transportation,,,0.0,0.0,
+ECU,48A,Scenic and sightseeing transportation and support activities,,,1.171754860153274e-08,0.000646061525744621,
+ECU,492,Couriers and messengers,,,1.2558657799297916e-08,0.0006924371210252689,
+ECU,493,Warehousing and storage,,,1.1415693666271071e-10,6.294183807780033e-06,
+ECU,4A0X,All other retail,,,0.0,0.0,
+ECU,5111,"Newspaper, periodical, book, and directory publishers",,,1.0613933380897396e-08,0.0005852123364196975,
+ECU,5112,Software publishers,,,6.640405956151669e-09,0.0003661269903360024,
+ECU,512,Motion picture and sound recording industries,,,2.555548285446805e-09,0.00014090331353042946,
+ECU,515,Broadcasting (except internet),,,1.6336022657467407e-09,9.00706801531981e-05,
+ECU,5171,Wired telecommunications carriers,,,2.9347944130191503e-08,0.0016181351754529301,
+ECU,5172,Wireless telecommunications carriers (except satellite),,,3.421900750270802e-08,0.00188670727542571,
+ECU,5174OT,"Other telecommunications, including satellite",,,2.459930223110689e-09,0.00013563129347381672,
+ECU,518,"Data processing, hosting, and related services",,,1.5637041046969e-08,0.0008621675864535844,
+ECU,519,Other information services,,,9.178972484395944e-09,0.0005060939936925909,
+ECU,521CI,"Federal reserve banks, credit intermediation, and related activities",,,7.968183731904249e-08,0.00439335659215797,
+ECU,523,"Securities, commodity contracts, and investments",,,7.38701100359021e-08,0.004072919824755429,
+ECU,524113,Direct life insurance carriers,,,8.182934542594516e-09,0.00045117621060820174,
+ECU,5241X,"Insurance carriers, except direct life",,,2.6300776023257523e-08,0.0014501257953929573,
+ECU,5242,"Agencies, brokerages, and other insurance related activities",,,0.0,0.0,
+ECU,525,"Funds, trusts, and other financial vehicles",,,6.884265458044258e-08,0.0037957248539795085,
+ECU,532RL,Rental and leasing services and lessors of intangible assets,,,2.901557661650013e-08,0.0015998096817591973,
+ECU,5411,Legal services,,,1.0178315431624025e-08,0.0005611940023363653,
+ECU,5412,"Accounting, tax preparation, bookkeeping, and payroll services",,,3.7037204826616453e-09,0.0002042092068341826,
+ECU,5413,"Architectural, engineering, and related services",,,0.0,0.0,
+ECU,5415,Computer systems design and related services,,,0.0,0.0,
+ECU,5416,"Management, scientific, and technical consulting services",,,0.0,0.0,
+ECU,5417,Scientific research and development services,,,2.027941342273432e-09,0.0001118130525644577,
+ECU,5418,"Advertising, public relations, and related services",,,2.0085046627595754e-10,1.107413872145492e-05,
+ECU,541X,"Specialized design services and other professional, scientific, and technical services",,,2.197033276371703e-08,0.0012113614535882837,
+ECU,55,Management of companies and enterprises,,,0.0,0.0,
+ECU,5613,Employment services,,,2.3505266817678566e-10,1.295991939924824e-05,
+ECU,5617,Services to buildings and dwellings,,,2.1979829775127573e-08,0.0012118850830512846,
+ECU,561X,Other administrative and support services,,,1.708759860918751e-08,0.0009421458706234239,
+ECU,562,Waste management and remediation services,,,2.466852223994968e-08,0.0013601294654858338,
+ECU,61,Educational services,,,2.6945542436416657e-07,0.014856757885527884,
+ECU,6211,Offices of physicians,,,1.6435196215126246e-07,0.009061748582180194,
+ECU,6212,Offices of dentists,,,1.80590702599879e-08,0.0009957091608880485,
+ECU,6213,Offices of other health practitioners,,,1.7061936967207094e-08,0.0009407309842734912,
+ECU,6214,Outpatient care centers,,,8.71068932543409e-08,0.0048027462289690825,
+ECU,6215OH,Other ambulatory health care services,,,6.726596336549747e-08,0.0037087920349577605,
+ECU,622,Hospitals,,,6.970337943318736e-07,0.03843181982643593,
+ECU,623,Nursing and residential care facilities,,,1.2305722208880598e-07,0.006784912046039148,
+ECU,624,Social assistance,,,2.537133936977785e-07,0.013988801566634105,
+ECU,711AS,"Performing arts, spectator sports, museums, and related activities",,,2.144761564212715e-08,0.0011825407989794331,
+ECU,713,"Amusements, gambling, and recreation industries",,,2.259804709915817e-07,0.012459712593657331,
+ECU,721,Accommodation,,,1.1520723428929977e-07,0.006352093265653442,
+ECU,722,Food services and drinking places,,,3.7660058929356633e-06,0.20764338991817666,
+ECU,811,Repair and maintenance,,,8.24411034456987e-08,0.004545492140671059,
+ECU,812,Personal and laundry services,,,7.181485581868446e-08,0.003959600843070556,
+ECU,813,"Religious, grantmaking, civic, professional, and similar organizations",,,8.642285315071423e-08,0.004765030832340666,
+ECU,814,Private households,,,0.0,0.0,
+ECU,GFE,Federal government enterprises,,,4.309597176417449e-09,0.0002376149672446646,
+ECU,GFGD,Federal general government (defense),,,0.0,0.0,
+ECU,GFGN,Federal general government (nondefense),,,0.0,0.0,
+ECU,GSLE,State and local government enterprises,,,1.531483397090084e-07,0.008444023010471233,
+ECU,GSLGE,State and local government (educational services),,,0.0,0.0,
+ECU,GSLGH,State and local government (hospitals and health services),,,0.0,0.0,
+ECU,GSLGO,State and local government (other services),,,0.0,0.0,
+ECU,HSO,Owner-occupied housing,,,1.2469736981599685e-07,0.0068753436182996544,
+ECU,HST,Tenant-occupied housing,,,2.799807075850916e-08,0.0015437082385800543,
+ECU,ORE,Other real estate,,,3.5717543110230663e-09,0.000196933088842716,
+ECU,Other,,420177086.0,0.04929164591654701,0.0,0.0,0.08441390226034892
+ECU,Used,,,,1.288143014046355e-07,0.007102335730215811,

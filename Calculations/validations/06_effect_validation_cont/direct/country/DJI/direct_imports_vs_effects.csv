@@ -1,0 +1,141 @@
+iso3,usummary_code,usummary_desc,impVal,impVal_share,direct,direct_share,impVal_share_no_oil
+DJI,111,Crop production,528677.0,0.013180267381345633,1.5005448490905155e-09,0.46406227302488495,0.013180267381345633
+DJI,112,Animal production and aquaculture,156778.0,0.003908579263922216,1.1276023301191311e-10,0.03487251318748658,0.003908579263922216
+DJI,113FF,"Forestry, fishing, and related activities",0.0,0.0,0.0,0.0,0.0
+DJI,211,Oil and gas extraction,0.0,0.0,0.0,0.0,0.0
+DJI,212,"Mining, except oil and gas",0.0,0.0,0.0,0.0,0.0
+DJI,213,Support activities for mining,0.0,0.0,0.0,0.0,0.0
+DJI,2211,"Electric power generation, transmission, and distribution",0.0,0.0,0.0,0.0,0.0
+DJI,2212NW,"Natural gas distribution and water, sewage and other systems",0.0,0.0,0.0,0.0,0.0
+DJI,23EH,"Education, hospital, and health structures",0.0,0.0,0.0,0.0,0.0
+DJI,23MR,Maintenance and repair construction,0.0,0.0,0.0,0.0,0.0
+DJI,23OC,Office and commercial structures,0.0,0.0,0.0,0.0,0.0
+DJI,23OR,Other residential construction,0.0,0.0,0.0,0.0,0.0
+DJI,23OT,Other nonresidential structures,0.0,0.0,0.0,0.0,0.0
+DJI,23PC,Power and communication structures,0.0,0.0,0.0,0.0,0.0
+DJI,23SF,Single-family residential structures,0.0,0.0,0.0,0.0,0.0
+DJI,23TH,Transportation structures and highways and streets,0.0,0.0,0.0,0.0,0.0
+DJI,311,Food manufacturing,340221.0,0.008481934619339961,9.097506840480475e-10,0.28135178404108746,0.008481934619339961
+DJI,3121,Beverage manufacturing,0.0,0.0,0.0,0.0,0.0
+DJI,3122,Tobacco manufacturing,0.0,0.0,0.0,0.0,0.0
+DJI,313TT,Textile mills and textile product mills,0.0,0.0,0.0,0.0,0.0
+DJI,315AL,Apparel and leather and allied products,54071.0,0.0013480258032347533,3.422073099253629e-10,0.10583189311932105,0.0013480258032347533
+DJI,321,Wood products,0.0,0.0,0.0,0.0,0.0
+DJI,322,Paper products,0.0,0.0,0.0,0.0,0.0
+DJI,323,Printing and related support activities,1385.0,3.452896631244351e-05,-8.019746648769399e-13,-0.0002480207013583993,3.452896631244351e-05
+DJI,324,Petroleum and coal products,0.0,0.0,0.0,0.0,0.0
+DJI,3251,Basic chemical manufacturing,0.0,0.0,0.0,0.0,0.0
+DJI,3252,"Resin, rubber, and artificial fibers manufacturing",0.0,0.0,0.0,0.0,0.0
+DJI,3254,Pharmaceutical and medicine manufacturing,0.0,0.0,0.0,0.0,0.0
+DJI,325X,Other chemical manufacturing,0.0,0.0,0.0,0.0,0.0
+DJI,326,Plastics and rubber products,3218.0,8.022686902053663e-05,5.869775466236835e-12,0.001815301519750348,8.022686902053663e-05
+DJI,327,Nonmetallic mineral products,0.0,0.0,0.0,0.0,0.0
+DJI,3311IS,Iron and steel mills and manufacturing from purchased steel,0.0,0.0,0.0,0.0,0.0
+DJI,3313NF,Nonferrous metal production and processing and foundries,0.0,0.0,0.0,0.0,0.0
+DJI,332,Fabricated metal products,20439.0,0.0005095577923899155,1.9199429878842102e-11,0.005937663959699419,0.0005095577923899155
+DJI,33311,Agricultural implement manufacturing,0.0,0.0,0.0,0.0,0.0
+DJI,33312,Construction machinery manufacturing,0.0,0.0,0.0,0.0,0.0
+DJI,33313,Mining and oil and gas field machinery manufacturing,0.0,0.0,0.0,0.0,0.0
+DJI,3332OM,Other machinery,45947.0,0.0011454891084172146,4.392437253623131e-12,0.0013584161894734381,0.0011454891084172146
+DJI,3341,Computer and peripheral equipment manufacturing,300000.0,0.007479198479229642,1.9197843670807443e-10,0.05937173405014232,0.007479198479229642
+DJI,3342,Communications equipment manufacturing,18612.0,0.00046400947365140703,2.056329182637133e-12,0.0006359455334909678,0.00046400947365140703
+DJI,3344,Semiconductor and other electronic component manufacturing,106311.0,0.0026504035650846084,5.842403440336148e-14,1.8068363781956202e-05,0.0026504035650846084
+DJI,3345,"Navigational, measuring, electromedical, and control instruments manufacturing",0.0,0.0,0.0,0.0,0.0
+DJI,334X,Other computer and electronic product manufacturing,5222.0,0.00013018791486179063,1.1445937054731246e-11,0.003539799273402412,0.00013018791486179063
+DJI,335,"Electrical equipment, appliances, and components",18743.0,0.00046727539032067066,6.198831563868649e-12,0.0019170662358881374,0.00046727539032067066
+DJI,336111,Automobile manufacturing,0.0,0.0,0.0,0.0,0.0
+DJI,336112,Light truck and utility vehicle manufacturing,0.0,0.0,0.0,0.0,0.0
+DJI,33612,Heavy duty truck manufacturing,0.0,0.0,0.0,0.0,0.0
+DJI,3362BP,"Motor vehicle body, trailer, and parts manufacturing",0.0,0.0,0.0,0.0,0.0
+DJI,3364,Aerospace product and parts manufacturing,0.0,0.0,0.0,0.0,0.0
+DJI,3365AO,All other transportation equipment manufacturing,0.0,0.0,0.0,0.0,0.0
+DJI,337,Furniture and related products,2250.0,5.609398859422232e-05,8.378215073137539e-12,0.0025910678598431063,5.609398859422232e-05
+DJI,3391,Medical equipment and supplies manufacturing,0.0,0.0,0.0,0.0,0.0
+DJI,3399,Other miscellaneous manufacturing,48829.0,0.0012173392751410141,1.194599817982376e-10,0.03694449434310608,0.0012173392751410141
+DJI,4231,Motor vehicle and motor vehicle parts and supplies,0.0,0.0,0.0,0.0,0.0
+DJI,4234,Professional and commercial equipment and supplies,0.0,0.0,0.0,0.0,0.0
+DJI,4236,Household appliances and electrical and electronic goods,0.0,0.0,0.0,0.0,0.0
+DJI,4238,"Machinery, equipment, and supplies",0.0,0.0,0.0,0.0,0.0
+DJI,423X,Other durable goods merchant wholesalers,0.0,0.0,0.0,0.0,0.0
+DJI,4242,Drugs and druggists' sundries,0.0,0.0,0.0,0.0,0.0
+DJI,4244,Grocery and related product wholesalers,0.0,0.0,0.0,0.0,0.0
+DJI,4247,Petroleum and petroleum products,0.0,0.0,0.0,0.0,0.0
+DJI,424X,Other nondurable goods merchant wholesalers,0.0,0.0,0.0,0.0,0.0
+DJI,425,Wholesale electronic markets and agents and brokers,0.0,0.0,0.0,0.0,0.0
+DJI,42ID,Customs duties,0.0,0.0,0.0,0.0,0.0
+DJI,441,Motor vehicle and parts dealers,0.0,0.0,0.0,0.0,0.0
+DJI,444,Building material and garden equipment and supplies dealers,0.0,0.0,0.0,0.0,0.0
+DJI,445,Food and beverage stores,0.0,0.0,0.0,0.0,0.0
+DJI,446,Health and personal care stores,0.0,0.0,0.0,0.0,0.0
+DJI,447,Gasoline stations,0.0,0.0,0.0,0.0,0.0
+DJI,448,Clothing and clothing accessories stores,0.0,0.0,0.0,0.0,0.0
+DJI,452,General merchandise stores,0.0,0.0,0.0,0.0,0.0
+DJI,454,Nonstore retailers,0.0,0.0,0.0,0.0,0.0
+DJI,481,Air transportation,0.0,0.0,0.0,0.0,0.0
+DJI,482,Rail transportation,0.0,0.0,0.0,0.0,0.0
+DJI,483,Water transportation,0.0,0.0,0.0,0.0,0.0
+DJI,484,Truck transportation,0.0,0.0,0.0,0.0,0.0
+DJI,485,Transit and ground passenger transportation,0.0,0.0,0.0,0.0,0.0
+DJI,486,Pipeline transportation,0.0,0.0,0.0,0.0,0.0
+DJI,48A,Scenic and sightseeing transportation and support activities,0.0,0.0,0.0,0.0,0.0
+DJI,492,Couriers and messengers,0.0,0.0,0.0,0.0,0.0
+DJI,493,Warehousing and storage,0.0,0.0,0.0,0.0,0.0
+DJI,4A0X,All other retail,0.0,0.0,0.0,0.0,0.0
+DJI,5111,"Newspaper, periodical, book, and directory publishers",0.0,0.0,0.0,0.0,0.0
+DJI,5112,Software publishers,0.0,0.0,0.0,0.0,0.0
+DJI,512,Motion picture and sound recording industries,0.0,0.0,0.0,0.0,0.0
+DJI,515,Broadcasting (except internet),0.0,0.0,0.0,0.0,0.0
+DJI,5171,Wired telecommunications carriers,0.0,0.0,0.0,0.0,0.0
+DJI,5172,Wireless telecommunications carriers (except satellite),0.0,0.0,0.0,0.0,0.0
+DJI,5174OT,"Other telecommunications, including satellite",0.0,0.0,0.0,0.0,0.0
+DJI,518,"Data processing, hosting, and related services",0.0,0.0,0.0,0.0,0.0
+DJI,519,Other information services,0.0,0.0,0.0,0.0,0.0
+DJI,521CI,"Federal reserve banks, credit intermediation, and related activities",0.0,0.0,0.0,0.0,0.0
+DJI,523,"Securities, commodity contracts, and investments",0.0,0.0,0.0,0.0,0.0
+DJI,524113,Direct life insurance carriers,0.0,0.0,0.0,0.0,0.0
+DJI,5241X,"Insurance carriers, except direct life",0.0,0.0,0.0,0.0,0.0
+DJI,5242,"Agencies, brokerages, and other insurance related activities",0.0,0.0,0.0,0.0,0.0
+DJI,525,"Funds, trusts, and other financial vehicles",0.0,0.0,0.0,0.0,0.0
+DJI,532RL,Rental and leasing services and lessors of intangible assets,0.0,0.0,0.0,0.0,0.0
+DJI,5411,Legal services,0.0,0.0,0.0,0.0,0.0
+DJI,5412,"Accounting, tax preparation, bookkeeping, and payroll services",0.0,0.0,0.0,0.0,0.0
+DJI,5413,"Architectural, engineering, and related services",0.0,0.0,0.0,0.0,0.0
+DJI,5415,Computer systems design and related services,0.0,0.0,0.0,0.0,0.0
+DJI,5416,"Management, scientific, and technical consulting services",0.0,0.0,0.0,0.0,0.0
+DJI,5417,Scientific research and development services,0.0,0.0,0.0,0.0,0.0
+DJI,5418,"Advertising, public relations, and related services",0.0,0.0,0.0,0.0,0.0
+DJI,541X,"Specialized design services and other professional, scientific, and technical services",0.0,0.0,0.0,0.0,0.0
+DJI,55,Management of companies and enterprises,0.0,0.0,0.0,0.0,0.0
+DJI,5613,Employment services,0.0,0.0,0.0,0.0,0.0
+DJI,5617,Services to buildings and dwellings,0.0,0.0,0.0,0.0,0.0
+DJI,561X,Other administrative and support services,0.0,0.0,0.0,0.0,0.0
+DJI,562,Waste management and remediation services,0.0,0.0,0.0,0.0,0.0
+DJI,61,Educational services,0.0,0.0,0.0,0.0,0.0
+DJI,6211,Offices of physicians,0.0,0.0,0.0,0.0,0.0
+DJI,6212,Offices of dentists,0.0,0.0,0.0,0.0,0.0
+DJI,6213,Offices of other health practitioners,0.0,0.0,0.0,0.0,0.0
+DJI,6214,Outpatient care centers,0.0,0.0,0.0,0.0,0.0
+DJI,6215OH,Other ambulatory health care services,0.0,0.0,0.0,0.0,0.0
+DJI,622,Hospitals,0.0,0.0,0.0,0.0,0.0
+DJI,623,Nursing and residential care facilities,0.0,0.0,0.0,0.0,0.0
+DJI,624,Social assistance,0.0,0.0,0.0,0.0,0.0
+DJI,711AS,"Performing arts, spectator sports, museums, and related activities",0.0,0.0,0.0,0.0,0.0
+DJI,713,"Amusements, gambling, and recreation industries",0.0,0.0,0.0,0.0,0.0
+DJI,721,Accommodation,0.0,0.0,0.0,0.0,0.0
+DJI,722,Food services and drinking places,0.0,0.0,0.0,0.0,0.0
+DJI,811,Repair and maintenance,0.0,0.0,0.0,0.0,0.0
+DJI,812,Personal and laundry services,0.0,0.0,0.0,0.0,0.0
+DJI,813,"Religious, grantmaking, civic, professional, and similar organizations",0.0,0.0,0.0,0.0,0.0
+DJI,814,Private households,0.0,0.0,0.0,0.0,0.0
+DJI,GFE,Federal government enterprises,0.0,0.0,0.0,0.0,0.0
+DJI,GFGD,Federal general government (defense),0.0,0.0,0.0,0.0,0.0
+DJI,GFGN,Federal general government (nondefense),0.0,0.0,0.0,0.0,0.0
+DJI,GSLE,State and local government enterprises,0.0,0.0,0.0,0.0,0.0
+DJI,GSLGE,State and local government (educational services),0.0,0.0,0.0,0.0,0.0
+DJI,GSLGH,State and local government (hospitals and health services),0.0,0.0,0.0,0.0,0.0
+DJI,GSLGO,State and local government (other services),0.0,0.0,0.0,0.0,0.0
+DJI,HSO,Owner-occupied housing,0.0,0.0,0.0,0.0,0.0
+DJI,HST,Tenant-occupied housing,0.0,0.0,0.0,0.0,0.0
+DJI,ORE,Other real estate,0.0,0.0,0.0,0.0,0.0
+DJI,Other,Unknown,38460547.0,0.9588468821091339,0.0,0.0,0.9588468821091339
+DJI,Used,Unknown,0.0,0.0,0.0,0.0,0.0

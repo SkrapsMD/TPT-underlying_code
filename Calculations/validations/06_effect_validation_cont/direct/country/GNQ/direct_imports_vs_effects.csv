@@ -1,0 +1,141 @@
+iso3,usummary_code,usummary_desc,impVal,impVal_share,direct,direct_share,impVal_share_no_oil
+GNQ,111,Crop production,0.0,0.0,0.0,0.0,0.0
+GNQ,112,Animal production and aquaculture,0.0,0.0,0.0,0.0,0.0
+GNQ,113FF,"Forestry, fishing, and related activities",0.0,0.0,0.0,0.0,0.0
+GNQ,211,Oil and gas extraction,122837811.0,0.9623711426789374,0.0,0.0,0.0
+GNQ,212,"Mining, except oil and gas",0.0,0.0,0.0,0.0,0.0
+GNQ,213,Support activities for mining,0.0,0.0,0.0,0.0,0.0
+GNQ,2211,"Electric power generation, transmission, and distribution",0.0,0.0,0.0,0.0,0.0
+GNQ,2212NW,"Natural gas distribution and water, sewage and other systems",0.0,0.0,0.0,0.0,0.0
+GNQ,23EH,"Education, hospital, and health structures",0.0,0.0,0.0,0.0,0.0
+GNQ,23MR,Maintenance and repair construction,0.0,0.0,0.0,0.0,0.0
+GNQ,23OC,Office and commercial structures,0.0,0.0,0.0,0.0,0.0
+GNQ,23OR,Other residential construction,0.0,0.0,0.0,0.0,0.0
+GNQ,23OT,Other nonresidential structures,0.0,0.0,0.0,0.0,0.0
+GNQ,23PC,Power and communication structures,0.0,0.0,0.0,0.0,0.0
+GNQ,23SF,Single-family residential structures,0.0,0.0,0.0,0.0,0.0
+GNQ,23TH,Transportation structures and highways and streets,0.0,0.0,0.0,0.0,0.0
+GNQ,311,Food manufacturing,0.0,0.0,0.0,0.0,0.0
+GNQ,3121,Beverage manufacturing,0.0,0.0,0.0,0.0,0.0
+GNQ,3122,Tobacco manufacturing,0.0,0.0,0.0,0.0,0.0
+GNQ,313TT,Textile mills and textile product mills,0.0,0.0,0.0,0.0,0.0
+GNQ,315AL,Apparel and leather and allied products,648.0,5.076747097487364e-06,4.101095537934109e-12,0.04565527719657057,0.0001349163237716941
+GNQ,321,Wood products,0.0,0.0,0.0,0.0,0.0
+GNQ,322,Paper products,0.0,0.0,0.0,0.0,0.0
+GNQ,323,Printing and related support activities,0.0,0.0,0.0,0.0,0.0
+GNQ,324,Petroleum and coal products,0.0,0.0,0.0,0.0,0.0
+GNQ,3251,Basic chemical manufacturing,0.0,0.0,0.0,0.0,0.0
+GNQ,3252,"Resin, rubber, and artificial fibers manufacturing",0.0,0.0,0.0,0.0,0.0
+GNQ,3254,Pharmaceutical and medicine manufacturing,0.0,0.0,0.0,0.0,0.0
+GNQ,325X,Other chemical manufacturing,0.0,0.0,0.0,0.0,0.0
+GNQ,326,Plastics and rubber products,0.0,0.0,0.0,0.0,0.0
+GNQ,327,Nonmetallic mineral products,0.0,0.0,0.0,0.0,0.0
+GNQ,3311IS,Iron and steel mills and manufacturing from purchased steel,0.0,0.0,0.0,0.0,0.0
+GNQ,3313NF,Nonferrous metal production and processing and foundries,0.0,0.0,0.0,0.0,0.0
+GNQ,332,Fabricated metal products,80000.0,0.000626758900924366,7.514821617042752e-11,0.8365844219803198,0.016656336268110382
+GNQ,33311,Agricultural implement manufacturing,0.0,0.0,0.0,0.0,0.0
+GNQ,33312,Construction machinery manufacturing,0.0,0.0,0.0,0.0,0.0
+GNQ,33313,Mining and oil and gas field machinery manufacturing,0.0,0.0,0.0,0.0,0.0
+GNQ,3332OM,Other machinery,0.0,0.0,0.0,0.0,0.0
+GNQ,3341,Computer and peripheral equipment manufacturing,0.0,0.0,0.0,0.0,0.0
+GNQ,3342,Communications equipment manufacturing,0.0,0.0,0.0,0.0,0.0
+GNQ,3344,Semiconductor and other electronic component manufacturing,0.0,0.0,0.0,0.0,0.0
+GNQ,3345,"Navigational, measuring, electromedical, and control instruments manufacturing",10000.0,7.834486261554575e-05,3.7505158898471465e-14,0.00041752463700801774,0.0020820420335137977
+GNQ,334X,Other computer and electronic product manufacturing,0.0,0.0,0.0,0.0,0.0
+GNQ,335,"Electrical equipment, appliances, and components",0.0,0.0,0.0,0.0,0.0
+GNQ,336111,Automobile manufacturing,0.0,0.0,0.0,0.0,0.0
+GNQ,336112,Light truck and utility vehicle manufacturing,0.0,0.0,0.0,0.0,0.0
+GNQ,33612,Heavy duty truck manufacturing,0.0,0.0,0.0,0.0,0.0
+GNQ,3362BP,"Motor vehicle body, trailer, and parts manufacturing",0.0,0.0,0.0,0.0,0.0
+GNQ,3364,Aerospace product and parts manufacturing,192542.0,0.0015084676537722409,1.0540598269804624e-11,0.11734277618610164,0.040088053721681366
+GNQ,3365AO,All other transportation equipment manufacturing,0.0,0.0,0.0,0.0,0.0
+GNQ,337,Furniture and related products,0.0,0.0,0.0,0.0,0.0
+GNQ,3391,Medical equipment and supplies manufacturing,0.0,0.0,0.0,0.0,0.0
+GNQ,3399,Other miscellaneous manufacturing,0.0,0.0,0.0,0.0,0.0
+GNQ,4231,Motor vehicle and motor vehicle parts and supplies,0.0,0.0,0.0,0.0,0.0
+GNQ,4234,Professional and commercial equipment and supplies,0.0,0.0,0.0,0.0,0.0
+GNQ,4236,Household appliances and electrical and electronic goods,0.0,0.0,0.0,0.0,0.0
+GNQ,4238,"Machinery, equipment, and supplies",0.0,0.0,0.0,0.0,0.0
+GNQ,423X,Other durable goods merchant wholesalers,0.0,0.0,0.0,0.0,0.0
+GNQ,4242,Drugs and druggists' sundries,0.0,0.0,0.0,0.0,0.0
+GNQ,4244,Grocery and related product wholesalers,0.0,0.0,0.0,0.0,0.0
+GNQ,4247,Petroleum and petroleum products,0.0,0.0,0.0,0.0,0.0
+GNQ,424X,Other nondurable goods merchant wholesalers,0.0,0.0,0.0,0.0,0.0
+GNQ,425,Wholesale electronic markets and agents and brokers,0.0,0.0,0.0,0.0,0.0
+GNQ,42ID,Customs duties,0.0,0.0,0.0,0.0,0.0
+GNQ,441,Motor vehicle and parts dealers,0.0,0.0,0.0,0.0,0.0
+GNQ,444,Building material and garden equipment and supplies dealers,0.0,0.0,0.0,0.0,0.0
+GNQ,445,Food and beverage stores,0.0,0.0,0.0,0.0,0.0
+GNQ,446,Health and personal care stores,0.0,0.0,0.0,0.0,0.0
+GNQ,447,Gasoline stations,0.0,0.0,0.0,0.0,0.0
+GNQ,448,Clothing and clothing accessories stores,0.0,0.0,0.0,0.0,0.0
+GNQ,452,General merchandise stores,0.0,0.0,0.0,0.0,0.0
+GNQ,454,Nonstore retailers,0.0,0.0,0.0,0.0,0.0
+GNQ,481,Air transportation,0.0,0.0,0.0,0.0,0.0
+GNQ,482,Rail transportation,0.0,0.0,0.0,0.0,0.0
+GNQ,483,Water transportation,0.0,0.0,0.0,0.0,0.0
+GNQ,484,Truck transportation,0.0,0.0,0.0,0.0,0.0
+GNQ,485,Transit and ground passenger transportation,0.0,0.0,0.0,0.0,0.0
+GNQ,486,Pipeline transportation,0.0,0.0,0.0,0.0,0.0
+GNQ,48A,Scenic and sightseeing transportation and support activities,0.0,0.0,0.0,0.0,0.0
+GNQ,492,Couriers and messengers,0.0,0.0,0.0,0.0,0.0
+GNQ,493,Warehousing and storage,0.0,0.0,0.0,0.0,0.0
+GNQ,4A0X,All other retail,0.0,0.0,0.0,0.0,0.0
+GNQ,5111,"Newspaper, periodical, book, and directory publishers",0.0,0.0,0.0,0.0,0.0
+GNQ,5112,Software publishers,0.0,0.0,0.0,0.0,0.0
+GNQ,512,Motion picture and sound recording industries,0.0,0.0,0.0,0.0,0.0
+GNQ,515,Broadcasting (except internet),0.0,0.0,0.0,0.0,0.0
+GNQ,5171,Wired telecommunications carriers,0.0,0.0,0.0,0.0,0.0
+GNQ,5172,Wireless telecommunications carriers (except satellite),0.0,0.0,0.0,0.0,0.0
+GNQ,5174OT,"Other telecommunications, including satellite",0.0,0.0,0.0,0.0,0.0
+GNQ,518,"Data processing, hosting, and related services",0.0,0.0,0.0,0.0,0.0
+GNQ,519,Other information services,0.0,0.0,0.0,0.0,0.0
+GNQ,521CI,"Federal reserve banks, credit intermediation, and related activities",0.0,0.0,0.0,0.0,0.0
+GNQ,523,"Securities, commodity contracts, and investments",0.0,0.0,0.0,0.0,0.0
+GNQ,524113,Direct life insurance carriers,0.0,0.0,0.0,0.0,0.0
+GNQ,5241X,"Insurance carriers, except direct life",0.0,0.0,0.0,0.0,0.0
+GNQ,5242,"Agencies, brokerages, and other insurance related activities",0.0,0.0,0.0,0.0,0.0
+GNQ,525,"Funds, trusts, and other financial vehicles",0.0,0.0,0.0,0.0,0.0
+GNQ,532RL,Rental and leasing services and lessors of intangible assets,0.0,0.0,0.0,0.0,0.0
+GNQ,5411,Legal services,0.0,0.0,0.0,0.0,0.0
+GNQ,5412,"Accounting, tax preparation, bookkeeping, and payroll services",0.0,0.0,0.0,0.0,0.0
+GNQ,5413,"Architectural, engineering, and related services",0.0,0.0,0.0,0.0,0.0
+GNQ,5415,Computer systems design and related services,0.0,0.0,0.0,0.0,0.0
+GNQ,5416,"Management, scientific, and technical consulting services",0.0,0.0,0.0,0.0,0.0
+GNQ,5417,Scientific research and development services,0.0,0.0,0.0,0.0,0.0
+GNQ,5418,"Advertising, public relations, and related services",0.0,0.0,0.0,0.0,0.0
+GNQ,541X,"Specialized design services and other professional, scientific, and technical services",0.0,0.0,0.0,0.0,0.0
+GNQ,55,Management of companies and enterprises,0.0,0.0,0.0,0.0,0.0
+GNQ,5613,Employment services,0.0,0.0,0.0,0.0,0.0
+GNQ,5617,Services to buildings and dwellings,0.0,0.0,0.0,0.0,0.0
+GNQ,561X,Other administrative and support services,0.0,0.0,0.0,0.0,0.0
+GNQ,562,Waste management and remediation services,0.0,0.0,0.0,0.0,0.0
+GNQ,61,Educational services,0.0,0.0,0.0,0.0,0.0
+GNQ,6211,Offices of physicians,0.0,0.0,0.0,0.0,0.0
+GNQ,6212,Offices of dentists,0.0,0.0,0.0,0.0,0.0
+GNQ,6213,Offices of other health practitioners,0.0,0.0,0.0,0.0,0.0
+GNQ,6214,Outpatient care centers,0.0,0.0,0.0,0.0,0.0
+GNQ,6215OH,Other ambulatory health care services,0.0,0.0,0.0,0.0,0.0
+GNQ,622,Hospitals,0.0,0.0,0.0,0.0,0.0
+GNQ,623,Nursing and residential care facilities,0.0,0.0,0.0,0.0,0.0
+GNQ,624,Social assistance,0.0,0.0,0.0,0.0,0.0
+GNQ,711AS,"Performing arts, spectator sports, museums, and related activities",0.0,0.0,0.0,0.0,0.0
+GNQ,713,"Amusements, gambling, and recreation industries",0.0,0.0,0.0,0.0,0.0
+GNQ,721,Accommodation,0.0,0.0,0.0,0.0,0.0
+GNQ,722,Food services and drinking places,0.0,0.0,0.0,0.0,0.0
+GNQ,811,Repair and maintenance,0.0,0.0,0.0,0.0,0.0
+GNQ,812,Personal and laundry services,0.0,0.0,0.0,0.0,0.0
+GNQ,813,"Religious, grantmaking, civic, professional, and similar organizations",0.0,0.0,0.0,0.0,0.0
+GNQ,814,Private households,0.0,0.0,0.0,0.0,0.0
+GNQ,GFE,Federal government enterprises,0.0,0.0,0.0,0.0,0.0
+GNQ,GFGD,Federal general government (defense),0.0,0.0,0.0,0.0,0.0
+GNQ,GFGN,Federal general government (nondefense),0.0,0.0,0.0,0.0,0.0
+GNQ,GSLE,State and local government enterprises,0.0,0.0,0.0,0.0,0.0
+GNQ,GSLGE,State and local government (educational services),0.0,0.0,0.0,0.0,0.0
+GNQ,GSLGH,State and local government (hospitals and health services),0.0,0.0,0.0,0.0,0.0
+GNQ,GSLGO,State and local government (other services),0.0,0.0,0.0,0.0,0.0
+GNQ,HSO,Owner-occupied housing,0.0,0.0,0.0,0.0,0.0
+GNQ,HST,Tenant-occupied housing,0.0,0.0,0.0,0.0,0.0
+GNQ,ORE,Other real estate,0.0,0.0,0.0,0.0,0.0
+GNQ,Other,Unknown,4519787.0,0.035410209156652966,0.0,0.0,0.9410386516529228
+GNQ,Used,Unknown,0.0,0.0,0.0,0.0,0.0

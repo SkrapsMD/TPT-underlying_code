@@ -1,0 +1,141 @@
+iso3,usummary_code,usummary_desc,impVal,impVal_share,total,total_share,impVal_share_no_oil
+VEN,111,Crop production,10701639.0,0.0017872218182931816,9.50751561304596e-08,0.006422788468162114,0.026996586168793874
+VEN,112,Animal production and aquaculture,8396778.0,0.0014022996706358891,1.6952787263990667e-08,0.0011452431000266447,0.021182207773709494
+VEN,113FF,"Forestry, fishing, and related activities",37926125.0,0.006333833357985118,7.195988550743971e-08,0.004861239693082959,0.09567468138394013
+VEN,211,Oil and gas extraction,5591455656.0,0.9337982288901742,0.0,0.0,0.0
+VEN,212,"Mining, except oil and gas",,,1.1048056388262499e-10,7.4634985683082815e-06,
+VEN,213,Support activities for mining,,,0.0,0.0,
+VEN,2211,"Electric power generation, transmission, and distribution",,,3.289535295399179e-07,0.022222408272368058,
+VEN,2212NW,"Natural gas distribution and water, sewage and other systems",,,1.7975616259138609e-07,0.012143401653622375,
+VEN,23EH,"Education, hospital, and health structures",,,0.0,0.0,
+VEN,23MR,Maintenance and repair construction,,,0.0,0.0,
+VEN,23OC,Office and commercial structures,,,0.0,0.0,
+VEN,23OR,Other residential construction,,,0.0,0.0,
+VEN,23OT,Other nonresidential structures,,,0.0,0.0,
+VEN,23PC,Power and communication structures,,,0.0,0.0,
+VEN,23SF,Single-family residential structures,,,0.0,0.0,
+VEN,23TH,Transportation structures and highways and streets,,,0.0,0.0,
+VEN,311,Food manufacturing,97457982.0,0.016275921080614302,7.058283877485902e-07,0.04768213499552407,0.24585325751501824
+VEN,3121,Beverage manufacturing,17973340.0,0.0030016285725580514,1.6521678699603036e-07,0.011161196230998717,0.045340608298507334
+VEN,3122,Tobacco manufacturing,11200.0,1.8704503454922779e-06,1.9823642117339356e-08,0.0013391832858366353,2.8253781041435932e-05
+VEN,313TT,Textile mills and textile product mills,32241.0,5.384391927590761e-06,1.2090438233130837e-08,0.0008167678121109143,8.133304951401214e-05
+VEN,315AL,Apparel and leather and allied products,228065.0,3.8087880182562174e-05,7.0342786153598645e-09,0.00047519967793245945,0.0005753302297513469
+VEN,321,Wood products,745332.0,0.00012447379436664736,1.1855183427629407e-09,8.008752076351355e-05,0.0018802184938549577
+VEN,322,Paper products,902734.0,0.00015076063590960945,1.7772871770942712e-08,0.0012006437906859635,0.002277290069166038
+VEN,323,Printing and related support activities,3337280.0,0.0005573407615182561,1.2949971781832808e-10,8.748334770994236e-06,0.00841881949946101
+VEN,324,Petroleum and coal products,116792768.0,0.019504917255053524,8.76904408192256e-06,0.5923915089752185,0.294628329847788
+VEN,3251,Basic chemical manufacturing,48478103.0,0.008096061116532164,6.094071302641251e-09,0.0004116841084442055,0.12229372388090878
+VEN,3252,"Resin, rubber, and artificial fibers manufacturing",,,0.0,0.0,
+VEN,3254,Pharmaceutical and medicine manufacturing,,,9.575664861427218e-09,0.0006468826594675044,
+VEN,325X,Other chemical manufacturing,200999.0,3.356773651728593e-05,7.646815233601821e-08,0.005165795008861348,0.0005070519406738912
+VEN,326,Plastics and rubber products,2013594.0,0.00033627924937331945,3.430966417398404e-08,0.002317784417843104,0.005079611069852602
+VEN,327,Nonmetallic mineral products,1097429.0,0.00018327557608957545,7.868910372987696e-09,0.0005315831060143251,0.0027684391673680354
+VEN,3311IS,Iron and steel mills and manufacturing from purchased steel,32759.0,5.470900256069779e-06,8.456741672474531e-10,5.7129396472054834e-05,8.263978688717855e-05
+VEN,3313NF,Nonferrous metal production and processing and foundries,1724980.0,0.00028807941401493475,7.032254933134349e-11,4.750629683714105e-06,0.004351536359005014
+VEN,332,Fabricated metal products,981326.0,0.00016388585319112098,7.889402642503704e-09,0.0005329674583277021,0.0024755508869882285
+VEN,33311,Agricultural implement manufacturing,,,3.3819303858707873e-10,2.2846581974256642e-05,
+VEN,33312,Construction machinery manufacturing,196447.0,3.280753205543942e-05,0.0,0.0,0.0004955687968077647
+VEN,33313,Mining and oil and gas field machinery manufacturing,,,0.0,0.0,
+VEN,3332OM,Other machinery,2055592.0,0.0003432931041599252,2.240181145201077e-09,0.0001513351143620375,0.005185557703439944
+VEN,3341,Computer and peripheral equipment manufacturing,40096.0,6.696212236862354e-06,3.1739526672229044e-10,2.1441591493743162e-05,0.00010114853612834064
+VEN,3342,Communications equipment manufacturing,183404.0,3.0629292425416585e-05,2.4754162060159304e-10,1.672263849883606e-05,0.0004626657551895996
+VEN,3344,Semiconductor and other electronic component manufacturing,273319.0,4.5645501605321774e-05,2.12114605335862e-11,1.4329371589046125e-06,0.0006894906411128775
+VEN,3345,"Navigational, measuring, electromedical, and control instruments manufacturing",81334.0,1.3583143607166869e-05,1.8208617421155764e-10,1.2300805252772785e-05,0.00020517794885929912
+VEN,334X,Other computer and electronic product manufacturing,63167.0,1.0549172944081314e-05,4.88016532128782e-10,3.296788648475349e-05,0.0001593488024146771
+VEN,335,"Electrical equipment, appliances, and components",17127390.0,0.002860351119900088,1.4187411140752476e-08,0.000958428514625456,0.043206564899221374
+VEN,336111,Automobile manufacturing,8000.0,1.3360359610659126e-06,7.305435562294676e-10,4.935176463977986e-05,2.0181272172454237e-05
+VEN,336112,Light truck and utility vehicle manufacturing,,,3.88265048901516e-08,0.002622918941361723,
+VEN,33612,Heavy duty truck manufacturing,21000.0,3.507094397798021e-06,0.0,0.0,5.2975839452692376e-05
+VEN,3362BP,"Motor vehicle body, trailer, and parts manufacturing",552460.0,9.226330338130927e-05,1.3955957616110852e-08,0.0009427927051302409,0.0013936682030492586
+VEN,3364,Aerospace product and parts manufacturing,532305.0,8.889732778189883e-05,2.2282017841895555e-10,1.5052585035562164e-05,0.0013428240104697816
+VEN,3365AO,All other transportation equipment manufacturing,195544.0,3.2656726996334105e-05,5.855838262921339e-09,0.000395590309785083,0.000493290835711299
+VEN,337,Furniture and related products,53247.0,8.892488352359583e-06,1.3537570858804912e-08,0.000914528648047137,0.00013432402492083385
+VEN,3391,Medical equipment and supplies manufacturing,4161.0,6.949057042494078e-07,5.8916331613987e-09,0.00039800842899220747,1.049678418869776e-05
+VEN,3399,Other miscellaneous manufacturing,349092.0,5.82999332150527e-05,2.0129374864541556e-08,0.0013598370175052464,0.0008806400831532994
+VEN,4231,Motor vehicle and motor vehicle parts and supplies,,,0.0,0.0,
+VEN,4234,Professional and commercial equipment and supplies,,,0.0,0.0,
+VEN,4236,Household appliances and electrical and electronic goods,,,0.0,0.0,
+VEN,4238,"Machinery, equipment, and supplies",,,0.0,0.0,
+VEN,423X,Other durable goods merchant wholesalers,,,0.0,0.0,
+VEN,4242,Drugs and druggists' sundries,,,0.0,0.0,
+VEN,4244,Grocery and related product wholesalers,,,0.0,0.0,
+VEN,4247,Petroleum and petroleum products,,,0.0,0.0,
+VEN,424X,Other nondurable goods merchant wholesalers,,,0.0,0.0,
+VEN,425,Wholesale electronic markets and agents and brokers,,,0.0,0.0,
+VEN,42ID,Customs duties,,,0.0,0.0,
+VEN,441,Motor vehicle and parts dealers,,,0.0,0.0,
+VEN,444,Building material and garden equipment and supplies dealers,,,0.0,0.0,
+VEN,445,Food and beverage stores,,,0.0,0.0,
+VEN,446,Health and personal care stores,,,0.0,0.0,
+VEN,447,Gasoline stations,,,0.0,0.0,
+VEN,448,Clothing and clothing accessories stores,,,0.0,0.0,
+VEN,452,General merchandise stores,,,0.0,0.0,
+VEN,454,Nonstore retailers,,,3.0749093405186675e-09,0.00020772505727813416,
+VEN,481,Air transportation,,,7.289264536076722e-07,0.049242521505255314,
+VEN,482,Rail transportation,,,2.233208016108946e-09,0.00015086404563133263,
+VEN,483,Water transportation,,,7.411038038659753e-08,0.005006516064669915,
+VEN,484,Truck transportation,,,2.333335170486124e-08,0.0015762812111285156,
+VEN,485,Transit and ground passenger transportation,,,7.981476125183549e-08,0.005391874691785723,
+VEN,486,Pipeline transportation,,,0.0,0.0,
+VEN,48A,Scenic and sightseeing transportation and support activities,,,1.6510658157235267e-08,0.0011153751319487293,
+VEN,492,Couriers and messengers,,,1.9039280470447352e-08,0.0012861958478395429,
+VEN,493,Warehousing and storage,,,1.596621424175827e-10,1.0785953017153884e-05,
+VEN,4A0X,All other retail,,,0.0,0.0,
+VEN,5111,"Newspaper, periodical, book, and directory publishers",,,1.0511925455794736e-08,0.0007101316089664342,
+VEN,5112,Software publishers,,,6.7735518119317604e-09,0.0004575863163083043,
+VEN,512,Motion picture and sound recording industries,,,2.4817130900632582e-09,0.00016765177008253848,
+VEN,515,Broadcasting (except internet),,,1.3468549813192571e-09,9.098659412595599e-05,
+VEN,5171,Wired telecommunications carriers,,,2.4222959785845403e-08,0.0016363785568103742,
+VEN,5172,Wireless telecommunications carriers (except satellite),,,2.7717951355702362e-08,0.001872482208540371,
+VEN,5174OT,"Other telecommunications, including satellite",,,2.12870901344422e-09,0.0001438046305689111,
+VEN,518,"Data processing, hosting, and related services",,,1.2944626141659531e-08,0.000874472353148044,
+VEN,519,Other information services,,,8.130048601817803e-09,0.0005492242614222093,
+VEN,521CI,"Federal reserve banks, credit intermediation, and related activities",,,7.994998713376788e-08,0.0054010098567480675,
+VEN,523,"Securities, commodity contracts, and investments",,,8.666855851519032e-08,0.005854881977998251,
+VEN,524113,Direct life insurance carriers,,,8.409347479361348e-09,0.0005680922568362352,
+VEN,5241X,"Insurance carriers, except direct life",,,2.0637668052584407e-08,0.0013941746905575768,
+VEN,5242,"Agencies, brokerages, and other insurance related activities",,,0.0,0.0,
+VEN,525,"Funds, trusts, and other financial vehicles",,,8.201739788929626e-08,0.005540673492339068,
+VEN,532RL,Rental and leasing services and lessors of intangible assets,,,2.945088267574609e-08,0.0019895501340794165,
+VEN,5411,Legal services,,,8.319542601198946e-09,0.0005620255012365418,
+VEN,5412,"Accounting, tax preparation, bookkeeping, and payroll services",,,2.6263874408588147e-09,0.00017742522499702212,
+VEN,5413,"Architectural, engineering, and related services",,,0.0,0.0,
+VEN,5415,Computer systems design and related services,,,0.0,0.0,
+VEN,5416,"Management, scientific, and technical consulting services",,,0.0,0.0,
+VEN,5417,Scientific research and development services,,,1.1080397900902662e-09,7.485346830554954e-05,
+VEN,5418,"Advertising, public relations, and related services",,,1.7087668909699466e-10,1.1543550101605231e-05,
+VEN,541X,"Specialized design services and other professional, scientific, and technical services",,,1.2134530456358604e-08,0.0008197464558955676,
+VEN,55,Management of companies and enterprises,,,0.0,0.0,
+VEN,5613,Employment services,,,1.8423926833976404e-10,1.2446257216254561e-05,
+VEN,5617,Services to buildings and dwellings,,,2.43389520984834e-08,0.0016442144007713826,
+VEN,561X,Other administrative and support services,,,1.4009314116112576e-08,0.0009463971957969963,
+VEN,562,Waste management and remediation services,,,3.1614711573893336e-08,0.0021357272833972245,
+VEN,61,Educational services,,,2.8140305208599e-07,0.01901014262194283,
+VEN,6211,Offices of physicians,,,1.2424110788513545e-07,0.008393090134938868,
+VEN,6212,Offices of dentists,,,1.626641024807023e-08,0.0010988749996512308,
+VEN,6213,Offices of other health practitioners,,,1.972567328107024e-08,0.0013325650152238044,
+VEN,6214,Outpatient care centers,,,4.143957772444478e-08,0.0027994447000313847,
+VEN,6215OH,Other ambulatory health care services,,,7.247317372556033e-08,0.004895914804672204,
+VEN,622,Hospitals,,,5.078430778168428e-07,0.034307265920891686,
+VEN,623,Nursing and residential care facilities,,,7.470661137031805e-08,0.005046794362833806,
+VEN,624,Social assistance,,,1.1316145361623987e-07,0.007644605687836423,
+VEN,711AS,"Performing arts, spectator sports, museums, and related activities",,,2.0319684756457578e-08,0.001372693374822169,
+VEN,713,"Amusements, gambling, and recreation industries",,,2.0926111435961258e-07,0.01413660441745073,
+VEN,721,Accommodation,,,5.750424654832098e-08,0.003884691086850405,
+VEN,722,Food services and drinking places,,,4.648120955575793e-07,0.03140031411689732,
+VEN,811,Repair and maintenance,,,6.076132207378205e-08,0.004104722354494702,
+VEN,812,Personal and laundry services,,,7.6605036942768e-08,0.005175042228739641,
+VEN,813,"Religious, grantmaking, civic, professional, and similar organizations",,,8.06698027283427e-08,0.0054496368954846065,
+VEN,814,Private households,,,0.0,0.0,
+VEN,GFE,Federal government enterprises,,,5.5323891890431345e-09,0.00037373975422152404,
+VEN,GFGD,Federal general government (defense),,,0.0,0.0,
+VEN,GFGN,Federal general government (nondefense),,,0.0,0.0,
+VEN,GSLE,State and local government enterprises,,,2.1842544447985147e-07,0.01475569941776747,
+VEN,GSLGE,State and local government (educational services),,,0.0,0.0,
+VEN,GSLGH,State and local government (hospitals and health services),,,0.0,0.0,
+VEN,GSLGO,State and local government (other services),,,0.0,0.0,
+VEN,HSO,Owner-occupied housing,,,1.3576901603333417e-07,0.00917185630824586,
+VEN,HST,Tenant-occupied housing,,,3.6104717209983766e-08,0.002439048966949269,
+VEN,ORE,Other real estate,,,3.4530222481876692e-09,0.000233268420254129,
+VEN,Other,,25635889.0,0.004281308699736757,0.0,0.0,0.06467060666147821
+VEN,Used,,,,8.597777637165484e-08,0.005808216289861762,

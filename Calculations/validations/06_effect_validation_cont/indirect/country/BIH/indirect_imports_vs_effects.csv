@@ -1,0 +1,141 @@
+iso3,usummary_code,usummary_desc,impVal,impVal_share,indirect,indirect_share,impVal_share_no_oil
+BIH,111,Crop production,9468.0,5.286739624120183e-05,1.3636149227530184e-09,0.009646835318759579,5.286739624120183e-05
+BIH,112,Animal production and aquaculture,,,3.1556288674534765e-10,0.002232436115467856,
+BIH,113FF,"Forestry, fishing, and related activities",,,3.626386767734068e-11,0.0002565471774086447,
+BIH,211,Oil and gas extraction,,,0.0,0.0,0.0
+BIH,212,"Mining, except oil and gas",635645.0,0.003549313063343762,2.0813836039942535e-12,1.472465908657087e-05,0.003549313063343762
+BIH,213,Support activities for mining,,,0.0,0.0,
+BIH,2211,"Electric power generation, transmission, and distribution",,,1.7274164112461664e-09,0.01222053335451264,
+BIH,2212NW,"Natural gas distribution and water, sewage and other systems",,,2.223317758687397e-09,0.015728766179845984,
+BIH,23EH,"Education, hospital, and health structures",,,0.0,0.0,
+BIH,23MR,Maintenance and repair construction,,,0.0,0.0,
+BIH,23OC,Office and commercial structures,,,0.0,0.0,
+BIH,23OR,Other residential construction,,,0.0,0.0,
+BIH,23OT,Other nonresidential structures,,,0.0,0.0,
+BIH,23PC,Power and communication structures,,,0.0,0.0,
+BIH,23SF,Single-family residential structures,,,0.0,0.0,
+BIH,23TH,Transportation structures and highways and streets,,,0.0,0.0,
+BIH,311,Food manufacturing,3311955.0,0.01849328657773866,1.1137880692218366e-08,0.07879445952446745,0.01849328657773866
+BIH,3121,Beverage manufacturing,906063.0,0.005059272458860589,3.2868633807164167e-09,0.023252774093302914,0.005059272458860589
+BIH,3122,Tobacco manufacturing,,,9.016452647116097e-10,0.006378650775580941,
+BIH,313TT,Textile mills and textile product mills,1560054.0,0.008711025874067585,6.106711753863982e-10,0.004320167053446755,0.008711025874067585
+BIH,315AL,Apparel and leather and allied products,27427734.0,0.1531509169176472,1.4027212776870802e-09,0.009923491550420799,0.1531509169176472
+BIH,321,Wood products,1207209.0,0.006740810788861958,8.845889717141753e-11,0.0006257986761899886,0.006740810788861958
+BIH,322,Paper products,59591.0,0.00033274408633390985,8.300335782376281e-10,0.005872036969303121,0.00033274408633390985
+BIH,323,Printing and related support activities,971574.0,0.005425072627339399,6.886338600083033e-11,0.00048717107238823197,0.005425072627339399
+BIH,324,Petroleum and coal products,,,5.762544567337815e-09,0.04076687452634254,
+BIH,3251,Basic chemical manufacturing,2299488.0,0.012839875712704766,1.792107213000612e-11,0.0001267818565851041,0.012839875712704766
+BIH,3252,"Resin, rubber, and artificial fibers manufacturing",,,0.0,0.0,
+BIH,3254,Pharmaceutical and medicine manufacturing,,,1.7570619908273382e-10,0.0012430259736482241,
+BIH,325X,Other chemical manufacturing,4814477.0,0.02688306540485347,3.108347308198589e-09,0.021989869790485204,0.02688306540485347
+BIH,326,Plastics and rubber products,1405442.0,0.007847703750319728,8.695756773200914e-10,0.006151775854263745,0.007847703750319728
+BIH,327,Nonmetallic mineral products,403743.0,0.0022544192184845322,1.7563137846923423e-10,0.0012424966584252564,0.0022544192184845322
+BIH,3311IS,Iron and steel mills and manufacturing from purchased steel,177705.0,0.0009922687631012644,2.304285239052197e-11,0.00016301567148962098,0.0009922687631012644
+BIH,3313NF,Nonferrous metal production and processing and foundries,254156.0,0.0014191556779762245,2.4007289627172672e-12,1.6983854137906558e-05,0.0014191556779762245
+BIH,332,Fabricated metal products,70699561.0,0.3947720432473616,1.0072353685058506e-09,0.007125643438683578,0.3947720432473616
+BIH,33311,Agricultural implement manufacturing,1252972.0,0.00699634212115876,1.0840510733336806e-10,0.0007669072849732007,0.00699634212115876
+BIH,33312,Construction machinery manufacturing,635371.0,0.0035477831027850284,0.0,0.0,0.0035477831027850284
+BIH,33313,Mining and oil and gas field machinery manufacturing,13634.0,7.61294972911434e-05,0.0,0.0,7.61294972911434e-05
+BIH,3332OM,Other machinery,13804416.0,0.07708106575310376,4.759432544610783e-10,0.0033670401520621267,0.07708106575310376
+BIH,3341,Computer and peripheral equipment manufacturing,245110.0,0.0013686446443473786,2.109996278712577e-11,0.000149270782273644,0.0013686446443473786
+BIH,3342,Communications equipment manufacturing,1178301.0,0.006579394366117909,5.537235940257363e-11,0.00039172938302065377,0.006579394366117909
+BIH,3344,Semiconductor and other electronic component manufacturing,27038.0,0.00015097472112057616,1.0141280684807444e-12,7.174405549195815e-06,0.00015097472112057616
+BIH,3345,"Navigational, measuring, electromedical, and control instruments manufacturing",1252055.0,0.006991221778704896,2.9789803351639626e-11,0.00021074668685152706,0.006991221778704896
+BIH,334X,Other computer and electronic product manufacturing,,,2.2392561410677798e-11,0.00015841521582786686,
+BIH,335,"Electrical equipment, appliances, and components",5976897.0,0.03337378348033909,9.001829093693435e-10,0.006368305405396909,0.03337378348033909
+BIH,336111,Automobile manufacturing,,,3.3664932324755543e-10,0.0023816112066186606,
+BIH,336112,Light truck and utility vehicle manufacturing,,,1.4849406387150434e-08,0.10505148895625768,
+BIH,33612,Heavy duty truck manufacturing,,,0.0,0.0,
+BIH,3362BP,"Motor vehicle body, trailer, and parts manufacturing",10473297.0,0.058480771277016314,3.0928722892457184e-09,0.021880392432250057,0.058480771277016314
+BIH,3364,Aerospace product and parts manufacturing,,,3.47066131587941e-11,0.0002455304470699331,
+BIH,3365AO,All other transportation equipment manufacturing,3154562.0,0.017614435912699424,2.010461824474317e-09,0.014222925997466123,0.017614435912699424
+BIH,337,Furniture and related products,12373688.0,0.0690921700951631,3.0351600448301118e-09,0.021472109633005422,0.0690921700951631
+BIH,3391,Medical equipment and supplies manufacturing,18808.0,0.0001050200663819734,3.1784556321223846e-10,0.002248584812284437,0.0001050200663819734
+BIH,3399,Other miscellaneous manufacturing,8241538.0,0.04601908059599937,8.72766355537414e-10,0.006174348170541659,0.04601908059599937
+BIH,4231,Motor vehicle and motor vehicle parts and supplies,,,0.0,0.0,
+BIH,4234,Professional and commercial equipment and supplies,,,0.0,0.0,
+BIH,4236,Household appliances and electrical and electronic goods,,,0.0,0.0,
+BIH,4238,"Machinery, equipment, and supplies",,,0.0,0.0,
+BIH,423X,Other durable goods merchant wholesalers,,,0.0,0.0,
+BIH,4242,Drugs and druggists' sundries,,,0.0,0.0,
+BIH,4244,Grocery and related product wholesalers,,,0.0,0.0,
+BIH,4247,Petroleum and petroleum products,,,0.0,0.0,
+BIH,424X,Other nondurable goods merchant wholesalers,,,0.0,0.0,
+BIH,425,Wholesale electronic markets and agents and brokers,,,0.0,0.0,
+BIH,42ID,Customs duties,,,0.0,0.0,
+BIH,441,Motor vehicle and parts dealers,,,0.0,0.0,
+BIH,444,Building material and garden equipment and supplies dealers,,,0.0,0.0,
+BIH,445,Food and beverage stores,,,0.0,0.0,
+BIH,446,Health and personal care stores,,,0.0,0.0,
+BIH,447,Gasoline stations,,,0.0,0.0,
+BIH,448,Clothing and clothing accessories stores,,,0.0,0.0,
+BIH,452,General merchandise stores,,,0.0,0.0,
+BIH,454,Nonstore retailers,,,9.763917699857944e-11,0.0006907441723084716,
+BIH,481,Air transportation,,,8.51465219889309e-10,0.006023654199486426,
+BIH,482,Rail transportation,,,1.5827819515123453e-11,0.00011197323068977617,
+BIH,483,Water transportation,,,2.7654028553065315e-10,0.0019563723959041416,
+BIH,484,Truck transportation,,,1.501919469345542e-10,0.0010625264905112413,
+BIH,485,Transit and ground passenger transportation,,,8.144215750450988e-10,0.005761590521936427,
+BIH,486,Pipeline transportation,,,0.0,0.0,
+BIH,48A,Scenic and sightseeing transportation and support activities,,,1.1584268823167014e-10,0.0008195241322214084,
+BIH,492,Couriers and messengers,,,5.586539065281085e-11,0.00039521731146634594,
+BIH,493,Warehousing and storage,,,2.0257434609326016e-12,1.433103527953279e-05,
+BIH,4A0X,All other retail,,,0.0,0.0,
+BIH,5111,"Newspaper, periodical, book, and directory publishers",,,3.7472591494490626e-10,0.0026509824224032518,
+BIH,5112,Software publishers,,,1.575155231635986e-10,0.001114336816613671,
+BIH,512,Motion picture and sound recording industries,,,7.535485438366459e-11,0.000533094687201502,
+BIH,515,Broadcasting (except internet),,,6.47272481247543e-10,0.004579101422822211,
+BIH,5171,Wired telecommunications carriers,,,2.26284543559807e-09,0.016008403035770495,
+BIH,5172,Wireless telecommunications carriers (except satellite),,,2.1578749269582835e-09,0.01526579367202869,
+BIH,5174OT,"Other telecommunications, including satellite",,,1.1934978867643112e-10,0.0008443349639836869,
+BIH,518,"Data processing, hosting, and related services",,,3.74345293711434e-10,0.0026482897338026335,
+BIH,519,Other information services,,,4.1847105521328216e-10,0.0029604555420674715,
+BIH,521CI,"Federal reserve banks, credit intermediation, and related activities",,,9.138495946277583e-10,0.006464989784426052,
+BIH,523,"Securities, commodity contracts, and investments",,,8.631094491173163e-10,0.006106030800022366,
+BIH,524113,Direct life insurance carriers,,,2.3722779144003464e-10,0.0016782578416161527,
+BIH,5241X,"Insurance carriers, except direct life",,,6.75616026827465e-10,0.004779616621062518,
+BIH,5242,"Agencies, brokerages, and other insurance related activities",,,0.0,0.0,
+BIH,525,"Funds, trusts, and other financial vehicles",,,7.385469793572853e-10,0.005224818947157779,
+BIH,532RL,Rental and leasing services and lessors of intangible assets,,,7.35448952364477e-10,0.005202902087996135,
+BIH,5411,Legal services,,,2.0819576883145324e-10,0.0014728720421486178,
+BIH,5412,"Accounting, tax preparation, bookkeeping, and payroll services",,,6.786888112688894e-11,0.0004801354902876435,
+BIH,5413,"Architectural, engineering, and related services",,,0.0,0.0,
+BIH,5415,Computer systems design and related services,,,0.0,0.0,
+BIH,5416,"Management, scientific, and technical consulting services",,,0.0,0.0,
+BIH,5417,Scientific research and development services,,,4.401626717945631e-11,0.00031139119537462344,
+BIH,5418,"Advertising, public relations, and related services",,,1.645486659682384e-11,0.00011640924839047718,
+BIH,541X,"Specialized design services and other professional, scientific, and technical services",,,6.692351692063435e-10,0.004734475517341582,
+BIH,55,Management of companies and enterprises,,,0.0,0.0,
+BIH,5613,Employment services,,,4.678297404155943e-12,3.3096414447385024e-05,
+BIH,5617,Services to buildings and dwellings,,,6.63542270564082e-10,0.004694201349926773,
+BIH,561X,Other administrative and support services,,,5.262688833095481e-10,0.00372306665610922,
+BIH,562,Waste management and remediation services,,,1.0474457720157787e-09,0.00741011021466899,
+BIH,61,Educational services,,,2.721655779801145e-09,0.01925423714862592,
+BIH,6211,Offices of physicians,,,2.4118448021173074e-09,0.017062492667254327,
+BIH,6212,Offices of dentists,,,5.06963048700577e-10,0.0035864883567254388,
+BIH,6213,Offices of other health practitioners,,,2.478376004917838e-10,0.0017533164809562614,
+BIH,6214,Outpatient care centers,,,9.085006611390711e-10,0.00642714898374591,
+BIH,6215OH,Other ambulatory health care services,,,1.6035123737449283e-09,0.011343979552438748,
+BIH,622,Hospitals,,,1.0284695279864442e-08,0.07275863589712729,
+BIH,623,Nursing and residential care facilities,,,1.3450228830606226e-09,0.009515306730915819,
+BIH,624,Social assistance,,,5.9441286522163285e-09,0.04205148335109354,
+BIH,711AS,"Performing arts, spectator sports, museums, and related activities",,,6.748183860995242e-10,0.004773973745924099,
+BIH,713,"Amusements, gambling, and recreation industries",,,3.632132769625172e-09,0.02569536758493691,
+BIH,721,Accommodation,,,2.089715039754103e-09,0.014783599471721415,
+BIH,722,Food services and drinking places,,,9.963220089582542e-09,0.07048437344372491,
+BIH,811,Repair and maintenance,,,6.338479476837309e-09,0.04484130135576543,
+BIH,812,Personal and laundry services,,,2.4494327472929993e-09,0.0173284069741676,
+BIH,813,"Religious, grantmaking, civic, professional, and similar organizations",,,2.063522950530249e-09,0.014598304659248506,
+BIH,814,Private households,,,0.0,0.0,
+BIH,GFE,Federal government enterprises,,,6.969734328838715e-11,0.0004930708674709212,
+BIH,GFGD,Federal general government (defense),,,0.0,0.0,
+BIH,GFGN,Federal general government (nondefense),,,0.0,0.0,
+BIH,GSLE,State and local government enterprises,,,2.4962564273535893e-09,0.01765965909162819,
+BIH,GSLGE,State and local government (educational services),,,0.0,0.0,
+BIH,GSLGH,State and local government (hospitals and health services),,,0.0,0.0,
+BIH,GSLGO,State and local government (other services),,,0.0,0.0,
+BIH,HSO,Owner-occupied housing,,,4.347601041029383e-09,0.030756917201964766,
+BIH,HST,Tenant-occupied housing,,,5.301394411994454e-10,0.003750448751987271,
+BIH,ORE,Other real estate,,,6.658287552685663e-11,0.0004710376987956966,
+BIH,Other,,4298032.0,0.023999341022535405,0.0,0.0,0.023999341022535405
+BIH,Used,,,,2.976893982210406e-09,0.021059908870615672,

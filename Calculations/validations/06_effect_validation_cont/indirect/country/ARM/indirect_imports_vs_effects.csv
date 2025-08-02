@@ -1,0 +1,141 @@
+iso3,usummary_code,usummary_desc,impVal,impVal_share,indirect,indirect_share,impVal_share_no_oil
+ARM,111,Crop production,215094.0,0.0017691107702816236,1.6692236097110564e-10,0.0032998944882289354,0.0017691107702816236
+ARM,112,Animal production and aquaculture,311624.0,0.002563053244991681,1.0222883661399527e-10,0.00202096575029258,0.002563053244991681
+ARM,113FF,"Forestry, fishing, and related activities",100804.0,0.0008290953819607651,5.795976240251902e-12,0.00011458087423304454,0.0008290953819607651
+ARM,211,Oil and gas extraction,,,0.0,0.0,0.0
+ARM,212,"Mining, except oil and gas",89580.0,0.0007367799325031281,3.1036088357613625e-13,6.135536084659363e-06,0.0007367799325031281
+ARM,213,Support activities for mining,,,0.0,0.0,
+ARM,2211,"Electric power generation, transmission, and distribution",,,1.5394783727574467e-10,0.003043400636952002,
+ARM,2212NW,"Natural gas distribution and water, sewage and other systems",,,1.318326702029186e-10,0.0026062050598866064,
+ARM,23EH,"Education, hospital, and health structures",,,0.0,0.0,
+ARM,23MR,Maintenance and repair construction,,,0.0,0.0,
+ARM,23OC,Office and commercial structures,,,0.0,0.0,
+ARM,23OR,Other residential construction,,,0.0,0.0,
+ARM,23OT,Other nonresidential structures,,,0.0,0.0,
+ARM,23PC,Power and communication structures,,,0.0,0.0,
+ARM,23SF,Single-family residential structures,,,0.0,0.0,
+ARM,23TH,Transportation structures and highways and streets,,,0.0,0.0,
+ARM,311,Food manufacturing,8320360.0,0.06843351506141691,5.298518823728555e-09,0.10474661968881273,0.06843351506141691
+ARM,3121,Beverage manufacturing,10614933.0,0.08730597922823428,1.327974194096595e-09,0.026252772235639377,0.08730597922823428
+ARM,3122,Tobacco manufacturing,,,1.4986013834557319e-10,0.0029625907616858166,
+ARM,313TT,Textile mills and textile product mills,230105.0,0.0018925736366223744,1.048568079149957e-10,0.0020729182146655,0.0018925736366223744
+ARM,315AL,Apparel and leather and allied products,8267713.0,0.06800050263557976,5.664111049990735e-10,0.011197402628289239,0.06800050263557976
+ARM,321,Wood products,387341.0,0.003185812411650973,1.661197002171315e-11,0.0003284026657325109,0.003185812411650973
+ARM,322,Paper products,95825.0,0.0007881439722271964,1.1524761330005248e-10,0.0022783344406218527,0.0007881439722271964
+ARM,323,Printing and related support activities,18231.0,0.00014994680675892532,1.1876131884846988e-11,0.00023477970189428546,0.00014994680675892532
+ARM,324,Petroleum and coal products,,,4.135879167692463e-10,0.008176235221002958,
+ARM,3251,Basic chemical manufacturing,635914.0,0.00523028213884566,5.4989812504973686e-12,0.00010870956901053909,0.00523028213884566
+ARM,3252,"Resin, rubber, and artificial fibers manufacturing",,,0.0,0.0,
+ARM,3254,Pharmaceutical and medicine manufacturing,4500.0,3.701171797570972e-05,9.866712806853228e-11,0.0019505541989014172,3.701171797570972e-05
+ARM,325X,Other chemical manufacturing,362193.0,0.002978974481950273,3.9391439069358407e-10,0.007787308537463275,0.002978974481950273
+ARM,326,Plastics and rubber products,269035.0,0.0022127661212433475,1.3926439378697735e-10,0.0027531230854309584,0.0022127661212433475
+ARM,327,Nonmetallic mineral products,80424.0,0.0006614734236618841,3.437603153984629e-11,0.0006795810719760839,0.0006614734236618841
+ARM,3311IS,Iron and steel mills and manufacturing from purchased steel,,,6.436729393081762e-12,0.00012724794762595309,
+ARM,3313NF,Nonferrous metal production and processing and foundries,2160611.0,0.017770649997159146,2.30004980659858e-12,4.546977190647635e-05,0.017770649997159146
+ARM,332,Fabricated metal products,205431.0,0.0016896342745484497,1.0237702097361947e-10,0.002023895212521132,0.0016896342745484497
+ARM,33311,Agricultural implement manufacturing,20955.0,0.00017235123337355491,2.02689263779314e-11,0.00040069717470885637,0.00017235123337355491
+ARM,33312,Construction machinery manufacturing,,,0.0,0.0,
+ARM,33313,Mining and oil and gas field machinery manufacturing,,,0.0,0.0,
+ARM,3332OM,Other machinery,350030.0,0.0028789359206750384,1.5486248005253484e-10,0.0030614822447142523,0.0028789359206750384
+ARM,3341,Computer and peripheral equipment manufacturing,30613.0,0.0002517866049756448,3.5324108365771164e-12,6.983236387243978e-05,0.0002517866049756448
+ARM,3342,Communications equipment manufacturing,24639.0,0.00020265149315633595,3.1457374186466967e-12,6.218820240030418e-05,0.00020265149315633595
+ARM,3344,Semiconductor and other electronic component manufacturing,344206.0,0.0028310345327882533,4.690553187936577e-13,9.27277239644117e-06,0.0028310345327882533
+ARM,3345,"Navigational, measuring, electromedical, and control instruments manufacturing",211802.0,0.0017420346423758378,3.261372926328236e-12,6.447420513967305e-05,0.0017420346423758378
+ARM,334X,Other computer and electronic product manufacturing,6559.0,5.3946635156151125e-05,4.716355944397339e-12,9.323781963601989e-05,5.3946635156151125e-05
+ARM,335,"Electrical equipment, appliances, and components",232307.0,0.0019106847039518217,3.8504101716474543e-10,0.0076118904794543795,0.0019106847039518217
+ARM,336111,Automobile manufacturing,,,6.682677378251092e-11,0.0013211010267773654,
+ARM,336112,Light truck and utility vehicle manufacturing,,,2.241019141689719e-09,0.04430279245186056,
+ARM,33612,Heavy duty truck manufacturing,,,0.0,0.0,
+ARM,3362BP,"Motor vehicle body, trailer, and parts manufacturing",14029.0,0.00011538608699582925,1.0048212372474043e-09,0.019864349169025092,0.00011538608699582925
+ARM,3364,Aerospace product and parts manufacturing,,,1.7776334882581894e-12,3.51421038851097e-05,
+ARM,3365AO,All other transportation equipment manufacturing,,,1.210060741239307e-10,0.002392173671165011,
+ARM,337,Furniture and related products,124863.0,0.0010269764759113429,2.2129789597144477e-10,0.00437484650303526,0.0010269764759113429
+ARM,3391,Medical equipment and supplies manufacturing,1674062.0,0.013768869026189458,7.841735977751655e-11,0.0015502357611397873,0.013768869026189458
+ARM,3399,Other miscellaneous manufacturing,83157422.0,0.6839553445891287,1.328864177007708e-09,0.026270366341581287,0.6839553445891287
+ARM,4231,Motor vehicle and motor vehicle parts and supplies,,,0.0,0.0,
+ARM,4234,Professional and commercial equipment and supplies,,,0.0,0.0,
+ARM,4236,Household appliances and electrical and electronic goods,,,0.0,0.0,
+ARM,4238,"Machinery, equipment, and supplies",,,0.0,0.0,
+ARM,423X,Other durable goods merchant wholesalers,,,0.0,0.0,
+ARM,4242,Drugs and druggists' sundries,,,0.0,0.0,
+ARM,4244,Grocery and related product wholesalers,,,0.0,0.0,
+ARM,4247,Petroleum and petroleum products,,,0.0,0.0,
+ARM,424X,Other nondurable goods merchant wholesalers,,,0.0,0.0,
+ARM,425,Wholesale electronic markets and agents and brokers,,,0.0,0.0,
+ARM,42ID,Customs duties,,,0.0,0.0,
+ARM,441,Motor vehicle and parts dealers,,,0.0,0.0,
+ARM,444,Building material and garden equipment and supplies dealers,,,0.0,0.0,
+ARM,445,Food and beverage stores,,,0.0,0.0,
+ARM,446,Health and personal care stores,,,0.0,0.0,
+ARM,447,Gasoline stations,,,0.0,0.0,
+ARM,448,Clothing and clothing accessories stores,,,0.0,0.0,
+ARM,452,General merchandise stores,,,0.0,0.0,
+ARM,454,Nonstore retailers,,,5.421905520727248e-11,0.0010718585598392626,
+ARM,481,Air transportation,,,2.0889249661572167e-10,0.004129603692425149,
+ARM,482,Rail transportation,,,1.5862133561499225e-12,3.1357912029655016e-05,
+ARM,483,Water transportation,,,4.1701467593711285e-11,0.0008243978953027503,
+ARM,484,Truck transportation,,,1.4930984000710522e-11,0.0002951711892950511,
+ARM,485,Transit and ground passenger transportation,,,8.420998687534453e-11,0.0016647504260491636,
+ARM,486,Pipeline transportation,,,0.0,0.0,
+ARM,48A,Scenic and sightseeing transportation and support activities,,,1.5810807144492448e-11,0.0003125644464110632,
+ARM,492,Couriers and messengers,,,1.506208701146462e-11,0.0002977629696896056,
+ARM,493,Warehousing and storage,,,7.22735378936295e-13,1.4287783131780452e-05,
+ARM,4A0X,All other retail,,,0.0,0.0,
+ARM,5111,"Newspaper, periodical, book, and directory publishers",,,5.026296876571481e-11,0.0009936505368547735,
+ARM,5112,Software publishers,,,3.1029869741045976e-11,0.000613430672399033,
+ARM,512,Motion picture and sound recording industries,,,1.2304338737902102e-11,0.00024324493942146747,
+ARM,515,Broadcasting (except internet),,,1.1848362157174408e-11,0.00023423072109415033,
+ARM,5171,Wired telecommunications carriers,,,1.785308432111769e-10,0.003529383014139167,
+ARM,5172,Wireless telecommunications carriers (except satellite),,,1.771392285764543e-10,0.003501872131617833,
+ARM,5174OT,"Other telecommunications, including satellite",,,1.1447925959131124e-11,0.00022631448269970825,
+ARM,518,"Data processing, hosting, and related services",,,7.466343661309435e-11,0.0014760243116524652,
+ARM,519,Other information services,,,4.8985143072242754e-11,0.0009683891522309624,
+ARM,521CI,"Federal reserve banks, credit intermediation, and related activities",,,2.4760273543079937e-10,0.004894867872495143,
+ARM,523,"Securities, commodity contracts, and investments",,,2.1804884382041104e-10,0.00431061586776992,
+ARM,524113,Direct life insurance carriers,,,4.0993506888511325e-11,0.0008104021932567169,
+ARM,5241X,"Insurance carriers, except direct life",,,1.3228530877952738e-10,0.0026151532890838296,
+ARM,5242,"Agencies, brokerages, and other insurance related activities",,,0.0,0.0,
+ARM,525,"Funds, trusts, and other financial vehicles",,,1.6214895675294079e-10,0.0032055288791039984,
+ARM,532RL,Rental and leasing services and lessors of intangible assets,,,1.152537356755842e-10,0.0022784554740960645,
+ARM,5411,Legal services,,,4.165170690699512e-11,0.000823414174398793,
+ARM,5412,"Accounting, tax preparation, bookkeeping, and payroll services",,,3.0578103458538115e-11,0.0006044996876169915,
+ARM,5413,"Architectural, engineering, and related services",,,0.0,0.0,
+ARM,5415,Computer systems design and related services,,,0.0,0.0,
+ARM,5416,"Management, scientific, and technical consulting services",,,0.0,0.0,
+ARM,5417,Scientific research and development services,,,9.735272251914467e-12,0.00019245696657179182,
+ARM,5418,"Advertising, public relations, and related services",,,2.502713630052408e-12,4.947624072280499e-05,
+ARM,541X,"Specialized design services and other professional, scientific, and technical services",,,1.6327484945862323e-10,0.0032277866947268063,
+ARM,55,Management of companies and enterprises,,,0.0,0.0,
+ARM,5613,Employment services,,,1.2521434962282644e-12,2.4753672291938165e-05,
+ARM,5617,Services to buildings and dwellings,,,2.1404834119869283e-10,0.00423152977963438,
+ARM,561X,Other administrative and support services,,,9.498759629602792e-11,0.0018778133956638438,
+ARM,562,Waste management and remediation services,,,7.730370757955762e-11,0.001528219928578655,
+ARM,61,Educational services,,,1.324330635545575e-09,0.0261807425883824,
+ARM,6211,Offices of physicians,,,1.2202621545247439e-09,0.024123408838002226,
+ARM,6212,Offices of dentists,,,4.3523118402997823e-10,0.008604101792775916,
+ARM,6213,Offices of other health practitioners,,,7.311534971845977e-11,0.001445420123087289,
+ARM,6214,Outpatient care centers,,,5.871166482352312e-10,0.011606731298236639,
+ARM,6215OH,Other ambulatory health care services,,,3.7736709232296255e-10,0.007460184368055285,
+ARM,622,Hospitals,,,5.65373455327434e-09,0.11176889292554978,
+ARM,623,Nursing and residential care facilities,,,5.095387313151136e-10,0.010073090514799052,
+ARM,624,Social assistance,,,4.25004950879271e-09,0.08401939001565431,
+ARM,711AS,"Performing arts, spectator sports, museums, and related activities",,,1.301446634199729e-10,0.002572834789739877,
+ARM,713,"Amusements, gambling, and recreation industries",,,1.701030899546281e-09,0.03362774440203091,
+ARM,721,Accommodation,,,5.617998458380691e-10,0.011106242470952214,
+ARM,722,Food services and drinking places,,,1.1585247864980556e-08,0.22902920466739043,
+ARM,811,Repair and maintenance,,,7.193144163517605e-10,0.01422015399263176,
+ARM,812,Personal and laundry services,,,1.8099717596933622e-09,0.035781400400249755,
+ARM,813,"Religious, grantmaking, civic, professional, and similar organizations",,,9.095230046280704e-10,0.017980394792098117,
+ARM,814,Private households,,,0.0,0.0,
+ARM,GFE,Federal government enterprises,,,4.254353768318387e-12,8.410448108555085e-05,
+ARM,GFGD,Federal general government (defense),,,0.0,0.0,
+ARM,GFGN,Federal general government (nondefense),,,0.0,0.0,
+ARM,GSLE,State and local government enterprises,,,1.6601051189189203e-10,0.0032818681091800884,
+ARM,GSLGE,State and local government (educational services),,,0.0,0.0,
+ARM,GSLGH,State and local government (hospitals and health services),,,0.0,0.0,
+ARM,GSLGO,State and local government (other services),,,0.0,0.0,
+ARM,HSO,Owner-occupied housing,,,3.842876486119803e-10,0.007596997107946741,
+ARM,HST,Tenant-occupied housing,,,8.770769315739804e-11,0.001733896714266295,
+ARM,ORE,Other real estate,,,1.4232021794433652e-11,0.0002813533789156937,
+ARM,Other,,3021911.0,0.024854692817709984,0.0,0.0,0.024854692817709984
+ARM,Used,,,,5.067198370460241e-10,0.010017363687025039,

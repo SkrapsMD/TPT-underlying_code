@@ -4,6 +4,7 @@ import numpy as np
 import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.cluster import KMeans
+from sklearn.preprocessing import StandardScaler
 from scipy.spatial.distance import pdist, squareform
 from skbio.stats.distance import mantel
 script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -198,6 +199,8 @@ def within_country_cos_check(scenario = default_scenario):
             
     """
     results = []
+    top_industries = []
+    
     for (country, scen), data in combined_data.items():
         if scen != scenario:
             continue
@@ -214,9 +217,50 @@ def within_country_cos_check(scenario = default_scenario):
             direct_sim = cosine_similarity([import_values], [direct_effects])[0][0]
             indirect_sim = cosine_similarity([import_values], [indirect_effects])[0][0]
             results.append({'iso3': country, 'scenario': scenario, 'total_sim': total_sim, 'direct_sim': direct_sim, 'indirect_sim': indirect_sim})
-            results.sort(key=lambda x: x['direct_sim'], reverse=False)
+            
+            # Get top 5 industries for each effect type
+            data_clean = data.dropna(subset=['usummary_code'])
+            
+            # Top 5 direct effects
+            top_direct = data_clean.nlargest(5, 'direct')[['usummary_code', 'direct']].to_dict('records')
+            # Top 5 indirect effects  
+            top_indirect = data_clean.nlargest(5, 'indirect')[['usummary_code', 'indirect']].to_dict('records')
+            # Top 5 total effects
+            top_total = data_clean.nlargest(5, 'total')[['usummary_code', 'total']].to_dict('records')
+            
+            top_industries.append({
+                'iso3': country,
+                'scenario': scenario,
+                'top_direct': top_direct,
+                'top_indirect': top_indirect,
+                'top_total': top_total
+            })
+            
+    results.sort(key=lambda x: x['direct_sim'], reverse=False)
+    
+    # Print top industries for each country
+    print(f"\nTop 5 Industries by Effect Type ({scenario} scenario):")
+    print("="*60)
+    
+    for country_data in top_industries:
+        country = country_data['iso3']
+        print(f"\n{country}:")
+        print("-" * 30)
+        
+        print("Top 5 Direct Effects:")
+        for i, industry in enumerate(country_data['top_direct'], 1):
+            print(f"  {i}. {industry['usummary_code']}: {industry['direct']:.6f}")
+            
+        print("\nTop 5 Indirect Effects:")
+        for i, industry in enumerate(country_data['top_indirect'], 1):
+            print(f"  {i}. {industry['usummary_code']}: {industry['indirect']:.6f}")
+            
+        print("\nTop 5 Total Effects:")
+        for i, industry in enumerate(country_data['top_total'], 1):
+            print(f"  {i}. {industry['usummary_code']}: {industry['total']:.6f}")
+    
     return pd.DataFrame(results)
-
+within_country_cos_check().to_csv(os.path.join(validations_dir, '05_cos_validation', f'within_country_cosine_similarity_{default_scenario}.csv'), index=False)
 
 # 2 - Cross country similarity validation: if two countries have similar baskets do they see similar effects?
 """This one uses a distance matrix between countries, and then I run a Mantel test"""
@@ -340,6 +384,7 @@ def cluster_by_imports_and_effects(scenario='TEN', n_clusters=3):
                 # Import shares and rankings
                 'impVal_share': data['impVal_share'].values,
                 'impVal_global_rank': data['impVal_global_rank'].values,
+                'impVal_country_rank': data['impVal_country_rank'].values,
                 'impVal': data['impVal'].values,  # Raw import values
                 
                 # Effect shares
@@ -355,14 +400,20 @@ def cluster_by_imports_and_effects(scenario='TEN', n_clusters=3):
                 # Effect global rankings
                 'direct_global_rank': data['direct_global_rank'].values,
                 'indirect_global_rank': data['indirect_global_rank'].values,
-                'total_global_rank': data['total_global_rank'].values
+                'total_global_rank': data['total_global_rank'].values,
+                
+                # Effect country rankings
+                'direct_country_rank': data['direct_country_rank'].values,
+                'indirect_country_rank': data['indirect_country_rank'].values,
+                'total_country_rank': data['total_country_rank'].values
             }
     
     # Perform clustering for each metric type
     cluster_results = pd.DataFrame({'country': countries})
     
-    for metric_name in ['impVal_share', 'impVal_global_rank', 'impVal', 'direct_share', 'indirect_share', 
-                       'total_share', 'direct', 'indirect', 'total', 'direct_global_rank', 'indirect_global_rank', 'total_global_rank']:
+    for metric_name in ['impVal_share', 'impVal_global_rank', 'impVal_country_rank', 'impVal', 'direct_share', 'indirect_share', 
+                       'total_share', 'direct', 'indirect', 'total', 'direct_global_rank', 'indirect_global_rank', 'total_global_rank',
+                       'direct_country_rank', 'indirect_country_rank', 'total_country_rank']:
         
         # Create matrix with countries as rows, BEA codes as columns
         metric_matrix = []
@@ -379,9 +430,13 @@ def cluster_by_imports_and_effects(scenario='TEN', n_clusters=3):
         if len(metric_matrix) > 0:
             metric_matrix = np.array(metric_matrix)
             
+            # Standardize the data before clustering
+            scaler = StandardScaler()
+            metric_matrix_scaled = scaler.fit_transform(metric_matrix)
+            
             # Perform K-means clustering
             kmeans = KMeans(n_clusters=min(n_clusters, len(valid_countries)), random_state=42, n_init=10)
-            cluster_labels = kmeans.fit_predict(metric_matrix)
+            cluster_labels = kmeans.fit_predict(metric_matrix_scaled)
             
             # Add cluster assignments to results
             cluster_df = pd.DataFrame({
@@ -409,69 +464,162 @@ def compare_import_vs_effect_clusters(cluster_results, scenario='TEN'):
     # Effect types to compare against imports
     effect_types = ['direct', 'indirect', 'total']
     
-    for effect_type in effect_types:
-        # Create figure with subplots for share, rank, and raw value comparisons
-        fig, (ax1, ax2, ax3) = plt.subplots(1, 3, figsize=(20, 6))
+    # Initialize LaTeX output
+    save_dir = os.path.join(validations_dir, '05_cos_validation')
+    os.makedirs(save_dir, exist_ok=True)
+    tex_file_path = os.path.join(save_dir, f'cluster_concentration_analysis_{scenario}.tex')
+    
+    with open(tex_file_path, 'w') as tex_file:
         
-        # Compare share-based clusters
-        share_data = cluster_results[['country', 'impVal_share_cluster', f'{effect_type}_share_cluster']].dropna()
-        if len(share_data) > 0:
-            # Create confusion matrix / cross-tabulation
-            crosstab_share = pd.crosstab(share_data['impVal_share_cluster'], 
-                                       share_data[f'{effect_type}_share_cluster'], 
-                                       margins=True)
+        # Collect data for all effect types first
+        all_concentrations = {}
+        
+        for effect_type in effect_types:
+            # Create figure with single panel for share comparison only
+            fig, ax = plt.subplots(1, 1, figsize=(8, 6))
             
-            # Plot as heatmap
-            sns.heatmap(crosstab_share.iloc[:-1, :-1], annot=True, fmt='d', ax=ax1, cmap='Blues')
-            ax1.set_title(f'Import Share vs {effect_type.title()} Share Clusters')
-            ax1.set_xlabel(f'{effect_type.title()} Share Cluster')
-            ax1.set_ylabel('Import Share Cluster')
-        
-        # Compare rank-based clusters
-        rank_data = cluster_results[['country', 'impVal_global_rank_cluster', f'{effect_type}_global_rank_cluster']].dropna()
-        if len(rank_data) > 0:
-            crosstab_rank = pd.crosstab(rank_data['impVal_global_rank_cluster'], 
-                                      rank_data[f'{effect_type}_global_rank_cluster'], 
-                                      margins=True)
+            # Compare share-based clusters
+            share_data = cluster_results[['country', 'impVal_share_cluster', f'{effect_type}_share_cluster']].dropna()
+            if len(share_data) > 0:
+                # Create confusion matrix / cross-tabulation
+                crosstab_share = pd.crosstab(share_data['impVal_share_cluster'], 
+                                           share_data[f'{effect_type}_share_cluster'], 
+                                           margins=True)
+                
+                # Plot as heatmap
+                sns.heatmap(crosstab_share.iloc[:-1, :-1], annot=True, fmt='d', ax=ax, cmap='Blues')
+                ax.set_title(f'Import Share vs {effect_type.title()} Share Clusters')
+                ax.set_xlabel(f'{effect_type.title()} Share Cluster')
+                ax.set_ylabel('Import Share Cluster')
+                
+                # Analyze concentration of blocks
+                crosstab_data = crosstab_share.iloc[:-1, :-1]  # Remove margins
+                
+                # Calculate concentrations
+                row_concentrations = []
+                col_concentrations = []
+                
+                # Get row concentrations (import clusters)
+                for i, row in crosstab_data.iterrows():
+                    total_countries = row.sum()
+                    if total_countries > 0:
+                        max_concentration = row.max() / total_countries
+                        row_concentrations.append(max_concentration)
+                
+                # Get column concentrations (effect clusters)
+                for col_idx, col in crosstab_data.T.iterrows():
+                    total_countries = col.sum()
+                    if total_countries > 0:
+                        max_concentration = col.max() / total_countries
+                        col_concentrations.append(max_concentration)
+                
+                # Store concentrations for later use
+                all_concentrations[effect_type] = {
+                    'row_concentrations': row_concentrations,
+                    'col_concentrations': col_concentrations,
+                    'avg_row': np.mean(row_concentrations) if row_concentrations else 0,
+                    'avg_col': np.mean(col_concentrations) if col_concentrations else 0
+                }
+                
+                # Print console output
+                print(f"\n{effect_type.title()} Effect Cluster Comparison:")
+                print("Share-based clusters:")
+                print(crosstab_share)
+                print(f"\nConcentration Analysis for {effect_type.title()} Effects:")
+                for i, conc in enumerate(row_concentrations):
+                    print(f"Import cluster {i}: {conc:.2%} of countries go to dominant effect cluster")
+                print(f"Average row concentration: {all_concentrations[effect_type]['avg_row']:.2%}")
+                print(f"Average column concentration: {all_concentrations[effect_type]['avg_col']:.2%}")
+                is_concentrated = all_concentrations[effect_type]['avg_row'] > 0.6
+                print(f"Clustering appears {'CONCENTRATED' if is_concentrated else 'DISPERSED'} (threshold: 60%)")
             
-            sns.heatmap(crosstab_rank.iloc[:-1, :-1], annot=True, fmt='d', ax=ax2, cmap='Greens')
-            ax2.set_title(f'Import Rank vs {effect_type.title()} Rank Clusters')
-            ax2.set_xlabel(f'{effect_type.title()} Rank Cluster')
-            ax2.set_ylabel('Import Rank Cluster')
-        
-        # Compare raw value-based clusters
-        raw_data = cluster_results[['country', 'impVal_cluster', f'{effect_type}_cluster']].dropna()
-        if len(raw_data) > 0:
-            crosstab_raw = pd.crosstab(raw_data['impVal_cluster'], 
-                                     raw_data[f'{effect_type}_cluster'], 
-                                     margins=True)
+            plt.tight_layout()
             
-            sns.heatmap(crosstab_raw.iloc[:-1, :-1], annot=True, fmt='d', ax=ax3, cmap='Reds')
-            ax3.set_title(f'Import Raw vs {effect_type.title()} Raw Clusters')
-            ax3.set_xlabel(f'{effect_type.title()} Raw Cluster')
-            ax3.set_ylabel('Import Raw Cluster')
+            # Save the figure
+            plt.savefig(os.path.join(save_dir, f'import_vs_{effect_type}_clusters_{scenario}.png'), 
+                       dpi=300, bbox_inches='tight')
+            plt.close()
         
-        plt.tight_layout()
+        # Now create the combined LaTeX table
         
-        # Save the figure
-        save_dir = os.path.join(validations_dir, '05_cos_validation')
-        os.makedirs(save_dir, exist_ok=True)
-        plt.savefig(os.path.join(save_dir, f'import_vs_{effect_type}_clusters_{scenario}.png'), 
-                   dpi=300, bbox_inches='tight')
-        plt.close()
+        # Find the maximum number of clusters across all effect types
+        max_clusters = 0
+        for effect_type in effect_types:
+            if effect_type in all_concentrations:
+                max_clusters = max(max_clusters, 
+                                 len(all_concentrations[effect_type]['row_concentrations']),
+                                 len(all_concentrations[effect_type]['col_concentrations']))
         
-        # Print cluster comparison summary
-        print(f"\n{effect_type.title()} Effect Cluster Comparison:")
-        print("Share-based clusters:")
-        if 'share_data' in locals() and len(share_data) > 0:
-            print(crosstab_share)
-        print("\nRank-based clusters:")
-        if 'rank_data' in locals() and len(rank_data) > 0:
-            print(crosstab_rank)
-        print("\nRaw value-based clusters:")
-        if 'raw_data' in locals() and len(raw_data) > 0:
-            print(crosstab_raw)
-            
+        # Create the combined table with separators using longtable
+        column_spec = "l"
+        for i, effect_type in enumerate(effect_types):
+            if i > 0:
+                column_spec += "|"  # Add separator before each new effect type
+            column_spec += "cc"
+        tex_file.write(f"\\begin{{longtable}}{{{column_spec}}}\n")
+        tex_file.write("\\toprule\n")
+        
+        # Header row
+        header = "Cluster"
+        for effect_type in effect_types:
+            header += f" & \\multicolumn{{2}}{{c}}{{{effect_type.title()}}}"
+        header += " \\\\\n"
+        tex_file.write(header)
+        
+        # Subheader row
+        subheader = ""
+        for effect_type in effect_types:
+            subheader += " & Import$\\rightarrow$Effect & Effect$\\rightarrow$Import"
+        subheader += " \\\\\n"
+        tex_file.write(subheader)
+        tex_file.write("\\midrule\n")
+        tex_file.write("\\endfirsthead\n")
+        
+        # Repeat header on subsequent pages
+        tex_file.write("\\toprule\n")
+        tex_file.write(header)
+        tex_file.write(subheader)
+        tex_file.write("\\midrule\n")
+        tex_file.write("\\endhead\n")
+        
+        # Footer for page breaks
+        tex_file.write("\\midrule\n")
+        tex_file.write("\\multicolumn{" + str(1 + 2*len(effect_types)) + "}{r}{Continued on next page...} \\\\\n")
+        tex_file.write("\\endfoot\n")
+        
+        # Final footer
+        tex_file.write("\\bottomrule\n")
+        tex_file.write("\\endlastfoot\n")
+        
+        # Data rows
+        for i in range(max_clusters):
+            row = str(i)
+            for effect_type in effect_types:
+                if effect_type in all_concentrations:
+                    row_concs = all_concentrations[effect_type]['row_concentrations']
+                    col_concs = all_concentrations[effect_type]['col_concentrations']
+                    row_val = f"{row_concs[i]*100:.1f}\\%" if i < len(row_concs) else "---"
+                    col_val = f"{col_concs[i]*100:.1f}\\%" if i < len(col_concs) else "---"
+                    row += f" & {row_val} & {col_val}"
+                else:
+                    row += " & --- & ---"
+            row += " \\\\\n"
+            tex_file.write(row)
+        
+        # Average row
+        tex_file.write("\\midrule\n")
+        avg_row = "Average"
+        for effect_type in effect_types:
+            if effect_type in all_concentrations:
+                avg_row_val = f"{all_concentrations[effect_type]['avg_row']*100:.1f}\\%"
+                avg_col_val = f"{all_concentrations[effect_type]['avg_col']*100:.1f}\\%"
+                avg_row += f" & {avg_row_val} & {avg_col_val}"
+            else:
+                avg_row += " & --- & ---"
+        avg_row += " \\\\\n"
+        tex_file.write(avg_row)
+        
+        tex_file.write("\\end{longtable}\n")            
 
-cluster_results = cluster_by_imports_and_effects(scenario=default_scenario, n_clusters=3)
+cluster_results = cluster_by_imports_and_effects(scenario=default_scenario, n_clusters=30)
 compare_import_vs_effect_clusters(cluster_results, scenario=default_scenario)

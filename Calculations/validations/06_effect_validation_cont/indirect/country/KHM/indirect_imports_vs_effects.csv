@@ -1,0 +1,141 @@
+iso3,usummary_code,usummary_desc,impVal,impVal_share,indirect,indirect_share,impVal_share_no_oil
+KHM,111,Crop production,,,7.274873932005196e-08,0.015389769120443476,
+KHM,112,Animal production and aquaculture,2940608.0,0.00023224236816789563,1.1613032522290865e-08,0.002456700844257738,0.00023224236816789563
+KHM,113FF,"Forestry, fishing, and related activities",3377580.0,0.0002667533985748937,8.249244044630467e-10,0.00017451018732645378,0.0002667533985748937
+KHM,211,Oil and gas extraction,,,0.0,0.0,0.0
+KHM,212,"Mining, except oil and gas",67412.0,5.324042688768506e-06,6.371170971983597e-11,1.3478013667609074e-05,5.324042688768506e-06
+KHM,213,Support activities for mining,,,0.0,0.0,
+KHM,2211,"Electric power generation, transmission, and distribution",,,5.3671827264051087e-08,0.011354107818036065,
+KHM,2212NW,"Natural gas distribution and water, sewage and other systems",,,5.6448773337790613e-08,0.011941562107061713,
+KHM,23EH,"Education, hospital, and health structures",,,0.0,0.0,
+KHM,23MR,Maintenance and repair construction,,,0.0,0.0,
+KHM,23OC,Office and commercial structures,,,0.0,0.0,
+KHM,23OR,Other residential construction,,,0.0,0.0,
+KHM,23OT,Other nonresidential structures,,,0.0,0.0,
+KHM,23PC,Power and communication structures,,,0.0,0.0,
+KHM,23SF,Single-family residential structures,,,0.0,0.0,
+KHM,23TH,Transportation structures and highways and streets,,,0.0,0.0,
+KHM,311,Food manufacturing,135101620.0,0.010670011158277176,4.083064216083936e-07,0.0863759512216815,0.010670011158277176
+KHM,3121,Beverage manufacturing,,,1.285143922256492e-07,0.027186819228655804,
+KHM,3122,Tobacco manufacturing,,,1.7244986343098814e-08,0.003648123126064118,
+KHM,313TT,Textile mills and textile product mills,289123492.0,0.02283429973497033,4.459090968856617e-08,0.009433068000787031,0.02283429973497033
+KHM,315AL,Apparel and leather and allied products,6526512041.0,0.5154487141020244,4.933770449372387e-08,0.010437237650959401,0.5154487141020244
+KHM,321,Wood products,377512534.0,0.029815060323995318,5.3111711176848406e-09,0.001123561700509191,0.029815060323995318
+KHM,322,Paper products,68470213.0,0.005407617885852257,2.8096693259121584e-08,0.005943767910581751,0.005407617885852257
+KHM,323,Printing and related support activities,39750698.0,0.003139417508163901,3.892905199893633e-09,0.0008235319648710866,0.003139417508163901
+KHM,324,Petroleum and coal products,,,4.1626134476283504e-08,0.008805879042772089,
+KHM,3251,Basic chemical manufacturing,7040150.0,0.000556014643317712,2.57678536702935e-10,5.4511091521538375e-05,0.000556014643317712
+KHM,3252,"Resin, rubber, and artificial fibers manufacturing",257555.0,2.0341093791992118e-05,0.0,0.0,2.0341093791992118e-05
+KHM,3254,Pharmaceutical and medicine manufacturing,2775815.0,0.0002192274009986939,1.2792838910148157e-08,0.002706285209370488,0.0002192274009986939
+KHM,325X,Other chemical manufacturing,20073806.0,0.0015853824255333973,3.46142692574479e-08,0.007322540804472144,0.0015853824255333973
+KHM,326,Plastics and rubber products,920962410.0,0.07273546528201394,3.5865552608410784e-08,0.007587245898409982,0.07273546528201394
+KHM,327,Nonmetallic mineral products,36592939.0,0.0028900250599819314,4.815735678513455e-09,0.0010187538771132528,0.0028900250599819314
+KHM,3311IS,Iron and steel mills and manufacturing from purchased steel,4641605.0,0.00036658314787280224,5.54369536984906e-10,0.00011727514815164993,0.00036658314787280224
+KHM,3313NF,Nonferrous metal production and processing and foundries,5785093.0,0.0004568931657641943,6.835202311451169e-11,1.4459657507186606e-05,0.0004568931657641943
+KHM,332,Fabricated metal products,77862169.0,0.0061493726872976304,1.2209698589937252e-08,0.002582923691676206,0.0061493726872976304
+KHM,33311,Agricultural implement manufacturing,1576962.0,0.0001245447844087961,2.3671583221934082e-09,0.0005007649670714168,0.0001245447844087961
+KHM,33312,Construction machinery manufacturing,,,0.0,0.0,
+KHM,33313,Mining and oil and gas field machinery manufacturing,,,0.0,0.0,
+KHM,3332OM,Other machinery,39845476.0,0.0031469028537693734,1.3004633626969744e-08,0.0027510897217686227,0.0031469028537693734
+KHM,3341,Computer and peripheral equipment manufacturing,5413873.0,0.00042757507511379607,9.746288921083756e-10,0.00020617970521349239,0.00042757507511379607
+KHM,3342,Communications equipment manufacturing,14982241.0,0.001183262485275882,1.145335075494376e-09,0.0002422920663938669,0.001183262485275882
+KHM,3344,Semiconductor and other electronic component manufacturing,93584312.0,0.007391070908547897,6.274535411931045e-11,1.3273584151450627e-05,0.007391070908547897
+KHM,3345,"Navigational, measuring, electromedical, and control instruments manufacturing",4436632.0,0.0003503948579237583,9.390468165244e-10,0.00019865242799629643,0.0003503948579237583
+KHM,334X,Other computer and electronic product manufacturing,19556852.0,0.0015445546031259679,1.1956623620028631e-09,0.000252938647036544,0.0015445546031259679
+KHM,335,"Electrical equipment, appliances, and components",2293180693.0,0.1811100679788724,4.4908911617107545e-08,0.009500340317886258,0.1811100679788724
+KHM,336111,Automobile manufacturing,,,4.135121591138038e-09,0.000874772087700417,
+KHM,336112,Light truck and utility vehicle manufacturing,,,2.59695119969952e-07,0.05493769342806773,
+KHM,33612,Heavy duty truck manufacturing,,,0.0,0.0,
+KHM,3362BP,"Motor vehicle body, trailer, and parts manufacturing",7996023.0,0.0006315072656555928,5.4173810540162736e-08,0.011460300815933869,0.0006315072656555928
+KHM,3364,Aerospace product and parts manufacturing,,,3.6311453430410374e-10,7.681574827891488e-05,
+KHM,3365AO,All other transportation equipment manufacturing,217342308.0,0.01716518907416295,3.399876867604348e-08,0.0071923335743559,0.01716518907416295
+KHM,337,Furniture and related products,869151487.0,0.06864355930390176,1.572008327167847e-07,0.03325534632853684,0.06864355930390176
+KHM,3391,Medical equipment and supplies manufacturing,40439875.0,0.003193847101828492,1.2471569140042956e-08,0.002638321590570922,0.003193847101828492
+KHM,3399,Other miscellaneous manufacturing,467975422.0,0.03695960843800001,3.0190429777600335e-08,0.006386691347050809,0.03695960843800001
+KHM,4231,Motor vehicle and motor vehicle parts and supplies,,,0.0,0.0,
+KHM,4234,Professional and commercial equipment and supplies,,,0.0,0.0,
+KHM,4236,Household appliances and electrical and electronic goods,,,0.0,0.0,
+KHM,4238,"Machinery, equipment, and supplies",,,0.0,0.0,
+KHM,423X,Other durable goods merchant wholesalers,,,0.0,0.0,
+KHM,4242,Drugs and druggists' sundries,,,0.0,0.0,
+KHM,4244,Grocery and related product wholesalers,,,0.0,0.0,
+KHM,4247,Petroleum and petroleum products,,,0.0,0.0,
+KHM,424X,Other nondurable goods merchant wholesalers,,,0.0,0.0,
+KHM,425,Wholesale electronic markets and agents and brokers,,,0.0,0.0,
+KHM,42ID,Customs duties,,,0.0,0.0,
+KHM,441,Motor vehicle and parts dealers,,,0.0,0.0,
+KHM,444,Building material and garden equipment and supplies dealers,,,0.0,0.0,
+KHM,445,Food and beverage stores,,,0.0,0.0,
+KHM,446,Health and personal care stores,,,0.0,0.0,
+KHM,447,Gasoline stations,,,0.0,0.0,
+KHM,448,Clothing and clothing accessories stores,,,0.0,0.0,
+KHM,452,General merchandise stores,,,0.0,0.0,
+KHM,454,Nonstore retailers,,,2.7218674316603034e-09,0.0005758025739170515,
+KHM,481,Air transportation,,,2.9467252062265524e-08,0.006233705354770048,
+KHM,482,Rail transportation,,,5.578679824068763e-10,0.00011801523337962521,
+KHM,483,Water transportation,,,4.5863456730018165e-09,0.0009702271362190871,
+KHM,484,Truck transportation,,,2.669660220079349e-09,0.0005647583009830796,
+KHM,485,Transit and ground passenger transportation,,,2.0522281026688715e-08,0.004341424604433563,
+KHM,486,Pipeline transportation,,,0.0,0.0,
+KHM,48A,Scenic and sightseeing transportation and support activities,,,4.022830375987619e-09,0.0008510172310311323,
+KHM,492,Couriers and messengers,,,1.0510724112163308e-09,0.00022235109348525271,
+KHM,493,Warehousing and storage,,,3.711083674949524e-11,7.850681878191382e-06,
+KHM,4A0X,All other retail,,,0.0,0.0,
+KHM,5111,"Newspaper, periodical, book, and directory publishers",,,1.0716290647580466e-08,0.0022669978948813663,
+KHM,5112,Software publishers,,,4.599979213216676e-09,0.0009731112691698712,
+KHM,512,Motion picture and sound recording industries,,,2.4626756633413606e-09,0.0005209713629623274,
+KHM,515,Broadcasting (except internet),,,2.264522058205021e-09,0.000479052585235945,
+KHM,5171,Wired telecommunications carriers,,,6.210345397519684e-08,0.013137792176103434,
+KHM,5172,Wireless telecommunications carriers (except satellite),,,1.0399566545523181e-07,0.021999958979931827,
+KHM,5174OT,"Other telecommunications, including satellite",,,4.7489865824033785e-09,0.001004633313819186,
+KHM,518,"Data processing, hosting, and related services",,,1.3794212570567269e-08,0.0029181226869842854,
+KHM,519,Other information services,,,6.437600429699254e-09,0.0013618543115486179,
+KHM,521CI,"Federal reserve banks, credit intermediation, and related activities",,,3.498712361795032e-08,0.007401416982634331,
+KHM,523,"Securities, commodity contracts, and investments",,,3.0180815004190406e-08,0.006384657371695261,
+KHM,524113,Direct life insurance carriers,,,8.16977202576563e-09,0.0017282898153059161,
+KHM,5241X,"Insurance carriers, except direct life",,,2.4178325219949708e-08,0.0051148493614027336,
+KHM,5242,"Agencies, brokerages, and other insurance related activities",,,0.0,0.0,
+KHM,525,"Funds, trusts, and other financial vehicles",,,2.3804536624298905e-08,0.005035775548705954,
+KHM,532RL,Rental and leasing services and lessors of intangible assets,,,2.6614037544313346e-08,0.005630116714021214,
+KHM,5411,Legal services,,,6.3371516100570086e-09,0.0013406046767485667,
+KHM,5412,"Accounting, tax preparation, bookkeeping, and payroll services",,,2.233097531602024e-09,0.0004724048245508872,
+KHM,5413,"Architectural, engineering, and related services",,,0.0,0.0,
+KHM,5415,Computer systems design and related services,,,0.0,0.0,
+KHM,5416,"Management, scientific, and technical consulting services",,,0.0,0.0,
+KHM,5417,Scientific research and development services,,,1.4144640868407194e-09,0.0002992254701469105,
+KHM,5418,"Advertising, public relations, and related services",,,1.8933296466003808e-10,4.0052798718450546e-05,
+KHM,541X,"Specialized design services and other professional, scientific, and technical services",,,2.7111317756165372e-08,0.00573531479332949,
+KHM,55,Management of companies and enterprises,,,0.0,0.0,
+KHM,5613,Employment services,,,1.3243966269137088e-10,2.8017197964663694e-05,
+KHM,5617,Services to buildings and dwellings,,,1.0860654034574938e-08,0.0022975375195684127,
+KHM,561X,Other administrative and support services,,,1.1821905200550262e-08,0.002500887208503019,
+KHM,562,Waste management and remediation services,,,1.9367706307587522e-08,0.004097177920225104,
+KHM,61,Educational services,,,1.0374143787206708e-07,0.021946177926878238,
+KHM,6211,Offices of physicians,,,8.878078687960415e-08,0.01878129882632624,
+KHM,6212,Offices of dentists,,,1.9018093249496293e-08,0.004023218367168861,
+KHM,6213,Offices of other health practitioners,,,7.871422954339816e-09,0.0016651749988918203,
+KHM,6214,Outpatient care centers,,,3.4734650404874033e-08,0.00734800706110639,
+KHM,6215OH,Other ambulatory health care services,,,5.587465264331077e-08,0.011820108663085974,
+KHM,622,Hospitals,,,5.177689317836266e-07,0.10953240416761864,
+KHM,623,Nursing and residential care facilities,,,1.525761115669276e-07,0.03227700097976576,
+KHM,624,Social assistance,,,1.609978025130984e-07,0.0340585834577122,
+KHM,711AS,"Performing arts, spectator sports, museums, and related activities",,,2.2407366185494383e-08,0.004740208495914654,
+KHM,713,"Amusements, gambling, and recreation industries",,,1.2249619390531802e-07,0.025913688126500623,
+KHM,721,Accommodation,,,1.1758870741264097e-07,0.024875524650543625,
+KHM,722,Food services and drinking places,,,3.389184934431742e-07,0.07169715122886423,
+KHM,811,Repair and maintenance,,,1.0745783746912503e-07,0.022732370681455172,
+KHM,812,Personal and laundry services,,,1.1139595960694345e-07,0.023565468148649734,
+KHM,813,"Religious, grantmaking, civic, professional, and similar organizations",,,6.26764865609019e-08,0.013259015434058377,
+KHM,814,Private households,,,0.0,0.0,
+KHM,GFE,Federal government enterprises,,,6.091960650015851e-10,0.0001288735293158943,
+KHM,GFGD,Federal general government (defense),,,0.0,0.0,
+KHM,GFGN,Federal general government (nondefense),,,0.0,0.0,
+KHM,GSLE,State and local government enterprises,,,9.44622496744482e-08,0.019983194577321596,
+KHM,GSLGE,State and local government (educational services),,,0.0,0.0,
+KHM,GSLGH,State and local government (hospitals and health services),,,0.0,0.0,
+KHM,GSLGO,State and local government (other services),,,0.0,0.0,
+KHM,HSO,Owner-occupied housing,,,3.732396080261521e-07,0.07895767607541271,
+KHM,HST,Tenant-occupied housing,,,2.3961220691741784e-08,0.00506892157495102,
+KHM,ORE,Other real estate,,,2.1968609004022477e-09,0.0004647390781327427,
+KHM,Other,,67476919.0,0.005329169840126012,0.0,0.0,0.005329169840126012
+KHM,Used,,,,6.385038164915817e-08,0.01350734928215995,

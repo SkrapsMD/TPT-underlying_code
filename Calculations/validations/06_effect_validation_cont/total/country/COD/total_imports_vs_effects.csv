@@ -1,0 +1,141 @@
+iso3,usummary_code,usummary_desc,impVal,impVal_share,total,total_share,impVal_share_no_oil
+COD,111,Crop production,4861237.0,0.015045604793131951,1.4501026200387265e-08,0.03801431869564075,0.015045604793131951
+COD,112,Animal production and aquaculture,279288.0,0.0008644007423345615,4.251916509616662e-10,0.0011146363507674212,0.0008644007423345615
+COD,113FF,"Forestry, fishing, and related activities",877411.0,0.0027156008125394215,1.6453377806411535e-09,0.004313239207415589,0.0027156008125394215
+COD,211,Oil and gas extraction,,,0.0,0.0,0.0
+COD,212,"Mining, except oil and gas",5500.0,1.7022586301022916e-05,2.5785566699209066e-12,6.75966470721401e-06,1.7022586301022916e-05
+COD,213,Support activities for mining,,,0.0,0.0,
+COD,2211,"Electric power generation, transmission, and distribution",,,3.2946705936006553e-09,0.008636951358583602,
+COD,2212NW,"Natural gas distribution and water, sewage and other systems",,,3.022798996449472e-09,0.007924242244374711,
+COD,23EH,"Education, hospital, and health structures",,,0.0,0.0,
+COD,23MR,Maintenance and repair construction,,,0.0,0.0,
+COD,23OC,Office and commercial structures,,,0.0,0.0,
+COD,23OR,Other residential construction,,,0.0,0.0,
+COD,23OT,Other nonresidential structures,,,0.0,0.0,
+COD,23PC,Power and communication structures,,,0.0,0.0,
+COD,23SF,Single-family residential structures,,,0.0,0.0,
+COD,23TH,Transportation structures and highways and streets,,,0.0,0.0,
+COD,311,Food manufacturing,7106757.0,0.021995524427799767,3.9140383859499034e-08,0.10260618837203217,0.021995524427799767
+COD,3121,Beverage manufacturing,24150.0,7.474462893994608e-05,1.5688698816060657e-08,0.04112779250738297,7.474462893994608e-05
+COD,3122,Tobacco manufacturing,,,2.7501623710032273e-09,0.007209527614899674,
+COD,313TT,Textile mills and textile product mills,950.0,2.940264906540322e-06,5.011291112201597e-10,0.0013137057666358536,2.940264906540322e-06
+COD,315AL,Apparel and leather and allied products,3500.0,1.0832554918832765e-05,1.028683560051687e-09,0.0026966853344301107,1.0832554918832765e-05
+COD,321,Wood products,5818160.0,0.018007296493301725,5.554086146413199e-10,0.0014559990301042003,0.018007296493301725
+COD,322,Paper products,,,1.6969223240212039e-09,0.00444846765571437,
+COD,323,Printing and related support activities,7650.0,2.367687003687733e-05,8.435383940817952e-11,0.00022113288329744546,2.367687003687733e-05
+COD,324,Petroleum and coal products,,,4.6207189189017315e-09,0.012113175933811912,
+COD,3251,Basic chemical manufacturing,,,1.4177292104013403e-11,3.7165652474220324e-05,
+COD,3252,"Resin, rubber, and artificial fibers manufacturing",,,0.0,0.0,
+COD,3254,Pharmaceutical and medicine manufacturing,18569.0,5.747134636794446e-05,1.0892998510612375e-09,0.00285559043347222,5.747134636794446e-05
+COD,325X,Other chemical manufacturing,7240.0,2.2407913603528348e-05,1.722052261502794e-09,0.004514345576285343,2.2407913603528348e-05
+COD,326,Plastics and rubber products,,,1.4062569640550581e-09,0.0036864908497390033,
+COD,327,Nonmetallic mineral products,67798.0,0.00020983587382486393,4.712841845268117e-10,0.0012354675413481378,0.00020983587382486393
+COD,3311IS,Iron and steel mills and manufacturing from purchased steel,,,7.368786087958566e-10,0.0019317210994362584,
+COD,3313NF,Nonferrous metal production and processing and foundries,296254489.0,0.9169122920123535,7.057362085835243e-10,0.001850081558188676,0.9169122920123535
+COD,332,Fabricated metal products,10501.0,3.250075977218939e-05,9.524935205327746e-09,0.024969537841465834,3.250075977218939e-05
+COD,33311,Agricultural implement manufacturing,,,2.2474551217592807e-10,0.0005891684772656002,
+COD,33312,Construction machinery manufacturing,,,0.0,0.0,
+COD,33313,Mining and oil and gas field machinery manufacturing,,,0.0,0.0,
+COD,3332OM,Other machinery,292488.0,0.0009052549494570165,2.358261037910967e-09,0.006182161553522737,0.0009052549494570165
+COD,3341,Computer and peripheral equipment manufacturing,35492.0,0.00010984829690834643,1.525322847344125e-10,0.0003998621065254901,0.00010984829690834643
+COD,3342,Communications equipment manufacturing,,,1.8119038917356801e-10,0.00047498908721696145,
+COD,3344,Semiconductor and other electronic component manufacturing,,,4.2456310237348624e-11,0.00011129886159094474,
+COD,3345,"Navigational, measuring, electromedical, and control instruments manufacturing",6536.0,2.0229022556997413e-05,1.3657184508538714e-10,0.00035802194770111754,2.0229022556997413e-05
+COD,334X,Other computer and electronic product manufacturing,6046.0,1.8712464868360826e-05,1.5063168190739062e-10,0.00039487969213758173,1.8712464868360826e-05
+COD,335,"Electrical equipment, appliances, and components",10020.0,3.101205722477266e-05,1.5360507544546466e-08,0.0402674418386741,3.101205722477266e-05
+COD,336111,Automobile manufacturing,,,4.1492608744120305e-10,0.0010877252620027646,
+COD,336112,Light truck and utility vehicle manufacturing,,,4.500744412749976e-08,0.11798663771073861,
+COD,33612,Heavy duty truck manufacturing,,,0.0,0.0,
+COD,3362BP,"Motor vehicle body, trailer, and parts manufacturing",58356.0,0.00018061273566954424,1.7658747175263357e-08,0.046292257776093096,0.00018061273566954424
+COD,3364,Aerospace product and parts manufacturing,,,8.985425381913185e-11,0.0002355521735936352,
+COD,3365AO,All other transportation equipment manufacturing,8179.0,2.5314133337466623e-05,7.361188151396191e-09,0.019297293067319348,2.5314133337466623e-05
+COD,337,Furniture and related products,13025.0,4.031257937651336e-05,7.853219861352634e-09,0.020587150072759818,4.031257937651336e-05
+COD,3391,Medical equipment and supplies manufacturing,,,2.83924220785435e-09,0.007443049660899689,
+COD,3399,Other miscellaneous manufacturing,4361435.0,0.01349870976069125,2.2926896616251506e-08,0.06010266739942285,0.01349870976069125
+COD,4231,Motor vehicle and motor vehicle parts and supplies,,,0.0,0.0,
+COD,4234,Professional and commercial equipment and supplies,,,0.0,0.0,
+COD,4236,Household appliances and electrical and electronic goods,,,0.0,0.0,
+COD,4238,"Machinery, equipment, and supplies",,,0.0,0.0,
+COD,423X,Other durable goods merchant wholesalers,,,0.0,0.0,
+COD,4242,Drugs and druggists' sundries,,,0.0,0.0,
+COD,4244,Grocery and related product wholesalers,,,0.0,0.0,
+COD,4247,Petroleum and petroleum products,,,0.0,0.0,
+COD,424X,Other nondurable goods merchant wholesalers,,,0.0,0.0,
+COD,425,Wholesale electronic markets and agents and brokers,,,0.0,0.0,
+COD,42ID,Customs duties,,,0.0,0.0,
+COD,441,Motor vehicle and parts dealers,,,0.0,0.0,
+COD,444,Building material and garden equipment and supplies dealers,,,0.0,0.0,
+COD,445,Food and beverage stores,,,0.0,0.0,
+COD,446,Health and personal care stores,,,0.0,0.0,
+COD,447,Gasoline stations,,,0.0,0.0,
+COD,448,Clothing and clothing accessories stores,,,0.0,0.0,
+COD,452,General merchandise stores,,,0.0,0.0,
+COD,454,Nonstore retailers,,,1.0001932158172722e-10,0.00026219981357098826,
+COD,481,Air transportation,,,1.0958044566807563e-09,0.0028726422026086164,
+COD,482,Rail transportation,,,6.784742910070196e-11,0.0001778614669660479,
+COD,483,Water transportation,,,5.760768373148933e-10,0.001510180602685919,
+COD,484,Truck transportation,,,1.8617061214361684e-10,0.0004880447000089534,
+COD,485,Transit and ground passenger transportation,,,1.0393531790003246e-09,0.0027246556511145758,
+COD,486,Pipeline transportation,,,0.0,0.0,
+COD,48A,Scenic and sightseeing transportation and support activities,,,2.5480789428206307e-10,0.0006679767600961095,
+COD,492,Couriers and messengers,,,7.285160093110879e-11,0.00019097986149482635,
+COD,493,Warehousing and storage,,,2.7378912279282146e-12,7.1773589161353835e-06,
+COD,4A0X,All other retail,,,0.0,0.0,
+COD,5111,"Newspaper, periodical, book, and directory publishers",,,6.090346621969121e-10,0.0015965792644955725,
+COD,5112,Software publishers,,,3.2221786347813817e-10,0.0008446914295871893,
+COD,512,Motion picture and sound recording industries,,,7.720339183292324e-11,0.00020238804488490576,
+COD,515,Broadcasting (except internet),,,1.5366563591546422e-10,0.00040283317715147313,
+COD,5171,Wired telecommunications carriers,,,2.945240070142085e-09,0.007720922168843643,
+COD,5172,Wireless telecommunications carriers (except satellite),,,2.4021476089139627e-09,0.0062972098317281905,
+COD,5174OT,"Other telecommunications, including satellite",,,2.0324773922147046e-10,0.0005328122455724631,
+COD,518,"Data processing, hosting, and related services",,,8.393728722113135e-10,0.0022004089522894643,
+COD,519,Other information services,,,1.0745420246920803e-09,0.002816902915285604,
+COD,521CI,"Federal reserve banks, credit intermediation, and related activities",,,1.292234945556058e-09,0.003387583083513088,
+COD,523,"Securities, commodity contracts, and investments",,,1.211155117897339e-09,0.003175032994587391,
+COD,524113,Direct life insurance carriers,,,2.886397105161647e-10,0.0007566665829130039,
+COD,5241X,"Insurance carriers, except direct life",,,8.395856634328488e-10,0.0022009667826939673,
+COD,5242,"Agencies, brokerages, and other insurance related activities",,,0.0,0.0,
+COD,525,"Funds, trusts, and other financial vehicles",,,9.708616118034591e-10,0.0025451055815259834,
+COD,532RL,Rental and leasing services and lessors of intangible assets,,,1.0349576527895535e-09,0.002713132815978478,
+COD,5411,Legal services,,,2.8274424767039036e-10,0.0007412116764546191,
+COD,5412,"Accounting, tax preparation, bookkeeping, and payroll services",,,9.488487422255448e-11,0.0002487399028349901,
+COD,5413,"Architectural, engineering, and related services",,,0.0,0.0,
+COD,5415,Computer systems design and related services,,,0.0,0.0,
+COD,5416,"Management, scientific, and technical consulting services",,,0.0,0.0,
+COD,5417,Scientific research and development services,,,8.540055367252824e-11,0.00022387683597213017,
+COD,5418,"Advertising, public relations, and related services",,,1.803212556306137e-11,4.7271066091565226e-05,
+COD,541X,"Specialized design services and other professional, scientific, and technical services",,,7.483634802437095e-10,0.001961828593717283,
+COD,55,Management of companies and enterprises,,,0.0,0.0,
+COD,5613,Employment services,,,6.323362320734968e-12,1.65766413470797e-05,
+COD,5617,Services to buildings and dwellings,,,8.268553991137316e-10,0.002167594501434746,
+COD,561X,Other administrative and support services,,,6.626863757914718e-10,0.0017372267821930693,
+COD,562,Waste management and remediation services,,,1.085786923834641e-09,0.0028463813241787774,
+COD,61,Educational services,,,5.042004672051111e-09,0.013217573006187786,
+COD,6211,Offices of physicians,,,3.8859742307694405e-09,0.010187048889517339,
+COD,6212,Offices of dentists,,,1.771674096085696e-09,0.004644428799915848,
+COD,6213,Offices of other health practitioners,,,3.89752194519586e-10,0.0010217321126140182,
+COD,6214,Outpatient care centers,,,1.316172746698685e-09,0.00345033582865911,
+COD,6215OH,Other ambulatory health care services,,,1.3726462452146543e-09,0.0035983806318873475,
+COD,622,Hospitals,,,1.4907706009847737e-08,0.03908042640900382,
+COD,623,Nursing and residential care facilities,,,1.819243322630261e-09,0.004769131128770474,
+COD,624,Social assistance,,,6.072779937097069e-09,0.015919741727736206,
+COD,711AS,"Performing arts, spectator sports, museums, and related activities",,,4.5786772677965556e-10,0.0012002964097661969,
+COD,713,"Amusements, gambling, and recreation industries",,,5.520949621362726e-09,0.014473123178237885,
+COD,721,Accommodation,,,2.0637232478184954e-09,0.005410033204414179,
+COD,722,Food services and drinking places,,,1.6215460695732125e-08,0.04250869436176423,
+COD,811,Repair and maintenance,,,1.916770137638488e-08,0.05024796857241093,
+COD,812,Personal and laundry services,,,4.131386317239971e-09,0.010830394618152994,
+COD,813,"Religious, grantmaking, civic, professional, and similar organizations",,,2.580806178705466e-09,0.006765561775646491,
+COD,814,Private households,,,0.0,0.0,
+COD,GFE,Federal government enterprises,,,1.1191523185202384e-10,0.00029338484268139184,
+COD,GFGD,Federal general government (defense),,,0.0,0.0,
+COD,GFGN,Federal general government (nondefense),,,0.0,0.0,
+COD,GSLE,State and local government enterprises,,,4.266467328438842e-09,0.011184508357310722,
+COD,GSLGE,State and local government (educational services),,,0.0,0.0,
+COD,GSLGH,State and local government (hospitals and health services),,,0.0,0.0,
+COD,GSLGO,State and local government (other services),,,0.0,0.0,
+COD,HSO,Owner-occupied housing,,,4.651308271464479e-09,0.012193365665279505,
+COD,HST,Tenant-occupied housing,,,8.144173645625043e-10,0.002134988298063765,
+COD,ORE,Other real estate,,,9.41081220317732e-11,0.00024670365347443735,
+COD,Other,,2965362.0,0.009177841919777077,0.0,0.0,0.009177841919777077
+COD,Used,,,,3.595019578277641e-08,0.09424313705609645,

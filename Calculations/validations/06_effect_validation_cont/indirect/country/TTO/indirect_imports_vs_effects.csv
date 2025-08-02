@@ -1,0 +1,141 @@
+iso3,usummary_code,usummary_desc,impVal,impVal_share,indirect,indirect_share,impVal_share_no_oil
+TTO,111,Crop production,497053.0,0.00014945016153149776,1.819102218067289e-07,0.026073575830761298,0.00032349548888377383
+TTO,112,Animal production and aquaculture,57653.0,1.733467087569221e-05,1.025711285366788e-08,0.0014701736226726608,3.752212625336978e-05
+TTO,113FF,"Forestry, fishing, and related activities",12791946.0,0.0038461862135470396,4.963007317250955e-09,0.0007113583082343278,0.008325343223046304
+TTO,211,Oil and gas extraction,1789371228.0,0.5380146967514823,0.0,0.0,0.0
+TTO,212,"Mining, except oil and gas",65250.0,1.9618879757149093e-05,8.429717125909433e-11,1.2082491381258742e-05,4.246645860635836e-05
+TTO,213,Support activities for mining,,,0.0,0.0,
+TTO,2211,"Electric power generation, transmission, and distribution",,,1.1238202023715154e-07,0.016107952030209295,
+TTO,2212NW,"Natural gas distribution and water, sewage and other systems",,,7.737418410844414e-08,0.011090205028930262,
+TTO,23EH,"Education, hospital, and health structures",,,0.0,0.0,
+TTO,23MR,Maintenance and repair construction,,,0.0,0.0,
+TTO,23OC,Office and commercial structures,,,0.0,0.0,
+TTO,23OR,Other residential construction,,,0.0,0.0,
+TTO,23OT,Other nonresidential structures,,,0.0,0.0,
+TTO,23PC,Power and communication structures,,,0.0,0.0,
+TTO,23SF,Single-family residential structures,,,0.0,0.0,
+TTO,23TH,Transportation structures and highways and streets,,,0.0,0.0,
+TTO,311,Food manufacturing,41539906.0,0.012489906834287757,3.88890973625508e-07,0.05574056361437631,0.02703529040093513
+TTO,3121,Beverage manufacturing,5832445.0,0.0017536557416886658,7.505587366144814e-08,0.010757916702091664,0.003795912401017039
+TTO,3122,Tobacco manufacturing,,,2.894567539232877e-08,0.004148844714819474,
+TTO,313TT,Textile mills and textile product mills,5152.0,1.5490646514763545e-06,1.4326920811993114e-08,0.0020535077825901307,3.353060455784801e-06
+TTO,315AL,Apparel and leather and allied products,56387.0,1.6954019507530513e-05,7.565986067689561e-09,0.0010844487435124996,3.6698179332363656e-05
+TTO,321,Wood products,498938.0,0.0001500169291689265,1.232437470837185e-09,0.00017664786251916033,0.0003247222976879575
+TTO,322,Paper products,5106540.0,0.0015353960802309905,2.0861507022753863e-08,0.0029901238088733506,0.003323473862554992
+TTO,323,Printing and related support activities,17888.0,5.3784294420824975e-06,1.997753383754252e-09,0.0002863422067497567,1.1641992514184496e-05
+TTO,324,Petroleum and coal products,306414.0,9.213025933957214e-05,2.9089443623705765e-06,0.4169451318701499,0.00019942248961545884
+TTO,3251,Basic chemical manufacturing,184754934.0,0.05555072543580102,2.5203946128920566e-09,0.000361253476632573,0.12024349052921794
+TTO,3252,"Resin, rubber, and artificial fibers manufacturing",3288377.0,0.0009887244897957804,0.0,0.0,0.002140164379350205
+TTO,3254,Pharmaceutical and medicine manufacturing,61655.0,1.853796216746402e-05,6.8013392953175e-09,0.0009748503086077694,4.0126735714559765e-05
+TTO,325X,Other chemical manufacturing,567667588.0,0.1706820253027257,1.292692787918522e-07,0.018528438422488396,0.3694533659459508
+TTO,326,Plastics and rubber products,5374792.0,0.0016160520761331323,3.6457327566693856e-08,0.005225505666784551,0.003498059494035035
+TTO,327,Nonmetallic mineral products,2944.0,8.851798008436312e-07,8.396834285815549e-09,0.0012035359712889407,1.9160345461627435e-06
+TTO,3311IS,Iron and steel mills and manufacturing from purchased steel,623821772.0,0.18756604344459277,1.120074382052424e-08,0.0016054262397395805,0.40600002235069915
+TTO,3313NF,Nonferrous metal production and processing and foundries,63533.0,1.9102625097485876e-05,2.3336880712174706e-10,3.3449243415732575e-05,4.1348988730080696e-05
+TTO,332,Fabricated metal products,420401.0,0.0001264030140809998,6.557580465693123e-08,0.00939911841349006,0.00027360830137274577
+TTO,33311,Agricultural implement manufacturing,18767.0,5.642720557891449e-06,3.259820759012012e-09,0.0004672369859737346,1.2214069404835668e-05
+TTO,33312,Construction machinery manufacturing,,,0.0,0.0,
+TTO,33313,Mining and oil and gas field machinery manufacturing,408622.0,0.00012286139286016515,0.0,0.0,0.00026594221070723933
+TTO,3332OM,Other machinery,1068571.0,0.00032128989978508145,1.1649301175462689e-08,0.0016697189116536375,0.0006954548067349418
+TTO,3341,Computer and peripheral equipment manufacturing,10048.0,3.0211571463576107e-06,5.560667623118518e-10,7.970222206373935e-05,6.539509211903276e-06
+TTO,3342,Communications equipment manufacturing,35506.0,1.0675677312756103e-05,5.493085281894676e-10,7.873355011049838e-05,2.310826175137716e-05
+TTO,3344,Semiconductor and other electronic component manufacturing,402015.0,0.00012087484974054089,4.461204385733353e-11,6.394338355077569e-06,0.0002616421970365541
+TTO,3345,"Navigational, measuring, electromedical, and control instruments manufacturing",422206.0,0.00012694572791949256,4.21187364315661e-10,6.036967342115929e-05,0.0002747830440207837
+TTO,334X,Other computer and electronic product manufacturing,10593.0,3.1850236516088942e-06,7.039054885624835e-10,0.00010089225856270217,6.8942099006460396e-06
+TTO,335,"Electrical equipment, appliances, and components",193523.0,5.818704164356727e-05,2.455446320948912e-08,0.003519443009400866,0.00012594998419736842
+TTO,336111,Automobile manufacturing,,,1.777698399495655e-09,0.00025480126165047876,
+TTO,336112,Light truck and utility vehicle manufacturing,,,1.455071582576578e-07,0.02085584794009244,
+TTO,33612,Heavy duty truck manufacturing,,,0.0,0.0,
+TTO,3362BP,"Motor vehicle body, trailer, and parts manufacturing",84321.0,2.5353004750997223e-05,6.16133083020322e-08,0.008831165452065253,5.487837940454779e-05
+TTO,3364,Aerospace product and parts manufacturing,1761322.0,0.0005295810656187181,9.18221273887174e-10,0.0001316105921719561,0.001146315828436296
+TTO,3365AO,All other transportation equipment manufacturing,17465.0,5.251244980208566e-06,2.389600966416945e-08,0.0034250654737439283,1.1366692713563966e-05
+TTO,337,Furniture and related products,45269.0,1.3611142800404326e-05,3.742180625188171e-08,0.0053637464312981395,2.9462285282011288e-05
+TTO,3391,Medical equipment and supplies manufacturing,2831090.0,0.000851230870370379,8.211007596911025e-09,0.001176901039967274,0.0018425496750325684
+TTO,3399,Other miscellaneous manufacturing,996797.0,0.00029970943272470416,3.659662527999594e-08,0.005245471501880352,0.0006487423530948995
+TTO,4231,Motor vehicle and motor vehicle parts and supplies,,,0.0,0.0,
+TTO,4234,Professional and commercial equipment and supplies,,,0.0,0.0,
+TTO,4236,Household appliances and electrical and electronic goods,,,0.0,0.0,
+TTO,4238,"Machinery, equipment, and supplies",,,0.0,0.0,
+TTO,423X,Other durable goods merchant wholesalers,,,0.0,0.0,
+TTO,4242,Drugs and druggists' sundries,,,0.0,0.0,
+TTO,4244,Grocery and related product wholesalers,,,0.0,0.0,
+TTO,4247,Petroleum and petroleum products,,,0.0,0.0,
+TTO,424X,Other nondurable goods merchant wholesalers,,,0.0,0.0,
+TTO,425,Wholesale electronic markets and agents and brokers,,,0.0,0.0,
+TTO,42ID,Customs duties,,,0.0,0.0,
+TTO,441,Motor vehicle and parts dealers,,,0.0,0.0,
+TTO,444,Building material and garden equipment and supplies dealers,,,0.0,0.0,
+TTO,445,Food and beverage stores,,,0.0,0.0,
+TTO,446,Health and personal care stores,,,0.0,0.0,
+TTO,447,Gasoline stations,,,0.0,0.0,
+TTO,448,Clothing and clothing accessories stores,,,0.0,0.0,
+TTO,452,General merchandise stores,,,0.0,0.0,
+TTO,454,Nonstore retailers,,,1.71272602975305e-09,0.00024548863483620366,
+TTO,481,Air transportation,,,2.372070431418244e-07,0.0339993858812405,
+TTO,482,Rail transportation,,,8.338726732039992e-10,0.00011952072930285364,
+TTO,483,Water transportation,,,2.38831030198956e-08,0.00342321553719362,
+TTO,484,Truck transportation,,,8.568406111783366e-09,0.0012281277230352882,
+TTO,485,Transit and ground passenger transportation,,,3.271263064727382e-08,0.004688770357894368,
+TTO,486,Pipeline transportation,,,0.0,0.0,
+TTO,48A,Scenic and sightseeing transportation and support activities,,,6.741038818052914e-09,0.0009662073139977155,
+TTO,492,Couriers and messengers,,,6.5169981312829806e-09,0.0009340950897496572,
+TTO,493,Warehousing and storage,,,6.844447910497323e-11,9.8102915735902e-06,
+TTO,4A0X,All other retail,,,0.0,0.0,
+TTO,5111,"Newspaper, periodical, book, and directory publishers",,,7.470266678647832e-09,0.0010707290815613131,
+TTO,5112,Software publishers,,,4.202430821636975e-09,0.000602343274683573,
+TTO,512,Motion picture and sound recording industries,,,3.733606004184334e-09,0.0005351456246131903,
+TTO,515,Broadcasting (except internet),,,1.5772429193803e-09,0.00022606955482516147,
+TTO,5171,Wired telecommunications carriers,,,2.4759923608251792e-08,0.003548892081773768,
+TTO,5172,Wireless telecommunications carriers (except satellite),,,2.2163013384131535e-08,0.0031766714611743477,
+TTO,5174OT,"Other telecommunications, including satellite",,,1.6905204529605444e-09,0.00024230586267191964,
+TTO,518,"Data processing, hosting, and related services",,,8.157673926437565e-09,0.0011692566124710555,
+TTO,519,Other information services,,,7.408710056046808e-09,0.0010619060409903518,
+TTO,521CI,"Federal reserve banks, credit intermediation, and related activities",,,3.6868649647735096e-08,0.005284461328343195,
+TTO,523,"Securities, commodity contracts, and investments",,,3.9733042474175e-08,0.005695020794587038,
+TTO,524113,Direct life insurance carriers,,,5.538480800966965e-09,0.0007938421366153601,
+TTO,5241X,"Insurance carriers, except direct life",,,1.4344516690048753e-08,0.0020560298369103106,
+TTO,5242,"Agencies, brokerages, and other insurance related activities",,,0.0,0.0,
+TTO,525,"Funds, trusts, and other financial vehicles",,,3.5019725626280756e-08,0.00501945114804709,
+TTO,532RL,Rental and leasing services and lessors of intangible assets,,,1.707342349980232e-08,0.002447169806575053,
+TTO,5411,Legal services,,,5.414586854970556e-09,0.000776084155981695,
+TTO,5412,"Accounting, tax preparation, bookkeeping, and payroll services",,,1.6114415770393202e-09,0.00023097132056942008,
+TTO,5413,"Architectural, engineering, and related services",,,0.0,0.0,
+TTO,5415,Computer systems design and related services,,,0.0,0.0,
+TTO,5416,"Management, scientific, and technical consulting services",,,0.0,0.0,
+TTO,5417,Scientific research and development services,,,1.2350585988884627e-09,0.0001770235543320137,
+TTO,5418,"Advertising, public relations, and related services",,,1.6349859744777242e-10,2.3434598872111986e-05,
+TTO,541X,"Specialized design services and other professional, scientific, and technical services",,,1.3882611039457856e-08,0.0019898239256221886,
+TTO,55,Management of companies and enterprises,,,0.0,0.0,
+TTO,5613,Employment services,,,1.291567666460391e-10,1.8512311819284882e-05,
+TTO,5617,Services to buildings and dwellings,,,2.986117742557087e-08,0.00428006555249354,
+TTO,561X,Other administrative and support services,,,9.84628839678374e-09,0.0014112892866341912,
+TTO,562,Waste management and remediation services,,,2.0522022529171572e-08,0.002941464780266427,
+TTO,61,Educational services,,,1.404523168823881e-07,0.02013132686259855,
+TTO,6211,Offices of physicians,,,8.827112247003707e-08,0.012652086191364287,
+TTO,6212,Offices of dentists,,,1.5074089993597654e-08,0.0021606011175412136,
+TTO,6213,Offices of other health practitioners,,,1.9413679656695063e-08,0.0027826036583075775,
+TTO,6214,Outpatient care centers,,,3.678719854566141e-08,0.005272786770062058,
+TTO,6215OH,Other ambulatory health care services,,,7.231558501151733e-08,0.01036514534926435,
+TTO,622,Hospitals,,,4.095488396773167e-07,0.058701499133303914,
+TTO,623,Nursing and residential care facilities,,,4.4717025753691254e-08,0.006409385631741596,
+TTO,624,Social assistance,,,8.43529571106201e-08,0.012090487285038058,
+TTO,711AS,"Performing arts, spectator sports, museums, and related activities",,,1.1698126834195141e-08,0.0016767171963173767,
+TTO,713,"Amusements, gambling, and recreation industries",,,1.1565379434358681e-07,0.016576902314684762,
+TTO,721,Accommodation,,,3.3059057990648674e-08,0.0047384245198079855,
+TTO,722,Food services and drinking places,,,2.538145281444152e-07,0.03637977174011401,
+TTO,811,Repair and maintenance,,,8.82581236771867e-08,0.012650223046964119,
+TTO,812,Personal and laundry services,,,6.51666556444693e-08,0.009340474222434971,
+TTO,813,"Religious, grantmaking, civic, professional, and similar organizations",,,4.7452644608922656e-08,0.006801487653043721,
+TTO,814,Private households,,,0.0,0.0,
+TTO,GFE,Federal government enterprises,,,2.3216060867820383e-09,0.00033276069784127633,
+TTO,GFGD,Federal general government (defense),,,0.0,0.0,
+TTO,GFGN,Federal general government (nondefense),,,0.0,0.0,
+TTO,GSLE,State and local government enterprises,,,9.695947539832465e-08,0.013897406144636661,
+TTO,GSLGE,State and local government (educational services),,,0.0,0.0,
+TTO,GSLGH,State and local government (hospitals and health services),,,0.0,0.0,
+TTO,GSLGO,State and local government (other services),,,0.0,0.0,
+TTO,HSO,Owner-occupied housing,,,8.87454482482098e-08,0.012720072305738944,
+TTO,HST,Tenant-occupied housing,,,1.743356403399023e-08,0.0024987895090558512,
+TTO,ORE,Other real estate,,,2.653640470981064e-09,0.00038035188655430774,
+TTO,Other,,75969060.0,0.02284180618243134,0.0,0.0,0.04944271175255103
+TTO,Used,,,,1.590750191948826e-07,0.02280055806959693,

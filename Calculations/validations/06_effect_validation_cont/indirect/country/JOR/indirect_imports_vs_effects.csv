@@ -1,0 +1,141 @@
+iso3,usummary_code,usummary_desc,impVal,impVal_share,indirect,indirect_share,impVal_share_no_oil
+JOR,111,Crop production,1805533.0,0.0005365821225505235,4.5107633733501874e-08,0.018972106473747107,0.0005365821225505235
+JOR,112,Animal production and aquaculture,41714.0,1.2396885938984522e-05,3.111594037512634e-09,0.001308725120265433,1.2396885938984522e-05
+JOR,113FF,"Forestry, fishing, and related activities",6437.0,1.9129969504061793e-06,1.3306486819200443e-09,0.0005596659896124958,1.9129969504061793e-06
+JOR,211,Oil and gas extraction,,,0.0,0.0,0.0
+JOR,212,"Mining, except oil and gas",66212.0,1.967738916891315e-05,1.1286384208390073e-11,4.747012094898709e-06,1.967738916891315e-05
+JOR,213,Support activities for mining,,,0.0,0.0,
+JOR,2211,"Electric power generation, transmission, and distribution",,,7.330894769305361e-09,0.0030833476420599536,
+JOR,2212NW,"Natural gas distribution and water, sewage and other systems",,,6.324547158084231e-09,0.0026600815017323995,
+JOR,23EH,"Education, hospital, and health structures",,,0.0,0.0,
+JOR,23MR,Maintenance and repair construction,,,0.0,0.0,
+JOR,23OC,Office and commercial structures,,,0.0,0.0,
+JOR,23OR,Other residential construction,,,0.0,0.0,
+JOR,23OT,Other nonresidential structures,,,0.0,0.0,
+JOR,23PC,Power and communication structures,,,0.0,0.0,
+JOR,23SF,Single-family residential structures,,,0.0,0.0,
+JOR,23TH,Transportation structures and highways and streets,,,0.0,0.0,
+JOR,311,Food manufacturing,43144440.0,0.012821995051574085,1.1572483316667999e-07,0.04867344337914631,0.012821995051574085
+JOR,3121,Beverage manufacturing,1012044.0,0.00030076698550207724,1.6371894259187938e-08,0.006885959101675289,0.00030076698550207724
+JOR,3122,Tobacco manufacturing,2402069.0,0.0007138652589195621,5.723725451093902e-09,0.0024073780798658483,0.0007138652589195621
+JOR,313TT,Textile mills and textile product mills,425810.0,0.00012654547637912927,2.0624825790972006e-09,0.0008674726615468341,0.00012654547637912927
+JOR,315AL,Apparel and leather and allied products,1881457389.0,0.5591459138536854,2.1499144087795073e-08,0.009042461706989061,0.5591459138536854
+JOR,321,Wood products,80877.0,2.4035646164051664e-05,5.708334010821313e-10,0.00024009044961402842,2.4035646164051664e-05
+JOR,322,Paper products,645180.0,0.0001917395327735061,3.231758119191784e-09,0.001359265695401913,0.0001917395327735061
+JOR,323,Printing and related support activities,834358.0,0.0002479608994169643,5.045634708681308e-10,0.00021221755831017774,0.0002479608994169643
+JOR,324,Petroleum and coal products,,,2.6847781377471243e-08,0.011292079072171843,
+JOR,3251,Basic chemical manufacturing,27425892.0,0.008150636594402553,2.1076849832656128e-10,8.864846281203661e-05,0.008150636594402553
+JOR,3252,"Resin, rubber, and artificial fibers manufacturing",106669.0,3.170071022260008e-05,0.0,0.0,3.170071022260008e-05
+JOR,3254,Pharmaceutical and medicine manufacturing,78674608.0,0.02338112244499015,9.143933907246558e-07,0.3845905300688452,0.02338112244499015
+JOR,325X,Other chemical manufacturing,155942361.0,0.0463441449482895,2.7827243849111672e-08,0.011704037420702999,0.0463441449482895
+JOR,326,Plastics and rubber products,1936241.0,0.0005754269268683254,4.627452244082907e-09,0.0019462895614432672,0.0005754269268683254
+JOR,327,Nonmetallic mineral products,315877.0,9.387474564291638e-05,7.277452985500874e-10,0.0003060870222417951,9.387474564291638e-05
+JOR,3311IS,Iron and steel mills and manufacturing from purchased steel,,,6.496254630472853e-11,2.732301039288754e-05,
+JOR,3313NF,Nonferrous metal production and processing and foundries,4755088.0,0.0014131534632457695,1.78677695387938e-11,7.515118796546417e-06,0.0014131534632457695
+JOR,332,Fabricated metal products,6070152.0,0.0018039742526801258,2.335682548621436e-09,0.0009823795737794894,0.0018039742526801258
+JOR,33311,Agricultural implement manufacturing,2500.0,7.429691433921777e-07,2.0007657678489486e-10,8.415147954982688e-05,7.429691433921777e-07
+JOR,33312,Construction machinery manufacturing,220127.0,6.541902745099596e-05,0.0,0.0,6.541902745099596e-05
+JOR,33313,Mining and oil and gas field machinery manufacturing,,,0.0,0.0,
+JOR,3332OM,Other machinery,99348572.0,0.02952516937443044,2.8057026521101352e-09,0.001180068317571126,0.02952516937443044
+JOR,3341,Computer and peripheral equipment manufacturing,,,7.934423625259039e-11,3.3371896809215e-05,
+JOR,3342,Communications equipment manufacturing,150927.0,4.485364156190049e-05,6.699621649942635e-11,2.8178364670485947e-05,4.485364156190049e-05
+JOR,3344,Semiconductor and other electronic component manufacturing,289482.0,8.603047742698177e-05,4.556726317488589e-12,1.916542494289859e-06,8.603047742698177e-05
+JOR,3345,"Navigational, measuring, electromedical, and control instruments manufacturing",423086.0,0.00012573593720048917,1.1843400611899864e-10,4.981291165653038e-05,0.00012573593720048917
+JOR,334X,Other computer and electronic product manufacturing,45274.0,1.3454873999174983e-05,9.905060414584086e-11,4.166032337777387e-05,1.3454873999174983e-05
+JOR,335,"Electrical equipment, appliances, and components",11063402.0,0.0032879065227773225,2.5051910300031035e-09,0.0010536742237266816,0.0032879065227773225
+JOR,336111,Automobile manufacturing,11000.0,3.2690642309255824e-06,7.8055682844962e-10,0.00032829935938665525,3.2690642309255824e-06
+JOR,336112,Light truck and utility vehicle manufacturing,,,3.845594897947245e-08,0.016174432090541337,
+JOR,33612,Heavy duty truck manufacturing,,,0.0,0.0,
+JOR,3362BP,"Motor vehicle body, trailer, and parts manufacturing",17276255.0,0.005134289751349931,1.378199915693051e-08,0.0057966586536367035,0.005134289751349931
+JOR,3364,Aerospace product and parts manufacturing,123924.0,3.68286832502929e-05,4.475481045258972e-11,1.882371028671966e-05,3.68286832502929e-05
+JOR,3365AO,All other transportation equipment manufacturing,,,2.310040889755387e-09,0.0009715947854431224,
+JOR,337,Furniture and related products,877752.0,0.00026085706062030833,2.521701417044471e-09,0.0010606184323881738,0.00026085706062030833
+JOR,3391,Medical equipment and supplies manufacturing,323509.0,9.614288184386402e-05,1.2253950906954463e-09,0.0005153967124596528,9.614288184386402e-05
+JOR,3399,Other miscellaneous manufacturing,947446940.0,0.281569536568536,2.9322986436959025e-08,0.01233314130590374,0.281569536568536
+JOR,4231,Motor vehicle and motor vehicle parts and supplies,,,0.0,0.0,
+JOR,4234,Professional and commercial equipment and supplies,,,0.0,0.0,
+JOR,4236,Household appliances and electrical and electronic goods,,,0.0,0.0,
+JOR,4238,"Machinery, equipment, and supplies",,,0.0,0.0,
+JOR,423X,Other durable goods merchant wholesalers,,,0.0,0.0,
+JOR,4242,Drugs and druggists' sundries,,,0.0,0.0,
+JOR,4244,Grocery and related product wholesalers,,,0.0,0.0,
+JOR,4247,Petroleum and petroleum products,,,0.0,0.0,
+JOR,424X,Other nondurable goods merchant wholesalers,,,0.0,0.0,
+JOR,425,Wholesale electronic markets and agents and brokers,,,0.0,0.0,
+JOR,42ID,Customs duties,,,0.0,0.0,
+JOR,441,Motor vehicle and parts dealers,,,0.0,0.0,
+JOR,444,Building material and garden equipment and supplies dealers,,,0.0,0.0,
+JOR,445,Food and beverage stores,,,0.0,0.0,
+JOR,446,Health and personal care stores,,,0.0,0.0,
+JOR,447,Gasoline stations,,,0.0,0.0,
+JOR,448,Clothing and clothing accessories stores,,,0.0,0.0,
+JOR,452,General merchandise stores,,,0.0,0.0,
+JOR,454,Nonstore retailers,,,5.076597701897056e-10,0.00021351985052862053,
+JOR,481,Air transportation,,,3.891214158299557e-09,0.0016366305038204925,
+JOR,482,Rail transportation,,,4.769662898975264e-11,2.006102844983238e-05,
+JOR,483,Water transportation,,,7.66463565111255e-10,0.00032237178415188,
+JOR,484,Truck transportation,,,3.7233062614743846e-10,0.00015660090539086974,
+JOR,485,Transit and ground passenger transportation,,,2.523949294940874e-09,0.0010615638816450002,
+JOR,486,Pipeline transportation,,,0.0,0.0,
+JOR,48A,Scenic and sightseeing transportation and support activities,,,6.037661122458679e-10,0.00025394182799399264,
+JOR,492,Couriers and messengers,,,1.8143608047147287e-10,7.631135468601533e-05,
+JOR,493,Warehousing and storage,,,5.860141218970626e-12,2.4647540550310666e-06,
+JOR,4A0X,All other retail,,,0.0,0.0,
+JOR,5111,"Newspaper, periodical, book, and directory publishers",,,1.4403685378973104e-09,0.0006058137614549114,
+JOR,5112,Software publishers,,,6.557019263008672e-10,0.00027578584224385475,
+JOR,512,Motion picture and sound recording industries,,,9.163820210826745e-10,0.00038542694075516406,
+JOR,515,Broadcasting (except internet),,,3.056241449433357e-10,0.0001285444023304287,
+JOR,5171,Wired telecommunications carriers,,,4.099181839822055e-09,0.001724100953284853,
+JOR,5172,Wireless telecommunications carriers (except satellite),,,4.131740698819204e-09,0.0017377950908050587,
+JOR,5174OT,"Other telecommunications, including satellite",,,2.8215872386937567e-10,0.00011867493168391521,
+JOR,518,"Data processing, hosting, and related services",,,1.311147495138971e-09,0.0005514638614724828,
+JOR,519,Other information services,,,1.063736535675697e-09,0.000447403712952146,
+JOR,521CI,"Federal reserve banks, credit intermediation, and related activities",,,4.815414831578426e-09,0.002025345941215134,
+JOR,523,"Securities, commodity contracts, and investments",,,5.2719230759179114e-09,0.002217351646256574,
+JOR,524113,Direct life insurance carriers,,,1.0972492130099683e-09,0.0004614990229912959,
+JOR,5241X,"Insurance carriers, except direct life",,,3.1431343652912507e-09,0.0013219908672644463,
+JOR,5242,"Agencies, brokerages, and other insurance related activities",,,0.0,0.0,
+JOR,525,"Funds, trusts, and other financial vehicles",,,3.755334928482347e-09,0.0015794801946091225,
+JOR,532RL,Rental and leasing services and lessors of intangible assets,,,2.6148871846902048e-09,0.0010998120268927698,
+JOR,5411,Legal services,,,1.0068741884369e-09,0.0004234876167868,
+JOR,5412,"Accounting, tax preparation, bookkeeping, and payroll services",,,3.9110831556840326e-10,0.0001644987331760791,
+JOR,5413,"Architectural, engineering, and related services",,,0.0,0.0,
+JOR,5415,Computer systems design and related services,,,0.0,0.0,
+JOR,5416,"Management, scientific, and technical consulting services",,,0.0,0.0,
+JOR,5417,Scientific research and development services,,,1.0315290495779533e-08,0.004338573615937883,
+JOR,5418,"Advertising, public relations, and related services",,,3.464592191384116e-11,1.4571948582227115e-05,
+JOR,541X,"Specialized design services and other professional, scientific, and technical services",,,9.6947931513673e-09,0.004077594692627106,
+JOR,55,Management of companies and enterprises,,,0.0,0.0,
+JOR,5613,Employment services,,,2.8172289643913356e-11,1.1849162425396701e-05,
+JOR,5617,Services to buildings and dwellings,,,8.974327173915554e-09,0.0037745693263291865,
+JOR,561X,Other administrative and support services,,,1.8501389344429562e-09,0.0007781616979257971,
+JOR,562,Waste management and remediation services,,,3.3489819043484582e-09,0.0014085695925291149,
+JOR,61,Educational services,,,1.858894549482285e-08,0.007818442777248327,
+JOR,6211,Offices of physicians,,,1.1029897010589068e-07,0.04639134513587686,
+JOR,6212,Offices of dentists,,,1.6334903297687806e-08,0.006870400837983316,
+JOR,6213,Offices of other health practitioners,,,2.876932602849554e-07,0.12100273754443908,
+JOR,6214,Outpatient care centers,,,7.383668736117714e-08,0.03105544180307145,
+JOR,6215OH,Other ambulatory health care services,,,5.6668983444880035e-08,0.023834768057823585,
+JOR,622,Hospitals,,,2.1614764088117706e-07,0.09091091058055785,
+JOR,623,Nursing and residential care facilities,,,3.560427485995018e-08,0.014975028341197173,
+JOR,624,Social assistance,,,1.9307910515511026e-08,0.008120836846597725,
+JOR,711AS,"Performing arts, spectator sports, museums, and related activities",,,3.6557832206491476e-09,0.0015376091088453827,
+JOR,713,"Amusements, gambling, and recreation industries",,,1.7802733030685706e-08,0.007487764678088391,
+JOR,721,Accommodation,,,4.972718479486e-09,0.0020915072826511133,
+JOR,722,Food services and drinking places,,,5.386214110889972e-08,0.022654220393367203,
+JOR,811,Repair and maintenance,,,1.8512811145757024e-08,0.007786420947299985,
+JOR,812,Personal and laundry services,,,1.8141698953658978e-08,0.007630332510832953,
+JOR,813,"Religious, grantmaking, civic, professional, and similar organizations",,,1.0080937307820524e-08,0.00424000551855799,
+JOR,814,Private households,,,0.0,0.0,
+JOR,GFE,Federal government enterprises,,,8.218054816950437e-11,3.4564839272088726e-05,
+JOR,GFGD,Federal general government (defense),,,0.0,0.0,
+JOR,GFGN,Federal general government (nondefense),,,0.0,0.0,
+JOR,GSLE,State and local government enterprises,,,8.48471485721326e-09,0.003568640169011522,
+JOR,GSLGE,State and local government (educational services),,,0.0,0.0,
+JOR,GSLGH,State and local government (hospitals and health services),,,0.0,0.0,
+JOR,GSLGO,State and local government (other services),,,0.0,0.0,
+JOR,HSO,Owner-occupied housing,,,1.2142868859690817e-08,0.005107246420059937,
+JOR,HST,Tenant-occupied housing,,,2.0176427317754907e-09,0.0008486131850626527,
+JOR,ORE,Other real estate,,,4.5332120432572624e-10,0.00019066524761832723,
+JOR,Other,,80125592.0,0.023812336980812452,0.0,0.0,0.023812336980812452
+JOR,Used,,,,1.315516742055206e-08,0.005533015508133746,

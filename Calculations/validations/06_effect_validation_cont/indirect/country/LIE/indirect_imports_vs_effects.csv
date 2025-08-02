@@ -1,0 +1,141 @@
+iso3,usummary_code,usummary_desc,impVal,impVal_share,indirect,indirect_share,impVal_share_no_oil
+LIE,111,Crop production,,,3.954727640865879e-09,0.011609141844294442,
+LIE,112,Animal production and aquaculture,,,4.018967597884584e-10,0.00117977188692696,
+LIE,113FF,"Forestry, fishing, and related activities",368202.0,0.0015107550238281126,1.0119472810632888e-10,0.00029705811857727956,0.0015107550238281126
+LIE,211,Oil and gas extraction,,,0.0,0.0,0.0
+LIE,212,"Mining, except oil and gas",,,4.9801281932300646e-12,1.4619215240147142e-05,
+LIE,213,Support activities for mining,,,0.0,0.0,
+LIE,2211,"Electric power generation, transmission, and distribution",,,2.6670706618647914e-09,0.007829212131423915,
+LIE,2212NW,"Natural gas distribution and water, sewage and other systems",,,2.711357403859669e-09,0.007959216297659655,
+LIE,23EH,"Education, hospital, and health structures",,,0.0,0.0,
+LIE,23MR,Maintenance and repair construction,,,0.0,0.0,
+LIE,23OC,Office and commercial structures,,,0.0,0.0,
+LIE,23OR,Other residential construction,,,0.0,0.0,
+LIE,23OT,Other nonresidential structures,,,0.0,0.0,
+LIE,23PC,Power and communication structures,,,0.0,0.0,
+LIE,23SF,Single-family residential structures,,,0.0,0.0,
+LIE,23TH,Transportation structures and highways and streets,,,0.0,0.0,
+LIE,311,Food manufacturing,,,1.6610632784177502e-08,0.04876067573462107,
+LIE,3121,Beverage manufacturing,,,6.237254402337921e-09,0.01830952157803642,
+LIE,3122,Tobacco manufacturing,,,1.880441570336483e-09,0.005520054704744298,
+LIE,313TT,Textile mills and textile product mills,3262886.0,0.013387818145144283,1.7265092142849563e-09,0.005068184761195582,0.013387818145144283
+LIE,315AL,Apparel and leather and allied products,10612.0,4.354167634305064e-05,1.176634117482664e-09,0.0034540210121022877,4.354167634305064e-05
+LIE,321,Wood products,30623.0,0.0001256480168350207,8.646942520685733e-11,0.0002538318472422612,0.0001256480168350207
+LIE,322,Paper products,16110.0,6.610030210012682e-05,1.350364210217514e-09,0.003964007406194325,6.610030210012682e-05
+LIE,323,Printing and related support activities,20165.0,8.273821178454732e-05,1.3507790073384198e-10,0.0003965225047218056,8.273821178454732e-05
+LIE,324,Petroleum and coal products,,,1.1382731223960058e-08,0.0334141193413509,
+LIE,3251,Basic chemical manufacturing,25585963.0,0.10498075008210224,8.075547802345926e-11,0.00023705849914682796,0.10498075008210224
+LIE,3252,"Resin, rubber, and artificial fibers manufacturing",21365.0,8.766188419424019e-05,0.0,0.0,8.766188419424019e-05
+LIE,3254,Pharmaceutical and medicine manufacturing,,,4.2374208989978446e-10,0.001243899068095445,
+LIE,325X,Other chemical manufacturing,26649470.0,0.10934438347661493,8.632245090172055e-09,0.025340040272553443,0.10934438347661493
+LIE,326,Plastics and rubber products,495147.0,0.0020316180188684973,2.8904122443270523e-09,0.008484833541035294,0.0020316180188684973
+LIE,327,Nonmetallic mineral products,8628253.0,0.035402242699958134,8.695531180751788e-10,0.0025525817213225424,0.035402242699958134
+LIE,3311IS,Iron and steel mills and manufacturing from purchased steel,38609669.0,0.1584178016688952,3.683035472505927e-10,0.001081158681474403,0.1584178016688952
+LIE,3313NF,Nonferrous metal production and processing and foundries,582805.0,0.002391284082275879,1.1163253095292968e-11,3.2769839138313026e-05,0.002391284082275879
+LIE,332,Fabricated metal products,30943845.0,0.12696446323026062,4.781169783898581e-09,0.014035170874821727,0.12696446323026062
+LIE,33311,Agricultural implement manufacturing,,,2.612762046529068e-10,0.0007669788657532904,
+LIE,33312,Construction machinery manufacturing,992231.0,0.004071183665618308,0.0,0.0,0.004071183665618308
+LIE,33313,Mining and oil and gas field machinery manufacturing,,,0.0,0.0,
+LIE,3332OM,Other machinery,13639188.0,0.05596241137184509,1.041914393877101e-09,0.003058549939859575,0.05596241137184509
+LIE,3341,Computer and peripheral equipment manufacturing,6416.0,2.6325235150491228e-05,4.885833651380632e-11,0.0001434241268612015,2.6325235150491228e-05
+LIE,3342,Communications equipment manufacturing,76332.0,0.00031319480198056365,9.060473319361708e-11,0.0002659710844660986,0.00031319480198056365
+LIE,3344,Semiconductor and other electronic component manufacturing,375751.0,0.0015417290263454223,3.503465019487402e-12,1.028445598565871e-05,0.0015417290263454223
+LIE,3345,"Navigational, measuring, electromedical, and control instruments manufacturing",24639822.0,0.10109867646761955,1.2293002447921628e-10,0.00036086229462551473,0.10109867646761955
+LIE,334X,Other computer and electronic product manufacturing,33305.0,0.00013665242467068427,5.643500241581109e-11,0.0001656655040560022,0.00013665242467068427
+LIE,335,"Electrical equipment, appliances, and components",5670577.0,0.023266719601615818,2.2089880091240884e-09,0.00648450600371871,0.023266719601615818
+LIE,336111,Automobile manufacturing,,,4.4174764555064824e-10,0.0012967545536101057,
+LIE,336112,Light truck and utility vehicle manufacturing,,,2.3763701767810264e-08,0.06975858001377243,
+LIE,33612,Heavy duty truck manufacturing,,,0.0,0.0,
+LIE,3362BP,"Motor vehicle body, trailer, and parts manufacturing",11923075.0,0.048921096180165706,6.813875387048823e-09,0.020002198143859277,0.048921096180165706
+LIE,3364,Aerospace product and parts manufacturing,,,6.215685941774322e-11,0.0001824620715014548,
+LIE,3365AO,All other transportation equipment manufacturing,,,2.810569061551783e-09,0.008250453093552674,
+LIE,337,Furniture and related products,52234.0,0.00021431925387324792,3.1552193545932103e-09,0.009262177414906836,0.00021431925387324792
+LIE,3391,Medical equipment and supplies manufacturing,43923263.0,0.18021979848065317,1.5846330807206751e-09,0.00465170597720853,0.18021979848065317
+LIE,3399,Other miscellaneous manufacturing,417328.0,0.0017123219661602561,2.696563001343243e-09,0.007915787183720175,0.0017123219661602561
+LIE,4231,Motor vehicle and motor vehicle parts and supplies,,,0.0,0.0,
+LIE,4234,Professional and commercial equipment and supplies,,,0.0,0.0,
+LIE,4236,Household appliances and electrical and electronic goods,,,0.0,0.0,
+LIE,4238,"Machinery, equipment, and supplies",,,0.0,0.0,
+LIE,423X,Other durable goods merchant wholesalers,,,0.0,0.0,
+LIE,4242,Drugs and druggists' sundries,,,0.0,0.0,
+LIE,4244,Grocery and related product wholesalers,,,0.0,0.0,
+LIE,4247,Petroleum and petroleum products,,,0.0,0.0,
+LIE,424X,Other nondurable goods merchant wholesalers,,,0.0,0.0,
+LIE,425,Wholesale electronic markets and agents and brokers,,,0.0,0.0,
+LIE,42ID,Customs duties,,,0.0,0.0,
+LIE,441,Motor vehicle and parts dealers,,,0.0,0.0,
+LIE,444,Building material and garden equipment and supplies dealers,,,0.0,0.0,
+LIE,445,Food and beverage stores,,,0.0,0.0,
+LIE,446,Health and personal care stores,,,0.0,0.0,
+LIE,447,Gasoline stations,,,0.0,0.0,
+LIE,448,Clothing and clothing accessories stores,,,0.0,0.0,
+LIE,452,General merchandise stores,,,0.0,0.0,
+LIE,454,Nonstore retailers,,,1.2549655810722424e-10,0.0003683963793062925,
+LIE,481,Air transportation,,,1.508511406264137e-09,0.004428250053958738,
+LIE,482,Rail transportation,,,2.3178307971184827e-11,6.804015077238306e-05,
+LIE,483,Water transportation,,,4.5421348582986806e-10,0.0013333481502245355,
+LIE,484,Truck transportation,,,2.023382708366036e-10,0.0005939659819802644,
+LIE,485,Transit and ground passenger transportation,,,9.856357058904203e-10,0.002893343298346048,
+LIE,486,Pipeline transportation,,,0.0,0.0,
+LIE,48A,Scenic and sightseeing transportation and support activities,,,1.7960587644440062e-10,0.0005272348149000084,
+LIE,492,Couriers and messengers,,,8.178097942269796e-11,0.0002400688685796716,
+LIE,493,Warehousing and storage,,,3.0173940887396645e-12,8.85758999288374e-06,
+LIE,4A0X,All other retail,,,0.0,0.0,
+LIE,5111,"Newspaper, periodical, book, and directory publishers",,,5.627285510379602e-10,0.0016518951902851197,
+LIE,5112,Software publishers,,,2.6341926685740696e-10,0.0007732698459098257,
+LIE,512,Motion picture and sound recording industries,,,1.3156233359484236e-10,0.0003862025228454175,
+LIE,515,Broadcasting (except internet),,,4.5151852403351065e-10,0.001325437063393783,
+LIE,5171,Wired telecommunications carriers,,,3.3848517854766462e-09,0.0099362656718651,
+LIE,5172,Wireless telecommunications carriers (except satellite),,,2.4008799946806233e-09,0.0070478068126263406,
+LIE,5174OT,"Other telecommunications, including satellite",,,1.6643631377525906e-10,0.0004885754342960093,
+LIE,518,"Data processing, hosting, and related services",,,5.890717877568127e-10,0.0017292260204911727,
+LIE,519,Other information services,,,6.743163610016469e-10,0.001979462302764951,
+LIE,521CI,"Federal reserve banks, credit intermediation, and related activities",,,1.421650100233412e-09,0.00417326783670785,
+LIE,523,"Securities, commodity contracts, and investments",,,1.4880973987871715e-09,0.004368324534445923,
+LIE,524113,Direct life insurance carriers,,,3.5380866889737415e-10,0.0010386088236587928,
+LIE,5241X,"Insurance carriers, except direct life",,,1.0670921141846387e-09,0.003132459385189211,
+LIE,5242,"Agencies, brokerages, and other insurance related activities",,,0.0,0.0,
+LIE,525,"Funds, trusts, and other financial vehicles",,,1.1474730296560319e-09,0.003368418352284435,
+LIE,532RL,Rental and leasing services and lessors of intangible assets,,,1.2162472526549863e-09,0.0035703057595930176,
+LIE,5411,Legal services,,,3.6040136997579366e-10,0.0010579617624466703,
+LIE,5412,"Accounting, tax preparation, bookkeeping, and payroll services",,,1.1094390963806604e-10,0.00032567693674775966,
+LIE,5413,"Architectural, engineering, and related services",,,0.0,0.0,
+LIE,5415,Computer systems design and related services,,,0.0,0.0,
+LIE,5416,"Management, scientific, and technical consulting services",,,0.0,0.0,
+LIE,5417,Scientific research and development services,,,8.028387223261833e-11,0.000235674095714367,
+LIE,5418,"Advertising, public relations, and related services",,,1.8012829629088394e-11,5.287683834920471e-05,
+LIE,541X,"Specialized design services and other professional, scientific, and technical services",,,1.2546788415375551e-09,0.0036831220663416826,
+LIE,55,Management of companies and enterprises,,,0.0,0.0,
+LIE,5613,Employment services,,,8.104095475403139e-12,2.3789651889418323e-05,
+LIE,5617,Services to buildings and dwellings,,,1.3268189865109239e-09,0.0038948901706757745,
+LIE,561X,Other administrative and support services,,,8.019350617524778e-10,0.002354088252651245,
+LIE,562,Waste management and remediation services,,,1.5285642763775327e-09,0.004487115451192681,
+LIE,61,Educational services,,,5.770195284740693e-09,0.01693846494955263,
+LIE,6211,Offices of physicians,,,2.184129473022589e-08,0.06411533526761831,
+LIE,6212,Offices of dentists,,,9.741972889189825e-09,0.028597657129458727,
+LIE,6213,Offices of other health practitioners,,,1.1466557563111514e-09,0.0033660192383509657,
+LIE,6214,Outpatient care centers,,,3.808321861148804e-09,0.011179366239522853,
+LIE,6215OH,Other ambulatory health care services,,,6.1324780723132046e-09,0.018001949631839077,
+LIE,622,Hospitals,,,8.242726250408688e-08,0.24196603891471116,
+LIE,623,Nursing and residential care facilities,,,3.3105038629929842e-09,0.0097180166149585,
+LIE,624,Social assistance,,,7.431753044832699e-09,0.021815984078827715,
+LIE,711AS,"Performing arts, spectator sports, museums, and related activities",,,6.178334144911632e-10,0.0018136560583479947,
+LIE,713,"Amusements, gambling, and recreation industries",,,5.216676400818514e-09,0.015313604827569315,
+LIE,721,Accommodation,,,2.188587300697626e-09,0.006424619523699307,
+LIE,722,Food services and drinking places,,,1.4929833716801696e-08,0.04382667355877179,
+LIE,811,Repair and maintenance,,,9.455382099879492e-09,0.027756367051732036,
+LIE,812,Personal and laundry services,,,6.9525339462496655e-09,0.02040923170669033,
+LIE,813,"Religious, grantmaking, civic, professional, and similar organizations",,,3.5035835724566503e-09,0.010284803999064701,
+LIE,814,Private households,,,0.0,0.0,
+LIE,GFE,Federal government enterprises,,,1.2160382546384469e-10,0.00035696922438620954,
+LIE,GFGD,Federal general government (defense),,,0.0,0.0,
+LIE,GFGN,Federal general government (nondefense),,,0.0,0.0,
+LIE,GSLE,State and local government enterprises,,,3.1994320904218704e-09,0.009391964335314546,
+LIE,GSLGE,State and local government (educational services),,,0.0,0.0,
+LIE,GSLGH,State and local government (hospitals and health services),,,0.0,0.0,
+LIE,GSLGO,State and local government (other services),,,0.0,0.0,
+LIE,HSO,Owner-occupied housing,,,4.1959989930849484e-09,0.012317396269183897,
+LIE,HST,Tenant-occupied housing,,,7.232183058102677e-10,0.0021230144422040246,
+LIE,ORE,Other real estate,,,1.6687583539816683e-10,0.000489865654338281,
+LIE,Other,,6745883.0,0.027678765005096823,0.0,0.0,0.027678765005096823
+LIE,Used,,,,9.753993450080812e-09,0.028632943604054207,

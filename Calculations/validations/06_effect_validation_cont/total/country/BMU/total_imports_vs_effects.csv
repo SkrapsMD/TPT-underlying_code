@@ -1,0 +1,141 @@
+iso3,usummary_code,usummary_desc,impVal,impVal_share,total,total_share,impVal_share_no_oil
+BMU,111,Crop production,,,6.639981333313381e-11,0.007084993741802093,
+BMU,112,Animal production and aquaculture,18000.0,0.000771596073913417,1.8201982720992157e-11,0.0019421881959157132,0.000771596073913417
+BMU,113FF,"Forestry, fishing, and related activities",,,1.3896076731852528e-12,0.00014827393593235907,
+BMU,211,Oil and gas extraction,,,0.0,0.0,0.0
+BMU,212,"Mining, except oil and gas",,,3.744126692261766e-14,3.995058547845591e-06,
+BMU,213,Support activities for mining,,,0.0,0.0,
+BMU,2211,"Electric power generation, transmission, and distribution",,,1.8505108438570212e-10,0.019745323201566183,
+BMU,2212NW,"Natural gas distribution and water, sewage and other systems",,,5.200811961699047e-11,0.005549371052605058,
+BMU,23EH,"Education, hospital, and health structures",,,0.0,0.0,
+BMU,23MR,Maintenance and repair construction,,,0.0,0.0,
+BMU,23OC,Office and commercial structures,,,0.0,0.0,
+BMU,23OR,Other residential construction,,,0.0,0.0,
+BMU,23OT,Other nonresidential structures,,,0.0,0.0,
+BMU,23PC,Power and communication structures,,,0.0,0.0,
+BMU,23SF,Single-family residential structures,,,0.0,0.0,
+BMU,23TH,Transportation structures and highways and streets,,,0.0,0.0,
+BMU,311,Food manufacturing,,,1.4905886633514402e-10,0.01590488108522469,
+BMU,3121,Beverage manufacturing,723887.0,0.031030464842053428,3.8552182328300695e-09,0.41135954578433215,0.031030464842053428
+BMU,3122,Tobacco manufacturing,,,7.009039470058704e-12,0.00074787862026458,
+BMU,313TT,Textile mills and textile product mills,7901.0,0.0003386878099994393,2.1261443719318263e-11,0.002268638842963112,0.0003386878099994393
+BMU,315AL,Apparel and leather and allied products,,,4.818077346347966e-12,0.0005140985513789047,
+BMU,321,Wood products,6000.0,0.0002571986913044723,9.062189029084256e-13,9.669538110892652e-05,0.0002571986913044723
+BMU,322,Paper products,,,8.507251840525514e-12,0.0009077408960121382,
+BMU,323,Printing and related support activities,2500.0,0.00010716612137686347,-4.162702766080754e-13,-4.4416876443156206e-05,0.00010716612137686347
+BMU,324,Petroleum and coal products,335000.0,0.014360260264499705,2.8687521639777707e-10,0.03061016305360817,0.014360260264499705
+BMU,3251,Basic chemical manufacturing,22066.0,0.0009458910537207477,9.611890556299457e-13,0.00010256080705619392,0.0009458910537207477
+BMU,3252,"Resin, rubber, and artificial fibers manufacturing",,,0.0,0.0,
+BMU,3254,Pharmaceutical and medicine manufacturing,,,2.5643302316747287e-12,0.00027361919757481183,
+BMU,325X,Other chemical manufacturing,121323.0,0.005200686137522083,1.4499889417540451e-10,0.015471673883280775,0.005200686137522083
+BMU,326,Plastics and rubber products,10890.0,0.00046681562471761725,2.9423361715462124e-11,0.0031395319226417734,0.00046681562471761725
+BMU,327,Nonmetallic mineral products,5645.0,0.00024198110206895772,1.1307858365304346e-11,0.0012065712496722855,0.00024198110206895772
+BMU,3311IS,Iron and steel mills and manufacturing from purchased steel,,,2.157708457151028e-13,2.3023183572596017e-05,
+BMU,3313NF,Nonferrous metal production and processing and foundries,5500.0,0.00023576546702909964,3.5388409618558543e-14,3.7760145412141173e-06,0.00023576546702909964
+BMU,332,Fabricated metal products,41993.0,0.001800090773991451,4.404828705896263e-11,0.004700040895960201,0.001800090773991451
+BMU,33311,Agricultural implement manufacturing,,,4.989038574199638e-13,5.323404585261869e-05,
+BMU,33312,Construction machinery manufacturing,,,0.0,0.0,
+BMU,33313,Mining and oil and gas field machinery manufacturing,,,0.0,0.0,
+BMU,3332OM,Other machinery,53125.0,0.0022772800792583486,1.0366410796257426e-11,0.0011061168989730224,0.0022772800792583486
+BMU,3341,Computer and peripheral equipment manufacturing,12990.0,0.0005568351666741826,8.844463442312978e-12,0.0009437220527111895,0.0005568351666741826
+BMU,3342,Communications equipment manufacturing,28260.0,0.0012114058360440647,3.785247195423648e-12,0.00040389349524523344,0.0012114058360440647
+BMU,3344,Semiconductor and other electronic component manufacturing,6000.0,0.0002571986913044723,2.5549912498799813e-14,2.7262270941845774e-06,0.0002571986913044723
+BMU,3345,"Navigational, measuring, electromedical, and control instruments manufacturing",237926.0,0.010199042637884646,1.4206924310658546e-12,0.00015159074217011996,0.010199042637884646
+BMU,334X,Other computer and electronic product manufacturing,44000.0,0.0018861237362327971,9.723828109234164e-11,0.010375520327841838,0.0018861237362327971
+BMU,335,"Electrical equipment, appliances, and components",326336.0,0.013988865354256046,1.146098868801166e-10,0.012229105633480375,0.013988865354256046
+BMU,336111,Automobile manufacturing,,,1.0033476103900949e-12,0.00010705920971194398,
+BMU,336112,Light truck and utility vehicle manufacturing,,,6.324912971094639e-11,0.006748809457162589,
+BMU,33612,Heavy duty truck manufacturing,,,0.0,0.0,
+BMU,3362BP,"Motor vehicle body, trailer, and parts manufacturing",50873.0,0.00218074483712207,5.501549024651646e-11,0.005870263552446449,0.00218074483712207
+BMU,3364,Aerospace product and parts manufacturing,,,2.2128794903400366e-13,2.3611869602346988e-05,
+BMU,3365AO,All other transportation equipment manufacturing,30000.0,0.0012859934565223616,9.30595541240358e-11,0.009929641748777024,0.0012859934565223616
+BMU,337,Furniture and related products,5270.0,0.0002259061838624282,2.692023655622532e-11,0.0028724434294985185,0.0002259061838624282
+BMU,3391,Medical equipment and supplies manufacturing,45765.0,0.0019617830179248625,5.6490225608496216e-11,0.0060276207841305175,0.0019617830179248625
+BMU,3399,Other miscellaneous manufacturing,839571.0,0.03598942707619786,2.082808269509215e-09,0.22223983493463803,0.03598942707619786
+BMU,4231,Motor vehicle and motor vehicle parts and supplies,,,0.0,0.0,
+BMU,4234,Professional and commercial equipment and supplies,,,0.0,0.0,
+BMU,4236,Household appliances and electrical and electronic goods,,,0.0,0.0,
+BMU,4238,"Machinery, equipment, and supplies",,,0.0,0.0,
+BMU,423X,Other durable goods merchant wholesalers,,,0.0,0.0,
+BMU,4242,Drugs and druggists' sundries,,,0.0,0.0,
+BMU,4244,Grocery and related product wholesalers,,,0.0,0.0,
+BMU,4247,Petroleum and petroleum products,,,0.0,0.0,
+BMU,424X,Other nondurable goods merchant wholesalers,,,0.0,0.0,
+BMU,425,Wholesale electronic markets and agents and brokers,,,0.0,0.0,
+BMU,42ID,Customs duties,,,0.0,0.0,
+BMU,441,Motor vehicle and parts dealers,,,0.0,0.0,
+BMU,444,Building material and garden equipment and supplies dealers,,,0.0,0.0,
+BMU,445,Food and beverage stores,,,0.0,0.0,
+BMU,446,Health and personal care stores,,,0.0,0.0,
+BMU,447,Gasoline stations,,,0.0,0.0,
+BMU,448,Clothing and clothing accessories stores,,,0.0,0.0,
+BMU,452,General merchandise stores,,,0.0,0.0,
+BMU,454,Nonstore retailers,,,1.1631116093155752e-12,0.00012410634999339816,
+BMU,481,Air transportation,,,1.1914949290836168e-10,0.012713490734670319,
+BMU,482,Rail transportation,,,1.2145244243998533e-12,0.00012959220085404768,
+BMU,483,Water transportation,,,3.793490842517261e-11,0.004047731089841283,
+BMU,484,Truck transportation,,,2.7482261872570186e-12,0.00029324126620784344,
+BMU,485,Transit and ground passenger transportation,,,9.960217235031112e-12,0.0010627752283449716,
+BMU,486,Pipeline transportation,,,0.0,0.0,
+BMU,48A,Scenic and sightseeing transportation and support activities,,,2.792653503252634e-12,0.0002979817502543088,
+BMU,492,Couriers and messengers,,,3.036040891038531e-12,0.0003239516744564324,
+BMU,493,Warehousing and storage,,,2.681734010637956e-14,2.8614641711751056e-06,
+BMU,4A0X,All other retail,,,0.0,0.0,
+BMU,5111,"Newspaper, periodical, book, and directory publishers",,,4.3572750064433764e-12,0.00046493001414142675,
+BMU,5112,Software publishers,,,2.118234356014432e-12,0.0002260198696755001,
+BMU,512,Motion picture and sound recording industries,,,1.533201613873729e-12,0.00016359569845049082,
+BMU,515,Broadcasting (except internet),,,8.316890382465782e-13,8.874289452500641e-05,
+BMU,5171,Wired telecommunications carriers,,,2.3239941158242107e-11,0.0024797485023023507,
+BMU,5172,Wireless telecommunications carriers (except satellite),,,4.175159319475685e-11,0.004454979037531552,
+BMU,5174OT,"Other telecommunications, including satellite",,,1.880351448203264e-12,0.00020063728456689428,
+BMU,518,"Data processing, hosting, and related services",,,5.168509169818347e-12,0.0005514903323430993,
+BMU,519,Other information services,,,3.4829205342757027e-12,0.00037163463193387754,
+BMU,521CI,"Federal reserve banks, credit intermediation, and related activities",,,1.6910843400787394e-11,0.001804421031457728,
+BMU,523,"Securities, commodity contracts, and investments",,,1.588680029564846e-11,0.001695153570797195,
+BMU,524113,Direct life insurance carriers,,,3.1625447511975454e-12,0.00033744989098068244,
+BMU,5241X,"Insurance carriers, except direct life",,,8.783183482296926e-12,0.000937183357624302,
+BMU,5242,"Agencies, brokerages, and other insurance related activities",,,0.0,0.0,
+BMU,525,"Funds, trusts, and other financial vehicles",,,1.435917064609534e-11,0.0015321524121557695,
+BMU,532RL,Rental and leasing services and lessors of intangible assets,,,8.448266661725616e-12,0.0009014470587002821,
+BMU,5411,Legal services,,,3.503018672066954e-12,0.00037377914369264527,
+BMU,5412,"Accounting, tax preparation, bookkeeping, and payroll services",,,2.0592831053790144e-12,0.00021972965256708964,
+BMU,5413,"Architectural, engineering, and related services",,,0.0,0.0,
+BMU,5415,Computer systems design and related services,,,0.0,0.0,
+BMU,5416,"Management, scientific, and technical consulting services",,,0.0,0.0,
+BMU,5417,Scientific research and development services,,,6.26134145053023e-13,6.680977365060768e-05,
+BMU,5418,"Advertising, public relations, and related services",,,9.05641969403849e-14,9.663382114265292e-06,
+BMU,541X,"Specialized design services and other professional, scientific, and technical services",,,2.3315957809975988e-11,0.002487859632059677,
+BMU,55,Management of companies and enterprises,,,0.0,0.0,
+BMU,5613,Employment services,,,7.720779455152772e-14,8.238227093673949e-06,
+BMU,5617,Services to buildings and dwellings,,,1.1542455685933542e-11,0.0012316032560148694,
+BMU,561X,Other administrative and support services,,,1.1430646339127449e-11,0.0012196729736446198,
+BMU,562,Waste management and remediation services,,,1.1268013275629342e-11,0.0012023196983979977,
+BMU,61,Educational services,,,6.422401910304221e-11,0.006852832117697712,
+BMU,6211,Offices of physicians,,,1.8618060545026067e-10,0.019865845372818096,
+BMU,6212,Offices of dentists,,,1.621239594901107e-11,0.001729895282417052,
+BMU,6213,Offices of other health practitioners,,,4.839930542965016e-12,0.0005164303314472218,
+BMU,6214,Outpatient care centers,,,3.052717187314411e-11,0.003257310688375321,
+BMU,6215OH,Other ambulatory health care services,,,2.297620809578105e-11,0.002451607653657668,
+BMU,622,Hospitals,,,2.6041002125831353e-10,0.027786273459251373,
+BMU,623,Nursing and residential care facilities,,,2.651129343077912e-11,0.002828808374833485,
+BMU,624,Social assistance,,,4.5085027175192816e-11,0.0048106631532625534,
+BMU,711AS,"Performing arts, spectator sports, museums, and related activities",,,8.100367149687252e-12,0.0008643254804632868,
+BMU,713,"Amusements, gambling, and recreation industries",,,9.29095007285624e-11,0.009913630749430816,
+BMU,721,Accommodation,,,3.2424486215122976e-11,0.00345975794785344,
+BMU,722,Food services and drinking places,,,4.435106904455402e-10,0.047323483433062155,
+BMU,811,Repair and maintenance,,,3.8648241250694536e-11,0.0041238451382240495,
+BMU,812,Personal and laundry services,,,3.2226618256911546e-11,0.0034386450384150096,
+BMU,813,"Religious, grantmaking, civic, professional, and similar organizations",,,2.846698780318662e-11,0.003037484901074116,
+BMU,814,Private households,,,0.0,0.0,
+BMU,GFE,Federal government enterprises,,,9.371600667697541e-13,9.999686557578411e-05,
+BMU,GFGD,Federal general government (defense),,,0.0,0.0,
+BMU,GFGN,Federal general government (nondefense),,,0.0,0.0,
+BMU,GSLE,State and local government enterprises,,,5.5404911312638045e-11,0.00591181556408472,
+BMU,GSLGE,State and local government (educational services),,,0.0,0.0,
+BMU,GSLGH,State and local government (hospitals and health services),,,0.0,0.0,
+BMU,GSLGO,State and local government (other services),,,0.0,0.0,
+BMU,HSO,Owner-occupied housing,,,4.100659267691208e-11,0.004375485982632621,
+BMU,HST,Tenant-occupied housing,,,9.904168056171507e-12,0.0010567946681367506,
+BMU,ORE,Other real estate,,,1.1140498375759758e-12,0.00011887136019014628,
+BMU,Other,,20347447.0,0.8722227899645186,0.0,0.0,0.8722227899645186
+BMU,Used,,,,3.0981995298792256e-11,0.003305841263426412,

@@ -1,0 +1,141 @@
+iso3,usummary_code,usummary_desc,impVal,impVal_share,indirect,indirect_share,impVal_share_no_oil
+ISL,111,Crop production,,,2.179009596099557e-08,0.010141759976008713,
+ISL,112,Animal production and aquaculture,53504049.0,0.049881326062700404,3.722474878288592e-09,0.00173255073313593,0.049881326062700404
+ISL,113FF,"Forestry, fishing, and related activities",296755972.0,0.27666282602996256,5.755467610964061e-10,0.000267876613139169,0.27666282602996256
+ISL,211,Oil and gas extraction,,,0.0,0.0,0.0
+ISL,212,"Mining, except oil and gas",2872967.0,0.0026784403493346496,3.995924811535424e-12,1.8598224805118546e-06,0.0026784403493346496
+ISL,213,Support activities for mining,,,0.0,0.0,
+ISL,2211,"Electric power generation, transmission, and distribution",,,3.4355682384651287e-09,0.0015990158335273557,
+ISL,2212NW,"Natural gas distribution and water, sewage and other systems",,,2.577218294864741e-09,0.0011995141920936472,
+ISL,23EH,"Education, hospital, and health structures",,,0.0,0.0,
+ISL,23MR,Maintenance and repair construction,,,0.0,0.0,
+ISL,23OC,Office and commercial structures,,,0.0,0.0,
+ISL,23OR,Other residential construction,,,0.0,0.0,
+ISL,23OT,Other nonresidential structures,,,0.0,0.0,
+ISL,23PC,Power and communication structures,,,0.0,0.0,
+ISL,23SF,Single-family residential structures,,,0.0,0.0,
+ISL,23TH,Transportation structures and highways and streets,,,0.0,0.0,
+ISL,311,Food manufacturing,29602266.0,0.027597916608905433,4.014688868970241e-07,0.18685558319858722,0.027597916608905433
+ISL,3121,Beverage manufacturing,35977879.0,0.03354184116875681,2.1252434760460032e-08,0.009891516431693684,0.03354184116875681
+ISL,3122,Tobacco manufacturing,,,2.505827225059257e-09,0.0011662866608476298,
+ISL,313TT,Textile mills and textile product mills,1212386.0,0.0011302961646856501,2.696539744346653e-09,0.001255049950302383,0.0011302961646856501
+ISL,315AL,Apparel and leather and allied products,132395.0,0.00012343062417708274,6.975218910610925e-09,0.0032464747332072268,0.00012343062417708274
+ISL,321,Wood products,28775.0,2.682666422973342e-05,7.603877864192631e-10,0.0003539071343401465,2.682666422973342e-05
+ISL,322,Paper products,66077.0,6.160297106196682e-05,2.614939648563723e-09,0.001217070834151121,6.160297106196682e-05
+ISL,323,Printing and related support activities,368923.0,0.00034394347341879905,2.515174091022472e-10,0.0001170636970791034,0.00034394347341879905
+ISL,324,Petroleum and coal products,,,7.370260927100254e-09,0.0034303390594059174,
+ISL,3251,Basic chemical manufacturing,2586848.0,0.0024116942731314487,7.957084317233939e-11,3.7034641517275226e-05,0.0024116942731314487
+ISL,3252,"Resin, rubber, and artificial fibers manufacturing",7435110.0,0.006931683735226177,0.0,0.0,0.006931683735226177
+ISL,3254,Pharmaceutical and medicine manufacturing,281546617.0,0.2624832861607769,1.3429272872676998e-07,0.06250383769342172,0.2624832861607769
+ISL,325X,Other chemical manufacturing,2583107.0,0.002408206573708914,7.933038985225717e-09,0.003692272737692112,0.002408206573708914
+ISL,326,Plastics and rubber products,1519119.0,0.0014162604809038542,1.56131030185e-08,0.007266803394430278,0.0014162604809038542
+ISL,327,Nonmetallic mineral products,159639.0,0.00014882995138037927,6.543908661593697e-10,0.00030457300908451557,0.00014882995138037927
+ISL,3311IS,Iron and steel mills and manufacturing from purchased steel,32518206.0,0.030316420285501397,3.2548863910639877e-10,0.00015149211176690926,0.030316420285501397
+ISL,3313NF,Nonferrous metal production and processing and foundries,45853.0,4.2748324410980594e-05,9.91990079760648e-12,4.617017431002894e-06,4.2748324410980594e-05
+ISL,332,Fabricated metal products,768123.0,0.0007161139116641363,3.793136694900422e-09,0.0017654388482148497,0.0007161139116641363
+ISL,33311,Agricultural implement manufacturing,,,2.1253477128393022e-10,9.89200158079087e-05,
+ISL,33312,Construction machinery manufacturing,280162.0,0.0002611924206405065,0.0,0.0,0.0002611924206405065
+ISL,33313,Mining and oil and gas field machinery manufacturing,4060.0,3.7851001484871482e-06,0.0,0.0,3.7851001484871482e-06
+ISL,3332OM,Other machinery,11723032.0,0.010929273439389061,8.510157489284336e-10,0.00039608808868417367,0.010929273439389061
+ISL,3341,Computer and peripheral equipment manufacturing,1302076.0,0.0012139133155028453,6.396887087611409e-11,2.9773018692672252e-05,0.0012139133155028453
+ISL,3342,Communications equipment manufacturing,1706666.0,0.0015911088004970362,7.078969297007984e-11,3.2947632546593854e-05,0.0015911088004970362
+ISL,3344,Semiconductor and other electronic component manufacturing,6004078.0,0.0055975459431843394,4.109549102655795e-12,1.9127066114514176e-06,0.0055975459431843394
+ISL,3345,"Navigational, measuring, electromedical, and control instruments manufacturing",16041836.0,0.014955654144238049,1.1500976858885427e-10,5.3528973438773897e-05,0.014955654144238049
+ISL,334X,Other computer and electronic product manufacturing,646947.0,0.0006031426565919495,1.3384302783007398e-10,6.22945334956132e-05,0.0006031426565919495
+ISL,335,"Electrical equipment, appliances, and components",2680829.0,0.0024993118832435106,1.8479895076345143e-09,0.0008601093844726449,0.0024993118832435106
+ISL,336111,Automobile manufacturing,,,2.260260349374646e-10,0.00010519925193390438,
+ISL,336112,Light truck and utility vehicle manufacturing,,,1.4232605387856056e-08,0.006624278660142696,
+ISL,33612,Heavy duty truck manufacturing,,,0.0,0.0,
+ISL,3362BP,"Motor vehicle body, trailer, and parts manufacturing",202718.0,0.00018899210145345262,5.649240373884251e-09,0.002629324809824936,0.00018899210145345262
+ISL,3364,Aerospace product and parts manufacturing,405954.0,0.00037846712947757434,4.897936326748481e-11,2.2796455184306276e-05,0.00037846712947757434
+ISL,3365AO,All other transportation equipment manufacturing,301450.0,0.0002810390245717859,2.123551255264706e-09,0.0009883640331918332,0.0002810390245717859
+ISL,337,Furniture and related products,187057.0,0.00017439149716146809,5.662253014195358e-09,0.00263538128038503,0.00017439149716146809
+ISL,3391,Medical equipment and supplies manufacturing,261332436.0,0.24363779367194782,6.315115632593569e-09,0.0029392429974217597,0.24363779367194782
+ISL,3399,Other miscellaneous manufacturing,522157.0,0.0004868021030132029,9.52025933398792e-09,0.004431012385052877,0.0004868021030132029
+ISL,4231,Motor vehicle and motor vehicle parts and supplies,,,0.0,0.0,
+ISL,4234,Professional and commercial equipment and supplies,,,0.0,0.0,
+ISL,4236,Household appliances and electrical and electronic goods,,,0.0,0.0,
+ISL,4238,"Machinery, equipment, and supplies",,,0.0,0.0,
+ISL,423X,Other durable goods merchant wholesalers,,,0.0,0.0,
+ISL,4242,Drugs and druggists' sundries,,,0.0,0.0,
+ISL,4244,Grocery and related product wholesalers,,,0.0,0.0,
+ISL,4247,Petroleum and petroleum products,,,0.0,0.0,
+ISL,424X,Other nondurable goods merchant wholesalers,,,0.0,0.0,
+ISL,425,Wholesale electronic markets and agents and brokers,,,0.0,0.0,
+ISL,42ID,Customs duties,,,0.0,0.0,
+ISL,441,Motor vehicle and parts dealers,,,0.0,0.0,
+ISL,444,Building material and garden equipment and supplies dealers,,,0.0,0.0,
+ISL,445,Food and beverage stores,,,0.0,0.0,
+ISL,446,Health and personal care stores,,,0.0,0.0,
+ISL,447,Gasoline stations,,,0.0,0.0,
+ISL,448,Clothing and clothing accessories stores,,,0.0,0.0,
+ISL,452,General merchandise stores,,,0.0,0.0,
+ISL,454,Nonstore retailers,,,1.9962274512374307e-10,9.291037407182061e-05,
+ISL,481,Air transportation,,,4.013565198683398e-09,0.0018680328423505018,
+ISL,482,Rail transportation,,,3.812437096266863e-11,1.7744218301369787e-05,
+ISL,483,Water transportation,,,6.100959961802834e-10,0.0002839568566682743,
+ISL,484,Truck transportation,,,2.0756341382306622e-10,9.660619790580896e-05,
+ISL,485,Transit and ground passenger transportation,,,1.0940171656841272e-09,0.0005091881891599912,
+ISL,486,Pipeline transportation,,,0.0,0.0,
+ISL,48A,Scenic and sightseeing transportation and support activities,,,2.6300082968724947e-10,0.00012240842320996207,
+ISL,492,Couriers and messengers,,,1.6053794628452163e-10,7.471914401723497e-05,
+ISL,493,Warehousing and storage,,,2.7929778065337167e-12,1.2999350981697135e-06,
+ISL,4A0X,All other retail,,,0.0,0.0,
+ISL,5111,"Newspaper, periodical, book, and directory publishers",,,9.98008748327866e-10,0.00046450301079975866,
+ISL,5112,Software publishers,,,5.521461326482211e-10,0.00025698526335190495,
+ISL,512,Motion picture and sound recording industries,,,2.482430819564045e-10,0.00011553972765485177,
+ISL,515,Broadcasting (except internet),,,2.356173030712255e-10,0.00010966331393033901,
+ISL,5171,Wired telecommunications carriers,,,3.1805462990051943e-09,0.00148032102358946,
+ISL,5172,Wireless telecommunications carriers (except satellite),,,2.610526600701909e-09,0.0012150168701732997,
+ISL,5174OT,"Other telecommunications, including satellite",,,2.2160366023211428e-10,0.00010314094696517372,
+ISL,518,"Data processing, hosting, and related services",,,1.3061382845228683e-09,0.0006079156787936184,
+ISL,519,Other information services,,,8.428035111988483e-10,0.00039226586853110683,
+ISL,521CI,"Federal reserve banks, credit intermediation, and related activities",,,5.558924543982763e-09,0.0025872891312976594,
+ISL,523,"Securities, commodity contracts, and investments",,,4.096249640662938e-09,0.0019065166455337348,
+ISL,524113,Direct life insurance carriers,,,6.809205744232703e-10,0.00031692072586041365,
+ISL,5241X,"Insurance carriers, except direct life",,,2.844584246827036e-09,0.0013239542732852302,
+ISL,5242,"Agencies, brokerages, and other insurance related activities",,,0.0,0.0,
+ISL,525,"Funds, trusts, and other financial vehicles",,,3.489215380756685e-09,0.0016239848121630464,
+ISL,532RL,Rental and leasing services and lessors of intangible assets,,,2.169804093253898e-09,0.0010098914822648096,
+ISL,5411,Legal services,,,9.706418749272888e-10,0.00045176565242284814,
+ISL,5412,"Accounting, tax preparation, bookkeeping, and payroll services",,,3.684438174951049e-10,0.0001714847317959672,
+ISL,5413,"Architectural, engineering, and related services",,,0.0,0.0,
+ISL,5415,Computer systems design and related services,,,0.0,0.0,
+ISL,5416,"Management, scientific, and technical consulting services",,,0.0,0.0,
+ISL,5417,Scientific research and development services,,,1.654314493765231e-09,0.0007699672617610987,
+ISL,5418,"Advertising, public relations, and related services",,,2.250670062712413e-11,1.047528914148705e-05,
+ISL,541X,"Specialized design services and other professional, scientific, and technical services",,,5.394187069508688e-09,0.0025106154017206744,
+ISL,55,Management of companies and enterprises,,,0.0,0.0,
+ISL,5613,Employment services,,,2.3595554613828483e-11,1.0982074233294014e-05,
+ISL,5617,Services to buildings and dwellings,,,9.161080115445527e-10,0.0004263839673682179,
+ISL,561X,Other administrative and support services,,,1.5622946839431854e-09,0.0007271385002024682,
+ISL,562,Waste management and remediation services,,,1.399655583898137e-09,0.0006514414166135079,
+ISL,61,Educational services,,,1.6014995087202012e-08,0.007453855939051159,
+ISL,6211,Offices of physicians,,,1.226491198817586e-07,0.057084555172958594,
+ISL,6212,Offices of dentists,,,5.3150579806381386e-08,0.024737863658191406,
+ISL,6213,Offices of other health practitioners,,,4.284252227511104e-08,0.019940186516789027,
+ISL,6214,Outpatient care centers,,,2.9237078607404012e-08,0.013607807609785442,
+ISL,6215OH,Other ambulatory health care services,,,1.6678645183170067e-08,0.007762738469601321,
+ISL,622,Hospitals,,,4.1281066206803995e-07,0.19213438333293242,
+ISL,623,Nursing and residential care facilities,,,1.9874921293175648e-08,0.009250380615957723,
+ISL,624,Social assistance,,,2.7240162577322443e-08,0.012678383383954444,
+ISL,711AS,"Performing arts, spectator sports, museums, and related activities",,,1.8572475365760862e-09,0.0008644183470189518,
+ISL,713,"Amusements, gambling, and recreation industries",,,4.38169019908317e-08,0.02039369187169977,
+ISL,721,Accommodation,,,2.6233704566561323e-08,0.012209947834641511,
+ISL,722,Food services and drinking places,,,5.507636913609399e-07,0.25634183398189997,
+ISL,811,Repair and maintenance,,,8.524507119820414e-09,0.003967559632493054,
+ISL,812,Personal and laundry services,,,5.568664076751924e-09,0.0025918222000734974,
+ISL,813,"Religious, grantmaking, civic, professional, and similar organizations",,,1.1727566263914598e-08,0.00545835880503965,
+ISL,814,Private households,,,0.0,0.0,
+ISL,GFE,Federal government enterprises,,,1.7142075895971795e-10,7.978432932955627e-05,
+ISL,GFGD,Federal general government (defense),,,0.0,0.0,
+ISL,GFGN,Federal general government (nondefense),,,0.0,0.0,
+ISL,GSLE,State and local government enterprises,,,3.1709870084416705e-09,0.0014758718449071025,
+ISL,GSLGE,State and local government (educational services),,,0.0,0.0,
+ISL,GSLGH,State and local government (hospitals and health services),,,0.0,0.0,
+ISL,GSLGO,State and local government (other services),,,0.0,0.0,
+ISL,HSO,Owner-occupied housing,,,6.691021201365424e-09,0.0031142006506121502,
+ISL,HST,Tenant-occupied housing,,,1.3168163860075423e-09,0.0006128855854177505,
+ISL,ORE,Other real estate,,,2.703355707947925e-10,0.00012582223028690284,
+ISL,Other,,19601068.0,0.018273892955001647,0.0,0.0,0.018273892955001647
+ISL,Used,,,,1.2224198371053749e-08,0.005689506186675807,

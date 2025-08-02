@@ -1,0 +1,141 @@
+iso3,usummary_code,usummary_desc,impVal,impVal_share,direct,direct_share,impVal_share_no_oil
+LBY,111,Crop production,322086.0,0.00021976953371375635,9.141772542860156e-10,0.9163659841940459,0.16805501131981357
+LBY,112,Animal production and aquaculture,0.0,0.0,0.0,0.0,0.0
+LBY,113FF,"Forestry, fishing, and related activities",0.0,0.0,0.0,0.0,0.0
+LBY,211,Oil and gas extraction,1463646007.0,0.9986922762255775,0.0,0.0,0.0
+LBY,212,"Mining, except oil and gas",2450.0,1.6717130132905593e-06,5.2469865808146713e-14,5.2595489546897825e-05,0.001278338014485396
+LBY,213,Support activities for mining,0.0,0.0,0.0,0.0,0.0
+LBY,2211,"Electric power generation, transmission, and distribution",0.0,0.0,0.0,0.0,0.0
+LBY,2212NW,"Natural gas distribution and water, sewage and other systems",0.0,0.0,0.0,0.0,0.0
+LBY,23EH,"Education, hospital, and health structures",0.0,0.0,0.0,0.0,0.0
+LBY,23MR,Maintenance and repair construction,0.0,0.0,0.0,0.0,0.0
+LBY,23OC,Office and commercial structures,0.0,0.0,0.0,0.0,0.0
+LBY,23OR,Other residential construction,0.0,0.0,0.0,0.0,0.0
+LBY,23OT,Other nonresidential structures,0.0,0.0,0.0,0.0,0.0
+LBY,23PC,Power and communication structures,0.0,0.0,0.0,0.0,0.0
+LBY,23SF,Single-family residential structures,0.0,0.0,0.0,0.0,0.0
+LBY,23TH,Transportation structures and highways and streets,0.0,0.0,0.0,0.0,0.0
+LBY,311,Food manufacturing,4963.0,3.3864129326371613e-06,1.3271058062055136e-11,0.01330283172690563,0.002589547577914702
+LBY,3121,Beverage manufacturing,0.0,0.0,0.0,0.0,0.0
+LBY,3122,Tobacco manufacturing,0.0,0.0,0.0,0.0,0.0
+LBY,313TT,Textile mills and textile product mills,0.0,0.0,0.0,0.0,0.0
+LBY,315AL,Apparel and leather and allied products,1820.0,1.2418439527301298e-06,1.1518509072592711e-11,0.011546086771758715,0.0009496225250462941
+LBY,321,Wood products,0.0,0.0,0.0,0.0,0.0
+LBY,322,Paper products,0.0,0.0,0.0,0.0,0.0
+LBY,323,Printing and related support activities,4000.0,2.7293273686376477e-06,-2.3161723173341226e-12,-0.002321717714136913,0.002087082472629218
+LBY,324,Petroleum and coal products,0.0,0.0,0.0,0.0,0.0
+LBY,3251,Basic chemical manufacturing,111897.0,7.635088614211171e-05,3.22943016727168e-12,0.003237162092737845,0.058384566859947896
+LBY,3252,"Resin, rubber, and artificial fibers manufacturing",0.0,0.0,0.0,0.0,0.0
+LBY,3254,Pharmaceutical and medicine manufacturing,0.0,0.0,0.0,0.0,0.0
+LBY,325X,Other chemical manufacturing,0.0,0.0,0.0,0.0,0.0
+LBY,326,Plastics and rubber products,0.0,0.0,0.0,0.0,0.0
+LBY,327,Nonmetallic mineral products,0.0,0.0,0.0,0.0,0.0
+LBY,3311IS,Iron and steel mills and manufacturing from purchased steel,0.0,0.0,0.0,0.0,0.0
+LBY,3313NF,Nonferrous metal production and processing and foundries,0.0,0.0,0.0,0.0,0.0
+LBY,332,Fabricated metal products,0.0,0.0,0.0,0.0,0.0
+LBY,33311,Agricultural implement manufacturing,0.0,0.0,0.0,0.0,0.0
+LBY,33312,Construction machinery manufacturing,0.0,0.0,0.0,0.0,0.0
+LBY,33313,Mining and oil and gas field machinery manufacturing,0.0,0.0,0.0,0.0,0.0
+LBY,3332OM,Other machinery,0.0,0.0,0.0,0.0,0.0
+LBY,3341,Computer and peripheral equipment manufacturing,0.0,0.0,0.0,0.0,0.0
+LBY,3342,Communications equipment manufacturing,5088.0,3.471704412907088e-06,5.621428584385202e-13,0.000563488745006012,0.002654768905184365
+LBY,3344,Semiconductor and other electronic component manufacturing,3735.0,2.5485094304654035e-06,2.052598211817734e-15,2.0575125575579198e-06,0.001948813258817532
+LBY,3345,"Navigational, measuring, electromedical, and control instruments manufacturing",0.0,0.0,0.0,0.0,0.0
+LBY,334X,Other computer and electronic product manufacturing,0.0,0.0,0.0,0.0,0.0
+LBY,335,"Electrical equipment, appliances, and components",0.0,0.0,0.0,0.0,0.0
+LBY,336111,Automobile manufacturing,0.0,0.0,0.0,0.0,0.0
+LBY,336112,Light truck and utility vehicle manufacturing,0.0,0.0,0.0,0.0,0.0
+LBY,33612,Heavy duty truck manufacturing,0.0,0.0,0.0,0.0,0.0
+LBY,3362BP,"Motor vehicle body, trailer, and parts manufacturing",5073.0,3.4614694352746966e-06,3.396292161565215e-12,0.0034044235892457613,0.0026469423459120054
+LBY,3364,Aerospace product and parts manufacturing,0.0,0.0,0.0,0.0,0.0
+LBY,3365AO,All other transportation equipment manufacturing,0.0,0.0,0.0,0.0,0.0
+LBY,337,Furniture and related products,3670.0,2.5041578607250417e-06,1.3665799697073228e-11,0.01369851845525049,0.0019148981686373074
+LBY,3391,Medical equipment and supplies manufacturing,26862.0,1.8328797944086123e-05,3.0376780730903974e-11,0.030449509042819085,0.014015802344941512
+LBY,3399,Other miscellaneous manufacturing,3955.0,2.698622435740474e-06,9.675893997665928e-12,0.009699060094262987,0.002063602794812139
+LBY,4231,Motor vehicle and motor vehicle parts and supplies,0.0,0.0,0.0,0.0,0.0
+LBY,4234,Professional and commercial equipment and supplies,0.0,0.0,0.0,0.0,0.0
+LBY,4236,Household appliances and electrical and electronic goods,0.0,0.0,0.0,0.0,0.0
+LBY,4238,"Machinery, equipment, and supplies",0.0,0.0,0.0,0.0,0.0
+LBY,423X,Other durable goods merchant wholesalers,0.0,0.0,0.0,0.0,0.0
+LBY,4242,Drugs and druggists' sundries,0.0,0.0,0.0,0.0,0.0
+LBY,4244,Grocery and related product wholesalers,0.0,0.0,0.0,0.0,0.0
+LBY,4247,Petroleum and petroleum products,0.0,0.0,0.0,0.0,0.0
+LBY,424X,Other nondurable goods merchant wholesalers,0.0,0.0,0.0,0.0,0.0
+LBY,425,Wholesale electronic markets and agents and brokers,0.0,0.0,0.0,0.0,0.0
+LBY,42ID,Customs duties,0.0,0.0,0.0,0.0,0.0
+LBY,441,Motor vehicle and parts dealers,0.0,0.0,0.0,0.0,0.0
+LBY,444,Building material and garden equipment and supplies dealers,0.0,0.0,0.0,0.0,0.0
+LBY,445,Food and beverage stores,0.0,0.0,0.0,0.0,0.0
+LBY,446,Health and personal care stores,0.0,0.0,0.0,0.0,0.0
+LBY,447,Gasoline stations,0.0,0.0,0.0,0.0,0.0
+LBY,448,Clothing and clothing accessories stores,0.0,0.0,0.0,0.0,0.0
+LBY,452,General merchandise stores,0.0,0.0,0.0,0.0,0.0
+LBY,454,Nonstore retailers,0.0,0.0,0.0,0.0,0.0
+LBY,481,Air transportation,0.0,0.0,0.0,0.0,0.0
+LBY,482,Rail transportation,0.0,0.0,0.0,0.0,0.0
+LBY,483,Water transportation,0.0,0.0,0.0,0.0,0.0
+LBY,484,Truck transportation,0.0,0.0,0.0,0.0,0.0
+LBY,485,Transit and ground passenger transportation,0.0,0.0,0.0,0.0,0.0
+LBY,486,Pipeline transportation,0.0,0.0,0.0,0.0,0.0
+LBY,48A,Scenic and sightseeing transportation and support activities,0.0,0.0,0.0,0.0,0.0
+LBY,492,Couriers and messengers,0.0,0.0,0.0,0.0,0.0
+LBY,493,Warehousing and storage,0.0,0.0,0.0,0.0,0.0
+LBY,4A0X,All other retail,0.0,0.0,0.0,0.0,0.0
+LBY,5111,"Newspaper, periodical, book, and directory publishers",0.0,0.0,0.0,0.0,0.0
+LBY,5112,Software publishers,0.0,0.0,0.0,0.0,0.0
+LBY,512,Motion picture and sound recording industries,0.0,0.0,0.0,0.0,0.0
+LBY,515,Broadcasting (except internet),0.0,0.0,0.0,0.0,0.0
+LBY,5171,Wired telecommunications carriers,0.0,0.0,0.0,0.0,0.0
+LBY,5172,Wireless telecommunications carriers (except satellite),0.0,0.0,0.0,0.0,0.0
+LBY,5174OT,"Other telecommunications, including satellite",0.0,0.0,0.0,0.0,0.0
+LBY,518,"Data processing, hosting, and related services",0.0,0.0,0.0,0.0,0.0
+LBY,519,Other information services,0.0,0.0,0.0,0.0,0.0
+LBY,521CI,"Federal reserve banks, credit intermediation, and related activities",0.0,0.0,0.0,0.0,0.0
+LBY,523,"Securities, commodity contracts, and investments",0.0,0.0,0.0,0.0,0.0
+LBY,524113,Direct life insurance carriers,0.0,0.0,0.0,0.0,0.0
+LBY,5241X,"Insurance carriers, except direct life",0.0,0.0,0.0,0.0,0.0
+LBY,5242,"Agencies, brokerages, and other insurance related activities",0.0,0.0,0.0,0.0,0.0
+LBY,525,"Funds, trusts, and other financial vehicles",0.0,0.0,0.0,0.0,0.0
+LBY,532RL,Rental and leasing services and lessors of intangible assets,0.0,0.0,0.0,0.0,0.0
+LBY,5411,Legal services,0.0,0.0,0.0,0.0,0.0
+LBY,5412,"Accounting, tax preparation, bookkeeping, and payroll services",0.0,0.0,0.0,0.0,0.0
+LBY,5413,"Architectural, engineering, and related services",0.0,0.0,0.0,0.0,0.0
+LBY,5415,Computer systems design and related services,0.0,0.0,0.0,0.0,0.0
+LBY,5416,"Management, scientific, and technical consulting services",0.0,0.0,0.0,0.0,0.0
+LBY,5417,Scientific research and development services,0.0,0.0,0.0,0.0,0.0
+LBY,5418,"Advertising, public relations, and related services",0.0,0.0,0.0,0.0,0.0
+LBY,541X,"Specialized design services and other professional, scientific, and technical services",0.0,0.0,0.0,0.0,0.0
+LBY,55,Management of companies and enterprises,0.0,0.0,0.0,0.0,0.0
+LBY,5613,Employment services,0.0,0.0,0.0,0.0,0.0
+LBY,5617,Services to buildings and dwellings,0.0,0.0,0.0,0.0,0.0
+LBY,561X,Other administrative and support services,0.0,0.0,0.0,0.0,0.0
+LBY,562,Waste management and remediation services,0.0,0.0,0.0,0.0,0.0
+LBY,61,Educational services,0.0,0.0,0.0,0.0,0.0
+LBY,6211,Offices of physicians,0.0,0.0,0.0,0.0,0.0
+LBY,6212,Offices of dentists,0.0,0.0,0.0,0.0,0.0
+LBY,6213,Offices of other health practitioners,0.0,0.0,0.0,0.0,0.0
+LBY,6214,Outpatient care centers,0.0,0.0,0.0,0.0,0.0
+LBY,6215OH,Other ambulatory health care services,0.0,0.0,0.0,0.0,0.0
+LBY,622,Hospitals,0.0,0.0,0.0,0.0,0.0
+LBY,623,Nursing and residential care facilities,0.0,0.0,0.0,0.0,0.0
+LBY,624,Social assistance,0.0,0.0,0.0,0.0,0.0
+LBY,711AS,"Performing arts, spectator sports, museums, and related activities",0.0,0.0,0.0,0.0,0.0
+LBY,713,"Amusements, gambling, and recreation industries",0.0,0.0,0.0,0.0,0.0
+LBY,721,Accommodation,0.0,0.0,0.0,0.0,0.0
+LBY,722,Food services and drinking places,0.0,0.0,0.0,0.0,0.0
+LBY,811,Repair and maintenance,0.0,0.0,0.0,0.0,0.0
+LBY,812,Personal and laundry services,0.0,0.0,0.0,0.0,0.0
+LBY,813,"Religious, grantmaking, civic, professional, and similar organizations",0.0,0.0,0.0,0.0,0.0
+LBY,814,Private households,0.0,0.0,0.0,0.0,0.0
+LBY,GFE,Federal government enterprises,0.0,0.0,0.0,0.0,0.0
+LBY,GFGD,Federal general government (defense),0.0,0.0,0.0,0.0,0.0
+LBY,GFGN,Federal general government (nondefense),0.0,0.0,0.0,0.0,0.0
+LBY,GSLE,State and local government enterprises,0.0,0.0,0.0,0.0,0.0
+LBY,GSLGE,State and local government (educational services),0.0,0.0,0.0,0.0,0.0
+LBY,GSLGH,State and local government (hospitals and health services),0.0,0.0,0.0,0.0,0.0
+LBY,GSLGO,State and local government (other services),0.0,0.0,0.0,0.0,0.0
+LBY,HSO,Owner-occupied housing,0.0,0.0,0.0,0.0,0.0
+LBY,HST,Tenant-occupied housing,0.0,0.0,0.0,0.0,0.0
+LBY,ORE,Other real estate,0.0,0.0,0.0,0.0,0.0
+LBY,Other,Unknown,1420952.0,0.0009695607957801007,0.0,0.0,0.7414110034118581
+LBY,Used,Unknown,0.0,0.0,0.0,0.0,0.0

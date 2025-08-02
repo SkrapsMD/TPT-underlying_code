@@ -1,0 +1,141 @@
+iso3,usummary_code,usummary_desc,impVal,impVal_share,indirect,indirect_share,impVal_share_no_oil
+MYS,111,Crop production,2578137.0,4.907479702250906e-05,3.1145323400910013e-07,0.007290574114286602,4.907480496268322e-05
+MYS,112,Animal production and aquaculture,1642516.0,3.126526608408455e-05,6.304445771741604e-08,0.0014757602146792928,3.1265271142723054e-05
+MYS,113FF,"Forestry, fishing, and related activities",85583479.0,0.0016290801692870342,8.597225735743571e-09,0.00020124598032544207,0.0016290804328679565
+MYS,211,Oil and gas extraction,8500.0,1.6179736557495858e-07,0.0,0.0,0.0
+MYS,212,"Mining, except oil and gas",330745.0,6.295725844363491e-06,3.0283586080534865e-10,7.088856517061133e-06,6.295726862995512e-06
+MYS,213,Support activities for mining,,,0.0,0.0,
+MYS,2211,"Electric power generation, transmission, and distribution",,,3.076706933655682e-07,0.007202031470028283,
+MYS,2212NW,"Natural gas distribution and water, sewage and other systems",,,2.7408458518088175e-07,0.006415839566418927,
+MYS,23EH,"Education, hospital, and health structures",,,0.0,0.0,
+MYS,23MR,Maintenance and repair construction,,,0.0,0.0,
+MYS,23OC,Office and commercial structures,,,0.0,0.0,
+MYS,23OR,Other residential construction,,,0.0,0.0,
+MYS,23OT,Other nonresidential structures,,,0.0,0.0,
+MYS,23PC,Power and communication structures,,,0.0,0.0,
+MYS,23SF,Single-family residential structures,,,0.0,0.0,
+MYS,23TH,Transportation structures and highways and streets,,,0.0,0.0,
+MYS,311,Food manufacturing,1076128152.0,0.02048408235466454,2.680259427687133e-06,0.06274017370613492,0.02048408566893564
+MYS,3121,Beverage manufacturing,7095744.0,0.00013506737482286104,1.6330242577210068e-06,0.03822623457168854,0.00013506739667641
+MYS,3122,Tobacco manufacturing,9800.0,1.865428450158346e-07,2.260649246426604e-07,0.005291783509622428,1.8654287519798037e-07
+MYS,313TT,Textile mills and textile product mills,50426721.0,0.000959871836750993,1.5534822068271022e-07,0.003636429462719137,0.0009598719920557526
+MYS,315AL,Apparel and leather and allied products,214045532.0,0.004074353316551823,6.41576472670931e-08,0.0015018180302001063,0.004074353975771563
+MYS,321,Wood products,319515180.0,0.006081966398259846,1.9116784460413463e-08,0.0004474904053538084,0.0060819673823061466
+MYS,322,Paper products,136815720.0,0.0026042850664989613,1.3848000718653646e-07,0.0032415741610532984,0.0026042854878654924
+MYS,323,Printing and related support activities,102763909.0,0.001956109382633503,2.566337151168905e-08,0.0006007345296115103,0.0019561096991268993
+MYS,324,Petroleum and coal products,67329344.0,0.0012816129982458993,8.751871629100185e-07,0.020486596953689946,0.0012816132056075397
+MYS,3251,Basic chemical manufacturing,411906239.0,0.007840628745186972,4.209285943766488e-09,9.853200349288315e-05,0.007840630013780252
+MYS,3252,"Resin, rubber, and artificial fibers manufacturing",121579485.0,0.002314263574230611,0.0,0.0,0.002314263948672421
+MYS,3254,Pharmaceutical and medicine manufacturing,136203225.0,0.0025926262338603926,1.0133796085750452e-06,0.023721439803727467,0.002592626653340555
+MYS,325X,Other chemical manufacturing,2216266633.0,0.04218660030953924,6.407814977003213e-07,0.014999571331827185,0.04218660713522114
+MYS,326,Plastics and rubber products,722381405.0,0.013750518619922025,2.663091768537523e-07,0.006233830890676224,0.013750520844720072
+MYS,327,Nonmetallic mineral products,311820773.0,0.0059355034826996675,4.644127231389448e-08,0.001087108755969191,0.005935504443048649
+MYS,3311IS,Iron and steel mills and manufacturing from purchased steel,283822765.0,0.0054025618432000655,6.336272968886017e-09,0.00014832104034811393,0.0054025627173204804
+MYS,3313NF,Nonferrous metal production and processing and foundries,173770960.0,0.00330772747546253,1.1284793808099202e-09,2.6415723658848218e-05,0.003307728010644208
+MYS,332,Fabricated metal products,625460721.0,0.011905634932754608,2.023980678238946e-07,0.004737783888336171,0.011905636859055288
+MYS,33311,Agricultural implement manufacturing,7242327.0,0.0001378575799096933,1.2159487594149978e-08,0.00028463228445497124,0.00013785760221469016
+MYS,33312,Construction machinery manufacturing,37174662.0,0.000707619103263473,0.0,0.0,0.0007076192177543983
+MYS,33313,Mining and oil and gas field machinery manufacturing,24541296.0,0.0004671431812465022,0.0,0.0,0.0004671432568290505
+MYS,3332OM,Other machinery,2480176596.0,0.04721012228158451,8.57122210624924e-08,0.0020063728095305626,0.047210129920059164
+MYS,3341,Computer and peripheral equipment manufacturing,1230262849.0,0.023418033874463888,3.8757252572780377e-08,0.0009072393267867767,0.02341803766344069
+MYS,3342,Communications equipment manufacturing,5009377140.0,0.09535341463804947,5.0525054509782784e-08,0.0011827029367791992,0.09535343006598325
+MYS,3344,Semiconductor and other electronic component manufacturing,16648501742.0,0.3169039673677304,4.552769579375063e-09,0.0001065723531473541,0.31690401864196577
+MYS,3345,"Navigational, measuring, electromedical, and control instruments manufacturing",3353967745.0,0.06384272298404522,3.1131479565109254e-08,0.0007287333515059801,0.06384273331363129
+MYS,334X,Other computer and electronic product manufacturing,4716050598.0,0.08976994854995389,7.04081324156698e-08,0.0016481309280928754,0.08976996307449742
+MYS,335,"Electrical equipment, appliances, and components",5171800507.0,0.0984451408602159,2.599861109883916e-07,0.006085819005464651,0.09844515678838292
+MYS,336111,Automobile manufacturing,,,4.2380923697677136e-08,0.0009920631141714605,
+MYS,336112,Light truck and utility vehicle manufacturing,,,2.7024995300674646e-06,0.06326077550765095,
+MYS,33612,Heavy duty truck manufacturing,,,0.0,0.0,
+MYS,3362BP,"Motor vehicle body, trailer, and parts manufacturing",280809719.0,0.005345208560240517,6.96030991044361e-07,0.01629286509801019,0.00534520942508132
+MYS,3364,Aerospace product and parts manufacturing,620363749.0,0.011808614151341747,2.743371567158032e-08,0.0006421751823199186,0.011808616061944716
+MYS,3365AO,All other transportation equipment manufacturing,56680979.0,0.0010789215388717118,2.427906911293396e-07,0.005683304376558819,0.0010789217134384026
+MYS,337,Furniture and related products,1406513848.0,0.02677296885307032,3.792169497765994e-07,0.008876803885296044,0.02677297318486685
+MYS,3391,Medical equipment and supplies manufacturing,2058741381.0,0.03918810962893554,9.191645139745385e-08,0.0021516029633385655,0.039188115969469466
+MYS,3399,Other miscellaneous manufacturing,422395178.0,0.008040285533172436,2.549825810690308e-07,0.005968695143109495,0.008040286834069663
+MYS,4231,Motor vehicle and motor vehicle parts and supplies,,,0.0,0.0,
+MYS,4234,Professional and commercial equipment and supplies,,,0.0,0.0,
+MYS,4236,Household appliances and electrical and electronic goods,,,0.0,0.0,
+MYS,4238,"Machinery, equipment, and supplies",,,0.0,0.0,
+MYS,423X,Other durable goods merchant wholesalers,,,0.0,0.0,
+MYS,4242,Drugs and druggists' sundries,,,0.0,0.0,
+MYS,4244,Grocery and related product wholesalers,,,0.0,0.0,
+MYS,4247,Petroleum and petroleum products,,,0.0,0.0,
+MYS,424X,Other nondurable goods merchant wholesalers,,,0.0,0.0,
+MYS,425,Wholesale electronic markets and agents and brokers,,,0.0,0.0,
+MYS,42ID,Customs duties,,,0.0,0.0,
+MYS,441,Motor vehicle and parts dealers,,,0.0,0.0,
+MYS,444,Building material and garden equipment and supplies dealers,,,0.0,0.0,
+MYS,445,Food and beverage stores,,,0.0,0.0,
+MYS,446,Health and personal care stores,,,0.0,0.0,
+MYS,447,Gasoline stations,,,0.0,0.0,
+MYS,448,Clothing and clothing accessories stores,,,0.0,0.0,
+MYS,452,General merchandise stores,,,0.0,0.0,
+MYS,454,Nonstore retailers,,,2.360937375127905e-08,0.0005526540434656825,
+MYS,481,Air transportation,,,3.377732687483975e-07,0.00790667997868048,
+MYS,482,Rail transportation,,,2.3902324194490782e-09,5.595114996897069e-05,
+MYS,483,Water transportation,,,4.985601288722983e-08,0.0011670418454751278,
+MYS,484,Truck transportation,,,2.286005339921864e-08,0.0005351137678624434,
+MYS,485,Transit and ground passenger transportation,,,1.251388824418727e-07,0.0029292818227561394,
+MYS,486,Pipeline transportation,,,0.0,0.0,
+MYS,48A,Scenic and sightseeing transportation and support activities,,,5.76506664196896e-08,0.0013495010177305793,
+MYS,492,Couriers and messengers,,,1.6321391104039422e-08,0.0003820551482498996,
+MYS,493,Warehousing and storage,,,3.129891392410564e-10,7.3265269627510695e-06,
+MYS,4A0X,All other retail,,,0.0,0.0,
+MYS,5111,"Newspaper, periodical, book, and directory publishers",,,1.627328752422483e-07,0.0038092912778998514,
+MYS,5112,Software publishers,,,1.3721266889673969e-07,0.0032119079938066077,
+MYS,512,Motion picture and sound recording industries,,,2.292982594572048e-08,0.000536747020838713,
+MYS,515,Broadcasting (except internet),,,3.7566312162583336e-08,0.0008793614999474936,
+MYS,5171,Wired telecommunications carriers,,,3.0636912622526685e-06,0.07171564065407242,
+MYS,5172,Wireless telecommunications carriers (except satellite),,,1.4806567283191322e-06,0.03465957786558847,
+MYS,5174OT,"Other telecommunications, including satellite",,,2.3944646165407415e-07,0.005605021828226404,
+MYS,518,"Data processing, hosting, and related services",,,2.800230187031922e-07,0.006554847882883875,
+MYS,519,Other information services,,,1.132274574049106e-07,0.002650456247818607,
+MYS,521CI,"Federal reserve banks, credit intermediation, and related activities",,,3.566257750567469e-07,0.008347984095872793,
+MYS,523,"Securities, commodity contracts, and investments",,,3.732022873828495e-07,0.008736011184608386,
+MYS,524113,Direct life insurance carriers,,,7.402206727282225e-08,0.0017327268065209793,
+MYS,5241X,"Insurance carriers, except direct life",,,2.4404180351022155e-07,0.005712590723727894,
+MYS,5242,"Agencies, brokerages, and other insurance related activities",,,0.0,0.0,
+MYS,525,"Funds, trusts, and other financial vehicles",,,4.0573276084613067e-07,0.009497492530311655,
+MYS,532RL,Rental and leasing services and lessors of intangible assets,,,1.580571084277187e-07,0.0036998397751376298,
+MYS,5411,Legal services,,,1.391845450157534e-07,0.003258066156317264,
+MYS,5412,"Accounting, tax preparation, bookkeeping, and payroll services",,,3.341108791565017e-08,0.0007820949859871285,
+MYS,5413,"Architectural, engineering, and related services",,,0.0,0.0,
+MYS,5415,Computer systems design and related services,,,0.0,0.0,
+MYS,5416,"Management, scientific, and technical consulting services",,,0.0,0.0,
+MYS,5417,Scientific research and development services,,,1.879093599388674e-08,0.00043986286408650435,
+MYS,5418,"Advertising, public relations, and related services",,,2.642108148067669e-09,6.184711914368834e-05,
+MYS,541X,"Specialized design services and other professional, scientific, and technical services",,,2.3398132652029534e-07,0.005477092597168101,
+MYS,55,Management of companies and enterprises,,,0.0,0.0,
+MYS,5613,Employment services,,,2.4826347473850534e-09,5.811412645015297e-05,
+MYS,5617,Services to buildings and dwellings,,,1.279712244441706e-07,0.002995581982876347,
+MYS,561X,Other administrative and support services,,,1.2959890802967178e-07,0.0030336832016755627,
+MYS,562,Waste management and remediation services,,,1.5696967001112398e-07,0.003674384748490918,
+MYS,61,Educational services,,,7.527687699693429e-07,0.017620997020122462,
+MYS,6211,Offices of physicians,,,1.9262587020609995e-06,0.04509033876416548,
+MYS,6212,Offices of dentists,,,3.215447454781497e-07,0.007526798703587637,
+MYS,6213,Offices of other health practitioners,,,3.390869393826028e-07,0.007937430704871866,
+MYS,6214,Outpatient care centers,,,7.070996402251419e-07,0.01655196276785543,
+MYS,6215OH,Other ambulatory health care services,,,8.51959432443749e-07,0.01994287651036309,
+MYS,622,Hospitals,,,5.054018647619322e-06,0.11830571495808778,
+MYS,623,Nursing and residential care facilities,,,6.363066051502719e-07,0.014894821943388821,
+MYS,624,Social assistance,,,7.904553732821698e-07,0.018503174324981834,
+MYS,711AS,"Performing arts, spectator sports, museums, and related activities",,,1.1389177334173452e-07,0.002666006719105654,
+MYS,713,"Amusements, gambling, and recreation industries",,,6.358895614021435e-07,0.014885059680478617,
+MYS,721,Accommodation,,,3.7146588071104224e-07,0.00869536494899093,
+MYS,722,Food services and drinking places,,,2.609600052782786e-06,0.061086161631904064,
+MYS,811,Repair and maintenance,,,1.8278320118035504e-06,0.04278634252399513,
+MYS,812,Personal and laundry services,,,7.059943360415981e-07,0.0165260895349298,
+MYS,813,"Religious, grantmaking, civic, professional, and similar organizations",,,4.092875806887464e-07,0.009580704629900159,
+MYS,814,Private households,,,0.0,0.0,
+MYS,GFE,Federal government enterprises,,,1.0413450060233777e-08,0.00024376060724204385,
+MYS,GFGD,Federal general government (defense),,,0.0,0.0,
+MYS,GFGN,Federal general government (nondefense),,,0.0,0.0,
+MYS,GSLE,State and local government enterprises,,,3.916880432056119e-07,0.009168730315983713,
+MYS,GSLGE,State and local government (educational services),,,0.0,0.0,
+MYS,GSLGH,State and local government (hospitals and health services),,,0.0,0.0,
+MYS,GSLGO,State and local government (other services),,,0.0,0.0,
+MYS,HSO,Owner-occupied housing,,,9.613517558381798e-07,0.022503558995418945,
+MYS,HST,Tenant-occupied housing,,,9.804884291151345e-08,0.002295151496309546,
+MYS,ORE,Other real estate,,,1.532272747414121e-08,0.0003586781837043889,
+MYS,Other,,1942761954.0,0.03698044307017163,0.0,0.0,0.03698044905351087
+MYS,Used,,,,6.056659242220867e-07,0.014177577327419878,
