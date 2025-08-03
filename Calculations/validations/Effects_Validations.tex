@@ -164,7 +164,10 @@ Analysis of ranking comparisons revealed unusual patterns for the UK and Israel.
 In this section, I run a spearman rank correlation analysis to see how well the import vector correlates with the different effect vectors. It's less transparent than the initial cosine similarity and the subsequent 
 breakdown, but it provides a different perspectve and is a bit easier to see from a birds eye view. I do this for three commodity groups: all commodities, excluding oil/other, and excluding oil/other/nonferrous metals. Just like in 
 the cosine similarity analysis, we see that the direct effects are more similar to the import vector than the total or indirect effects, but there is considerable variation. Not sure this provides any more clarity. I also provide the 
-output by country for the three different groups. 
+output by country for the three different groups. What we are looking for here is significance: the Spearman regression is just like a regular regression, only designed to work with ranked data instead of values. So when we have significance, i
+t means that the rankings of the import vectors are highly correlated with the rankings of the effects vectors: the direct effect vectors from the commodity group excluding oil, Other, and Nonferrous Metals has the highest share of countr
+ies with significant results. 
+
 \input{08_weighted_cos_and_spearman_rank/summary_comparison.tex}
 \subsection{Spearman - All Commodities}
 \input{08_weighted_cos_and_spearman_rank/01_spearman_rank_results.tex}
