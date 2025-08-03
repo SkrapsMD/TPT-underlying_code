@@ -22,7 +22,14 @@ TPT-underlying_code/
 
 ## Running the Complete Pipeline
 
-### Option 1: Run Everything (Recommended for first time)
+### Option 1: Run Everything (Recommended)
+```bash
+python run_complete_pipeline.py
+```
+
+This runs both data construction and economic calculations in sequence.
+
+### Option 2: Run Individual Components
 ```bash
 # Step 1: Data construction (creates trade weights)
 cd 1_data_construction
@@ -33,7 +40,7 @@ cd ../2_economic_calculations
 python run_calculations.py
 ```
 
-### Option 2: Run Individual Components
+### Option 3: Run Individual Scripts
 See the README files in each numbered directory for detailed instructions.
 
 ## Main Components

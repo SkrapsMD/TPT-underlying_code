@@ -1,7 +1,0 @@
-continent,total_records,mapped_records,unmapped_records,mapping_rate,unique_hs_codes,unique_mapped_hs_codes,unique_naics_codes
-South_America,32905,32905,0,100.0,10072,10072,374
-Asia,108160,108160,0,100.0,16692,16692,382
-Europe,150505,150505,0,100.0,16401,16401,381
-Africa,15941,15941,0,100.0,6119,6119,354
-Oceana,8430,8430,0,100.0,5578,5578,352
-North_America,22477,22477,0,100.0,13958,13958,388

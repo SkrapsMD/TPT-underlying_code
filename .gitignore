@@ -1,2 +1,28 @@
-# Ignore the hs4 raw data folder
-HS to BEA Data/data/raw/hs4/
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Data directories - ignore large raw/working data files
+1_data_construction/data/raw/hs4/
+1_data_construction/data/working/
+2_economic_calculations/data/working/
+
+# Temporary files  
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Log files
+*.log
+
+# Large output files (keep the small final outputs)
+*.xlsx
+*.csv.gz

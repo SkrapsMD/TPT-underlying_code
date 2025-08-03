@@ -22,7 +22,7 @@ from pathlib import Path
 init()
 
 # Add parent directory to path for shared modules
-sys.path.append(os.path.join(os.path.dirname(os.path.dirname(__file__)), '..'))
+sys.path.append(os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), 'shared_utilities'))
 from main_pipeline_run import get_data_path
 from shared_validation_styles import get_shared_css, get_shared_javascript
 

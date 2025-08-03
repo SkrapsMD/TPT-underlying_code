@@ -11,7 +11,7 @@ import plotly.express as px
 import country_converter as coco
 
 # Add path to shared validation styles
-sys.path.append(os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), '..'))
+sys.path.append(os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(__file__)))), 'shared_utilities'))
 from shared_validation_styles import get_shared_css, get_shared_javascript
 
 # Load data paths configuration
