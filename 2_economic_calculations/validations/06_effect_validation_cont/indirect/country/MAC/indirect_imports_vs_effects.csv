@@ -1,0 +1,141 @@
+iso3,usummary_code,usummary_desc,impVal,impVal_share,indirect,indirect_share,impVal_share_no_oil
+MAC,111,Crop production,211350.0,0.0019426861890987298,1.1089047224902283e-10,0.005111168316785383,0.0019426861890987298
+MAC,112,Animal production and aquaculture,,,4.133552302860521e-11,0.0019052386681798197,
+MAC,113FF,"Forestry, fishing, and related activities",64800.0,0.000595628412839355,2.770804132225065e-12,0.00012771202074821685,0.000595628412839355
+MAC,211,Oil and gas extraction,,,0.0,0.0,0.0
+MAC,212,"Mining, except oil and gas",,,1.490032619368317e-13,6.867864624103616e-06,
+MAC,213,Support activities for mining,,,0.0,0.0,
+MAC,2211,"Electric power generation, transmission, and distribution",,,1.6415302009694004e-10,0.007566147915214669,
+MAC,2212NW,"Natural gas distribution and water, sewage and other systems",,,2.2053790709900226e-10,0.01016504250142655,
+MAC,23EH,"Education, hospital, and health structures",,,0.0,0.0,
+MAC,23MR,Maintenance and repair construction,,,0.0,0.0,
+MAC,23OC,Office and commercial structures,,,0.0,0.0,
+MAC,23OR,Other residential construction,,,0.0,0.0,
+MAC,23OT,Other nonresidential structures,,,0.0,0.0,
+MAC,23PC,Power and communication structures,,,0.0,0.0,
+MAC,23SF,Single-family residential structures,,,0.0,0.0,
+MAC,23TH,Transportation structures and highways and streets,,,0.0,0.0,
+MAC,311,Food manufacturing,1786258.0,0.016418920022555565,1.9634449270577043e-09,0.09049918626366711,0.016418920022555565
+MAC,3121,Beverage manufacturing,,,9.977484276764451e-10,0.04598826254621904,
+MAC,3122,Tobacco manufacturing,,,8.068908156099887e-11,0.0037191245453346267,
+MAC,313TT,Textile mills and textile product mills,452737.0,0.004161466369500788,9.645512200364303e-11,0.0044458135453655555,0.004161466369500788
+MAC,315AL,Apparel and leather and allied products,51955281.0,0.4775623697631589,1.2155340753206758e-10,0.005602644778895153,0.4775623697631589
+MAC,321,Wood products,8161.0,7.501425119107988e-05,6.450903085990159e-12,0.0002973352967036038,7.501425119107988e-05
+MAC,322,Paper products,14552.0,0.00013375902258701072,5.599373636201721e-11,0.002580865654438566,0.00013375902258701072
+MAC,323,Printing and related support activities,82611.0,0.0007593435002017278,4.861466994034657e-12,0.0002240749414179429,0.0007593435002017278
+MAC,324,Petroleum and coal products,,,2.9317255595872434e-10,0.01351292179550102,
+MAC,3251,Basic chemical manufacturing,145189.0,0.0013345477412304494,1.3921084064099465e-12,6.416511929351809e-05,0.0013345477412304494
+MAC,3252,"Resin, rubber, and artificial fibers manufacturing",43775.0,0.00040237089154386986,0.0,0.0,0.00040237089154386986
+MAC,3254,Pharmaceutical and medicine manufacturing,7963601.0,0.073199799754875,2.709706819783564e-09,0.12489592085019799,0.073199799754875
+MAC,325X,Other chemical manufacturing,73530.0,0.0006758727962357682,1.875537763703493e-10,0.008644736558834772,0.0006758727962357682
+MAC,326,Plastics and rubber products,96661.0,0.0008884882409485324,1.0269899612576023e-10,0.004733606454347804,0.0008884882409485324
+MAC,327,Nonmetallic mineral products,210262.0,0.001932685514512785,1.8656059199437107e-11,0.0008598958662751631,0.001932685514512785
+MAC,3311IS,Iron and steel mills and manufacturing from purchased steel,,,1.5002468907366544e-12,6.914944286709484e-05,
+MAC,3313NF,Nonferrous metal production and processing and foundries,,,1.978199319933961e-13,9.117924636146502e-06,
+MAC,332,Fabricated metal products,4709023.0,0.043284381103611394,8.521221198127874e-11,0.003927604863146839,0.043284381103611394
+MAC,33311,Agricultural implement manufacturing,,,4.331726986375018e-12,0.0001996581426761786,
+MAC,33312,Construction machinery manufacturing,,,0.0,0.0,
+MAC,33313,Mining and oil and gas field machinery manufacturing,,,0.0,0.0,
+MAC,3332OM,Other machinery,241320.0,0.0022181643300369313,3.70745281302766e-11,0.0017088407118845868,0.0022181643300369313
+MAC,3341,Computer and peripheral equipment manufacturing,11650.0,0.00010708442916016183,4.009729565818692e-12,0.00018481662400775557,0.00010708442916016183
+MAC,3342,Communications equipment manufacturing,92218.0,0.0008476490891237599,9.602807018377511e-12,0.0004426129854899951,0.0008476490891237599
+MAC,3344,Semiconductor and other electronic component manufacturing,959965.0,0.008823802921779806,4.0223113916247197e-13,1.8539654605266012e-05,0.008823802921779806
+MAC,3345,"Navigational, measuring, electromedical, and control instruments manufacturing",834926.0,0.007674469879912212,6.287423043813109e-12,0.0002898001677150136,0.007674469879912212
+MAC,334X,Other computer and electronic product manufacturing,100834.0,0.0009268456077198075,4.610538289016272e-12,0.0002125091249789814,0.0009268456077198075
+MAC,335,"Electrical equipment, appliances, and components",2440144.0,0.022429307065115357,1.0432946744022071e-10,0.004808758206837263,0.022429307065115357
+MAC,336111,Automobile manufacturing,,,1.6774375993636374e-11,0.0007731652447108689,
+MAC,336112,Light truck and utility vehicle manufacturing,,,6.74955629985482e-10,0.031110083321410995,
+MAC,33612,Heavy duty truck manufacturing,,,0.0,0.0,
+MAC,3362BP,"Motor vehicle body, trailer, and parts manufacturing",114368.0,0.001051247381475484,2.459314587605942e-10,0.011335483154000516,0.001051247381475484
+MAC,3364,Aerospace product and parts manufacturing,,,2.835134497342372e-12,0.00013067713864632115,
+MAC,3365AO,All other transportation equipment manufacturing,,,1.2462563743590402e-10,0.005744250129002296,
+MAC,337,Furniture and related products,3300675.0,0.030339132894267564,3.4256670224512046e-10,0.01578959886624832,0.030339132894267564
+MAC,3391,Medical equipment and supplies manufacturing,465407.0,0.004277926431085273,3.6839310328607116e-11,0.0016979990430644094,0.004277926431085273
+MAC,3399,Other miscellaneous manufacturing,1323170.0,0.012162309367540886,1.0006388072668872e-10,0.0046121486044023025,0.012162309367540886
+MAC,4231,Motor vehicle and motor vehicle parts and supplies,,,0.0,0.0,
+MAC,4234,Professional and commercial equipment and supplies,,,0.0,0.0,
+MAC,4236,Household appliances and electrical and electronic goods,,,0.0,0.0,
+MAC,4238,"Machinery, equipment, and supplies",,,0.0,0.0,
+MAC,423X,Other durable goods merchant wholesalers,,,0.0,0.0,
+MAC,4242,Drugs and druggists' sundries,,,0.0,0.0,
+MAC,4244,Grocery and related product wholesalers,,,0.0,0.0,
+MAC,4247,Petroleum and petroleum products,,,0.0,0.0,
+MAC,424X,Other nondurable goods merchant wholesalers,,,0.0,0.0,
+MAC,425,Wholesale electronic markets and agents and brokers,,,0.0,0.0,
+MAC,42ID,Customs duties,,,0.0,0.0,
+MAC,441,Motor vehicle and parts dealers,,,0.0,0.0,
+MAC,444,Building material and garden equipment and supplies dealers,,,0.0,0.0,
+MAC,445,Food and beverage stores,,,0.0,0.0,
+MAC,446,Health and personal care stores,,,0.0,0.0,
+MAC,447,Gasoline stations,,,0.0,0.0,
+MAC,448,Clothing and clothing accessories stores,,,0.0,0.0,
+MAC,452,General merchandise stores,,,0.0,0.0,
+MAC,454,Nonstore retailers,,,8.340417613423115e-12,0.0003844268798743675,
+MAC,481,Air transportation,,,6.892195251666688e-11,0.0031767535378791623,
+MAC,482,Rail transportation,,,1.1849340741201644e-12,5.461603124497268e-05,
+MAC,483,Water transportation,,,2.004486801877909e-11,0.0009239089008625904,
+MAC,484,Truck transportation,,,8.377245726765914e-12,0.0003861243628254905,
+MAC,485,Transit and ground passenger transportation,,,6.335453944041154e-11,0.002920140099910296,
+MAC,486,Pipeline transportation,,,0.0,0.0,
+MAC,48A,Scenic and sightseeing transportation and support activities,,,1.4006768991248912e-11,0.0006456005862057663,
+MAC,492,Couriers and messengers,,,5.789230962079765e-12,0.0002668374773036085,
+MAC,493,Warehousing and storage,,,1.5214270454600621e-13,7.012567945055702e-06,
+MAC,4A0X,All other retail,,,0.0,0.0,
+MAC,5111,"Newspaper, periodical, book, and directory publishers",,,3.1569916098536867e-11,0.0014551219023042474,
+MAC,5112,Software publishers,,,1.9613838768275297e-11,0.0009040418824966176,
+MAC,512,Motion picture and sound recording industries,,,7.372807843363431e-12,0.00033982776960423674,
+MAC,515,Broadcasting (except internet),,,4.2256562116163317e-11,0.0019476912405908765,
+MAC,5171,Wired telecommunications carriers,,,3.195650958652608e-10,0.014729407856330937,
+MAC,5172,Wireless telecommunications carriers (except satellite),,,2.5790491392264433e-10,0.01188736415356277,
+MAC,5174OT,"Other telecommunications, including satellite",,,1.7792800572604145e-11,0.0008201065132931338,
+MAC,518,"Data processing, hosting, and related services",,,4.334628710070784e-11,0.0019979188904696286,
+MAC,519,Other information services,,,2.7450269601743758e-11,0.0012652389824851337,
+MAC,521CI,"Federal reserve banks, credit intermediation, and related activities",,,9.998877240756308e-11,0.004608686708594159,
+MAC,523,"Securities, commodity contracts, and investments",,,9.185022701423811e-11,0.004233564531589914,
+MAC,524113,Direct life insurance carriers,,,2.1206691928110997e-11,0.0009774597374189143,
+MAC,5241X,"Insurance carriers, except direct life",,,6.108818206853529e-11,0.002815679060483629,
+MAC,5242,"Agencies, brokerages, and other insurance related activities",,,0.0,0.0,
+MAC,525,"Funds, trusts, and other financial vehicles",,,7.95679743063493e-11,0.003667450422540604,
+MAC,532RL,Rental and leasing services and lessors of intangible assets,,,7.216475991865403e-11,0.003326221153214527,
+MAC,5411,Legal services,,,2.160071988149225e-11,0.000995621290439695,
+MAC,5412,"Accounting, tax preparation, bookkeeping, and payroll services",,,7.125821726792436e-12,0.0003284436751180249,
+MAC,5413,"Architectural, engineering, and related services",,,0.0,0.0,
+MAC,5415,Computer systems design and related services,,,0.0,0.0,
+MAC,5416,"Management, scientific, and technical consulting services",,,0.0,0.0,
+MAC,5417,Scientific research and development services,,,3.3173596710841345e-11,0.0015290388166217066,
+MAC,5418,"Advertising, public relations, and related services",,,1.1412944664698573e-12,5.260459261137844e-05,
+MAC,541X,"Specialized design services and other professional, scientific, and technical services",,,1.1649845124274908e-10,0.0053696515207306535,
+MAC,55,Management of companies and enterprises,,,0.0,0.0,
+MAC,5613,Employment services,,,4.576162366309194e-13,2.109246685019081e-05,
+MAC,5617,Services to buildings and dwellings,,,4.3594053053676236e-11,0.0020093389292079105,
+MAC,561X,Other administrative and support services,,,4.154886795095123e-11,0.0019150721713250968,
+MAC,562,Waste management and remediation services,,,8.353914527585323e-11,0.003850489802103218,
+MAC,61,Educational services,,,2.849612550067291e-10,0.01313444616622262,
+MAC,6211,Offices of physicians,,,6.77157007271411e-10,0.031211549295979704,
+MAC,6212,Offices of dentists,,,1.1915344683024962e-10,0.005492025689158432,
+MAC,6213,Offices of other health practitioners,,,8.565286248342682e-10,0.03947915344648776,
+MAC,6214,Outpatient care centers,,,3.3129353631758387e-10,0.01526999562757425,
+MAC,6215OH,Other ambulatory health care services,,,3.5826109594535296e-10,0.016512985521610783,
+MAC,622,Hospitals,,,2.104246220584192e-09,0.09698900541439513,
+MAC,623,Nursing and residential care facilities,,,4.0939709820436347e-10,0.01886994829120187,
+MAC,624,Social assistance,,,6.829316285056902e-10,0.03147771338109427,
+MAC,711AS,"Performing arts, spectator sports, museums, and related activities",,,8.172897110161029e-11,0.0037670551778329156,
+MAC,713,"Amusements, gambling, and recreation industries",,,4.1293844573743805e-10,0.01903317623083161,
+MAC,721,Accommodation,,,2.8901130318014965e-10,0.013321121157189883,
+MAC,722,Food services and drinking places,,,1.8468248349533383e-09,0.08512392806722019,
+MAC,811,Repair and maintenance,,,4.1504996232352677e-10,0.019130500342239013,
+MAC,812,Personal and laundry services,,,2.4998765807461336e-10,0.01152244166359929,
+MAC,813,"Religious, grantmaking, civic, professional, and similar organizations",,,1.949990306719108e-10,0.00898790353364118,
+MAC,814,Private households,,,0.0,0.0,
+MAC,GFE,Federal government enterprises,,,-7.937822338282875e-13,-3.658704414982795e-05,
+MAC,GFGD,Federal general government (defense),,,0.0,0.0,
+MAC,GFGN,Federal general government (nondefense),,,0.0,0.0,
+MAC,GSLE,State and local government enterprises,,,2.8540900528906707e-10,0.013155083891092061,
+MAC,GSLGE,State and local government (educational services),,,0.0,0.0,
+MAC,GSLGH,State and local government (hospitals and health services),,,0.0,0.0,
+MAC,GSLGO,State and local government (other services),,,0.0,0.0,
+MAC,HSO,Owner-occupied housing,,,1.0489593480540635e-09,0.048348678444887994,
+MAC,HST,Tenant-occupied housing,,,6.928859632057375e-11,0.0031936528995291525,
+MAC,ORE,Other real estate,,,6.49238635830849e-12,0.0002992473454382678,
+MAC,Other,,31090193.0,0.2857747270286918,0.0,0.0,0.2857747270286918
+MAC,Used,,,,2.5793771645104416e-10,0.011888876089083173,

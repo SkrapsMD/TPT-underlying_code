@@ -1,0 +1,141 @@
+iso3,usummary_code,usummary_desc,impVal,impVal_share,indirect,indirect_share,impVal_share_no_oil
+KOR,111,Crop production,74254320.0,0.0005644605004838588,1.1039818223689126e-06,0.010009851530871907,0.0005645756147854506
+KOR,112,Animal production and aquaculture,34450926.0,0.0002618862704835542,1.8188882560021202e-07,0.001649193947302483,0.0002619396787470152
+KOR,113FF,"Forestry, fishing, and related activities",155599753.0,0.001182825651807798,2.658182999992841e-08,0.00024101861672614153,0.0011830668735561684
+KOR,211,Oil and gas extraction,26822258.0,0.00020389527740321623,0.0,0.0,0.0
+KOR,212,"Mining, except oil and gas",12766348.0,9.70461945033112e-05,1.5963606673343424e-09,1.4474272081266775e-05,9.706598579941219e-05
+KOR,213,Support activities for mining,,,0.0,0.0,
+KOR,2211,"Electric power generation, transmission, and distribution",,,1.6601054015575643e-06,0.01505224837808674,
+KOR,2212NW,"Natural gas distribution and water, sewage and other systems",,,1.1748364646227571e-06,0.010652293675174734,
+KOR,23EH,"Education, hospital, and health structures",,,0.0,0.0,
+KOR,23MR,Maintenance and repair construction,,,0.0,0.0,
+KOR,23OC,Office and commercial structures,,,0.0,0.0,
+KOR,23OR,Other residential construction,,,0.0,0.0,
+KOR,23OT,Other nonresidential structures,,,0.0,0.0,
+KOR,23PC,Power and communication structures,,,0.0,0.0,
+KOR,23SF,Single-family residential structures,,,0.0,0.0,
+KOR,23TH,Transportation structures and highways and streets,,,0.0,0.0,
+KOR,311,Food manufacturing,1431937482.0,0.01088518685177262,7.46324320505208e-06,0.06766955298326983,0.0108874067425906
+KOR,3121,Beverage manufacturing,166560313.0,0.0012661447527460784,3.0936141964655176e-06,0.02804993540017677,0.0012664029663302025
+KOR,3122,Tobacco manufacturing,474991.0,3.610748271418129e-06,8.299942526057818e-07,0.007525594236899113,3.61148463607984e-06
+KOR,313TT,Textile mills and textile product mills,731418210.0,0.005560035953189097,1.094032495923784e-06,0.00991964055227607,0.0055611698494582385
+KOR,315AL,Apparel and leather and allied products,238398667.0,0.00181223975776096,2.9059718449299893e-07,0.002634857398125057,0.001812609340245213
+KOR,321,Wood products,12318477.0,9.364160486041626e-05,3.852621959466428e-08,0.00034931892027067216,9.366070183519873e-05
+KOR,322,Paper products,800497858.0,0.006085160049448126,5.242391446518574e-07,0.004753299282932235,0.006086401037876131
+KOR,323,Printing and related support activities,113499336.0,0.000862790097642072,7.013027232345029e-08,0.0006358742504211003,0.0008629660523447044
+KOR,324,Petroleum and coal products,5477125001.0,0.04163556705222155,3.357635975282787e-06,0.030443832431204545,0.041644058078995766
+KOR,3251,Basic chemical manufacturing,2211366424.0,0.016810186914973314,1.702688003523598e-08,0.00015438346694962628,0.016813615131694742
+KOR,3252,"Resin, rubber, and artificial fibers manufacturing",2424534165.0,0.01843062825457313,0.0,0.0,0.01843438693901182
+KOR,3254,Pharmaceutical and medicine manufacturing,3978387659.0,0.030242586412722487,2.078034674080303e-06,0.0188416313947212,0.030248753990808546
+KOR,325X,Other chemical manufacturing,3979403848.0,0.030250311196297723,2.21926240177368e-06,0.02012214938660233,0.03025648034975188
+KOR,326,Plastics and rubber products,3210912598.0,0.02440845639791742,1.376784531399654e-06,0.012483365640694688,0.024413434181852295
+KOR,327,Nonmetallic mineral products,571346701.0,0.004343217267308645,1.376407771447265e-07,0.0012479949541706662,0.004344103009396814
+KOR,3311IS,Iron and steel mills and manufacturing from purchased steel,3058424652.0,0.02324928582956644,3.9746279919566486e-08,0.000360381260667521,0.023254027215896367
+KOR,3313NF,Nonferrous metal production and processing and foundries,2326286137.0,0.01768377431992755,5.4559461187358174e-09,4.946930239466616e-05,0.01768738069332055
+KOR,332,Fabricated metal products,4194792309.0,0.0318876338260721,7.482091426687899e-07,0.006784045063427525,0.03189413688996081
+KOR,33311,Agricultural implement manufacturing,1019797189.0,0.007752212015340958,6.593397405422355e-08,0.0005978262302425779,0.007753792977110954
+KOR,33312,Construction machinery manufacturing,1945501905.0,0.014789159458851698,0.0,0.0,0.014792175513581437
+KOR,33313,Mining and oil and gas field machinery manufacturing,40039744.0,0.00030437089636650884,0.0,0.0,0.00030443296881113525
+KOR,3332OM,Other machinery,11022351353.0,0.08378882146147616,2.569682294756086e-07,0.002329942190245882,0.08380590909055821
+KOR,3341,Computer and peripheral equipment manufacturing,551072449.0,0.004189098093759471,3.364759626946963e-08,0.00030508422892814717,0.004189952405267449
+KOR,3342,Communications equipment manufacturing,548892245.0,0.004172524794845726,3.5941011442575824e-08,0.0003258787247398459,0.004173375726447178
+KOR,3344,Semiconductor and other electronic component manufacturing,11330063136.0,0.08612796007370722,3.904665260394693e-09,3.54037709157527e-05,0.086145524739371
+KOR,3345,"Navigational, measuring, electromedical, and control instruments manufacturing",1599553787.0,0.012159358959328855,2.665244563684456e-08,0.00024165889179858052,0.012161838700804489
+KOR,334X,Other computer and electronic product manufacturing,6203760033.0,0.04715924262869744,9.565603344814473e-08,0.0008673174444063279,0.04716886013651977
+KOR,335,"Electrical equipment, appliances, and components",11032681988.0,0.08386735204935868,7.303621311691587e-07,0.006622225428573633,0.08388445569372216
+KOR,336111,Automobile manufacturing,37344621158.0,0.2838833289325764,1.904719310429201e-07,0.001727017340237495,0.2839412232070484
+KOR,336112,Light truck and utility vehicle manufacturing,16094821.0,0.00012234831208282726,1.0894338046485116e-05,0.09877944017089453,0.00012237326341331766
+KOR,33612,Heavy duty truck manufacturing,14767445.0,0.00011225797227107944,0.0,0.0,0.0001122808658093607
+KOR,3362BP,"Motor vehicle body, trailer, and parts manufacturing",9107748920.0,0.06923455111654817,2.4023879864433988e-06,0.02178255708255029,0.06924867059344862
+KOR,3364,Aerospace product and parts manufacturing,691246185.0,0.005254659493786464,2.1366027956653033e-08,0.0001937267111804737,0.005255731112539612
+KOR,3365AO,All other transportation equipment manufacturing,135650597.0,0.0010311777668094496,7.237356977605611e-07,0.006562143266661816,0.001031388061964454
+KOR,337,Furniture and related products,269096315.0,0.002045594662280419,7.516461792814513e-07,0.006815208824915089,0.0020460118344309704
+KOR,3391,Medical equipment and supplies manufacturing,443020907.0,0.0033677205971320333,2.778845795403293e-07,0.0025195916522871447,0.0033684073994931603
+KOR,3399,Other miscellaneous manufacturing,736172728.0,0.005596178464626,7.886665200984028e-07,0.00715087387636023,0.005597319731685407
+KOR,4231,Motor vehicle and motor vehicle parts and supplies,,,0.0,0.0,
+KOR,4234,Professional and commercial equipment and supplies,,,0.0,0.0,
+KOR,4236,Household appliances and electrical and electronic goods,,,0.0,0.0,
+KOR,4238,"Machinery, equipment, and supplies",,,0.0,0.0,
+KOR,423X,Other durable goods merchant wholesalers,,,0.0,0.0,
+KOR,4242,Drugs and druggists' sundries,,,0.0,0.0,
+KOR,4244,Grocery and related product wholesalers,,,0.0,0.0,
+KOR,4247,Petroleum and petroleum products,,,0.0,0.0,
+KOR,424X,Other nondurable goods merchant wholesalers,,,0.0,0.0,
+KOR,425,Wholesale electronic markets and agents and brokers,,,0.0,0.0,
+KOR,42ID,Customs duties,,,0.0,0.0,
+KOR,441,Motor vehicle and parts dealers,,,0.0,0.0,
+KOR,444,Building material and garden equipment and supplies dealers,,,0.0,0.0,
+KOR,445,Food and beverage stores,,,0.0,0.0,
+KOR,446,Health and personal care stores,,,0.0,0.0,
+KOR,447,Gasoline stations,,,0.0,0.0,
+KOR,448,Clothing and clothing accessories stores,,,0.0,0.0,
+KOR,452,General merchandise stores,,,0.0,0.0,
+KOR,454,Nonstore retailers,,,6.47966798268887e-08,0.0005875143336770062,
+KOR,481,Air transportation,,,8.986060646606264e-06,0.08147700541565767,
+KOR,482,Rail transportation,,,1.0864061688021532e-08,9.850492310279133e-05,
+KOR,483,Water transportation,,,2.84423473659914e-07,0.002578880091631812,
+KOR,484,Truck transportation,,,1.1731322401192857e-07,0.0010636841396967456,
+KOR,485,Transit and ground passenger transportation,,,4.478063020049343e-07,0.004060279351375308,
+KOR,486,Pipeline transportation,,,0.0,0.0,
+KOR,48A,Scenic and sightseeing transportation and support activities,,,2.653380518294013e-07,0.0024058317360732416,
+KOR,492,Couriers and messengers,,,1.7222314768309025e-07,0.0015615548223321038,
+KOR,493,Warehousing and storage,,,1.65941327135591e-09,1.5045972803237395e-05,
+KOR,4A0X,All other retail,,,0.0,0.0,
+KOR,5111,"Newspaper, periodical, book, and directory publishers",,,2.543921703595682e-07,0.0023065849494255737,
+KOR,5112,Software publishers,,,1.626192731379945e-07,0.001474476071242483,
+KOR,512,Motion picture and sound recording industries,,,5.039552585715456e-08,0.0004569384399535548,
+KOR,515,Broadcasting (except internet),,,8.4464181360764e-08,0.0007658404313973911,
+KOR,5171,Wired telecommunications carriers,,,1.751359438711056e-06,0.015879652729309725,
+KOR,5172,Wireless telecommunications carriers (except satellite),,,1.3707878364354025e-06,0.012428993344836334,
+KOR,5174OT,"Other telecommunications, including satellite",,,1.1638026285104113e-07,0.0010552249399931545,
+KOR,518,"Data processing, hosting, and related services",,,2.811020723431553e-07,0.0025487648004362947,
+KOR,519,Other information services,,,1.9068837974951165e-07,0.0017289798901392512,
+KOR,521CI,"Federal reserve banks, credit intermediation, and related activities",,,6.596614900842302e-07,0.005981179619613648,
+KOR,523,"Securities, commodity contracts, and investments",,,6.639063803195912e-07,0.006019668225277133,
+KOR,524113,Direct life insurance carriers,,,1.55344417864867e-07,0.001408514639888179,
+KOR,5241X,"Insurance carriers, except direct life",,,6.447819709995354e-07,0.005846266368443469,
+KOR,5242,"Agencies, brokerages, and other insurance related activities",,,0.0,0.0,
+KOR,525,"Funds, trusts, and other financial vehicles",,,5.610783118676262e-07,0.00508732162540119,
+KOR,532RL,Rental and leasing services and lessors of intangible assets,,,5.001753036601506e-07,0.004535111382815703,
+KOR,5411,Legal services,,,1.5092660828971557e-07,0.0013684581669980366,
+KOR,5412,"Accounting, tax preparation, bookkeeping, and payroll services",,,5.543588631565988e-08,0.0005026396089668758,
+KOR,5413,"Architectural, engineering, and related services",,,0.0,0.0,
+KOR,5415,Computer systems design and related services,,,0.0,0.0,
+KOR,5416,"Management, scientific, and technical consulting services",,,0.0,0.0,
+KOR,5417,Scientific research and development services,,,4.5552720421765234e-08,0.0004130285109864928,
+KOR,5418,"Advertising, public relations, and related services",,,5.224372521731999e-09,4.7369614449167016e-05,
+KOR,541X,"Specialized design services and other professional, scientific, and technical services",,,3.59517798471439e-07,0.0032597636233565297,
+KOR,55,Management of companies and enterprises,,,0.0,0.0,
+KOR,5613,Employment services,,,3.524436711602783e-09,3.1956222012239996e-05,
+KOR,5617,Services to buildings and dwellings,,,5.248167219695805e-07,0.004758536201766281,
+KOR,561X,Other administrative and support services,,,3.23831648024518e-07,0.002936195734425593,
+KOR,562,Waste management and remediation services,,,6.741286447119151e-07,0.0061123539441931525,
+KOR,61,Educational services,,,2.6494866952376354e-06,0.02402301189655531,
+KOR,6211,Offices of physicians,,,2.557180781830438e-06,0.023186070137274417,
+KOR,6212,Offices of dentists,,,5.137766040179527e-07,0.004658434968811215,
+KOR,6213,Offices of other health practitioners,,,8.355927857771203e-07,0.0075763563823441436,
+KOR,6214,Outpatient care centers,,,1.112294822641052e-06,0.010085225868396469,
+KOR,6215OH,Other ambulatory health care services,,,1.6542922397151572e-06,0.014999540185081747,
+KOR,622,Hospitals,,,9.056574124043977e-06,0.08211635420363175,
+KOR,623,Nursing and residential care facilities,,,1.495072485598778e-06,0.01355588770168578,
+KOR,624,Social assistance,,,2.6312385494404058e-06,0.023857555159457932,
+KOR,711AS,"Performing arts, spectator sports, museums, and related activities",,,2.6593299926644165e-07,0.0024112261505398382,
+KOR,713,"Amusements, gambling, and recreation industries",,,2.098865967047101e-06,0.019030509640330633,
+KOR,721,Accommodation,,,1.0332212681619637e-06,0.009368262487010746,
+KOR,722,Food services and drinking places,,,6.470244664807258e-06,0.05866599173178605,
+KOR,811,Repair and maintenance,,,3.840294501503051e-06,0.03482011842584823,
+KOR,812,Personal and laundry services,,,1.8743532682765009e-06,0.016994843168334963,
+KOR,813,"Religious, grantmaking, civic, professional, and similar organizations",,,1.275665715165348e-06,0.011566516905530743,
+KOR,814,Private households,,,0.0,0.0,
+KOR,GFE,Federal government enterprises,,,6.093595770162288e-08,0.0005525089970918997,
+KOR,GFGD,Federal general government (defense),,,0.0,0.0,
+KOR,GFGN,Federal general government (nondefense),,,0.0,0.0,
+KOR,GSLE,State and local government enterprises,,,1.637530430896388e-06,0.014847560130460274,
+KOR,GSLGE,State and local government (educational services),,,0.0,0.0,
+KOR,GSLGH,State and local government (hospitals and health services),,,0.0,0.0,
+KOR,GSLGO,State and local government (other services),,,0.0,0.0,
+KOR,HSO,Owner-occupied housing,,,1.7878283719254103e-06,0.01621031814387394,
+KOR,HST,Tenant-occupied housing,,,3.315279027385928e-07,0.003005978012965609,
+KOR,ORE,Other real estate,,,5.012915467517912e-08,0.00045452324078120284,
+KOR,Other,,2265475782.0,0.017221511068201575,0.0,0.0,0.01722502316907891
+KOR,Used,,,,2.2841826819593286e-06,0.02071078441014513,

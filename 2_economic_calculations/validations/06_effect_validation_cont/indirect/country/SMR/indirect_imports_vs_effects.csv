@@ -1,0 +1,141 @@
+iso3,usummary_code,usummary_desc,impVal,impVal_share,indirect,indirect_share,impVal_share_no_oil
+SMR,111,Crop production,,,7.652916787545079e-11,0.003985446599231465,
+SMR,112,Animal production and aquaculture,,,2.1781262393781207e-11,0.0011343133676239804,
+SMR,113FF,"Forestry, fishing, and related activities",,,1.8559646251586425e-12,9.665397010027065e-05,
+SMR,211,Oil and gas extraction,,,0.0,0.0,0.0
+SMR,212,"Mining, except oil and gas",,,3.966156137813046e-13,2.0654743714440132e-05,
+SMR,213,Support activities for mining,,,0.0,0.0,
+SMR,2211,"Electric power generation, transmission, and distribution",,,2.3212831022045875e-10,0.012088658615223765,
+SMR,2212NW,"Natural gas distribution and water, sewage and other systems",,,1.9958886524873087e-10,0.010394086154766467,
+SMR,23EH,"Education, hospital, and health structures",,,0.0,0.0,
+SMR,23MR,Maintenance and repair construction,,,0.0,0.0,
+SMR,23OC,Office and commercial structures,,,0.0,0.0,
+SMR,23OR,Other residential construction,,,0.0,0.0,
+SMR,23OT,Other nonresidential structures,,,0.0,0.0,
+SMR,23PC,Power and communication structures,,,0.0,0.0,
+SMR,23SF,Single-family residential structures,,,0.0,0.0,
+SMR,23TH,Transportation structures and highways and streets,,,0.0,0.0,
+SMR,311,Food manufacturing,807366.0,0.031996396469088195,1.3054731139441651e-09,0.0679857566310463,0.031996396469088195
+SMR,3121,Beverage manufacturing,,,1.29869325897018e-09,0.06763267883470431,
+SMR,3122,Tobacco manufacturing,,,1.5088210079112202e-10,0.007857560354785634,
+SMR,313TT,Textile mills and textile product mills,6444.0,0.0002553795662026941,3.5155209177934283e-11,0.00183079488191343,0.0002553795662026941
+SMR,315AL,Apparel and leather and allied products,287978.0,0.011412740024196065,3.5898609352148486e-11,0.0018695092934043784,0.011412740024196065
+SMR,321,Wood products,2928.0,0.00011603838762282562,4.81913316940246e-12,0.00025096833579187083,0.00011603838762282562
+SMR,322,Paper products,758607.0,0.030064048196512594,3.7992742694332825e-10,0.019785664913152298,0.030064048196512594
+SMR,323,Printing and related support activities,91582.0,0.00362944932215629,5.3493466234262595e-11,0.002785805190400279,0.00362944932215629
+SMR,324,Petroleum and coal products,,,5.962448542666851e-10,0.03105093250999135,
+SMR,3251,Basic chemical manufacturing,21639.0,0.0008575664855772963,2.1925623707469013e-12,0.00011418313417855969,0.0008575664855772963
+SMR,3252,"Resin, rubber, and artificial fibers manufacturing",,,0.0,0.0,
+SMR,3254,Pharmaceutical and medicine manufacturing,,,2.6408540815431623e-11,0.0013752903906497278,
+SMR,325X,Other chemical manufacturing,7302.0,0.0002893826183134811,3.3348620410050576e-10,0.017367122822843604,0.0002893826183134811
+SMR,326,Plastics and rubber products,516997.0,0.020488899687786194,1.3413271957578112e-10,0.006985294704222809,0.020488899687786194
+SMR,327,Nonmetallic mineral products,1269842.0,0.050324596385158515,7.923866650467713e-11,0.004126550473705141,0.050324596385158515
+SMR,3311IS,Iron and steel mills and manufacturing from purchased steel,,,4.798405777484068e-12,0.00024988890534821917,
+SMR,3313NF,Nonferrous metal production and processing and foundries,1134951.0,0.04497878554334479,1.5648984027070364e-12,8.149597323940292e-05,0.04497878554334479
+SMR,332,Fabricated metal products,1180621.0,0.04678871490220219,1.2311005523978008e-10,0.006411262066576982,0.04678871490220219
+SMR,33311,Agricultural implement manufacturing,,,1.2335730092733908e-11,0.0006424138000185202,
+SMR,33312,Construction machinery manufacturing,2965.0,0.00011750471970685723,0.0,0.0,0.00011750471970685723
+SMR,33313,Mining and oil and gas field machinery manufacturing,,,0.0,0.0,
+SMR,3332OM,Other machinery,14434084.0,0.5720313641299267,1.3219416071210442e-10,0.006884339433897327,0.5720313641299267
+SMR,3341,Computer and peripheral equipment manufacturing,12469.0,0.0004941539123186518,3.0627809049032857e-12,0.0001595019269189456,0.0004941539123186518
+SMR,3342,Communications equipment manufacturing,20351.0,0.0008065222768142501,2.705870486222059e-12,0.00014091492991045375,0.0008065222768142501
+SMR,3344,Semiconductor and other electronic component manufacturing,56297.0,0.00223108371174939,2.634493035332897e-13,1.3719777177578032e-05,0.00223108371174939
+SMR,3345,"Navigational, measuring, electromedical, and control instruments manufacturing",12731.0,0.0005045371286974703,2.846618152959165e-12,0.000148244714426863,0.0005045371286974703
+SMR,334X,Other computer and electronic product manufacturing,11956.0,0.00047382341612653797,2.648875292682717e-12,0.00013794676356852263,0.00047382341612653797
+SMR,335,"Electrical equipment, appliances, and components",159768.0,0.006331701200042215,1.6316122434458412e-10,0.008497026228599047,0.006331701200042215
+SMR,336111,Automobile manufacturing,,,5.475249608489898e-11,0.002851372298678733,
+SMR,336112,Light truck and utility vehicle manufacturing,,,2.0079591373925646e-09,0.10456946204538625,
+SMR,33612,Heavy duty truck manufacturing,,,0.0,0.0,
+SMR,3362BP,"Motor vehicle body, trailer, and parts manufacturing",114923.0,0.0045544670835990396,5.197565157770153e-10,0.027067612202489263,0.0045544670835990396
+SMR,3364,Aerospace product and parts manufacturing,,,2.9047536342322418e-12,0.0001512722640862497,
+SMR,3365AO,All other transportation equipment manufacturing,6350.0,0.0002516542900973165,1.5463580668457218e-10,0.008053043917496174,0.0002516542900973165
+SMR,337,Furniture and related products,825394.0,0.03271085686938338,1.8740363415136176e-10,0.009759509963935603,0.03271085686938338
+SMR,3391,Medical equipment and supplies manufacturing,,,3.434012009076404e-11,0.0017883470921266633,
+SMR,3399,Other miscellaneous manufacturing,491264.0,0.019469085538640643,1.7766907308286434e-10,0.009252558505001743,0.019469085538640643
+SMR,4231,Motor vehicle and motor vehicle parts and supplies,,,0.0,0.0,
+SMR,4234,Professional and commercial equipment and supplies,,,0.0,0.0,
+SMR,4236,Household appliances and electrical and electronic goods,,,0.0,0.0,
+SMR,4238,"Machinery, equipment, and supplies",,,0.0,0.0,
+SMR,423X,Other durable goods merchant wholesalers,,,0.0,0.0,
+SMR,4242,Drugs and druggists' sundries,,,0.0,0.0,
+SMR,4244,Grocery and related product wholesalers,,,0.0,0.0,
+SMR,4247,Petroleum and petroleum products,,,0.0,0.0,
+SMR,424X,Other nondurable goods merchant wholesalers,,,0.0,0.0,
+SMR,425,Wholesale electronic markets and agents and brokers,,,0.0,0.0,
+SMR,42ID,Customs duties,,,0.0,0.0,
+SMR,441,Motor vehicle and parts dealers,,,0.0,0.0,
+SMR,444,Building material and garden equipment and supplies dealers,,,0.0,0.0,
+SMR,445,Food and beverage stores,,,0.0,0.0,
+SMR,446,Health and personal care stores,,,0.0,0.0,
+SMR,447,Gasoline stations,,,0.0,0.0,
+SMR,448,Clothing and clothing accessories stores,,,0.0,0.0,
+SMR,452,General merchandise stores,,,0.0,0.0,
+SMR,454,Nonstore retailers,,,1.2657812050218398e-11,0.0006591870183582187,
+SMR,481,Air transportation,,,1.0719968731411164e-10,0.0055826901181000995,
+SMR,482,Rail transportation,,,1.1522277769496465e-12,6.000512487810649e-05,
+SMR,483,Water transportation,,,2.7891385096563005e-11,0.001452513191595936,
+SMR,484,Truck transportation,,,1.4233299745666938e-11,0.0007412344553325151,
+SMR,485,Transit and ground passenger transportation,,,9.125315619268576e-11,0.004752234881335236,
+SMR,486,Pipeline transportation,,,0.0,0.0,
+SMR,48A,Scenic and sightseeing transportation and support activities,,,2.312279869847744e-11,0.001204177204533832,
+SMR,492,Couriers and messengers,,,5.951295376445183e-12,0.00030992849625226227,
+SMR,493,Warehousing and storage,,,3.3861573870603977e-13,1.7634256084798536e-05,
+SMR,4A0X,All other retail,,,0.0,0.0,
+SMR,5111,"Newspaper, periodical, book, and directory publishers",,,7.147256805105689e-11,0.003722111597254138,
+SMR,5112,Software publishers,,,2.0775994607424983e-11,0.0010819615494653048,
+SMR,512,Motion picture and sound recording industries,,,7.493237120763415e-12,0.0003902289444566317,
+SMR,515,Broadcasting (except internet),,,2.8423511832166678e-11,0.0014802250137370481,
+SMR,5171,Wired telecommunications carriers,,,2.6994179838217106e-10,0.014057889981288554,
+SMR,5172,Wireless telecommunications carriers (except satellite),,,1.4909961875317192e-10,0.007764733173025329,
+SMR,5174OT,"Other telecommunications, including satellite",,,1.1130515614798722e-11,0.0005796492610096995,
+SMR,518,"Data processing, hosting, and related services",,,4.3641020919528806e-11,0.002272714616390317,
+SMR,519,Other information services,,,4.102674959732953e-11,0.002136569940578813,
+SMR,521CI,"Federal reserve banks, credit intermediation, and related activities",,,1.0795567584150666e-10,0.00562206009936617,
+SMR,523,"Securities, commodity contracts, and investments",,,1.0912981256331836e-10,0.005683206186993739,
+SMR,524113,Direct life insurance carriers,,,4.358778789223791e-11,0.002269942374205108,
+SMR,5241X,"Insurance carriers, except direct life",,,1.7555913698019122e-10,0.009142678339067106,
+SMR,5242,"Agencies, brokerages, and other insurance related activities",,,0.0,0.0,
+SMR,525,"Funds, trusts, and other financial vehicles",,,8.654582270539448e-11,0.004507088791821938,
+SMR,532RL,Rental and leasing services and lessors of intangible assets,,,9.016558351969147e-11,0.0046955968316695655,
+SMR,5411,Legal services,,,2.5992616818166903e-11,0.0013536301148822556,
+SMR,5412,"Accounting, tax preparation, bookkeeping, and payroll services",,,9.200137929348866e-12,0.00047912004587137124,
+SMR,5413,"Architectural, engineering, and related services",,,0.0,0.0,
+SMR,5415,Computer systems design and related services,,,0.0,0.0,
+SMR,5416,"Management, scientific, and technical consulting services",,,0.0,0.0,
+SMR,5417,Scientific research and development services,,,5.677635278218758e-12,0.0002956769665662624,
+SMR,5418,"Advertising, public relations, and related services",,,1.6113830728896513e-12,8.391677795790198e-05,
+SMR,541X,"Specialized design services and other professional, scientific, and technical services",,,8.729781648050121e-11,0.004546250736435264,
+SMR,55,Management of companies and enterprises,,,0.0,0.0,
+SMR,5613,Employment services,,,6.093189761989527e-13,3.173179990002616e-05,
+SMR,5617,Services to buildings and dwellings,,,7.519438581882502e-11,0.00391593450657482,
+SMR,561X,Other administrative and support services,,,5.763827172930068e-11,0.003001656236782483,
+SMR,562,Waste management and remediation services,,,1.6883334206470396e-10,0.008792415854615663,
+SMR,61,Educational services,,,4.5979073238116204e-10,0.023944745011587557,
+SMR,6211,Offices of physicians,,,4.728451938602517e-10,0.02462458853466506,
+SMR,6212,Offices of dentists,,,7.214648444249205e-11,0.003757207468083189,
+SMR,6213,Offices of other health practitioners,,,3.625848694119383e-11,0.0018882508131832767,
+SMR,6214,Outpatient care centers,,,1.1839483085565372e-10,0.006165705039001383,
+SMR,6215OH,Other ambulatory health care services,,,2.4299699144653145e-10,0.012654672199757688,
+SMR,622,Hospitals,,,1.7543688096508643e-09,0.09136311553262928,
+SMR,623,Nursing and residential care facilities,,,1.768806960204531e-10,0.009211501810286174,
+SMR,624,Social assistance,,,4.775689358700829e-10,0.024870589138766334,
+SMR,711AS,"Performing arts, spectator sports, museums, and related activities",,,6.448617456346229e-11,0.003358277794548456,
+SMR,713,"Amusements, gambling, and recreation industries",,,3.9568675952642876e-10,0.020606371320828046,
+SMR,721,Accommodation,,,2.1312015185887399e-10,0.011098761531498485,
+SMR,722,Food services and drinking places,,,1.4566197036531578e-09,0.07585709090350967,
+SMR,811,Repair and maintenance,,,1.0890273123817143e-09,0.056713803626684475,
+SMR,812,Personal and laundry services,,,2.2666131468983176e-10,0.011803951236972756,
+SMR,813,"Religious, grantmaking, civic, professional, and similar organizations",,,2.1892982350830336e-10,0.011401314620218232,
+SMR,814,Private households,,,0.0,0.0,
+SMR,GFE,Federal government enterprises,,,5.029389962286713e-12,0.00026191798078905194,
+SMR,GFGD,Federal general government (defense),,,0.0,0.0,
+SMR,GFGN,Federal general government (nondefense),,,0.0,0.0,
+SMR,GSLE,State and local government enterprises,,,2.6536152459891265e-10,0.01381936084161798,
+SMR,GSLGE,State and local government (educational services),,,0.0,0.0,
+SMR,GSLGH,State and local government (hospitals and health services),,,0.0,0.0,
+SMR,GSLGO,State and local government (other services),,,0.0,0.0,
+SMR,HSO,Owner-occupied housing,,,3.5789909347404107e-10,0.018638484705276685,
+SMR,HST,Tenant-occupied housing,,,5.4831075669104665e-11,0.0028554645258038374,
+SMR,ORE,Other real estate,,,6.9152872806451455e-12,0.000360130770273235,
+SMR,Other,,2998220.0,0.11882124813473642,0.0,0.0,0.11882124813473642
+SMR,Used,,,,5.080936863584705e-10,0.026460241377300055,

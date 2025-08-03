@@ -1,0 +1,141 @@
+iso3,usummary_code,usummary_desc,impVal,impVal_share,indirect,indirect_share,impVal_share_no_oil
+KEN,111,Crop production,91168351.0,0.12365077569350637,5.993675845136807e-09,0.020911005352874944,0.12365077569350637
+KEN,112,Animal production and aquaculture,2568238.0,0.003483277007670561,8.991129959400313e-10,0.0031368657826559986,0.003483277007670561
+KEN,113FF,"Forestry, fishing, and related activities",897935.0,0.0012178607823272864,9.303205654464363e-11,0.000324574415210071,0.0012178607823272864
+KEN,211,Oil and gas extraction,,,0.0,0.0,0.0
+KEN,212,"Mining, except oil and gas",16436342.0,0.022292455831122337,2.51509171624128e-12,8.774764885552862e-06,0.022292455831122337
+KEN,213,Support activities for mining,,,0.0,0.0,
+KEN,2211,"Electric power generation, transmission, and distribution",,,1.450807661528699e-09,0.005061642898294934,
+KEN,2212NW,"Natural gas distribution and water, sewage and other systems",,,8.936563722214496e-10,0.0031178284688712582,
+KEN,23EH,"Education, hospital, and health structures",,,0.0,0.0,
+KEN,23MR,Maintenance and repair construction,,,0.0,0.0,
+KEN,23OC,Office and commercial structures,,,0.0,0.0,
+KEN,23OR,Other residential construction,,,0.0,0.0,
+KEN,23OT,Other nonresidential structures,,,0.0,0.0,
+KEN,23PC,Power and communication structures,,,0.0,0.0,
+KEN,23SF,Single-family residential structures,,,0.0,0.0,
+KEN,23TH,Transportation structures and highways and streets,,,0.0,0.0,
+KEN,311,Food manufacturing,24336171.0,0.0330069194907322,1.328195501529483e-07,0.46338680902609763,0.0330069194907322
+KEN,3121,Beverage manufacturing,236305.0,0.00032049824560558324,2.0028906911210963e-08,0.06987774955704276,0.00032049824560558324
+KEN,3122,Tobacco manufacturing,5462.0,7.408059150240984e-06,1.4744626536398231e-09,0.005144171496677391,7.408059150240984e-06
+KEN,313TT,Textile mills and textile product mills,126961.0,0.00017219600838040014,3.3668969938118955e-10,0.0011746581376653026,0.00017219600838040014
+KEN,315AL,Apparel and leather and allied products,534565026.0,0.7250255093844946,5.628048673833541e-09,0.019635388864124942,0.7250255093844946
+KEN,321,Wood products,321748.0,0.0004363837816682051,2.715596218561371e-11,9.474293994170389e-05,0.0004363837816682051
+KEN,322,Paper products,79835.0,0.00010827945848763987,3.9810565187898496e-10,0.0013889288697862853,0.00010827945848763987
+KEN,323,Printing and related support activities,36306.0,4.9241485812641734e-05,4.598623481033708e-11,0.00016043884039170517,4.9241485812641734e-05
+KEN,324,Petroleum and coal products,3388.0,4.595112486454862e-06,4.6091269450492074e-09,0.016080528995942752,4.595112486454862e-06
+KEN,3251,Basic chemical manufacturing,2077425.0,0.002817591959024053,7.903731651942041e-11,0.00027574893796692253,0.002817591959024053
+KEN,3252,"Resin, rubber, and artificial fibers manufacturing",,,0.0,0.0,
+KEN,3254,Pharmaceutical and medicine manufacturing,178239.0,0.00024174387676305432,2.454087536602422e-09,0.008561930765067192,0.00024174387676305432
+KEN,325X,Other chemical manufacturing,6587166.0,0.008934111197447143,4.814155973115398e-09,0.016795843473095463,0.008934111197447143
+KEN,326,Plastics and rubber products,197357.0,0.0002676734400794782,7.289620208276847e-10,0.002543235422372482,0.0002676734400794782
+KEN,327,Nonmetallic mineral products,644075.0,0.0008735528555824719,4.400046123609796e-10,0.0015351078440178968,0.0008735528555824719
+KEN,3311IS,Iron and steel mills and manufacturing from purchased steel,3083908.0,0.00418267537127451,2.3670427812512257e-10,0.0008258245115039015,0.00418267537127451
+KEN,3313NF,Nonferrous metal production and processing and foundries,1255211.0,0.0017024308557365682,1.0842839537414729e-11,3.7828985328129334e-05,0.0017024308557365682
+KEN,332,Fabricated metal products,180016.0,0.0002441540051244564,1.003752523096616e-09,0.003501936862412348,0.0002441540051244564
+KEN,33311,Agricultural implement manufacturing,,,4.6885946630729965e-11,0.00016357779537999433,
+KEN,33312,Construction machinery manufacturing,308526.0,0.0004184509076139234,0.0,0.0,0.0004184509076139234
+KEN,33313,Mining and oil and gas field machinery manufacturing,15879.0,2.1536538126451225e-05,0.0,0.0,2.1536538126451225e-05
+KEN,3332OM,Other machinery,1371072.0,0.001859572038674333,2.1564213272098417e-10,0.0007523419531092349,0.001859572038674333
+KEN,3341,Computer and peripheral equipment manufacturing,127385.0,0.00017277107558649722,1.4302111767016824e-11,4.989784957425874e-05,0.00017277107558649722
+KEN,3342,Communications equipment manufacturing,9298.0,1.2610789816722935e-05,9.827184433834126e-12,3.428552220860123e-05,1.2610789816722935e-05
+KEN,3344,Semiconductor and other electronic component manufacturing,18826.0,2.553352646694192e-05,8.848495097619535e-13,3.087102691770386e-06,2.553352646694192e-05
+KEN,3345,"Navigational, measuring, electromedical, and control instruments manufacturing",529550.0,0.0007182236768601452,8.469651001170184e-12,2.9549298627178227e-05,0.0007182236768601452
+KEN,334X,Other computer and electronic product manufacturing,526044.0,0.0007134685220852011,1.7963979841233598e-11,6.267353929788627e-05,0.0007134685220852011
+KEN,335,"Electrical equipment, appliances, and components",80830.0,0.00010962896761515539,5.514144351994901e-10,0.0019237994352772445,0.00010962896761515539
+KEN,336111,Automobile manufacturing,,,1.137332618721078e-10,0.0003967977096621396,
+KEN,336112,Light truck and utility vehicle manufacturing,,,5.0053427700381774e-09,0.017462864552838225,
+KEN,33612,Heavy duty truck manufacturing,,,0.0,0.0,
+KEN,3362BP,"Motor vehicle body, trailer, and parts manufacturing",73186.0,9.926148241844318e-05,2.265783777663091e-09,0.007904968157664631,9.926148241844318e-05
+KEN,3364,Aerospace product and parts manufacturing,221199.0,0.00030001012009779485,1.099124189010671e-11,3.834673811818708e-05,0.00030001012009779485
+KEN,3365AO,All other transportation equipment manufacturing,3500.0,4.747017031461634e-06,4.760154055565628e-10,0.0016607439158927387,4.747017031461634e-06
+KEN,337,Furniture and related products,25360.0,3.439552911939058e-05,6.636750474388292e-10,0.002315459298791311,3.439552911939058e-05
+KEN,3391,Medical equipment and supplies manufacturing,94306.0,0.0001279063394768631,1.7027981808353487e-10,0.0005940798734253362,0.0001279063394768631
+KEN,3399,Other miscellaneous manufacturing,11894517.0,0.016132421365717124,1.3155202398166114e-09,0.004589646068187158,0.016132421365717124
+KEN,4231,Motor vehicle and motor vehicle parts and supplies,,,0.0,0.0,
+KEN,4234,Professional and commercial equipment and supplies,,,0.0,0.0,
+KEN,4236,Household appliances and electrical and electronic goods,,,0.0,0.0,
+KEN,4238,"Machinery, equipment, and supplies",,,0.0,0.0,
+KEN,423X,Other durable goods merchant wholesalers,,,0.0,0.0,
+KEN,4242,Drugs and druggists' sundries,,,0.0,0.0,
+KEN,4244,Grocery and related product wholesalers,,,0.0,0.0,
+KEN,4247,Petroleum and petroleum products,,,0.0,0.0,
+KEN,424X,Other nondurable goods merchant wholesalers,,,0.0,0.0,
+KEN,425,Wholesale electronic markets and agents and brokers,,,0.0,0.0,
+KEN,42ID,Customs duties,,,0.0,0.0,
+KEN,441,Motor vehicle and parts dealers,,,0.0,0.0,
+KEN,444,Building material and garden equipment and supplies dealers,,,0.0,0.0,
+KEN,445,Food and beverage stores,,,0.0,0.0,
+KEN,446,Health and personal care stores,,,0.0,0.0,
+KEN,447,Gasoline stations,,,0.0,0.0,
+KEN,448,Clothing and clothing accessories stores,,,0.0,0.0,
+KEN,452,General merchandise stores,,,0.0,0.0,
+KEN,454,Nonstore retailers,,,3.0199365266830066e-11,0.00010536090123400643,
+KEN,481,Air transportation,,,6.905897375489354e-10,0.0024093604778849488,
+KEN,482,Rail transportation,,,7.25900699178073e-12,2.5325549459743728e-05,
+KEN,483,Water transportation,,,1.4075074352618779e-10,0.0004910575125088469,
+KEN,484,Truck transportation,,,4.5774391654320856e-11,0.0001596997524790648,
+KEN,485,Transit and ground passenger transportation,,,2.5876652037615173e-10,0.0009027962526737252,
+KEN,486,Pipeline transportation,,,0.0,0.0,
+KEN,48A,Scenic and sightseeing transportation and support activities,,,6.277782841813963e-11,0.00021902210596836487,
+KEN,492,Couriers and messengers,,,2.5107669697433e-11,8.759676515826885e-05,
+KEN,493,Warehousing and storage,,,5.755290921244543e-13,2.007931732897214e-06,
+KEN,4A0X,All other retail,,,0.0,0.0,
+KEN,5111,"Newspaper, periodical, book, and directory publishers",,,1.3664001724504379e-10,0.0004767158261230287,
+KEN,5112,Software publishers,,,6.798541150705742e-11,0.00023719055562455667,
+KEN,512,Motion picture and sound recording industries,,,5.709073363291624e-11,0.00019918071438016177,
+KEN,515,Broadcasting (except internet),,,3.368715425983868e-11,0.00011752925604446527,
+KEN,5171,Wired telecommunications carriers,,,4.836425318128191e-10,0.0016873537763677658,
+KEN,5172,Wireless telecommunications carriers (except satellite),,,4.108125921132416e-10,0.0014332614133076038,
+KEN,5174OT,"Other telecommunications, including satellite",,,3.055303224806565e-11,0.0001065947904747389,
+KEN,518,"Data processing, hosting, and related services",,,1.5169669383255375e-10,0.0005292462353164777,
+KEN,519,Other information services,,,1.383142392400225e-10,0.0004825569269772411,
+KEN,521CI,"Federal reserve banks, credit intermediation, and related activities",,,5.511723805813808e-10,0.00192295494425942,
+KEN,523,"Securities, commodity contracts, and investments",,,4.850045838498735e-10,0.0016921057646590327,
+KEN,524113,Direct life insurance carriers,,,9.863442922421823e-11,0.00034412022451279465,
+KEN,5241X,"Insurance carriers, except direct life",,,3.110803093289573e-10,0.0010853109480102926,
+KEN,5242,"Agencies, brokerages, and other insurance related activities",,,0.0,0.0,
+KEN,525,"Funds, trusts, and other financial vehicles",,,3.979745049243439e-10,0.0013884713184035662,
+KEN,532RL,Rental and leasing services and lessors of intangible assets,,,2.7605051895675437e-10,0.000963097442824227,
+KEN,5411,Legal services,,,1.1276475303770023e-10,0.00039341873256296334,
+KEN,5412,"Accounting, tax preparation, bookkeeping, and payroll services",,,3.696051290804144e-11,0.00012894949664189203,
+KEN,5413,"Architectural, engineering, and related services",,,0.0,0.0,
+KEN,5415,Computer systems design and related services,,,0.0,0.0,
+KEN,5416,"Management, scientific, and technical consulting services",,,0.0,0.0,
+KEN,5417,Scientific research and development services,,,8.88582086557559e-11,0.00031001250732554065,
+KEN,5418,"Advertising, public relations, and related services",,,3.3644232497868743e-12,1.1737950867448757e-05,
+KEN,541X,"Specialized design services and other professional, scientific, and technical services",,,4.6077430955139345e-10,0.0016075700959561183,
+KEN,55,Management of companies and enterprises,,,0.0,0.0,
+KEN,5613,Employment services,,,2.7593045173610908e-12,9.62678546914857e-06,
+KEN,5617,Services to buildings and dwellings,,,6.100177578108637e-10,0.0021282573379876506,
+KEN,561X,Other administrative and support services,,,2.0241206830152267e-10,0.0007061843104468087,
+KEN,562,Waste management and remediation services,,,3.829831356001903e-10,0.001336168756122248,
+KEN,61,Educational services,,,4.072097845656682e-09,0.01420691776600638,
+KEN,6211,Offices of physicians,,,2.535557693315642e-09,0.008846167505115788,
+KEN,6212,Offices of dentists,,,3.4601500717969664e-10,0.0012071926901386417,
+KEN,6213,Offices of other health practitioners,,,1.025877303720023e-09,0.003579126790263157,
+KEN,6214,Outpatient care centers,,,1.452795126329159e-09,0.00506857685471081,
+KEN,6215OH,Other ambulatory health care services,,,1.9062031841555933e-09,0.006650447240967708,
+KEN,622,Hospitals,,,1.6154278700506388e-08,0.05635977271814111,
+KEN,623,Nursing and residential care facilities,,,2.231892296397969e-09,0.007786726036391613,
+KEN,624,Social assistance,,,6.9411107678948114e-09,0.02421645884305132,
+KEN,711AS,"Performing arts, spectator sports, museums, and related activities",,,3.3568957906989004e-10,0.001171168873026463,
+KEN,713,"Amusements, gambling, and recreation industries",,,2.9025632214977526e-09,0.010126592867221043,
+KEN,721,Accommodation,,,1.6004401162941236e-09,0.005583687323687477,
+KEN,722,Food services and drinking places,,,3.160295027973102e-08,0.11025779163587918,
+KEN,811,Repair and maintenance,,,2.6227768346495587e-09,0.009150461560788909,
+KEN,812,Personal and laundry services,,,1.1842017808802879e-09,0.004131496333583673,
+KEN,813,"Religious, grantmaking, civic, professional, and similar organizations",,,1.3149896651192791e-09,0.004587794975364877,
+KEN,814,Private households,,,0.0,0.0,
+KEN,GFE,Federal government enterprises,,,4.454972300807265e-12,1.5542707352897225e-05,
+KEN,GFGD,Federal general government (defense),,,0.0,0.0,
+KEN,GFGN,Federal general government (nondefense),,,0.0,0.0,
+KEN,GSLE,State and local government enterprises,,,1.0863008253562292e-09,0.0037899350850426395,
+KEN,GSLGE,State and local government (educational services),,,0.0,0.0,
+KEN,GSLGH,State and local government (hospitals and health services),,,0.0,0.0,
+KEN,GSLGO,State and local government (other services),,,0.0,0.0,
+KEN,HSO,Owner-occupied housing,,,1.30490572768239e-09,0.004552613681753222,
+KEN,HST,Tenant-occupied housing,,,2.5294378387902517e-10,0.000882481628191891,
+KEN,ORE,Other real estate,,,4.717675254329045e-11,0.0001645923721024132,
+KEN,Other,,37020185.0,0.050210128200817286,0.0,0.0,0.050210128200817286
+KEN,Used,,,,3.5544506891466083e-09,0.012400927128480408,

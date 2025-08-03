@@ -1,0 +1,141 @@
+iso3,usummary_code,usummary_desc,impVal,impVal_share,indirect,indirect_share,impVal_share_no_oil
+BRB,111,Crop production,,,2.8297374375754818e-11,0.0006318650748425598,
+BRB,112,Animal production and aquaculture,296288.0,0.0061008998749069255,2.9384446683806684e-11,0.0006561388119096633,0.0061008998749069255
+BRB,113FF,"Forestry, fishing, and related activities",648601.0,0.013355416890878154,1.09637400061559e-12,2.448143883440873e-05,0.013355416890878154
+BRB,211,Oil and gas extraction,,,0.0,0.0,0.0
+BRB,212,"Mining, except oil and gas",,,2.5260751723976422e-14,5.640589323483452e-07,
+BRB,213,Support activities for mining,,,0.0,0.0,
+BRB,2211,"Electric power generation, transmission, and distribution",,,8.094570323358453e-11,0.001807473801374839,
+BRB,2212NW,"Natural gas distribution and water, sewage and other systems",,,5.6882210871100347e-11,0.001270149023439895,
+BRB,23EH,"Education, hospital, and health structures",,,0.0,0.0,
+BRB,23MR,Maintenance and repair construction,,,0.0,0.0,
+BRB,23OC,Office and commercial structures,,,0.0,0.0,
+BRB,23OR,Other residential construction,,,0.0,0.0,
+BRB,23OT,Other nonresidential structures,,,0.0,0.0,
+BRB,23PC,Power and communication structures,,,0.0,0.0,
+BRB,23SF,Single-family residential structures,,,0.0,0.0,
+BRB,23TH,Transportation structures and highways and streets,,,0.0,0.0,
+BRB,311,Food manufacturing,3468519.0,0.0714206688533194,3.910434148153675e-09,0.08731788090583632,0.0714206688533194
+BRB,3121,Beverage manufacturing,21776800.0,0.44840856327584355,2.3759032175883317e-09,0.053052634653142965,0.44840856327584355
+BRB,3122,Tobacco manufacturing,5070.0,0.0001043969460989919,2.5145837801893568e-11,0.0005614929665801731,0.0001043969460989919
+BRB,313TT,Textile mills and textile product mills,574008.0,0.011819463951950718,9.469429856307876e-11,0.0021144725038514255,0.011819463951950718
+BRB,315AL,Apparel and leather and allied products,1087857.0,0.02240018709909488,1.1638649460394468e-10,0.0025988475166301727,0.02240018709909488
+BRB,321,Wood products,9295.0,0.00019139440118148514,1.390894333124576e-12,3.105791866862593e-05,0.00019139440118148514
+BRB,322,Paper products,63588.0,0.0013093477334403742,4.787189290838235e-11,0.0010689534934847874,0.0013093477334403742
+BRB,323,Printing and related support activities,901045.0,0.018553519979835533,1.0759871948468957e-13,2.402621248083319e-06,0.018553519979835533
+BRB,324,Petroleum and coal products,36410.0,0.0007497224472316164,6.787759823138307e-11,0.0015156700800959741,0.0007497224472316164
+BRB,3251,Basic chemical manufacturing,,,4.834582328136607e-13,1.0795361025501748e-05,
+BRB,3252,"Resin, rubber, and artificial fibers manufacturing",35581.0,0.0007326524140331816,0.0,0.0,0.0007326524140331816
+BRB,3254,Pharmaceutical and medicine manufacturing,,,3.2901438067881744e-11,0.0007346713285527361,
+BRB,325X,Other chemical manufacturing,6100.0,0.00012560579313685417,6.733696551509401e-11,0.0015035980437577542,0.00012560579313685417
+BRB,326,Plastics and rubber products,5905.0,0.00012159052597920063,6.609829099071669e-11,0.001475939111142372,0.00012159052597920063
+BRB,327,Nonmetallic mineral products,39126.0,0.00080564791184796,5.497145830423444e-12,0.00012274829513995582,0.00080564791184796
+BRB,3311IS,Iron and steel mills and manufacturing from purchased steel,,,2.847868038295201e-13,6.3591353998585645e-06,
+BRB,3313NF,Nonferrous metal production and processing and foundries,,,2.6430583930485482e-14,5.901806532155791e-07,
+BRB,332,Fabricated metal products,,,8.190115178228196e-12,0.00018288084510393031,
+BRB,33311,Agricultural implement manufacturing,14888.0,0.00030656049970844015,1.016733566374374e-12,2.2703110984124647e-05,0.00030656049970844015
+BRB,33312,Construction machinery manufacturing,,,0.0,0.0,
+BRB,33313,Mining and oil and gas field machinery manufacturing,,,0.0,0.0,
+BRB,3332OM,Other machinery,303401.0,0.006247364466149949,9.417898991913466e-12,0.00021029659403607956,0.006247364466149949
+BRB,3341,Computer and peripheral equipment manufacturing,35373.0,0.0007283694623983512,6.772798124464185e-13,1.512329213651278e-05,0.0007283694623983512
+BRB,3342,Communications equipment manufacturing,18927.0,0.00038972800765594076,3.1584934278839007e-12,7.05274510524745e-05,0.00038972800765594076
+BRB,3344,Semiconductor and other electronic component manufacturing,,,7.606315882015584e-14,1.6984492236791585e-06,
+BRB,3345,"Navigational, measuring, electromedical, and control instruments manufacturing",3215132.0,0.06620314834420987,3.7829485103633385e-12,8.447119552103395e-05,0.06620314834420987
+BRB,334X,Other computer and electronic product manufacturing,,,4.408313153684794e-13,9.843524999157038e-06,
+BRB,335,"Electrical equipment, appliances, and components",15882.0,0.0003270280666556587,-1.0866270069748398e-10,-0.002426379373474254,0.0003270280666556587
+BRB,336111,Automobile manufacturing,,,2.2678705660163044e-12,5.0640323936093325e-05,
+BRB,336112,Light truck and utility vehicle manufacturing,,,1.181853137589001e-10,0.0026390141760834957,
+BRB,33612,Heavy duty truck manufacturing,,,0.0,0.0,
+BRB,3362BP,"Motor vehicle body, trailer, and parts manufacturing",42462.0,0.0008743398669142789,3.7853971823550746e-11,0.0008452587304308167,0.0008743398669142789
+BRB,3364,Aerospace product and parts manufacturing,,,5.944804809041045e-13,1.327442781690565e-05,
+BRB,3365AO,All other transportation equipment manufacturing,2936.0,6.045550961472194e-05,2.1523886868375394e-11,0.00048061675992955196,6.045550961472194e-05
+BRB,337,Furniture and related products,1500.0,3.0886670443488726e-05,9.499396453067474e-11,0.0021211638829358764,3.0886670443488726e-05
+BRB,3391,Medical equipment and supplies manufacturing,5074250.0,0.10448445833191512,1.8454232135025547e-10,0.004120730289079638,0.10448445833191512
+BRB,3399,Other miscellaneous manufacturing,6018.0,0.00012391732181927677,2.879767735828961e-11,0.000643036570024606,0.00012391732181927677
+BRB,4231,Motor vehicle and motor vehicle parts and supplies,,,0.0,0.0,
+BRB,4234,Professional and commercial equipment and supplies,,,0.0,0.0,
+BRB,4236,Household appliances and electrical and electronic goods,,,0.0,0.0,
+BRB,4238,"Machinery, equipment, and supplies",,,0.0,0.0,
+BRB,423X,Other durable goods merchant wholesalers,,,0.0,0.0,
+BRB,4242,Drugs and druggists' sundries,,,0.0,0.0,
+BRB,4244,Grocery and related product wholesalers,,,0.0,0.0,
+BRB,4247,Petroleum and petroleum products,,,0.0,0.0,
+BRB,424X,Other nondurable goods merchant wholesalers,,,0.0,0.0,
+BRB,425,Wholesale electronic markets and agents and brokers,,,0.0,0.0,
+BRB,42ID,Customs duties,,,0.0,0.0,
+BRB,441,Motor vehicle and parts dealers,,,0.0,0.0,
+BRB,444,Building material and garden equipment and supplies dealers,,,0.0,0.0,
+BRB,445,Food and beverage stores,,,0.0,0.0,
+BRB,446,Health and personal care stores,,,0.0,0.0,
+BRB,447,Gasoline stations,,,0.0,0.0,
+BRB,448,Clothing and clothing accessories stores,,,0.0,0.0,
+BRB,452,General merchandise stores,,,0.0,0.0,
+BRB,454,Nonstore retailers,,,2.728594692515689e-12,6.0928044655572314e-05,
+BRB,481,Air transportation,,,2.287111393926052e-10,0.005106996122348923,
+BRB,482,Rail transportation,,,3.499590911254215e-13,7.81439734900847e-06,
+BRB,483,Water transportation,,,1.2393379514493598e-11,0.00027673746583313025,
+BRB,484,Truck transportation,,,3.1323537669896668e-12,6.994376655341209e-05,
+BRB,485,Transit and ground passenger transportation,,,2.1545699348073632e-11,0.00048110382081138547,
+BRB,486,Pipeline transportation,,,0.0,0.0,
+BRB,48A,Scenic and sightseeing transportation and support activities,,,4.952627240658635e-12,0.00011058948934736967,
+BRB,492,Couriers and messengers,,,2.284874417452579e-12,5.102001074794111e-05,
+BRB,493,Warehousing and storage,,,3.9218624482134485e-14,8.757306866907908e-07,
+BRB,4A0X,All other retail,,,0.0,0.0,
+BRB,5111,"Newspaper, periodical, book, and directory publishers",,,1.3014841213027702e-11,0.00029061436965613954,
+BRB,5112,Software publishers,,,7.881665940660653e-12,0.0001759933403484455,
+BRB,512,Motion picture and sound recording industries,,,5.6615663789549815e-12,0.00012641971711798035,
+BRB,515,Broadcasting (except internet),,,5.749965564647309e-12,0.00012839362315398916,
+BRB,5171,Wired telecommunications carriers,,,6.250242430523511e-11,0.0013956453516516532,
+BRB,5172,Wireless telecommunications carriers (except satellite),,,3.0625264593540775e-11,0.0006838456051615446,
+BRB,5174OT,"Other telecommunications, including satellite",,,3.4981749712675958e-12,7.811235631551092e-05,
+BRB,518,"Data processing, hosting, and related services",,,2.0015013743452902e-11,0.0004469244386086045,
+BRB,519,Other information services,,,5.300782649369196e-12,0.00011836361144295977,
+BRB,521CI,"Federal reserve banks, credit intermediation, and related activities",,,1.2201192004198528e-10,0.0027244602260720163,
+BRB,523,"Securities, commodity contracts, and investments",,,3.8246065686626865e-11,0.0008540139744632868,
+BRB,524113,Direct life insurance carriers,,,1.5630802338617586e-11,0.00034902736764164566,
+BRB,5241X,"Insurance carriers, except direct life",,,1.2454029694794467e-10,0.0027809175157731784,
+BRB,5242,"Agencies, brokerages, and other insurance related activities",,,0.0,0.0,
+BRB,525,"Funds, trusts, and other financial vehicles",,,5.574652134226902e-11,0.0012447896901108015,
+BRB,532RL,Rental and leasing services and lessors of intangible assets,,,2.8376108825066028e-11,0.0006336231725390493,
+BRB,5411,Legal services,,,2.0288870745356668e-11,0.00045303951743911046,
+BRB,5412,"Accounting, tax preparation, bookkeeping, and payroll services",,,8.138798576972993e-12,0.00018173497313495477,
+BRB,5413,"Architectural, engineering, and related services",,,0.0,0.0,
+BRB,5415,Computer systems design and related services,,,0.0,0.0,
+BRB,5416,"Management, scientific, and technical consulting services",,,0.0,0.0,
+BRB,5417,Scientific research and development services,,,3.488843223179414e-12,7.790398342458989e-05,
+BRB,5418,"Advertising, public relations, and related services",,,2.096318911973971e-13,4.680966822643502e-06,
+BRB,541X,"Specialized design services and other professional, scientific, and technical services",,,1.4472601184980442e-10,0.0032316536189836006,
+BRB,55,Management of companies and enterprises,,,0.0,0.0,
+BRB,5613,Employment services,,,4.77309883141681e-13,1.0658071700560977e-05,
+BRB,5617,Services to buildings and dwellings,,,1.2064777559694176e-11,0.0002693999617945701,
+BRB,561X,Other administrative and support services,,,3.500112031491993e-11,0.0007815560982332442,
+BRB,562,Waste management and remediation services,,,3.4033859684705184e-11,0.0007599576911730275,
+BRB,61,Educational services,,,2.124080700413296e-10,0.0047429573956805785,
+BRB,6211,Offices of physicians,,,6.592615236988582e-09,0.1472095348781586,
+BRB,6212,Offices of dentists,,,4.999749028624833e-10,0.011164169340293349,
+BRB,6213,Offices of other health practitioners,,,2.252724589875349e-11,0.0005030212247539286,
+BRB,6214,Outpatient care centers,,,6.118310909223587e-10,0.013661857560463116,
+BRB,6215OH,Other ambulatory health care services,,,2.468337500970386e-10,0.005511664223955926,
+BRB,622,Hospitals,,,1.2295833827920416e-08,0.27455932337621236,
+BRB,623,Nursing and residential care facilities,,,4.752479148569306e-10,0.010612029063273642,
+BRB,624,Social assistance,,,4.738098386315153e-10,0.010579917598452372,
+BRB,711AS,"Performing arts, spectator sports, museums, and related activities",,,8.366666561189007e-11,0.0018682314205794286,
+BRB,713,"Amusements, gambling, and recreation industries",,,1.3775599666197324e-09,0.03076016947190964,
+BRB,721,Accommodation,,,8.166604815664477e-10,0.018235587141543053,
+BRB,722,Food services and drinking places,,,1.1952124520589576e-08,0.2668844803212764,
+BRB,811,Repair and maintenance,,,7.102602209393386e-11,0.0015859726831972446,
+BRB,812,Personal and laundry services,,,7.063658057656358e-11,0.0015772766646107708,
+BRB,813,"Religious, grantmaking, civic, professional, and similar organizations",,,2.1571510156806907e-10,0.0048168016221944105,
+BRB,814,Private households,,,0.0,0.0,
+BRB,GFE,Federal government enterprises,,,2.6390065982330927e-12,5.892759093335784e-05,
+BRB,GFGD,Federal general government (defense),,,0.0,0.0,
+BRB,GFGN,Federal general government (nondefense),,,0.0,0.0,
+BRB,GSLE,State and local government enterprises,,,8.299920197407403e-11,0.0018533273183166873,
+BRB,GSLGE,State and local government (educational services),,,0.0,0.0,
+BRB,GSLGH,State and local government (hospitals and health services),,,0.0,0.0,
+BRB,GSLGO,State and local government (other services),,,0.0,0.0,
+BRB,HSO,Owner-occupied housing,,,8.928195461672969e-11,0.0019936177889467214,
+BRB,HST,Tenant-occupied housing,,,2.6476123436345347e-11,0.0005911975257669452,
+BRB,ORE,Other real estate,,,4.5523845455990266e-12,0.00010165228630122022,
+BRB,Other,,10879677.0,0.22402466535373608,0.0,0.0,0.22402466535373608
+BRB,Used,,,,7.017002978995415e-11,0.0015668588377203932,

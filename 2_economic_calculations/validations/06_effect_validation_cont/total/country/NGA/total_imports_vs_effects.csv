@@ -1,0 +1,141 @@
+iso3,usummary_code,usummary_desc,impVal,impVal_share,total,total_share,impVal_share_no_oil
+NGA,111,Crop production,42031158.0,0.007374953555105702,2.513626658297567e-07,0.017598742304657286,0.04362421948193006
+NGA,112,Animal production and aquaculture,1599129.0,0.0002805895118003322,1.5911598420758625e-08,0.0011140243096076092,0.001659739055391225
+NGA,113FF,"Forestry, fishing, and related activities",16037410.0,0.002813987515980115,3.2778497711597964e-08,0.0022949324334064314,0.016645258590346233
+NGA,211,Oil and gas extraction,4735693781.0,0.8309435987007048,0.0,0.0,0.0
+NGA,212,"Mining, except oil and gas",15400.0,2.7021450312796e-06,1.3328916606841304e-10,9.332021037799566e-06,1.5983689529127957e-05
+NGA,213,Support activities for mining,,,0.0,0.0,
+NGA,2211,"Electric power generation, transmission, and distribution",,,5.06110518617651e-07,0.03543449288869724,
+NGA,2212NW,"Natural gas distribution and water, sewage and other systems",,,2.0496228759266066e-07,0.014350096382090801,
+NGA,23EH,"Education, hospital, and health structures",,,0.0,0.0,
+NGA,23MR,Maintenance and repair construction,,,0.0,0.0,
+NGA,23OC,Office and commercial structures,,,0.0,0.0,
+NGA,23OR,Other residential construction,,,0.0,0.0,
+NGA,23OT,Other nonresidential structures,,,0.0,0.0,
+NGA,23PC,Power and communication structures,,,0.0,0.0,
+NGA,23SF,Single-family residential structures,,,0.0,0.0,
+NGA,23TH,Transportation structures and highways and streets,,,0.0,0.0,
+NGA,311,Food manufacturing,63177796.0,0.011085426464194558,6.698068691809487e-07,0.046895422777654835,0.06557235561029755
+NGA,3121,Beverage manufacturing,1203771.0,0.00021121843028886205,8.270675839502907e-08,0.005790577224517003,0.0012493962291018111
+NGA,3122,Tobacco manufacturing,482191.0,8.460714381673647e-05,2.690320907322914e-08,0.001883583793500762,0.0005004669634895934
+NGA,313TT,Textile mills and textile product mills,59171.0,1.0382378158821118e-05,1.2490707088419321e-08,0.0008745162473767218,6.141369435896302e-05
+NGA,315AL,Apparel and leather and allied products,1498178.0,0.00026287624926444214,1.5733426543110855e-08,0.001101549899574165,0.0015549618189201213
+NGA,321,Wood products,66289.0,1.1631330647954118e-05,1.2312749799856342e-09,8.620568614439814e-05,6.880148020755606e-05
+NGA,322,Paper products,6258.0,1.0980534808927102e-06,2.095003797178196e-08,0.0014667823414471805,6.495190199563816e-06
+NGA,323,Printing and related support activities,247199.0,4.337451620696661e-05,2.443784285028954e-09,0.0001710975245207016,0.0002565683160981105
+NGA,324,Petroleum and coal products,540243794.0,0.09479331711926882,7.771496265530767e-06,0.5441084882164373,0.5607200696970235
+NGA,3251,Basic chemical manufacturing,76974.0,1.3506163093358177e-05,4.0476008193100394e-09,0.0002833860929029201,7.989146219578543e-05
+NGA,3252,"Resin, rubber, and artificial fibers manufacturing",4318927.0,0.0007578160476304747,0.0,0.0,0.0044826226147381834
+NGA,3254,Pharmaceutical and medicine manufacturing,64297.0,1.1281806433518471e-05,1.1648623603872174e-08,0.0008155591616272011,6.673397958794418e-05
+NGA,325X,Other chemical manufacturing,140723135.0,0.024691838962749246,2.171981594466886e-07,0.015206770761004693,0.1460568116497117
+NGA,326,Plastics and rubber products,16673835.0,0.002925657168677006,5.86661223551987e-08,0.0041074117587609265,0.0173058053181758
+NGA,327,Nonmetallic mineral products,34530.0,6.058770644810688e-06,5.942054021499236e-09,0.0004160231080439874,3.583875321044081e-05
+NGA,3311IS,Iron and steel mills and manufacturing from purchased steel,,,1.0413521092789767e-09,7.290854972084128e-05,
+NGA,3313NF,Nonferrous metal production and processing and foundries,78174329.0,0.013716777576686153,2.54372594644258e-10,1.7809477504281753e-05,0.08113728596648728
+NGA,332,Fabricated metal products,181720.0,3.1885311369099284e-05,1.0521521238010742e-08,0.0007366469491779618,0.0001886075364437099
+NGA,33311,Agricultural implement manufacturing,,,4.093685703260076e-10,2.8661265001353742e-05,
+NGA,33312,Construction machinery manufacturing,3144.0,5.516586998924066e-07,0.0,0.0,3.2631636285440456e-06
+NGA,33313,Mining and oil and gas field machinery manufacturing,,,0.0,0.0,
+NGA,3332OM,Other machinery,546064.0,9.581455352991322e-05,2.641125993772514e-09,0.00018491407864847656,0.0005667608726645279
+NGA,3341,Computer and peripheral equipment manufacturing,12000.0,2.1055675568412467e-06,3.376954291157947e-10,2.364318827878213e-05,1.2454823009710097e-05
+NGA,3342,Communications equipment manufacturing,40610.0,7.12559154027692e-06,2.644835799449678e-10,1.8517381457185743e-05,4.214919686869392e-05
+NGA,3344,Semiconductor and other electronic component manufacturing,153855.0,2.6996008038150837e-05,3.0208692456932786e-11,2.11501175862875e-06,0.0001596863995132456
+NGA,3345,"Navigational, measuring, electromedical, and control instruments manufacturing",375521.0,6.589040287604849e-05,2.195373782705096e-10,1.5370547307289855e-05,0.0003897539659524455
+NGA,334X,Other computer and electronic product manufacturing,13200.0,2.3161243125253716e-06,4.085626083468346e-10,2.8604836903203225e-05,1.3700305310681108e-05
+NGA,335,"Electrical equipment, appliances, and components",123494.0,2.166874665537941e-05,1.2121689006053436e-08,0.0008486800552123913,0.00012817465939676155
+NGA,336111,Automobile manufacturing,,,8.49561039305525e-10,5.948061440811155e-05,
+NGA,336112,Light truck and utility vehicle manufacturing,,,5.3224730552642446e-08,0.003726441689893501,
+NGA,33612,Heavy duty truck manufacturing,,,0.0,0.0,
+NGA,3362BP,"Motor vehicle body, trailer, and parts manufacturing",186704.0,3.275982376104068e-05,1.7985725000812124e-08,0.0012592408598423358,0.00019378043960040952
+NGA,3364,Aerospace product and parts manufacturing,214863.0,3.770071349713173e-05,2.4736921323455707e-10,1.7319147310321962e-05,0.00022300671969461173
+NGA,3365AO,All other transportation equipment manufacturing,,,7.228613750642906e-09,0.0005060994646819458,
+NGA,337,Furniture and related products,58424.0,1.025130657840775e-05,1.5327189024055623e-08,0.0010731078499613622,6.063838162660856e-05
+NGA,3391,Medical equipment and supplies manufacturing,29157.0,5.116002771235019e-06,6.283190131914208e-09,0.0004399071899468755,3.026210620784311e-05
+NGA,3399,Other miscellaneous manufacturing,13885744.0,0.002436447672416917,5.571818426829214e-08,0.0039010167376455386,0.01441204032317866
+NGA,4231,Motor vehicle and motor vehicle parts and supplies,,,0.0,0.0,
+NGA,4234,Professional and commercial equipment and supplies,,,0.0,0.0,
+NGA,4236,Household appliances and electrical and electronic goods,,,0.0,0.0,
+NGA,4238,"Machinery, equipment, and supplies",,,0.0,0.0,
+NGA,423X,Other durable goods merchant wholesalers,,,0.0,0.0,
+NGA,4242,Drugs and druggists' sundries,,,0.0,0.0,
+NGA,4244,Grocery and related product wholesalers,,,0.0,0.0,
+NGA,4247,Petroleum and petroleum products,,,0.0,0.0,
+NGA,424X,Other nondurable goods merchant wholesalers,,,0.0,0.0,
+NGA,425,Wholesale electronic markets and agents and brokers,,,0.0,0.0,
+NGA,42ID,Customs duties,,,0.0,0.0,
+NGA,441,Motor vehicle and parts dealers,,,0.0,0.0,
+NGA,444,Building material and garden equipment and supplies dealers,,,0.0,0.0,
+NGA,445,Food and beverage stores,,,0.0,0.0,
+NGA,446,Health and personal care stores,,,0.0,0.0,
+NGA,447,Gasoline stations,,,0.0,0.0,
+NGA,448,Clothing and clothing accessories stores,,,0.0,0.0,
+NGA,452,General merchandise stores,,,0.0,0.0,
+NGA,454,Nonstore retailers,,,3.1862520771704517e-09,0.00022308018193035754,
+NGA,481,Air transportation,,,7.593223624210276e-07,0.05316270233807054,
+NGA,482,Rail transportation,,,3.352334736860386e-09,0.00023470818531545385,
+NGA,483,Water transportation,,,1.1062706434773248e-07,0.007745371377844478,
+NGA,484,Truck transportation,,,2.25769724781913e-08,0.0015806894765037635,
+NGA,485,Transit and ground passenger transportation,,,7.4875155141949e-08,0.005242260444742639,
+NGA,486,Pipeline transportation,,,0.0,0.0,
+NGA,48A,Scenic and sightseeing transportation and support activities,,,1.645807027808311e-08,0.0011522846350304572,
+NGA,492,Couriers and messengers,,,1.97850445516504e-08,0.0013852172493527062,
+NGA,493,Warehousing and storage,,,1.5607703542950355e-10,1.0927476111583842e-05,
+NGA,4A0X,All other retail,,,0.0,0.0,
+NGA,5111,"Newspaper, periodical, book, and directory publishers",,,1.1241154441230205e-08,0.0007870308805208602,
+NGA,5112,Software publishers,,,6.750194347999127e-09,0.00047260371958836707,
+NGA,512,Motion picture and sound recording industries,,,3.098391068589193e-09,0.00021692873838346225,
+NGA,515,Broadcasting (except internet),,,1.4312948209157343e-09,0.00010020974527834874,
+NGA,5171,Wired telecommunications carriers,,,2.5520964282799442e-08,0.0017868082051753155,
+NGA,5172,Wireless telecommunications carriers (except satellite),,,2.7536623730079223e-08,0.0019279312755784998,
+NGA,5174OT,"Other telecommunications, including satellite",,,2.136306092635372e-09,0.00014956994621318393,
+NGA,518,"Data processing, hosting, and related services",,,1.3119661901520575e-08,0.0009185514808530391,
+NGA,519,Other information services,,,9.180815140868432e-09,0.0006427796239250118,
+NGA,521CI,"Federal reserve banks, credit intermediation, and related activities",,,7.561391180504171e-08,0.005293983273575233,
+NGA,523,"Securities, commodity contracts, and investments",,,8.169885087846739e-08,0.005720010242772348,
+NGA,524113,Direct life insurance carriers,,,8.604904129484038e-09,0.0006024581647046797,
+NGA,5241X,"Insurance carriers, except direct life",,,2.1032962600703727e-08,0.0014725881725171453,
+NGA,5242,"Agencies, brokerages, and other insurance related activities",,,0.0,0.0,
+NGA,525,"Funds, trusts, and other financial vehicles",,,7.795163887243171e-08,0.005457655376995249,
+NGA,532RL,Rental and leasing services and lessors of intangible assets,,,2.8608814131285142e-08,0.002002998917426036,
+NGA,5411,Legal services,,,8.543807726766658e-09,0.0005981806008762751,
+NGA,5412,"Accounting, tax preparation, bookkeeping, and payroll services",,,2.5954534764977086e-09,0.0001817163927102287,
+NGA,5413,"Architectural, engineering, and related services",,,0.0,0.0,
+NGA,5415,Computer systems design and related services,,,0.0,0.0,
+NGA,5416,"Management, scientific, and technical consulting services",,,0.0,0.0,
+NGA,5417,Scientific research and development services,,,1.2080942469258447e-09,8.458272536696677e-05,
+NGA,5418,"Advertising, public relations, and related services",,,1.9061926106511348e-10,1.3345893045473878e-05,
+NGA,541X,"Specialized design services and other professional, scientific, and technical services",,,1.2690151521395008e-08,0.0008884800202721559,
+NGA,55,Management of companies and enterprises,,,0.0,0.0,
+NGA,5613,Employment services,,,1.9030794039849874e-10,1.3324096442673773e-05,
+NGA,5617,Services to buildings and dwellings,,,2.759914218972322e-08,0.0019323084023762558,
+NGA,561X,Other administrative and support services,,,1.3684060226891848e-08,0.0009580668983578661,
+NGA,562,Waste management and remediation services,,,3.4211206326836226e-08,0.0023952411631615396,
+NGA,61,Educational services,,,2.924302030312702e-07,0.0204740181611994,
+NGA,6211,Offices of physicians,,,1.1852322292200675e-07,0.008298207891917254,
+NGA,6212,Offices of dentists,,,1.6559420456699576e-08,0.0011593805005605045,
+NGA,6213,Offices of other health practitioners,,,1.689222528587504e-08,0.0011826812815538574,
+NGA,6214,Outpatient care centers,,,4.118713696142642e-08,0.0028836494363951846,
+NGA,6215OH,Other ambulatory health care services,,,6.32950726189621e-08,0.004431500073802196,
+NGA,622,Hospitals,,,4.876077478605842e-07,0.03413905192334598,
+NGA,623,Nursing and residential care facilities,,,7.578429335980504e-08,0.0053059122570058015,
+NGA,624,Social assistance,,,1.1333216614564589e-07,0.007934764616861071,
+NGA,711AS,"Performing arts, spectator sports, museums, and related activities",,,2.1090314033266564e-08,0.0014766035384393059,
+NGA,713,"Amusements, gambling, and recreation industries",,,2.177955091648585e-07,0.015248593215907172,
+NGA,721,Accommodation,,,5.72941555632177e-08,0.004011355767538373,
+NGA,722,Food services and drinking places,,,4.132838761266182e-07,0.02893538867680658,
+NGA,811,Repair and maintenance,,,6.76773835764948e-08,0.004738320344767686,
+NGA,812,Personal and laundry services,,,8.414617797551012e-08,0.005891355811430625,
+NGA,813,"Religious, grantmaking, civic, professional, and similar organizations",,,8.006667337568667e-08,0.0056057360279756635,
+NGA,814,Private households,,,0.0,0.0,
+NGA,GFE,Federal government enterprises,,,5.5139081979746204e-09,0.0003860471846420285,
+NGA,GFGD,Federal general government (defense),,,0.0,0.0,
+NGA,GFGN,Federal general government (nondefense),,,0.0,0.0,
+NGA,GSLE,State and local government enterprises,,,2.338523280905452e-07,0.016372784899556368,
+NGA,GSLGE,State and local government (educational services),,,0.0,0.0,
+NGA,GSLGH,State and local government (hospitals and health services),,,0.0,0.0,
+NGA,GSLGO,State and local government (other services),,,0.0,0.0,
+NGA,HSO,Owner-occupied housing,,,1.293825967936481e-07,0.009058509035788719,
+NGA,HST,Tenant-occupied housing,,,3.7983836795978975e-08,0.0026593756606931207,
+NGA,ORE,Other real estate,,,3.5191087505215563e-09,0.0002463845927081259,
+NGA,Other,,40923907.0,0.007180670906532367,0.0,0.0,0.04247500154590301
+NGA,Used,,,,1.03356059242507e-07,0.007236303952416327,

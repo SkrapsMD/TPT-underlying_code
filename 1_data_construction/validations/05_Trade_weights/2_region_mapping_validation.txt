@@ -1,0 +1,38 @@
+VALIDATION: Country Converter vs BEA Region Mappings
+============================================================
+
+Region distribution comparison:
+Region     CountryConverter   BEA Mapping  Difference
+-------------------------------------------------------
+CAN        244                244          0         
+MEX        242                242          0         
+CHN        239                239          0         
+JPN        235                235          0         
+Europe     7816               8696         880       
+RoAsia     6660               4391         -2269     
+RoWorld    7002               8391         1389      
+
+Import value comparison by region:
+Region     CountryConverter ($) BEA Mapping ($)    Difference ($)  % Change  
+--------------------------------------------------------------------------------
+CAN        412,695,719,877      412,695,719,877    0               0.0       %
+MEX        505,850,598,583      505,850,598,583    0               0.0       %
+CHN        438,947,386,145      438,947,386,145    0               0.0       %
+JPN        148,208,566,623      148,208,566,623    0               0.0       %
+Europe     751,191,522,331      770,823,625,526    19,632,103,195  2.6       %
+RoAsia     812,141,923,431      733,026,825,148    -79,115,098,283 -9.7      %
+RoWorld    198,363,640,466      257,846,635,554    59,482,995,088  30.0      %
+
+Countries that switched regions: 27
+Total import value affected: $79,147,677,512
+
+Europe mapping differences:
+  Countries in BEA Europe but not CC Europe: 10
+    ['ARM', 'AZE', 'GEO', 'KAZ', 'KGZ', 'TJK', 'TUR', 'TKM', 'UZB', 'GRL']
+  Countries in CC Europe but not BEA Europe: 0
+
+RoAsia mapping differences:
+  Countries in BEA RoAsia but not CC RoAsia: 1
+    ['HMD']
+  Countries in CC RoAsia but not BEA RoAsia: 25
+    ['BHR', 'ISR', 'IRN', 'IRQ', 'ISR', 'JOR', 'KWT', 'LBN', 'OMN', 'QAT', 'SAU', 'SYR', 'ARE', 'ISR', 'YEM', 'ARM', 'AZE', 'GEO', 'KAZ', 'KGZ', 'TJK', 'TUR', 'TKM', 'UZB', 'IOT']

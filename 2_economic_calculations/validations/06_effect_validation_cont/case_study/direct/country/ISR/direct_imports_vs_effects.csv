@@ -1,0 +1,141 @@
+iso3,usummary_code,usummary_desc,impVal,impVal_share,direct,direct_share,impVal_share_no_oil
+ISR,111,Crop production,98046325.0,0.004411793501996877,5.448107304376075e-07,0.005556634562121038,0.004411793501996877
+ISR,112,Animal production and aquaculture,6945869.0,0.0003125434810526712,4.995712452705252e-09,5.0952279252692696e-05,0.0003125434810526712
+ISR,113FF,"Forestry, fishing, and related activities",5100173.0,0.0002294926413658025,3.770636978915866e-08,0.0003845748732119551,0.0002294926413658025
+ISR,211,Oil and gas extraction,0.0,0.0,0.0,0.0,0.0
+ISR,212,"Mining, except oil and gas",13616591.0,0.0006127061640826329,2.9161661327935435e-10,2.9742566761399654e-06,0.0006127061640826329
+ISR,213,Support activities for mining,0.0,0.0,0.0,0.0,0.0
+ISR,2211,"Electric power generation, transmission, and distribution",0.0,0.0,0.0,0.0,0.0
+ISR,2212NW,"Natural gas distribution and water, sewage and other systems",0.0,0.0,0.0,0.0,0.0
+ISR,23EH,"Education, hospital, and health structures",0.0,0.0,0.0,0.0,0.0
+ISR,23MR,Maintenance and repair construction,0.0,0.0,0.0,0.0,0.0
+ISR,23OC,Office and commercial structures,0.0,0.0,0.0,0.0,0.0
+ISR,23OR,Other residential construction,0.0,0.0,0.0,0.0,0.0
+ISR,23OT,Other nonresidential structures,0.0,0.0,0.0,0.0,0.0
+ISR,23PC,Power and communication structures,0.0,0.0,0.0,0.0,0.0
+ISR,23SF,Single-family residential structures,0.0,0.0,0.0,0.0,0.0
+ISR,23TH,Transportation structures and highways and streets,0.0,0.0,0.0,0.0,0.0
+ISR,311,Food manufacturing,358073544.0,0.01611224627395461,1.9047483718845984e-06,0.019426912951689426,0.01611224627395461
+ISR,3121,Beverage manufacturing,53082289.0,0.00238854539098044,5.516103760341088e-07,0.0056259855194734105,0.00238854539098044
+ISR,3122,Tobacco manufacturing,0.0,0.0,0.0,0.0,0.0
+ISR,313TT,Textile mills and textile product mills,246032223.0,0.011070719506450104,5.168281177908576e-07,0.00527123424989429,0.011070719506450104
+ISR,315AL,Apparel and leather and allied products,77784800.0,0.0035000850383135385,1.7929961465171842e-06,0.01828712945775616,0.0035000850383135385
+ISR,321,Wood products,3683885.0,0.00016576388666381697,4.683693774885805e-10,4.776993780393631e-06,0.00016576388666381697
+ISR,322,Paper products,94314206.0,0.004243859228551349,2.87287599974679e-08,0.00029301041960129323,0.004243859228551349
+ISR,323,Printing and related support activities,27103233.0,0.0012195650090149458,-1.5693939496214163e-08,-0.00016006565537072685,0.0012195650090149458
+ISR,324,Petroleum and coal products,195308656.0,0.008788309601859563,1.2087418758982786e-07,0.0012328202271097853,0.008788309601859563
+ISR,3251,Basic chemical manufacturing,365182313.0,0.016432119771318195,1.0539431603673456e-08,0.00010749378938818365,0.016432119771318195
+ISR,3252,"Resin, rubber, and artificial fibers manufacturing",98000755.0,0.004409742987305112,0.0,0.0,0.004409742987305112
+ISR,3254,Pharmaceutical and medicine manufacturing,1931061689.0,0.08689204222070857,4.353012409943224e-05,0.44397251843780206,0.08689204222070857
+ISR,325X,Other chemical manufacturing,700597442.0,0.0315248046485295,1.2860231381140192e-06,0.013116409456898686,0.0315248046485295
+ISR,326,Plastics and rubber products,615857667.0,0.027711766386201177,1.1233518410349446e-06,0.011457292077017782,0.027711766386201177
+ISR,327,Nonmetallic mineral products,84126330.0,0.0037854350587933298,4.027507196605432e-07,0.004107735849819476,0.0037854350587933298
+ISR,3311IS,Iron and steel mills and manufacturing from purchased steel,457150.0,2.057039261224602e-05,2.8266792098973984e-12,2.882987157967447e-08,2.057039261224602e-05
+ISR,3313NF,Nonferrous metal production and processing and foundries,134314111.0,0.006043736184260728,0.0,0.0,0.006043736184260728
+ISR,332,Fabricated metal products,441649015.0,0.01987289431338014,1.3785961861577075e-06,0.014060580651668058,0.01987289431338014
+ISR,33311,Agricultural implement manufacturing,55832982.0,0.002512318408514634,0.0,0.0,0.002512318408514634
+ISR,33312,Construction machinery manufacturing,5712778.0,0.00025705804739495044,0.0,0.0,0.00025705804739495044
+ISR,33313,Mining and oil and gas field machinery manufacturing,48542447.0,0.0021842659808578016,0.0,0.0,0.0021842659808578016
+ISR,3332OM,Other machinery,1264083823.0,0.05688001866761217,3.48821842805081e-07,0.0035577043539443257,0.05688001866761217
+ISR,3341,Computer and peripheral equipment manufacturing,283646437.0,0.012763247450846999,1.815133318435844e-07,0.0018512910940606242,0.012763247450846999
+ISR,3342,Communications equipment manufacturing,1244002981.0,0.055976440402437766,1.3744249049634037e-07,0.0014018036913159132,0.055976440402437766
+ISR,3344,Semiconductor and other electronic component manufacturing,5002766672.0,0.22510964582850138,2.7493092168911804e-09,2.8040759410639014e-05,0.22510964582850138
+ISR,3345,"Navigational, measuring, electromedical, and control instruments manufacturing",1143947638.0,0.05147424705569612,4.290393793472111e-09,4.3758591940301236e-05,0.05147424705569612
+ISR,334X,Other computer and electronic product manufacturing,106085083.0,0.00477351374300056,9.201902133889833e-11,9.385205646253922e-07,0.00477351374300056
+ISR,335,"Electrical equipment, appliances, and components",394184612.0,0.01773713711155171,1.3036781811113037e-07,0.0013296476802554021,0.01773713711155171
+ISR,336111,Automobile manufacturing,537870.0,2.420255293524831e-05,1.9587983420550056e-10,1.9978179502715794e-06,2.420255293524831e-05
+ISR,336112,Light truck and utility vehicle manufacturing,0.0,0.0,0.0,0.0,0.0
+ISR,33612,Heavy duty truck manufacturing,3085688.0,0.00013884679785386897,0.0,0.0,0.00013884679785386897
+ISR,3362BP,"Motor vehicle body, trailer, and parts manufacturing",81543908.0,0.0036692337366222663,1.1147636840864951e-07,0.0011369699731532325,0.0036692337366222663
+ISR,3364,Aerospace product and parts manufacturing,630088952.0,0.02835213195511022,3.4493848185197026e-08,0.00035180971720668436,0.02835213195511022
+ISR,3365AO,All other transportation equipment manufacturing,31594197.0,0.0014216450542680638,8.245420610443336e-08,0.0008409670842278241,0.0014216450542680638
+ISR,337,Furniture and related products,49587288.0,0.002231280723474824,1.846457616700498e-07,0.0018832393778676919,0.002231280723474824
+ISR,3391,Medical equipment and supplies manufacturing,936901513.0,0.042157786200191005,1.0594911706817498e-06,0.010805964215395536,0.042157786200191005
+ISR,3399,Other miscellaneous manufacturing,4351586859.0,0.19580848775220489,4.254910119433373e-05,0.43396686789504524,0.19580848775220489
+ISR,4231,Motor vehicle and motor vehicle parts and supplies,0.0,0.0,0.0,0.0,0.0
+ISR,4234,Professional and commercial equipment and supplies,0.0,0.0,0.0,0.0,0.0
+ISR,4236,Household appliances and electrical and electronic goods,0.0,0.0,0.0,0.0,0.0
+ISR,4238,"Machinery, equipment, and supplies",0.0,0.0,0.0,0.0,0.0
+ISR,423X,Other durable goods merchant wholesalers,0.0,0.0,0.0,0.0,0.0
+ISR,4242,Drugs and druggists' sundries,0.0,0.0,0.0,0.0,0.0
+ISR,4244,Grocery and related product wholesalers,0.0,0.0,0.0,0.0,0.0
+ISR,4247,Petroleum and petroleum products,0.0,0.0,0.0,0.0,0.0
+ISR,424X,Other nondurable goods merchant wholesalers,0.0,0.0,0.0,0.0,0.0
+ISR,425,Wholesale electronic markets and agents and brokers,0.0,0.0,0.0,0.0,0.0
+ISR,42ID,Customs duties,0.0,0.0,0.0,0.0,0.0
+ISR,441,Motor vehicle and parts dealers,0.0,0.0,0.0,0.0,0.0
+ISR,444,Building material and garden equipment and supplies dealers,0.0,0.0,0.0,0.0,0.0
+ISR,445,Food and beverage stores,0.0,0.0,0.0,0.0,0.0
+ISR,446,Health and personal care stores,0.0,0.0,0.0,0.0,0.0
+ISR,447,Gasoline stations,0.0,0.0,0.0,0.0,0.0
+ISR,448,Clothing and clothing accessories stores,0.0,0.0,0.0,0.0,0.0
+ISR,452,General merchandise stores,0.0,0.0,0.0,0.0,0.0
+ISR,454,Nonstore retailers,0.0,0.0,0.0,0.0,0.0
+ISR,481,Air transportation,0.0,0.0,0.0,0.0,0.0
+ISR,482,Rail transportation,0.0,0.0,0.0,0.0,0.0
+ISR,483,Water transportation,0.0,0.0,0.0,0.0,0.0
+ISR,484,Truck transportation,0.0,0.0,0.0,0.0,0.0
+ISR,485,Transit and ground passenger transportation,0.0,0.0,0.0,0.0,0.0
+ISR,486,Pipeline transportation,0.0,0.0,0.0,0.0,0.0
+ISR,48A,Scenic and sightseeing transportation and support activities,0.0,0.0,0.0,0.0,0.0
+ISR,492,Couriers and messengers,0.0,0.0,0.0,0.0,0.0
+ISR,493,Warehousing and storage,0.0,0.0,0.0,0.0,0.0
+ISR,4A0X,All other retail,0.0,0.0,0.0,0.0,0.0
+ISR,5111,"Newspaper, periodical, book, and directory publishers",0.0,0.0,0.0,0.0,0.0
+ISR,5112,Software publishers,0.0,0.0,0.0,0.0,0.0
+ISR,512,Motion picture and sound recording industries,0.0,0.0,0.0,0.0,0.0
+ISR,515,Broadcasting (except internet),0.0,0.0,0.0,0.0,0.0
+ISR,5171,Wired telecommunications carriers,0.0,0.0,0.0,0.0,0.0
+ISR,5172,Wireless telecommunications carriers (except satellite),0.0,0.0,0.0,0.0,0.0
+ISR,5174OT,"Other telecommunications, including satellite",0.0,0.0,0.0,0.0,0.0
+ISR,518,"Data processing, hosting, and related services",0.0,0.0,0.0,0.0,0.0
+ISR,519,Other information services,0.0,0.0,0.0,0.0,0.0
+ISR,521CI,"Federal reserve banks, credit intermediation, and related activities",0.0,0.0,0.0,0.0,0.0
+ISR,523,"Securities, commodity contracts, and investments",0.0,0.0,0.0,0.0,0.0
+ISR,524113,Direct life insurance carriers,0.0,0.0,0.0,0.0,0.0
+ISR,5241X,"Insurance carriers, except direct life",0.0,0.0,0.0,0.0,0.0
+ISR,5242,"Agencies, brokerages, and other insurance related activities",0.0,0.0,0.0,0.0,0.0
+ISR,525,"Funds, trusts, and other financial vehicles",0.0,0.0,0.0,0.0,0.0
+ISR,532RL,Rental and leasing services and lessors of intangible assets,0.0,0.0,0.0,0.0,0.0
+ISR,5411,Legal services,0.0,0.0,0.0,0.0,0.0
+ISR,5412,"Accounting, tax preparation, bookkeeping, and payroll services",0.0,0.0,0.0,0.0,0.0
+ISR,5413,"Architectural, engineering, and related services",0.0,0.0,0.0,0.0,0.0
+ISR,5415,Computer systems design and related services,0.0,0.0,0.0,0.0,0.0
+ISR,5416,"Management, scientific, and technical consulting services",0.0,0.0,0.0,0.0,0.0
+ISR,5417,Scientific research and development services,0.0,0.0,0.0,0.0,0.0
+ISR,5418,"Advertising, public relations, and related services",0.0,0.0,0.0,0.0,0.0
+ISR,541X,"Specialized design services and other professional, scientific, and technical services",0.0,0.0,0.0,0.0,0.0
+ISR,55,Management of companies and enterprises,0.0,0.0,0.0,0.0,0.0
+ISR,5613,Employment services,0.0,0.0,0.0,0.0,0.0
+ISR,5617,Services to buildings and dwellings,0.0,0.0,0.0,0.0,0.0
+ISR,561X,Other administrative and support services,0.0,0.0,0.0,0.0,0.0
+ISR,562,Waste management and remediation services,0.0,0.0,0.0,0.0,0.0
+ISR,61,Educational services,0.0,0.0,0.0,0.0,0.0
+ISR,6211,Offices of physicians,0.0,0.0,0.0,0.0,0.0
+ISR,6212,Offices of dentists,0.0,0.0,0.0,0.0,0.0
+ISR,6213,Offices of other health practitioners,0.0,0.0,0.0,0.0,0.0
+ISR,6214,Outpatient care centers,0.0,0.0,0.0,0.0,0.0
+ISR,6215OH,Other ambulatory health care services,0.0,0.0,0.0,0.0,0.0
+ISR,622,Hospitals,0.0,0.0,0.0,0.0,0.0
+ISR,623,Nursing and residential care facilities,0.0,0.0,0.0,0.0,0.0
+ISR,624,Social assistance,0.0,0.0,0.0,0.0,0.0
+ISR,711AS,"Performing arts, spectator sports, museums, and related activities",0.0,0.0,0.0,0.0,0.0
+ISR,713,"Amusements, gambling, and recreation industries",0.0,0.0,0.0,0.0,0.0
+ISR,721,Accommodation,0.0,0.0,0.0,0.0,0.0
+ISR,722,Food services and drinking places,0.0,0.0,0.0,0.0,0.0
+ISR,811,Repair and maintenance,0.0,0.0,0.0,0.0,0.0
+ISR,812,Personal and laundry services,0.0,0.0,0.0,0.0,0.0
+ISR,813,"Religious, grantmaking, civic, professional, and similar organizations",0.0,0.0,0.0,0.0,0.0
+ISR,814,Private households,0.0,0.0,0.0,0.0,0.0
+ISR,GFE,Federal government enterprises,0.0,0.0,0.0,0.0,0.0
+ISR,GFGD,Federal general government (defense),0.0,0.0,0.0,0.0,0.0
+ISR,GFGN,Federal general government (nondefense),0.0,0.0,0.0,0.0,0.0
+ISR,GSLE,State and local government enterprises,0.0,0.0,0.0,0.0,0.0
+ISR,GSLGE,State and local government (educational services),0.0,0.0,0.0,0.0,0.0
+ISR,GSLGH,State and local government (hospitals and health services),0.0,0.0,0.0,0.0,0.0
+ISR,GSLGO,State and local government (other services),0.0,0.0,0.0,0.0,0.0
+ISR,HSO,Owner-occupied housing,0.0,0.0,0.0,0.0,0.0
+ISR,HST,Tenant-occupied housing,0.0,0.0,0.0,0.0,0.0
+ISR,ORE,Other real estate,0.0,0.0,0.0,0.0,0.0
+ISR,Other,Unknown,1039618616.0,0.0467797508435302,0.0,0.0,0.0467797508435302
+ISR,Used,Unknown,0.0,0.0,0.0,0.0,0.0

@@ -1,0 +1,141 @@
+iso3,usummary_code,usummary_desc,impVal,impVal_share,indirect,indirect_share,impVal_share_no_oil
+LAO,111,Crop production,184336.0,0.00022946766473200215,6.464739810198236e-09,0.010227141070771436,0.00022946766473200215
+LAO,112,Animal production and aquaculture,,,9.63300461860874e-10,0.0015239298109800245,
+LAO,113FF,"Forestry, fishing, and related activities",830376.0,0.0010336800276099134,7.677203907045625e-11,0.00012145244772662493,0.0010336800276099134
+LAO,211,Oil and gas extraction,,,0.0,0.0,0.0
+LAO,212,"Mining, except oil and gas",21267285.0,0.026474233053445546,5.501503888267525e-12,8.703313361189124e-06,0.026474233053445546
+LAO,213,Support activities for mining,,,0.0,0.0,
+LAO,2211,"Electric power generation, transmission, and distribution",,,5.172096931080803e-09,0.00818219549415174,
+LAO,2212NW,"Natural gas distribution and water, sewage and other systems",,,5.0847208136123266e-09,0.008043967521208928,
+LAO,23EH,"Education, hospital, and health structures",,,0.0,0.0,
+LAO,23MR,Maintenance and repair construction,,,0.0,0.0,
+LAO,23OC,Office and commercial structures,,,0.0,0.0,
+LAO,23OR,Other residential construction,,,0.0,0.0,
+LAO,23OT,Other nonresidential structures,,,0.0,0.0,
+LAO,23PC,Power and communication structures,,,0.0,0.0,
+LAO,23SF,Single-family residential structures,,,0.0,0.0,
+LAO,23TH,Transportation structures and highways and streets,,,0.0,0.0,
+LAO,311,Food manufacturing,140911.0,0.00017541076135454362,2.6534736526933715e-08,0.041977635868438966,0.00017541076135454362
+LAO,3121,Beverage manufacturing,161842.0,0.00020146637550753349,1.1601402423978604e-08,0.018353279898697204,0.00020146637550753349
+LAO,3122,Tobacco manufacturing,170000.0,0.0002116217288236718,2.46475227356961e-09,0.003899208621905553,0.0002116217288236718
+LAO,313TT,Textile mills and textile product mills,2088821.0,0.002600234771901123,1.2494040240311571e-09,0.0019765422249475384,0.002600234771901123
+LAO,315AL,Apparel and leather and allied products,71863110.0,0.0894576210402688,9.261615082119871e-10,0.0014651764304357948,0.0894576210402688
+LAO,321,Wood products,501171.0,0.000623874549742873,1.5128674194200068e-10,0.0002393338165810559,0.000623874549742873
+LAO,322,Paper products,163562.0,0.00020360748946974944,1.2535118615496755e-09,0.0019830407747780236,0.00020360748946974944
+LAO,323,Printing and related support activities,7500.0,9.336252742220815e-06,1.7415583095761348e-10,0.0002755124419224414,9.336252742220815e-06
+LAO,324,Petroleum and coal products,,,6.282375343684446e-09,0.009938642665562563,
+LAO,3251,Basic chemical manufacturing,40351.0,5.0230284586846945e-05,9.629267575163467e-11,0.00015233386151759472,5.0230284586846945e-05
+LAO,3252,"Resin, rubber, and artificial fibers manufacturing",,,0.0,0.0,
+LAO,3254,Pharmaceutical and medicine manufacturing,21864.0,2.721704399412212e-05,6.54944459880181e-09,0.010361143033395212,2.721704399412212e-05
+LAO,325X,Other chemical manufacturing,730131.0,0.0009088916734573901,4.317391757748587e-09,0.006830062130981059,0.0009088916734573901
+LAO,326,Plastics and rubber products,4842.0,6.027484770377758e-06,1.8610681374016014e-09,0.0029441875376791647,6.027484770377758e-06
+LAO,327,Nonmetallic mineral products,36375.0,4.528082579977095e-05,8.455980540417808e-10,0.0013377260093612206,4.528082579977095e-05
+LAO,3311IS,Iron and steel mills and manufacturing from purchased steel,15837.0,1.9714431290473473e-05,1.122088072425708e-10,0.00017751299120228345,1.9714431290473473e-05
+LAO,3313NF,Nonferrous metal production and processing and foundries,18065797.0,0.022488912904220608,4.0927476113924566e-11,6.474677777865583e-05,0.022488912904220608
+LAO,332,Fabricated metal products,59724.0,7.434644783685279e-05,2.264241963529737e-09,0.0035820037092365283,7.434644783685279e-05
+LAO,33311,Agricultural implement manufacturing,,,1.145803884055072e-10,0.00018126480424135935,
+LAO,33312,Construction machinery manufacturing,,,0.0,0.0,
+LAO,33313,Mining and oil and gas field machinery manufacturing,,,0.0,0.0,
+LAO,3332OM,Other machinery,195651.0,0.00024355295803576594,1.5033467529084954e-09,0.002378276585242785,0.00024355295803576594
+LAO,3341,Computer and peripheral equipment manufacturing,1757054.0,0.00218724003009734,2.7408826622420875e-10,0.00043360435946643067,0.00218724003009734
+LAO,3342,Communications equipment manufacturing,91440233.0,0.11382788347940803,6.259313063508131e-10,0.0009902158414115234,0.11382788347940803
+LAO,3344,Semiconductor and other electronic component manufacturing,109529400.0,0.1363458881471734,3.4090349603154185e-11,5.3930525400787e-05,0.1363458881471734
+LAO,3345,"Navigational, measuring, electromedical, and control instruments manufacturing",,,2.6425038683058084e-10,0.0004180409519125568,
+LAO,334X,Other computer and electronic product manufacturing,3498024.0,0.004354458154980563,1.7633030176082254e-10,0.0002789524287295842,0.004354458154980563
+LAO,335,"Electrical equipment, appliances, and components",248294421.0,0.3090852625252506,6.352581808681938e-09,0.010049708453620552,0.3090852625252506
+LAO,336111,Automobile manufacturing,,,2.512431323123224e-10,0.00039746363081267187,
+LAO,336112,Light truck and utility vehicle manufacturing,,,1.868793238437823e-08,0.02956408555137403,
+LAO,33612,Heavy duty truck manufacturing,,,0.0,0.0,
+LAO,3362BP,"Motor vehicle body, trailer, and parts manufacturing",,,7.018181149448746e-09,0.011102678651105712,
+LAO,3364,Aerospace product and parts manufacturing,,,3.1109029223819477e-10,0.0004921411221297041,
+LAO,3365AO,All other transportation equipment manufacturing,74200.0,9.236666046303793e-05,2.363426017398476e-09,0.003738911696358671,9.236666046303793e-05
+LAO,337,Furniture and related products,72496944.0,0.09024663896301718,6.704270251857473e-09,0.01060607536503781,0.09024663896301718
+LAO,3391,Medical equipment and supplies manufacturing,141054406.0,0.1755892779759771,1.653379177395037e-09,0.002615626086609132,0.1755892779759771
+LAO,3399,Other miscellaneous manufacturing,13762545.0,0.017132079799491648,3.042151868756274e-09,0.004812647876624647,0.017132079799491648
+LAO,4231,Motor vehicle and motor vehicle parts and supplies,,,0.0,0.0,
+LAO,4234,Professional and commercial equipment and supplies,,,0.0,0.0,
+LAO,4236,Household appliances and electrical and electronic goods,,,0.0,0.0,
+LAO,4238,"Machinery, equipment, and supplies",,,0.0,0.0,
+LAO,423X,Other durable goods merchant wholesalers,,,0.0,0.0,
+LAO,4242,Drugs and druggists' sundries,,,0.0,0.0,
+LAO,4244,Grocery and related product wholesalers,,,0.0,0.0,
+LAO,4247,Petroleum and petroleum products,,,0.0,0.0,
+LAO,424X,Other nondurable goods merchant wholesalers,,,0.0,0.0,
+LAO,425,Wholesale electronic markets and agents and brokers,,,0.0,0.0,
+LAO,42ID,Customs duties,,,0.0,0.0,
+LAO,441,Motor vehicle and parts dealers,,,0.0,0.0,
+LAO,444,Building material and garden equipment and supplies dealers,,,0.0,0.0,
+LAO,445,Food and beverage stores,,,0.0,0.0,
+LAO,446,Health and personal care stores,,,0.0,0.0,
+LAO,447,Gasoline stations,,,0.0,0.0,
+LAO,448,Clothing and clothing accessories stores,,,0.0,0.0,
+LAO,452,General merchandise stores,,,0.0,0.0,
+LAO,454,Nonstore retailers,,,2.5653113735570997e-10,0.0004058291915543991,
+LAO,481,Air transportation,,,2.0396182286293892e-09,0.003226651646800008,
+LAO,482,Rail transportation,,,3.4930185735650376e-11,5.5259136119167364e-05,
+LAO,483,Water transportation,,,5.069047788294019e-10,0.0008019172982582137,
+LAO,484,Truck transportation,,,2.162071858292863e-10,0.0003420371824558863,
+LAO,485,Transit and ground passenger transportation,,,1.7360081128747574e-09,0.0027463440744151806,
+LAO,486,Pipeline transportation,,,0.0,0.0,
+LAO,48A,Scenic and sightseeing transportation and support activities,,,3.640918714057727e-10,0.0005759889865503849,
+LAO,492,Couriers and messengers,,,1.1071457906398148e-10,0.0001751491400925686,
+LAO,493,Warehousing and storage,,,3.384832695794195e-12,5.354764847030294e-06,
+LAO,4A0X,All other retail,,,0.0,0.0,
+LAO,5111,"Newspaper, periodical, book, and directory publishers",,,2.053379572659638e-09,0.0032484219284900392,
+LAO,5112,Software publishers,,,1.2077202356035703e-09,0.001910598970133073,
+LAO,512,Motion picture and sound recording industries,,,2.1575127168414963e-10,0.00034131593173035554,
+LAO,515,Broadcasting (except internet),,,4.903632151634764e-10,0.0007757487423519585,
+LAO,5171,Wired telecommunications carriers,,,4.206726827877993e-08,0.06654991535318697,
+LAO,5172,Wireless telecommunications carriers (except satellite),,,2.3531890340196797e-08,0.03722716911072969,
+LAO,5174OT,"Other telecommunications, including satellite",,,3.6035870105077918e-09,0.005700831556921172,
+LAO,518,"Data processing, hosting, and related services",,,3.4148329459716283e-09,0.005402224884051279,
+LAO,519,Other information services,,,1.4234056689929691e-09,0.002251810746468464,
+LAO,521CI,"Federal reserve banks, credit intermediation, and related activities",,,5.24482078590592e-09,0.008297243762812682,
+LAO,523,"Securities, commodity contracts, and investments",,,5.109298677205608e-09,0.008082849407497705,
+LAO,524113,Direct life insurance carriers,,,9.194354278048197e-10,0.0014545358516658746,
+LAO,5241X,"Insurance carriers, except direct life",,,2.4305969561419212e-09,0.0038451753181832737,
+LAO,5242,"Agencies, brokerages, and other insurance related activities",,,0.0,0.0,
+LAO,525,"Funds, trusts, and other financial vehicles",,,5.513688269935884e-09,0.00872258890728084,
+LAO,532RL,Rental and leasing services and lessors of intangible assets,,,1.771724364778954e-09,0.0028028467578127708,
+LAO,5411,Legal services,,,1.979968465442941e-09,0.0031322864347641645,
+LAO,5412,"Accounting, tax preparation, bookkeeping, and payroll services",,,4.590163878103733e-10,0.0007261584363421838,
+LAO,5413,"Architectural, engineering, and related services",,,0.0,0.0,
+LAO,5415,Computer systems design and related services,,,0.0,0.0,
+LAO,5416,"Management, scientific, and technical consulting services",,,0.0,0.0,
+LAO,5417,Scientific research and development services,,,1.8277959965608435e-10,0.0002891551408755892,
+LAO,5418,"Advertising, public relations, and related services",,,3.154319109807132e-11,4.990095110608712e-05,
+LAO,541X,"Specialized design services and other professional, scientific, and technical services",,,4.621842740226222e-09,0.007311699944466125,
+LAO,55,Management of companies and enterprises,,,0.0,0.0,
+LAO,5613,Employment services,,,3.4674883568886373e-11,5.4855251144392327e-05,
+LAO,5617,Services to buildings and dwellings,,,1.1921787350777496e-09,0.001886012502155151,
+LAO,561X,Other administrative and support services,,,1.410746415347173e-09,0.002231783958587226,
+LAO,562,Waste management and remediation services,,,2.1846436876953074e-09,0.003456080188747012,
+LAO,61,Educational services,,,7.085108855788246e-09,0.011208557482175982,
+LAO,6211,Offices of physicians,,,3.594723343890928e-08,0.0568680934232996,
+LAO,6212,Offices of dentists,,,7.0625817616806554e-09,0.011172919888689323,
+LAO,6213,Offices of other health practitioners,,,2.535386681538678e-09,0.0040109514106269955,
+LAO,6214,Outpatient care centers,,,8.917834943924266e-09,0.014107908236847022,
+LAO,6215OH,Other ambulatory health care services,,,1.0142365234223693e-08,0.016045100512484936,
+LAO,622,Hospitals,,,1.6317164269316668e-07,0.25813558744313253,
+LAO,623,Nursing and residential care facilities,,,1.2376618960812997e-08,0.01957966318949775,
+LAO,624,Social assistance,,,9.097745653539892e-09,0.014392524827986392,
+LAO,711AS,"Performing arts, spectator sports, museums, and related activities",,,2.192543353115129e-09,0.0034685773649725674,
+LAO,713,"Amusements, gambling, and recreation industries",,,1.0921991862065136e-08,0.017278460514520307,
+LAO,721,Accommodation,,,4.9341699779530155e-09,0.007805797899566708,
+LAO,722,Food services and drinking places,,,2.563410030478185e-08,0.040552840135304684,
+LAO,811,Repair and maintenance,,,1.8118754556751705e-08,0.028663653034614597,
+LAO,812,Personal and laundry services,,,9.315440288299046e-09,0.014736915136861586,
+LAO,813,"Religious, grantmaking, civic, professional, and similar organizations",,,4.827648411767923e-09,0.007637282055706157,
+LAO,814,Private households,,,0.0,0.0,
+LAO,GFE,Federal government enterprises,,,1.2886876975705102e-10,0.00020386885267107297,
+LAO,GFGD,Federal general government (defense),,,0.0,0.0,
+LAO,GFGN,Federal general government (nondefense),,,0.0,0.0,
+LAO,GSLE,State and local government enterprises,,,8.251858817673986e-09,0.013054341969232818,
+LAO,GSLGE,State and local government (educational services),,,0.0,0.0,
+LAO,GSLGH,State and local government (hospitals and health services),,,0.0,0.0,
+LAO,GSLGO,State and local government (other services),,,0.0,0.0,
+LAO,HSO,Owner-occupied housing,,,3.07742688839631e-08,0.04868452535856836,
+LAO,HST,Tenant-occupied housing,,,2.024809300478531e-09,0.0032032240995587677,
+LAO,ORE,Other real estate,,,2.1298465769423159e-10,0.00033693918148301744,
+LAO,Other,,4863442.0,0.006054176494550918,0.0,0.0,0.006054176494550918
+LAO,Used,,,,8.209558985705216e-09,0.012987424140903195,

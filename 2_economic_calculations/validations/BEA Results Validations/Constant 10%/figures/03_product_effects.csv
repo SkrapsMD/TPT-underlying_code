@@ -1,0 +1,141 @@
+BEA_Code,BEA_Description,Direct,Indirect,Total
+315AL,Apparel and leather and allied products,0.08442127921073,0.0010013462637756116,0.08542262547450562
+3254,Pharmaceutical and medicine manufacturing,0.06997385286225,0.015105500077909999,0.08507935294016
+311,Food manufacturing,0.03515070242601,0.02819616041863,0.06334686284464
+336112,Light truck and utility vehicle manufacturing,0.03217450097644,0.0206889203237,0.05286342130014
+3399,Other miscellaneous manufacturing,0.03936845175255,0.0017622231400281148,0.041130674892578115
+324,Petroleum and coal products,0.0067030685991277305,0.03348366087405,0.040186729473177724
+622,Hospitals,0.0,0.03086273505835,0.03086273505835
+335,"Electrical equipment, appliances, and components",0.02567711569453,0.001653965303349343,0.027331080997879342
+3341,Computer and peripheral equipment manufacturing,0.02402109740068,0.0001372353929241776,0.02415833279360418
+722,Food services and drinking places,0.0,0.02415404428912,0.02415404428912
+3121,Beverage manufacturing,0.014400671657059999,0.007459486572014842,0.02186015822907484
+111,Crop production,0.017223313515750002,0.00297598111773982,0.02019929463348982
+337,Furniture and related products,0.01651793799901,0.0023695487629413177,0.01888748676195132
+326,Plastics and rubber products,0.01413267941209,0.002294079267826104,0.016426758679916106
+334X,Other computer and electronic product manufacturing,0.014919764774309998,0.00015300174622628413,0.015072766520536282
+325X,Other chemical manufacturing,0.009617092395603166,0.004352148407970806,0.01396924080357397
+336111,Automobile manufacturing,0.01346952120965,0.0003928138094458555,0.013862335019095855
+3362BP,"Motor vehicle body, trailer, and parts manufacturing",0.006061015588696901,0.004620129100115584,0.010681144688812485
+6211,Offices of physicians,0.0,0.010585861131560001,0.010585861131560001
+313TT,Textile mills and textile product mills,0.008849963855056523,0.0013494441415522673,0.01019940799660879
+332,Fabricated metal products,0.0068800779803331194,0.0013149996251374662,0.008195077605470585
+3342,Communications equipment manufacturing,0.00804024186062745,0.00012536077570539839,0.008165602636332848
+811,Repair and maintenance,0.0,0.007574352007962595,0.007574352007962595
+624,Social assistance,0.0,0.007408371625578487,0.007408371625578487
+3365AO,All other transportation equipment manufacturing,0.005297935646595877,0.0016518109295593185,0.006949746576155195
+3391,Medical equipment and supplies manufacturing,0.005745311350389657,0.0006353176902561798,0.006380629040645837
+61,Educational services,0.0,0.0061369509522684424,0.0061369509522684424
+481,Air transportation,0.0,0.006062448684061364,0.006062448684061364
+3345,"Navigational, measuring, electromedical, and control instruments manufacturing",0.00557464122647995,8.034590877216192e-05,0.005654987135252112
+713,"Amusements, gambling, and recreation industries",0.0,0.005461478481532418,0.005461478481532418
+6213,Offices of other health practitioners,0.0,0.005193275331933992,0.005193275331933992
+5171,Wired telecommunications carriers,0.0,0.005155429523036393,0.005155429523036393
+Used,,0.0,0.00501487190265696,0.00501487190265696
+3332OM,Other machinery,0.004321338625079975,0.0005782640581708928,0.004899602683250867
+HSO,Owner-occupied housing,0.0,0.004716450922401646,0.004716450922401646
+2211,"Electric power generation, transmission, and distribution",0.0,0.004669965383925532,0.004669965383925532
+6215OH,Other ambulatory health care services,0.0,0.0044477532740763055,0.0044477532740763055
+623,Nursing and residential care facilities,0.0,0.004305149479044496,0.004305149479044496
+327,Nonmetallic mineral products,0.003753548452184877,0.00037460446553620497,0.004128152917721082
+GSLE,State and local government enterprises,0.0,0.0037608789381387963,0.0037608789381387963
+812,Personal and laundry services,0.0,0.003723949239180891,0.003723949239180891
+5172,Wireless telecommunications carriers (except satellite),0.0,0.003670350227223236,0.003670350227223236
+6214,Outpatient care centers,0.0,0.003360409640164278,0.003360409640164278
+813,"Religious, grantmaking, civic, professional, and similar organizations",0.0,0.0033360413130942737,0.0033360413130942737
+2212NW,"Natural gas distribution and water, sewage and other systems",0.0,0.0033201430399771117,0.0033201430399771117
+322,Paper products,0.0016412040560323483,0.0016665084645756556,0.0033077125206080037
+3122,Tobacco manufacturing,0.0013956922381702385,0.0017359554856792216,0.0031316477238494604
+721,Accommodation,0.0,0.003090120262119503,0.003090120262119503
+113FF,"Forestry, fishing, and related activities",0.0023033341903237387,6.199301855418544e-05,0.002365327208877924
+525,"Funds, trusts, and other financial vehicles",0.0,0.0022140707263366985,0.0022140707263366985
+523,"Securities, commodity contracts, and investments",0.0,0.001950452141027104,0.001950452141027104
+521CI,"Federal reserve banks, credit intermediation, and related activities",0.0,0.0018469377285707236,0.0018469377285707236
+6212,Offices of dentists,0.0,0.001827531270856269,0.001827531270856269
+112,Animal production and aquaculture,0.0008634482706398604,0.0005467192898785694,0.0014101675605184298
+562,Waste management and remediation services,0.0,0.0013843632535399835,0.0013843632535399835
+5241X,"Insurance carriers, except direct life",0.0,0.0012527544825991777,0.0012527544825991777
+541X,"Specialized design services and other professional, scientific, and technical services",0.0,0.001242144459495955,0.001242144459495955
+5617,Services to buildings and dwellings,0.0,0.001233580145073172,0.001233580145073172
+321,Wood products,0.001082516497404782,0.00012256773456385646,0.0012050842319686385
+485,Transit and ground passenger transportation,0.0,0.001204046522173286,0.001204046522173286
+532RL,Rental and leasing services and lessors of intangible assets,0.0,0.001125978929509486,0.001125978929509486
+518,"Data processing, hosting, and related services",0.0,0.0011155258338062552,0.0011155258338062552
+5111,"Newspaper, periodical, book, and directory publishers",0.0,0.0008416246915802126,0.0008416246915802126
+483,Water transportation,0.0,0.0008276714552396002,0.0008276714552396002
+HST,Tenant-occupied housing,0.0,0.0007959174683140321,0.0007959174683140321
+561X,Other administrative and support services,0.0,0.0007954522996839269,0.0007954522996839269
+711AS,"Performing arts, spectator sports, museums, and related activities",0.0,0.0007218192297717083,0.0007218192297717083
+519,Other information services,0.0,0.0005875082592240216,0.0005875082592240216
+5411,Legal services,0.0,0.0005170256636517905,0.0005170256636517905
+3251,Basic chemical manufacturing,0.0003982847267730725,4.90037689661415e-05,0.000447288495739214
+5174OT,"Other telecommunications, including satellite",0.0,0.0004104636017973957,0.0004104636017973957
+524113,Direct life insurance carriers,0.0,0.0004042843916067463,0.0004042843916067463
+323,Printing and related support activities,0.00022001327573509922,0.00017067158965113047,0.0003906848653862297
+5112,Software publishers,0.0,0.0003811420751418523,0.0003811420751418523
+3311IS,Iron and steel mills and manufacturing from purchased steel,0.0002725795753732876,8.531396301742251e-05,0.0003578935383907101
+48A,Scenic and sightseeing transportation and support activities,0.0,0.00035660596796478576,0.00035660596796478576
+484,Truck transportation,0.0,0.0002769121358471939,0.0002769121358471939
+3364,Aerospace product and parts manufacturing,0.00016469308072488385,0.00010664895716120984,0.0002713420378860937
+515,Broadcasting (except internet),0.0,0.00022896836298638302,0.00022896836298638302
+5417,Scientific research and development services,0.0,0.00022549691044805063,0.00022549691044805063
+492,Couriers and messengers,0.0,0.0001948425869717242,0.0001948425869717242
+33311,Agricultural implement manufacturing,2.2004949730668636e-05,0.00013040490266022703,0.00015240985239089568
+5412,"Accounting, tax preparation, bookkeeping, and payroll services",0.0,0.00014888237395935348,0.00014888237395935348
+454,Nonstore retailers,0.0,0.00014220097722970207,0.00014220097722970207
+GFE,Federal government enterprises,0.0,0.00013266333428158967,0.00013266333428158967
+512,Motion picture and sound recording industries,0.0,0.00012543187897920568,0.00012543187897920568
+ORE,Other real estate,0.0,0.00011605684080718687,0.00011605684080718687
+3344,Semiconductor and other electronic component manufacturing,5.451672369740955e-05,6.5187039165039975e-06,6.103542761391354e-05
+212,"Mining, except oil and gas",3.38501673119379e-05,3.6645635812988764e-06,3.751473089323678e-05
+482,Rail transportation,0.0,3.3495587070639386e-05,3.3495587070639386e-05
+3313NF,Nonferrous metal production and processing and foundries,0.0,2.0668367203945344e-05,2.0668367203945344e-05
+5418,"Advertising, public relations, and related services",0.0,1.4744113168812073e-05,1.4744113168812073e-05
+5613,Employment services,0.0,1.2600612600534464e-05,1.2600612600534464e-05
+493,Warehousing and storage,0.0,3.3468243494014674e-06,3.3468243494014674e-06
+23OR,Other residential construction,0.0,0.0,0.0
+23OC,Office and commercial structures,0.0,0.0,0.0
+213,Support activities for mining,0.0,0.0,0.0
+211,Oil and gas extraction,0.0,0.0,0.0
+23MR,Maintenance and repair construction,0.0,0.0,0.0
+23EH,"Education, hospital, and health structures",0.0,0.0,0.0
+33312,Construction machinery manufacturing,0.0,0.0,0.0
+33313,Mining and oil and gas field machinery manufacturing,0.0,0.0,0.0
+23OT,Other nonresidential structures,0.0,0.0,0.0
+3252,"Resin, rubber, and artificial fibers manufacturing",0.0,0.0,0.0
+23TH,Transportation structures and highways and streets,0.0,0.0,0.0
+23SF,Single-family residential structures,0.0,0.0,0.0
+23PC,Power and communication structures,0.0,0.0,0.0
+33612,Heavy duty truck manufacturing,0.0,0.0,0.0
+4A0X,All other retail,0.0,0.0,0.0
+446,Health and personal care stores,0.0,0.0,0.0
+447,Gasoline stations,0.0,0.0,0.0
+448,Clothing and clothing accessories stores,0.0,0.0,0.0
+441,Motor vehicle and parts dealers,0.0,0.0,0.0
+445,Food and beverage stores,0.0,0.0,0.0
+452,General merchandise stores,0.0,0.0,0.0
+444,Building material and garden equipment and supplies dealers,0.0,0.0,0.0
+42ID,Customs duties,0.0,0.0,0.0
+425,Wholesale electronic markets and agents and brokers,0.0,0.0,0.0
+424X,Other nondurable goods merchant wholesalers,0.0,0.0,0.0
+4247,Petroleum and petroleum products,0.0,0.0,0.0
+4238,"Machinery, equipment, and supplies",0.0,0.0,0.0
+423X,Other durable goods merchant wholesalers,0.0,0.0,0.0
+4242,Drugs and druggists' sundries,0.0,0.0,0.0
+4244,Grocery and related product wholesalers,0.0,0.0,0.0
+4236,Household appliances and electrical and electronic goods,0.0,0.0,0.0
+4234,Professional and commercial equipment and supplies,0.0,0.0,0.0
+4231,Motor vehicle and motor vehicle parts and supplies,0.0,0.0,0.0
+5413,"Architectural, engineering, and related services",0.0,0.0,0.0
+486,Pipeline transportation,0.0,0.0,0.0
+5416,"Management, scientific, and technical consulting services",0.0,0.0,0.0
+5415,Computer systems design and related services,0.0,0.0,0.0
+5242,"Agencies, brokerages, and other insurance related activities",0.0,0.0,0.0
+55,Management of companies and enterprises,0.0,0.0,0.0
+814,Private households,0.0,0.0,0.0
+GFGD,Federal general government (defense),0.0,0.0,0.0
+GFGN,Federal general government (nondefense),0.0,0.0,0.0
+GSLGH,State and local government (hospitals and health services),0.0,0.0,0.0
+GSLGE,State and local government (educational services),0.0,0.0,0.0
+GSLGO,State and local government (other services),0.0,0.0,0.0
+Other,,0.0,0.0,0.0

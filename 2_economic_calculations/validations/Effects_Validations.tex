@@ -1,0 +1,181 @@
+\documentclass{article}
+\usepackage[landscape,margin=0.5in]{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\begin{document}
+
+\title{Effects Validations}
+\maketitle
+
+This document validates the calculated effects by demonstrating their reasonableness through comparison with import vectors. Effects should closely resemble import vectors, differing only where consumer price effects are not captured by imports alone. 
+
+I focus primarily on direct effects, which incorporate only imports and consumer expenditures and should therefore closely align with import vectors. Indirect effects, which include complex domestic production processes, are addressed tangentially. The analysis proceeds in two stages: first demonstrating overall similarity between direct effect and import vectors, then explaining discrepancies through the presence of large non-consumer imports (oil, gas, 'Other').
+
+Section 1 looks at how similar the direct effects vector for a country is to its import vector. Section 2 tries to cluster countries together by the kMeans similarity of their import vs their effect vectors. Section 3 provides a short case study of two 
+earlier identified 'probleatic' countries, the UK and Israel, to look at exactly what might be driving the differences between their import and effect vectors.
+
+\section{Cosine Similarity Analysis}
+I compute cosine similarities between import and effect vectors within countries, expecting direct effects to closely resemble import vectors. Figures \ref{fig:within_country_total_cosSim}, \ref{fig:within_country_direct_cosSim}, and \ref{fig:within_country_indirect_cosSim} confirm this expectation, showing direct effects achieve high cosine similarity with a median around 0.77.
+
+Each histogram represents a country grouping. Dispersion in within-country cosine similarities for direct effects stems from unique import structures featuring either high-impact or low-impact products. I provide country-level narratives for the bottom 4 bins explaining low cosine similarities. 
+
+Notably, indirect effects exhibit much lower cosine similarity, which transfers to total effects, because they incorporate domestic production processes absent from import vectors. 
+\begin{figure}[htbp]
+\centering
+\begin{subfigure}[b]{0.32\textwidth}
+\centering
+\includegraphics[width=\textwidth]{06_effect_validation_cont/direct_sim_histogram.png}
+\caption{Direct Effects}
+\label{fig:within_country_direct_cosSim}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.32\textwidth}
+\centering
+\includegraphics[width=\textwidth]{06_effect_validation_cont/indirect_sim_histogram.png}
+\caption{Indirect Effects}
+\label{fig:within_country_indirect_cosSim}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.32\textwidth}
+\centering
+\includegraphics[width=\textwidth]{06_effect_validation_cont/total_sim_histogram.png}
+\caption{Total Effects}
+\label{fig:within_country_total_cosSim}
+\end{subfigure}
+\caption{Within Country Cosine Similarity Distributions}
+\label{fig:within_country_cosine_similarities}
+\end{figure}
+
+\subsection{Country-Level Analysis}
+This section examines import structures of countries with the lowest direct effect-import cosine similarities to understand whether discrepancies arise from importing goods with high consumer spending shares (e.g., clothing) or goods with minimal direct effect impact.
+
+Table \ref{tab:bottom_cosine_similarity_bins_direct_sim} presents the bottom 4 bins of direct effect cosine similarities. These within-country similarities compare each commodity's import share of total country imports against its direct effect share of total country direct effects.
+\input{06_effect_validation_cont/tables/direct_sim_bottom_bins.tex}
+
+The following figures compare import structures with direct effects for bottom-bin countries using four panels: (a) all non-zero import commodities, (b) excluding oil, (c) excluding 'Other' category, and (d) excluding both oil and 'Other'. This progressive exclusion tests whether removing non-consumer goods improves alignment quality.
+
+Results confirm that non-consumer goods drive low cosine similarities. After excluding oil and 'Other', remaining mismatches primarily involve commodities like nonferrous metal production.
+
+Analysis reveals that low cosine similarity often stems from countries importing large quantities of single goods (oil, nonferrous metals, Unknown/Other). Since cosine similarity uses shares, dominant single goods reduce similarity scores. Even after removing Oil and Other categories, mismatches persist between import structure and direct effects.
+
+Table \ref{tab:eyeball_cos_dissimilarities} presents the top 6 commodities with largest import-direct effect share differences. The left panel shows commodities with higher import than direct effect shares; the right panel shows the reverse. Differences are calculated as import share minus direct effect share, with the 'Diff.' column showing average differences across the bottom 4 cosine similarity bins. These differences clearly reflect relative personal consumption expenditures between commodities.
+
+
+
+\begin{table}[htbp]
+    \centering
+    \caption{High (Low) Import Shares vs.\ Low (High) Direct-Effect Shares}
+    \label{tab:eyeball_cos_dissimilarities}
+    \footnotesize
+    %----- adjust horizontal padding between Rank and data ----------
+    \setlength{\tabcolsep}{4pt}
+    %----- table ----------------------------------------------------
+    \begin{tabular}{
+        r@{\hspace{6pt}}
+        >{\raggedright\arraybackslash}p{0.2\linewidth}
+        r@{\hspace{6pt}}
+        r@{\hspace{6pt}}
+        r@{\hspace{6pt}}
+        >{\raggedright\arraybackslash}p{0.2\linewidth}
+        r@{\hspace{6pt}}
+        r@{\hspace{6pt}}}
+        \toprule
+        \multicolumn{4}{c}{\textbf{High Import / Low Direct Effect}} &
+        \multicolumn{4}{c}{\textbf{Low Import / High Direct Effect}} \\
+        \cmidrule(lr){1-4}\cmidrule(lr){5-8}
+        % ---------- column headers ---------------------------------
+        \textbf{Rank} &
+            \textbf{Commodity Description} & \textbf{Diff.} & \textbf{PCE Share (pctile)} &
+        \textbf{Rank} &
+            \textbf{Commodity Description} & \textbf{Diff.} & \textbf{PCE Share (pctile)} \\
+        \midrule
+        % ---------- DATA ROWS (Top X) ----------------   (Bottom X) ----------
+         1 & Nonferrous metal production and processing and foundries & 0.312 & 0.000008 (32.8\%) &
+           1   & Beverage manufacturing & 0.154 & 0.007 (80.0\%) \\[2pt]
+
+         2 & Aerospace product and parts manufacturing& 0.108 & 0.00007 (39.3\%) &
+           2 & Food manufacturing & 0.144 & 0.0313 (96.4\%) \\[2pt]
+
+         3 & Basic chemical manufacturing & 0.084 & 0.000078 (38.6\%) &
+           3 & Other miscellaneous manufacturing & 0.102 & 0.005 (73.57\%) \\[2pt]
+
+        4 & Iron and steel mills and manufacturing from purchased steel &0.0669 & 0.000078 (37.8\%) & 4 & Crop production & 0.093 & 0.0054 (72.9\%) \\[2pt]
+
+        5 & Mining, except oil and gas & 0.0582& 0.0000098 (33.6\%) & 5 & Apparel and leather and allied products & 0.474 &0.009 (81.4\%) \\[2pt]
+
+        6 & Electrical equipment, appliances, and components manufacturing & 0.0370 & 0.00359 (66.4\%) & 6 & Fabricated metal products & 0.366 & 0.0016 (59.3\%) \\[2pt]
+
+        % ...add (or delete) rows to match your data...
+        \bottomrule
+    \end{tabular}\\
+
+    \scriptsize{\textit{Notes:} Goods ranked by the average difference in import share and direct effect share for the bottom 4 bins of cosine similarity between the direct effect vector and the import vector. }
+\end{table}
+
+\input{06_effect_validation_cont/direct/all_countries_direct_analysis.tex}
+
+
+
+\section{Cluster Concentration Analysis}
+While cosine similarity provides the preferred analytical approach, this supplementary cluster analysis offers additional perspective on import-effect alignment.
+
+I create two sets of country clusters: one based on import vectors (ordered import values by BEA commodities) and another based on effect vectors (ordered effects by BEA commodities). Effects are calculated under a 10\% homogeneous tariff scenario applied to all countries and goods. Figures \ref{fig:import_vs_direct_clusters_TEN} and \ref{fig:import_vs_total_clusters_TEN} display results, with cell numbers representing countries sharing specific import-effect cluster pairs.
+
+\textit{Method:} I calculate commodity shares of country imports and effects (direct, indirect, total), apply standard scalar normalization (mean 0, unit variance) to prevent large-magnitude variables from dominating clustering, then compute clusters using KMeans. High concentration between import and effect clusters (not necessarily on the main diagonal) indicates alignment between specific import and effect cluster pairs.
+
+\textit{Findings:} Results demonstrate substantial concentration between import and effect clusters (approximately 75\%), as shown in Table \ref{tab:cluster_concentration_analysis_TEN}.
+
+%Figures
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.45\textwidth]{05_cos_validation/import_vs_direct_clusters_TEN.png}
+\includegraphics[width=0.45\textwidth]{05_cos_validation/import_vs_indirect_clusters_TEN.png}
+\caption{Import vs Direct Effects (left) and Import vs Indirect Effects (right)}
+\label{fig:import_vs_direct_clusters_TEN}
+\end{figure}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.45\textwidth]{05_cos_validation/import_vs_total_clusters_TEN.png}
+\caption{Import vs Total Effects}
+\label{fig:import_vs_total_clusters_TEN}
+\end{figure}
+% Table
+\begin{center}
+    \begin{table}
+        \centering
+        \caption{Cluster Concentration Analysis - 10\% Tariff Scenario}
+        \label{tab:cluster_concentration_analysis_TEN}
+        \input{05_cos_validation/cluster_concentration_analysis_TEN.tex}
+    \end{table}
+\end{center}
+
+
+\section{Case Study: Israel and United Kingdom Analysis}
+
+Analysis of ranking comparisons revealed unusual patterns for the UK and Israel. The UK exports predominantly high consumer-value products (beverages, automobiles, foods, pharmaceuticals), while Israel, despite exporting some high consumer-value goods (pharmaceuticals, miscellaneous manufacturing), also exports substantial quantities of non-consumer goods (communications, semiconductor manufacturing). This imbalance between the countries reflects differences in PCE composition of goods dominating their respective import structures to the US. 
+
+
+\input{06_effect_validation_cont/case_study/direct/case_study_direct_analysis.tex}
+
+\section{Spearman Rank Correlation Analysis}
+In this section, I run a spearman rank correlation analysis to see how well the import vector correlates with the different effect vectors. It's less transparent than the initial cosine similarity and the subsequent 
+breakdown, but it provides a different perspectve and is a bit easier to see from a birds eye view. I do this for three commodity groups: all commodities, excluding oil/other, and excluding oil/other/nonferrous metals. Just like in 
+the cosine similarity analysis, we see that the direct effects are more similar to the import vector than the total or indirect effects, but there is considerable variation. Not sure this provides any more clarity. I also provide the 
+output by country for the three different groups. What we are looking for here is significance: the Spearman regression is just like a regular regression, only designed to work with ranked data instead of values. So when we have significance, i
+t means that the rankings of the import vectors are highly correlated with the rankings of the effects vectors: the direct effect vectors from the commodity group excluding oil, Other, and Nonferrous Metals has the highest share of countr
+ies with significant results. 
+
+\input{08_weighted_cos_and_spearman_rank/summary_comparison.tex}
+\subsection{Spearman - All Commodities}
+\input{08_weighted_cos_and_spearman_rank/01_spearman_rank_results.tex}
+
+\subsection{Spearman - Excluding Oil and Other}
+\input{08_weighted_cos_and_spearman_rank/01_spearman_rank_results_excluding_211_Other.tex}
+
+\subsection{Spearman - Excluding Oil, Other, and Nonferrous Metals}
+\input{08_weighted_cos_and_spearman_rank/01_spearman_rank_results_excluding_211_Other_3313NF.tex}
+
+\end{document}

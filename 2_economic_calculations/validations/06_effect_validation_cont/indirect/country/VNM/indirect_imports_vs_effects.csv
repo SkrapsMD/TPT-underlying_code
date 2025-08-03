@@ -1,0 +1,141 @@
+iso3,usummary_code,usummary_desc,impVal,impVal_share,indirect,indirect_share,impVal_share_no_oil
+VNM,111,Crop production,1333403605.0,0.009764149967103036,6.472767107273516e-07,0.00712708426043305,0.009764149967103036
+VNM,112,Animal production and aquaculture,373241247.0,0.002733143585296176,1.331110410712786e-07,0.0014656693033848077,0.002733143585296176
+VNM,113FF,"Forestry, fishing, and related activities",1084273046.0,0.007939835010744259,1.03730900399589e-08,0.00011421681875865753,0.007939835010744259
+VNM,211,Oil and gas extraction,,,0.0,0.0,0.0
+VNM,212,"Mining, except oil and gas",24270956.0,0.00017772957365670182,7.605709868264292e-10,8.374553601753152e-06,0.00017772957365670182
+VNM,213,Support activities for mining,,,0.0,0.0,
+VNM,2211,"Electric power generation, transmission, and distribution",,,7.474171771985926e-07,0.008229718621582244,
+VNM,2212NW,"Natural gas distribution and water, sewage and other systems",,,7.402080952635306e-07,0.008150340306960331,
+VNM,23EH,"Education, hospital, and health structures",,,0.0,0.0,
+VNM,23MR,Maintenance and repair construction,,,0.0,0.0,
+VNM,23OC,Office and commercial structures,,,0.0,0.0,
+VNM,23OR,Other residential construction,,,0.0,0.0,
+VNM,23OT,Other nonresidential structures,,,0.0,0.0,
+VNM,23PC,Power and communication structures,,,0.0,0.0,
+VNM,23SF,Single-family residential structures,,,0.0,0.0,
+VNM,23TH,Transportation structures and highways and streets,,,0.0,0.0,
+VNM,311,Food manufacturing,2042930567.0,0.014959821882712577,7.903524914105206e-06,0.08702474086231544,0.014959821882712577
+VNM,3121,Beverage manufacturing,48260048.0,0.0003533951343198828,2.4695582579308898e-06,0.027192002274488696,0.0003533951343198828
+VNM,3122,Tobacco manufacturing,1497110.0,1.0962927130566463e-05,4.045337840086097e-07,0.0044542717465940705,1.0962927130566463e-05
+VNM,313TT,Textile mills and textile product mills,1314364582.0,0.009624732408081869,3.9086439192199953e-07,0.004303759751375376,0.009624732408081869
+VNM,315AL,Apparel and leather and allied products,25183858448.0,0.18441450864126524,3.055564950102183e-07,0.0033644449895521224,0.18441450864126524
+VNM,321,Wood products,1137934781.0,0.00833278522182078,3.500491190253964e-08,0.00038543478009287434,0.00833278522182078
+VNM,322,Paper products,610309176.0,0.004469127200809601,2.831396486242059e-07,0.003117615850795125,0.004469127200809601
+VNM,323,Printing and related support activities,389383646.0,0.002851349958875625,4.596547697639152e-08,0.0005061202142026868,0.002851349958875625
+VNM,324,Petroleum and coal products,1551149.0,1.1358639950071163e-05,1.0433977270062784e-06,0.011488724056148605,1.1358639950071163e-05
+VNM,3251,Basic chemical manufacturing,107189075.0,0.0007849162843196715,4.941478590435451e-09,5.441001306162272e-05,0.0007849162843196715
+VNM,3252,"Resin, rubber, and artificial fibers manufacturing",323649907.0,0.0023699997637151664,0.0,0.0,0.0023699997637151664
+VNM,3254,Pharmaceutical and medicine manufacturing,15226345.0,0.00011149836064141245,7.249963731155692e-07,0.007982845905110171,0.00011149836064141245
+VNM,325X,Other chemical manufacturing,497756607.0,0.003644935516628042,6.705958454828949e-07,0.00738384838546451,0.003644935516628042
+VNM,326,Plastics and rubber products,4523996576.0,0.033127989794751345,5.321609387053503e-07,0.005859558651511221,0.033127989794751345
+VNM,327,Nonmetallic mineral products,1067256405.0,0.007815226802068871,9.745790837577829e-08,0.0010730970438581312,0.007815226802068871
+VNM,3311IS,Iron and steel mills and manufacturing from purchased steel,1167416266.0,0.00854867007447415,1.54844027638018e-08,0.00017049685457721267,0.00854867007447415
+VNM,3313NF,Nonferrous metal production and processing and foundries,283399227.0,0.002075255041018939,1.639264700458656e-09,1.8049742021760486e-05,0.002075255041018939
+VNM,332,Fabricated metal products,2783809328.0,0.020385074448941755,3.096732624194124e-07,0.0034097742092191806,0.020385074448941755
+VNM,33311,Agricultural implement manufacturing,437531794.0,0.003203925680095662,3.2747339831891546e-08,0.00036057693165672576,0.003203925680095662
+VNM,33312,Construction machinery manufacturing,135312248.0,0.0009908545896407997,0.0,0.0,0.0009908545896407997
+VNM,33313,Mining and oil and gas field machinery manufacturing,25673138.0,0.00018799736900226223,0.0,0.0,0.00018799736900226223
+VNM,3332OM,Other machinery,4142847463.0,0.030336939069220793,1.5639563782000953e-07,0.001722053134670703,0.030336939069220793
+VNM,3341,Computer and peripheral equipment manufacturing,17421569631.0,0.12757339030848946,1.7799617428687102e-07,0.001959893985296836,0.12757339030848946
+VNM,3342,Communications equipment manufacturing,15694898316.0,0.11492944844397425,1.0517836380964155e-07,0.0011581060291871881,0.11492944844397425
+VNM,3344,Semiconductor and other electronic component manufacturing,10672644441.0,0.07815285670199801,3.754120641208222e-09,4.1336160702670774e-05,0.07815285670199801
+VNM,3345,"Navigational, measuring, electromedical, and control instruments manufacturing",1721590306.0,0.012606735025060028,5.1311841286130696e-08,0.0005649883741271575,0.012606735025060028
+VNM,334X,Other computer and electronic product manufacturing,8613231149.0,0.06307233633147347,1.2669326507728897e-07,0.0013950039611660984,0.06307233633147347
+VNM,335,"Electrical equipment, appliances, and components",11779408369.0,0.08625738629127569,4.3537993477477643e-07,0.004793914919254264,0.08625738629127569
+VNM,336111,Automobile manufacturing,160208551.0,0.0011731634083712223,8.908915578683687e-08,0.0009809497382813877,0.0011731634083712223
+VNM,336112,Light truck and utility vehicle manufacturing,,,5.305189239343567e-06,0.05841478628801001,
+VNM,33612,Heavy duty truck manufacturing,169360.0,1.2401769668446114e-06,0.0,0.0,1.2401769668446114e-06
+VNM,3362BP,"Motor vehicle body, trailer, and parts manufacturing",1657272684.0,0.012135754667439467,1.0792435177461894e-06,0.011883417649709412,0.012135754667439467
+VNM,3364,Aerospace product and parts manufacturing,262306799.0,0.0019208009587065372,5.4852257017453226e-08,0.0006039714563482743,0.0019208009587065372
+VNM,3365AO,All other transportation equipment manufacturing,238643447.0,0.001747520702986554,4.15456146518198e-07,0.0045745365369668865,0.001747520702986554
+VNM,337,Furniture and related products,12606303888.0,0.09231251605421156,1.3997988791977974e-06,0.015413013313103395,0.09231251605421156
+VNM,3391,Medical equipment and supplies manufacturing,494180564.0,0.003618749131643123,1.4845452088695525e-07,0.001634614472710765,0.003618749131643123
+VNM,3399,Other miscellaneous manufacturing,4239458205.0,0.031044393113730518,4.88470815108711e-07,0.005378492073552503,0.031044393113730518
+VNM,4231,Motor vehicle and motor vehicle parts and supplies,,,0.0,0.0,
+VNM,4234,Professional and commercial equipment and supplies,,,0.0,0.0,
+VNM,4236,Household appliances and electrical and electronic goods,,,0.0,0.0,
+VNM,4238,"Machinery, equipment, and supplies",,,0.0,0.0,
+VNM,423X,Other durable goods merchant wholesalers,,,0.0,0.0,
+VNM,4242,Drugs and druggists' sundries,,,0.0,0.0,
+VNM,4244,Grocery and related product wholesalers,,,0.0,0.0,
+VNM,4247,Petroleum and petroleum products,,,0.0,0.0,
+VNM,424X,Other nondurable goods merchant wholesalers,,,0.0,0.0,
+VNM,425,Wholesale electronic markets and agents and brokers,,,0.0,0.0,
+VNM,42ID,Customs duties,,,0.0,0.0,
+VNM,441,Motor vehicle and parts dealers,,,0.0,0.0,
+VNM,444,Building material and garden equipment and supplies dealers,,,0.0,0.0,
+VNM,445,Food and beverage stores,,,0.0,0.0,
+VNM,446,Health and personal care stores,,,0.0,0.0,
+VNM,447,Gasoline stations,,,0.0,0.0,
+VNM,448,Clothing and clothing accessories stores,,,0.0,0.0,
+VNM,452,General merchandise stores,,,0.0,0.0,
+VNM,454,Nonstore retailers,,,6.109938533718782e-08,0.0006727578180118263,
+VNM,481,Air transportation,,,5.121117473331409e-07,0.00563879947093957,
+VNM,482,Rail transportation,,,5.0929285591889725e-09,5.607761004241533e-05,
+VNM,483,Water transportation,,,1.047732169757637e-07,0.001153645007223876,
+VNM,484,Truck transportation,,,5.443524854917313e-08,0.0005993798273872899,
+VNM,485,Transit and ground passenger transportation,,,3.020229080658767e-07,0.0033255370982646555,
+VNM,486,Pipeline transportation,,,0.0,0.0,
+VNM,48A,Scenic and sightseeing transportation and support activities,,,1.1603829560512309e-07,0.001277683402644636,
+VNM,492,Couriers and messengers,,,2.7647102030322627e-08,0.0003044188404453475,
+VNM,493,Warehousing and storage,,,7.827818364616541e-10,8.619114535620485e-06,
+VNM,4A0X,All other retail,,,0.0,0.0,
+VNM,5111,"Newspaper, periodical, book, and directory publishers",,,4.812926309822248e-07,0.005299453970901038,
+VNM,5112,Software publishers,,,1.857872004913717e-07,0.002045680016702665,
+VNM,512,Motion picture and sound recording industries,,,5.6573003493616064e-08,0.0006229183841817734,
+VNM,515,Broadcasting (except internet),,,1.1639742924048909e-07,0.001281637778937787,
+VNM,5171,Wired telecommunications carriers,,,6.618096694562441e-06,0.07287104881749429,
+VNM,5172,Wireless telecommunications carriers (except satellite),,,3.0793772405914456e-06,0.03390664409768891,
+VNM,5174OT,"Other telecommunications, including satellite",,,5.743378123942461e-07,0.006323963020833603,
+VNM,518,"Data processing, hosting, and related services",,,6.439548895148139e-07,0.007090508095575756,
+VNM,519,Other information services,,,3.2969113724113935e-07,0.0036301885671047446,
+VNM,521CI,"Federal reserve banks, credit intermediation, and related activities",,,1.008374539248906e-06,0.011103088042865712,
+VNM,523,"Securities, commodity contracts, and investments",,,1.2677579803543291e-06,0.01395912721418408,
+VNM,524113,Direct life insurance carriers,,,1.872350512534252e-07,0.002061622123388524,
+VNM,5241X,"Insurance carriers, except direct life",,,5.723713709345074e-07,0.006302310775751253,
+VNM,5242,"Agencies, brokerages, and other insurance related activities",,,0.0,0.0,
+VNM,525,"Funds, trusts, and other financial vehicles",,,1.6786239429325296e-06,0.018483121800283484,
+VNM,532RL,Rental and leasing services and lessors of intangible assets,,,4.344300066914359e-07,0.0047834553779497226,
+VNM,5411,Legal services,,,4.9888812169417e-07,0.005493195755255959,
+VNM,5412,"Accounting, tax preparation, bookkeeping, and payroll services",,,1.0726798085199247e-07,0.0011811145454616832,
+VNM,5413,"Architectural, engineering, and related services",,,0.0,0.0,
+VNM,5415,Computer systems design and related services,,,0.0,0.0,
+VNM,5416,"Management, scientific, and technical consulting services",,,0.0,0.0,
+VNM,5417,Scientific research and development services,,,2.9619517435875268e-08,0.0003261368639103865,
+VNM,5418,"Advertising, public relations, and related services",,,7.700698072355186e-09,8.479143945123034e-05,
+VNM,541X,"Specialized design services and other professional, scientific, and technical services",,,6.179691369176139e-07,0.006804382169427576,
+VNM,55,Management of companies and enterprises,,,0.0,0.0,
+VNM,5613,Employment services,,,8.045076696623773e-09,8.858335013174314e-05,
+VNM,5617,Services to buildings and dwellings,,,3.66872800244793e-07,0.004039591285877503,
+VNM,561X,Other administrative and support services,,,3.486620080214388e-07,0.0038390744922495684,
+VNM,562,Waste management and remediation services,,,3.693680918466624e-07,0.00406706663483744,
+VNM,61,Educational services,,,1.8952898082349544e-06,0.020868802997796043,
+VNM,6211,Offices of physicians,,,3.098001970587239e-06,0.034111718709223554,
+VNM,6212,Offices of dentists,,,3.876639350555407e-07,0.004268519914407501,
+VNM,6213,Offices of other health practitioners,,,3.726086743024499e-07,0.004102748289734811,
+VNM,6214,Outpatient care centers,,,8.389458525686997e-07,0.009237529609985556,
+VNM,6215OH,Other ambulatory health care services,,,1.2717322314641943e-06,0.014002887204405729,
+VNM,622,Hospitals,,,7.242811285190579e-06,0.07974970434817988,
+VNM,623,Nursing and residential care facilities,,,1.482397626046405e-06,0.016322497956749372,
+VNM,624,Social assistance,,,2.38511467371244e-06,0.02626220435343948,
+VNM,711AS,"Performing arts, spectator sports, museums, and related activities",,,4.090582329616235e-07,0.004504089897603894,
+VNM,713,"Amusements, gambling, and recreation industries",,,1.991167453711599e-06,0.021924499961210823,
+VNM,721,Accommodation,,,1.2547264936073234e-06,0.013815639116210865,
+VNM,722,Food services and drinking places,,,7.800862541255273e-06,0.08589433810017176,
+VNM,811,Repair and maintenance,,,2.372777775911826e-06,0.02612636428893519,
+VNM,812,Personal and laundry services,,,1.3618602152055718e-06,0.01499527534954063,
+VNM,813,"Religious, grantmaking, civic, professional, and similar organizations",,,1.3330918322225183e-06,0.014678510222418674,
+VNM,814,Private households,,,0.0,0.0,
+VNM,GFE,Federal government enterprises,,,2.1988195020172722e-08,0.00024210931128281561,
+VNM,GFGD,Federal general government (defense),,,0.0,0.0,
+VNM,GFGN,Federal general government (nondefense),,,0.0,0.0,
+VNM,GSLE,State and local government enterprises,,,1.1121705313013312e-06,0.012245972946636766,
+VNM,GSLGE,State and local government (educational services),,,0.0,0.0,
+VNM,GSLGH,State and local government (hospitals and health services),,,0.0,0.0,
+VNM,GSLGO,State and local government (other services),,,0.0,0.0,
+VNM,HSO,Owner-occupied housing,,,4.384954471700958e-06,0.04828219443096799,
+VNM,HST,Tenant-occupied housing,,,3.18153602909401e-07,0.003503150195451396,
+VNM,ORE,Other real estate,,,3.878941046947946e-08,0.00042710542839993147,
+VNM,Other,,1942927359.0,0.014227525737387997,0.0,0.0,0.014227525737387997
+VNM,Used,,,,1.08476920726446e-06,0.011944260337451803,

@@ -1,0 +1,10 @@
+{
+  "base_paths": {
+    "project_root": "/home/sparkysparksmd/Documents/GitHub/FRBAtl_TariffPricePulse/scripts/Underlying_Data_Construction/Calculations",
+    "raw_data": "data/raw",
+    "working_data": "data/working",
+    "final_data": "data/final",
+    "validations": "validations",
+    "hs_to_bea_data": "../HS to BEA Data"
+  }
+}

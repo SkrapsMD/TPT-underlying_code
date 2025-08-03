@@ -1,0 +1,141 @@
+iso3,usummary_code,usummary_desc,impVal,impVal_share,indirect,indirect_share,impVal_share_no_oil
+GHA,111,Crop production,159532566.0,0.1361514786967465,1.3310442858136748e-08,0.005403071359195329,0.38081318670904823
+GHA,112,Animal production and aquaculture,151801.0,0.00012955305073977693,3.1633318237630075e-09,0.0012840825627493508,0.00036235750483459427
+GHA,113FF,"Forestry, fishing, and related activities",28649975.0,0.02445103566424688,3.1948151685979726e-10,0.00012968625100871273,0.0683890979280341
+GHA,211,Oil and gas extraction,752802431.0,0.6424717329949764,0.0,0.0,0.0
+GHA,212,"Mining, except oil and gas",5516.0,4.707575232578241e-06,1.4235204645628394e-11,5.778457361098335e-06,1.316700151295197e-05
+GHA,213,Support activities for mining,,,0.0,0.0,
+GHA,2211,"Electric power generation, transmission, and distribution",,,3.71647540752736e-08,0.015086186121365312,
+GHA,2212NW,"Natural gas distribution and water, sewage and other systems",,,2.311229442167613e-08,0.00938190993087131,
+GHA,23EH,"Education, hospital, and health structures",,,0.0,0.0,
+GHA,23MR,Maintenance and repair construction,,,0.0,0.0,
+GHA,23OC,Office and commercial structures,,,0.0,0.0,
+GHA,23OR,Other residential construction,,,0.0,0.0,
+GHA,23OT,Other nonresidential structures,,,0.0,0.0,
+GHA,23PC,Power and communication structures,,,0.0,0.0,
+GHA,23SF,Single-family residential structures,,,0.0,0.0,
+GHA,23TH,Transportation structures and highways and streets,,,0.0,0.0,
+GHA,311,Food manufacturing,111194251.0,0.09489762545552724,3.5167614695657054e-07,0.14275492841108986,0.2654269164518784
+GHA,3121,Beverage manufacturing,327550.0,0.00027954428343564226,5.082209966817207e-08,0.02063007475092455,0.0007818802294357175
+GHA,3122,Tobacco manufacturing,,,4.676408205041491e-09,0.0018982814851363022,
+GHA,313TT,Textile mills and textile product mills,63308.0,5.4029581730250777e-05,1.829890631947171e-09,0.0007428024573870285,0.00015111974832885484
+GHA,315AL,Apparel and leather and allied products,40130364.0,0.034248859253217814,1.8204284083168703e-09,0.0007389614830455981,0.09579343065687332
+GHA,321,Wood products,16441827.0,0.014032113408907941,4.389133087604861e-10,0.000178166868902017,0.0392475636302927
+GHA,322,Paper products,14900.0,1.2716256520198656e-05,2.507593398587767e-09,0.001017900472344873,3.556713606653088e-05
+GHA,323,Printing and related support activities,35721.0,3.048573148711518e-05,2.9692441382947875e-10,0.00012052970838811708,8.526803137131205e-05
+GHA,324,Petroleum and coal products,,,1.1685988056676463e-06,0.47436609018857173,
+GHA,3251,Basic chemical manufacturing,,,6.362766740421568e-10,0.0002582820354425445,
+GHA,3252,"Resin, rubber, and artificial fibers manufacturing",1004272.0,0.0008570859307418084,0.0,0.0,0.0023972536155575236
+GHA,3254,Pharmaceutical and medicine manufacturing,231168.0,0.00019728802599069012,4.885219556771461e-09,0.0019830437012422356,0.0005518109872636115
+GHA,325X,Other chemical manufacturing,4100124.0,0.003499209969706241,1.0791872111183148e-08,0.004380714882103845,0.009787226053533481
+GHA,326,Plastics and rubber products,322055.0,0.0002748546304437972,4.874514161975199e-09,0.0019786980898580733,0.0007687633561011143
+GHA,327,Nonmetallic mineral products,511888.0,0.00043686571259137245,8.316415438073218e-10,0.0003375859582099085,0.0012219053789815006
+GHA,3311IS,Iron and steel mills and manufacturing from purchased steel,,,1.94748940793277e-10,7.905390041853791e-05,
+GHA,3313NF,Nonferrous metal production and processing and foundries,33323540.0,0.028439643141013472,8.805043791268291e-11,3.5742071418743164e-05,0.07954515982540164
+GHA,332,Fabricated metal products,329608.0,0.0002813006630274925,2.0139662664982413e-09,0.0008175237720396514,0.0007867927909139
+GHA,33311,Agricultural implement manufacturing,,,7.244208662374805e-11,2.940621642786657e-05,
+GHA,33312,Construction machinery manufacturing,6419.0,5.4782315841043745e-06,0.0,0.0,1.5322513181950453e-05
+GHA,33313,Mining and oil and gas field machinery manufacturing,,,0.0,0.0,
+GHA,3332OM,Other machinery,233294.0,0.00019910243950491444,5.249951161690658e-10,0.00021310981956971348,0.0005568858685573997
+GHA,3341,Computer and peripheral equipment manufacturing,3369.0,2.8752394776207565e-06,5.292954993713617e-11,2.148554622625624e-05,8.041992040814937e-06
+GHA,3342,Communications equipment manufacturing,47469.0,4.051194501726913e-05,5.0025436672392776e-11,2.0306687538244804e-05,0.00011331116657329895
+GHA,3344,Semiconductor and other electronic component manufacturing,,,7.140292881336886e-12,2.8984393963897112e-06,
+GHA,3345,"Navigational, measuring, electromedical, and control instruments manufacturing",68648.0,5.8586951516684385e-05,3.9636056148415385e-11,1.608935495606339e-05,0.0001638666279661216
+GHA,334X,Other computer and electronic product manufacturing,3258.0,2.780507633745451e-06,7.596899793170316e-11,3.083788580788162e-05,7.77702881239984e-06
+GHA,335,"Electrical equipment, appliances, and components",26671.0,2.2762099171155595e-05,2.773780164880143e-09,0.0011259529322427014,6.366517355909028e-05
+GHA,336111,Automobile manufacturing,,,1.6204668248915435e-10,6.577916289799033e-05,
+GHA,336112,Light truck and utility vehicle manufacturing,,,1.1060811378237229e-08,0.004489884657044474,
+GHA,33612,Heavy duty truck manufacturing,,,0.0,0.0,
+GHA,3362BP,"Motor vehicle body, trailer, and parts manufacturing",322211.0,0.00027498776708924355,4.324890290161348e-09,0.0017555907874355924,0.0007691357368545625
+GHA,3364,Aerospace product and parts manufacturing,,,3.514036583663528e-11,1.4264431786918643e-05,
+GHA,3365AO,All other transportation equipment manufacturing,,,1.598301266190842e-09,0.0006487940248691496,
+GHA,337,Furniture and related products,7806.0,6.661952912528235e-06,5.6372942566535784e-09,0.0022883313099429817,1.8633360009083226e-05
+GHA,3391,Medical equipment and supplies manufacturing,2439.0,2.0815402451519815e-06,1.1462797929053364e-09,0.00046530619489381573,5.822029856796565e-06
+GHA,3399,Other miscellaneous manufacturing,723154.0,0.0006171685750072308,4.787069670539057e-09,0.0019432019886213515,0.001726209175507119
+GHA,4231,Motor vehicle and motor vehicle parts and supplies,,,0.0,0.0,
+GHA,4234,Professional and commercial equipment and supplies,,,0.0,0.0,
+GHA,4236,Household appliances and electrical and electronic goods,,,0.0,0.0,
+GHA,4238,"Machinery, equipment, and supplies",,,0.0,0.0,
+GHA,423X,Other durable goods merchant wholesalers,,,0.0,0.0,
+GHA,4242,Drugs and druggists' sundries,,,0.0,0.0,
+GHA,4244,Grocery and related product wholesalers,,,0.0,0.0,
+GHA,4247,Petroleum and petroleum products,,,0.0,0.0,
+GHA,424X,Other nondurable goods merchant wholesalers,,,0.0,0.0,
+GHA,425,Wholesale electronic markets and agents and brokers,,,0.0,0.0,
+GHA,42ID,Customs duties,,,0.0,0.0,
+GHA,441,Motor vehicle and parts dealers,,,0.0,0.0,
+GHA,444,Building material and garden equipment and supplies dealers,,,0.0,0.0,
+GHA,445,Food and beverage stores,,,0.0,0.0,
+GHA,446,Health and personal care stores,,,0.0,0.0,
+GHA,447,Gasoline stations,,,0.0,0.0,
+GHA,448,Clothing and clothing accessories stores,,,0.0,0.0,
+GHA,452,General merchandise stores,,,0.0,0.0,
+GHA,454,Nonstore retailers,,,4.38535729417364e-10,0.00017801359916062745,
+GHA,481,Air transportation,,,9.387626704446829e-08,0.038106934170569116,
+GHA,482,Rail transportation,,,3.0560371364834745e-10,0.00012405287262607718,
+GHA,483,Water transportation,,,8.489443949199429e-09,0.003446096568407827,
+GHA,484,Truck transportation,,,3.0976035957292397e-09,0.0012574016844220895,
+GHA,485,Transit and ground passenger transportation,,,1.0785766567223418e-08,0.004378236475483365,
+GHA,486,Pipeline transportation,,,0.0,0.0,
+GHA,48A,Scenic and sightseeing transportation and support activities,,,2.216207603428364e-09,0.0008996190401579868,
+GHA,492,Couriers and messengers,,,2.4600464177935687e-09,0.0009985998575656812,
+GHA,493,Warehousing and storage,,,2.1543019593399844e-11,8.744898527889885e-06,
+GHA,4A0X,All other retail,,,0.0,0.0,
+GHA,5111,"Newspaper, periodical, book, and directory publishers",,,1.5575381034282447e-09,0.0006322471466337519,
+GHA,5112,Software publishers,,,9.974671656430074e-10,0.0004048990955345196,
+GHA,512,Motion picture and sound recording industries,,,3.874507188101961e-10,0.00015727680169734485,
+GHA,515,Broadcasting (except internet),,,2.199379257498865e-10,8.927879561074118e-05,
+GHA,5171,Wired telecommunications carriers,,,3.728902027341699e-09,0.0015136629156451422,
+GHA,5172,Wireless telecommunications carriers (except satellite),,,4.063563657498758e-09,0.001649511188177852,
+GHA,5174OT,"Other telecommunications, including satellite",,,3.1784813534300467e-10,0.00012902321695446815,
+GHA,518,"Data processing, hosting, and related services",,,2.171539451686477e-09,0.0008814870205161876,
+GHA,519,Other information services,,,1.3234556792236884e-09,0.0005372267137758404,
+GHA,521CI,"Federal reserve banks, credit intermediation, and related activities",,,1.1730690405025197e-08,0.004761806802861819,
+GHA,523,"Securities, commodity contracts, and investments",,,1.2274664245971455e-08,0.0049826206038370065,
+GHA,524113,Direct life insurance carriers,,,1.223003338496669e-09,0.0004964503721521279,
+GHA,5241X,"Insurance carriers, except direct life",,,3.1657813786305406e-09,0.001285076903800855,
+GHA,5242,"Agencies, brokerages, and other insurance related activities",,,0.0,0.0,
+GHA,525,"Funds, trusts, and other financial vehicles",,,1.1474813135904862e-08,0.004657939248717439,
+GHA,532RL,Rental and leasing services and lessors of intangible assets,,,4.3593760495432675e-09,0.0017695894966297534,
+GHA,5411,Legal services,,,1.2787443487798631e-09,0.0005190771667226504,
+GHA,5412,"Accounting, tax preparation, bookkeeping, and payroll services",,,4.042154211961219e-10,0.00016408205109980605,
+GHA,5413,"Architectural, engineering, and related services",,,0.0,0.0,
+GHA,5415,Computer systems design and related services,,,0.0,0.0,
+GHA,5416,"Management, scientific, and technical consulting services",,,0.0,0.0,
+GHA,5417,Scientific research and development services,,,2.1028630089116907e-10,8.536093815102825e-05,
+GHA,5418,"Advertising, public relations, and related services",,,2.7351958289325e-11,1.1102904991670927e-05,
+GHA,541X,"Specialized design services and other professional, scientific, and technical services",,,2.251922690621646e-09,0.0009141167670001273,
+GHA,55,Management of companies and enterprises,,,0.0,0.0,
+GHA,5613,Employment services,,,2.885298570006824e-11,1.1712212908679575e-05,
+GHA,5617,Services to buildings and dwellings,,,3.781476123173658e-09,0.0015350041733668265,
+GHA,561X,Other administrative and support services,,,2.0671297125388483e-09,0.0008391042630661041,
+GHA,562,Waste management and remediation services,,,4.276420203423805e-09,0.0017359154588067454,
+GHA,61,Educational services,,,4.459569102888314e-08,0.01810260586441616,
+GHA,6211,Offices of physicians,,,1.953429690382524e-08,0.007929503266569058,
+GHA,6212,Offices of dentists,,,2.566806011723777e-09,0.0010419364850867566,
+GHA,6213,Offices of other health practitioners,,,3.3790341314541542e-09,0.0013716420056033446,
+GHA,6214,Outpatient care centers,,,8.098656531479973e-09,0.003287465309724863,
+GHA,6215OH,Other ambulatory health care services,,,1.0956602874241792e-08,0.004447583586424712,
+GHA,622,Hospitals,,,9.63889886484138e-08,0.03912691632117127,
+GHA,623,Nursing and residential care facilities,,,1.4819862665487536e-08,0.006015785978612643,
+GHA,624,Social assistance,,,3.205268711478288e-08,0.013011058879176573,
+GHA,711AS,"Performing arts, spectator sports, museums, and related activities",,,3.168058891318357e-09,0.0012860014082448391,
+GHA,713,"Amusements, gambling, and recreation industries",,,3.413615197276956e-08,0.013856794022781976,
+GHA,721,Accommodation,,,1.363254497589962e-08,0.005533821383501007,
+GHA,722,Food services and drinking places,,,1.61013385909021e-07,0.06535971966704927,
+GHA,811,Repair and maintenance,,,1.07357660080745e-08,0.004357939886409612,
+GHA,812,Personal and laundry services,,,1.118849849393608e-08,0.004541716335758979,
+GHA,813,"Religious, grantmaking, civic, professional, and similar organizations",,,1.3546863655821964e-08,0.005499041001551009,
+GHA,814,Private households,,,0.0,0.0,
+GHA,GFE,Federal government enterprises,,,7.884980199623577e-10,0.0003200728265653828,
+GHA,GFGD,Federal general government (defense),,,0.0,0.0,
+GHA,GFGN,Federal general government (nondefense),,,0.0,0.0,
+GHA,GSLE,State and local government enterprises,,,2.8835162433863115e-08,0.011704977959385505,
+GHA,GSLGE,State and local government (educational services),,,0.0,0.0,
+GHA,GSLGH,State and local government (hospitals and health services),,,0.0,0.0,
+GHA,GSLGO,State and local government (other services),,,0.0,0.0,
+GHA,HSO,Owner-occupied housing,,,2.0666221685155652e-08,0.008388982371205394,
+GHA,HST,Tenant-occupied housing,,,5.016018395359891e-09,0.002036138513047174,
+GHA,ORE,Other real estate,,,5.201563874307334e-10,0.00021114564775817852,
+GHA,Other,,21110883.0,0.018016872724557112,0.0,0.0,0.05039286229165192
+GHA,Used,,,,1.642546940876007e-08,0.006667545495645055,
