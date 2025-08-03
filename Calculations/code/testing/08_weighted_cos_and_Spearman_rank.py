@@ -25,6 +25,27 @@ def calculate_country_spearman(country, data = combined_data, remove_codes=None)
     df = data[(country, baseline_scenario)]
     df = df[df['impVal_country_rank'].notna()]  # Filter out rows with NaN ranks
     
+    # Handle duplicates for ISR by summing up duplicate usummary_codes
+    if country == 'ISR':
+        print(f"Processing ISR data - checking for duplicates...")
+        original_len = len(df)
+        # Group by usummary_code and sum the numeric columns
+        numeric_cols = ['impVal', 'total', 'direct', 'indirect']
+        rank_cols_subset = ['impVal_country_rank', 'total_country_rank', 'direct_country_rank', 'indirect_country_rank']
+        
+        # For ranks, take the first value (they should be the same for duplicates)
+        df_grouped = df.groupby('usummary_code').agg({
+            **{col: 'sum' for col in numeric_cols if col in df.columns},
+            **{col: 'first' for col in rank_cols_subset if col in df.columns},
+            'iso3': 'first'
+        }).reset_index()
+        
+        new_len = len(df_grouped)
+        if original_len != new_len:
+            print(f"ISR: Consolidated {original_len} rows to {new_len} rows (removed {original_len - new_len} duplicates)")
+        
+        df = df_grouped
+    
     # Remove specified usummary_codes if provided
     if remove_codes is not None and len(remove_codes) > 0:
         df = df[~df['usummary_code'].isin(remove_codes)]
