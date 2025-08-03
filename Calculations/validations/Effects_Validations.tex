@@ -10,24 +10,19 @@
 \title{Effects Validations}
 \maketitle
 
-\par This document contains some validations of the effects calculated in the main document. The goal is to 
-show that the effects are reasonable: that they are similar to the import vectors, and differ from them only insofar
-as there are consumer price effects that are not captured by the import vectors. To do this, I focus on the 
-direct effects. The direct effects only include the imports and the consumer expenditures, so they should 
-be very similar to the import vectors. The indirect effects, on the other hand, include domestic 
-production processes which are much harder to simply describe, so I will only touch on them tangentially. The main 
-thrust will be to first, show that on the whole the direct effects vectors are quite similar to the import vectors. Then Show that
-even in the cases where they are not similar, the differences can be explained by the existence of large non-consumer goods 
-being imported like oil, gas, or 'Other'.  
+This document validates the calculated effects by demonstrating their reasonableness through comparison with import vectors. Effects should closely resemble import vectors, differing only where consumer price effects are not captured by imports alone. 
 
-\section{Cosine Similarity Analaysis}
-\par In this section we compute cosine similarities between the import vectors and the effect vectors within countries. The hope is that, for the direct effects, effects will be very 
-similar to the imports vectors. We find evidence for this in figures \ref{fig:within_country_total_cosSim}, \ref{fig:within_country_direct_cosSim}, and \ref{fig:within_country_indirect_cosSim} 
-where we see that the direct effects have generally a high cosine similarity (median at around 0.77). In this analysis, each histogram is a grouping of countries. I will show that the dispersion of 
-the within-country cosine similarities, at least for the direct effects, is driven by unique country import structures of either overly-impactful products, or low impact items to the direct effects. 
-For the bottom 4 bins, I will construct country level narratives that explain the low cosine similarities. One thing of note with the following histograms: note 
-that the indirect effects have a much lower cosine similarity (and they pass this feature on to the total effects). This is because they 
-include domestic production processes which are uncaptured by the import vectors. 
+I focus primarily on direct effects, which incorporate only imports and consumer expenditures and should therefore closely align with import vectors. Indirect effects, which include complex domestic production processes, are addressed tangentially. The analysis proceeds in two stages: first demonstrating overall similarity between direct effect and import vectors, then explaining discrepancies through the presence of large non-consumer imports (oil, gas, 'Other').
+
+Section 1 looks at how similar the direct effects vector for a country is to its import vector. Section 2 tries to cluster countries together by the kMeans similarity of their import vs their effect vectors. Section 3 provides a short case study of two 
+earlier identified 'probleatic' countries, the UK and Israel, to look at exactly what might be driving the differences between their import and effect vectors.
+
+\section{Cosine Similarity Analysis}
+I compute cosine similarities between import and effect vectors within countries, expecting direct effects to closely resemble import vectors. Figures \ref{fig:within_country_total_cosSim}, \ref{fig:within_country_direct_cosSim}, and \ref{fig:within_country_indirect_cosSim} confirm this expectation, showing direct effects achieve high cosine similarity with a median around 0.77.
+
+Each histogram represents a country grouping. Dispersion in within-country cosine similarities for direct effects stems from unique import structures featuring either high-impact or low-impact products. I provide country-level narratives for the bottom 4 bins explaining low cosine similarities. 
+
+Notably, indirect effects exhibit much lower cosine similarity, which transfers to total effects, because they incorporate domestic production processes absent from import vectors. 
 \begin{figure}[htbp]
 \centering
 \begin{subfigure}[b]{0.32\textwidth}
@@ -54,28 +49,19 @@ include domestic production processes which are uncaptured by the import vectors
 \label{fig:within_country_cosine_similarities}
 \end{figure}
 
-\subsection{Country Level Analaysis}
-\par In this section, we break down the import structures of the countries with the lowest direct effect - import cosine similarities. The aim is to 
-understand this discrepancy: is it because they import goods which are a considerable share of consumer spending (like clothing), or is it because they 
-import many goods that are not particularly impactful to the direct effects? 
+\subsection{Country-Level Analysis}
+This section examines import structures of countries with the lowest direct effect-import cosine similarities to understand whether discrepancies arise from importing goods with high consumer spending shares (e.g., clothing) or goods with minimal direct effect impact.
 
-Table \ref{tab:bottom_cosine_similarity_bins_direct_sim} presents the bottom 4 bins worth of cosine similarities for the direct effects (compared to the import vector). These are within-country 
-cosine similarities, meaning that we are looking at the cosine similarity between the import share of each commodity to the total imports from the country, and the direct effect share of each commodity to the total direct effects from the country.
+Table \ref{tab:bottom_cosine_similarity_bins_direct_sim} presents the bottom 4 bins of direct effect cosine similarities. These within-country similarities compare each commodity's import share of total country imports against its direct effect share of total country direct effects.
 \input{06_effect_validation_cont/tables/direct_sim_bottom_bins.tex}
 
-\par Now let's look at some comparisons between the import structures, and the direct effects for the countries in the bottom bins. Each of the following figures has four panels: panel (a) is inclusive of all of the non-zero import commodities, panel (b) 
-is inclusive of all non-zero imports excluding oil, panel (c) is is all non-zero import commodities excluding the 'Other' category, and panel (d) is all non-zero import commodities excluding oil and 'other'. The idea is to see, after removing these two 
-commodities, see if the quality improves. If yes, then what we are seeing is that it is categories with non-consumer goods that are driving the low cosine similarities -- this is exactly what we find in the figures below. After excluding oil and 'other', 
-the other major contributors to the effect-import mismatch are things like 'nonferrous metal production'. 
+The following figures compare import structures with direct effects for bottom-bin countries using four panels: (a) all non-zero import commodities, (b) excluding oil, (c) excluding 'Other' category, and (d) excluding both oil and 'Other'. This progressive exclusion tests whether removing non-consumer goods improves alignment quality.
 
-\par So, we have broken these import vs direct effect components down by countries, specifically those countries which are particularly low in cosine similarity between the direct effects and the imports. What have we learned. We learn that for some 
-countries, the low cosine similarity is driven by the fact that they import a LARGE amount of one good (like oil, nonferrous metals manufacturing, or Unknown/Other), and because we are computing shares for the cosine similarity, this one good 
-dominates the others and makes the cosine similarity low. Further, even dropping the sometimes large categories Other and Oil, we see that there is occasionally a mismatch between the import structure and the direct effects. I will breakdown (unscientifically)
-the largest contributors that I see in this regard in table \ref{tab:eyeball_cos_dissimilarities}.This table shows the top 6 commodities with the largest differences between the
-    import share and the direct effect share. The left hand panel are commodities with higher import shares than 
-    direct effect shares, and the right hand panel are commodities with lower import shares than direct effect shares. The difference is calculated as the import share minus the direct effect share.
-    The `Diff.' column shows the average difference share between the import share and the direct effect share for
-    each commodity amongst our 4 bottom bins of the cosine similarity distribution. It is clear to see that the differences are driven by the relative personal consumption expenditures between the goods listed.
+Results confirm that non-consumer goods drive low cosine similarities. After excluding oil and 'Other', remaining mismatches primarily involve commodities like nonferrous metal production.
+
+Analysis reveals that low cosine similarity often stems from countries importing large quantities of single goods (oil, nonferrous metals, Unknown/Other). Since cosine similarity uses shares, dominant single goods reduce similarity scores. Even after removing Oil and Other categories, mismatches persist between import structure and direct effects.
+
+Table \ref{tab:eyeball_cos_dissimilarities} presents the top 6 commodities with largest import-direct effect share differences. The left panel shows commodities with higher import than direct effect shares; the right panel shows the reverse. Differences are calculated as import share minus direct effect share, with the 'Diff.' column showing average differences across the bottom 4 cosine similarity bins. These differences clearly reflect relative personal consumption expenditures between commodities.
 
 
 
@@ -134,21 +120,13 @@ the largest contributors that I see in this regard in table \ref{tab:eyeball_cos
 
 
 \section{Cluster Concentration Analysis}
-\par So I think the cosine similarity analysis above is a better method of showing the relationship here, but I want to include this little section as well. I would imagine, throughout this part. I would take this all with a grain of salt.
+While cosine similarity provides the preferred analytical approach, this supplementary cluster analysis offers additional perspective on import-effect alignment.
 
+I create two sets of country clusters: one based on import vectors (ordered import values by BEA commodities) and another based on effect vectors (ordered effects by BEA commodities). Effects are calculated under a 10\% homogeneous tariff scenario applied to all countries and goods. Figures \ref{fig:import_vs_direct_clusters_TEN} and \ref{fig:import_vs_total_clusters_TEN} display results, with cell numbers representing countries sharing specific import-effect cluster pairs.
 
-\par In an attempt to easily show how closely (or not how closely) imports align with calculated effects, I 
-create a cluster comparison analysis where I create clusters of countries based on their import vectors (i.e. ordered list of 
-import values by BEA commodities), and create a second set of clusters of countries based on their effect vectors (likewise, an ordered list of effects by BEA commodities).
-The effects are calculated under a 10\% homogenous tariff scenario where every country, and good, receives a 10\% tariff. I display the results in a figures \ref{fig:import_vs_direct_clusters_TEN} and \ref{fig:import_vs_total_clusters_TEN}.
-where each number in the cell represents the number of countries that have that specific import and effect cluster pair.
+\textit{Method:} I calculate commodity shares of country imports and effects (direct, indirect, total), apply standard scalar normalization (mean 0, unit variance) to prevent large-magnitude variables from dominating clustering, then compute clusters using KMeans. High concentration between import and effect clusters (not necessarily on the main diagonal) indicates alignment between specific import and effect cluster pairs.
 
-\par \textit{Method:} First we calculate the shares each commodity has of the countries imports and the effects (for all three types of effects: direct, indirect, and total). Then
-we apply a standard scalar normalization to each vector obtaining mean 0 and unit variance to clean up large-magnitude variables from dominating the clustering. Then we compute the clusters
-using KMeans. What we are looking for here is a fairly high degree of concentration (not necessarily on the main diagonal) between the import clusters and the effect clusters. 
-This would indicate that a particular import cluster is aligned with a particular effect cluster, and vice versa. 
-
-\par \textit{Findings:} The results show that there is a fairly high degree of concentration between the import clusters and the effect clusters (approximately 75\%), as evident by table \ref{tab:cluster_concentration_analysis_TEN}.
+\textit{Findings:} Results demonstrate substantial concentration between import and effect clusters (approximately 75\%), as shown in Table \ref{tab:cluster_concentration_analysis_TEN}.
 
 %Figures
 \begin{figure}[htbp]
@@ -177,9 +155,7 @@ This would indicate that a particular import cluster is aligned with a particula
 
 \section{Case Study: Israel and United Kingdom Analysis}
 
-\par Salome pointed out that in the ranking comparisons from the html analysis that the rankings for the UK and Israel were kind of weird. Why was this the case? I think it's simply because the UK exports more products higher consumer values (beverages, automobiles, foods, pharma)
-while the israelis, though they do export some goods of relatively high consumer value like pharmaceuticals and miscelaneous manufacturing) also export large quantities of very non-consumer related goods like communications, 
-and semiconductor manufacturing.  It seems to me that the imbalance between the two is rightfulyl explained simply by the PCE composition of the goods predominating the import structure to the US from each country. 
+Analysis of ranking comparisons revealed unusual patterns for the UK and Israel. The UK exports predominantly high consumer-value products (beverages, automobiles, foods, pharmaceuticals), while Israel, despite exporting some high consumer-value goods (pharmaceuticals, miscellaneous manufacturing), also exports substantial quantities of non-consumer goods (communications, semiconductor manufacturing). This imbalance between the countries reflects differences in PCE composition of goods dominating their respective import structures to the US. 
 
 
 \input{06_effect_validation_cont/case_study/direct/case_study_direct_analysis.tex}
