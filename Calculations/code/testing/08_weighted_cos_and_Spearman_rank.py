@@ -81,22 +81,43 @@ def calculate_country_spearman(country, data = combined_data, remove_codes=None)
     
     return country_results
 
+# Create a function to return the ranked order of the countries based on their import Values
+
+def sort_countries_by_value(df, value_col = 'impVal', remove_codes = None):
+    """
+    Sort countries by a specific rank column - default to the impVal_country_rank. 
+
+    Args:
+        df (_type_): _description_
+        value_col (str, optional): _description_. Defaults to 'impVal'.
+    """
+    country_rank = {}
+    for key in df.keys(): 
+        if isinstance(key, tuple) and len(key) >=1:
+            if key[0] != 'All Countries':
+                df_country = df[(key[0], baseline_scenario)]
+                if remove_codes is not None:
+                    df_country = df_country[~df_country['usummary_code'].isin(remove_codes)]
+                df_country = df_country[['iso3',value_col]].dropna().groupby('iso3').sum().reset_index()
+                country_rank[key[0]] = df_country[value_col]
+    country_rank = pd.DataFrame(country_rank).T.reset_index()
+    country_rank = country_rank.rename(columns={'index': 'iso3', 0: value_col})
+    country_rank = country_rank.sort_values(by=value_col, ascending=False)
+    country_rank['rank'] = np.arange(1, len(country_rank) + 1)
+    country_rank = country_rank.reset_index()[['iso3','rank']]
+    return country_rank
+
 def run_all_spearman_calculations(data=combined_data, remove_codes=None):
     """
     Run Spearman rank correlation calculations for all countries in the dataset.
     Returns a dictionary with country names as keys and their Spearman results.
     """
     results = {}
-    # Extract unique countries from the dictionary keys
-    countries = set()
-    for key in data.keys():
-        if isinstance(key, tuple) and len(key) >= 1:
-            if key[0] != 'All Countries':
-                countries.add(key[0])
-    
-    for country in sorted(countries):
+    # Extract the unique countries from the impVal sorted data -- THIS IS NEW
+    sorted_countries = sort_countries_by_value(data, value_col='impVal', remove_codes=remove_codes)
+    for country in sorted_countries['iso3']:
         results[country] = calculate_country_spearman(country, data, remove_codes=remove_codes)
-        
+
     dir="Calculations/validations/08_weighted_cos_and_spearman_rank"
     os.makedirs(dir, exist_ok=True)
     
