@@ -1,0 +1,136 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{colorpalette}[2024/01/01 Custom Color Palette]
+
+\RequirePackage{xcolor}
+
+% Color Palette Definitions
+% Usage: \textcolor{colorname}{text} or \colorbox{colorname}{text}
+
+% Atlblue Color Family
+\definecolor{atlBlue50}{rgb}{0.886,0.929,0.957} % #e2edf4
+\definecolor{atlBlue100}{rgb}{0.761,0.851,0.910} % #c2D9e8
+\definecolor{atlBlue200}{rgb}{0.651,0.780,0.871} % #a6c7de
+\definecolor{atlBlue300}{rgb}{0.533,0.718,0.831} % #88b7d4
+\definecolor{atlBlue400}{rgb}{0.427,0.643,0.788} % #6da4c9
+\definecolor{atlBlue500}{rgb}{0.325,0.576,0.749} % #5393bf
+\definecolor{atlBlue600}{rgb}{0.208,0.506,0.706} % #3581b4
+\definecolor{atlBlue700}{rgb}{0.090,0.435,0.663} % #176FA9
+\definecolor{atlBlue800}{rgb}{0.000,0.365,0.608} % #005d9b
+\definecolor{atlBlue900}{rgb}{0.000,0.298,0.498} % #004c7f
+\definecolor{atlBlue1000}{rgb}{0.000,0.235,0.396} % #003c65
+\definecolor{atlBlue1100}{rgb}{0.000,0.176,0.298} % #002d4c
+
+% Atlred Color Family
+\definecolor{atlRed50}{rgb}{0.973,0.898,0.902} % #F8E5E6
+\definecolor{atlRed100}{rgb}{0.945,0.808,0.816} % #F1ced0
+\definecolor{atlRed200}{rgb}{0.918,0.714,0.722} % #eab6b8
+\definecolor{atlRed300}{rgb}{0.894,0.624,0.635} % #e49fa2
+\definecolor{atlRed400}{rgb}{0.867,0.522,0.541} % #dd858A
+\definecolor{atlRed500}{rgb}{0.839,0.427,0.451} % #d66d73
+\definecolor{atlRed600}{rgb}{0.808,0.318,0.345} % #ce5158
+\definecolor{atlRed700}{rgb}{0.773,0.192,0.224} % #c53139
+\definecolor{atlRed800}{rgb}{0.694,0.098,0.129} % #b11921
+\definecolor{atlRed900}{rgb}{0.576,0.082,0.106} % #93151b
+\definecolor{atlRed1000}{rgb}{0.459,0.067,0.082} % #751115
+
+% Atlfuchsia Color Family
+\definecolor{atlFuchsia50}{rgb}{0.973,0.878,0.918} % #f8e0ea
+\definecolor{atlFuchsia100}{rgb}{0.953,0.800,0.867} % #f3ccdd
+\definecolor{atlFuchsia200}{rgb}{0.929,0.702,0.800} % #edb3cc
+\definecolor{atlFuchsia300}{rgb}{0.906,0.608,0.737} % #e79bbc
+\definecolor{atlFuchsia400}{rgb}{0.882,0.498,0.663} % #e17fa9
+\definecolor{atlFuchsia500}{rgb}{0.859,0.396,0.596} % #db6598
+\definecolor{atlFuchsia700}{rgb}{0.773,0.149,0.416} % #c5266a
+\definecolor{atlFuchsia800}{rgb}{0.663,0.125,0.357} % #a9205b
+\definecolor{atlFuchsia900}{rgb}{0.545,0.106,0.294} % #8b1b4b
+\definecolor{atlFuchsia1000}{rgb}{0.431,0.082,0.235} % #6e153c
+\definecolor{atlFuchsia1100}{rgb}{0.325,0.063,0.176} % #53102D
+
+% Atlfuchasia Color Family
+\definecolor{atlFuchasia600}{rgb}{0.827,0.275,0.510} % #d34682
+
+% Atlindigo Color Family
+\definecolor{atlIndigo50}{rgb}{0.906,0.898,0.953} % #e7e5f3
+\definecolor{atlIndigo100}{rgb}{0.843,0.831,0.925} % #d7d4ec
+\definecolor{atlIndigo200}{rgb}{0.773,0.749,0.890} % #c5bfe3
+\definecolor{atlIndigo300}{rgb}{0.702,0.671,0.859} % #b3abdb
+\definecolor{atlIndigo400}{rgb}{0.624,0.592,0.824} % #9f97d2
+\definecolor{atlIndigo500}{rgb}{0.561,0.518,0.792} % #8f84ca
+\definecolor{atlIndigo600}{rgb}{0.490,0.439,0.757} % #7d70c1
+\definecolor{atlIndigo800}{rgb}{0.353,0.294,0.671} % #5a4bab
+\definecolor{atlIndigo900}{rgb}{0.290,0.243,0.557} % #4a3e8e
+\definecolor{atlIndigo1000}{rgb}{0.227,0.192,0.431} % #3a316e
+\definecolor{atlIndigo1100}{rgb}{0.169,0.141,0.325} % #2b2453
+
+% Atlteal Color Family
+\definecolor{atlTeal50}{rgb}{0.843,0.941,0.961} % #d7f0f5
+\definecolor{atlTeal100}{rgb}{0.667,0.875,0.918} % #aadfea
+\definecolor{atlTeal200}{rgb}{0.502,0.812,0.878} % #80cfe0
+\definecolor{atlTeal300}{rgb}{0.337,0.749,0.839} % #56bfd6
+\definecolor{atlTeal400}{rgb}{0.145,0.675,0.792} % #25acca
+\definecolor{atlTeal500}{rgb}{0.000,0.600,0.733} % #0099bb
+\definecolor{atlTeal600}{rgb}{0.000,0.525,0.643} % #0086A4
+\definecolor{atlTeal700}{rgb}{0.000,0.455,0.553} % #00748d
+\definecolor{atlTeal800}{rgb}{0.000,0.384,0.471} % #006278
+\definecolor{atlTeal900}{rgb}{0.000,0.322,0.392} % #005264
+\definecolor{atlTeal1000}{rgb}{0.000,0.251,0.310} % #00404f
+\definecolor{atlTeal1100}{rgb}{0.000,0.184,0.227} % #002f3a
+
+% Atlgreen Color Family
+\definecolor{atlGreen50}{rgb}{0.816,0.937,0.898} % #d0efe5
+\definecolor{atlGreen100}{rgb}{0.663,0.886,0.812} % #a9e2cf
+\definecolor{atlGreen200}{rgb}{0.494,0.827,0.718} % #7ed3b7
+\definecolor{atlGreen300}{rgb}{0.325,0.769,0.624} % #53c49f
+\definecolor{atlGreen400}{rgb}{0.125,0.702,0.514} % #20b383
+\definecolor{atlGreen500}{rgb}{0.000,0.631,0.424} % #00a16c
+\definecolor{atlGreen600}{rgb}{0.000,0.553,0.373} % #008d5f
+\definecolor{atlGreen700}{rgb}{0.000,0.478,0.322} % #007a52
+\definecolor{atlGreen800}{rgb}{0.000,0.404,0.275} % #006746
+\definecolor{atlGreen900}{rgb}{0.000,0.333,0.227} % #00553A
+\definecolor{atlGreen1000}{rgb}{0.000,0.263,0.176} % #00432d
+\definecolor{atlGreen1100}{rgb}{0.000,0.196,0.133} % #003222
+
+% Atllime Color Family
+\definecolor{atlLime50}{rgb}{0.875,0.918,0.776} % #dfeac6
+\definecolor{atlLime100}{rgb}{0.796,0.871,0.639} % #cbdea3
+\definecolor{atlLime200}{rgb}{0.694,0.804,0.463} % #b1cd76
+\definecolor{atlLime300}{rgb}{0.604,0.741,0.294} % #9abd4b
+\definecolor{atlLime400}{rgb}{0.498,0.675,0.110} % #7fac1c
+\definecolor{atlLime500}{rgb}{0.416,0.608,0.000} % #6a9b00
+\definecolor{atlLime600}{rgb}{0.365,0.529,0.000} % #5d8700
+\definecolor{atlLime700}{rgb}{0.314,0.459,0.000} % #507500
+\definecolor{atlLime800}{rgb}{0.267,0.388,0.000} % #446300
+\definecolor{atlLime900}{rgb}{0.220,0.318,0.000} % #385100
+\definecolor{atlLime1000}{rgb}{0.173,0.251,0.000} % #2c4000
+\definecolor{atlLime1100}{rgb}{0.129,0.184,0.000} % #212f00
+
+% Atlgold Color Family
+\definecolor{atlGold50}{rgb}{1.000,0.910,0.604} % #ffe89a
+\definecolor{atlGold100}{rgb}{1.000,0.820,0.220} % #ffd138
+\definecolor{atlGold200}{rgb}{0.953,0.733,0.000} % #f3bb00
+\definecolor{atlGold300}{rgb}{0.867,0.667,0.000} % #ddaa00
+\definecolor{atlGold400}{rgb}{0.773,0.592,0.000} % #c59700
+\definecolor{atlGold500}{rgb}{0.690,0.529,0.000} % #b08700
+\definecolor{atlGold600}{rgb}{0.604,0.463,0.000} % #9a7600
+\definecolor{atlGold700}{rgb}{0.518,0.400,0.000} % #846600
+\definecolor{atlGold800}{rgb}{0.443,0.337,0.000} % #715600
+\definecolor{atlGold900}{rgb}{0.365,0.278,0.000} % #5d4700
+\definecolor{atlGold1000}{rgb}{0.286,0.220,0.000} % #493800
+\definecolor{atlGold1100}{rgb}{0.212,0.161,0.000} % #362900
+
+% Atlorange Color Family
+\definecolor{atlOrange50}{rgb}{0.984,0.886,0.816} % #fbe2d0
+\definecolor{atlOrange100}{rgb}{0.976,0.804,0.686} % #f9cdaf
+\definecolor{atlOrange200}{rgb}{0.965,0.710,0.533} % #f6b588
+\definecolor{atlOrange300}{rgb}{0.953,0.616,0.380} % #f39d61
+\definecolor{atlOrange400}{rgb}{0.941,0.502,0.200} % #f08033
+\definecolor{atlOrange500}{rgb}{0.906,0.400,0.055} % #e7660e
+\definecolor{atlOrange600}{rgb}{0.792,0.349,0.047} % #ca590c
+\definecolor{atlOrange700}{rgb}{0.682,0.302,0.039} % #ae4d0a
+\definecolor{atlOrange800}{rgb}{0.580,0.259,0.035} % #944209
+\definecolor{atlOrange900}{rgb}{0.478,0.212,0.027} % #7a3607
+\definecolor{atlOrange1000}{rgb}{0.376,0.169,0.024} % #602b06
+\definecolor{atlOrange1100}{rgb}{0.278,0.125,0.016} % #472004
+
+% End of color definitions
+\endinput
