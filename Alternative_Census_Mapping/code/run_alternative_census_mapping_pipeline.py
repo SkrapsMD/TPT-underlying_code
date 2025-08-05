@@ -81,15 +81,15 @@ def main():
     
     # Define the scripts to run in order
     scripts = [
-        "01_Read_in_census_mappings.py",
-        "02_check_census_vs_schott.py", 
-        "03_merge_mapping_with_trade_data.py",
-        "04_Aggregate_to_NAICS_and_BEA.py",
-        "05_validate_unmapped_codes.py",
-        "06_Alternative_BEA_Aggregations.py",
-        "07_Compare_Unmapped_with_Original_Mappings.py",
-        "08_Create_Regional_Mapping_Comparison.py",
-        "09_Compare_Original_Census_Mappings.py"
+        "census_mappings_reader.py",
+        "census_vs_schott_comparator.py", 
+        "mapping_trade_data_merger.py",
+        "naics_bea_aggregator.py",
+        "unmapped_codes_validator.py",
+        "alternative_bea_aggregations.py",
+        "unmapped_vs_original_comparator.py",
+        "regional_mapping_comparator.py",
+        "original_census_mappings_comparator.py"
     ]
     
     # Track success/failure

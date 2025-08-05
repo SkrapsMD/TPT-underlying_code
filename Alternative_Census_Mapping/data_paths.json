@@ -1,0 +1,10 @@
+{
+  "base_paths": {
+    "project_root": "/home/runner/work/TPT-underlying_code/TPT-underlying_code/Alternative_Census_Mapping",
+    "code": "code",
+    "data": "data",
+    "validations": "validations",
+    "hs_to_bea_data": "../HS to BEA Data"
+  },
+  "description": "Alternative Census Mapping Pipeline for comparing different trade data mapping approaches"
+}

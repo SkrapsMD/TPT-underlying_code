@@ -1,12 +1,12 @@
 {
   "base_paths": {
-    "project_root": "/home/sparkysparksmd/Documents/GitHub/FRBAtl_TariffPricePulse/scripts",
-    "underlying_data_root": "/home/sparkysparksmd/Documents/GitHub/FRBAtl_TariffPricePulse/scripts/Underlying_Data_Construction/HS to BEA Data",
-    "raw_data": "/home/sparkysparksmd/Documents/GitHub/FRBAtl_TariffPricePulse/scripts/Underlying_Data_Construction/HS to BEA Data/data/raw",
-    "working_data": "/home/sparkysparksmd/Documents/GitHub/FRBAtl_TariffPricePulse/scripts/Underlying_Data_Construction/HS to BEA Data/data/working",
-    "final_data": "/home/sparkysparksmd/Documents/GitHub/FRBAtl_TariffPricePulse/scripts/Underlying_Data_Construction/HS to BEA Data/data/final",
-    "code": "/home/sparkysparksmd/Documents/GitHub/FRBAtl_TariffPricePulse/scripts/Underlying_Data_Construction/HS to BEA Data/code",
-    "validations": "/home/sparkysparksmd/Documents/GitHub/FRBAtl_TariffPricePulse/scripts/Underlying_Data_Construction/HS to BEA Data/validations"
+    "project_root": "/home/runner/work/TPT-underlying_code/TPT-underlying_code",
+    "underlying_data_root": "/home/runner/work/TPT-underlying_code/TPT-underlying_code/HS to BEA Data",
+    "raw_data": "/home/runner/work/TPT-underlying_code/TPT-underlying_code/HS to BEA Data/data/raw",
+    "working_data": "/home/runner/work/TPT-underlying_code/TPT-underlying_code/HS to BEA Data/data/working",
+    "final_data": "/home/runner/work/TPT-underlying_code/TPT-underlying_code/HS to BEA Data/data/final",
+    "code": "/home/runner/work/TPT-underlying_code/TPT-underlying_code/HS to BEA Data/code",
+    "validations": "/home/runner/work/TPT-underlying_code/TPT-underlying_code/HS to BEA Data/validations"
   },
   "raw_data_sources": {
     "hs10": {

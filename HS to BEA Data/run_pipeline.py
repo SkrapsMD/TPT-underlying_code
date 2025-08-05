@@ -84,28 +84,28 @@ def main():
     
     # Pipeline steps with descriptions
     pipeline_steps = [
-        ("00_Naics_crosswalk_formation.py", 
+        ("naics_crosswalk_builder.py", 
          "Creates NAICS 2017-2022 crosswalk mapping for consistent code translation"),
         
-        ("01_Schott_Data_Compiler.py", 
+        ("hs_naics_mapping_compiler.py", 
          "Compiles and corrects HS-NAICS mappings from Schott data using hierarchical matching"),
         
-        ("02_HS_to_Naics_to_BEA.py", 
+        ("hs_to_bea_bridge_builder.py", 
          "Maps HS codes through NAICS to BEA economic categories for trade analysis"),
         
-        ("03_Map_country_trade_data.py", 
+        ("trade_data_mapper.py", 
          "Processes 2024 trade data by continent and applies HS-to-BEA mappings"),
         
-        ("04_Aggregate_BEA_and_HS.py", 
+        ("bea_hs_aggregator.py", 
          "Aggregates trade data by BEA categories and creates HS commodity weights"),
         
-        ("05_Trade_weights.py", 
+        ("trade_weights_calculator.py", 
          "Calculates final trade weights by region and BEA category for economic analysis"),
         
-        ("06_Validate_Initial_HS_Data.py", 
+        ("initial_data_validator.py", 
          "Validates constructed data against June 2025 benchmark import values"),
         
-        ("07_TiVA_Import_Values_Comparison.py", 
+        ("tiva_import_values_validator.py", 
          "Compares our constructed trade weights with TiVA benchmark data and creates visualizations")
     ]
     

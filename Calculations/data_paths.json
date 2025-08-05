@@ -1,6 +1,6 @@
 {
   "base_paths": {
-    "project_root": "/home/sparkysparksmd/Documents/GitHub/FRBAtl_TariffPricePulse/scripts/Underlying_Data_Construction/Calculations",
+    "project_root": "/home/runner/work/TPT-underlying_code/TPT-underlying_code/Calculations",
     "raw_data": "data/raw",
     "working_data": "data/working",
     "final_data": "data/final",
