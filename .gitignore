@@ -68,7 +68,8 @@ Thumbs.db
 logs/
 
 # Output directories that might contain large files
-*/data/working/*/
-*/data/final/*.json
-*/validations/*/*.html
-*/validations/*/*.csv
+# Note: keeping important output files per repository requirements
+# */data/working/*/
+# */data/final/*.json
+# */validations/*/*.html
+# */validations/*/*.csv
