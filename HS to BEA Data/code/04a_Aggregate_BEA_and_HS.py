@@ -46,6 +46,9 @@ Main outputs:
 The weights calculation:
 weight = (HS_code_import_value_within_BEA_code) / (total_BEA_code_import_value)
 
+We also create weights for the different HS aggregations from each country as a share of global HS code imports - as well as 
+hs code shares of total imports from country (so we can create country-level average tariff rates). 
+
 This enables analysis of how trade policies affecting specific HS codes propagate through
 the BEA economic structure, supporting comprehensive tariff impact assessment.
 """
@@ -68,7 +71,7 @@ for continent in continents_to_process:
     if os.path.exists(continent_path):
         df = pd.read_csv(continent_path)
         # Add alpha ISO3 country code column
-        df['iso3'] = coco.convert(df['Country'], to='iso3') ### NEED TO DECIDE WHAT TO DO WITH ISRAEL AND PALESTINE HERE!!!!!!!!!
+        df['iso3'] = coco.convert(df['Country'], to='ISO3')
         
         # Handle cases where coco.convert returns lists or None
         def clean_iso3(iso3_value):
@@ -110,8 +113,9 @@ detail_dir = os.path.join(base_output_dir, 'country_detail')
 usummary_dir = os.path.join(base_output_dir, 'country_usummary')
 summary_dir = os.path.join(base_output_dir, 'country_summary')
 sector_dir = os.path.join(base_output_dir, 'country_sector')
+country_HS_dir = os.path.join(base_output_dir, 'country_HS') # This is where our HS Section/2/4 share of country will go -- output needs to include both the share and the impVal
 
-for dir_path in [detail_dir, usummary_dir, summary_dir, sector_dir]:
+for dir_path in [detail_dir, usummary_dir, summary_dir, sector_dir, country_HS_dir]:
     os.makedirs(dir_path, exist_ok=True)
 
 # Store original country totals for validation
@@ -189,6 +193,7 @@ sector_aggregated = all_continents_detail.groupby(['Country', 'sector_code', 'is
 sector_output_path = os.path.join(sector_dir, 'all_continents_sector.csv')
 sector_aggregated.to_csv(sector_output_path, index=False)
 print(f"Saved Sector aggregated data: {len(sector_aggregated)} rows")
+
 
 # Validation: Check that country totals are preserved at each level
 print("\nValidating country totals across all aggregation levels...")
